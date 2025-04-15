@@ -1057,12 +1057,42 @@
             "$type": "color",
             "$value": "{dictu.color.grijs.600}"
           }
+        },
+        "font-family": {
+          "$type": "typography",
+          "$value": "{dictu.font-family.primary}"
+        },
+        "font-size": {
+          "$type": "typography",
+          "$value": "{dictu.font-size.125}"
+        },
+        "font-weight": {
+          "$type": "typography",
+          "$value": "{dictu.font-weight.550}"
+        },
+        "strong": {
+          "font-weight": {
+            "$type": "typography",
+            "$value": "{dictu.font-weight.700}"
+          }
+        },
+        "line-height": {
+          "$type": "typography",
+          "$value": "{dictu.line-height.150}"
         }
       },
       "heading": {
         "color": {
           "$type": "color",
           "$value": "{dictu.color.grijs.900}"
+        },
+        "font-family": {
+          "$type": "typography",
+          "$value": "{dictu.font-family.primary}"
+        },
+        "font-weight": {
+          "$type": "typography",
+          "$value": "{dictu.font-weight.700}"
         }
       },
       "form-control": {
@@ -1227,6 +1257,10 @@
         "accent-color": {
           "$type": "color",
           "$value": "{dictu.interaction.color}"
+        },
+        "font-weight": {
+          "$type": "typography",
+          "$value": "{dictu.font-weight.400}"
         }
       },
       "focus": {
@@ -1409,34 +1443,6 @@
             "$type": "dimension",
             "$value": "{dictu.space.row.1600}"
           }
-        }
-      },
-      "paragraph": {
-        "font-family": {
-          "$type": "typography",
-          "$value": "{dictu.font-family.primary}"
-        },
-        "font-size": {
-          "$type": "typography",
-          "$value": "{dictu.font-size.100}"
-        },
-        "font-weight": {
-          "$type": "typography",
-          "$value": "{dictu.font-weight.400}"
-        }
-      },
-      "button": {
-        "font-family": {
-          "$type": "typography",
-          "$value": "{dictu.font-family.primary}"
-        },
-        "font-size": {
-          "$type": "typography",
-          "$value": "{dictu.font-size.125}"
-        },
-        "font-weight": {
-          "$type": "typography",
-          "$value": "{dictu.font-weight.550}"
         }
       }
     }
@@ -2526,6 +2532,18 @@
               "$type": "color",
               "$value": "{dictu.color.white}"
             }
+          },
+          "font-weight": {
+            "$type": "typography",
+            "$value": "{dictu.document.strong.font-weight}"
+          },
+          "line-height": {
+            "$type": "typography",
+            "$value": "{dictu.document.line-height}"
+          },
+          "font-size": {
+            "$type": "typography",
+            "$value": "{dictu.document.font-size}"
           }
         },
         "secondary-action": {
@@ -2666,7 +2684,49 @@
               "$type": "color",
               "$value": "{dictu.interaction.active.color}"
             }
+          },
+          "font-weight": {
+            "$type": "typography",
+            "$value": "{dictu.document.strong.font-weight}"
+          },
+          "line-height": {
+            "$type": "typography",
+            "$value": "{dictu.document.line-height}"
+          },
+          "font-size": {
+            "$type": "typography",
+            "$value": "{dictu.document.font-size}"
           }
+        },
+        "font-family": {
+          "$type": "typography",
+          "$value": "{dictu.document.font-family}"
+        },
+        "font-weight": {
+          "$type": "typography",
+          "$value": "{dictu.document.font-weight}"
+        },
+        "secundary-action": {
+          "font-weight": {
+            "$type": "typography",
+            "$value": "{dictu.document.strong.font-weight}"
+          },
+          "line-height": {
+            "$type": "typography",
+            "$value": "{dictu.document.line-height}"
+          },
+          "font-size": {
+            "$type": "typography",
+            "$value": "{dictu.document.font-size}"
+          }
+        },
+        "line-height": {
+          "$type": "typography",
+          "$value": "{dictu.document.line-height}"
+        },
+        "font-size": {
+          "$type": "typography",
+          "$value": "{dictu.document.font-size}"
         }
       }
     },
@@ -2685,22 +2745,6 @@
             "$type": "dimension",
             "$value": "{dictu.icon.functional.size}"
           }
-        },
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{dictu.document.font-family1}"
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{utrecht.document.font-size}"
-        },
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{voorbeeld.document.strong.font-weight}"
-        },
-        "line-height": {
-          "$type": "lineHeights",
-          "$value": "{utrecht.document.line-height}"
         },
         "padding-block-end": {
           "$type": "dimension",
@@ -2729,48 +2773,6 @@
         "column-gap": {
           "$type": "dimension",
           "$value": "{dictu.space.text.100}"
-        },
-        "primary-action": {
-          "font-weight": {
-            "$type": "fontWeights",
-            "$value": "{voorbeeld.document.strong.font-weight}"
-          },
-          "font-size": {
-            "$type": "fontSizes",
-            "$value": "{utrecht.document.font-size}"
-          },
-          "line-height": {
-            "$type": "lineHeights",
-            "$value": "{utrecht.document.line-height}"
-          }
-        },
-        "secondary-action": {
-          "font-weight": {
-            "$type": "fontWeights",
-            "$value": "{voorbeeld.document.strong.font-weight}"
-          },
-          "font-size": {
-            "$type": "fontSizes",
-            "$value": "{utrecht.document.font-size}"
-          },
-          "line-height": {
-            "$type": "lineHeights",
-            "$value": "{utrecht.document.line-height}"
-          }
-        },
-        "subtle": {
-          "font-size": {
-            "$type": "fontSizes",
-            "$value": "{utrecht.document.font-size}"
-          },
-          "font-weight": {
-            "$type": "fontWeights",
-            "$value": "{voorbeeld.document.strong.font-weight}"
-          },
-          "line-height": {
-            "$type": "lineHeights",
-            "$value": "{utrecht.document.line-height}"
-          }
         }
       }
     }
