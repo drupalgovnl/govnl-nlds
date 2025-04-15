@@ -2481,7 +2481,7 @@
           },
           "background-color": {
             "$type": "color",
-            "$value": "{dictu.interaction.color}"
+            "$value": "{dictu.color.oranje.500}"
           },
           "border-color": {
             "$type": "color",
