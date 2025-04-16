@@ -34,6 +34,10 @@
           "500": {
             "$type": "color",
             "$value": "#154273"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#10345c"
           }
         },
         "grijs": {
@@ -1206,7 +1210,7 @@
         },
         "outline-color": {
           "$type": "color",
-          "$value": "{dictu.color.donkerblauw.500}"
+          "$value": "{dictu.color.hemelblauw.500}"
         },
         "inverse": {
           "outline-color": {
@@ -1320,18 +1324,18 @@
       "interaction": {
         "color": {
           "$type": "color",
-          "$value": "{dictu.color.donkerblauw.500}"
+          "$value": "{dictu.color.lintblauw.500}"
         },
         "active": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.lintblauw.500}"
+            "$value": "{dictu.color.lintblauw.700}"
           }
         },
         "hover": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.lintblauw.500}"
+            "$value": "{dictu.color.lintblauw.700}"
           }
         }
       },
@@ -1728,74 +1732,6 @@
   "components/button": {
     "dictu": {
       "button": {
-        "background-color": {
-          "$type": "color",
-          "$value": "transparent"
-        },
-        "border-color": {
-          "$type": "color",
-          "$value": "{dictu.color.grijs.900}"
-        },
-        "color": {
-          "$type": "color",
-          "$value": "{dictu.color.grijs.900}"
-        },
-        "disabled": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.50}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "transparent"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.500}"
-          }
-        },
-        "focus": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{dictu.focus.background-color}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "transparent"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.focus.color}"
-          }
-        },
-        "hover": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.50}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "{dictu.interaction.hover.color}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.interaction.hover.color}"
-          }
-        },
-        "active": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.100}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "{dictu.interaction.active.color}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.interaction.active.color}"
-          }
-        },
         "primary-action": {
           "hover": {
             "background-color": {
@@ -2021,6 +1957,76 @@
         "line-height": {
           "$type": "lineHeights",
           "$value": "{dictu.line-height.sm}"
+        },
+        "icon-only": {
+          "background-color": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{dictu.interaction.color}"
+          },
+          "hover": {
+            "color": {
+              "$type": "color",
+              "$value": "{dictu.interaction.hover.color}"
+            },
+            "background-color": {
+              "$type": "color",
+              "$value": "rgba(0,0,0,0.05)"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "transparent"
+            }
+          },
+          "active": {
+            "color": {
+              "$type": "color",
+              "$value": "{dictu.interaction.active.color}"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "transparent"
+            },
+            "background-color": {
+              "$type": "color",
+              "$value": "rgba(0,0,0,0.05)"
+            }
+          },
+          "disabled": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{dictu.color.grijs.100}"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "transparent"
+            },
+            "color": {
+              "$type": "color",
+              "$value": "{dictu.color.grijs.500}"
+            }
+          },
+          "focus": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{dictu.focus.background-color}"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "transparent"
+            },
+            "color": {
+              "$type": "color",
+              "$value": "{dictu.focus.color}"
+            }
+          }
         }
       }
     },
@@ -2471,10 +2477,6 @@
         "font-size": {
           "$type": "fontSizes",
           "$value": "{utrecht.document.font-size}"
-        },
-        "line-height": {
-          "$type": "lineHeights",
-          "$value": "{utrecht.document.line-height}"
         },
         "padding-block": {
           "$type": "dimension",
