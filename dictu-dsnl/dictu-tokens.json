@@ -1613,7 +1613,7 @@
       }
     }
   },
-  "components/breadcrumb-nav/todo": {
+  "components/breadcrumb-nav": {
     "todo": {
       "breadcrumb-nav": {
         "column-gap": {
@@ -2071,7 +2071,7 @@
       }
     }
   },
-  "components/heading/nl": {
+  "components/heading": {
     "nl": {
       "heading": {
         "level-1": {
@@ -2457,7 +2457,7 @@
       }
     }
   },
-  "components/skip-link/nl": {
+  "components/skip-link": {
     "nl": {
       "skip-link": {
         "background-color": {
@@ -2509,16 +2509,16 @@
       "brand",
       "common",
       "components/accordion",
-      "components/breadcrumb-nav/todo",
+      "components/breadcrumb-nav",
       "components/button",
-      "components/heading/nl",
+      "components/heading",
       "components/icon",
-      "components/link/nl",
+      "components/link",
       "components/link-list",
       "components/navigation-bar",
-      "components/paragraph/nl",
+      "components/paragraph",
       "components/pre-heading",
-      "components/skip-link/nl"
+      "components/skip-link"
     ]
   }
 }
