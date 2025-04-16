@@ -1210,7 +1210,7 @@
         },
         "outline-color": {
           "$type": "color",
-          "$value": "{dictu.color.hemelblauw.500}"
+          "$value": "{dictu.color.violet.500}"
         },
         "inverse": {
           "outline-color": {
