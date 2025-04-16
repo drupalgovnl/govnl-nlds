@@ -2219,7 +2219,7 @@
       }
     }
   },
-  "components/link/nl": {
+  "components/link": {
     "nl": {
       "link": {
         "color": {
