@@ -2071,536 +2071,6 @@
       }
     }
   },
-  "components/data-badge/nl": {
-    "nl": {
-      "data-badge": {
-        "background-color": {
-          "$type": "color",
-          "$value": "{dictu.color.violet1.100}"
-        },
-        "border-color": {
-          "$type": "color",
-          "$value": "transparent"
-        },
-        "border-radius": {
-          "$type": "dimension",
-          "$value": "{dictu.border-radius.100}"
-        },
-        "border-width": {
-          "$type": "dimension",
-          "$value": "{dictu.border-width.25}"
-        },
-        "color": {
-          "$type": "color",
-          "$value": "{dictu.document.color}"
-        },
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{dictu.document.font-family1}"
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{utrecht.document.font-size}"
-        },
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{voorbeeld.document.strong.font-weight}"
-        },
-        "line-height": {
-          "$type": "lineHeights",
-          "$value": "{utrecht.document.line-height}"
-        },
-        "min-block-size": {
-          "$type": "dimension",
-          "$value": "{dictu.size.600}"
-        },
-        "min-inline-size": {
-          "$type": "dimension",
-          "$value": "{dictu.size.800}"
-        },
-        "padding-block": {
-          "$type": "dimension",
-          "$value": "None"
-        },
-        "padding-inline": {
-          "$type": "dimension",
-          "$value": "{dictu.space.inline.100}"
-        }
-      }
-    }
-  },
-  "components/file": {
-    "denhaag": {
-      "file": {
-        "border-width": {
-          "$type": "dimension",
-          "$value": "{dictu.border-width.25}"
-        },
-        "border-color": {
-          "$type": "color",
-          "$value": "{dictu.container.border-color}"
-        },
-        "left": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{dictu.color.gray.100}"
-          },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "{dictu.space.inline.400}"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "{dictu.space.inline.400}"
-          }
-        },
-        "link": {
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.interaction.color}"
-          },
-          "hover": {
-            "color": {
-              "$type": "color",
-              "$value": "{dictu.interaction.hover.color}"
-            }
-          },
-          "gap": {
-            "$type": "dimension",
-            "$value": "{dictu.space.text.100}"
-          },
-          "icon": {
-            "width": {
-              "$type": "dimension",
-              "$value": "{dictu.icon.functional.size}"
-            }
-          }
-        },
-        "border-style": {
-          "$type": "other",
-          "$value": "solid"
-        },
-        "right": {
-          "gap": {
-            "$type": "dimension",
-            "$value": "{dictu.space.row.200}"
-          },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "{dictu.space.inline.400}"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "{dictu.space.inline.400}"
-          },
-          "padding-block-end": {
-            "$type": "dimension",
-            "$value": "{dictu.space.block.300}"
-          },
-          "padding-block-start": {
-            "$type": "dimension",
-            "$value": "{dictu.space.block.300}"
-          }
-        }
-      }
-    }
-  },
-  "components/form-field": {
-    "utrecht": {
-      "form-field": {
-        "invalid": {
-          "border-inline-start-color": {
-            "$type": "color",
-            "$value": "{dictu.feedback.negative.border-color}"
-          },
-          "border-inline-start-width": {
-            "$type": "dimension",
-            "$value": "{dictu.border-width.50}"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "{dictu.space.inline.400}"
-          }
-        }
-      }
-    }
-  },
-  "components/form-field-checkbox-option": {
-    "todo": {
-      "form-field-checkbox-option": {
-        "column-gap": {
-          "$type": "dimension",
-          "$value": "{dictu.space.column.200}"
-        }
-      }
-    }
-  },
-  "components/form-field-description": {
-    "utrecht": {
-      "form-field-description": {
-        "color": {
-          "$type": "color",
-          "$value": "{dictu.document.subtle.color}"
-        },
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{dictu.document.font-family1}"
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{utrecht.document.font-size}"
-        },
-        "line-height": {
-          "$type": "lineHeights",
-          "$value": "{utrecht.document.line-height}"
-        }
-      }
-    }
-  },
-  "components/form-field-error-message": {
-    "utrecht": {
-      "form-field-error-message": {
-        "background-color": {
-          "$type": "color",
-          "$value": "transparent"
-        },
-        "color": {
-          "$type": "color",
-          "$value": "{dictu.feedback.negative.color}"
-        },
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{dictu.document.font-family1}"
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{utrecht.document.font-size}"
-        },
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{utrecht.document.font-weight}"
-        },
-        "padding-block-end": {
-          "$type": "dimension",
-          "$value": "0px"
-        },
-        "padding-block-start": {
-          "$type": "dimension",
-          "$value": "0px"
-        },
-        "padding-inline-end": {
-          "$type": "dimension",
-          "$value": "0px"
-        },
-        "padding-inline-start": {
-          "$type": "dimension",
-          "$value": "0px"
-        },
-        "line-height": {
-          "$type": "lineHeights",
-          "$value": "{utrecht.document.line-height}"
-        }
-      }
-    },
-    "todo": {
-      "form-field-error-message": {
-        "icon": {
-          "size": {
-            "$type": "dimension",
-            "$value": "{dictu.icon.functional.size}"
-          }
-        },
-        "column-gap": {
-          "$type": "dimension",
-          "$value": "{dictu.space.text.200}"
-        }
-      }
-    }
-  },
-  "components/form-field-label/utrecht": {
-    "utrecht": {
-      "form-label": {
-        "color": {
-          "$type": "color",
-          "$value": "{dictu.document.color}"
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{utrecht.document.font-size}"
-        },
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{voorbeeld.document.strong.font-weight}"
-        },
-        "checkbox": {
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.document.color}"
-          },
-          "font-weight": {
-            "$type": "fontWeights",
-            "$value": "{utrecht.document.font-weight}"
-          }
-        },
-        "checked": {
-          "font-weight": {
-            "$type": "fontWeights",
-            "$value": "{utrecht.document.font-weight}"
-          }
-        },
-        "disabled": {
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.gray.600}"
-          }
-        },
-        "radio": {
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.document.color}"
-          },
-          "font-weight": {
-            "$type": "fontWeights",
-            "$value": "{utrecht.document.font-weight}"
-          }
-        }
-      }
-    }
-  },
-  "components/form-field-label/todo": {
-    "todo": {
-      "form-field-label": {
-        "color": {
-          "$type": "color",
-          "$value": "{dictu.document.color}"
-        },
-        "column-gap": {
-          "$type": "dimension",
-          "$value": "{dictu.space.text.100}"
-        },
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{dictu.document.font-family1}"
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{utrecht.document.font-size}"
-        },
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{voorbeeld.document.strong.font-weight}"
-        },
-        "line-height": {
-          "$type": "lineHeights",
-          "$value": "{utrecht.document.line-height}"
-        }
-      }
-    }
-  },
-  "components/form-field-label-suffix": {
-    "todo": {
-      "form-field-label-suffix": {
-        "color": {
-          "$type": "color",
-          "$value": "{dictu.document.color}"
-        },
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{utrecht.document.font-weight}"
-        }
-      }
-    }
-  },
-  "components/form-field-option-label": {
-    "todo": {
-      "form-field-option-label": {
-        "color": {
-          "$type": "color",
-          "$value": "{dictu.form-control.color}"
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{utrecht.document.font-size}"
-        },
-        "line-height": {
-          "$type": "lineHeights",
-          "$value": "{utrecht.document.line-height}"
-        },
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{dictu.document.font-family1}"
-        },
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{utrecht.document.font-weight}"
-        },
-        "disabled": {
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.gray.600}"
-          }
-        }
-      }
-    }
-  },
-  "components/form-field-radio-option": {
-    "todo": {
-      "form-field-radio-option": {
-        "column-gap": {
-          "$type": "dimension",
-          "$value": "{dictu.space.column.200}"
-        }
-      }
-    }
-  },
-  "components/form-summary": {
-    "todo": {
-      "form-summary": {
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{dictu.document.font-family1}"
-        },
-        "item-value": {
-          "font-weight": {
-            "$type": "fontWeights",
-            "$value": "{utrecht.document.font-weight}"
-          },
-          "row": {
-            "padding-block-end": {
-              "$type": "dimension",
-              "$value": "{dictu.space.block.300}"
-            },
-            "padding-block-start": {
-              "$type": "dimension",
-              "$value": "{dictu.space.block.300}"
-            },
-            "padding-inline-end": {
-              "$type": "dimension",
-              "$value": "0px"
-            },
-            "padding-inline-start": {
-              "$type": "dimension",
-              "$value": "0px"
-            }
-          },
-          "padding-block-end": {
-            "$type": "dimension",
-            "$value": "{dictu.space.block.300}"
-          },
-          "padding-block-start": {
-            "$type": "dimension",
-            "$value": "{dictu.space.block.100}"
-          },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "0px"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "0px"
-          }
-        },
-        "item-key": {
-          "font-weight": {
-            "$type": "fontWeights",
-            "$value": "{voorbeeld.document.strong.font-weight}"
-          },
-          "row": {
-            "padding-block-end": {
-              "$type": "dimension",
-              "$value": "{dictu.space.block.300}"
-            },
-            "padding-block-start": {
-              "$type": "dimension",
-              "$value": "{dictu.space.block.300}"
-            },
-            "padding-inline-end": {
-              "$type": "dimension",
-              "$value": "{dictu.space.inline.400}"
-            },
-            "padding-inline-start": {
-              "$type": "dimension",
-              "$value": "0px"
-            }
-          },
-          "padding-block-end": {
-            "$type": "dimension",
-            "$value": "{dictu.space.block.100}"
-          },
-          "padding-block-start": {
-            "$type": "dimension",
-            "$value": "{dictu.space.block.300}"
-          },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "0px"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "0px"
-          }
-        },
-        "item": {
-          "border-width": {
-            "$type": "dimension",
-            "$value": "{dictu.border-width.25}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "{dictu.line.border-color}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.document.color}"
-          }
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{utrecht.document.font-size}"
-        },
-        "line-height": {
-          "$type": "lineHeights",
-          "$value": "{utrecht.document.line-height}"
-        },
-        "item-action": {
-          "row": {
-            "padding-block-end": {
-              "$type": "dimension",
-              "$value": "{dictu.space.block.300}"
-            },
-            "padding-block-start": {
-              "$type": "dimension",
-              "$value": "{dictu.space.block.300}"
-            },
-            "padding-inline-end": {
-              "$type": "dimension",
-              "$value": "0px"
-            },
-            "padding-inline-start": {
-              "$type": "dimension",
-              "$value": "{dictu.space.inline.400}"
-            }
-          },
-          "padding-block-end": {
-            "$type": "dimension",
-            "$value": "{dictu.space.block.300}"
-          },
-          "padding-block-start": {
-            "$type": "dimension",
-            "$value": "{dictu.space.block.300}"
-          },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "{dictu.space.inline.400}"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "0px"
-          }
-        }
-      }
-    }
-  },
   "components/heading/nl": {
     "nl": {
       "heading": {
@@ -2795,7 +2265,7 @@
         "disabled": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.gray.500}"
+            "$value": "{dictu.color.grijs.500}"
           },
           "cursor": {
             "$type": "other",
@@ -2922,7 +2392,7 @@
     }
   },
   "components/paragraph/nl": {
-    "nl": {
+    "dictu": {
       "paragraph": {
         "color": {
           "$type": "color",
@@ -2930,32 +2400,32 @@
         },
         "font-family": {
           "$type": "fontFamilies",
-          "$value": "{dictu.document.font-family1}"
+          "$value": "{dictu.font-family.primary}"
         },
         "font-size": {
           "$type": "fontSizes",
-          "$value": "{utrecht.document.font-size}"
+          "$value": "{dictu.font-size.md}"
         },
         "font-weight": {
           "$type": "fontWeights",
-          "$value": "{utrecht.document.font-weight}"
+          "$value": "{dictu.font-weight.regular}"
         },
         "line-height": {
           "$type": "lineHeights",
-          "$value": "{utrecht.document.line-height}"
+          "$value": "{dictu.line-height.md}"
         },
         "lead": {
           "font-size": {
             "$type": "fontSizes",
-            "$value": "{dictu.typography.font-size.lg}"
+            "$value": "{dictu.font-size.md}"
           },
           "font-weight": {
             "$type": "fontWeights",
-            "$value": "{voorbeeld.document.strong.font-weight}"
+            "$value": "{dictu.font-weight.semibold}"
           },
           "line-height": {
             "$type": "lineHeights",
-            "$value": "{utrecht.document.line-height}"
+            "$value": "{dictu.line-height.md}"
           }
         }
       }
@@ -3041,18 +2511,6 @@
       "components/accordion",
       "components/breadcrumb-nav/todo",
       "components/button",
-      "components/data-badge/nl",
-      "components/file",
-      "components/form-field",
-      "components/form-field-checkbox-option",
-      "components/form-field-description",
-      "components/form-field-error-message",
-      "components/form-field-label/utrecht",
-      "components/form-field-label/todo",
-      "components/form-field-label-suffix",
-      "components/form-field-option-label",
-      "components/form-field-radio-option",
-      "components/form-summary",
       "components/heading/nl",
       "components/icon",
       "components/link/nl",
