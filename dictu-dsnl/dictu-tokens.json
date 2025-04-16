@@ -2391,7 +2391,7 @@
       }
     }
   },
-  "components/paragraph/nl": {
+  "components/paragraph": {
     "dictu": {
       "paragraph": {
         "color": {
