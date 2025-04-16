@@ -902,131 +902,97 @@
         }
       },
       "font-family": {
-        "primary": {
-          "$type": "typography",
-          "$value": {
-            "fontFamily": "RijksSans, Arial, Verdana, sans-serif"
-          }
+        "sans": {
+          "$type": "fontFamilies",
+          "$value": "RijksSans, Arial, Verdana, sans-serif"
         },
-        "secundary": {
-          "$type": "typography",
-          "$value": {
-            "fontFamily": "RijksoverheidSerifWeb, 'Times New Roman', serif"
-          }
-        }
-      },
-      "font-weight": {
-        "200": {
-          "$type": "typography",
-          "$value": {
-            "fontWeight": "200"
-          },
-          "$description": "thin"
-        },
-        "300": {
-          "$type": "typography",
-          "$value": {
-            "fontWeight": "300"
-          },
-          "$description": "light"
-        },
-        "400": {
-          "$type": "typography",
-          "$value": {
-            "fontWeight": "400"
-          },
-          "$description": "regular"
-        },
-        "550": {
-          "$type": "typography",
-          "$value": {
-            "fontWeight": "550"
-          },
-          "$description": "semi-bold"
-        },
-        "700": {
-          "$type": "typography",
-          "$value": {
-            "fontWeight": "700"
-          },
-          "$description": "bold"
-        },
-        "800": {
-          "$type": "typography",
-          "$value": {
-            "fontWeight": "800"
-          },
-          "$description": "extra-bold"
-        }
-      },
-      "line-height": {
-        "100": {
-          "$type": "typography",
-          "$value": {
-            "lineHeight": "100%"
-          }
-        },
-        "125": {
-          "$type": "typography",
-          "$value": {
-            "lineHeight": "125%"
-          }
-        },
-        "150": {
-          "$type": "typography",
-          "$value": {
-            "lineHeight": "150%"
-          }
-        },
-        "200": {
-          "$type": "typography",
-          "$value": {
-            "lineHeight": "200%"
-          }
+        "serif": {
+          "$type": "fontFamilies",
+          "$value": "RijksoverheidSerifWeb, 'Times New Roman', serif"
         }
       },
       "font-size": {
         "75": {
-          "$type": "typography",
-          "$value": {
-            "fontSize": "0.75rem"
-          }
+          "$type": "fontSizes",
+          "$value": "0.75rem"
         },
         "100": {
-          "$type": "typography",
-          "$value": {
-            "fontSize": "1rem"
-          }
+          "$type": "fontSizes",
+          "$value": "1rem"
+        },
+        "112": {
+          "$type": "fontSizes",
+          "$value": "1.125rem"
         },
         "125": {
-          "$type": "typography",
-          "$value": {
-            "fontSize": "1.25rem"
-          }
+          "$type": "fontSizes",
+          "$value": "1.25rem"
         },
         "150": {
-          "$type": "typography",
-          "$value": {
-            "fontSize": "1.5rem"
-          }
+          "$type": "fontSizes",
+          "$value": "1.5rem"
         },
         "200": {
-          "$type": "typography",
-          "$value": {
-            "fontSize": "2rem"
-          }
+          "$type": "fontSizes",
+          "$value": "2rem"
         },
         "250": {
-          "$type": "typography",
-          "$value": {
-            "fontSize": "2.5rem"
-          }
+          "$type": "fontSizes",
+          "$value": "2.5rem"
         },
         "300": {
-          "$type": "typography",
-          "$value": {
-            "fontSize": "3rem"
-          }
+          "$type": "fontSizes",
+          "$value": "3rem"
+        }
+      },
+      "font-weight": {
+        "200": {
+          "$type": "fontWeights",
+          "$value": "200",
+          "$description": "Thin"
+        },
+        "300": {
+          "$type": "fontWeights",
+          "$value": "300",
+          "$description": "Light"
+        },
+        "400": {
+          "$type": "fontWeights",
+          "$value": "400",
+          "$description": "Regular"
+        },
+        "550": {
+          "$type": "fontWeights",
+          "$value": "550",
+          "$description": "SemiBold"
+        },
+        "700": {
+          "$type": "fontWeights",
+          "$value": "700",
+          "$description": "Bold"
+        },
+        "800": {
+          "$type": "fontWeights",
+          "$value": "800",
+          "$description": "ExtraBold"
+        }
+      },
+      "line-height": {
+        "100": {
+          "$type": "lineHeights",
+          "$value": "100%"
+        },
+        "125": {
+          "$type": "lineHeights",
+          "$value": "125%"
+        },
+        "150": {
+          "$type": "lineHeights",
+          "$value": "150%"
+        },
+        "200": {
+          "$type": "lineHeights",
+          "$value": "200%"
         }
       }
     }
@@ -1057,42 +1023,12 @@
             "$type": "color",
             "$value": "{dictu.color.grijs.600}"
           }
-        },
-        "font-family": {
-          "$type": "typography",
-          "$value": "{dictu.font-family.primary}"
-        },
-        "font-size": {
-          "$type": "typography",
-          "$value": "{dictu.font-size.125}"
-        },
-        "font-weight": {
-          "$type": "typography",
-          "$value": "{dictu.font-weight.550}"
-        },
-        "strong": {
-          "font-weight": {
-            "$type": "typography",
-            "$value": "{dictu.font-weight.700}"
-          }
-        },
-        "line-height": {
-          "$type": "typography",
-          "$value": "{dictu.line-height.150}"
         }
       },
       "heading": {
         "color": {
           "$type": "color",
           "$value": "{dictu.color.grijs.900}"
-        },
-        "font-family": {
-          "$type": "typography",
-          "$value": "{dictu.font-family.primary}"
-        },
-        "font-weight": {
-          "$type": "typography",
-          "$value": "{dictu.font-weight.700}"
         }
       },
       "form-control": {
@@ -1257,10 +1193,6 @@
         "accent-color": {
           "$type": "color",
           "$value": "{dictu.interaction.color}"
-        },
-        "font-weight": {
-          "$type": "typography",
-          "$value": "{dictu.font-weight.400}"
         }
       },
       "focus": {
@@ -1443,6 +1375,82 @@
             "$type": "dimension",
             "$value": "{dictu.space.row.1600}"
           }
+        }
+      },
+      "font-family": {
+        "primary": {
+          "$type": "fontFamilies",
+          "$value": "{dictu.font-family.sans}"
+        },
+        "secondary": {
+          "$type": "fontFamilies",
+          "$value": "{dictu.font-family.serif}"
+        }
+      },
+      "font-size": {
+        "xs": {
+          "$type": "fontSizes",
+          "$value": "{dictu.font-size.75}"
+        },
+        "sm": {
+          "$type": "fontSizes",
+          "$value": "{dictu.font-size.100}"
+        },
+        "md": {
+          "$type": "fontSizes",
+          "$value": "{dictu.font-size.112}"
+        },
+        "lg": {
+          "$type": "fontSizes",
+          "$value": "{dictu.font-size.125}"
+        },
+        "xl": {
+          "$type": "fontSizes",
+          "$value": "{dictu.font-size.200}"
+        },
+        "2xl": {
+          "$type": "fontSizes",
+          "$value": "{dictu.font-size.250}"
+        },
+        "3xl": {
+          "$type": "fontSizes",
+          "$value": "{dictu.font-size.300}"
+        }
+      },
+      "font-weight": {
+        "light": {
+          "$type": "fontWeights",
+          "$value": "{dictu.font-weight.300}"
+        },
+        "regular": {
+          "$type": "fontWeights",
+          "$value": "{dictu.font-weight.400}"
+        },
+        "semibold": {
+          "$type": "fontWeights",
+          "$value": "{dictu.font-weight.550}"
+        },
+        "bold": {
+          "$type": "fontWeights",
+          "$value": "{dictu.font-weight.700}"
+        }
+      },
+      "line-height": {
+        "xs": {
+          "$type": "lineHeights",
+          "$value": "{dictu.line-height.100}"
+        },
+        "sm": {
+          "$type": "lineHeights",
+          "$value": "{dictu.line-height.125}"
+        },
+        "md": {
+          "$type": "lineHeights",
+          "$value": "{dictu.line-height.150}"
+        },
+        "lg": {
+          "$type": "lineHeights",
+          "$value": "{dictu.line-height.200}"
         }
       }
     }
@@ -2532,18 +2540,6 @@
               "$type": "color",
               "$value": "{dictu.color.white}"
             }
-          },
-          "font-weight": {
-            "$type": "typography",
-            "$value": "{dictu.document.strong.font-weight}"
-          },
-          "line-height": {
-            "$type": "typography",
-            "$value": "{dictu.document.line-height}"
-          },
-          "font-size": {
-            "$type": "typography",
-            "$value": "{dictu.document.font-size}"
           }
         },
         "secondary-action": {
@@ -2684,49 +2680,23 @@
               "$type": "color",
               "$value": "{dictu.interaction.active.color}"
             }
-          },
-          "font-weight": {
-            "$type": "typography",
-            "$value": "{dictu.document.strong.font-weight}"
-          },
-          "line-height": {
-            "$type": "typography",
-            "$value": "{dictu.document.line-height}"
-          },
-          "font-size": {
-            "$type": "typography",
-            "$value": "{dictu.document.font-size}"
           }
         },
         "font-family": {
-          "$type": "typography",
-          "$value": "{dictu.document.font-family}"
+          "$type": "fontFamilies",
+          "$value": "{dictu.font-family.primary}"
         },
         "font-weight": {
-          "$type": "typography",
-          "$value": "{dictu.document.font-weight}"
-        },
-        "secundary-action": {
-          "font-weight": {
-            "$type": "typography",
-            "$value": "{dictu.document.strong.font-weight}"
-          },
-          "line-height": {
-            "$type": "typography",
-            "$value": "{dictu.document.line-height}"
-          },
-          "font-size": {
-            "$type": "typography",
-            "$value": "{dictu.document.font-size}"
-          }
-        },
-        "line-height": {
-          "$type": "typography",
-          "$value": "{dictu.document.line-height}"
+          "$type": "fontWeights",
+          "$value": "{dictu.font-weight.semibold}"
         },
         "font-size": {
-          "$type": "typography",
-          "$value": "{dictu.document.font-size}"
+          "$type": "fontSizes",
+          "$value": "{dictu.font-size.md}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{dictu.line-height.sm}"
         }
       }
     },
