@@ -778,12 +778,6 @@
           }
         }
       },
-      "heading": {
-        "color": {
-          "$type": "color",
-          "$value": "{dictu.color.grijs.900}"
-        }
-      },
       "form-control": {
         "background-color": {
           "$type": "color",
@@ -1132,6 +1126,12 @@
         "lg": {
           "$type": "borderWidth",
           "$value": "{dictu.dimension.px.100}"
+        }
+      },
+      "heading-copy": {
+        "color": {
+          "$type": "color",
+          "$value": "{dictu.color.grijs.900}"
         }
       }
     }
@@ -1884,6 +1884,14 @@
             "$type": "lineHeights",
             "$value": "{dictu.typography.line-height.md}"
           }
+        }
+      }
+    },
+    "dictu": {
+      "heading-copy": {
+        "color": {
+          "$type": "color",
+          "$value": "{dictu.color.grijs.900}"
         }
       }
     }
