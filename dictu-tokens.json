@@ -1,5 +1,5 @@
 {
-  "brand": {
+  "core": {
     "dictu": {
       "color": {
         "white": {
@@ -2189,7 +2189,7 @@
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "brand",
+      "core",
       "common",
       "components/accordion",
       "components/breadcrumb-nav",
