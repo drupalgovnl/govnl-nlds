@@ -1,6 +1,6 @@
 {
   "core": {
-    "dictu": {
+    "govnl": {
       "color": {
         "white": {
           "$type": "color",
@@ -751,24 +751,24 @@
     }
   },
   "common": {
-    "dictu": {
+    "govnl": {
       "focus": {
         "background-color": {
           "$type": "color",
-          "$value": "{dictu.color.geel.500}"
+          "$value": "{govnl.color.geel.500}"
         },
         "color": {
           "$type": "color",
-          "$value": "{dictu.color.black}"
+          "$value": "{govnl.color.black}"
         },
         "outline-color": {
           "$type": "color",
-          "$value": "{dictu.color.violet.500}"
+          "$value": "{govnl.color.violet.500}"
         },
         "inverse": {
           "outline-color": {
             "$type": "color",
-            "$value": "{dictu.color.white}"
+            "$value": "{govnl.color.white}"
           }
         },
         "outline-offset": {
@@ -784,154 +784,154 @@
         "warning": {
           "background-color": {
             "$type": "color",
-            "$value": "{dictu.color.geel.100}"
+            "$value": "{govnl.color.geel.100}"
           },
           "border-color": {
             "$type": "color",
-            "$value": "{dictu.color.bruin.500}"
+            "$value": "{govnl.color.bruin.500}"
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.bruin.500}"
+            "$value": "{govnl.color.bruin.500}"
           }
         },
         "informative": {
           "background-color": {
             "$type": "color",
-            "$value": "{dictu.color.hemelblauw.50}"
+            "$value": "{govnl.color.hemelblauw.50}"
           },
           "border-color": {
             "$type": "color",
-            "$value": "{dictu.color.hemelblauw.500}"
+            "$value": "{govnl.color.hemelblauw.500}"
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.hemelblauw.500}"
+            "$value": "{govnl.color.hemelblauw.500}"
           }
         },
         "negative": {
           "background-color": {
             "$type": "color",
-            "$value": "{dictu.color.rood.50}"
+            "$value": "{govnl.color.rood.50}"
           },
           "border-color": {
             "$type": "color",
-            "$value": "{dictu.color.rood.500}"
+            "$value": "{govnl.color.rood.500}"
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.rood.500}"
+            "$value": "{govnl.color.rood.500}"
           }
         },
         "positive": {
           "background-color": {
             "$type": "color",
-            "$value": "{dictu.color.groen.50}"
+            "$value": "{govnl.color.groen.50}"
           },
           "border-color": {
             "$type": "color",
-            "$value": "{dictu.color.groen.500}"
+            "$value": "{govnl.color.groen.500}"
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.groen.500}"
+            "$value": "{govnl.color.groen.500}"
           }
         }
       },
       "root": {
         "background-color": {
           "$type": "color",
-          "$value": "{dictu.color.grijs.50}"
+          "$value": "{govnl.color.grijs.50}"
         }
       },
       "font-family": {
         "primary": {
           "$type": "fontFamilies",
-          "$value": "{dictu.font-family.sans}"
+          "$value": "{govnl.font-family.sans}"
         },
         "secondary": {
           "$type": "fontFamilies",
-          "$value": "{dictu.font-family.serif}"
+          "$value": "{govnl.font-family.serif}"
         }
       },
       "font-size": {
         "xs": {
           "$type": "fontSizes",
-          "$value": "{dictu.font-size.75}"
+          "$value": "{govnl.font-size.75}"
         },
         "sm": {
           "$type": "fontSizes",
-          "$value": "{dictu.font-size.100}"
+          "$value": "{govnl.font-size.100}"
         },
         "md": {
           "$type": "fontSizes",
-          "$value": "{dictu.font-size.112}"
+          "$value": "{govnl.font-size.112}"
         },
         "lg": {
           "$type": "fontSizes",
-          "$value": "{dictu.font-size.125}"
+          "$value": "{govnl.font-size.125}"
         },
         "xl": {
           "$type": "fontSizes",
-          "$value": "{dictu.font-size.200}"
+          "$value": "{govnl.font-size.200}"
         },
         "2xl": {
           "$type": "fontSizes",
-          "$value": "{dictu.font-size.250}"
+          "$value": "{govnl.font-size.250}"
         },
         "3xl": {
           "$type": "fontSizes",
-          "$value": "{dictu.font-size.300}"
+          "$value": "{govnl.font-size.300}"
         }
       },
       "font-weight": {
         "light": {
           "$type": "fontWeights",
-          "$value": "{dictu.font-weight.300}"
+          "$value": "{govnl.font-weight.300}"
         },
         "regular": {
           "$type": "fontWeights",
-          "$value": "{dictu.font-weight.400}"
+          "$value": "{govnl.font-weight.400}"
         },
         "semibold": {
           "$type": "fontWeights",
-          "$value": "{dictu.font-weight.550}"
+          "$value": "{govnl.font-weight.550}"
         },
         "bold": {
           "$type": "fontWeights",
-          "$value": "{dictu.font-weight.700}"
+          "$value": "{govnl.font-weight.700}"
         }
       },
       "line-height": {
         "xs": {
           "$type": "lineHeights",
-          "$value": "{dictu.line-height.100}"
+          "$value": "{govnl.line-height.100}"
         },
         "sm": {
           "$type": "lineHeights",
-          "$value": "{dictu.line-height.125}"
+          "$value": "{govnl.line-height.125}"
         },
         "md": {
           "$type": "lineHeights",
-          "$value": "{dictu.line-height.150}"
+          "$value": "{govnl.line-height.150}"
         },
         "lg": {
           "$type": "lineHeights",
-          "$value": "{dictu.line-height.200}"
+          "$value": "{govnl.line-height.200}"
         }
       },
       "border-radius": {
         "sm": {
           "$type": "borderRadius",
-          "$value": "{dictu.dimension.px.100}"
+          "$value": "{govnl.dimension.px.100}"
         },
         "md": {
           "$type": "borderRadius",
-          "$value": "{dictu.dimension.px.200}"
+          "$value": "{govnl.dimension.px.200}"
         },
         "lg": {
           "$type": "borderRadius",
-          "$value": "{dictu.dimension.px.400}"
+          "$value": "{govnl.dimension.px.400}"
         },
         "round": {
           "$type": "borderRadius",
@@ -941,96 +941,96 @@
       "border-width": {
         "sm": {
           "$type": "borderWidth",
-          "$value": "{dictu.dimension.px.25}"
+          "$value": "{govnl.dimension.px.25}"
         },
         "md": {
           "$type": "borderWidth",
-          "$value": "{dictu.dimension.px.50}"
+          "$value": "{govnl.dimension.px.50}"
         },
         "lg": {
           "$type": "borderWidth",
-          "$value": "{dictu.dimension.px.100}"
+          "$value": "{govnl.dimension.px.100}"
         }
       },
       "brand": {
         "primary": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.lintblauw.500}"
+            "$value": "{govnl.color.lintblauw.500}"
           },
           "subtle": {
             "color": {
               "$type": "color",
-              "$value": "{dictu.color.lintblauw.100}"
+              "$value": "{govnl.color.lintblauw.100}"
             }
           },
           "forte": {
             "color": {
               "$type": "color",
-              "$value": "{dictu.color.lintblauw.700}"
+              "$value": "{govnl.color.lintblauw.700}"
             }
           }
         },
         "accent-1": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.lichtblauw.500}"
+            "$value": "{govnl.color.lichtblauw.500}"
           }
         },
         "accent-2": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.oranje.500}"
+            "$value": "{govnl.color.oranje.500}"
           }
         }
       },
       "document": {
         "background-color": {
           "$type": "color",
-          "$value": "{dictu.color.white}"
+          "$value": "{govnl.color.white}"
         },
         "color": {
           "$type": "color",
-          "$value": "{dictu.color.grijs.900}"
+          "$value": "{govnl.color.grijs.900}"
         },
         "forte": {
           "background-color": {
             "$type": "color",
-            "$value": "{dictu.color.grijs.100}"
+            "$value": "{govnl.color.grijs.100}"
           }
         },
         "subtle": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.grijs.600}"
+            "$value": "{govnl.color.grijs.600}"
           }
         },
         "inverse": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.white}"
+            "$value": "{govnl.color.white}"
           },
           "background-color": {
             "$type": "color",
-            "$value": "{dictu.color.grijs.900}"
+            "$value": "{govnl.color.grijs.900}"
           }
         }
       },
       "line": {
         "border-color": {
           "$type": "color",
-          "$value": "{dictu.color.grijs.500}"
+          "$value": "{govnl.color.grijs.500}"
         },
         "subtle": {
           "border-color": {
             "$type": "color",
-            "$value": "{dictu.color.grijs.300}"
+            "$value": "{govnl.color.grijs.300}"
           }
         },
         "forte": {
           "border-color": {
             "$type": "color",
-            "$value": "{dictu.color.grijs.700}"
+            "$value": "{govnl.color.grijs.700}"
           }
         }
       }
@@ -1046,55 +1046,55 @@
           },
           "border-width": {
             "$type": "dimension",
-            "$value": "{dictu.border-width.25}"
+            "$value": "{govnl.border-width.25}"
           },
           "padding-block-end": {
             "$type": "dimension",
-            "$value": "{dictu.space.block.600}"
+            "$value": "{govnl.space.block.600}"
           },
           "padding-block-start": {
             "$type": "dimension",
-            "$value": "{dictu.space.block.600}"
+            "$value": "{govnl.space.block.600}"
           },
           "padding-inline-end": {
             "$type": "dimension",
-            "$value": "{dictu.space.inline.400}"
+            "$value": "{govnl.space.inline.400}"
           },
           "padding-inline-start": {
             "$type": "dimension",
-            "$value": "{dictu.space.inline.400}"
+            "$value": "{govnl.space.inline.400}"
           }
         },
         "button": {
           "gap": {
             "$type": "dimension",
-            "$value": "{dictu.space.text.200}"
+            "$value": "{govnl.space.text.200}"
           },
           "icon": {
             "size": {
               "$type": "dimension",
-              "$value": "{dictu.icon.functional.size}"
+              "$value": "{govnl.icon.functional.size}"
             }
           },
           "padding-block-end": {
             "$type": "dimension",
-            "$value": "{dictu.space.block.300}"
+            "$value": "{govnl.space.block.300}"
           },
           "padding-block-start": {
             "$type": "dimension",
-            "$value": "{dictu.space.block.300}"
+            "$value": "{govnl.space.block.300}"
           },
           "padding-inline-end": {
             "$type": "dimension",
-            "$value": "{dictu.space.inline.400}"
+            "$value": "{govnl.space.inline.400}"
           },
           "padding-inline-start": {
             "$type": "dimension",
-            "$value": "{dictu.space.inline.400}"
+            "$value": "{govnl.space.inline.400}"
           },
           "background-color": {
             "$type": "color",
-            "$value": "{dictu.color.gray.50}"
+            "$value": "{govnl.color.gray.50}"
           },
           "border-color": {
             "$type": "color",
@@ -1102,12 +1102,12 @@
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.interaction.color}"
+            "$value": "{govnl.interaction.color}"
           },
           "hover": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.color.gray.100}"
+              "$value": "{govnl.color.gray.100}"
             },
             "border-color": {
               "$type": "color",
@@ -1115,13 +1115,13 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.interaction.hover.color}"
+              "$value": "{govnl.interaction.hover.color}"
             }
           },
           "focus": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.focus.background-color}"
+              "$value": "{govnl.focus.background-color}"
             },
             "border-color": {
               "$type": "color",
@@ -1129,13 +1129,13 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.focus.color}"
+              "$value": "{govnl.focus.color}"
             }
           },
           "active": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.color.gray.200}"
+              "$value": "{govnl.color.gray.200}"
             },
             "border-color": {
               "$type": "color",
@@ -1143,12 +1143,12 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.interaction.active.color}"
+              "$value": "{govnl.interaction.active.color}"
             }
           },
           "border-width": {
             "$type": "dimension",
-            "$value": "{dictu.border-width.25}"
+            "$value": "{govnl.border-width.25}"
           },
           "border-radius": {
             "$type": "dimension",
@@ -1162,11 +1162,11 @@
         "section": {
           "border-width": {
             "$type": "dimension",
-            "$value": "{dictu.border-width.25}"
+            "$value": "{govnl.border-width.25}"
           },
           "border-color": {
             "$type": "color",
-            "$value": "{dictu.line.border-color}"
+            "$value": "{govnl.line.border-color}"
           }
         },
         "button": {
@@ -1180,7 +1180,7 @@
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{dictu.document.font-family1}"
+            "$value": "{govnl.document.font-family1}"
           },
           "font-weight": {
             "$type": "fontWeights",
@@ -1199,11 +1199,11 @@
       "breadcrumb-nav": {
         "column-gap": {
           "$type": "dimension",
-          "$value": "{dictu.space.column.200}"
+          "$value": "{govnl.space.column.200}"
         },
         "font-family": {
           "$type": "fontFamilies",
-          "$value": "{dictu.document.font-family1}"
+          "$value": "{govnl.document.font-family1}"
         },
         "font-size": {
           "$type": "fontSizes",
@@ -1221,20 +1221,20 @@
           "icon": {
             "column-gap": {
               "$type": "dimension",
-              "$value": "{dictu.space.text.100}"
+              "$value": "{govnl.space.text.100}"
             },
             "size": {
               "$type": "dimension",
-              "$value": "{dictu.icon.functional.size}"
+              "$value": "{govnl.icon.functional.size}"
             }
           },
           "padding-block-end": {
             "$type": "dimension",
-            "$value": "{dictu.space.block.300}"
+            "$value": "{govnl.space.block.300}"
           },
           "padding-block-start": {
             "$type": "dimension",
-            "$value": "{dictu.space.block.300}"
+            "$value": "{govnl.space.block.300}"
           },
           "padding-inline-end": {
             "$type": "dimension",
@@ -1246,12 +1246,12 @@
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.interaction.color}"
+            "$value": "{govnl.interaction.color}"
           },
           "active": {
             "color": {
               "$type": "color",
-              "$value": "{dictu.interaction.active.color}"
+              "$value": "{govnl.interaction.active.color}"
             },
             "text-decoration": {
               "$type": "textDecoration",
@@ -1261,11 +1261,11 @@
           "focus-visible": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.focus.background-color}"
+              "$value": "{govnl.focus.background-color}"
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.focus.color}"
+              "$value": "{govnl.focus.color}"
             },
             "text-decoration": {
               "$type": "textDecoration",
@@ -1275,7 +1275,7 @@
           "hover": {
             "color": {
               "$type": "color",
-              "$value": "{dictu.interaction.hover.color}"
+              "$value": "{govnl.interaction.hover.color}"
             },
             "text-decoration": {
               "$type": "textDecoration",
@@ -1285,7 +1285,7 @@
           "current": {
             "color": {
               "$type": "color",
-              "$value": "{dictu.document.subtle.color}"
+              "$value": "{govnl.document.subtle.color}"
             }
           },
           "text-decoration": {
@@ -1296,24 +1296,24 @@
         "separator": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.document.subtle.color}"
+            "$value": "{govnl.document.subtle.color}"
           },
           "size": {
             "$type": "dimension",
-            "$value": "{dictu.size.400}"
+            "$value": "{govnl.size.400}"
           }
         }
       }
     }
   },
   "components/button": {
-    "dictu": {
+    "govnl": {
       "button": {
         "primary-action": {
           "hover": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.brand.primary.forte.color}"
+              "$value": "{govnl.brand.primary.forte.color}"
             },
             "border-color": {
               "$type": "color",
@@ -1321,12 +1321,12 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.color.white}"
+              "$value": "{govnl.color.white}"
             }
           },
           "background-color": {
             "$type": "color",
-            "$value": "{dictu.brand.primary.color}"
+            "$value": "{govnl.brand.primary.color}"
           },
           "border-color": {
             "$type": "color",
@@ -1334,12 +1334,12 @@
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.white}"
+            "$value": "{govnl.color.white}"
           },
           "disabled": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.color.grijs.50}"
+              "$value": "{govnl.color.grijs.50}"
             },
             "border-color": {
               "$type": "color",
@@ -1347,13 +1347,13 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.color.grijs.500}"
+              "$value": "{govnl.color.grijs.500}"
             }
           },
           "focus": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.focus.background-color}"
+              "$value": "{govnl.focus.background-color}"
             },
             "border-color": {
               "$type": "color",
@@ -1361,13 +1361,13 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.focus.color}"
+              "$value": "{govnl.focus.color}"
             }
           },
           "active": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.brand.primary.forte.color}"
+              "$value": "{govnl.brand.primary.forte.color}"
             },
             "border-color": {
               "$type": "color",
@@ -1375,7 +1375,7 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.color.white}"
+              "$value": "{govnl.color.white}"
             }
           }
         },
@@ -1383,33 +1383,33 @@
           "hover": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.color.grijs.50}"
+              "$value": "{govnl.color.grijs.50}"
             },
             "border-color": {
               "$type": "color",
-              "$value": "{dictu.brand.primary.forte.color}"
+              "$value": "{govnl.brand.primary.forte.color}"
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.brand.primary.forte.color}"
+              "$value": "{govnl.brand.primary.forte.color}"
             }
           },
           "background-color": {
             "$type": "color",
-            "$value": "{dictu.color.white}"
+            "$value": "{govnl.color.white}"
           },
           "border-color": {
             "$type": "color",
-            "$value": "{dictu.brand.primary.color}"
+            "$value": "{govnl.brand.primary.color}"
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.brand.primary.color}"
+            "$value": "{govnl.brand.primary.color}"
           },
           "disabled": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.color.grijs.50}"
+              "$value": "{govnl.color.grijs.50}"
             },
             "border-color": {
               "$type": "color",
@@ -1417,13 +1417,13 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.color.grijs.500}"
+              "$value": "{govnl.color.grijs.500}"
             }
           },
           "focus": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.focus.background-color}"
+              "$value": "{govnl.focus.background-color}"
             },
             "border-color": {
               "$type": "color",
@@ -1431,21 +1431,21 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.focus.color}"
+              "$value": "{govnl.focus.color}"
             }
           },
           "active": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.color.grijs.100}"
+              "$value": "{govnl.color.grijs.100}"
             },
             "border-color": {
               "$type": "color",
-              "$value": "{dictu.brand.primary.forte.color}"
+              "$value": "{govnl.brand.primary.forte.color}"
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.brand.primary.forte.color}"
+              "$value": "{govnl.brand.primary.forte.color}"
             }
           }
         },
@@ -1461,7 +1461,7 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.brand.primary.forte.color}"
+              "$value": "{govnl.brand.primary.forte.color}"
             }
           },
           "background-color": {
@@ -1474,12 +1474,12 @@
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.brand.primary.color}"
+            "$value": "{govnl.brand.primary.color}"
           },
           "disabled": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.color.grijs.50}"
+              "$value": "{govnl.color.grijs.50}"
             },
             "border-color": {
               "$type": "color",
@@ -1487,13 +1487,13 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.color.grijs.500}"
+              "$value": "{govnl.color.grijs.500}"
             }
           },
           "focus": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.focus.background-color}"
+              "$value": "{govnl.focus.background-color}"
             },
             "border-color": {
               "$type": "color",
@@ -1501,7 +1501,7 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.focus.color}"
+              "$value": "{govnl.focus.color}"
             }
           },
           "active": {
@@ -1515,25 +1515,25 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.brand.primary.forte.color}"
+              "$value": "{govnl.brand.primary.forte.color}"
             }
           }
         },
         "font-family": {
           "$type": "fontFamilies",
-          "$value": "{dictu.font-family.primary}"
+          "$value": "{govnl.font-family.primary}"
         },
         "font-weight": {
           "$type": "fontWeights",
-          "$value": "{dictu.font-weight.semibold}"
+          "$value": "{govnl.font-weight.semibold}"
         },
         "font-size": {
           "$type": "fontSizes",
-          "$value": "{dictu.font-size.md}"
+          "$value": "{govnl.font-size.md}"
         },
         "line-height": {
           "$type": "lineHeights",
-          "$value": "{dictu.line-height.sm}"
+          "$value": "{govnl.line-height.sm}"
         },
         "icon-only": {
           "background-color": {
@@ -1546,12 +1546,12 @@
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.brand.primary.color}"
+            "$value": "{govnl.brand.primary.color}"
           },
           "hover": {
             "color": {
               "$type": "color",
-              "$value": "{dictu.brand.primary.forte.color}"
+              "$value": "{govnl.brand.primary.forte.color}"
             },
             "background-color": {
               "$type": "color",
@@ -1565,7 +1565,7 @@
           "active": {
             "color": {
               "$type": "color",
-              "$value": "{dictu.brand.primary.forte.color}"
+              "$value": "{govnl.brand.primary.forte.color}"
             },
             "border-color": {
               "$type": "color",
@@ -1579,7 +1579,7 @@
           "disabled": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.color.grijs.100}"
+              "$value": "{govnl.color.grijs.100}"
             },
             "border-color": {
               "$type": "color",
@@ -1587,13 +1587,13 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.color.grijs.500}"
+              "$value": "{govnl.color.grijs.500}"
             }
           },
           "focus": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.focus.background-color}"
+              "$value": "{govnl.focus.background-color}"
             },
             "border-color": {
               "$type": "color",
@@ -1601,51 +1601,51 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.focus.color}"
+              "$value": "{govnl.focus.color}"
             }
           }
         },
         "border-radius": {
           "$type": "dimension",
-          "$value": "{dictu.border-radius.md}"
+          "$value": "{govnl.border-radius.md}"
         },
         "border-width": {
           "$type": "dimension",
-          "$value": "{dictu.border-width.sm}"
+          "$value": "{govnl.border-width.sm}"
         },
         "icon": {
           "size": {
             "$type": "dimension",
-            "$value": "{dictu.icon.functional.size}"
+            "$value": "{govnl.icon.functional.size}"
           }
         },
         "padding-block-end": {
           "$type": "dimension",
-          "$value": "{dictu.space.block.300}"
+          "$value": "{govnl.space.block.300}"
         },
         "padding-block-start": {
           "$type": "dimension",
-          "$value": "{dictu.space.block.300}"
+          "$value": "{govnl.space.block.300}"
         },
         "padding-inline-end": {
           "$type": "dimension",
-          "$value": "{dictu.space.inline.400}"
+          "$value": "{govnl.space.inline.400}"
         },
         "padding-inline-start": {
           "$type": "dimension",
-          "$value": "{dictu.space.inline.400}"
+          "$value": "{govnl.space.inline.400}"
         },
         "min-block-size": {
           "$type": "dimension",
-          "$value": "{dictu.pointer-target.min-size}"
+          "$value": "{govnl.pointer-target.min-size}"
         },
         "min-inline-size": {
           "$type": "dimension",
-          "$value": "{dictu.pointer-target.min-size}"
+          "$value": "{govnl.pointer-target.min-size}"
         },
         "column-gap": {
           "$type": "dimension",
-          "$value": "{dictu.space.text.100}"
+          "$value": "{govnl.space.text.100}"
         }
       }
     }
@@ -1656,15 +1656,15 @@
         "level-1": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.heading.color}"
+            "$value": "{govnl.heading.color}"
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{dictu.heading.font-family1}"
+            "$value": "{govnl.heading.font-family1}"
           },
           "font-size": {
             "$type": "fontSizes",
-            "$value": "{dictu.typography.font-size.3xl}"
+            "$value": "{govnl.typography.font-size.3xl}"
           },
           "font-weight": {
             "$type": "fontWeights",
@@ -1672,21 +1672,21 @@
           },
           "line-height": {
             "$type": "lineHeights",
-            "$value": "{dictu.typography.line-height.sm}"
+            "$value": "{govnl.typography.line-height.sm}"
           }
         },
         "level-2": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.heading.color}"
+            "$value": "{govnl.heading.color}"
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{dictu.heading.font-family1}"
+            "$value": "{govnl.heading.font-family1}"
           },
           "font-size": {
             "$type": "fontSizes",
-            "$value": "{dictu.typography.font-size.2xl}"
+            "$value": "{govnl.typography.font-size.2xl}"
           },
           "font-weight": {
             "$type": "fontWeights",
@@ -1694,21 +1694,21 @@
           },
           "line-height": {
             "$type": "lineHeights",
-            "$value": "{dictu.typography.line-height.sm}"
+            "$value": "{govnl.typography.line-height.sm}"
           }
         },
         "level-3": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.heading.color}"
+            "$value": "{govnl.heading.color}"
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{dictu.heading.font-family1}"
+            "$value": "{govnl.heading.font-family1}"
           },
           "font-size": {
             "$type": "fontSizes",
-            "$value": "{dictu.typography.font-size.xl}"
+            "$value": "{govnl.typography.font-size.xl}"
           },
           "font-weight": {
             "$type": "fontWeights",
@@ -1716,21 +1716,21 @@
           },
           "line-height": {
             "$type": "lineHeights",
-            "$value": "{dictu.typography.line-height.sm}"
+            "$value": "{govnl.typography.line-height.sm}"
           }
         },
         "level-4": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.heading.color}"
+            "$value": "{govnl.heading.color}"
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{dictu.heading.font-family1}"
+            "$value": "{govnl.heading.font-family1}"
           },
           "font-size": {
             "$type": "fontSizes",
-            "$value": "{dictu.typography.font-size.lg}"
+            "$value": "{govnl.typography.font-size.lg}"
           },
           "font-weight": {
             "$type": "fontWeights",
@@ -1738,21 +1738,21 @@
           },
           "line-height": {
             "$type": "lineHeights",
-            "$value": "{dictu.typography.line-height.md}"
+            "$value": "{govnl.typography.line-height.md}"
           }
         },
         "level-5": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.heading.color}"
+            "$value": "{govnl.heading.color}"
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{dictu.heading.font-family1}"
+            "$value": "{govnl.heading.font-family1}"
           },
           "font-size": {
             "$type": "fontSizes",
-            "$value": "{dictu.typography.font-size.md}"
+            "$value": "{govnl.typography.font-size.md}"
           },
           "font-weight": {
             "$type": "fontWeights",
@@ -1760,21 +1760,21 @@
           },
           "line-height": {
             "$type": "lineHeights",
-            "$value": "{dictu.typography.line-height.md}"
+            "$value": "{govnl.typography.line-height.md}"
           }
         },
         "level-6": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.heading.color}"
+            "$value": "{govnl.heading.color}"
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{dictu.heading.font-family1}"
+            "$value": "{govnl.heading.font-family1}"
           },
           "font-size": {
             "$type": "fontSizes",
-            "$value": "{dictu.typography.font-size.sm}"
+            "$value": "{govnl.typography.font-size.sm}"
           },
           "font-weight": {
             "$type": "fontWeights",
@@ -1782,16 +1782,16 @@
           },
           "line-height": {
             "$type": "lineHeights",
-            "$value": "{dictu.typography.line-height.md}"
+            "$value": "{govnl.typography.line-height.md}"
           }
         }
       }
     },
-    "dictu": {
+    "govnl": {
       "heading-copy": {
         "color": {
           "$type": "color",
-          "$value": "{dictu.color.grijs.900}"
+          "$value": "{govnl.color.grijs.900}"
         }
       }
     }
@@ -1801,7 +1801,7 @@
       "icon": {
         "size": {
           "$type": "dimension",
-          "$value": "{dictu.size.600}"
+          "$value": "{govnl.size.600}"
         }
       }
     }
@@ -1811,11 +1811,11 @@
       "link": {
         "color": {
           "$type": "color",
-          "$value": "{dictu.interaction.color}"
+          "$value": "{govnl.interaction.color}"
         },
         "text-decoration-color": {
           "$type": "color",
-          "$value": "{dictu.interaction.color}"
+          "$value": "{govnl.interaction.color}"
         },
         "text-decoration-line": {
           "$type": "textDecoration",
@@ -1832,7 +1832,7 @@
         "active": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.interaction.active.color}"
+            "$value": "{govnl.interaction.active.color}"
           },
           "text-decoration-line": {
             "$type": "textDecoration",
@@ -1852,7 +1852,7 @@
         "disabled": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.color.grijs.500}"
+            "$value": "{govnl.color.grijs.500}"
           },
           "cursor": {
             "$type": "other",
@@ -1862,11 +1862,11 @@
         "focus-visible": {
           "background-color": {
             "$type": "color",
-            "$value": "{dictu.focus.background-color}"
+            "$value": "{govnl.focus.background-color}"
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.focus.color}"
+            "$value": "{govnl.focus.color}"
           },
           "text-decoration-line": {
             "$type": "textDecoration",
@@ -1880,7 +1880,7 @@
         "hover": {
           "color": {
             "$type": "color",
-            "$value": "{dictu.interaction.hover.color}"
+            "$value": "{govnl.interaction.hover.color}"
           },
           "text-decoration-line": {
             "$type": "textDecoration",
@@ -1899,7 +1899,7 @@
       "link-list": {
         "row-gap": {
           "$type": "dimension",
-          "$value": "{dictu.space.row.200}"
+          "$value": "{govnl.space.row.200}"
         },
         "icon": {
           "inset-block-start": {
@@ -1908,13 +1908,13 @@
           },
           "size": {
             "$type": "dimension",
-            "$value": "{dictu.icon.functional.size}"
+            "$value": "{govnl.icon.functional.size}"
           }
         },
         "link": {
           "column-gap": {
             "$type": "dimension",
-            "$value": "{dictu.space.block.200}"
+            "$value": "{govnl.space.block.200}"
           },
           "text-decoration": {
             "$type": "textDecoration",
@@ -1945,11 +1945,11 @@
       "nav-bar": {
         "background-color": {
           "$type": "color",
-          "$value": "{dictu.document.background-color}"
+          "$value": "{govnl.document.background-color}"
         },
         "color": {
           "$type": "color",
-          "$value": "{dictu.document.color}"
+          "$value": "{govnl.document.color}"
         },
         "content": {
           "max-inline-size": {
@@ -1960,59 +1960,59 @@
         "link": {
           "padding-block-end": {
             "$type": "dimension",
-            "$value": "{dictu.space.block.200}"
+            "$value": "{govnl.space.block.200}"
           },
           "padding-block-start": {
             "$type": "dimension",
-            "$value": "{dictu.space.block.200}"
+            "$value": "{govnl.space.block.200}"
           },
           "padding-inline-end": {
             "$type": "dimension",
-            "$value": "{dictu.space.inline.400}"
+            "$value": "{govnl.space.inline.400}"
           },
           "padding-inline-start": {
             "$type": "dimension",
-            "$value": "{dictu.space.inline.400}"
+            "$value": "{govnl.space.inline.400}"
           }
         }
       }
     }
   },
   "components/paragraph": {
-    "dictu": {
+    "govnl": {
       "paragraph": {
         "color": {
           "$type": "color",
-          "$value": "{dictu.document.color}"
+          "$value": "{govnl.document.color}"
         },
         "font-family": {
           "$type": "fontFamilies",
-          "$value": "{dictu.font-family.primary}"
+          "$value": "{govnl.font-family.primary}"
         },
         "font-size": {
           "$type": "fontSizes",
-          "$value": "{dictu.font-size.md}"
+          "$value": "{govnl.font-size.md}"
         },
         "font-weight": {
           "$type": "fontWeights",
-          "$value": "{dictu.font-weight.regular}"
+          "$value": "{govnl.font-weight.regular}"
         },
         "line-height": {
           "$type": "lineHeights",
-          "$value": "{dictu.line-height.md}"
+          "$value": "{govnl.line-height.md}"
         },
         "lead": {
           "font-size": {
             "$type": "fontSizes",
-            "$value": "{dictu.font-size.md}"
+            "$value": "{govnl.font-size.md}"
           },
           "font-weight": {
             "$type": "fontWeights",
-            "$value": "{dictu.font-weight.semibold}"
+            "$value": "{govnl.font-weight.semibold}"
           },
           "line-height": {
             "$type": "lineHeights",
-            "$value": "{dictu.line-height.md}"
+            "$value": "{govnl.line-height.md}"
           }
         }
       }
@@ -2023,15 +2023,15 @@
       "pre-heading": {
         "color": {
           "$type": "color",
-          "$value": "{dictu.document.color}"
+          "$value": "{govnl.document.color}"
         },
         "font-family": {
           "$type": "fontFamilies",
-          "$value": "{dictu.document.font-family1}"
+          "$value": "{govnl.document.font-family1}"
         },
         "font-size": {
           "$type": "fontSizes",
-          "$value": "{dictu.typography.font-size.sm}"
+          "$value": "{govnl.typography.font-size.sm}"
         },
         "font-weight": {
           "$type": "fontWeights",
@@ -2049,11 +2049,11 @@
       "skip-link": {
         "background-color": {
           "$type": "color",
-          "$value": "{dictu.document.inverse.background-color}"
+          "$value": "{govnl.document.inverse.background-color}"
         },
         "color": {
           "$type": "color",
-          "$value": "{dictu.document.inverse.color}"
+          "$value": "{govnl.document.inverse.color}"
         },
         "font-size": {
           "$type": "fontSizes",
@@ -2061,19 +2061,19 @@
         },
         "padding-block": {
           "$type": "dimension",
-          "$value": "{dictu.space.block.300}"
+          "$value": "{govnl.space.block.300}"
         },
         "padding-inline": {
           "$type": "dimension",
-          "$value": "{dictu.space.inline.400}"
+          "$value": "{govnl.space.inline.400}"
         },
         "min-block-size": {
           "$type": "dimension",
-          "$value": "{dictu.pointer-target.min-size}"
+          "$value": "{govnl.pointer-target.min-size}"
         },
         "min-inline-size": {
           "$type": "dimension",
-          "$value": "{dictu.pointer-target.min-size}"
+          "$value": "{govnl.pointer-target.min-size}"
         },
         "text-decoration-thickness": {
           "$type": "other",
