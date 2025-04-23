@@ -1313,7 +1313,7 @@
           "hover": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.interaction.hover.color}"
+              "$value": "{dictu.brand.primary.forte.color}"
             },
             "border-color": {
               "$type": "color",
@@ -1326,7 +1326,7 @@
           },
           "background-color": {
             "$type": "color",
-            "$value": "{dictu.interaction.color}"
+            "$value": "{dictu.brand.primary.color}"
           },
           "border-color": {
             "$type": "color",
@@ -1367,7 +1367,7 @@
           "active": {
             "background-color": {
               "$type": "color",
-              "$value": "{dictu.interaction.active.color}"
+              "$value": "{dictu.brand.primary.forte.color}"
             },
             "border-color": {
               "$type": "color",
@@ -1387,11 +1387,11 @@
             },
             "border-color": {
               "$type": "color",
-              "$value": "{dictu.interaction.hover.color}"
+              "$value": "{dictu.brand.primary.forte.color}"
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.interaction.hover.color}"
+              "$value": "{dictu.brand.primary.forte.color}"
             }
           },
           "background-color": {
@@ -1400,11 +1400,11 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "{dictu.interaction.color}"
+            "$value": "{dictu.brand.primary.color}"
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.interaction.color}"
+            "$value": "{dictu.brand.primary.color}"
           },
           "disabled": {
             "background-color": {
@@ -1441,11 +1441,11 @@
             },
             "border-color": {
               "$type": "color",
-              "$value": "{dictu.interaction.active.color}"
+              "$value": "{dictu.brand.primary.forte.color}"
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.interaction.active.color}"
+              "$value": "{dictu.brand.primary.forte.color}"
             }
           }
         },
@@ -1461,7 +1461,7 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.interaction.hover.color}"
+              "$value": "{dictu.brand.primary.forte.color}"
             }
           },
           "background-color": {
@@ -1474,7 +1474,7 @@
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.interaction.color}"
+            "$value": "{dictu.brand.primary.color}"
           },
           "disabled": {
             "background-color": {
@@ -1515,7 +1515,7 @@
             },
             "color": {
               "$type": "color",
-              "$value": "{dictu.interaction.active.color}"
+              "$value": "{dictu.brand.primary.forte.color}"
             }
           }
         },
@@ -1546,12 +1546,12 @@
           },
           "color": {
             "$type": "color",
-            "$value": "{dictu.interaction.color}"
+            "$value": "{dictu.brand.primary.color}"
           },
           "hover": {
             "color": {
               "$type": "color",
-              "$value": "{dictu.interaction.hover.color}"
+              "$value": "{dictu.brand.primary.forte.color}"
             },
             "background-color": {
               "$type": "color",
@@ -1565,7 +1565,7 @@
           "active": {
             "color": {
               "$type": "color",
-              "$value": "{dictu.interaction.active.color}"
+              "$value": "{dictu.brand.primary.forte.color}"
             },
             "border-color": {
               "$type": "color",
