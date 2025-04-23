@@ -752,152 +752,6 @@
   },
   "common": {
     "dictu": {
-      "document": {
-        "background-color": {
-          "$type": "color",
-          "$value": "{dictu.color.white}"
-        },
-        "color": {
-          "$type": "color",
-          "$value": "{dictu.color.grijs.900}"
-        },
-        "inverse": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.900}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.white}"
-          }
-        },
-        "subtle": {
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.600}"
-          }
-        }
-      },
-      "form-control": {
-        "background-color": {
-          "$type": "color",
-          "$value": "{dictu.color.white}"
-        },
-        "border-color": {
-          "$type": "color",
-          "$value": "{dictu.color.grijs.500}"
-        },
-        "color": {
-          "$type": "color",
-          "$value": "{dictu.color.grijs.900}"
-        },
-        "disabled": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.50}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.500}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.500}"
-          },
-          "accent-color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.500}"
-          }
-        },
-        "focus": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{dictu.color.white}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "{dictu.color.black}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.black}"
-          }
-        },
-        "invalid": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{dictu.color.white}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "{dictu.feedback.negative.border-color}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.feedback.negative.color}"
-          }
-        },
-        "read-only": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.50}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "transparent"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.900}"
-          }
-        },
-        "placeholder": {
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.600}"
-          }
-        },
-        "active": {
-          "accent-color": {
-            "$type": "color",
-            "$value": "{dictu.interaction.active.color}"
-          },
-          "background-color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.100}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.500}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.900}"
-          }
-        },
-        "hover": {
-          "accent-color": {
-            "$type": "color",
-            "$value": "{dictu.interaction.hover.color}"
-          },
-          "background-color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.50}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.500}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.grijs.900}"
-          }
-        },
-        "accent-color": {
-          "$type": "color",
-          "$value": "{dictu.interaction.color}"
-        }
-      },
       "focus": {
         "background-color": {
           "$type": "color",
@@ -988,36 +842,6 @@
         "background-color": {
           "$type": "color",
           "$value": "{dictu.color.grijs.50}"
-        }
-      },
-      "container": {
-        "border-color": {
-          "$type": "color",
-          "$value": "{dictu.color.grijs.300}"
-        }
-      },
-      "line": {
-        "border-color": {
-          "$type": "color",
-          "$value": "{dictu.color.grijs.300}"
-        }
-      },
-      "interaction": {
-        "color": {
-          "$type": "color",
-          "$value": "{dictu.color.lintblauw.500}"
-        },
-        "active": {
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.lintblauw.700}"
-          }
-        },
-        "hover": {
-          "color": {
-            "$type": "color",
-            "$value": "{dictu.color.lintblauw.700}"
-          }
         }
       },
       "font-family": {
@@ -1128,10 +952,86 @@
           "$value": "{dictu.dimension.px.100}"
         }
       },
-      "heading-copy": {
+      "brand": {
+        "primary": {
+          "color": {
+            "$type": "color",
+            "$value": "{dictu.color.lintblauw.500}"
+          },
+          "subtle": {
+            "color": {
+              "$type": "color",
+              "$value": "{dictu.color.lintblauw.100}"
+            }
+          },
+          "forte": {
+            "color": {
+              "$type": "color",
+              "$value": "{dictu.color.lintblauw.700}"
+            }
+          }
+        },
+        "accent-1": {
+          "color": {
+            "$type": "color",
+            "$value": "{dictu.color.lichtblauw.500}"
+          }
+        },
+        "accent-2": {
+          "color": {
+            "$type": "color",
+            "$value": "{dictu.color.oranje.500}"
+          }
+        }
+      },
+      "document": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{dictu.color.white}"
+        },
         "color": {
           "$type": "color",
           "$value": "{dictu.color.grijs.900}"
+        },
+        "forte": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{dictu.color.grijs.100}"
+          }
+        },
+        "subtle": {
+          "color": {
+            "$type": "color",
+            "$value": "{dictu.color.grijs.600}"
+          }
+        },
+        "inverse": {
+          "color": {
+            "$type": "color",
+            "$value": "{dictu.color.white}"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": "{dictu.color.grijs.900}"
+          }
+        }
+      },
+      "line": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{dictu.color.grijs.500}"
+        },
+        "subtle": {
+          "border-color": {
+            "$type": "color",
+            "$value": "{dictu.color.grijs.300}"
+          }
+        },
+        "forte": {
+          "border-color": {
+            "$type": "color",
+            "$value": "{dictu.color.grijs.700}"
+          }
         }
       }
     }
