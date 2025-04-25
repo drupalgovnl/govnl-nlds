@@ -658,7 +658,7 @@
         "rem": {
           "125": {
             "$type": "dimension",
-            "$value": "0.125rem"
+            "$value": "0.125rem or 1px"
           },
           "250": {
             "$type": "dimension",
@@ -956,7 +956,7 @@
         "primary": {
           "color": {
             "$type": "color",
-            "$value": "{govnl.color.lintblauw.500}"
+            "$value": "{govnl.color.robijnrood.500}"
           },
           "subtle": {
             "color": {
@@ -993,12 +993,6 @@
           "$type": "color",
           "$value": "{govnl.color.grijs.900}"
         },
-        "forte": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{govnl.color.grijs.100}"
-          }
-        },
         "subtle": {
           "color": {
             "$type": "color",
@@ -1006,13 +1000,13 @@
           }
         },
         "inverse": {
-          "color": {
-            "$type": "color",
-            "$value": "{govnl.color.white}"
-          },
           "background-color": {
             "$type": "color",
             "$value": "{govnl.color.grijs.900}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
           }
         }
       },
@@ -1027,10 +1021,92 @@
             "$value": "{govnl.color.grijs.300}"
           }
         },
-        "forte": {
+        "strong": {
           "border-color": {
             "$type": "color",
             "$value": "{govnl.color.grijs.700}"
+          }
+        }
+      },
+      "heading": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.500}"
+        }
+      },
+      "form-control": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.color.white}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.500}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.900}"
+        },
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.50}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.500}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.500}"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.color.black}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.black}"
+          }
+        },
+        "invalid": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.feedback.negative.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.feedback.negative.color}"
+          }
+        },
+        "read-only": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.50}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.900}"
+          }
+        },
+        "placeholder": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.600}"
           }
         }
       }
