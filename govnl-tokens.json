@@ -37,7 +37,11 @@
           },
           "700": {
             "$type": "color",
-            "$value": "#10345c"
+            "$value": "#0f3156"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#0a2139"
           }
         },
         "grijs": {
@@ -106,6 +110,14 @@
           "500": {
             "$type": "color",
             "$value": "#42145F"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#310f47"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#200a2f"
           }
         },
         "violet": {
@@ -132,6 +144,14 @@
           "500": {
             "$type": "color",
             "$value": "#a90061"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#7e0048"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#540030"
           }
         },
         "robijnrood": {
@@ -157,7 +177,15 @@
           },
           "500": {
             "$type": "color",
-            "$value": "#CA005D"
+            "$value": "#ca005d"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#970045"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#65002e"
           }
         },
         "roze": {
@@ -184,6 +212,14 @@
           "500": {
             "$type": "color",
             "$value": "#F092CD"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#e43da6"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#a91773"
           }
         },
         "rood": {
@@ -210,6 +246,14 @@
           "500": {
             "$type": "color",
             "$value": "#D52B1E"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#9f2016"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#6a150f"
           }
         },
         "oranje": {
@@ -236,6 +280,14 @@
           "500": {
             "$type": "color",
             "$value": "#E17000"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#a85400"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#703800"
           }
         },
         "donkergeel": {
@@ -262,6 +314,14 @@
           "500": {
             "$type": "color",
             "$value": "#FFB612"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#cc8d00"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#885e00"
           }
         },
         "geel": {
@@ -288,6 +348,14 @@
           "500": {
             "$type": "color",
             "$value": "#F9E11E"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#cbb605"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#877903"
           }
         },
         "donkerbruin": {
@@ -314,6 +382,14 @@
           "500": {
             "$type": "color",
             "$value": "#673327"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#4d261d"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#331913"
           }
         },
         "bruin": {
@@ -340,6 +416,14 @@
           "500": {
             "$type": "color",
             "$value": "#94710A"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#6f5407"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#4a3804"
           }
         },
         "donkergroen": {
@@ -366,6 +450,14 @@
           "500": {
             "$type": "color",
             "$value": "#275937"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#1d4229"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#132c1b"
           }
         },
         "groen": {
@@ -392,6 +484,14 @@
           "500": {
             "$type": "color",
             "$value": "#39870C"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#2a6508"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#1c4305"
           }
         },
         "mosgroen": {
@@ -418,6 +518,14 @@
           "500": {
             "$type": "color",
             "$value": "#777B00"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#595c00"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#3b3d00"
           }
         },
         "mintgroen": {
@@ -444,6 +552,14 @@
           "500": {
             "$type": "color",
             "$value": "#76D2B6"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#3cb993"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#287b62"
           }
         },
         "donkerblauw": {
@@ -470,6 +586,14 @@
           "500": {
             "$type": "color",
             "$value": "#01689B"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#004e74"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#00344d"
           }
         },
         "hemelblauw": {
@@ -496,6 +620,14 @@
           "500": {
             "$type": "color",
             "$value": "#007BC7"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#005c95"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#003d63"
           }
         },
         "lichtblauw": {
@@ -522,6 +654,14 @@
           "500": {
             "$type": "color",
             "$value": "#8FCAE7"
+          },
+          "700": {
+            "$type": "color",
+            "$value": "#42a5d6"
+          },
+          "900": {
+            "$type": "color",
+            "$value": "#20729a"
           }
         }
       },
@@ -762,18 +902,12 @@
         "primary": {
           "color": {
             "$type": "color",
-            "$value": "{govnl.color.robijnrood.500}"
+            "$value": "{govnl.color.lintblauw.500}"
           },
           "subtle": {
             "color": {
               "$type": "color",
               "$value": "{govnl.color.lintblauw.100}"
-            }
-          },
-          "forte": {
-            "color": {
-              "$type": "color",
-              "$value": "{govnl.color.lintblauw.700}"
             }
           }
         },
@@ -1108,6 +1242,24 @@
         "lg": {
           "$type": "borderWidth",
           "$value": "{govnl.dimension.px.100}"
+        }
+      },
+      "interaction": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.500}"
+        },
+        "active": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.lintblauw.900}"
+          }
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.lintblauw.700}"
+          }
         }
       }
     }
