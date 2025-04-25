@@ -972,6 +972,50 @@
         "color": {
           "$type": "color",
           "$value": "{govnl.color.lintblauw.500}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.font-family.sans}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.font-weight.700}"
+        },
+        "level-1": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.300}"
+          }
+        },
+        "level-2": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.250}"
+          }
+        },
+        "level-3": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.200}"
+          }
+        },
+        "level-4": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.150}"
+          }
+        },
+        "level-5": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.125}"
+          }
+        },
+        "level-6": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.112}"
+          }
         }
       },
       "form-control": {
@@ -1154,80 +1198,36 @@
           }
         }
       },
-      "font-family": {
-        "primary": {
+      "body": {
+        "font-family": {
           "$type": "fontFamilies",
           "$value": "{govnl.font-family.sans}"
         },
-        "secondary": {
-          "$type": "fontFamilies",
-          "$value": "{govnl.font-family.serif}"
-        }
-      },
-      "font-size": {
-        "xs": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.75}"
+        "strong": {
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{govnl.font-weight.550}"
+          }
         },
-        "sm": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.100}"
+        "default": {
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{govnl.font-weight.400}"
+          }
         },
-        "md": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.112}"
-        },
-        "lg": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.125}"
-        },
-        "xl": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.200}"
-        },
-        "2xl": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.250}"
-        },
-        "3xl": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.300}"
-        }
-      },
-      "font-weight": {
-        "light": {
-          "$type": "fontWeights",
-          "$value": "{govnl.font-weight.300}"
-        },
-        "regular": {
-          "$type": "fontWeights",
-          "$value": "{govnl.font-weight.400}"
-        },
-        "semibold": {
-          "$type": "fontWeights",
-          "$value": "{govnl.font-weight.550}"
-        },
-        "bold": {
-          "$type": "fontWeights",
-          "$value": "{govnl.font-weight.700}"
-        }
-      },
-      "line-height": {
-        "xs": {
-          "$type": "lineHeights",
-          "$value": "{govnl.line-height.100}"
-        },
-        "sm": {
-          "$type": "lineHeights",
-          "$value": "{govnl.line-height.125}"
-        },
-        "md": {
-          "$type": "lineHeights",
-          "$value": "{govnl.line-height.150}"
-        },
-        "lg": {
-          "$type": "lineHeights",
-          "$value": "{govnl.line-height.200}"
+        "font-size": {
+          "sm": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.75}"
+          },
+          "md": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.112}"
+          },
+          "lg": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.125}"
+          }
         }
       },
       "border-radius": {
@@ -1260,6 +1260,16 @@
         "lg": {
           "$type": "borderWidth",
           "$value": "{govnl.dimension.px.100}"
+        }
+      },
+      "quote": {
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.font-family.serif}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.font-weight.400}"
         }
       }
     }
@@ -1747,22 +1757,6 @@
             }
           }
         },
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{govnl.font-family.primary}"
-        },
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{govnl.font-weight.semibold}"
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.md}"
-        },
-        "line-height": {
-          "$type": "lineHeights",
-          "$value": "{govnl.line-height.sm}"
-        },
         "icon-only": {
           "background-color": {
             "$type": "color",
@@ -2215,7 +2209,7 @@
         },
         "font-family": {
           "$type": "fontFamilies",
-          "$value": "{govnl.font-family.primary}"
+          "$value": "{govnl.body.font-family}"
         },
         "font-size": {
           "$type": "fontSizes",
