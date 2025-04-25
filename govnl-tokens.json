@@ -1050,6 +1050,24 @@
           }
         }
       },
+      "interaction": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.500}"
+        },
+        "active": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.lintblauw.900}"
+          }
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.lintblauw.700}"
+          }
+        }
+      },
       "focus": {
         "background-color": {
           "$type": "color",
@@ -1242,24 +1260,6 @@
         "lg": {
           "$type": "borderWidth",
           "$value": "{govnl.dimension.px.100}"
-        }
-      },
-      "interaction": {
-        "color": {
-          "$type": "color",
-          "$value": "{govnl.color.lintblauw.500}"
-        },
-        "active": {
-          "color": {
-            "$type": "color",
-            "$value": "{govnl.color.lintblauw.900}"
-          }
-        },
-        "hover": {
-          "color": {
-            "$type": "color",
-            "$value": "{govnl.color.lintblauw.700}"
-          }
         }
       }
     }
