@@ -816,6 +816,10 @@
             "$type": "dimension",
             "$value": "1rem"
           },
+          "1125": {
+            "$type": "dimension",
+            "$value": "1.125rem"
+          },
           "1500": {
             "$type": "dimension",
             "$value": "1.5rem"
@@ -823,6 +827,10 @@
           "2000": {
             "$type": "dimension",
             "$value": "2rem"
+          },
+          "2500": {
+            "$type": "dimension",
+            "$value": "2.5rem"
           },
           "3000": {
             "$type": "dimension",
@@ -1270,6 +1278,152 @@
         "font-weight": {
           "$type": "fontWeights",
           "$value": "{govnl.font-weight.400}"
+        }
+      },
+      "icon": {
+        "functional": {
+          "sm": {
+            "$type": "sizing",
+            "$value": "{govnl.dimension.rem.1000}"
+          },
+          "md": {
+            "$type": "sizing",
+            "$value": "{govnl.dimension.rem.1125}"
+          },
+          "lg": {
+            "$type": "sizing",
+            "$value": "{govnl.dimension.rem.1500}"
+          }
+        },
+        "toptask": {
+          "sm": {
+            "$type": "sizing",
+            "$value": "{govnl.dimension.rem.1500}"
+          },
+          "md": {
+            "$type": "sizing",
+            "$value": "{govnl.dimension.rem.2500}"
+          },
+          "lg": {
+            "$type": "sizing",
+            "$value": "{govnl.dimension.rem.3000}"
+          }
+        }
+      },
+      "pointer-target": {
+        "min-size": {
+          "$type": "sizing",
+          "$value": "{govnl.dimension.px.1200}"
+        }
+      },
+      "padding-inline-end": {
+        "xs": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.100}"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.200}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.400}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.600}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.800}"
+        }
+      },
+      "padding-inline-start": {
+        "xs": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.100}"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.200}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.400}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.600}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.800}"
+        }
+      },
+      "padding-black-start": {
+        "xs": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.100}"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.200}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.400}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.600}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.800}"
+        }
+      },
+      "padding-block-start": {
+        "xs": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.100}"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.200}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.400}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.600}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.800}"
+        }
+      },
+      "margin": {
+        "none": {
+          "$type": "spacing",
+          "$value": "0px"
+        },
+        "xs": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.200}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.600}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.800}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.1600}"
         }
       }
     }
