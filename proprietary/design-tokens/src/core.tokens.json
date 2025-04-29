@@ -855,19 +855,19 @@
       "content": {
         "xs": {
           "$type": "dimension",
-          "value": "25ch"
+          "$value": "25ch"
         },
         "sm": {
           "$type": "dimension",
-          "value": "40ch"
+          "$value": "40ch"
         },
         "md": {
           "$type": "dimension",
-          "value": "55ch"
+          "$value": "55ch"
         },
         "lg": {
           "$type": "dimension",
-          "value": "70ch"
+          "$value": "70ch"
         }
       }
     }
