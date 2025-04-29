@@ -851,6 +851,24 @@
           "$type": "dimension",
           "$value": "10rem"
         }
+      },
+      "content": {
+        "xs": {
+          "$type": "dimension",
+          "value": "25ch"
+        },
+        "sm": {
+          "$type": "dimension",
+          "value": "40ch"
+        },
+        "md": {
+          "$type": "dimension",
+          "value": "55ch"
+        },
+        "lg": {
+          "$type": "dimension",
+          "value": "70ch"
+        }
       }
     }
   }
