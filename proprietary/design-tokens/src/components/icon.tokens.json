@@ -1,0 +1,12 @@
+{
+  "components/icon": {
+    "utrecht": {
+      "icon": {
+        "size": {
+          "$type": "dimension",
+          "$value": "{govnl.size.600}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "components/paragraph": {
+    "govnl": {
+      "paragraph": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.document.color}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.body.font-family}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{govnl.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.font-weight.regular}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{govnl.line-height.md}"
+        },
+        "lead": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.md}"
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{govnl.font-weight.semibold}"
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": "{govnl.line-height.md}"
+          }
+        }
+      }
+    }
+  }
+}

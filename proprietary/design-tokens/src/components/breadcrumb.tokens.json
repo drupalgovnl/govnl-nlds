@@ -1,0 +1,114 @@
+{
+  "components/breadcrumb-nav": {
+    "todo": {
+      "breadcrumb-nav": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{govnl.space.column.200}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.document.font-family1}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{utrecht.document.font-size}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{utrecht.document.font-weight}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{utrecht.document.line-height}"
+        },
+        "link": {
+          "icon": {
+            "column-gap": {
+              "$type": "dimension",
+              "$value": "{govnl.space.text.100}"
+            },
+            "size": {
+              "$type": "dimension",
+              "$value": "{govnl.icon.functional.size}"
+            }
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.block.300}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.block.300}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "0px"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "0px"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.interaction.color}"
+          },
+          "active": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.interaction.active.color}"
+            },
+            "text-decoration": {
+              "$type": "textDecoration",
+              "$value": "None"
+            }
+          },
+          "focus-visible": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{govnl.focus.background-color}"
+            },
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.focus.color}"
+            },
+            "text-decoration": {
+              "$type": "textDecoration",
+              "$value": "None"
+            }
+          },
+          "hover": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.interaction.hover.color}"
+            },
+            "text-decoration": {
+              "$type": "textDecoration",
+              "$value": "None"
+            }
+          },
+          "current": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.document.subtle.color}"
+            }
+          },
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          }
+        },
+        "separator": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.subtle.color}"
+          },
+          "size": {
+            "$type": "dimension",
+            "$value": "{govnl.size.400}"
+          }
+        }
+      }
+    }
+  }
+}

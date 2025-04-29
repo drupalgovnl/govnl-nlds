@@ -1,0 +1,532 @@
+{
+  "common": {
+    "govnl": {
+      "root": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.50}"
+        }
+      },
+      "brand": {
+        "primary": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.lintblauw.500}"
+          },
+          "subtle": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.color.lintblauw.100}"
+            }
+          }
+        },
+        "accent-1": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.lichtblauw.500}"
+          }
+        },
+        "accent-2": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.oranje.500}"
+          }
+        }
+      },
+      "document": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.color.white}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.900}"
+        },
+        "subtle": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.600}"
+          }
+        },
+        "inverse": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.900}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          }
+        }
+      },
+      "line": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.500}"
+        },
+        "subtle": {
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.300}"
+          }
+        },
+        "strong": {
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.700}"
+          }
+        }
+      },
+      "heading": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.500}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.font-family.sans}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.font-weight.700}"
+        },
+        "level-1": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.300}"
+          }
+        },
+        "level-2": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.250}"
+          }
+        },
+        "level-3": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.200}"
+          }
+        },
+        "level-4": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.150}"
+          }
+        },
+        "level-5": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.125}"
+          }
+        },
+        "level-6": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.112}"
+          }
+        }
+      },
+      "form-control": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.color.white}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.500}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.900}"
+        },
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.50}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.500}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.500}"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.color.black}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.black}"
+          }
+        },
+        "invalid": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.feedback.negative.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.feedback.negative.color}"
+          }
+        },
+        "read-only": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.50}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.900}"
+          }
+        },
+        "placeholder": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.600}"
+          }
+        }
+      },
+      "interaction": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.500}"
+        },
+        "active": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.lintblauw.900}"
+          }
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.lintblauw.700}"
+          }
+        }
+      },
+      "focus": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.color.geel.500}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.black}"
+        },
+        "outline-color": {
+          "$type": "color",
+          "$value": "{govnl.color.violet.500}"
+        },
+        "inverse": {
+          "outline-color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          }
+        },
+        "outline-offset": {
+          "$type": "other",
+          "$value": "0"
+        },
+        "outline-style": {
+          "$type": "other",
+          "$value": "dotted"
+        }
+      },
+      "feedback": {
+        "warning": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.geel.100}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.color.bruin.500}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.bruin.500}"
+          }
+        },
+        "informative": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.hemelblauw.50}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.color.hemelblauw.500}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.hemelblauw.500}"
+          }
+        },
+        "negative": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.rood.50}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.color.rood.500}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.rood.500}"
+          }
+        },
+        "positive": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.groen.50}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.color.groen.500}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.groen.500}"
+          }
+        }
+      },
+      "body": {
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.font-family.sans}"
+        },
+        "strong": {
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{govnl.font-weight.550}"
+          }
+        },
+        "default": {
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{govnl.font-weight.400}"
+          }
+        },
+        "font-size": {
+          "sm": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.75}"
+          },
+          "md": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.112}"
+          },
+          "lg": {
+            "$type": "fontSizes",
+            "$value": "{govnl.font-size.125}"
+          }
+        }
+      },
+      "border-radius": {
+        "sm": {
+          "$type": "borderRadius",
+          "$value": "{govnl.dimension.px.100}"
+        },
+        "md": {
+          "$type": "borderRadius",
+          "$value": "{govnl.dimension.px.200}"
+        },
+        "lg": {
+          "$type": "borderRadius",
+          "$value": "{govnl.dimension.px.400}"
+        },
+        "round": {
+          "$type": "borderRadius",
+          "$value": "999px"
+        }
+      },
+      "border-width": {
+        "sm": {
+          "$type": "borderWidth",
+          "$value": "{govnl.dimension.px.25}"
+        },
+        "md": {
+          "$type": "borderWidth",
+          "$value": "{govnl.dimension.px.50}"
+        },
+        "lg": {
+          "$type": "borderWidth",
+          "$value": "{govnl.dimension.px.100}"
+        }
+      },
+      "quote": {
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.font-family.serif}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.font-weight.400}"
+        }
+      },
+      "icon": {
+        "functional": {
+          "sm": {
+            "$type": "sizing",
+            "$value": "{govnl.dimension.rem.1000}"
+          },
+          "md": {
+            "$type": "sizing",
+            "$value": "{govnl.dimension.rem.1125}"
+          },
+          "lg": {
+            "$type": "sizing",
+            "$value": "{govnl.dimension.rem.1500}"
+          }
+        },
+        "toptask": {
+          "sm": {
+            "$type": "sizing",
+            "$value": "{govnl.dimension.rem.1500}"
+          },
+          "md": {
+            "$type": "sizing",
+            "$value": "{govnl.dimension.rem.2500}"
+          },
+          "lg": {
+            "$type": "sizing",
+            "$value": "{govnl.dimension.rem.3000}"
+          }
+        }
+      },
+      "pointer-target": {
+        "min-size": {
+          "$type": "sizing",
+          "$value": "{govnl.dimension.px.1200}"
+        }
+      },
+      "padding-inline-end": {
+        "xs": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.100}"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.200}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.400}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.600}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.800}"
+        }
+      },
+      "padding-inline-start": {
+        "xs": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.100}"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.200}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.400}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.600}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.800}"
+        }
+      },
+      "padding-black-start": {
+        "xs": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.100}"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.200}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.400}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.600}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.800}"
+        }
+      },
+      "padding-block-start": {
+        "xs": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.100}"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.200}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.400}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.600}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.800}"
+        }
+      },
+      "margin": {
+        "none": {
+          "$type": "spacing",
+          "$value": "0px"
+        },
+        "xs": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.200}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.600}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.800}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{govnl.dimension.px.1600}"
+        }
+      }
+    }
+  }
+}

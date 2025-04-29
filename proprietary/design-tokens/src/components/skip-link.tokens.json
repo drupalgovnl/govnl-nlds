@@ -1,0 +1,44 @@
+{
+  "components/skip-link": {
+    "nl": {
+      "skip-link": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.document.inverse.background-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.document.inverse.color}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{utrecht.document.font-size}"
+        },
+        "padding-block": {
+          "$type": "dimension",
+          "$value": "{govnl.space.block.300}"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{govnl.space.inline.400}"
+        },
+        "min-block-size": {
+          "$type": "dimension",
+          "$value": "{govnl.pointer-target.min-size}"
+        },
+        "min-inline-size": {
+          "$type": "dimension",
+          "$value": "{govnl.pointer-target.min-size}"
+        },
+        "text-decoration-thickness": {
+          "$type": "other",
+          "$value": "1px"
+        },
+        "text-underline-offset": {
+          "$type": "other",
+          "$value": "1px"
+        }
+      }
+    }
+  }
+}
