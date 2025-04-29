@@ -1,0 +1,160 @@
+{
+  "accordion": {
+    "utrecht": {
+      "accordion": {
+        "panel": {
+          "border-color": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{govnl.border-width.25}"
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.block.600}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.block.600}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.inline.400}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.inline.400}"
+          }
+        },
+        "button": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{govnl.space.text.200}"
+          },
+          "icon": {
+            "size": {
+              "$type": "dimension",
+              "$value": "{govnl.icon.functional.size}"
+            }
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.block.300}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.block.300}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.inline.400}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.inline.400}"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.gray.50}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.interaction.color}"
+          },
+          "hover": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{govnl.color.gray.100}"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "transparent"
+            },
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.interaction.hover.color}"
+            }
+          },
+          "focus": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{govnl.focus.background-color}"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "transparent"
+            },
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.focus.color}"
+            }
+          },
+          "active": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{govnl.color.gray.200}"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "transparent"
+            },
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.interaction.active.color}"
+            }
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{govnl.border-width.25}"
+          },
+          "border-radius": {
+            "$type": "dimension",
+            "$value": "0px"
+          }
+        }
+      }
+    },
+    "todo": {
+      "accordion": {
+        "section": {
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{govnl.border-width.25}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.line.border-color}"
+          }
+        },
+        "button": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{utrecht.document.font-size}"
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": "{utrecht.document.line-height}"
+          },
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": "{govnl.document.font-family1}"
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{voorbeeld.document.strong.font-weight}"
+          }
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "0"
+        }
+      }
+    }
+  }
+}

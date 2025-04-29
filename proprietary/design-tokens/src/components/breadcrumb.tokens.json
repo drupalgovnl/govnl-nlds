@@ -1,5 +1,5 @@
 {
-  "components/breadcrumb-nav": {
+  "breadcrumb-nav": {
     "todo": {
       "breadcrumb-nav": {
         "column-gap": {
