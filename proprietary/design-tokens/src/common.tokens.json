@@ -41,6 +41,28 @@
         "$type": "color",
         "$value": "{govnl.color.grijs.900}"
       },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{govnl.typography.font-family.sans}"
+      },
+      "font-size": {
+        "$type": "fontFamilies",
+        "$value": "{govnl.typography.font-size.md}"
+      },
+      "font-weight": {
+        "$type": "fontWeights",
+        "$value": "{govnl.typography.font-weight.regular}"
+      },
+      "strong": {
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.typography.font-weight.semi-bold}"
+        }
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{govnl.typography.line-height.md}"
+      },
       "subtle": {
         "color": {
           "$type": "color",
@@ -83,47 +105,11 @@
       },
       "font-family": {
         "$type": "fontFamilies",
-        "$value": "{govnl.font-family.sans}"
+        "$value": "{govnl.typography.font-family.sans}"
       },
       "font-weight": {
         "$type": "fontWeights",
-        "$value": "{govnl.font-weight.700}"
-      },
-      "level-1": {
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.300}"
-        }
-      },
-      "level-2": {
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.250}"
-        }
-      },
-      "level-3": {
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.200}"
-        }
-      },
-      "level-4": {
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.150}"
-        }
-      },
-      "level-5": {
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.125}"
-        }
-      },
-      "level-6": {
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.font-size.112}"
-        }
+        "$value": "{govnl.typography.font-weight.bold}"
       }
     },
     "feedback": {
@@ -197,6 +183,22 @@
         "$type": "color",
         "$value": "{govnl.color.grijs.900}"
       },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{govnl.typography.font-family.sans}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{govnl.typography.font-size.md}"
+      },
+      "font-weight": {
+        "$type": "fontWeights",
+        "$value": "{govnl.typography.font-weight.regular}"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{govnl.typography.line-height.md}"
+      },
       "disabled": {
         "background-color": {
           "$type": "color",
@@ -261,19 +263,19 @@
       },
       "padding-inline-start": {
         "$type": "spacing",
-        "$value": "{govnl.spacing.150}"
+        "$value": "{govnl.dimension.spacing.150}"
       },
       "padding-inline-end": {
         "$type": "spacing",
-        "$value": "{govnl.spacing.150}"
+        "$value": "{govnl.dimension.spacing.150}"
       },
       "padding-block-start": {
         "$type": "spacing",
-        "$value": "{govnl.spacing.150}"
+        "$value": "{govnl.dimension.spacing.150}"
       },
       "padding-block-end": {
         "$type": "spacing",
-        "$value": "{govnl.spacing.150}"
+        "$value": "{govnl.dimension.spacing.150}"
       }
     },
     "interaction": {
@@ -325,39 +327,39 @@
     "body": {
       "font-family": {
         "$type": "fontFamilies",
-        "$value": "{govnl.font-family.sans}"
+        "$value": "{govnl.typography.font-family.sans}"
       },
       "strong": {
         "font-weight": {
           "$type": "fontWeights",
-          "$value": "{govnl.font-weight.550}"
+          "$value": "{govnl.typography.font-weight.550}"
         }
       },
       "default": {
         "font-weight": {
           "$type": "fontWeights",
-          "$value": "{govnl.font-weight.400}"
+          "$value": "{govnl.typography.font-weight.400}"
         }
       },
       "font-size": {
         "sm": {
           "$type": "fontSizes",
-          "$value": "{govnl.font-size.75}"
+          "$value": "{govnl.typography.font-size.75}"
         },
         "md": {
           "$type": "fontSizes",
-          "$value": "{govnl.font-size.112}"
+          "$value": "{govnl.typography.font-size.112}"
         },
         "lg": {
           "$type": "fontSizes",
-          "$value": "{govnl.font-size.125}"
+          "$value": "{govnl.typography.ont-size.125}"
         }
       }
     },
     "quote": {
       "font-family": {
         "$type": "fontFamilies",
-        "$value": "{govnl.font-family.serif}"
+        "$value": "{govnl.typography.font-family.serif}"
       },
       "font-weight": {
         "$type": "fontWeights",
@@ -367,7 +369,7 @@
     "pointer-target": {
       "min-size": {
         "$type": "sizing",
-        "$value": "{govnl.spacing.600}"
+        "$value": "{govnl.dimension.spacing.600}"
       }
     },
     "margin": {
@@ -377,23 +379,23 @@
       },
       "xs": {
         "$type": "spacing",
-        "$value": "{govnl.spacing.100}"
+        "$value": "{govnl.dimension..spacing.100}"
       },
       "sm": {
         "$type": "spacing",
-        "$value": "{govnl.spacing.200}"
+        "$value": "{govnl.dimension..spacing.200}"
       },
       "md": {
         "$type": "spacing",
-        "$value": "{govnl.spacing.300}"
+        "$value": "{govnl.dimension..spacing.300}"
       },
       "lg": {
         "$type": "spacing",
-        "$value": "{govnl.spacing.400}"
+        "$value": "{govnl.dimension..spacing.400}"
       },
       "xl": {
         "$type": "spacing",
-        "$value": "{govnl.spacing.800}"
+        "$value": "{govnl.dimension..spacing.800}"
       }
     }
   }

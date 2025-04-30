@@ -9,7 +9,7 @@
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{govnl.heading.font-family1}"
+            "$value": "{govnl.heading.font-family}"
           },
           "font-size": {
             "$type": "fontSizes",
@@ -17,7 +17,7 @@
           },
           "font-weight": {
             "$type": "fontWeights",
-            "$value": "{utrecht.heading.font-weight}"
+            "$value": "{govnl.heading.font-weight}"
           },
           "line-height": {
             "$type": "lineHeights",
@@ -31,7 +31,7 @@
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{govnl.heading.font-family1}"
+            "$value": "{govnl.heading.font-family}"
           },
           "font-size": {
             "$type": "fontSizes",
@@ -39,7 +39,7 @@
           },
           "font-weight": {
             "$type": "fontWeights",
-            "$value": "{utrecht.heading.font-weight}"
+            "$value": "{govnl.heading.font-weight}"
           },
           "line-height": {
             "$type": "lineHeights",
@@ -53,7 +53,7 @@
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{govnl.heading.font-family1}"
+            "$value": "{govnl.heading.font-family}"
           },
           "font-size": {
             "$type": "fontSizes",
@@ -61,7 +61,7 @@
           },
           "font-weight": {
             "$type": "fontWeights",
-            "$value": "{utrecht.heading.font-weight}"
+            "$value": "{govnl.heading.font-weight}"
           },
           "line-height": {
             "$type": "lineHeights",
@@ -75,7 +75,7 @@
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{govnl.heading.font-family1}"
+            "$value": "{govnl.heading.font-family}"
           },
           "font-size": {
             "$type": "fontSizes",
@@ -83,7 +83,7 @@
           },
           "font-weight": {
             "$type": "fontWeights",
-            "$value": "{utrecht.heading.font-weight}"
+            "$value": "{govnl.heading.font-weight}"
           },
           "line-height": {
             "$type": "lineHeights",
@@ -97,7 +97,7 @@
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{govnl.heading.font-family1}"
+            "$value": "{govnl.heading.font-family}"
           },
           "font-size": {
             "$type": "fontSizes",
@@ -105,7 +105,7 @@
           },
           "font-weight": {
             "$type": "fontWeights",
-            "$value": "{utrecht.heading.font-weight}"
+            "$value": "{govnl.heading.font-weight}"
           },
           "line-height": {
             "$type": "lineHeights",
@@ -119,7 +119,7 @@
           },
           "font-family": {
             "$type": "fontFamilies",
-            "$value": "{govnl.heading.font-family1}"
+            "$value": "{govnl.heading.font-family}"
           },
           "font-size": {
             "$type": "fontSizes",
@@ -127,7 +127,7 @@
           },
           "font-weight": {
             "$type": "fontWeights",
-            "$value": "{utrecht.heading.font-weight}"
+            "$value": "{govnl.heading.font-weight}"
           },
           "line-height": {
             "$type": "lineHeights",
