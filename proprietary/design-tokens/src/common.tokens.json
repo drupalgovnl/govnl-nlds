@@ -347,23 +347,23 @@
       },
       "xs": {
         "$type": "spacing",
-        "$value": "{govnl.dimension..spacing.100}"
+        "$value": "{govnl.dimension.spacing.100}"
       },
       "sm": {
         "$type": "spacing",
-        "$value": "{govnl.dimension..spacing.200}"
+        "$value": "{govnl.dimension.spacing.200}"
       },
       "md": {
         "$type": "spacing",
-        "$value": "{govnl.dimension..spacing.300}"
+        "$value": "{govnl.dimension.spacing.300}"
       },
       "lg": {
         "$type": "spacing",
-        "$value": "{govnl.dimension..spacing.400}"
+        "$value": "{govnl.dimension.spacing.400}"
       },
       "xl": {
         "$type": "spacing",
-        "$value": "{govnl.dimension..spacing.800}"
+        "$value": "{govnl.dimension.spacing.800}"
       }
     }
   }

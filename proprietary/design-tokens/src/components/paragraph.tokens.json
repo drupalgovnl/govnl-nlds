@@ -8,32 +8,32 @@
         },
         "font-family": {
           "$type": "fontFamilies",
-          "$value": "{govnl.body.font-family}"
+          "$value": "{govnl.document.font-family}"
         },
         "font-size": {
           "$type": "fontSizes",
-          "$value": "{govnl.font-size.md}"
+          "$value": "{govnl.document.font-size}"
         },
         "font-weight": {
           "$type": "fontWeights",
-          "$value": "{govnl.font-weight.regular}"
+          "$value": "{govnl.docuemnt.font-weight}"
         },
         "line-height": {
           "$type": "lineHeights",
-          "$value": "{govnl.line-height.md}"
+          "$value": "{govnl.document.line-height}"
         },
         "lead": {
           "font-size": {
             "$type": "fontSizes",
-            "$value": "{govnl.font-size.md}"
+            "$value": "{govnl.document.font-size}"
           },
           "font-weight": {
             "$type": "fontWeights",
-            "$value": "{govnl.font-weight.semibold}"
+            "$value": "{govnl.document.strong.font-weight}"
           },
           "line-height": {
             "$type": "lineHeights",
-            "$value": "{govnl.line-height.md}"
+            "$value": "{govnl.document.line-height}"
           }
         }
       }
