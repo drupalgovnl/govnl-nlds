@@ -1,40 +1,38 @@
 {
-  "paragraph": {
-    "govnl": {
-      "paragraph": {
-        "color": {
-          "$type": "color",
-          "$value": "{govnl.document.color}"
-        },
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{govnl.document.font-family}"
-        },
+  "govnl": {
+    "paragraph": {
+      "color": {
+        "$type": "color",
+        "$value": "{govnl.document.color}"
+      },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{govnl.document.font-family}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{govnl.document.font-size}"
+      },
+      "font-weight": {
+        "$type": "fontWeights",
+        "$value": "{govnl.docuemnt.font-weight}"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{govnl.document.line-height}"
+      },
+      "lead": {
         "font-size": {
           "$type": "fontSizes",
           "$value": "{govnl.document.font-size}"
         },
         "font-weight": {
           "$type": "fontWeights",
-          "$value": "{govnl.docuemnt.font-weight}"
+          "$value": "{govnl.document.strong.font-weight}"
         },
         "line-height": {
           "$type": "lineHeights",
           "$value": "{govnl.document.line-height}"
-        },
-        "lead": {
-          "font-size": {
-            "$type": "fontSizes",
-            "$value": "{govnl.document.font-size}"
-          },
-          "font-weight": {
-            "$type": "fontWeights",
-            "$value": "{govnl.document.strong.font-weight}"
-          },
-          "line-height": {
-            "$type": "lineHeights",
-            "$value": "{govnl.document.line-height}"
-          }
         }
       }
     }
