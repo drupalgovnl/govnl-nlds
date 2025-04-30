@@ -870,6 +870,40 @@
           "$value": "70ch"
         }
       }
+    },
+    "border": {
+      "border-radius": {
+        "sm": {
+          "$type": "borderRadius",
+          "$value": "4px"
+        },
+        "md": {
+          "$type": "borderRadius",
+          "$value": "8px"
+        },
+        "lg": {
+          "$type": "borderRadius",
+          "$value": "16px"
+        },
+        "round": {
+          "$type": "borderRadius",
+          "$value": "999px"
+        }
+      },
+      "border-width": {
+        "sm": {
+          "$type": "borderWidth",
+          "$value": "1px"
+        },
+        "md": {
+          "$type": "borderWidth",
+          "$value": "2px"
+        },
+        "lg": {
+          "$type": "borderWidth",
+          "$value": "4px"
+        }
+      }
     }
   }
 }

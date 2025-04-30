@@ -284,33 +284,33 @@
         },
         "border-radius": {
           "$type": "dimension",
-          "$value": "{govnl.border-radius.md}"
+          "$value": "{govnl.border.border-radius.md}"
         },
         "border-width": {
           "$type": "dimension",
-          "$value": "{govnl.border-width.sm}"
+          "$value": "{govnl.border.border-width.sm}"
         },
         "icon": {
           "size": {
             "$type": "dimension",
-            "$value": "{govnl.icon.functional.size}"
+            "$value": "1.125em"
           }
         },
         "padding-block-end": {
           "$type": "dimension",
-          "$value": "{govnl.space.block.300}"
+          "$value": "{govnl.form-control.padding-block-end}"
         },
         "padding-block-start": {
           "$type": "dimension",
-          "$value": "{govnl.space.block.300}"
+          "$value": "{govnl.form-control.padding-block-start}"
         },
         "padding-inline-end": {
           "$type": "dimension",
-          "$value": "{govnl.space.inline.400}"
+          "$value": "{govnl.form-control.padding-inline-end}"
         },
         "padding-inline-start": {
           "$type": "dimension",
-          "$value": "{govnl.space.inline.400}"
+          "$value": "{govnl.form-control.padding-inline-start}"
         },
         "min-block-size": {
           "$type": "dimension",
@@ -322,7 +322,7 @@
         },
         "column-gap": {
           "$type": "dimension",
-          "$value": "{govnl.space.text.100}"
+          "$value": "{govnl.dimension.spacing.200}"
         }
       }
     }
