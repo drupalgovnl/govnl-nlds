@@ -324,38 +324,6 @@
         "$value": "dotted"
       }
     },
-    "body": {
-      "font-family": {
-        "$type": "fontFamilies",
-        "$value": "{govnl.typography.font-family.sans}"
-      },
-      "strong": {
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{govnl.typography.font-weight.550}"
-        }
-      },
-      "default": {
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{govnl.typography.font-weight.400}"
-        }
-      },
-      "font-size": {
-        "sm": {
-          "$type": "fontSizes",
-          "$value": "{govnl.typography.font-size.75}"
-        },
-        "md": {
-          "$type": "fontSizes",
-          "$value": "{govnl.typography.font-size.112}"
-        },
-        "lg": {
-          "$type": "fontSizes",
-          "$value": "{govnl.typography.ont-size.125}"
-        }
-      }
-    },
     "quote": {
       "font-family": {
         "$type": "fontFamilies",
@@ -363,7 +331,7 @@
       },
       "font-weight": {
         "$type": "fontWeights",
-        "$value": "{govnl.font-weight.400}"
+        "$value": "{govnl.typography.font-weight.regular}"
       }
     },
     "pointer-target": {
