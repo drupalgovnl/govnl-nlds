@@ -46,7 +46,7 @@
         "$value": "{govnl.typography.font-family.sans}"
       },
       "font-size": {
-        "$type": "fontFamilies",
+        "$type": "fontSizes",
         "$value": "{govnl.typography.font-size.md}"
       },
       "font-weight": {
