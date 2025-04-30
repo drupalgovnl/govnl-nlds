@@ -793,82 +793,132 @@
         "$value": "200%"
       }
     },
-    "dimension": {
-      "spacing": {
-        "25": {
-          "$type": "dimension",
-          "$value": "0.125rem"
-        },
-        "50": {
-          "$type": "dimension",
-          "$value": "0.25rem"
-        },
-        "100": {
-          "$type": "dimension",
-          "$value": "0.5rem"
-        },
-        "150": {
-          "$type": "dimension",
-          "$value": "0.75rem"
-        },
-        "200": {
-          "$type": "dimension",
-          "$value": "1rem"
-        },
-        "225": {
-          "$type": "dimension",
-          "$value": "1.125rem"
-        },
-        "250": {
-          "$type": "dimension",
-          "$value": "1.25rem"
-        },
-        "300": {
-          "$type": "dimension",
-          "$value": "1.5rem"
-        },
-        "400": {
-          "$type": "dimension",
-          "$value": "2rem"
-        },
-        "500": {
-          "$type": "dimension",
-          "$value": "2.5rem"
-        },
-        "600": {
-          "$type": "dimension",
-          "$value": "3rem"
-        },
-        "800": {
-          "$type": "dimension",
-          "$value": "4rem"
-        },
-        "1000": {
-          "$type": "dimension",
-          "$value": "5rem"
-        },
-        "2000": {
-          "$type": "dimension",
-          "$value": "10rem"
-        }
+    "spacing": {
+      "25": {
+        "$type": "dimension",
+        "$value": "0.125rem"
       },
-      "content": {
-        "xs": {
-          "$type": "dimension",
-          "$value": "25ch"
-        },
-        "sm": {
-          "$type": "dimension",
-          "$value": "40ch"
-        },
-        "md": {
-          "$type": "dimension",
-          "$value": "55ch"
-        },
-        "lg": {
-          "$type": "dimension",
-          "$value": "70ch"
-        }
+      "50": {
+        "$type": "dimension",
+        "$value": "0.25rem"
+      },
+      "100": {
+        "$type": "dimension",
+        "$value": "0.5rem"
+      },
+      "150": {
+        "$type": "dimension",
+        "$value": "0.75rem"
+      },
+      "200": {
+        "$type": "dimension",
+        "$value": "1rem"
+      },
+      "225": {
+        "$type": "dimension",
+        "$value": "1.125rem"
+      },
+      "250": {
+        "$type": "dimension",
+        "$value": "1.25rem"
+      },
+      "300": {
+        "$type": "dimension",
+        "$value": "1.5rem"
+      },
+      "400": {
+        "$type": "dimension",
+        "$value": "2rem"
+      },
+      "500": {
+        "$type": "dimension",
+        "$value": "2.5rem"
+      },
+      "600": {
+        "$type": "dimension",
+        "$value": "3rem"
+      },
+      "800": {
+        "$type": "dimension",
+        "$value": "4rem"
+      },
+      "1000": {
+        "$type": "dimension",
+        "$value": "5rem"
+      },
+      "2000": {
+        "$type": "dimension",
+        "$value": "10rem"
+      }
+    },
+    "content": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "25ch"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "40ch"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "55ch"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "70ch"
+      }
+    },
+    "container": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "24rem"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "40rem"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "64rem"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "80rem"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "104rem"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "120rem"
+      }
+    },
+    "screen": {
+      "2xs": {
+        "$type": "dimension",
+        "$value": "320px"
+      },
+      "xs": {
+        "$type": "dimension",
+        "$value": "576px"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "768px"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "992px"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "1200px"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "1440px"
       }
     },
     "border": {

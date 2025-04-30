@@ -203,19 +203,19 @@
       },
       "padding-inline-start": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.150}"
+        "$value": "{govnl.spacing.150}"
       },
       "padding-inline-end": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.150}"
+        "$value": "{govnl.spacing.150}"
       },
       "padding-block-start": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.150}"
+        "$value": "{govnl.spacing.150}"
       },
       "padding-block-end": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.150}"
+        "$value": "{govnl.spacing.150}"
       }
     },
     "interaction": {
@@ -367,7 +367,7 @@
     "pointer-target": {
       "min-size": {
         "$type": "sizing",
-        "$value": "{govnl.dimension.spacing.600}"
+        "$value": "{govnl.spacing.600}"
       }
     },
     "margin": {
@@ -377,23 +377,23 @@
       },
       "xs": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.100}"
+        "$value": "{govnl.spacing.100}"
       },
       "sm": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.200}"
+        "$value": "{govnl.spacing.200}"
       },
       "md": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.300}"
+        "$value": "{govnl.spacing.300}"
       },
       "lg": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.400}"
+        "$value": "{govnl.spacing.400}"
       },
       "xl": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.800}"
+        "$value": "{govnl.spacing.800}"
       }
     }
   }
