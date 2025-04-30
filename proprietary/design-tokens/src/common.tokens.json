@@ -213,6 +213,20 @@
           "$value": "{govnl.color.grijs.500}"
         }
       },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.50}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.700}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.900}"
+        }
+      },
       "focus": {
         "background-color": {
           "$type": "color",
