@@ -1,0 +1,20 @@
+{
+  "name": "@dictu/assets",
+  "version": "1.0.0-alpha.0",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Assets",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [],
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "proprietary/assets"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@dictu/design-tokens",
+  "version": "1.0.0-alpha.0",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Design Tokens for DICTU Design system, based on the NL Design System architecture",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "properietary/design-tokens"
+  },
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build": "npm-run-all clean build:**",
+    "build:style-dictionary": "node ./style-dictionary-build.mjs",
+    "watch": "npm-run-all watch:**",
+    "watch:style-dictionary": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.tokens.json'"
+  },
+  "devDependencies": {
+    "@tokens-studio/sd-transforms": "1.2.3",
+    "chokidar-cli": "3.0.0",
+    "npm-run-all": "4.1.5",
+    "rimraf": "6.0.1",
+    "style-dictionary": "4.0.1"
+  }
+}
