@@ -145,7 +145,7 @@
         "hover": {
           "background-color": {
             "$type": "color",
-            "$value": "rgba(0,0,0,0.05)"
+            "$value": "{govnl.color.grijs.50}"
           },
           "border-color": {
             "$type": "color",
@@ -199,7 +199,7 @@
         "active": {
           "background-color": {
             "$type": "color",
-            "$value": "rgba(0,0,0,0.05)"
+            "$value": "{govnl.color.grijs.50}"
           },
           "border-color": {
             "$type": "color",
@@ -231,7 +231,7 @@
           },
           "background-color": {
             "$type": "color",
-            "$value": "rgba(0,0,0,0.05)"
+            "$value": "{govnl.color.grijs.50}"
           },
           "border-color": {
             "$type": "color",
@@ -249,7 +249,7 @@
           },
           "background-color": {
             "$type": "color",
-            "$value": "rgba(0,0,0,0.05)"
+            "$value": "{govnl.color.grijs.50}"
           }
         },
         "disabled": {
