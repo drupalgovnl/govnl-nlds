@@ -15,7 +15,7 @@
       },
       "font-weight": {
         "$type": "fontWeights",
-        "$value": "{govnl.docuemnt.font-weight}"
+        "$value": "{govnl.document.font-weight}"
       },
       "line-height": {
         "$type": "lineHeights",
