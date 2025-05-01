@@ -255,7 +255,7 @@
         "disabled": {
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.color.grijs.100}"
+            "$value": "{govnl.color.grijs.50}"
           },
           "border-color": {
             "$type": "color",
