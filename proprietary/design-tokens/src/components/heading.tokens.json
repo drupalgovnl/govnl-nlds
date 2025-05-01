@@ -134,13 +134,5 @@
         }
       }
     }
-  },
-  "govnl": {
-    "heading-copy": {
-      "color": {
-        "$type": "color",
-        "$value": "{govnl.color.grijs.900}"
-      }
-    }
   }
 }
