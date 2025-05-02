@@ -1,0 +1,21 @@
+{
+  "source": ["./src/**/tokens.json", "./src/**/*.tokens.json"],
+  "preprocessors": ["tokens-studio"],
+  "platforms": {
+    "css": {
+      "transformGroup": "tokens-studio",
+      "transforms": ["name/kebab"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "index.css",
+          "format": "css/variables",
+          "options": {
+            "selector": ".dictu-theme",
+            "outputReferences": true
+          }
+        }
+      ]
+    }
+  }
+}
