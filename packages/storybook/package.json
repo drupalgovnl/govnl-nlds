@@ -1,0 +1,40 @@
+{
+  "name": "@dictu/storybook",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Storybook based on the NL Design System architecture",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "packages/storybook"
+  },
+  "scripts": {
+    "build": "storybook build --output-dir dist/ --config-dir config/",
+    "clean": "rimraf dist/",
+    "storybook": "storybook dev --config-dir config/ --port 6006"
+  },
+  "devDependencies": {
+    "@babel/core": "7.26.10",
+    "@etchteam/storybook-addon-status": "5.0.0",
+    "@geometricpanda/storybook-addon-badges": "2.0.5",
+    "@storybook/addon-a11y": "8.6.12",
+    "@storybook/addon-actions": "8.6.12",
+    "@storybook/addon-controls": "8.6.12",
+    "@storybook/addon-docs": "8.6.12",
+    "@storybook/addon-interactions": "8.6.12",
+    "@storybook/addon-links": "8.6.12",
+    "@storybook/addon-viewport": "8.6.12",
+    "@storybook/html": "8.6.12",
+    "@storybook/html-vite": "8.6.12",
+    "@storybook/manager-api": "8.6.12",
+    "@storybook/theming": "8.6.12",
+    "@whitespace/storybook-addon-html": "6.1.1",
+    "rimraf": "6.0.1",
+    "storybook": "8.6.12",
+    "vite": "6.2.5"
+  }
+}
