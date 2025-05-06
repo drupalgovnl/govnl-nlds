@@ -1,3 +1,5 @@
+import { globSync } from 'glob';
+import path from 'path';
 import { register } from '@tokens-studio/sd-transforms';
 import StyleDictionary from 'style-dictionary';
 
@@ -5,13 +7,18 @@ import StyleDictionary from 'style-dictionary';
 // that is installed as a dependency of this package.
 register(StyleDictionary);
 
-const sd = new StyleDictionary({
-  source: ['./src/**/*.tokens.json'],
+// Path to base token files.
+const baseTokens = ['./src/**/common.tokens.json', './src/**/core.tokens.json'];
+const tokens = globSync('./src/**/*.tokens.json');
+
+// Base SD config that combines core and common tokens in a single output.
+const base = new StyleDictionary({
+  source: [baseTokens],
   preprocessors: ['tokens-studio'],
   platforms: {
     css: {
       transformGroup: 'tokens-studio',
-      transforms: ['name/kebab'],
+      transforms: ['attribute/cti', 'name/kebab', 'color/hsl'],
       buildPath: 'dist/',
       files: [
         {
@@ -27,5 +34,29 @@ const sd = new StyleDictionary({
   },
 });
 
-await sd.cleanAllPlatforms();
-await sd.buildAllPlatforms();
+// SD config that outputs a file per component.
+const components = new StyleDictionary({
+  log: {
+    verbosity: 'verbose'
+  },
+  source: [tokens],
+  preprocessors: ['tokens-studio'],
+  platforms: {
+    css: {
+      transformGroup: 'tokens-studio',
+      transforms: ['attribute/cti', 'name/kebab', 'color/hsl'],
+      buildPath: 'dist/',
+      files: tokens.filter((file) => file.startsWith('src/components/')).map((file) => ({
+        destination: `${path.parse(file).name.toLowerCase().replace('.tokens', '')}.css`,
+        format: 'css/variables',
+        filter: (token) => token.filePath === file,
+        options: {
+          outputReferences: true,
+        },
+      })),
+    },
+  },
+});
+
+await base.buildAllPlatforms();
+await components.buildAllPlatforms();
