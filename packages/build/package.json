@@ -1,0 +1,31 @@
+{
+  "name": "@dictu/build",
+  "version": "1.0.0-alpha.0",
+  "author": "Community for NL Design System",
+  "description": "Build scripts for components.",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/ind.git",
+    "directory": "packages/build"
+  },
+  "bin": {
+    "build-css": "./build.css.mjs"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.21",
+    "cssnano": "7.0.6",
+    "postcss": "8.5.3",
+    "sass": "1.85.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie >= 0",
+    "not dead"
+  ]
+}

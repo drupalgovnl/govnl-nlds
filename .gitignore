@@ -6,7 +6,6 @@ vendor/
 .npm/
 
 # Ignore generated files
-build/
 coverage/
 dist/
 tmp/

@@ -1,0 +1,35 @@
+/**
+ * @file
+ * Function for maps.
+ *
+ * @license EUPL-1.2
+ * Copyright (c) Dictu
+ */
+
+/* Use. */
+@use "sass:list";
+@use "sass:map";
+
+/* Next in a map. */
+@function next($map, $key) {
+  $keys: map.keys($map);
+  $index: (list.index($keys, $key)) + 1;
+
+  @if $index > list.length($keys) {
+    @return null;
+  }
+
+  @return map.get($map, list.nth($keys, $index));
+}
+
+/* Previous in a map. */
+@function prev($map, $key) {
+  $keys: map.keys($map);
+  $index: (list.index($keys, $key)) - 1;
+
+  @if $index < 0 {
+    @return null;
+  }
+
+  @return map.get($map, list.nth($keys, $index));
+}

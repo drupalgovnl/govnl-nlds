@@ -1,0 +1,13 @@
+@use "mixin" as dictu-paragraph;
+
+.dictu-paragraph {
+  @include dictu-paragraph.dictu-paragraph;
+}
+
+.dictu-paragraph--lead {
+  @include dictu-paragraph.dictu-paragraph--lead;
+}
+
+.dictu-paragraph__lead {
+  @include dictu-paragraph.dictu-paragraph__lead-scss-workaround;
+}

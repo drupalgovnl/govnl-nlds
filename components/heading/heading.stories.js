@@ -1,26 +1,26 @@
-import readme from './README.md?raw';
-import level1Docs from './_level1.md?raw';
-import level2Docs from './_level2.md?raw';
-import level3Docs from './_level3.md?raw';
-import level4Docs from './_level4.md?raw';
-import level5Docs from './_level5.md?raw';
-import level6Docs from './_level6.md?raw';
-import './src/index.css';
-import { BADGES } from '@dictu/storybook/config/preview';
+import { BADGES } from "@dictu/storybook/config/preview";
+import readme from "./README.md?raw";
+import level1Docs from "./_level1.md?raw";
+import level2Docs from "./_level2.md?raw";
+import level3Docs from "./_level3.md?raw";
+import level4Docs from "./_level4.md?raw";
+import level5Docs from "./_level5.md?raw";
+import level6Docs from "./_level6.md?raw";
+import "./dist/index.css";
 
 export default {
   args: {
-    innerHTML: 'Dit is een voorbeeld van een heading'
+    innerHTML: "Dit is een voorbeeld van een heading",
   },
   argTypes: {
     innerHTML: {
-      control: 'text',
-      description: 'De tekst van de heading'
+      control: "text",
+      description: "De tekst van de heading",
     },
     level: {
-      control: 'select',
-      options: ['1', '2', '3', '4', '5', '6'],
-      description: 'Het niveau van de heading'
+      control: "select",
+      options: ["1", "2", "3", "4", "5", "6"],
+      description: "Het niveau van de heading",
     },
   },
   parameters: {
@@ -32,7 +32,7 @@ export default {
     },
   },
   render: ({ innerHTML, ...args }) => {
-    const classes = ['nl-heading', `nl-heading--level-${args.level}`];
+    const classes = ["dictu-heading", `dictu-heading--level-${args.level}`];
     const tag = `h${args.level}`;
     const $heading = document.createElement(tag);
 
@@ -41,13 +41,13 @@ export default {
 
     return $heading;
   },
-  tags: ['autodocs'],
-  title: 'Componenten/Heading',
+  tags: ["autodocs"],
+  title: "Componenten/Heading",
 };
 
 export const HeadingLevel1 = {
   args: {
-    innerHTML: 'Dit is een hoofdkop van een pagina',
+    innerHTML: "Dit is een hoofdkop van een pagina",
     level: 1,
   },
   parameters: {
@@ -61,7 +61,8 @@ export const HeadingLevel1 = {
 
 export const HeadingLevel2 = {
   args: {
-    innerHTML: 'Een koptekst die in de koppenstructuur op het tweede niveau staat',
+    innerHTML:
+      "Een koptekst die in de koppenstructuur op het tweede niveau staat",
     level: 2,
   },
   parameters: {
@@ -75,7 +76,8 @@ export const HeadingLevel2 = {
 
 export const HeadingLevel3 = {
   args: {
-    innerHTML: 'Een koptekst die in de koppenstructuur op het derde niveau staat',
+    innerHTML:
+      "Een koptekst die in de koppenstructuur op het derde niveau staat",
     level: 3,
   },
   parameters: {
@@ -89,7 +91,8 @@ export const HeadingLevel3 = {
 
 export const HeadingLevel4 = {
   args: {
-    innerHTML: 'Een koptekst die in de koppenstructuur op het vierde niveau staat',
+    innerHTML:
+      "Een koptekst die in de koppenstructuur op het vierde niveau staat",
     level: 4,
   },
   parameters: {
@@ -103,7 +106,8 @@ export const HeadingLevel4 = {
 
 export const HeadingLevel5 = {
   args: {
-    innerHTML: 'Een koptekst die in de koppenstructuur op het vijfde niveau staat',
+    innerHTML:
+      "Een koptekst die in de koppenstructuur op het vijfde niveau staat",
     level: 5,
   },
   parameters: {
@@ -117,7 +121,8 @@ export const HeadingLevel5 = {
 
 export const HeadingLevel6 = {
   args: {
-    innerHTML: 'Een koptekst die in de koppenstructuur op het zesde niveau staat',
+    innerHTML:
+      "Een koptekst die in de koppenstructuur op het zesde niveau staat",
     level: 6,
   },
   parameters: {

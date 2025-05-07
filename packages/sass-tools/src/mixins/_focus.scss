@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Mixin focus.
+ *
+ * @license EUPL-1.2
+ * Copyright (c) Dictu
+ */
+
+@mixin ring ($color: currentcolor, $style: solid, $width: 2px, $offset: $width) {
+  outline: $width $style $color;
+  outline-offset: $offset;
+}

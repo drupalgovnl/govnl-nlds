@@ -1,0 +1,29 @@
+@use "mixin" as dictu-heading;
+
+.dictu-heading {
+  @include dictu-heading.dictu-heading;
+}
+
+.dictu-heading--level-1 {
+  @include dictu-heading.dictu-heading--level-1;
+}
+
+.dictu-heading--level-2 {
+  @include dictu-heading.dictu-heading--level-2;
+}
+
+.dictu-heading--level-3 {
+  @include dictu-heading.dictu-heading--level-3;
+}
+
+.dictu-heading--level-4 {
+  @include dictu-heading.dictu-heading--level-4;
+}
+
+.dictu-heading--level-5 {
+  @include dictu-heading.dictu-heading--level-5;
+}
+
+.dictu-heading--level-6 {
+  @include dictu-heading.dictu-heading--level-6;
+}

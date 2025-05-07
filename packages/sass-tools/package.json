@@ -1,0 +1,30 @@
+{
+  "name": "@dictu/sass-tools",
+  "version": "1.0.0-alpha.0",
+  "author": "Community for NL Design System",
+  "description": "Sass mixins and functions.",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system",
+    "sass",
+    "sass mixins",
+    "sass functions"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/ind.git",
+    "directory": "packages/sass-tools"
+  },
+  "exports": {
+    "./functions/*.scss": {
+      "sass": "./src/functions/*.scss"
+    },
+    "./mixins/*.scss": {
+      "sass": "./src/mixins/*.scss"
+    }
+  },
+  "devDependencies": {
+    "sass": "1.85.0"
+  }
+}

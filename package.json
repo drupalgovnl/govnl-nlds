@@ -19,6 +19,7 @@
     "node": ">=20 <=22"
   },
   "workspaces": [
+    "./components/*",
     "./packages/*",
     "./proprietary/*"
   ],
@@ -28,8 +29,8 @@
     "typescript": "5.8.3"
   },
   "scripts": {
-    "build": "npm --recursive run build",
-    "clean": "npm --recursive run clean",
+    "build": "npm run build --ws --if-present",
+    "clean": "npm run clean --ws --if-present",
     "start": "http-server packages/storybook/dist/",
     "storybook": "npm-run-all --parallel watch:**",
     "watch:storybook": "npm --workspace @dictu/design-tokens run build:style-dictionary && npm --workspace ./packages/storybook run storybook",

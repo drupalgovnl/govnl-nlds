@@ -1,0 +1,56 @@
+/**
+ * @file
+ * Mixin breakbpoint.
+ *
+ * @license EUPL-1.2
+ * Copyright (c) Dictu
+ */
+
+/* Use. */
+@use "sass:map";
+@use "functions/map" as map-extra;
+@use "settings/screen-sizes" as *;
+
+/* Breakpoint up. */
+@mixin up($screen-size) {
+  $min: map.get($screen-sizes, $screen-size);
+
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+/* Breakpoint down. */
+@mixin down($screen-size) {
+  $max: map.get($screen-sizes, $screen-size);
+
+  @if $max {
+    @media (max-width: #{$max - 1}) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+/* Breakpoint only. */
+@mixin only($screen-size) {
+  $min: map-extra.get($screen-sizes, $screen-size);
+  $max: map-extra.next($screen-sizes, $screen-size);
+
+  @if $min and $max {
+    @media (min-width: $min) and (max-width: #{$max - 1}) {
+      @content;
+    }
+  } @else if $max == null {
+    @include up($screen-size) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

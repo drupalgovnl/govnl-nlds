@@ -1,19 +1,19 @@
 {
-  "name": "@dictu/heading",
+  "name": "@dictu/paragraph",
   "version": "1.0.0-alpha.0",
   "author": "Dienst ICT Uitvoering",
-  "description": "Heading CSS component.",
+  "description": "Paragraph CSS component.",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system",
     "css",
-    "heading"
+    "paragraph"
   ],
   "private": true,
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/heading"
+    "directory": "components/paragraph"
   },
   "files": [
     "src/",
@@ -26,7 +26,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "@nl-design-system-candidate/heading-css": "^1.1.0"
+  "scripts": {
+    "build": "npm run build:css",
+    "build:css": "build-css",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "@nl-design-system-candidate/paragraph-css": "^2.1.0",
+    "@dictu/sass-tools": "^1.0.0-alpha.0"
   }
 }

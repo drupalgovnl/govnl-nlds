@@ -1,0 +1,21 @@
+@use "pkg:@nl-design-system-candidate/paragraph-css/src/mixin" as nl-paragraph;
+
+@mixin dictu-paragraph {
+  @include nl-paragraph.nl-paragraph;
+}
+
+@mixin dictu-paragraph--lead {
+  @include nl-paragraph.nl-paragraph--lead;
+}
+
+/*
+ * In SCSS the following mixins will overwrite each other:
+ *
+ * 1. `@mixin nl-paragraph--lead`
+ * 2. `@mixin nl-paragraph__lead`
+ *
+ * Avoid this situation by using an alternative name for this mixin.
+ */
+@mixin dictu-paragraph__lead-scss-workaround {
+  @include nl-paragraph.nl-paragraph--lead-scss-workaround;
+}
