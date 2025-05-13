@@ -12,7 +12,7 @@
         },
         "size": {
           "$type": "dimension",
-          "$value": "{govnl.dimension.spacing.200}"
+          "$value": "{govnl.dimension.spacing.300}"
         }
       },
       "link": {
