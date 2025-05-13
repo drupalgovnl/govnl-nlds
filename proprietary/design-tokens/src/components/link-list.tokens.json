@@ -3,7 +3,7 @@
     "link-list": {
       "row-gap": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.spacing.200}"
+        "$value": "{govnl.dimension.spacing.100}"
       },
       "icon": {
         "inset-block-start": {
