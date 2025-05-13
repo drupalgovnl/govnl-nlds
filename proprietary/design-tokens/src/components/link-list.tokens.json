@@ -18,7 +18,7 @@
       "link": {
         "column-gap": {
           "$type": "dimension",
-          "$value": "{govnl.dimension.spacing.200}"
+          "$value": "{govnl.dimension.spacing.100}"
         },
         "text-decoration": {
           "$type": "textDecoration",
