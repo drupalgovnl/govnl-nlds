@@ -12,7 +12,7 @@
         },
         "font-size": {
           "$type": "fontSizes",
-          "$value": "{utrecht.document.font-size}"
+          "$value": "{govnl.document.font-size}"
         },
         "padding-block": {
           "$type": "dimension",
