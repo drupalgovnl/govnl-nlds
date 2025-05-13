@@ -1,88 +1,86 @@
 {
-  "link": {
-    "nl": {
-      "link": {
+  "nl": {
+    "link": {
+      "color": {
+        "$type": "color",
+        "$value": "{govnl.interaction.color}"
+      },
+      "text-decoration-color": {
+        "$type": "color",
+        "$value": "{govnl.interaction.color}"
+      },
+      "text-decoration-line": {
+        "$type": "textDecoration",
+        "$value": "underline"
+      },
+      "text-decoration-thickness": {
+        "$type": "other",
+        "$value": "auto"
+      },
+      "text-underline-offset": {
+        "$type": "other",
+        "$value": "auto"
+      },
+      "active": {
         "color": {
           "$type": "color",
-          "$value": "{govnl.interaction.color}"
-        },
-        "text-decoration-color": {
-          "$type": "color",
-          "$value": "{govnl.interaction.color}"
+          "$value": "{govnl.interaction.active.color}"
         },
         "text-decoration-line": {
           "$type": "textDecoration",
-          "$value": "underline"
+          "$value": "None"
         },
         "text-decoration-thickness": {
           "$type": "other",
           "$value": "auto"
+        }
+      },
+      "current": {
+        "cursor": {
+          "$type": "other",
+          "$value": "default"
+        }
+      },
+      "disabled": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.500}"
         },
-        "text-underline-offset": {
+        "cursor": {
+          "$type": "other",
+          "$value": "disabled"
+        }
+      },
+      "focus-visible": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.focus.background-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.focus.color}"
+        },
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "None"
+        },
+        "text-decoration-thickness": {
           "$type": "other",
           "$value": "auto"
+        }
+      },
+      "hover": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.interaction.hover.color}"
         },
-        "active": {
-          "color": {
-            "$type": "color",
-            "$value": "{govnl.interaction.active.color}"
-          },
-          "text-decoration-line": {
-            "$type": "textDecoration",
-            "$value": "None"
-          },
-          "text-decoration-thickness": {
-            "$type": "other",
-            "$value": "auto"
-          }
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "None"
         },
-        "current": {
-          "cursor": {
-            "$type": "other",
-            "$value": "default"
-          }
-        },
-        "disabled": {
-          "color": {
-            "$type": "color",
-            "$value": "{govnl.color.grijs.500}"
-          },
-          "cursor": {
-            "$type": "other",
-            "$value": "disabled"
-          }
-        },
-        "focus-visible": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{govnl.focus.background-color}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{govnl.focus.color}"
-          },
-          "text-decoration-line": {
-            "$type": "textDecoration",
-            "$value": "None"
-          },
-          "text-decoration-thickness": {
-            "$type": "other",
-            "$value": "auto"
-          }
-        },
-        "hover": {
-          "color": {
-            "$type": "color",
-            "$value": "{govnl.interaction.hover.color}"
-          },
-          "text-decoration-line": {
-            "$type": "textDecoration",
-            "$value": "None"
-          },
-          "text-decoration-thickness": {
-            "$type": "other",
-            "$value": "auto"
-          }
+        "text-decoration-thickness": {
+          "$type": "other",
+          "$value": "auto"
         }
       }
     }
