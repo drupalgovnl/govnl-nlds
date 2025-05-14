@@ -276,19 +276,19 @@
         }
       },
       "padding-inline-start": {
-        "$type": "spacing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.150}"
       },
       "padding-inline-end": {
-        "$type": "spacing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.150}"
       },
       "padding-block-start": {
-        "$type": "spacing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.150}"
       },
       "padding-block-end": {
-        "$type": "spacing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.150}"
       }
     },
@@ -350,21 +350,21 @@
     },
     "pointer-target": {
       "min-size": {
-        "$type": "sizing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.600}"
       }
     },
     "icon": {
       "sm": {
-        "$type": "sizing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.200}"
       },
       "md": {
-        "$type": "sizing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.300}"
       },
       "lg": {
-        "$type": "sizing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.500}"
       }
     },
@@ -374,23 +374,23 @@
         "$value": "0px"
       },
       "xs": {
-        "$type": "spacing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.100}"
       },
       "sm": {
-        "$type": "spacing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.200}"
       },
       "md": {
-        "$type": "spacing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.300}"
       },
       "lg": {
-        "$type": "spacing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.400}"
       },
       "xl": {
-        "$type": "spacing",
+        "$type": "size",
         "$value": "{govnl.dimension.size.800}"
       }
     }
