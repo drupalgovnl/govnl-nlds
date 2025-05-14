@@ -7,7 +7,7 @@
       },
       "size": {
         "$type": "dimension",
-        "$value": "{govnl.icon.size.functional.md}"
+        "$value": "{govnl.icon.size.md}"
       }
     }
   }
