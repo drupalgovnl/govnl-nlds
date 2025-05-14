@@ -355,17 +355,19 @@
       }
     },
     "icon": {
-      "sm": {
-        "$type": "size",
-        "$value": "{govnl.dimension.size.200}"
-      },
-      "md": {
-        "$type": "size",
-        "$value": "{govnl.dimension.size.300}"
-      },
-      "lg": {
-        "$type": "size",
-        "$value": "{govnl.dimension.size.500}"
+      "size": {
+        "sm": {
+          "$type": "size",
+          "$value": "{govnl.dimension.size.200}"
+        },
+        "md": {
+          "$type": "size",
+          "$value": "{govnl.dimension.size.300}"
+        },
+        "lg": {
+          "$type": "size",
+          "$value": "{govnl.dimension.size.500}"
+        }
       }
     },
     "margin": {
