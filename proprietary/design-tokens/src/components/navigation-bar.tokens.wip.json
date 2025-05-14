@@ -1,38 +1,36 @@
 {
-  "navigation-bar": {
-    "utrecht": {
-      "nav-bar": {
-        "background-color": {
-          "$type": "color",
-          "$value": "{govnl.document.background-color}"
+  "govnl": {
+    "nav-bar": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{govnl.document.background-color}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{govnl.document.color}"
+      },
+      "content": {
+        "max-inline-size": {
+          "$type": "dimension",
+          "$value": "1184px"
+        }
+      },
+      "link": {
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.200}"
         },
-        "color": {
-          "$type": "color",
-          "$value": "{govnl.document.color}"
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.200}"
         },
-        "content": {
-          "max-inline-size": {
-            "$type": "dimension",
-            "$value": "1184px"
-          }
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.400}"
         },
-        "link": {
-          "padding-block-end": {
-            "$type": "dimension",
-            "$value": "{govnl.space.block.200}"
-          },
-          "padding-block-start": {
-            "$type": "dimension",
-            "$value": "{govnl.space.block.200}"
-          },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "{govnl.space.inline.400}"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
-            "$value": "{govnl.space.inline.400}"
-          }
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.400}"
         }
       }
     }

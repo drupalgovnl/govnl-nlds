@@ -3,7 +3,7 @@
     "link-list": {
       "row-gap": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.spacing.100}"
+        "$value": "{govnl.dimension.size.100}"
       },
       "icon": {
         "inset-block-start": {
@@ -12,13 +12,13 @@
         },
         "size": {
           "$type": "dimension",
-          "$value": "{govnl.dimension.spacing.300}"
+          "$value": "{govnl.dimension.size.300}"
         }
       },
       "link": {
         "column-gap": {
           "$type": "dimension",
-          "$value": "{govnl.dimension.spacing.100}"
+          "$value": "{govnl.dimension.size.100}"
         },
         "text-decoration": {
           "$type": "textDecoration",

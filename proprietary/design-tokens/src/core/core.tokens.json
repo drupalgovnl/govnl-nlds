@@ -790,7 +790,7 @@
       }
     },
     "dimension": {
-      "spacing": {
+      "size": {
         "25": {
           "$type": "dimension",
           "$value": "0.125rem"

@@ -1,0 +1,14 @@
+{
+  "nl": {
+    "icon": {
+      "color": {
+        "$type": "color",
+        "$value": "{govnl.document.color}"
+      },
+      "size": {
+        "$type": "dimension",
+        "$value": "{govnl.icon.size.functional.md}"
+      }
+    }
+  }
+}

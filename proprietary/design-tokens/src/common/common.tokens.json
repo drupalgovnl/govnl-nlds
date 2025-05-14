@@ -277,19 +277,19 @@
       },
       "padding-inline-start": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.150}"
+        "$value": "{govnl.dimension.size.150}"
       },
       "padding-inline-end": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.150}"
+        "$value": "{govnl.dimension.size.150}"
       },
       "padding-block-start": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.150}"
+        "$value": "{govnl.dimension.size.150}"
       },
       "padding-block-end": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.150}"
+        "$value": "{govnl.dimension.size.150}"
       }
     },
     "interaction": {
@@ -351,33 +351,47 @@
     "pointer-target": {
       "min-size": {
         "$type": "sizing",
-        "$value": "{govnl.dimension.spacing.600}"
+        "$value": "{govnl.dimension.size.600}"
+      }
+    },
+    "icon": {
+      "sm": {
+        "$type": "sizing",
+        "$value": "{govnl.dimension.size.200}"
+      },
+      "md": {
+        "$type": "sizing",
+        "$value": "{govnl.dimension.size.300}"
+      },
+      "lg": {
+        "$type": "sizing",
+        "$value": "{govnl.dimension.size.500}"
       }
     },
     "margin": {
       "none": {
-        "$type": "spacing",
+        "$type": "size",
         "$value": "0px"
       },
       "xs": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.100}"
+        "$value": "{govnl.dimension.size.100}"
       },
       "sm": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.200}"
+        "$value": "{govnl.dimension.size.200}"
       },
       "md": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.300}"
+        "$value": "{govnl.dimension.size.300}"
       },
       "lg": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.400}"
+        "$value": "{govnl.dimension.size.400}"
       },
       "xl": {
         "$type": "spacing",
-        "$value": "{govnl.dimension.spacing.800}"
+        "$value": "{govnl.dimension.size.800}"
       }
     }
   }

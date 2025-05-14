@@ -15,11 +15,11 @@
       },
       "padding-block": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.spacing.150}"
+        "$value": "{govnl.dimension.size.150}"
       },
       "padding-inline": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.spacing.200}"
+        "$value": "{govnl.dimension.size.200}"
       },
       "min-block-size": {
         "$type": "dimension",
