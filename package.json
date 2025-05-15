@@ -21,7 +21,7 @@
   "workspaces": [
     "./proprietary/*",
     "./packages/*",
-    "./packages/components/src/*"
+    "./components/*"
   ],
   "devDependencies": {
     "glob": "^11.0.2",
