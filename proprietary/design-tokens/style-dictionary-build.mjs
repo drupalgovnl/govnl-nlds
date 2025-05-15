@@ -36,8 +36,13 @@ const base = new StyleDictionary({
 
 // SD config that outputs a file per component.
 const components = new StyleDictionary({
+  // Logging is set to silent, because the warning for filtered out token references
+  // is not relevant for the component tokens.
+  // It is only relevant for the base tokens, which are not filtered out.
+  // This is a workaround for the issue with the warning not being silenced.
+  //
   log: {
-    verbosity: 'verbose'
+    verbosity: 'silent',
   },
   source: [tokens],
   preprocessors: ['tokens-studio'],

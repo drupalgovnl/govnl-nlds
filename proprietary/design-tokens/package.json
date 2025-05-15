@@ -18,7 +18,7 @@
   },
   "scripts": {
     "clean": "rimraf dist/",
-    "build": "npm-run-all clean build:**",
+    "build": "npm-run-all clean build:style-dictionary",
     "build:style-dictionary": "node ./style-dictionary-build.mjs",
     "watch": "npm-run-all watch:**",
     "watch:style-dictionary": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.tokens.json'"
@@ -29,6 +29,6 @@
     "glob": "^11.0.2",
     "npm-run-all": "4.1.5",
     "rimraf": "6.0.1",
-    "style-dictionary": "4.0.1"
+    "style-dictionary": "^4.4.0"
   }
 }

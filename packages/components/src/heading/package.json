@@ -26,7 +26,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
+  "devDependencies": {
     "@nl-design-system-candidate/heading-css": "^1.1.0"
+  },
+  "scripts": {
+    "build": "",
+    "clean": ""
   }
 }

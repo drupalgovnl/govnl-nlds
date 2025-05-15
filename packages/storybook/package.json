@@ -13,10 +13,13 @@
     "directory": "packages/storybook"
   },
   "scripts": {
-    "build": "storybook build --output-dir dist/ --config-dir config/",
+    "build": "storybook build --output-dir dist/ --config-dir config/ --quiet",
     "clean": "rimraf dist/",
     "storybook": "storybook dev --config-dir config/ --port 6006"
   },
+  "files": [
+    "dist/"
+  ],
   "devDependencies": {
     "@babel/core": "7.26.10",
     "@etchteam/storybook-addon-status": "5.0.0",
@@ -32,9 +35,9 @@
     "@storybook/html-vite": "8.6.12",
     "@storybook/manager-api": "8.6.12",
     "@storybook/theming": "8.6.12",
-    "@whitespace/storybook-addon-html": "6.1.1",
+    "@whitespace/storybook-addon-html": "^7.0.0",
     "rimraf": "6.0.1",
     "storybook": "8.6.12",
-    "vite": "6.2.5"
+    "vite": "^6.3.5"
   }
 }
