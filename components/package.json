@@ -16,8 +16,5 @@
   "scripts": {
     "build": "",
     "clean": ""
-  },
-  "workspaces": [
-    "packages/a"
-  ]
+  }
 }
