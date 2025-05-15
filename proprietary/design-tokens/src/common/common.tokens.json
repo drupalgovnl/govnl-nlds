@@ -277,19 +277,19 @@
       },
       "padding-inline-start": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.size.150}"
+        "$value": "{govnl.spacing.inline.sm}"
       },
-      "padding-inline-end": {
+      "padding-inline-end" : {
         "$type": "dimension",
-        "$value": "{govnl.dimension.size.150}"
+        "$value": "{govnl.spacing.inline.sm}"
       },
-      "padding-block-start": {
+      "padding-block-start" : {
         "$type": "dimension",
-        "$value": "{govnl.dimension.size.150}"
+        "$value": "{govnl.spacing.block.sm}"
       },
-      "padding-block-end": {
+      "padding-block-end" : {
         "$type": "dimension",
-        "$value": "{govnl.dimension.size.150}"
+        "$value": "{govnl.spacing.block.sm}"
       }
     },
     "interaction": {
@@ -367,6 +367,36 @@
         "lg": {
           "$type": "dimension",
           "$value": "{govnl.dimension.size.500}"
+        }
+      }
+    },
+    "spacing": {
+      "block": {
+        "sm": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.150}"
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.250}"
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.400}"
+        }
+      },
+      "inline": {
+        "sm": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.150}"
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.250}"
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.400}"
         }
       }
     },
