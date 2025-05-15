@@ -12,5 +12,12 @@
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
     "directory": "packages/components"
-  }
+  },
+  "scripts": {
+    "build": "",
+    "clean": ""
+  },
+  "workspaces": [
+    "packages/a"
+  ]
 }
