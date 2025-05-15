@@ -372,6 +372,10 @@
     },
     "spacing": {
       "block": {
+        "none": {
+          "$type": "dimension",
+          "$value": "0px"
+        },
         "sm": {
           "$type": "dimension",
           "$value": "{govnl.dimension.size.150}"
@@ -386,6 +390,10 @@
         }
       },
       "inline": {
+        "none": {
+          "$type": "dimension",
+          "$value": "0px"
+        },
         "sm": {
           "$type": "dimension",
           "$value": "{govnl.dimension.size.150}"
@@ -407,21 +415,25 @@
       },
       "xs": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.size.100}"
+        "$value": "{govnl.dimension.size.50}"
       },
       "sm": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.size.200}"
+        "$value": "{govnl.dimension.size.100}"
       },
       "md": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.size.300}"
+        "$value": "{govnl.dimension.size.200}"
       },
       "lg": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.size.400}"
+        "$value": "{govnl.dimension.size.300}"
       },
       "xl": {
+        "$type": "dimension",
+        "$value": "{govnl.dimension.size.400}"
+      },
+      "2xl": {
         "$type": "dimension",
         "$value": "{govnl.dimension.size.800}"
       }
