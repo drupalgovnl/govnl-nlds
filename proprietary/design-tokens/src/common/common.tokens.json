@@ -276,19 +276,19 @@
         }
       },
       "padding-inline-start": {
-        "$type": "size",
+        "$type": "dimension",
         "$value": "{govnl.dimension.size.150}"
       },
       "padding-inline-end": {
-        "$type": "size",
+        "$type": "dimension",
         "$value": "{govnl.dimension.size.150}"
       },
       "padding-block-start": {
-        "$type": "size",
+        "$type": "dimension",
         "$value": "{govnl.dimension.size.150}"
       },
       "padding-block-end": {
-        "$type": "size",
+        "$type": "dimension",
         "$value": "{govnl.dimension.size.150}"
       }
     },
@@ -350,49 +350,49 @@
     },
     "pointer-target": {
       "min-size": {
-        "$type": "size",
+        "$type": "dimension",
         "$value": "{govnl.dimension.size.600}"
       }
     },
     "icon": {
       "size": {
         "sm": {
-          "$type": "size",
+          "$type": "dimension",
           "$value": "{govnl.dimension.size.200}"
         },
         "md": {
-          "$type": "size",
+          "$type": "dimension",
           "$value": "{govnl.dimension.size.300}"
         },
         "lg": {
-          "$type": "size",
+          "$type": "dimension",
           "$value": "{govnl.dimension.size.500}"
         }
       }
     },
     "margin": {
       "none": {
-        "$type": "size",
+        "$type": "dimension",
         "$value": "0px"
       },
       "xs": {
-        "$type": "size",
+        "$type": "dimension",
         "$value": "{govnl.dimension.size.100}"
       },
       "sm": {
-        "$type": "size",
+        "$type": "dimension",
         "$value": "{govnl.dimension.size.200}"
       },
       "md": {
-        "$type": "size",
+        "$type": "dimension",
         "$value": "{govnl.dimension.size.300}"
       },
       "lg": {
-        "$type": "size",
+        "$type": "dimension",
         "$value": "{govnl.dimension.size.400}"
       },
       "xl": {
-        "$type": "size",
+        "$type": "dimension",
         "$value": "{govnl.dimension.size.800}"
       }
     }
