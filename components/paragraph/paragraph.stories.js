@@ -1,7 +1,7 @@
 import defaultDocs from './_default.md?raw';
 import leadDocs from './_lead.md?raw';
 import readme from './README.md?raw';
-import './src/index.css';
+import './dist/index.css';
 import { BADGES } from '@dictu/storybook/config/preview';
 
 export default {
@@ -13,7 +13,7 @@ export default {
     innerHTML: {
       control: 'text',
     },
-    purpose: {
+    lead: {
       control: 'boolean',
     },
   },
@@ -26,11 +26,11 @@ export default {
     },
   },
   render: ({ innerHTML, ...args }) => {
-    const classes = ['nl-paragraph'];
+    const classes = ['dictu-paragraph'];
     const $paragraph = document.createElement('p');
 
-    if (args.purpose) {
-      classes.push(`nl-paragraph--lead`);
+    if (args.lead) {
+      classes.push(`dictu-paragraph--lead`);
     }
 
     $paragraph.innerText = innerHTML;
@@ -44,7 +44,7 @@ export default {
 
 export const Paragraph = {
   args: {
-    purpose: false,
+    lead: false,
   },
   parameters: {
     docs: {
@@ -57,7 +57,7 @@ export const Paragraph = {
 
 export const Lead = {
   args: {
-    purpose: true,
+    lead: true,
   },
   parameters: {
     docs: {

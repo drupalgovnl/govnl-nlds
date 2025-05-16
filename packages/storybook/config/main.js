@@ -20,7 +20,7 @@ const config = {
     options: {},
   },
   staticDirs: ['../../../proprietary/assets/src'],
-  stories: ['../../components/src/**/*stories.@(js|jsx|ts|tsx)', '../src/**/*.mdx'],
+  stories: ['../../../components/**/*stories.@(js|jsx|ts|tsx)', '../src/**/*.mdx'],
 };
 
 export default config;

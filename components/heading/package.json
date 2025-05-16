@@ -31,7 +31,7 @@
     "@nl-design-system-candidate/heading-css": "^1.1.0"
   },
   "scripts": {
-    "build": "",
-    "clean": "rimraf ./dist/"
+      "build": "sass --pkg-importer=node --style=compressed ./src/:./dist/",
+      "clean": "rimraf ./dist/"
+    }
   }
-}

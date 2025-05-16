@@ -30,7 +30,7 @@
     "@nl-design-system-candidate/paragraph-css": "^2.1.0"
   },
   "scripts": {
-    "build": "",
+    "build": "sass --pkg-importer=node --style=compressed ./src/:./dist/",
     "clean": "rimraf ./dist/"
   }
 }
