@@ -274,22 +274,6 @@
           "$type": "color",
           "$value": "{govnl.color.grijs.600}"
         }
-      },
-      "padding-inline-start": {
-        "$type": "dimension",
-        "$value": "{govnl.spacing.inline.sm}"
-      },
-      "padding-inline-end" : {
-        "$type": "dimension",
-        "$value": "{govnl.spacing.inline.sm}"
-      },
-      "padding-block-start" : {
-        "$type": "dimension",
-        "$value": "{govnl.spacing.block.sm}"
-      },
-      "padding-block-end" : {
-        "$type": "dimension",
-        "$value": "{govnl.spacing.block.sm}"
       }
     },
     "interaction": {
