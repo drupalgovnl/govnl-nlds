@@ -366,11 +366,11 @@
         },
         "md": {
           "$type": "dimension",
-          "$value": "{govnl.dimension.size.250}"
+          "$value": "{govnl.dimension.size.200}"
         },
         "lg": {
           "$type": "dimension",
-          "$value": "{govnl.dimension.size.400}"
+          "$value": "{govnl.dimension.size.300}"
         },
         "xl": {
           "$type": "dimension",
@@ -388,11 +388,11 @@
         },
         "md": {
           "$type": "dimension",
-          "$value": "{govnl.dimension.size.250}"
+          "$value": "{govnl.dimension.size.200}"
         },
         "lg": {
           "$type": "dimension",
-          "$value": "{govnl.dimension.size.400}"
+          "$value": "{govnl.dimension.size.300}"
         },
         "xl": {
           "$type": "dimension",

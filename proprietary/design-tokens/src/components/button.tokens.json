@@ -297,19 +297,19 @@
       },
       "padding-block-end": {
         "$type": "dimension",
-        "$value": "{govnl.form-control.padding-block-end}"
+        "$value": "{govnl.spacing.block.sm}"
       },
       "padding-block-start": {
         "$type": "dimension",
-        "$value": "{govnl.form-control.padding-block-start}"
+        "$value": "{govnl.spacing.block.sm}"
       },
       "padding-inline-end": {
         "$type": "dimension",
-        "$value": "{govnl.form-control.padding-inline-end}"
+        "$value": "{govnl.spacing.inline.md}"
       },
       "padding-inline-start": {
         "$type": "dimension",
-        "$value": "{govnl.form-control.padding-inline-start}"
+        "$value": "{govnl.spacing.inline.md}"
       },
       "min-block-size": {
         "$type": "dimension",
@@ -321,7 +321,7 @@
       },
       "column-gap": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.size.200}"
+        "$value": "{govnl.spacing.gap.sm}"
       }
     }
   }
