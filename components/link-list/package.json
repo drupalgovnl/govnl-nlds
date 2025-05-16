@@ -1,19 +1,19 @@
 {
-  "name": "@dictu/heading",
+  "name": "@dictu/link-list",
   "version": "1.0.0-alpha.0",
   "author": "Dienst ICT Uitvoering",
-  "description": "Heading CSS component.",
+  "description": "Link-list CSS component.",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system",
     "css",
-    "heading"
+    "link-list"
   ],
   "private": true,
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/heading"
+    "directory": "components/link-list"
   },
   "files": [
     "src/",
@@ -24,9 +24,11 @@
     "./dist/*": "./dist/*"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
-  "dependencies": {
-    "@nl-design-system-candidate/heading-css": "^1.1.0"
+  "scripts": {
+    "build": "",
+    "clean": "rimraf ./dist/"
   }
 }

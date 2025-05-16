@@ -1,19 +1,19 @@
 {
-  "name": "@dictu/paragraph",
+  "name": "@dictu/accordeon",
   "version": "1.0.0-alpha.0",
   "author": "Dienst ICT Uitvoering",
-  "description": "Paragraph CSS component.",
+  "description": "Accordeon CSS component.",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system",
     "css",
-    "paragraph"
+    "accordeon"
   ],
   "private": true,
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/paragraph"
+    "directory": "components/accordeon"
   },
   "files": [
     "src/",
@@ -24,9 +24,11 @@
     "./dist/*": "./dist/*"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
-  "dependencies": {
-    "@nl-design-system-candidate/paragraph-css": "^2.1.0"
+  "scripts": {
+    "build": "",
+    "clean": "rimraf ./dist/"
   }
 }

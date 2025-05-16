@@ -1,0 +1,37 @@
+{
+  "name": "@dictu/skip-link",
+  "version": "1.0.0-alpha.0",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Skip Link CSS component.",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system",
+    "css",
+    "skip-link"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "components/skip-link"
+  },
+  "files": [
+    "src/",
+    "dist/",
+    "*.md"
+  ],
+  "exports": {
+    "./dist/*": "./dist/*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "devDependencies": {
+    "@nl-design-system-candidate/skip-link-css": "^1.0.2"
+  },
+  "scripts": {
+    "build": "",
+    "clean": "rimraf ./dist/"
+  }
+}

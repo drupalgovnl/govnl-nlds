@@ -1,0 +1,34 @@
+{
+  "name": "@dictu/footer",
+  "version": "1.0.0-alpha.0",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Footer CSS component.",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system",
+    "css",
+    "footer"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "components/footer"
+  },
+  "files": [
+    "src/",
+    "dist/",
+    "*.md"
+  ],
+  "exports": {
+    "./dist/*": "./dist/*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "",
+    "clean": "rimraf ./dist/"
+  }
+}
