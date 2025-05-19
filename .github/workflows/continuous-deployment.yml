@@ -62,6 +62,8 @@ jobs:
         run: npm install --frozen-lockfile
 
       - name: "Continuous Integration: build"
+        env:
+          BASE_URL: "/govnl-nlds/"
         run: npm run --if-present build
 
       - name: "Retain build artifact: storybook"
