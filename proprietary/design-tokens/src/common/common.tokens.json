@@ -332,37 +332,19 @@
         "$value": "{govnl.typography.font-weight.regular}"
       }
     },
-    "pointer-target": {
-      "min-size": {
+    "container": {
+      "size": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.size.600}"
+        "$value": "calc (8 * {govnl.dimension.size.2000})"
       }
     },
-    "icon": {
+    "content": {
       "size": {
-        "sm": {
-          "$type": "dimension",
-          "$value": "{govnl.dimension.size.200}"
-        },
-        "md": {
-          "$type": "dimension",
-          "$value": "{govnl.dimension.size.300}"
-        },
-        "lg": {
-          "$type": "dimension",
-          "$value": "{govnl.dimension.size.500}"
-        }
+        "$type": "dimension",
+        "$value": "calc (5 * {govnl.dimension.size.2000})"
       }
     },
     "spacing": {
-      "content": {
-        "$type": "dimension",
-        "$value": "calc (5 * {govnl.dimension.size.2000})"
-      },
-      "container": {
-        "$type": "dimension",
-        "$value": "calc (8 * {govnl.dimension.size.2000})"
-      },
       "block": {
         "none": {
           "$type": "dimension",
@@ -435,6 +417,28 @@
         "2xl": {
           "$type": "dimension",
           "$value": "{govnl.dimension.size.800}"
+        }
+      },
+      "icon": {
+        "size": {
+          "sm": {
+            "$type": "dimension",
+            "$value": "{govnl.dimension.size.200}"
+          },
+          "md": {
+            "$type": "dimension",
+            "$value": "{govnl.dimension.size.300}"
+          },
+          "lg": {
+            "$type": "dimension",
+            "$value": "{govnl.dimension.size.500}"
+          }
+        }
+      },
+      "pointer-target": {
+        "min-size": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.600}"
         }
       }
     }
