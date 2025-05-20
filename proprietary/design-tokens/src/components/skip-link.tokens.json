@@ -23,11 +23,11 @@
       },
       "min-block-size": {
         "$type": "dimension",
-        "$value": "{govnl.pointer-target.min-size}"
+        "$value": "{govnl.dimension.pointer-target.min-size}"
       },
       "min-inline-size": {
         "$type": "dimension",
-        "$value": "{govnl.pointer-target.min-size}"
+        "$value": "{govnl.dimension.pointer-target.min-size}"
       },
       "text-decoration-thickness": {
         "$type": "other",
