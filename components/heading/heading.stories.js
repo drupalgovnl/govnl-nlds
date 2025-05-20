@@ -1,10 +1,11 @@
 import readme from './README.md?raw';
-import level1Docs from './_level1.md?raw';
-import level2Docs from './_level2.md?raw';
-import level3Docs from './_level3.md?raw';
-import level4Docs from './_level4.md?raw';
-import level5Docs from './_level5.md?raw';
-import level6Docs from './_level6.md?raw';
+import level1Docs from './docs/_level1.md?raw';
+import level2Docs from './docs/_level2.md?raw';
+import level3Docs from './docs/_level3.md?raw';
+import level4Docs from './docs/_level4.md?raw';
+import level5Docs from './docs/_level5.md?raw';
+import level6Docs from './docs/_level6.md?raw';
+import '@dictu/design-tokens/dist/heading.css';
 import './dist/index.css';
 import { BADGES } from '@dictu/storybook/config/preview';
 

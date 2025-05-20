@@ -1,6 +1,7 @@
-import defaultDocs from './_default.md?raw';
-import leadDocs from './_lead.md?raw';
+import defaultDocs from './docs/_default.md?raw';
+import leadDocs from './docs/_lead.md?raw';
 import readme from './README.md?raw';
+import '@dictu/design-tokens/dist/paragraph.css';
 import './dist/index.css';
 import { BADGES } from '@dictu/storybook/config/preview';
 
