@@ -42,7 +42,7 @@
       "button": {
         "background-color": {
           "$type": "color",
-          "$value": "{govnl.color.grijs.50}"
+          "$value": "{govnl.document.background-color}"
         },
         "border-color": {
           "$type": "color",
@@ -79,7 +79,11 @@
           },
           "margin-inline": {
             "$type": "dimension",
-            "$value": "{govnl.spacing.gap.sm}"
+            "$value": "{govnl.spacing.inline.sm}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.interaction.color}"
           }
         },
         "padding-block-end": {
