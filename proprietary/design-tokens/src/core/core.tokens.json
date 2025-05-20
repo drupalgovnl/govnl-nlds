@@ -819,7 +819,7 @@
       "pointer-target": {
         "min-size": {
           "$type": "dimension",
-          "$value": "{govnl.dimension.size.600}"
+          "$value": "48px"
         }
       },
       "size": {
