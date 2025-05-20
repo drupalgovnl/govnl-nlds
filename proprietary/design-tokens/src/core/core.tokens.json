@@ -816,6 +816,12 @@
           "$value": "1440px"
         }
       },
+      "pointer-target": {
+        "min-size": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.600}"
+        }
+      },
       "size": {
         "25": {
           "$type": "dimension",

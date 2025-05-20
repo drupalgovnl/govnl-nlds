@@ -354,12 +354,6 @@
           "$type": "dimension",
           "$value": "{govnl.dimension.size.500}"
         }
-      },
-      "pointer-target": {
-        "min-size": {
-          "$type": "dimension",
-          "$value": "{govnl.dimension.size.600}"
-        }
       }
     },
     "spacing": {
