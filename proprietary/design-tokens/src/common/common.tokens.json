@@ -428,6 +428,14 @@
           "$type": "dimension",
           "$value": "{govnl.dimension.size.800}"
         }
+      },
+      "content": {
+        "$type": "dimension",
+        "$value": "calc (5 * {govnl.dimension.size.2000})"
+      },
+      "container": {
+        "$type": "dimension",
+        "$value": "calc (8 * {govnl.dimension.size.2000})"
       }
     }
   }
