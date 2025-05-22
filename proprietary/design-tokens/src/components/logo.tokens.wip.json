@@ -39,7 +39,7 @@
       },
       "subtitle": {
         "font-weight": {
-          "value": "{govnl.font-weight.regular}",
+          "value": "{govnl.typography.font-weight.regular}",
           "type": "fontWeights"
         },
         "line-height": {
@@ -56,7 +56,7 @@
         "type": "spacing"
       },
       "font-family": {
-        "value": "{govnl.font-family.primary}",
+        "value": "{govnl.typography.font-family.sans}",
         "type": "fontFamilies"
       },
       "color": {
