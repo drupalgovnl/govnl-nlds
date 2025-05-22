@@ -1,2 +1,0 @@
-import{j as t,M as r,a as s}from"./DocsRenderer-CFRXHY34-jwUS70cH.js";import{useMDXComponents as i}from"./index-DymlVT0o.js";import"./index-1dIeoSdG.js";import"./iframe-C1HxmDOO.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./preview-BlSYEzly.js";function o(n){return t.jsxs(t.Fragment,{children:[t.jsx(r,{title:"Design Tokens/Design Tokens"}),`
-`,t.jsx(s,{children:"To be filled"})]})}function l(n={}){const{wrapper:e}={...i(),...n.components};return e?t.jsx(e,{...n,children:t.jsx(o,{...n})}):o()}export{l as default};

@@ -1,4 +1,4 @@
-import{BADGES as f}from"./preview-BIqUjC7G.js";const C=`<!-- @license CC0-1.0 -->
+import{BADGES as f}from"./preview-BLC6lKRo.js";const C=`<!-- @license CC0-1.0 -->
 
 Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.
 
