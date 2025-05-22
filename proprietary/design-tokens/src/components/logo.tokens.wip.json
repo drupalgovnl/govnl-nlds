@@ -21,7 +21,7 @@
       },
       "title": {
         "font-weight": {
-          "value": "600",
+          "value": "{govnl.typography.font-weight.semi-bold}",
           "type": "fontWeights"
         },
         "line-height": {
