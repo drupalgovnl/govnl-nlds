@@ -881,6 +881,30 @@
         }
       }
     },
+    "lint":{
+      "size": {
+        "quarter-lint": {
+          "type": "dimension",
+          "value": "12px"
+        },
+        "half-lint": {
+          "type": "dimension",
+          "value": "24px"
+        },
+        "lint": {
+          "type": "dimension",
+          "value": "48px"
+        },
+        "2-lint": {
+          "type": "dimension",
+          "value": "96px"
+        },
+        "3-lint": {
+          "type": "dimension",
+          "value": "1440px"
+        }
+      }
+    },
     "border": {
       "border-radius": {
         "sm": {

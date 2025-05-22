@@ -334,8 +334,14 @@
     },
     "sizing":{
       "container": {
-        "$type": "dimension",
-        "$value": "calc (8 * {govnl.dimension.size.2000})"
+        "max-inline-width": {
+          "$type": "dimension",
+          "$value": "calc (8 * {govnl.dimension.size.2000})"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.100}"
+        }
       },
       "content": {
         "$type": "dimension",
