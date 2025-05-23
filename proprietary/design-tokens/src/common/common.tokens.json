@@ -8,15 +8,37 @@
     },
     "brand": {
       "primary": {
-        "color": {
+        "50": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.50}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.100}"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.200}"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.300}"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.400}"
+        },
+        "500": {
           "$type": "color",
           "$value": "{govnl.color.lintblauw.500}"
         },
-        "subtle": {
-          "color": {
-            "$type": "color",
-            "$value": "{govnl.color.lintblauw.100}"
-          }
+        "hover": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.700}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.900}"
         }
       },
       "accent-1": {
@@ -284,13 +306,13 @@
       "active": {
         "color": {
           "$type": "color",
-          "$value": "{govnl.color.lintblauw.900}"
+          "$value": "{govnl.brand.primary.active}"
         }
       },
       "hover": {
         "color": {
           "$type": "color",
-          "$value": "{govnl.color.lintblauw.700}"
+          "$value": "{govnl.brand.primary.hover}"
         }
       }
     },
