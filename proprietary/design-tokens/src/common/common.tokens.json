@@ -301,7 +301,7 @@
     "interaction": {
       "color": {
         "$type": "color",
-        "$value": "{govnl.color.lintblauw.500}"
+        "$value": "{govnl.brand.primary.500}"
       },
       "active": {
         "color": {
