@@ -1,4 +1,4 @@
-import{j as e,M as t,a as r}from"./DocsRenderer-CFRXHY34-CL01bEWr.js";import{useMDXComponents as a}from"./index-Bn5AgfHb.js";import"./index-D8ETHfvf.js";import"./iframe-BGqfAl_v.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./preview-Bzq_YE8z.js";const s=`# EUROPEAN UNION PUBLIC LICENCE v. 1.2
+import{j as e,M as t,a as r}from"./DocsRenderer-CFRXHY34-BaPs-1tl.js";import{useMDXComponents as a}from"./index-CheUSFs8.js";import"./index-D8PVPvbZ.js";import"./iframe-DdtqzgC6.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-CfOrKyLd.js";import"./index-DrFu-skq.js";import"./preview-CE8HXDDD.js";const s=`# EUROPEAN UNION PUBLIC LICENCE v. 1.2
 
 EUPL © the European Union 2007, 2016
 
