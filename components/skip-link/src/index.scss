@@ -1,0 +1,13 @@
+@use "pkg:@nl-design-system-candidate/skip-link-css/src/mixin" as mixin;
+
+.dictu-skip-link {
+  @include mixin.nl-skip-link;
+}
+
+.dictu-skip-link--visible-on-focus {
+  @include mixin.nl-skip-link--hidden;
+}
+
+.dictu-skip-link--visible-on-focus:focus {
+  @include mixin.nl-skip-link--visible;
+}
