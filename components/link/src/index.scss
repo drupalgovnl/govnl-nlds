@@ -2,14 +2,14 @@
 
 .dictu-link {
   @include mixin.nl-link;
+}
 
-  &:hover {
-    @include mixin.nl-link--hover;
-  }
+.dictu-link:hover {
+  @include mixin.nl-link--hover;
+}
 
-  &:active {
-    @include mixin.nl-link--active;
-  }
+.dictu-link:active {
+  @include mixin.nl-link--active;
 }
 
 .dictu-link--inline-box {
