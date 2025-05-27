@@ -3,11 +3,15 @@
     "skip-link": {
       "background-color": {
         "$type": "color",
-        "$value": "{govnl.document.inverse.background-color}"
+        "$value": "{govnl.interaction.color}"
       },
       "color": {
         "$type": "color",
         "$value": "{govnl.document.inverse.color}"
+      },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{govnl.document.font-family}"
       },
       "font-size": {
         "$type": "fontSizes",
@@ -15,11 +19,11 @@
       },
       "padding-block": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.size.150}"
+        "$value": "{govnl.spacing.block.sm}"
       },
       "padding-inline": {
         "$type": "dimension",
-        "$value": "{govnl.dimension.size.200}"
+        "$value": "{govnl.spacing.inline.md}"
       },
       "min-block-size": {
         "$type": "dimension",
