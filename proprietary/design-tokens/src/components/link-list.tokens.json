@@ -23,23 +23,17 @@
         "text-decoration": {
           "$type": "textDecoration",
           "$value": "None"
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeights",
-        "$value": "{govnl.document.font-weight}"
-      }
-    }
-  },
-  "todo": {
-    "link-list": {
-      "link": {
+        },
         "hover": {
           "text-decoration": {
             "$type": "textDecoration",
             "$value": "underline"
           }
         }
+      },
+      "font-weight": {
+        "$type": "fontWeights",
+        "$value": "{govnl.document.font-weight}"
       }
     }
   }
