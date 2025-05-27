@@ -355,6 +355,16 @@
       }
     },
     "sizing":{
+      "section": {
+        "max-inline-width": {
+          "$type": "dimension",
+          "$value": "calc (8 * {govnl.dimension.size.2000})"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.100}"
+        }
+      },
       "container": {
         "max-inline-width": {
           "$type": "dimension",
@@ -366,8 +376,14 @@
         }
       },
       "content": {
-        "$type": "dimension",
-        "$value": "calc (5 * {govnl.dimension.size.2000})"
+        "max-inline-width": {
+          "$type": "dimension",
+          "$value": "calc (5 * {govnl.dimension.size.2000})"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.100}"
+        }
       },
       "icon": {
         "sm": {
