@@ -1,0 +1,27 @@
+@mixin dictu-icon {
+  block-size: var(--govnl-icon-color);
+  color: var(--utrecht-icon-color);
+  display: inline-block;
+  font-size: var(--govnl-icon-size);
+  inline-size: var(--govnl-icon-size);
+  inset-block-start: var(--utrecht-icon-inset-block-start, 0);
+  position: relative;
+}
+
+@mixin dictu-icon__svg {
+  /*
+   * Override the width of SVGs when they are hardcoded, and avoid oversized SVG icons.
+   * For example:
+   *
+   *   <svg width="128px" height="128px">
+   */
+
+  /* stylelint-disable-next-line property-disallowed-list */
+  height: 100%;
+
+  /* Remove tooltip from SVG `<title>` element using `pointer-events: none` */
+  pointer-events: none;
+
+  /* stylelint-disable-next-line property-disallowed-list */
+  width: 100%;
+}

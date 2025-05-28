@@ -1,0 +1,9 @@
+@use 'mixin' as mixin;
+
+.dictu-icon {
+  @include mixin.dictu-icon;
+}
+
+.dictu-icon svg {
+  @include mixin.dictu-icon__svg;
+}
