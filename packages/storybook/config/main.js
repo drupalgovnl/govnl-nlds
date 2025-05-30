@@ -1,26 +1,29 @@
+import { createRequire } from "node:module";
+import { dirname, join } from "node:path";
+const require = createRequire(import.meta.url);
 const config = {
   addons: [
-    '@geometricpanda/storybook-addon-badges',
-    '@storybook/addon-a11y',
-    '@storybook/addon-controls',
-    '@storybook/addon-docs',
-    '@storybook/addon-viewport',
-    '@whitespace/storybook-addon-html',
-    '@etchteam/storybook-addon-status',
+    getAbsolutePath("@storybook/addon-a11y"),
+    getAbsolutePath("@storybook/addon-docs"),
   ],
+
   core: {
     disableTelemetry: true,
     disableWhatsNewNotifications: true,
+    builder: getAbsolutePath("@storybook/builder-vite"),
   },
-  docs: {
-    autodocs: 'tag',
-  },
+
   framework: {
-    name: '@storybook/html-vite',
+    name: getAbsolutePath("@storybook/html"),
     options: {},
   },
+
   staticDirs: ['../../../proprietary/assets/src'],
-  stories: ['../../../components/**/*stories.@(js|jsx|ts|tsx)', '../src/**/*.mdx'],
+  stories: ['../../../components/**/*stories.@(js|jsx|ts|tsx)', '../src/**/*.mdx']
 };
 
 export default config;
+
+function getAbsolutePath(value) {
+  return dirname(require.resolve(join(value, "package.json")));
+}

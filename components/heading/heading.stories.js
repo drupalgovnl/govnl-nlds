@@ -7,7 +7,6 @@ import level5Docs from './docs/_level5.md?raw';
 import level6Docs from './docs/_level6.md?raw';
 import '@dictu/design-tokens/dist/heading.css';
 import './dist/index.css';
-import { BADGES } from '@dictu/storybook/config/preview';
 
 export default {
   args: {
@@ -25,7 +24,6 @@ export default {
     },
   },
   parameters: {
-    badges: [BADGES.WIP],
     docs: {
       description: {
         component: readme,

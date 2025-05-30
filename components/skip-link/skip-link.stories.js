@@ -1,7 +1,6 @@
 import readme from './README.md?raw';
 import '@dictu/design-tokens/dist/skip-link.css';
 import './dist/index.css';
-import { BADGES } from '@dictu/storybook/config/preview';
 
 export default {
   argTypes: {
@@ -13,7 +12,6 @@ export default {
     }
   },
   parameters: {
-    badges: [BADGES.WIP],
     docs: {
       description: {
         component: readme,
