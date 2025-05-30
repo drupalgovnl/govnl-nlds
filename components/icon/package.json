@@ -1,0 +1,34 @@
+{
+  "name": "@dictu/icon",
+  "version": "1.0.0-alpha.0",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Icon CSS component.",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system",
+    "css",
+    "icon"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "components/icon"
+  },
+  "files": [
+    "src/",
+    "dist/",
+    "*.md"
+  ],
+  "exports": {
+    "./dist/*": "./dist/*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "clean": "rimraf ./dist/"
+  }
+}
