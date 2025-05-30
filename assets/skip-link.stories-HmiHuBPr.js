@@ -1,4 +1,4 @@
-import{BADGES as d}from"./preview-2NqGIXso.js";const k=`<!-- @license CC0-1.0 -->
+const d=`<!-- @license CC0-1.0 -->
 
 Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.
 
@@ -34,9 +34,9 @@ Gebruik voor een skip link de class name \`dictu-skip-link\` op een \`anchor\` e
 ### Relevante WCAG regels
 
 - [WCAG eis 2.4.1](https://www.w3.org/TR/WCAG21/#bypass-blocks)
-`,p={argTypes:{innerHTML:{control:"text"},href:{control:"text"}},parameters:{badges:[d.WIP],docs:{description:{component:k}}},render:({innerHTML:r,href:o,...l})=>{const a=["dictu-skip-link"],e=document.createElement("a");return e.innerText=r,e.href=o,e.classList.add(...a),e},tags:["autodocs"],title:"Componenten/Skip Link"},n={args:{innerHTML:"Ga direct naar inhoud",href:"#content"}};var i,t,s;n.parameters={...n.parameters,docs:{...(i=n.parameters)==null?void 0:i.docs,source:{originalSource:`{
+`,l={argTypes:{innerHTML:{control:"text"},href:{control:"text"}},parameters:{docs:{description:{component:d}}},render:({innerHTML:r,href:o,...k})=>{const a=["dictu-skip-link"],e=document.createElement("a");return e.innerText=r,e.href=o,e.classList.add(...a),e},tags:["autodocs"],title:"Componenten/Skip Link"},n={args:{innerHTML:"Ga direct naar inhoud",href:"#content"}};var i,t,s;n.parameters={...n.parameters,docs:{...(i=n.parameters)==null?void 0:i.docs,source:{originalSource:`{
   args: {
     innerHTML: 'Ga direct naar inhoud',
     href: '#content'
   }
-}`,...(s=(t=n.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};const m=["SkipLink"];export{n as SkipLink,m as __namedExportsOrder,p as default};
+}`,...(s=(t=n.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};const c=["SkipLink"];export{n as SkipLink,c as __namedExportsOrder,l as default};
