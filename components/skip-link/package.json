@@ -31,7 +31,7 @@
     "@nl-design-system-candidate/skip-link-css": "^1.0.2"
   },
   "scripts": {
-    "build": "",
+    "build": "sass --pkg-importer=node --style=compressed ./src/:./dist/",
     "clean": "rimraf ./dist/"
   }
 }
