@@ -14,7 +14,7 @@
   "files": [],
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:git@github.com:drupalgovnl/govnl-nlds.git",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
     "directory": "proprietary/assets"
   },
   "scripts": {
