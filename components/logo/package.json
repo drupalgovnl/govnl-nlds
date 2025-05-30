@@ -28,7 +28,7 @@
     "provenance": true
   },
   "scripts": {
-    "build": "",
+    "build": "sass --pkg-importer=node --style=compressed ./src/:./dist/",
     "clean": "rimraf ./dist/"
   }
 }
