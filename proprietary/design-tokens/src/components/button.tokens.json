@@ -2,6 +2,18 @@
   "govnl": {
     "button": {
       "primary-action": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.interaction.color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "transparent"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.white}"
+        },
         "hover": {
           "background-color": {
             "$type": "color",
@@ -16,17 +28,19 @@
             "$value": "{govnl.color.white}"
           }
         },
-        "background-color": {
-          "$type": "color",
-          "$value": "{govnl.interaction.color}"
-        },
-        "border-color": {
-          "$type": "color",
-          "$value": "transparent"
-        },
-        "color": {
-          "$type": "color",
-          "$value": "{govnl.color.white}"
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.interaction.active.color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          }
         },
         "disabled": {
           "background-color": {
@@ -54,20 +68,6 @@
           "color": {
             "$type": "color",
             "$value": "{govnl.focus.color}"
-          }
-        },
-        "active": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{govnl.interaction.active.color}"
-          },
-          "border-color": {
-            "$type": "color",
-            "$value": "transparent"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{govnl.color.white}"
           }
         }
       },
