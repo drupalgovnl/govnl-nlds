@@ -2,85 +2,85 @@
   "nl": {
     "link": {
       "color": {
-        "$type": "color",
-        "$value": "{govnl.interaction.color}"
+        "value": "{govnl.interaction.color}",
+        "type": "color"
       },
       "text-decoration-color": {
-        "$type": "color",
-        "$value": "{govnl.interaction.color}"
+        "value": "{govnl.interaction.color}",
+        "type": "color"
       },
       "text-decoration-line": {
-        "$type": "textDecoration",
-        "$value": "underline"
+        "value": "underline",
+        "type": "textDecoration"
       },
       "text-decoration-thickness": {
-        "$type": "other",
-        "$value": "auto"
+        "value": "auto",
+        "type": "other"
       },
       "text-underline-offset": {
-        "$type": "other",
-        "$value": "auto"
+        "value": "auto",
+        "type": "other"
       },
       "active": {
         "color": {
-          "$type": "color",
-          "$value": "{govnl.interaction.active.color}"
+          "value": "{govnl.interaction.active.color}",
+          "type": "color"
         },
         "text-decoration-line": {
-          "$type": "textDecoration",
-          "$value": "None"
+          "value": "None",
+          "type": "textDecoration"
         },
         "text-decoration-thickness": {
-          "$type": "other",
-          "$value": "auto"
+          "value": "auto",
+          "type": "other"
         }
       },
       "current": {
         "cursor": {
-          "$type": "other",
-          "$value": "default"
+          "value": "default",
+          "type": "other"
         }
       },
       "disabled": {
         "color": {
-          "$type": "color",
-          "$value": "{govnl.color.grijs.500}"
+          "value": "{govnl.color.grijs.500}",
+          "type": "color"
         },
         "cursor": {
-          "$type": "other",
-          "$value": "disabled"
+          "value": "disabled",
+          "type": "other"
         }
       },
       "focus-visible": {
         "background-color": {
-          "$type": "color",
-          "$value": "{govnl.focus.background-color}"
+          "value": "{govnl.focus.background-color}",
+          "type": "color"
         },
         "color": {
-          "$type": "color",
-          "$value": "{govnl.focus.color}"
+          "value": "{govnl.focus.color}",
+          "type": "color"
         },
         "text-decoration-line": {
-          "$type": "textDecoration",
-          "$value": "None"
+          "value": "None",
+          "type": "textDecoration"
         },
         "text-decoration-thickness": {
-          "$type": "other",
-          "$value": "auto"
+          "value": "auto",
+          "type": "other"
         }
       },
       "hover": {
         "color": {
-          "$type": "color",
-          "$value": "{govnl.interaction.hover.color}"
+          "value": "{govnl.interaction.hover.color}",
+          "type": "color"
         },
         "text-decoration-line": {
-          "$type": "textDecoration",
-          "$value": "None"
+          "value": "None",
+          "type": "textDecoration"
         },
         "text-decoration-thickness": {
-          "$type": "other",
-          "$value": "auto"
+          "value": "auto",
+          "type": "other"
         }
       }
     }

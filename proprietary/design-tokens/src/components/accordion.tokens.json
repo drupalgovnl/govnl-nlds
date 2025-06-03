@@ -2,174 +2,174 @@
   "govnl": {
     "accordion": {
       "body": {
-        "font-family":{
-          "$type": "fontFamilies",
-          "$value": "{govnl.document.font-family}"
+        "font-family": {
+          "value": "{govnl.document.font-family}",
+          "type": "fontFamilies"
         },
         "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.document.font-size}"
+          "value": "{govnl.document.font-size}",
+          "type": "fontSizes"
         },
         "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{govnl.document.font-weight}"
+          "value": "{govnl.document.font-weight}",
+          "type": "fontWeights"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "transparent"
+          "value": "transparent",
+          "type": "color"
         },
         "border-width": {
-          "$type": "dimension",
-          "$value": "{govnl.border.border-width.sm}"
+          "value": "{govnl.border.border-width.sm}",
+          "type": "dimension"
         },
         "padding-block-end": {
-          "$type": "dimension",
-          "$value": "{govnl.spacing.block.lg}"
+          "value": "{govnl.spacing.block.lg}",
+          "type": "dimension"
         },
         "padding-block-start": {
-          "$type": "dimension",
-          "$value": "{govnl.spacing.block.md}"
+          "value": "{govnl.spacing.block.md}",
+          "type": "dimension"
         },
         "padding-inline-end": {
-          "$type": "dimension",
-          "$value": "{govnl.spacing.inline.md}"
+          "value": "{govnl.spacing.inline.md}",
+          "type": "dimension"
         },
         "padding-inline-start": {
-          "$type": "dimension",
-          "$value": "{govnl.spacing.inline.md}"
+          "value": "{govnl.spacing.inline.md}",
+          "type": "dimension"
         }
       },
       "button": {
         "background-color": {
-          "$type": "color",
-          "$value": "{govnl.document.background-color}"
+          "value": "{govnl.document.background-color}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "transparent"
+          "value": "transparent",
+          "type": "color"
         },
         "color": {
-          "$type": "color",
-          "$value": "{govnl.interaction.color}"
+          "value": "{govnl.interaction.color}",
+          "type": "color"
         },
-        "font-family":{
-          "$type": "fontFamilies",
-          "$value": "{govnl.document.font-family}"
+        "font-family": {
+          "value": "{govnl.document.font-family}",
+          "type": "fontFamilies"
         },
         "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.document.font-size}"
+          "value": "{govnl.document.font-size}",
+          "type": "fontSizes"
         },
         "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{govnl.document.strong.font-weight}"
+          "value": "{govnl.document.strong.font-weight}",
+          "type": "fontWeights"
         },
         "line-height": {
-          "$type": "lineHeights",
-          "$value": "{govnl.document.line-height}"
+          "value": "{govnl.document.line-height}",
+          "type": "lineHeights"
         },
         "gap": {
-          "$type": "dimension",
-          "$value": "{govnl.spacing.gap.sm}"
+          "value": "{govnl.spacing.gap.sm}",
+          "type": "dimension"
         },
         "icon": {
           "size": {
-            "$type": "dimension",
-            "$value": "{govnl.sizing.icon.md}"
+            "value": "{govnl.sizing.icon.md}",
+            "type": "dimension"
           },
           "margin-inline": {
-            "$type": "dimension",
-            "$value": "{govnl.spacing.inline.sm}"
+            "value": "{govnl.spacing.inline.sm}",
+            "type": "dimension"
           },
           "color": {
-            "$type": "color",
-            "$value": "{govnl.interaction.color}"
+            "value": "{govnl.interaction.color}",
+            "type": "color"
           }
         },
         "padding-block-end": {
-          "$type": "dimension",
-          "$value": "{govnl.spacing.block.sm}"
+          "value": "{govnl.spacing.block.sm}",
+          "type": "dimension"
         },
         "padding-block-start": {
-          "$type": "dimension",
-          "$value": "{govnl.spacing.block.sm}"
+          "value": "{govnl.spacing.block.sm}",
+          "type": "dimension"
         },
         "padding-inline-end": {
-          "$type": "dimension",
-          "$value": "{govnl.spacing.inline.md}"
+          "value": "{govnl.spacing.inline.md}",
+          "type": "dimension"
         },
         "padding-inline-start": {
-          "$type": "dimension",
-          "$value": "{govnl.spacing.inline.md}"
+          "value": "{govnl.spacing.inline.md}",
+          "type": "dimension"
         },
         "hover": {
           "background-color": {
-            "$type": "color",
-            "$value": "{govnl.color.grijs.100}"
+            "value": "{govnl.color.grijs.100}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "transparent"
+            "value": "transparent",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{govnl.interaction.hover.color}"
+            "value": "{govnl.interaction.hover.color}",
+            "type": "color"
           }
         },
         "focus": {
           "background-color": {
-            "$type": "color",
-            "$value": "{govnl.focus.background-color}"
+            "value": "{govnl.focus.background-color}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "transparent"
+            "value": "transparent",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{govnl.focus.color}"
+            "value": "{govnl.focus.color}",
+            "type": "color"
           }
         },
         "active": {
           "background-color": {
-            "$type": "color",
-            "$value": "{govnl.color.grijs.200}"
+            "value": "{govnl.color.grijs.200}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "transparent"
+            "value": "transparent",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{govnl.interaction.active.color}"
+            "value": "{govnl.interaction.active.color}",
+            "type": "color"
           }
         },
         "expanded": {
           "background-color": {
-            "$type": "color",
-            "$value": "{govnl.document.background-color}"
+            "value": "{govnl.document.background-color}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "transparent"
+            "value": "transparent",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{govnl.document.color}"
+            "value": "{govnl.document.color}",
+            "type": "color"
           }
         },
         "section": {
           "border-color": {
-            "$type": "dimension",
-            "$value": "{govnl.line.subtle.border-color}"
+            "value": "{govnl.line.subtle.border-color}",
+            "type": "dimension"
           },
           "border-width": {
-            "$type": "dimension",
-            "$value": "0px"
+            "value": "0px",
+            "type": "dimension"
           },
           "border-block-end-width": {
-            "$type": "dimension",
-            "$value": "{govnl.border.border-width.sm}"
+            "value": "{govnl.border.border-width.sm}",
+            "type": "dimension"
           }
         }
       }

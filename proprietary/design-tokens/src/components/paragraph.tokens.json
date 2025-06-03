@@ -2,37 +2,37 @@
   "nl": {
     "paragraph": {
       "color": {
-        "$type": "color",
-        "$value": "{govnl.document.color}"
+        "value": "{govnl.document.color}",
+        "type": "color"
       },
       "font-family": {
-        "$type": "fontFamilies",
-        "$value": "{govnl.document.font-family}"
+        "value": "{govnl.document.font-family}",
+        "type": "fontFamilies"
       },
       "font-size": {
-        "$type": "fontSizes",
-        "$value": "{govnl.document.font-size}"
+        "value": "{govnl.document.font-size}",
+        "type": "fontSizes"
       },
       "font-weight": {
-        "$type": "fontWeights",
-        "$value": "{govnl.document.font-weight}"
+        "value": "{govnl.document.font-weight}",
+        "type": "fontWeights"
       },
       "line-height": {
-        "$type": "lineHeights",
-        "$value": "{govnl.document.line-height}"
+        "value": "{govnl.document.line-height}",
+        "type": "lineHeights"
       },
       "lead": {
         "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.document.font-size}"
+          "value": "{govnl.document.font-size}",
+          "type": "fontSizes"
         },
         "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{govnl.document.strong.font-weight}"
+          "value": "{govnl.document.strong.font-weight}",
+          "type": "fontWeights"
         },
         "line-height": {
-          "$type": "lineHeights",
-          "$value": "{govnl.document.line-height}"
+          "value": "{govnl.document.line-height}",
+          "type": "lineHeights"
         }
       }
     }
