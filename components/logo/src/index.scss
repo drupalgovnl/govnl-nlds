@@ -1,0 +1,21 @@
+@use './mixin.scss' as mixin;
+
+.dictu-logo {
+  @include mixin.dictu-logo;
+}
+
+.dictu-logo__image {
+  @include mixin.dictu-logo__image;
+}
+
+.dictu-logo__text {
+  @include mixin.dictu-logo__text;
+}
+
+.dictu-logo__title {
+  @include mixin.dictu-logo__title;
+}
+
+.dictu-logo__subtitle {
+  @include mixin.dictu-logo__subtitle;
+}
