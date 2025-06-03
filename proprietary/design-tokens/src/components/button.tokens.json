@@ -289,6 +289,22 @@
         "$type": "dimension",
         "$value": "{govnl.border.border-width.sm}"
       },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{govnl.document.font-family}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{govnl.document.font-size}"
+      },
+      "font-weight": {
+        "$type": "fontWeights",
+        "$value": "{govnl.document.font-weight}"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{govnl.document.line-height}"
+      },
       "icon": {
         "size": {
           "$type": "dimension",
