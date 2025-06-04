@@ -1,10 +1,6 @@
 {
   "govnl": {
     "breadcrumb-nav": {
-      "column-gap": {
-        "value": "{govnl.spacing.gap.md}",
-        "type": "dimension"
-      },
       "font-family": {
         "value": "{govnl.document.font-family}",
         "type": "fontFamilies"
@@ -22,30 +18,20 @@
         "type": "lineHeights"
       },
       "link": {
-        "icon": {
-          "column-gap": {
-            "value": "{govnl.spacing.gap.sm}",
-            "type": "dimension"
-          },
-          "size": {
-            "value": "{govnl.sizing.icon.md}",
-            "type": "dimension"
-          }
-        },
         "padding-block-end": {
-          "value": "{govnl.spacing.block.lg}",
+          "value": "{govnl.spacing.block.sm}",
           "type": "dimension"
         },
         "padding-block-start": {
-          "value": "{govnl.spacing.block.lg}",
+          "value": "{govnl.spacing.block.sm}",
           "type": "dimension"
         },
         "padding-inline-end": {
-          "value": "0px",
+          "value": "{govnl.spacing.inline.sm}",
           "type": "dimension"
         },
         "padding-inline-start": {
-          "value": "0px",
+          "value": "0px {govnl.spacing.inline.sm}",
           "type": "dimension"
         },
         "color": {
@@ -103,7 +89,7 @@
           "type": "color"
         },
         "size": {
-          "value": "{govnl.dimension.size.400}",
+          "value": "{govnl.dimension.size.300}",
           "type": "dimension"
         }
       }

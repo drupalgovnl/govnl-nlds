@@ -6,7 +6,6 @@
     "selectedTokenSets": {
       "common/common.tokens": "enabled",
       "components/accordion.tokens": "enabled",
-      "components/breadcrumb.tokens.wip": "enabled",
       "components/button.tokens": "enabled",
       "components/heading.tokens": "enabled",
       "components/icon.tokens": "enabled",
@@ -16,7 +15,8 @@
       "core/core.tokens": "enabled",
       "components/link.tokens": "enabled",
       "components/logo.tokens": "enabled",
-      "components/navigation-bar.tokens": "enabled"
+      "components/navigation-bar.tokens": "enabled",
+      "components/breadcrumb.tokens": "enabled"
     },
     "group": "GovNL",
     "$figmaVariableReferences": {}

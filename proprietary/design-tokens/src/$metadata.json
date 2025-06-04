@@ -3,7 +3,7 @@
     "core/core.tokens",
     "common/common.tokens",
     "components/accordion.tokens",
-    "components/breadcrumb.tokens.wip",
+    "components/breadcrumb.tokens",
     "components/button.tokens",
     "components/heading.tokens",
     "components/icon.tokens",
