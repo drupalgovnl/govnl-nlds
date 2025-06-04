@@ -1,112 +1,110 @@
 {
-  "breadcrumb-nav": {
-    "todo": {
-      "breadcrumb-nav": {
-        "column-gap": {
-          "value": "{govnl.space.column.200}",
+  "govnl": {
+    "breadcrumb-nav": {
+      "column-gap": {
+        "value": "{govnl.spacing.gap.md}",
+        "type": "dimension"
+      },
+      "font-family": {
+        "value": "{govnl.document.font-family}",
+        "type": "fontFamilies"
+      },
+      "font-size": {
+        "value": "{govnl.document.font-size}",
+        "type": "fontSizes"
+      },
+      "font-weight": {
+        "value": "{govnl.document.font-weight}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{govnl.document.line-height}",
+        "type": "lineHeights"
+      },
+      "link": {
+        "icon": {
+          "column-gap": {
+            "value": "{govnl.spacing.gap.sm}",
+            "type": "dimension"
+          },
+          "size": {
+            "value": "{govnl.sizing.icon.md}",
+            "type": "dimension"
+          }
+        },
+        "padding-block-end": {
+          "value": "{govnl.spacing.block.lg}",
           "type": "dimension"
         },
-        "font-family": {
-          "value": "{govnl.document.font-family1}",
-          "type": "fontFamilies"
+        "padding-block-start": {
+          "value": "{govnl.spacing.block.lg}",
+          "type": "dimension"
         },
-        "font-size": {
-          "value": "{utrecht.document.font-size}",
-          "type": "fontSizes"
+        "padding-inline-end": {
+          "value": "0px",
+          "type": "dimension"
         },
-        "font-weight": {
-          "value": "{utrecht.document.font-weight}",
-          "type": "fontWeights"
+        "padding-inline-start": {
+          "value": "0px",
+          "type": "dimension"
         },
-        "line-height": {
-          "value": "{utrecht.document.line-height}",
-          "type": "lineHeights"
+        "color": {
+          "value": "{govnl.interaction.color}",
+          "type": "color"
         },
-        "link": {
-          "icon": {
-            "column-gap": {
-              "value": "{govnl.space.text.100}",
-              "type": "dimension"
-            },
-            "size": {
-              "value": "{govnl.icon.functional.size}",
-              "type": "dimension"
-            }
-          },
-          "padding-block-end": {
-            "value": "{govnl.space.block.300}",
-            "type": "dimension"
-          },
-          "padding-block-start": {
-            "value": "{govnl.space.block.300}",
-            "type": "dimension"
-          },
-          "padding-inline-end": {
-            "value": "0px",
-            "type": "dimension"
-          },
-          "padding-inline-start": {
-            "value": "0px",
-            "type": "dimension"
-          },
+        "active": {
           "color": {
-            "value": "{govnl.interaction.color}",
+            "value": "{govnl.interaction.active.color}",
             "type": "color"
           },
-          "active": {
-            "color": {
-              "value": "{govnl.interaction.active.color}",
-              "type": "color"
-            },
-            "text-decoration": {
-              "value": "None",
-              "type": "textDecoration"
-            }
-          },
-          "focus-visible": {
-            "background-color": {
-              "value": "{govnl.focus.background-color}",
-              "type": "color"
-            },
-            "color": {
-              "value": "{govnl.focus.color}",
-              "type": "color"
-            },
-            "text-decoration": {
-              "value": "None",
-              "type": "textDecoration"
-            }
-          },
-          "hover": {
-            "color": {
-              "value": "{govnl.interaction.hover.color}",
-              "type": "color"
-            },
-            "text-decoration": {
-              "value": "None",
-              "type": "textDecoration"
-            }
-          },
-          "current": {
-            "color": {
-              "value": "{govnl.document.subtle.color}",
-              "type": "color"
-            }
-          },
           "text-decoration": {
-            "value": "underline",
+            "value": "None",
             "type": "textDecoration"
           }
         },
-        "separator": {
+        "focus-visible": {
+          "background-color": {
+            "value": "{govnl.focus.background-color}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{govnl.focus.color}",
+            "type": "color"
+          },
+          "text-decoration": {
+            "value": "None",
+            "type": "textDecoration"
+          }
+        },
+        "hover": {
+          "color": {
+            "value": "{govnl.interaction.hover.color}",
+            "type": "color"
+          },
+          "text-decoration": {
+            "value": "None",
+            "type": "textDecoration"
+          }
+        },
+        "current": {
           "color": {
             "value": "{govnl.document.subtle.color}",
             "type": "color"
-          },
-          "size": {
-            "value": "{govnl.size.400}",
-            "type": "dimension"
           }
+        },
+        "text-decoration": {
+          "value": "underline",
+          "type": "textDecoration"
+        }
+      },
+      "separator": {
+        "color": {
+          "value": "{govnl.document.subtle.color}",
+          "type": "color"
+        },
+        "size": {
+          "value": "{govnl.dimension.size.400}",
+          "type": "dimension"
         }
       }
     }
