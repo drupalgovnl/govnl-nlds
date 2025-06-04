@@ -110,6 +110,16 @@
       "border-color": {
         "value": "{govnl.brand.primary.400}",
         "type": "color"
+      },
+      "search": {
+        "padding-block": {
+          "value": "{govnl.spacing.block.sm}",
+          "type": "spacing"
+        },
+        "padding-inline": {
+          "value": "{govnl.spacing.inline.sm}",
+          "type": "spacing"
+        }
       }
     }
   }
