@@ -18,11 +18,11 @@
         "type": "fontSizes"
       },
       "padding-block": {
-        "value": "{govnl.spacing.block.sm}",
+        "value": "{govnl.space.xs}",
         "type": "dimension"
       },
       "padding-inline": {
-        "value": "{govnl.spacing.inline.md}",
+        "value": "{govnl.space.sm}",
         "type": "dimension"
       },
       "min-block-size": {

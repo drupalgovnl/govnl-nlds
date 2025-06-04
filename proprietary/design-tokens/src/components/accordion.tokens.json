@@ -23,19 +23,19 @@
           "type": "dimension"
         },
         "padding-block-end": {
-          "value": "{govnl.spacing.block.lg}",
+          "value": "{govnl.space.md}",
           "type": "dimension"
         },
         "padding-block-start": {
-          "value": "{govnl.spacing.block.md}",
+          "value": "{govnl.space.sm}",
           "type": "dimension"
         },
         "padding-inline-end": {
-          "value": "{govnl.spacing.inline.md}",
+          "value": "{govnl.space.sm}",
           "type": "dimension"
         },
         "padding-inline-start": {
-          "value": "{govnl.spacing.inline.md}",
+          "value": "{govnl.space.sm}",
           "type": "dimension"
         }
       },
@@ -69,16 +69,16 @@
           "type": "lineHeights"
         },
         "gap": {
-          "value": "{govnl.spacing.gap.sm}",
+          "value": "{govnl.gap-content.min} / 2",
           "type": "dimension"
         },
         "icon": {
           "size": {
-            "value": "{govnl.sizing.icon.md}",
+            "value": "{govnl.sizing.icon.functional}",
             "type": "dimension"
           },
           "margin-inline": {
-            "value": "{govnl.spacing.inline.sm}",
+            "value": "{govnl.space.xs}",
             "type": "dimension"
           },
           "color": {
@@ -87,19 +87,19 @@
           }
         },
         "padding-block-end": {
-          "value": "{govnl.spacing.block.sm}",
+          "value": "{govnl.space.xs}",
           "type": "dimension"
         },
         "padding-block-start": {
-          "value": "{govnl.spacing.block.sm}",
+          "value": "{govnl.space.xs}",
           "type": "dimension"
         },
         "padding-inline-end": {
-          "value": "{govnl.spacing.inline.md}",
+          "value": "{govnl.space.sm}",
           "type": "dimension"
         },
         "padding-inline-start": {
-          "value": "{govnl.spacing.inline.md}",
+          "value": "{govnl.space.sm}",
           "type": "dimension"
         },
         "hover": {

@@ -19,19 +19,19 @@
       },
       "link": {
         "padding-block-end": {
-          "value": "{govnl.spacing.block.sm}",
+          "value": "{govnl.space.xs}",
           "type": "dimension"
         },
         "padding-block-start": {
-          "value": "{govnl.spacing.block.sm}",
+          "value": "{govnl.space.xs}",
           "type": "dimension"
         },
         "padding-inline-end": {
-          "value": "{govnl.spacing.inline.sm}",
+          "value": "{govnl.space.xs}",
           "type": "dimension"
         },
         "padding-inline-start": {
-          "value": "0px {govnl.spacing.inline.sm}",
+          "value": "0px {govnl.space.xs}",
           "type": "dimension"
         },
         "color": {

@@ -1,0 +1,50 @@
+{
+  "govnl": {
+    "page-footer": {
+      "background-color": {
+        "value": "{govnl.root.background-color}",
+        "type": "color"
+      },
+      "color": {
+        "value": "{govnl.brand.primary.500}",
+        "type": "color"
+      },
+      "container": {
+        "max-inline-width": {
+          "value": "{govnl.sizing.container.max-inline-width}",
+          "type": "dimension"
+        },
+        "padding-inline": {
+          "value": "{govnl.sizing.container.padding-inline}",
+          "type": "dimension"
+        }
+      },
+      "padding-block-start": {
+        "value": "{govnl.space.2xl}",
+        "type": "dimension"
+      },
+      "padding-block-end": {
+        "value": "{govnl.space.2xl}",
+        "type": "dimension"
+      },
+      "content": {
+        "column-gap": {
+          "value": "{govnl.gap-content.min} * 2",
+          "type": "dimension"
+        },
+        "row-gap": {
+          "value": "{govnl.gap-content.min} * 1.5",
+          "type": "dimension"
+        }
+      },
+      "border-width": {
+        "value": "{govnl.border.border-width.sm}",
+        "type": "borderWidth"
+      },
+      "border-color": {
+        "value": "{govnl.brand.primary.200}",
+        "type": "color"
+      }
+    }
+  }
+}
