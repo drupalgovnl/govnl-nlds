@@ -37,7 +37,7 @@
           }
         },
         "size": {
-          "value": "{govnl.sizing.icon.functional}",
+          "value": "{govnl.icon.size.functional}",
           "type": "sizing"
         }
       },

@@ -11,11 +11,11 @@
       },
       "container": {
         "max-inline-width": {
-          "value": "{govnl.sizing.container.max-inline-width}",
+          "value": "{govnl.container.max-inline-width}",
           "type": "dimension"
         },
         "padding-inline": {
-          "value": "{govnl.sizing.container.padding-inline}",
+          "value": "{govnl.container.padding-inline}",
           "type": "dimension"
         }
       },

@@ -16,8 +16,17 @@
         },
         "hover": {
           "background-color": {
-            "value": "{govnl.interaction.hover.color}",
-            "type": "color"
+            "value": "{govnl.interaction.color}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.2",
+                  "space": "srgb"
+                }
+              }
+            }
           },
           "border-color": {
             "value": "transparent",
@@ -30,8 +39,17 @@
         },
         "active": {
           "background-color": {
-            "value": "{govnl.interaction.active.color}",
-            "type": "color"
+            "value": "{govnl.interaction.color}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.4",
+                  "space": "srgb"
+                }
+              }
+            }
           },
           "border-color": {
             "value": "transparent",
@@ -78,12 +96,30 @@
             "type": "color"
           },
           "border-color": {
-            "value": "{govnl.interaction.hover.color}",
-            "type": "color"
+            "value": "{govnl.interaction.color}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.2",
+                  "space": "srgb"
+                }
+              }
+            }
           },
           "color": {
-            "value": "{govnl.interaction.hover.color}",
-            "type": "color"
+            "value": "{govnl.interaction.color}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.2",
+                  "space": "srgb"
+                }
+              }
+            }
           }
         },
         "background-color": {
@@ -132,12 +168,30 @@
             "type": "color"
           },
           "border-color": {
-            "value": "{govnl.interaction.active.color}",
-            "type": "color"
+            "value": "{govnl.interaction.color}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.4",
+                  "space": "srgb"
+                }
+              }
+            }
           },
           "color": {
-            "value": "{govnl.interaction.active.color}",
-            "type": "color"
+            "value": "{govnl.interaction.color}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.4",
+                  "space": "srgb"
+                }
+              }
+            }
           }
         }
       },
@@ -152,8 +206,17 @@
             "type": "color"
           },
           "color": {
-            "value": "{govnl.interaction.hover.color}",
-            "type": "color"
+            "value": "{govnl.interaction.color}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.2",
+                  "space": "srgb"
+                }
+              }
+            }
           }
         },
         "background-color": {
@@ -206,8 +269,17 @@
             "type": "color"
           },
           "color": {
-            "value": "{govnl.interaction.active.color}",
-            "type": "color"
+            "value": "{govnl.interaction.color}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.4",
+                  "space": "srgb"
+                }
+              }
+            }
           }
         }
       },
@@ -226,8 +298,17 @@
         },
         "hover": {
           "color": {
-            "value": "{govnl.interaction.hover.color}",
-            "type": "color"
+            "value": "{govnl.interaction.color}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.2",
+                  "space": "srgb"
+                }
+              }
+            }
           },
           "background-color": {
             "value": "{govnl.color.grijs.50}",
@@ -240,8 +321,17 @@
         },
         "active": {
           "color": {
-            "value": "{govnl.interaction.active.color}",
-            "type": "color"
+            "value": "{govnl.interaction.color}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.4",
+                  "space": "srgb"
+                }
+              }
+            }
           },
           "border-color": {
             "value": "transparent",
@@ -279,6 +369,22 @@
             "value": "{govnl.focus.color}",
             "type": "color"
           }
+        },
+        "padding-block-end": {
+          "value": "{govnl.space.xs}",
+          "type": "dimension"
+        },
+        "padding-block-start": {
+          "value": "{govnl.space.xs}",
+          "type": "dimension"
+        },
+        "padding-inline-start": {
+          "value": "{govnl.space.xs}",
+          "type": "dimension"
+        },
+        "padding-inline-end": {
+          "value": "{govnl.space.xs}",
+          "type": "dimension"
         }
       },
       "border-radius": {

@@ -31,14 +31,6 @@
         "500": {
           "value": "{govnl.color.lintblauw.500}",
           "type": "color"
-        },
-        "hover": {
-          "value": "{govnl.color.lintblauw.700}",
-          "type": "color"
-        },
-        "active": {
-          "value": "{govnl.color.lintblauw.900}",
-          "type": "color"
         }
       },
       "accent-1": {
@@ -354,38 +346,38 @@
         "type": "fontWeights"
       }
     },
-    "sizing": {
-      "section": {
-        "max-inline-width": {
-          "value": "calc (8 * {govnl.dimension.size.2000})",
-          "type": "dimension"
-        },
-        "padding-inline": {
-          "value": "{govnl.dimension.size.100}",
-          "type": "dimension"
-        }
+    "section": {
+      "max-inline-width": {
+        "value": "calc (8 * {govnl.dimension.size.2000})",
+        "type": "dimension"
       },
-      "container": {
-        "max-inline-width": {
-          "value": "calc (8 * {govnl.dimension.size.2000})",
-          "type": "dimension"
-        },
-        "padding-inline": {
-          "value": "{govnl.dimension.size.100}",
-          "type": "dimension"
-        }
+      "padding-inline": {
+        "value": "{govnl.dimension.size.100}",
+        "type": "dimension"
+      }
+    },
+    "container": {
+      "max-inline-width": {
+        "value": "calc (8 * {govnl.dimension.size.2000})",
+        "type": "dimension"
       },
-      "content": {
-        "max-inline-width": {
-          "value": "calc (5 * {govnl.dimension.size.2000})",
-          "type": "dimension"
-        },
-        "padding-inline": {
-          "value": "{govnl.dimension.size.100}",
-          "type": "dimension"
-        }
+      "padding-inline": {
+        "value": "{govnl.dimension.size.100}",
+        "type": "dimension"
+      }
+    },
+    "content": {
+      "max-inline-width": {
+        "value": "calc (5 * {govnl.dimension.size.2000})",
+        "type": "dimension"
       },
-      "icon": {
+      "padding-inline": {
+        "value": "{govnl.dimension.size.100}",
+        "type": "dimension"
+      }
+    },
+    "icon": {
+      "size": {
         "functional": {
           "value": "{govnl.dimension.size.300}",
           "type": "dimension"

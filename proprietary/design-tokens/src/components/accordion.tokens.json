@@ -74,7 +74,7 @@
         },
         "icon": {
           "size": {
-            "value": "{govnl.sizing.icon.functional}",
+            "value": "{govnl.icon.size.functional}",
             "type": "dimension"
           },
           "margin-inline": {
@@ -112,8 +112,17 @@
             "type": "color"
           },
           "color": {
-            "value": "{govnl.interaction.hover.color}",
-            "type": "color"
+            "value": "{govnl.interaction.color}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.2",
+                  "space": "srgb"
+                }
+              }
+            }
           }
         },
         "focus": {
@@ -140,8 +149,17 @@
             "type": "color"
           },
           "color": {
-            "value": "{govnl.interaction.active.color}",
-            "type": "color"
+            "value": "{govnl.interaction.color}",
+            "type": "color",
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.4",
+                  "space": "srgb"
+                }
+              }
+            }
           }
         },
         "expanded": {
