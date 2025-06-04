@@ -7,7 +7,7 @@
     "components/heading.tokens",
     "components/icon.tokens",
     "components/link-list.tokens",
-    "components/link.tokens",
+    "components/link",
     "components/logo.tokens.wip",
     "components/navigation-bar.tokens.wip",
     "components/paragraph.tokens",

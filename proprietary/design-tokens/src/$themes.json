@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "id": "703d77b7b6ae5149f6da0b9191daf32faaabcbaa",
+    "name": "Default",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "common/common.tokens": "enabled",
+      "components/accordion.tokens": "enabled",
+      "components/breadcrumb.tokens.wip": "enabled",
+      "components/button.tokens": "enabled",
+      "components/heading.tokens": "enabled",
+      "components/icon.tokens": "enabled",
+      "components/link-list.tokens": "enabled",
+      "components/logo.tokens.wip": "enabled",
+      "components/navigation-bar.tokens.wip": "enabled",
+      "components/paragraph.tokens": "enabled",
+      "components/skip-link.tokens": "enabled",
+      "core/core.tokens": "enabled",
+      "components/link": "enabled"
+    },
+    "group": "GovNL"
+  }
+]
