@@ -16,7 +16,7 @@
       "components/paragraph.tokens": "enabled",
       "components/skip-link.tokens": "enabled",
       "core/core.tokens": "enabled",
-      "components/link": "enabled"
+      "components/link.tokens": "enabled"
     },
     "group": "GovNL"
   }
