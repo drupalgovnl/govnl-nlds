@@ -11,13 +11,14 @@
       "components/heading.tokens": "enabled",
       "components/icon.tokens": "enabled",
       "components/link-list.tokens": "enabled",
-      "components/navigation-bar.tokens.wip": "enabled",
       "components/paragraph.tokens": "enabled",
       "components/skip-link.tokens": "enabled",
       "core/core.tokens": "enabled",
       "components/link.tokens": "enabled",
-      "components/logo.tokens": "enabled"
+      "components/logo.tokens": "enabled",
+      "components/navigation-bar.tokens": "enabled"
     },
-    "group": "GovNL"
+    "group": "GovNL",
+    "$figmaVariableReferences": {}
   }
 ]

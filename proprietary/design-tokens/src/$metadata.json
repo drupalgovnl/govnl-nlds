@@ -10,7 +10,7 @@
     "components/link-list.tokens",
     "components/link.tokens",
     "components/logo.tokens",
-    "components/navigation-bar.tokens.wip",
+    "components/navigation-bar.tokens",
     "components/paragraph.tokens",
     "components/skip-link.tokens"
   ]

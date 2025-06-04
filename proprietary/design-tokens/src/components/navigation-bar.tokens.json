@@ -32,7 +32,7 @@
         },
         "active": {
           "color": {
-            "value": "{govnl.brand.primary.active}",
+            "value": "{govnl.brand.primary.500}",
             "type": "color"
           }
         },
@@ -44,7 +44,7 @@
       "link": {
         "active": {
           "background-color": {
-            "value": "{govnl.brand.primary.active}",
+            "value": "{govnl.brand.primary.500}",
             "type": "color"
           },
           "color": {
@@ -76,7 +76,7 @@
             "type": "color"
           },
           "color": {
-            "value": "{govnl.brand.primary.hover}",
+            "value": "{govnl.brand.primary.500}",
             "type": "color"
           }
         },
@@ -91,12 +91,10 @@
         "column-gap": {
           "value": "{govnl.spacing.gap.sm}",
           "type": "spacing"
-        }
-      },
-      "heading": {
-        "font-weight": {
-          "value": "{govnl.heading.font-weight}",
-          "type": "fontWeights"
+        },
+        "text-decoration": {
+          "value": "none",
+          "type": "textDecoration"
         }
       },
       "background-color": {
