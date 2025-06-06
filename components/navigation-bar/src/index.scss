@@ -1,0 +1,39 @@
+@use './mixin.scss' as mixin;
+
+.dictu-navigation-bar {
+  @include mixin.dictu-navigation-bar;
+}
+
+.dictu-navigation-bar__list {
+  @include mixin.dictu-navigation-bar__list;
+}
+
+.dictu-navigation-bar__item {
+  @include mixin.dictu-navigation-bar__item;
+}
+
+.dictu-navigation-bar__link {
+  @include mixin.dictu-navigation-bar__link;
+}
+
+.dictu-navigation-bar__icon {
+  @include mixin.dictu-navigation-bar__icon;
+}
+
+.dictu-navigation-bar__toggle {
+  @include mixin.dictu-navigation-bar__toggle;
+}
+
+.dictu-navigation-bar__menu-label {
+  @include mixin.dictu-navigation-bar__menu-label;
+}
+
+// Responsive: mobile
+@media (max-width: 48em) {
+  @include mixin.dictu-navigation-bar--mobile;
+}
+
+// Responsive: desktop
+@media (min-width: 48.01em) {
+  @include mixin.dictu-navigation-bar--desktop;
+}
