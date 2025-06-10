@@ -133,7 +133,7 @@ jobs:
           commit: "docs(release): design system packages"
           setupGitUser: false
           title: "docs(release): design system packages"
-          publish: "npm publish -ws"
+          publish: "npm run publish:changeset"
 
   deploy-storybook:
     runs-on: ubuntu-latest
