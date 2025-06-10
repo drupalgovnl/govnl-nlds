@@ -6,7 +6,7 @@
         "type": "color"
       },
       "padding-block-end": {
-        "value": "{govnl.lint.size.lint}",
+        "value": "{govnl.lint.size.half-lint}",
         "type": "dimension"
       },
       "container": {

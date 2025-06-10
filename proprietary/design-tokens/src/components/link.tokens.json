@@ -14,11 +14,11 @@
         "type": "textDecoration"
       },
       "text-decoration-thickness": {
-        "value": "auto",
+        "value": "max(1px, .0625rem)",
         "type": "other"
       },
       "text-underline-offset": {
-        "value": "auto",
+        "value": ".1578em",
         "type": "other"
       },
       "active": {
@@ -36,11 +36,11 @@
           }
         },
         "text-decoration-line": {
-          "value": "None",
+          "value": "underline",
           "type": "textDecoration"
         },
         "text-decoration-thickness": {
-          "value": "auto",
+          "value": "max(3px, .1875rem, .12em)",
           "type": "other"
         }
       },
@@ -70,11 +70,11 @@
           "type": "color"
         },
         "text-decoration-line": {
-          "value": "None",
+          "value": "underline",
           "type": "textDecoration"
         },
         "text-decoration-thickness": {
-          "value": "auto",
+          "value": "max(3px, .1875rem, .12em)",
           "type": "other"
         }
       },
@@ -93,11 +93,11 @@
           }
         },
         "text-decoration-line": {
-          "value": "None",
+          "value": "underline",
           "type": "textDecoration"
         },
         "text-decoration-thickness": {
-          "value": "auto",
+          "value": "max(3px, .1875rem, .12em)",
           "type": "other"
         }
       }
