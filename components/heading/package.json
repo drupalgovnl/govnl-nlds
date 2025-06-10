@@ -9,10 +9,9 @@
     "css",
     "heading"
   ],
-  "private": false,
   "repository": {
     "type": "git+ssh",
-    "url": "git+ssh://git@github.com/drupalgovnl/govnl-nlds.git",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
     "directory": "components/heading"
   },
   "files": [

@@ -32,6 +32,7 @@
   "scripts": {
     "build": "npm --ws run build",
     "clean": "npm --ws run clean",
+    "changeset": "changeset",
     "start": "http-server packages/storybook/dist/",
     "storybook": "npm-run-all --parallel watch:**",
     "publish:changeset": "changeset publish",
