@@ -11,7 +11,7 @@
     "components/link.tokens",
     "components/logo.tokens",
     "components/navigation-bar.tokens",
-    "components/page-footer.tokens.wip",
+    "components/page-footer.tokens",
     "components/paragraph.tokens",
     "components/skip-link.tokens"
   ]
