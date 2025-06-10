@@ -350,7 +350,7 @@
         "type": "other"
       },
       "outline-style": {
-        "value": "dotted",
+        "value": "dashed",
         "type": "other"
       },
       "outline-width": {
