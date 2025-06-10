@@ -388,7 +388,7 @@
         }
       },
       "border-radius": {
-        "value": "{govnl.border.border-radius.md}",
+        "value": "{govnl.border.border-radius.sm}",
         "type": "dimension"
       },
       "border-width": {
