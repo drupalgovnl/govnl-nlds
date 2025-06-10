@@ -9,6 +9,14 @@
         "value": "{govnl.brand.primary.500}",
         "type": "color"
       },
+      "padding-block-start": {
+        "value": "{govnl.space.2xl}",
+        "type": "dimension"
+      },
+      "padding-block-end": {
+        "value": "{govnl.space.2xl}",
+        "type": "dimension"
+      },
       "container": {
         "max-inline-width": {
           "value": "{govnl.container.max-inline-width}",
@@ -18,14 +26,6 @@
           "value": "{govnl.container.padding-inline}",
           "type": "dimension"
         }
-      },
-      "padding-block-start": {
-        "value": "{govnl.space.2xl}",
-        "type": "dimension"
-      },
-      "padding-block-end": {
-        "value": "{govnl.space.2xl}",
-        "type": "dimension"
       },
       "content": {
         "column-gap": {
