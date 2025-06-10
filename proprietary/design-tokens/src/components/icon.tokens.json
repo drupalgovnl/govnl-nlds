@@ -6,7 +6,7 @@
         "type": "color"
       },
       "size": {
-        "value": "{govnl.sizing.icon.md}",
+        "value": "{govnl.icon.size.functional}",
         "type": "dimension"
       }
     }

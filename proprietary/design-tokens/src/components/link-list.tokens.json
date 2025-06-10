@@ -2,7 +2,7 @@
   "govnl": {
     "link-list": {
       "row-gap": {
-        "value": "{govnl.spacing.gap.sm}",
+        "value": "{govnl.gap-content.min} / 2",
         "type": "dimension"
       },
       "icon": {
@@ -11,13 +11,13 @@
           "type": "dimension"
         },
         "size": {
-          "value": "{govnl.sizing.icon.md}",
+          "value": "{govnl.icon.size.functional}",
           "type": "dimension"
         }
       },
       "link": {
         "column-gap": {
-          "value": "{govnl.spacing.gap.sm}",
+          "value": "{govnl.gap-content.min} / 2",
           "type": "dimension"
         },
         "text-decoration": {
