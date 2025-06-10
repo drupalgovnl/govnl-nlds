@@ -354,7 +354,7 @@
         "type": "other"
       },
       "outline-width": {
-        "value": "{govnl.dimension.size.25}",
+        "value": "{govnl.border.border-width.md}",
         "type": "other"
       }
     },
