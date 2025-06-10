@@ -117,7 +117,23 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npm publish -ws
+          npm run publish:changeset
+
+      - name: "Continuous Deployment: publish changeset to GitHub repository"
+        uses: changesets/action@06245a4e0a36c064a573d4150030f5ec548e4fcc # v1.4.10
+        id: changeset
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_AUTHOR_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
+          GIT_AUTHOR_NAME: "GovNL Design System"
+          GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
+          GIT_COMMITTER_NAME: "GovNL Design System"
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        with:
+          commit: "docs(release): design system packages"
+          setupGitUser: false
+          title: "docs(release): design system packages"
+          publish: "npm publish -ws"
 
   deploy-storybook:
     runs-on: ubuntu-latest
