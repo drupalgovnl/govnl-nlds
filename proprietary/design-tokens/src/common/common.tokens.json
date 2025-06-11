@@ -124,6 +124,10 @@
       "font-weight": {
         "value": "{govnl.typography.font-weight.bold}",
         "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{govnl.typography.line-height.sm}",
+        "type": "lineHeights"
       }
     },
     "feedback": {
