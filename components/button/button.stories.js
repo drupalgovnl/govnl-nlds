@@ -1,6 +1,6 @@
 import readme from './README.md?raw';
 import '@dictu/design-tokens/dist/button.css';
-// import '@dictu/utilities/dist/focus-ring/focus-ring.css';
+import '@dictu/utilities/dist/focus-ring/focus-ring.css';
 import './dist/index.css';
 
 export default {
