@@ -560,10 +560,6 @@
         "sans": {
           "value": "RijksSans, Arial, Verdana, sans-serif",
           "type": "fontFamilies"
-        },
-        "serif": {
-          "value": "RijksoverheidSerifWeb, 'Times New Roman', serif",
-          "type": "fontFamilies"
         }
       },
       "font-size": {

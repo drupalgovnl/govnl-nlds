@@ -362,16 +362,6 @@
         "type": "other"
       }
     },
-    "quote": {
-      "font-family": {
-        "value": "{govnl.typography.font-family.serif}",
-        "type": "fontFamilies"
-      },
-      "font-weight": {
-        "value": "{govnl.typography.font-weight.regular}",
-        "type": "fontWeights"
-      }
-    },
     "section": {
       "max-inline-width": {
         "value": "calc (8 * {govnl.dimension.size.2000})",
