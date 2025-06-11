@@ -1,0 +1,85 @@
+@use 'mixin' as mixin;
+
+.dictu-button {
+  @include mixin.dictu-button;
+}
+
+.dictu-button--primary-action {
+  @include mixin.dictu-button--primary-action
+}
+
+.dictu-button--primary-action:hover {
+  @include mixin.dictu-button--primary-action-hover
+}
+
+.dictu-button--primary-action:active {
+  @include mixin.dictu-button--primary-action-active
+}
+
+.dictu-button--primary-action:focus-visible {
+  @include mixin.dictu-button--primary-action-focus
+}
+
+.dictu-button--primary-action:disabled {
+  @include mixin.dictu-button--primary-action-disabled
+}
+
+.dictu-button--secondary-action {
+  @include mixin.dictu-button--secondary-action
+}
+
+.dictu-button--secondary-action:hover {
+  @include mixin.dictu-button--secondary-action-hover
+}
+
+.dictu-button--secondary-action:active {
+  @include mixin.dictu-button--secondary-action-active
+}
+
+.dictu-button--secondary-action:focus-visible {
+  @include mixin.dictu-button--secondary-action-focus
+}
+
+.dictu-button--secondary-action:disabled {
+  @include mixin.dictu-button--secondary-action-disabled
+}
+
+.dictu-button--subtle {
+  @include mixin.dictu-button--subtle
+}
+
+.dictu-button--subtle:hover {
+  @include mixin.dictu-button--subtle-hover
+}
+
+.dictu-button--subtle:active {
+  @include mixin.dictu-button--subtle-active
+}
+
+.dictu-button--subtle:focus-visible {
+  @include mixin.dictu-button--subtle-focus
+}
+
+.dictu-button--subtle:disabled {
+  @include mixin.dictu-button--subtle-disabled
+}
+
+.dictu-button--icon-only {
+  @include mixin.dictu-button--icon-only
+}
+
+.dictu-button--icon-only:hover {
+  @include mixin.dictu-button--icon-only-hover
+}
+
+.dictu-button--icon-only:active {
+  @include mixin.dictu-button--icon-only-active
+}
+
+.dictu-button--icon-only:focus-visible {
+  @include mixin.dictu-button--icon-only-focus
+}
+
+.dictu-button--icon-only:disabled {
+  @include mixin.dictu-button--icon-only-disabled
+}
