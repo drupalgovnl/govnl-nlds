@@ -20,7 +20,6 @@ export default {
     const $icon = document.createElement('span');
 
     $icon.classList.add(...classes);
-    $icon.setAttribute('role', 'presentation');
     $icon.setAttribute('aria-hidden', 'true');
     $icon.innerHTML = icon;
 
