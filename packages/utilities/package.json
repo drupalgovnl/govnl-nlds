@@ -1,0 +1,22 @@
+{
+  "name": "@dictu/utilities",
+  "author": "Dienst ICT Uitvoering",
+  "description": "utilities for the DICTU design system",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "utilities"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "packages/utilities"
+  },
+  "scripts": {
+    "build": "sass --pkg-importer=node --style=compressed ./src/index.scss:./dist/index.css",
+    "clean": "rimraf ./dist/"
+  },
+  "files": [
+    "dist/"
+  ]
+}
