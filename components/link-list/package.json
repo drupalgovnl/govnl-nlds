@@ -9,7 +9,6 @@
     "css",
     "link-list"
   ],
-  "private": true,
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
@@ -28,7 +27,7 @@
     "provenance": true
   },
   "scripts": {
-    "build": "",
+    "build": "sass --pkg-importer=node --style=compressed ./src/:./dist/",
     "clean": "rimraf ./dist/"
   }
 }
