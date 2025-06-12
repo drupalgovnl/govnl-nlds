@@ -42,7 +42,7 @@ const components = new StyleDictionary({
   // This is a workaround for the issue with the warning not being silenced.
   //
   log: {
-    verbosity: "silent",
+    verbosity: "verbose",
   },
   source: [tokens],
   preprocessors: ["tokens-studio"],

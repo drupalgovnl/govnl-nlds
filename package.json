@@ -20,8 +20,9 @@
   },
   "workspaces": [
     "./proprietary/*",
+    "./packages/utilities",
     "./components/*",
-    "./packages/*"
+    "./packages/storybook"
   ],
   "devDependencies": {
     "@changesets/cli": "^2.29.4",
@@ -43,6 +44,7 @@
     "watch:style-dictionary": "npm --workspace @dictu/design-tokens run watch:style-dictionary"
   },
   "dependencies": {
-    "http-server": "14.1.1"
+    "http-server": "14.1.1",
+    "@dictu/utilities": "*"
   }
 }

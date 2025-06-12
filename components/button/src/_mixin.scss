@@ -1,0 +1,138 @@
+@mixin dictu-button {
+  align-items: center;
+  block-size: fit-content;
+  border-radius: var(--govnl-button-border-radius);
+  border-style: solid;
+  border-width: var(--govnl-button-border-width);
+  box-sizing: border-box;
+  column-gap: var(--govnl-button-column-gap);
+  display: inline-flex;
+  justify-content: center;
+  padding-block-end: var(--govnl-button-padding-block-end);
+  padding-block-start: var(--govnl-button-padding-block-start);
+  padding-inline-end: var(--govnl-button-padding-inline-end);
+  padding-inline-start: var(--govnl-button-padding-inline-start);
+  scale: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@mixin dictu-button--primary-action {
+  background-color: var( --govnl-button-primary-action-background-color);
+  border-color: var(--govnl-button-primary-action-border-color);
+  color: var(--govnl-button-primary-action-color);
+}
+
+@mixin dictu-button--primary-action-hover {
+  background-color: var( --govnl-button-primary-action-hover-background-color);
+  border-color: var(--govnl-button-primary-action-hover-border-color);
+  color: var(--govnl-button-primary-action-hover-color);
+}
+
+@mixin dictu-button--primary-action-active {
+  background-color: var( --govnl-button-primary-action-active-background-color);
+  border-color: var(--govnl-button-primary-action-active-border-color);
+  color: var(--govnl-button-primary-action-active-color);
+}
+
+@mixin dictu-button--primary-action-focus {
+  background-color: var( --govnl-button-primary-action-focus-background-color);
+  border-color: var(--govnl-button-primary-action-focus-border-color);
+  color: var(--govnl-button-primary-action-focus-color);
+}
+
+@mixin dictu-button--primary-action-disabled {
+  background-color: var( --govnl-button-primary-action-disabled-background-color);
+  border-color: var(--govnl-button-primary-actiondisabled--border-color);
+  color: var(--govnl-button-primary-actiondisabled--color);
+}
+
+@mixin dictu-button--secondary-action {
+  background-color: var(--govnl-button-secondary-action-background-color);
+  border-color: var(--govnl-button-secondary-action-border-color);
+  color: var(--govnl-button-secondary-action-color);
+}
+
+@mixin dictu-button--secondary-action-hover {
+  background-color: var(--govnl-button-secondary-action-hover-background-color);
+  border-color: var(--govnl-button-secondary-action-hover-border-color);
+  color: var(--govnl-button-secondary-action-hover-color);
+}
+
+@mixin dictu-button--secondary-action-active {
+  background-color: var(--govnl-button-secondary-action-active-background-color);
+  border-color: var(--govnl-button-secondary-action-active-border-color);
+  color: var(--govnl-button-secondary-action-active-color);
+}
+
+@mixin dictu-button--secondary-action-focus {
+  background-color: var(--govnl-button-secondary-action-focus-background-color);
+  border-color: var(--govnl-button-secondary-action-focus-border-color);
+  color: var(--govnl-button-secondary-action-focus-color);
+}
+
+@mixin dictu-button--secondary-action-disabled {
+  background-color: var(--govnl-button-secondary-action-disabled-background-color);
+  border-color: var(--govnl-button-secondary-action-disabled-border-color);
+  color: var(--govnl-button-secondary-action-disabled-color);
+}
+
+@mixin dictu-button--subtle {
+  background-color: var(--govnl-button-subtle-background-color);
+  border-color: var(--govnl-button-subtle-border-color);
+  color: var(--govnl-button-subtle-color);
+}
+
+@mixin dictu-button--subtle-hover {
+  background-color: var(--govnl-button-subtle-hover-background-color);
+  border-color: var(--govnl-button-subtle-hover-border-color);
+  color: var(--govnl-button-subtle-hover-color);
+}
+
+@mixin dictu-button--subtle-active {
+  background-color: var(--govnl-button-subtle-active-background-color);
+  border-color: var(--govnl-button-subtle-active-border-color);
+  color: var(--govnl-button-subtle-active-color);
+}
+
+@mixin dictu-button--subtle-focus {
+  background-color: var(--govnl-button-subtle-focus-background-color);
+  border-color: var(--govnl-button-subtle-focus-border-color);
+  color: var(--govnl-button-subtle-focus-color);
+}
+
+@mixin dictu-button--subtle-disabled {
+  background-color: var(--govnl-button-subtle-disabled-background-color);
+  border-color: var(--govnl-button-subtle-disabled-border-color);
+  color: var(--govnl-button-subtle-disabled-color);
+}
+
+@mixin dictu-button--icon-only {
+  background-color: var(--govnl-button-icon-only-background-color);
+  border-color: var(--govnl-button-icon-only-border-color);
+  color: var(--govnl-button-icon-only-color);
+}
+
+@mixin dictu-button--icon-only-hover {
+  background-color: var(--govnl-button-icon-only-hover-background-color);
+  border-color: var(--govnl-button-icon-only-hover-border-color);
+  color: var(--govnl-button-icon-only-hover-color);
+}
+
+@mixin dictu-button--icon-only-active {
+  background-color: var(--govnl-button-icon-only-active-background-color);
+  border-color: var(--govnl-button-icon-only-active-border-color);
+  color: var(--govnl-button-icon-only-active-color);
+}
+
+@mixin dictu-button--icon-only-focus {
+  background-color: var(--govnl-button-icon-only-focus-background-color);
+  border-color: var(--govnl-button-icon-only-focus-border-color);
+  color: var(--govnl-button-icon-only-focus-color);
+}
+
+@mixin dictu-button--icon-only-disabled {
+  background-color: var(--govnl-button-icon-only-disabled-background-color);
+  border-color: var(--govnl-button-icon-only-disabled-border-color);
+  color: var(--govnl-button-icon-only-color);
+}
