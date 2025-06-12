@@ -10,7 +10,6 @@
     "navigation,",
     "navigation-bar"
   ],
-  "private": false,
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
