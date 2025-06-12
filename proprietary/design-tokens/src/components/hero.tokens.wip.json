@@ -1,0 +1,84 @@
+{
+  "govnl": {
+    "hero": {
+      "message": {
+        "row-gap": {
+          "value": "{govnl.space.4xs}",
+          "type": "spacing"
+        },
+        "padding-block-end": {
+          "value": "{govnl.space.sm}",
+          "type": "spacing"
+        },
+        "padding-block-start": {
+          "value": "{govnl.space.sm}",
+          "type": "spacing"
+        },
+        "padding-inline-start": {
+          "value": "{govnl.space.sm}",
+          "type": "spacing"
+        },
+        "padding-inline-end": {
+          "value": "{govnl.space.sm}",
+          "type": "spacing"
+        },
+        "background-color": {
+          "value": "{govnl.brand.primary.500}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{govnl.document.inverse.color}",
+          "type": "color"
+        },
+        "max-inline-size": {
+          "value": "640px",
+          "type": "sizing"
+        },
+        "border-radius": {
+          "value": "20px",
+          "type": "borderRadius"
+        }
+      },
+      "border-radius": {
+        "value": "40px",
+        "type": "borderRadius"
+      },
+      "heading": {
+        "font-family": {
+          "value": "{govnl.heading.font-family}",
+          "type": "fontFamilies"
+        },
+        "font-weight": {
+          "value": "{govnl.heading.font-weight}",
+          "type": "fontWeights"
+        },
+        "line-height": {
+          "value": "{govnl.heading.line-height}",
+          "type": "lineHeights"
+        },
+        "font-size": {
+          "value": "{nl.heading.level-3.font-size}",
+          "type": "fontSizes"
+        }
+      },
+      "subheading": {
+        "font-family": {
+          "value": "{govnl.document.font-family}",
+          "type": "fontFamilies"
+        },
+        "font-weight": {
+          "value": "{govnl.document.font-weight}",
+          "type": "fontWeights"
+        },
+        "line-height": {
+          "value": "{govnl.document.line-height}",
+          "type": "lineHeights"
+        },
+        "font-size": {
+          "value": "{govnl.document.font-size}",
+          "type": "fontSizes"
+        }
+      }
+    }
+  }
+}

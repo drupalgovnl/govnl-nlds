@@ -1,0 +1,24 @@
+{
+  "govnl": {
+    "figure": {
+      "caption": {
+        "color": {
+          "value": "{govnl.document.color}",
+          "type": "color"
+        },
+        "font-size": {
+          "value": "{govnl.typography.font-size.sm}",
+          "type": "fontSizes"
+        },
+        "line-height": {
+          "value": "{govnl.typography.line-height.sm}",
+          "type": "lineHeights"
+        }
+      },
+      "row-gap": {
+        "value": "{govnl.gap-content.min} / 2",
+        "type": "spacing"
+      }
+    }
+  }
+}

@@ -31,6 +31,14 @@
         "500": {
           "value": "{govnl.color.lintblauw.500}",
           "type": "color"
+        },
+        "active": {
+          "value": "{govnl.color.lintblauw.500}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{govnl.color.lintblauw.500}",
+          "type": "color"
         }
       },
       "accent-1": {
@@ -124,6 +132,10 @@
       "font-weight": {
         "value": "{govnl.typography.font-weight.bold}",
         "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{govnl.typography.line-height.sm}",
+        "type": "lineHeights"
       }
     },
     "feedback": {
@@ -350,22 +362,12 @@
         "type": "other"
       },
       "outline-style": {
-        "value": "dotted",
+        "value": "dashed",
         "type": "other"
       },
       "outline-width": {
         "value": "{govnl.border.border-width.md}",
         "type": "other"
-      }
-    },
-    "quote": {
-      "font-family": {
-        "value": "{govnl.typography.font-family.serif}",
-        "type": "fontFamilies"
-      },
-      "font-weight": {
-        "value": "{govnl.typography.font-weight.regular}",
-        "type": "fontWeights"
       }
     },
     "section": {

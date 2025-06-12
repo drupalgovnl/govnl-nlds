@@ -118,6 +118,42 @@
           "value": "{govnl.space.xs}",
           "type": "spacing"
         }
+      },
+      "menu-label": {
+        "gap": {
+          "value": "{govnl.gap-content.min} / 2",
+          "type": "spacing"
+        },
+        "padding-inline": {
+          "value": "{govnl.space.sm}",
+          "type": "spacing"
+        },
+        "padding-block": {
+          "value": "{govnl.space.2xs}",
+          "type": "spacing"
+        },
+        "color": {
+          "value": "{govnl.brand.primary.500}",
+          "type": "color"
+        },
+        "background-color": {
+          "value": "none",
+          "type": "color"
+        },
+        "font-size": {
+          "value": "{govnl.document.font-size}",
+          "type": "fontSizes"
+        }
+      },
+      "mobile": {
+        "max-inline-size": {
+          "value": "100%",
+          "type": "sizing"
+        }
+      },
+      "font-size": {
+        "value": "{govnl.document.font-size}",
+        "type": "fontSizes"
       }
     }
   }

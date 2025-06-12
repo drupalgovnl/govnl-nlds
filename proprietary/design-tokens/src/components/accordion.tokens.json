@@ -112,17 +112,8 @@
             "type": "color"
           },
           "color": {
-            "value": "{govnl.interaction.color}",
-            "type": "color",
-            "$extensions": {
-              "studio.tokens": {
-                "modify": {
-                  "type": "darken",
-                  "value": "0.2",
-                  "space": "srgb"
-                }
-              }
-            }
+            "value": "{govnl.interaction.hover.color}",
+            "type": "color"
           }
         },
         "focus": {
@@ -149,17 +140,8 @@
             "type": "color"
           },
           "color": {
-            "value": "{govnl.interaction.color}",
-            "type": "color",
-            "$extensions": {
-              "studio.tokens": {
-                "modify": {
-                  "type": "darken",
-                  "value": "0.4",
-                  "space": "srgb"
-                }
-              }
-            }
+            "value": "{govnl.interaction.active.color}",
+            "type": "color"
           }
         },
         "expanded": {
