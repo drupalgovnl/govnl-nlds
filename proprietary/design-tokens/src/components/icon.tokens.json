@@ -6,8 +6,8 @@
         "type": "color"
       },
       "size": {
-        "value": "{govnl.icon.size.functional}",
-        "type": "dimension"
+        "value": "1.5em",
+        "type": "sizing"
       }
     }
   }

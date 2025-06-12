@@ -400,18 +400,6 @@
         "type": "dimension"
       }
     },
-    "icon": {
-      "size": {
-        "functional": {
-          "value": "{govnl.dimension.size.300}",
-          "type": "dimension"
-        },
-        "toptask": {
-          "value": "{govnl.dimension.size.500}",
-          "type": "dimension"
-        }
-      }
-    },
     "gap-content": {
       "min": {
         "value": "{govnl.dimension.size.200}",
