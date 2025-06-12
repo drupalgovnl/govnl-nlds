@@ -3,22 +3,22 @@
     "link-list": {
       "row-gap": {
         "value": "{govnl.gap-content.min} / 2",
-        "type": "dimension"
+        "type": "spacing"
       },
       "icon": {
         "inset-block-start": {
           "value": "0px",
-          "type": "dimension"
+          "type": "spacing"
         },
         "size": {
-          "value": "{govnl.icon.size.functional}",
-          "type": "dimension"
+          "value": "1.5em",
+          "type": "sizing"
         }
       },
       "link": {
         "column-gap": {
           "value": "{govnl.gap-content.min} / 2",
-          "type": "dimension"
+          "type": "spacing"
         },
         "text-decoration": {
           "value": "None",

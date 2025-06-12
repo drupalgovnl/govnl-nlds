@@ -20,23 +20,23 @@
         },
         "border-width": {
           "value": "{govnl.border.border-width.sm}",
-          "type": "dimension"
+          "type": "border"
         },
         "padding-block-end": {
           "value": "{govnl.space.md}",
-          "type": "dimension"
+          "type": "spacing"
         },
         "padding-block-start": {
           "value": "{govnl.space.sm}",
-          "type": "dimension"
+          "type": "spacing"
         },
         "padding-inline-end": {
           "value": "{govnl.space.sm}",
-          "type": "dimension"
+          "type": "spacing"
         },
         "padding-inline-start": {
           "value": "{govnl.space.sm}",
-          "type": "dimension"
+          "type": "spacing"
         }
       },
       "button": {
@@ -70,16 +70,16 @@
         },
         "gap": {
           "value": "{govnl.gap-content.min} / 2",
-          "type": "dimension"
+          "type": "spacing"
         },
         "icon": {
           "size": {
-            "value": "{govnl.icon.size.functional}",
-            "type": "dimension"
+            "value": "1.5em",
+            "type": "sizing"
           },
           "margin-inline": {
             "value": "{govnl.space.xs}",
-            "type": "dimension"
+            "type": "spacing"
           },
           "color": {
             "value": "{govnl.interaction.color}",
@@ -88,19 +88,19 @@
         },
         "padding-block-end": {
           "value": "{govnl.space.xs}",
-          "type": "dimension"
+          "type": "spacing"
         },
         "padding-block-start": {
           "value": "{govnl.space.xs}",
-          "type": "dimension"
+          "type": "spacing"
         },
         "padding-inline-end": {
           "value": "{govnl.space.sm}",
-          "type": "dimension"
+          "type": "spacing"
         },
         "padding-inline-start": {
           "value": "{govnl.space.sm}",
-          "type": "dimension"
+          "type": "spacing"
         },
         "hover": {
           "background-color": {
@@ -161,15 +161,15 @@
         "section": {
           "border-color": {
             "value": "{govnl.line.subtle.border-color}",
-            "type": "dimension"
+            "type": "color"
           },
           "border-width": {
             "value": "0px",
-            "type": "dimension"
+            "type": "border"
           },
           "border-block-end-width": {
             "value": "{govnl.border.border-width.sm}",
-            "type": "dimension"
+            "type": "border"
           }
         }
       }
