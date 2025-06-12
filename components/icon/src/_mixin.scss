@@ -6,9 +6,9 @@
   inline-size: var(--govnl-icon-size);
   position: relative;
 
-  svg {
+  & svg {
     /* stylelint-disable-next-line property-disallowed-list */
-    fill: var(--govnl-icon-color, currentColor);
+    fill: var(--govnl-icon-color, currentcolor);
   }
 }
 
