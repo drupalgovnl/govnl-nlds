@@ -20,8 +20,9 @@
   },
   "workspaces": [
     "./proprietary/*",
-    "./packages/*",
-    "./components/*"
+    "./packages/utilities",
+    "./components/*",
+    "./packages/storybook"
   ],
   "devDependencies": {
     "@changesets/cli": "^2.29.4",
