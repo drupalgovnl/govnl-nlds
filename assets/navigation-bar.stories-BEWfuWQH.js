@@ -1,4 +1,4 @@
-import{r as s}from"./index-BwgB3II8.js";const v={argTypes:{items:{control:"array"}},parameters:{docs:{description:{component:s}}},tags:["autodocs"],title:"Componenten/NavigationBar"},i={render:r=>{const n=document.createElement("nav"),{items:o}=r||[];return n.classList.add("dictu-navigation-bar"),n.setAttribute("aria-label","Hoofdnavigatie"),n.setAttribute("role","navigation"),n.innerHTML=`
+import{r as s}from"./index-C3jPgbLJ.js";const v={argTypes:{items:{control:"array"}},parameters:{docs:{description:{component:s}}},tags:["autodocs"],title:"Componenten/NavigationBar"},i={render:r=>{const n=document.createElement("nav"),{items:o}=r||[];return n.classList.add("dictu-navigation-bar"),n.setAttribute("aria-label","Hoofdnavigatie"),n.setAttribute("role","navigation"),n.innerHTML=`
       <input type="checkbox" id="nav-toggle" class="dictu-navigation-bar__toggle" aria-controls="nav-list" aria-label="Menu tonen/verbergen" />
       <a href="#" class="dictu-navigation-bar__link dictu-navigation-bar__home" aria-label="Home">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
