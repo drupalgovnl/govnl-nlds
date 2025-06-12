@@ -5,6 +5,11 @@
   font-size: var(--govnl-icon-size);
   inline-size: var(--govnl-icon-size);
   position: relative;
+
+  svg {
+    /* stylelint-disable-next-line property-disallowed-list */
+    fill: var(--govnl-icon-color, currentColor);
+  }
 }
 
 @mixin dictu-icon__svg {
