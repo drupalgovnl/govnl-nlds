@@ -32,7 +32,8 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@dictu/design-tokens": "*"
+    "@dictu/design-tokens": "*",
+    "@dictu/utilities": "*"
   },
   "overrides": {
     "storybook": "$storybook"
