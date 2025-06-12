@@ -31,6 +31,14 @@
         "500": {
           "value": "{govnl.color.lintblauw.500}",
           "type": "color"
+        },
+        "active": {
+          "value": "{govnl.color.lintblauw.500}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{govnl.color.lintblauw.500}",
+          "type": "color"
         }
       },
       "accent-1": {
