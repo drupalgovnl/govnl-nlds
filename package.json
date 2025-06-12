@@ -19,8 +19,8 @@
     "node": ">=20 <=22"
   },
   "workspaces": [
-    "./proprietary/*",
     "./packages/*",
+    "./proprietary/*",
     "./components/*"
   ],
   "devDependencies": {
