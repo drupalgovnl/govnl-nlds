@@ -33,7 +33,8 @@
   },
   "dependencies": {
     "@dictu/design-tokens": "*",
-    "@dictu/utilities": "*"
+    "@dictu/utilities": "*",
+    "@storybook/builder-vite": "^9.1.0-alpha.1"
   },
   "overrides": {
     "storybook": "$storybook"
