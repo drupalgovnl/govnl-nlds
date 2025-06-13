@@ -1,5 +1,5 @@
 {
-  "name": "@dictu/footer",
+  "name": "@dictu/page-footer",
   "version": "1.0.0-alpha.0",
   "author": "Dienst ICT Uitvoering",
   "description": "Footer CSS component.",
@@ -9,11 +9,10 @@
     "css",
     "footer"
   ],
-  "private": true,
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/footer"
+    "directory": "components/page-footer"
   },
   "files": [
     "src/",
@@ -27,8 +26,16 @@
     "access": "public",
     "provenance": true
   },
+  "dependencies": {
+    "@dictu/heading": "^1.0.0",
+    "@dictu/paragraph": "^1.0.0",
+    "@dictu/link-list": "^1.0.0",
+    "@dictu/link": "^1.0.0",
+    "@dictu/icon": "^1.0.0"
+  },
   "scripts": {
-    "build": "",
+    "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
     "clean": "rimraf ./dist/"
   }
 }

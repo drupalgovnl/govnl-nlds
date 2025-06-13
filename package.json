@@ -35,13 +35,24 @@
   },
   "scripts": {
     "build": "npm --ws run build",
+    "watch": "npm --ws run watch",
     "clean": "npm --ws run clean",
     "changeset": "changeset",
     "start": "http-server packages/storybook/dist/",
     "storybook": "npm-run-all --parallel watch:**",
     "publish:changeset": "changeset publish",
     "watch:storybook": "npm --workspace @dictu/design-tokens run build:style-dictionary && npm --workspace ./packages/storybook run storybook",
-    "watch:style-dictionary": "npm --workspace @dictu/design-tokens run watch:style-dictionary"
+    "watch:style-dictionary": "npm --workspace @dictu/design-tokens run watch:style-dictionary",
+    "watch:button": "npm --workspace ./components/button run watch",
+    "watch:heading": "npm --workspace ./components/heading run watch",
+    "watch:icon": "npm --workspace ./components/icon run watch",
+    "watch:link": "npm --workspace ./components/link run watch",
+    "watch:link-list": "npm --workspace ./components/link-list run watch",
+    "watch:logo": "npm --workspace ./components/logo run watch",
+    "watch:navigation-bar": "npm --workspace ./components/navigation-bar run watch",
+    "watch:page-footer": "npm --workspace ./components/page-footer run watch",
+    "watch:paragraph": "npm --workspace ./components/paragraph run watch",
+    "watch:skip-link": "npm --workspace ./components/skip-link run watch"
   },
   "dependencies": {
     "http-server": "14.1.1",
