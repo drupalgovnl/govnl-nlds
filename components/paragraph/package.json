@@ -29,7 +29,8 @@
     "@nl-design-system-candidate/paragraph-css": "^2.1.0"
   },
   "scripts": {
-    "build": "sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
     "clean": "rimraf ./dist/"
   }
 }

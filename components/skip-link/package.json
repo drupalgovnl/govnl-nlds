@@ -30,7 +30,8 @@
     "@nl-design-system-candidate/skip-link-css": "^1.0.2"
   },
   "scripts": {
-    "build": "sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
     "clean": "rimraf ./dist/"
   }
 }
