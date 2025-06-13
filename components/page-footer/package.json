@@ -26,13 +26,6 @@
     "access": "public",
     "provenance": true
   },
-  "dependencies": {
-    "@dictu/heading": "^1.0.0",
-    "@dictu/paragraph": "^1.0.0",
-    "@dictu/link-list": "^1.0.0",
-    "@dictu/link": "^1.0.0",
-    "@dictu/icon": "^1.0.0"
-  },
   "scripts": {
     "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
     "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
