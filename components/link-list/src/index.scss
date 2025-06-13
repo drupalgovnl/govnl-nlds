@@ -1,0 +1,15 @@
+@use 'mixin' as mixin;
+
+.dictu-link-list {
+  @include mixin.reset-ul;
+  @include mixin.dictu-link-list;
+}
+
+.dictu-link-list__item {
+  @include mixin.reset-li;
+  @include mixin.dictu-link-list--item;
+}
+
+.dictu-link-list__link {
+ @include mixin.dictu-link-list--link
+}
