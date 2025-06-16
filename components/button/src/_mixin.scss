@@ -5,7 +5,7 @@
   border-style: solid;
   border-width: var(--govnl-button-border-width);
   box-sizing: border-box;
-  column-gap: var(--govnl-button-column-gap);
+  gap: calc(var(--govnl-button-column-gap));
   display: inline-flex;
   justify-content: center;
   padding-block-end: var(--govnl-button-padding-block-end);
