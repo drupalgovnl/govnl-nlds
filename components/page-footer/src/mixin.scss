@@ -18,6 +18,15 @@
   padding-block-start: var(--govnl-page-footer-padding-block-start);
   padding-block-end: var(--govnl-page-footer-padding-block-end);
   border-color: var(--govnl-page-footer-border-color);
+
+  .dictu-icon {
+    --govnl-icon-color: var(--govnl-page-footer-icon-color);
+    --govnl-icon-size: 1.5rem;
+  }
+
+  .dictu-paragraph {
+    color: var(--govnl-page-footer-color);
+  }
 }
 
 @mixin dictu-page-footer__container {

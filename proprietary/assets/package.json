@@ -16,10 +16,5 @@
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
     "directory": "proprietary/assets"
-  },
-  "scripts": {
-    "build": "",
-    "clean": "",
-    "watch": ""
   }
 }

@@ -25,10 +25,6 @@ export default {
       control: { type: "range", min: 1, max: 6 },
       description: "Heading level for the main footer heading (affects column titles too)"
     },
-    lang: {
-      control: "text",
-      description: "Language code for the footer content (e.g., 'nl', 'en')"
-    },
   },
   parameters: {
     docs: {
@@ -138,7 +134,6 @@ const defaultFooterData = {
   heading: "Footer kop",
   text: "Dit is een voettekst die extra informatie biedt.",
   headingLevel: 2,
-  lang: "nl",
   columns: [
     {
       title: "Kop 1",
@@ -189,7 +184,6 @@ const accessibleFooterData = {
   heading: "Toegankelijke Footer",
   text: "Een volledig toegankelijke footer met uitgebreide aria-labels en externe link indicatoren.",
   headingLevel: 3,
-  lang: "nl",
   columns: [
     {
       title: "Belangrijke Links",
@@ -235,13 +229,12 @@ const accessibleFooterData = {
 
 export const PageFooter = {
   render: (args) => {
-    const { heading, text, columns, headingLevel = 2, lang = "nl" } = args || {};
+    const { heading, text, columns, headingLevel = 2 } = args || {};
 
     // Create main footer element
     const pageFooter = document.createElement("footer");
     pageFooter.classList.add("dictu-page-footer");
     pageFooter.setAttribute("role", "contentinfo");
-    if (lang) pageFooter.setAttribute("lang", lang);
 
     // Create container
     const container = document.createElement("div");
@@ -289,7 +282,6 @@ export const MinimalPageFooter = {
     heading: "Minimale Footer",
     text: "Een eenvoudige footer zonder kolommen.",
     headingLevel: 2,
-    lang: "nl",
     columns: [],
   },
   parameters: {
@@ -308,10 +300,9 @@ export const MinimalPageFooterOnlyColumns = {
     heading: "",
     text: "",
     headingLevel: 2,
-    lang: "nl",
     columns: [
       {
-        title: "Belangrijke Links",
+        title: "Heading 1",
         items: [
           {
             label: "Toegankelijkheidsverklaring",
@@ -333,7 +324,7 @@ export const MinimalPageFooterOnlyColumns = {
         ],
       },
       {
-        title: "Externe Bronnen",
+        title: "EHeading 2",
         items: [
           {
             label: "W3C WCAG Richtlijnen",
@@ -350,10 +341,10 @@ export const MinimalPageFooterOnlyColumns = {
         ],
       },
       {
-        title: "Externe Bronnen",
+        title: "Heading 3",
         items: [
           {
-            label: "W3C WCAG Richtlijnen",
+            label: "W3C WCAG Richtlijnen 3",
             href: "https://www.w3.org/WAI/WCAG22/quickref/",
             title: "Bezoek de officiële WCAG 2.2 richtlijnen",
             external: true,
