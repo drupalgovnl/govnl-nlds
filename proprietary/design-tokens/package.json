@@ -17,9 +17,9 @@
   },
   "scripts": {
     "clean": "rimraf dist/",
-    "build": "npm-run-all clean build:style-dictionary",
+    "build": "npm run clean && npm run build:style-dictionary",
     "build:style-dictionary": "node ./style-dictionary-build.mjs",
-    "watch": "npm-run-all watch:**",
+    "watch": "npm run watch:style-dictionary",
     "watch:style-dictionary": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.tokens.json'"
   },
   "devDependencies": {

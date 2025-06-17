@@ -34,14 +34,16 @@
     "@rollup/rollup-linux-x64-gnu": "4.9.5"
   },
   "scripts": {
-    "build": "npm --ws run build",
-    "clean": "npm --ws run clean",
+    "build": "npm --ws run build --if-present",
+    "clean": "npm --ws run clean --if-present",
+    "watch": "npm --ws run watch --if-present",
     "changeset": "changeset",
     "start": "http-server packages/storybook/dist/",
-    "storybook": "npm-run-all --parallel watch:**",
+    "storybook": "npm-run-all --parallel watch:storybook watch:style-dictionary watch:components",
     "publish:changeset": "changeset publish",
-    "watch:storybook": "npm --workspace @dictu/design-tokens run build:style-dictionary && npm --workspace ./packages/storybook run storybook",
-    "watch:style-dictionary": "npm --workspace @dictu/design-tokens run watch:style-dictionary"
+    "watch:storybook": "npm --workspace ./packages/storybook run storybook",
+    "watch:style-dictionary": "npm --workspace @dictu/design-tokens run watch:style-dictionary",
+    "watch:components": "node scripts/watch-components.mjs"
   },
   "dependencies": {
     "http-server": "14.1.1",
