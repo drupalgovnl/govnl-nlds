@@ -1,4 +1,4 @@
-import{j as e,M as o,a as i}from"./blocks-BXuCdXZK.js";import{useMDXComponents as a}from"./index-DH-vnSAt.js";import"./DocsRenderer-3PZUHFFL-BFEc_5UR.js";import"./iframe-CMdI7Kdi.js";import"./_commonjsHelpers-CqkleIqs.js";const s=`# Auteursrecht {auteur}
+import{j as e,M as o,a as i}from"./blocks-Dcf457Yi.js";import{useMDXComponents as a}from"./index-BoC3osfZ.js";import"./DocsRenderer-3PZUHFFL-aAdnyuv3.js";import"./iframe-DgJ2MQDg.js";import"./_commonjsHelpers-CqkleIqs.js";const s=`# Auteursrecht {auteur}
 
 Copyright (c) {jaar} {auteur}
 

@@ -1,4 +1,4 @@
-/* empty css              */const l=`<!-- @license CC0-1.0 -->
+/* empty css             *//* empty css              */const l=`<!-- @license CC0-1.0 -->
 
 Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.
 
@@ -31,8 +31,8 @@ Om te zorgen dat de states van een Link component goed werken als een link om ee
 ## Links
 
 - [MDN: \`<a>\`: The Anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a)
-`,d={args:{href:"dictu.nl"},argTypes:{innerHTML:{control:"text"},href:{control:"text"}},parameters:{docs:{description:{component:l}}},render:({innerHTML:o,href:r})=>{const a=["dictu-link"],e=document.createElement("a");return e.innerText=o,e.href=r,e.classList.add(...a),e},tags:["autodocs"],title:"Componenten/Link"},n={args:{innerHTML:"Dit is een link"}};var t,i,s;n.parameters={...n.parameters,docs:{...(t=n.parameters)==null?void 0:t.docs,source:{originalSource:`{
+`,m={args:{href:"dictu.nl"},argTypes:{innerHTML:{control:"text"},href:{control:"text"}},parameters:{docs:{description:{component:l}}},render:({innerHTML:o,href:r})=>{const a=["dictu-link"],e=document.createElement("a");return e.innerText=o,e.href=r,e.classList.add(...a),e},tags:["autodocs"],title:"Componenten/Link"},n={args:{innerHTML:"Dit is een link"}};var t,i,s;n.parameters={...n.parameters,docs:{...(t=n.parameters)==null?void 0:t.docs,source:{originalSource:`{
   args: {
     innerHTML: 'Dit is een link'
   }
-}`,...(s=(i=n.parameters)==null?void 0:i.docs)==null?void 0:s.source}}};const m=["Link"];export{n as Link,m as __namedExportsOrder,d as default};
+}`,...(s=(i=n.parameters)==null?void 0:i.docs)==null?void 0:s.source}}};const k=["Link"];export{n as Link,k as __namedExportsOrder,m as default};
