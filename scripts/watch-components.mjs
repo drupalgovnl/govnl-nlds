@@ -1,77 +1,36 @@
-#!/usr/bin/env node
+import { readFileSync } from "fs";
+import { globSync } from "glob";
+import { spawn } from "child_process";
 
-import { spawn } from 'child_process';
-import { readdir, readFile } from 'fs/promises';
-import { join } from 'path';
+// Find all component package.json files
+const componentPackages = globSync("./components/*/package.json");
 
-const COMPONENTS_DIR = './components';
+// Filter components that have a non-empty watch script
+const watchableComponents = componentPackages
+  .map((pkgPath) => {
+    const pkg = JSON.parse(readFileSync(pkgPath, "utf8"));
+    return { name: pkg.name, watch: pkg.scripts?.watch };
+  })
+  .filter((pkg) => pkg.watch && pkg.watch.trim() !== "");
 
-async function getComponentsWithWatchScript() {
-  try {
-    const componentDirs = await readdir(COMPONENTS_DIR, { withFileTypes: true });
-    const componentsWithWatch = [];
-
-    for (const dir of componentDirs) {
-      if (dir.isDirectory()) {
-        const packageJsonPath = join(COMPONENTS_DIR, dir.name, 'package.json');
-        try {
-          const packageJsonContent = await readFile(packageJsonPath, 'utf8');
-          const packageJson = JSON.parse(packageJsonContent);
-
-          if (packageJson.scripts && packageJson.scripts.watch) {
-            componentsWithWatch.push(dir.name);
-          }
-        } catch (error) {
-          // Skip components without package.json or with invalid JSON
-        }
-      }
-    }
-
-    return componentsWithWatch;
-  } catch (error) {
-    console.error('Error reading components directory:', error);
-    return [];
-  }
+if (watchableComponents.length === 0) {
+  console.log("No components with watch scripts found");
+  process.exit(0);
 }
 
-async function runComponentWatchers() {
-  const components = await getComponentsWithWatchScript();
+console.log(`Starting watch for ${watchableComponents.length} components:`);
+watchableComponents.forEach((pkg) => console.log(`  - ${pkg.name}`));
 
-  if (components.length === 0) {
-    console.log('No components with watch scripts found.');
-    return;
-  }
-
-  console.log(`Starting watch processes for ${components.length} components:`);
-  components.forEach(component => console.log(`  - ${component}`));
-  console.log('');
-
-  const processes = components.map(component => {
-    const child = spawn('npm', ['run', 'watch'], {
-      cwd: join(COMPONENTS_DIR, component),
-      stdio: 'inherit'
-    });
-
-    child.on('error', (error) => {
-      console.error(`Error starting watch for ${component}:`, error);
-    });
-
-    return { component, process: child };
+// Start all watch processes in parallel
+const processes = watchableComponents.map((pkg) => {
+  return spawn("npm", ["--workspace", pkg.name, "run", "watch"], {
+    stdio: "inherit",
+    shell: true,
   });
+});
 
-  // Handle cleanup on exit
-  process.on('SIGINT', () => {
-    console.log('\nStopping all watch processes...');
-    processes.forEach(({ component, process }) => {
-      process.kill('SIGINT');
-    });
-    process.exit(0);
-  });
-
-  // Wait for all processes
-  await Promise.all(processes.map(({ process }) =>
-    new Promise(resolve => process.on('exit', resolve))
-  ));
-}
-
-runComponentWatchers().catch(console.error);
+// Handle cleanup
+process.on("SIGINT", () => {
+  processes.forEach((p) => p.kill());
+  process.exit(0);
+});
