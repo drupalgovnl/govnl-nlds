@@ -370,26 +370,6 @@
         "type": "other"
       }
     },
-    "section": {
-      "max-inline-size": {
-        "value": "calc(8 * {govnl.dimension.size.2000})",
-        "type": "dimension"
-      },
-      "padding-inline": {
-        "value": "{govnl.dimension.size.100}",
-        "type": "dimension"
-      }
-    },
-    "container": {
-      "max-inline-size": {
-        "value": "calc(8 * {govnl.dimension.size.2000})",
-        "type": "dimension"
-      },
-      "padding-inline": {
-        "value": "{govnl.dimension.size.100}",
-        "type": "dimension"
-      }
-    },
     "gap-content": {
       "min": {
         "value": "{govnl.dimension.size.200}",
@@ -443,16 +423,6 @@
       },
       "4xl": {
         "value": "{govnl.dimension.size.1000}",
-        "type": "dimension"
-      }
-    },
-    "section-copy": {
-      "max-inline-size": {
-        "value": "calc(8 * {govnl.dimension.size.2000})",
-        "type": "dimension"
-      },
-      "padding-inline": {
-        "value": "{govnl.dimension.size.100}",
         "type": "dimension"
       }
     }
