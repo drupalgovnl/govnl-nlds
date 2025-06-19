@@ -1,0 +1,14 @@
+{
+  "govnl": {
+    "container": {
+      "max-inline-size": {
+        "value": "calc(8 * {govnl.dimension.size.2000})",
+        "type": "dimension"
+      },
+      "padding-inline": {
+        "value": "{govnl.dimension.size.100}",
+        "type": "dimension"
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@
     "components/accordion.tokens",
     "components/breadcrumb.tokens",
     "components/button.tokens",
+    "components/container.tokens",
     "components/figure.tokens",
     "components/heading.tokens",
     "components/hero.tokens.wip",
@@ -16,7 +17,7 @@
     "components/page-footer.tokens",
     "components/paragraph.tokens",
     "components/page-header.tokens",
-    "components/section.tokens.wip",
+    "components/section.tokens",
     "components/skip-link.tokens"
   ]
 }

@@ -19,7 +19,8 @@
       "components/breadcrumb.tokens": "enabled",
       "components/page-footer.tokens": "enabled",
       "components/page-header.tokens": "enabled",
-      "components/section.tokens.wip": "disabled"
+      "components/container.tokens": "disabled",
+      "components/section.tokens": "disabled"
     },
     "$figmaVariableReferences": {},
     "group": "GovNL"
