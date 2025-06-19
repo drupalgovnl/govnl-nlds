@@ -12,8 +12,6 @@
 
 @mixin dictu-link-list {
   --govnl-icon-inset-block-start: var(--govnl-link-list-icon-inset-block-start);
-  --govnl-icon-size: var(--govnl-link-list-icon-size);
-  --govnl-link-icon-size: var(--govnl-link-list-icon-size);
   --govnl-link-text-decoration: var(--govnl-link-list-link-text-decoration, none);
 
   display: flex;
@@ -21,6 +19,10 @@
   margin-block-end: 0;
   margin-block-start: 0;
   row-gap: var(--govnl-link-list-row-gap);
+
+  .dictu-icon {
+    --govnl-icon-size: var(--govnl-link-list-icon-size);
+  }
 }
 
 @mixin dictu-link-list__item {

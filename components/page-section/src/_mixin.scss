@@ -1,0 +1,18 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin reset {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+}
+
+@mixin dictu-page-section {
+  @include reset;
+
+  max-inline-size: var(--govnl-section-max-inline-width);
+  padding-inline: var(--govnl-section-padding-inline);
+}
