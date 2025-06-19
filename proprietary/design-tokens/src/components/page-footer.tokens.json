@@ -19,7 +19,7 @@
       },
       "container": {
         "max-inline-width": {
-          "value": "{govnl.container.max-inline-width}",
+          "value": "{govnl.container.max-inline-size}",
           "type": "dimension"
         },
         "padding-inline": {
