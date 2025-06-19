@@ -19,6 +19,7 @@
    column-gap: var(--govnl-logo-column-gap);
    font-family: var(--govnl-logo-font-family);
    color: var(--govnl-logo-color);
+   max-width: fit-content;
  }
 
  @mixin dictu-logo__image {
