@@ -1,0 +1,14 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use './mixin' as mixin;
+
+.dictu-figure {
+  @include mixin.dictu-figure;
+}
+
+.dictu-figure__caption {
+  @include mixin.dictu-figcaption;
+}

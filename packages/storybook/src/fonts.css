@@ -1,0 +1,29 @@
+/* Font faces for FiraSans WOFF2 fonts */
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('./fonts/FiraSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('./fonts/FiraSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('./fonts/FiraSans-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Set Fira Sans as the default font family for the entire Storybook */
+body {
+  font-family: 'Fira Sans', system-ui, sans-serif;
+}
