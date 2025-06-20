@@ -2,7 +2,7 @@ import { createRequire } from 'node:module';
 import { dirname, join } from 'node:path';
 const require = createRequire(import.meta.url);
 const config = {
-  addons: [getAbsolutePath('@storybook/addon-a11y')],
+  addons: [getAbsolutePath('@storybook/addon-a11y'), getAbsolutePath('@storybook/addon-docs')],
 
   core: {
     disableTelemetry: true,
