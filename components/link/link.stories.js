@@ -4,7 +4,7 @@ import './dist/index.css';
 
 export default {
   args: {
-    href: 'dictu.nl'
+    href: 'dictu.nl',
   },
   argTypes: {
     innerHTML: {
@@ -37,6 +37,6 @@ export default {
 
 export const Link = {
   args: {
-    innerHTML: 'Dit is een link'
+    innerHTML: 'Dit is een link',
   },
 };

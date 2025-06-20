@@ -18,6 +18,7 @@
     "//": "Update @types/node to match the highest node version here",
     "node": ">=20 <=22"
   },
+  "type": "module",
   "workspaces": [
     "./proprietary/*",
     "./packages/utilities",
@@ -26,27 +27,93 @@
   ],
   "devDependencies": {
     "@changesets/cli": "^2.29.4",
-    "glob": "^11.0.2",
+    "@eslint/js": "^9.29.0",
+    "@types/node": "^22.9.3",
+    "@typescript-eslint/eslint-plugin": "^8.34.1",
+    "@typescript-eslint/parser": "^8.34.1",
+    "audit-ci": "^7.1.0",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-storybook": "^9.0.12",
+    "glob": "^11.0.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "npm-run-all": "4.1.5",
-    "sass": "^1.88.0"
+    "prettier": "^3.5.3",
+    "sass": "^1.89.2",
+    "size-limit": "^11.1.6",
+    "@size-limit/preset-small-lib": "^11.1.6",
+    "stylelint": "^16.21.0",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.12.1",
+    "typescript": "^5.7.3"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "4.9.5"
   },
   "scripts": {
     "build": "npm --ws run build --if-present",
-    "clean": "npm --ws run clean --if-present",
-    "watch": "npm --ws run watch --if-present",
     "changeset": "changeset",
+    "clean": "npm --ws run clean --if-present",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:format && npm run lint:types",
+    "lint:css": "stylelint \"**/*.{css,scss}\"",
+    "lint:css:fix": "stylelint \"**/*.{css,scss}\" --fix",
+    "lint:fix": "npm run lint:js:fix && npm run lint:css:fix && npm run lint:format:fix",
+    "lint:format": "prettier --check .",
+    "lint:format:fix": "prettier --write .",
+    "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx,.mjs",
+    "lint:js:fix": "eslint . --ext .js,.jsx,.ts,.tsx,.mjs --fix",
+    "lint:types": "tsc --noEmit",
+    "prepare": "husky install",
+    "publish:changeset": "changeset publish",
+    "security:audit": "npm audit --audit-level=moderate",
+    "security:check": "npx audit-ci --moderate",
+    "size": "size-limit",
+    "size:analyze": "size-limit --why",
     "start": "http-server packages/storybook/dist/",
     "storybook": "npm-run-all --parallel watch:storybook watch:style-dictionary watch:components",
-    "publish:changeset": "changeset publish",
+    "test:quality": "npm run lint && npm run security:audit && npm run size",
+    "watch": "npm --ws run watch --if-present",
+    "watch:components": "node scripts/watch-components.mjs",
     "watch:storybook": "npm --workspace ./packages/storybook run storybook",
-    "watch:style-dictionary": "npm --workspace @dictu/design-tokens run watch:style-dictionary",
-    "watch:components": "node scripts/watch-components.mjs"
+    "watch:style-dictionary": "npm --workspace @dictu/design-tokens run watch:style-dictionary"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{md,json,yaml,yml}": [
+      "prettier --write"
+    ],
+    "package.json": [
+      "npm pkg fix",
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "bash -c 'tsc --noEmit'"
+    ]
   },
   "dependencies": {
-    "http-server": "14.1.1",
-    "@dictu/utilities": "*"
-  }
+    "@dictu/utilities": "*",
+    "http-server": "14.1.1"
+  },
+  "size-limit": [
+    {
+      "name": "Design Tokens CSS",
+      "path": "proprietary/design-tokens/dist/**/*.css",
+      "limit": "50 KB"
+    },
+    {
+      "name": "Component Styles (individual)",
+      "path": "components/*/dist/**/*.css",
+      "limit": "10 KB"
+    }
+  ]
 }

@@ -1,4 +1,4 @@
-@use './mixin.scss' as mixin;
+@use "./mixin.scss" as mixin;
 
 .dictu-navigation-bar {
   @include mixin.dictu-navigation-bar;
@@ -29,11 +29,11 @@
 }
 
 // Responsive: mobile
-@media (max-width: 48em) {
+@media (width <= 48em) {
   @include mixin.dictu-navigation-bar--mobile;
 }
 
 // Responsive: desktop
-@media (min-width: 48.01em) {
+@media (width >= 48.01em) {
   @include mixin.dictu-navigation-bar--desktop;
 }

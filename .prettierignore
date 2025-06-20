@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+coverage/
+.nyc_output/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Minified files
+*.min.js
+*.min.css
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE and OS files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Documentation that shouldn't be reformatted
+CHANGELOG.md
+CHANGELOG*.md
+LICENSE*
+NOTICE*
+
+# Generated files
+.changeset/
+.storybook-static/
+
+# Design tokens build output
+proprietary/design-tokens/build/
+
+# Storybook build
+packages/storybook/storybook-static/
+packages/storybook/dist/
+
+# Style dictionary output
+**/tokens/
+**/dist/tokens/

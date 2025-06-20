@@ -10,17 +10,17 @@ import './dist/index.css';
 
 export default {
   args: {
-    innerHTML: 'Dit is een voorbeeld van een heading'
+    innerHTML: 'Dit is een voorbeeld van een heading',
   },
   argTypes: {
     innerHTML: {
       control: 'text',
-      description: 'De tekst van de heading'
+      description: 'De tekst van de heading',
     },
     level: {
       control: 'select',
       options: ['1', '2', '3', '4', '5', '6'],
-      description: 'Het niveau van de heading'
+      description: 'Het niveau van de heading',
     },
   },
   parameters: {
