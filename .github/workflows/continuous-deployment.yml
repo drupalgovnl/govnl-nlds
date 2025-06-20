@@ -38,6 +38,9 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
 
+      - name: Install dependencies
+        run: npm install --frozen-lockfile
+
       - name: 'Continuous Integration: lint JavaScript'
         run: npm run lint:js
 
