@@ -52,13 +52,13 @@ jobs:
       - name: Check code formatting
         run: npm run lint:format
 
-      - name: Run bundle size check
-        run: npm run size
-
       - name: Build packages
         run: npm run build
         env:
           NODE_ENV: production
+
+      - name: Run bundle size check
+        run: npm run size
 
   dependency-review:
     name: Dependency Review
