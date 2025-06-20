@@ -41,8 +41,17 @@ jobs:
       - name: Install dependencies
         run: npm install --frozen-lockfile
 
-      - name: "Continuous Integration: lint"
-        run: npm run --if-present lint
+      - name: 'Continuous Integration: lint JavaScript'
+        run: npm run lint:js
+
+      - name: 'Continuous Integration: lint CSS'
+        run: npm run lint:css
+
+      - name: 'Continuous Integration: lint formatting'
+        run: npm run lint:format
+
+      - name: 'Continuous Integration: type check'
+        run: npm run lint:types
 
   build:
     runs-on: ubuntu-latest
@@ -61,12 +70,12 @@ jobs:
       - name: Install dependencies
         run: npm install --frozen-lockfile
 
-      - name: "Continuous Integration: build"
+      - name: 'Continuous Integration: build'
         env:
-          BASE_URL: "/govnl-nlds/"
+          BASE_URL: '/govnl-nlds/'
         run: npm run --if-present build
 
-      - name: "Retain build artifact: storybook"
+      - name: 'Retain build artifact: storybook'
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: storybook
@@ -88,7 +97,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install --frozen-lockfile
-      - name: "Continuous Integration: test"
+      - name: 'Continuous Integration: test'
         run: npm run --if-present test
 
   publish-npm:
@@ -103,32 +112,32 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0
         with:
-          node-version-file: ".nvmrc"
-          registry-url: "https://registry.npmjs.org"
+          node-version-file: '.nvmrc'
+          registry-url: 'https://registry.npmjs.org'
 
-      - name: "Continuous Deployment: install"
+      - name: 'Continuous Deployment: install'
         run: |
           npm install --frozen-lockfile
 
-      - name: "Continuous Deployment: build"
+      - name: 'Continuous Deployment: build'
         run: npm run --if-present build
 
-      - name: "Continuous Deployment: publish changeset to GitHub repository"
+      - name: 'Continuous Deployment: publish changeset to GitHub repository'
         uses: changesets/action@06245a4e0a36c064a573d4150030f5ec548e4fcc # v1.4.10
         id: changeset
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           GIT_AUTHOR_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
-          GIT_AUTHOR_NAME: "GovNL Design System"
+          GIT_AUTHOR_NAME: 'GovNL Design System'
           GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
-          GIT_COMMITTER_NAME: "GovNL Design System"
+          GIT_COMMITTER_NAME: 'GovNL Design System'
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
-          commit: "docs(release): design system packages"
+          commit: 'docs(release): design system packages'
           setupGitUser: false
-          title: "docs(release): design system packages"
-          publish: "npm run publish:changeset"
+          title: 'docs(release): design system packages'
+          publish: 'npm run publish:changeset'
 
   deploy-storybook:
     runs-on: ubuntu-latest
@@ -139,7 +148,7 @@ jobs:
       - name: Checkout release branch
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
-      - name: "Restore build artifact: Storybook"
+      - name: 'Restore build artifact: Storybook'
         uses: actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16 # v4.1.8
         with:
           name: storybook

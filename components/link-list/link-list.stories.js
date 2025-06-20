@@ -50,16 +50,16 @@ export const LinkList = {
     items: {
       item1: {
         label: 'Contact',
-        href: 'dictu.nl'
+        href: 'dictu.nl',
       },
       item2: {
         label: 'Colofon',
-        href: 'dictu.nl'
+        href: 'dictu.nl',
       },
       item3: {
         label: 'Toegankelijkheid',
-        href: 'dictu.nl'
-      }
-    }
+        href: 'dictu.nl',
+      },
+    },
   },
 };

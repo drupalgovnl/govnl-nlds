@@ -1,31 +1,31 @@
-import { globSync } from "glob";
-import path from "path";
-import { register } from "@tokens-studio/sd-transforms";
-import StyleDictionary from "style-dictionary";
+import { globSync } from 'glob';
+import path from 'path';
+import { register } from '@tokens-studio/sd-transforms';
+import StyleDictionary from 'style-dictionary';
 
 // will register them on StyleDictionary object
 // that is installed as a dependency of this package.
 register(StyleDictionary);
 
 // Path to base token files.
-const baseTokens = ["./src/**/common.tokens.json", "./src/**/core.tokens.json"];
-const tokens = globSync("./src/**/*.tokens.json");
+const baseTokens = ['./src/**/common.tokens.json', './src/**/core.tokens.json'];
+const tokens = globSync('./src/**/*.tokens.json');
 
 // Base SD config that combines core and common tokens in a single output.
 const base = new StyleDictionary({
   source: [baseTokens],
-  preprocessors: ["tokens-studio"],
+  preprocessors: ['tokens-studio'],
   platforms: {
     css: {
-      transformGroup: "tokens-studio",
-      transforms: ["attribute/cti", "name/kebab", "color/hsl"],
-      buildPath: "dist/",
+      transformGroup: 'tokens-studio',
+      transforms: ['attribute/cti', 'name/kebab', 'color/hsl'],
+      buildPath: 'dist/',
       files: [
         {
-          destination: "index.css",
-          format: "css/variables",
+          destination: 'index.css',
+          format: 'css/variables',
           options: {
-            selector: ".dictu-theme",
+            selector: '.dictu-theme',
             outputReferences: true,
           },
         },
@@ -42,23 +42,23 @@ const components = new StyleDictionary({
   // This is a workaround for the issue with the warning not being silenced.
   //
   log: {
-    verbosity: "verbose",
+    verbosity: 'verbose',
   },
   source: [tokens],
-  preprocessors: ["tokens-studio"],
+  preprocessors: ['tokens-studio'],
   platforms: {
     css: {
-      transformGroup: "tokens-studio",
-      transforms: ["attribute/cti", "name/kebab", "color/hsl"],
-      buildPath: "dist/",
+      transformGroup: 'tokens-studio',
+      transforms: ['attribute/cti', 'name/kebab', 'color/hsl'],
+      buildPath: 'dist/',
       files: tokens
-        .filter((file) => file.startsWith("src/components/"))
-        .map((file) => ({
-          destination: `${path.parse(file).name.toLowerCase().replace(".tokens", "")}.css`,
-          format: "css/variables",
-          filter: (token) => token.filePath === file,
+        .filter(file => file.startsWith('src/components/'))
+        .map(file => ({
+          destination: `${path.parse(file).name.toLowerCase().replace('.tokens', '')}.css`,
+          format: 'css/variables',
+          filter: token => token.filePath === file,
           options: {
-            selector: `.dictu-${path.parse(file).name.toLowerCase().replace(".tokens", "")}`,
+            selector: `.dictu-${path.parse(file).name.toLowerCase().replace('.tokens', '')}`,
             outputReferences: true,
           },
         })),

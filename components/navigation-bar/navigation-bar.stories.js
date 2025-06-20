@@ -1,11 +1,11 @@
 import readme from './README.md?raw';
-import "@dictu/design-tokens/dist/navigation-bar.css";
-import "./dist/index.css";
+import '@dictu/design-tokens/dist/navigation-bar.css';
+import './dist/index.css';
 
 export default {
   argTypes: {
     items: {
-      control: "array",
+      control: 'array',
     },
   },
   parameters: {
@@ -15,18 +15,18 @@ export default {
       },
     },
   },
-  tags: ["autodocs"],
-  title: "Componenten/NavigationBar",
+  tags: ['autodocs'],
+  title: 'Componenten/NavigationBar',
 };
 
 export const NavigationBar = {
-  render: (args) => {
+  render: args => {
     // Responsive, accessible, JS-free navigation bar
-    const navigationBar = document.createElement("nav");
+    const navigationBar = document.createElement('nav');
     const { items } = args || [];
-    navigationBar.classList.add("dictu-navigation-bar");
-    navigationBar.setAttribute("aria-label", "Hoofdnavigatie");
-    navigationBar.setAttribute("role", "navigation");
+    navigationBar.classList.add('dictu-navigation-bar');
+    navigationBar.setAttribute('aria-label', 'Hoofdnavigatie');
+    navigationBar.setAttribute('role', 'navigation');
     navigationBar.innerHTML = `
       <input type="checkbox" id="nav-toggle" class="dictu-navigation-bar__toggle" aria-controls="nav-list" aria-label="Menu tonen/verbergen" />
       <a href="#" class="dictu-navigation-bar__link dictu-navigation-bar__home" aria-label="Home">
@@ -44,15 +44,15 @@ export const NavigationBar = {
       <ul class="dictu-navigation-bar__list" id="nav-list" role="menubar">
         ${items
           .map(
-            (item) => `
+            item => `
           <li class="dictu-navigation-bar__item" role="none">
             <a href="${item.link}" class="dictu-navigation-bar__link" role="menuitem" tabindex="0">
               <span class="dictu-navigation-bar__title">${item.title}</span>
             </a>
           </li>
-        `,
+        `
           )
-          .join("")}
+          .join('')}
       </ul>
     `;
     return navigationBar;
@@ -60,16 +60,16 @@ export const NavigationBar = {
   args: {
     items: [
       {
-        link: "https://www.dictu.nl",
-        title: "Dienst ICT Uitvoering",
+        link: 'https://www.dictu.nl',
+        title: 'Dienst ICT Uitvoering',
       },
       {
-        link: "https://www.ez.nl",
-        title: "Ministerie van Economische Zaken",
+        link: 'https://www.ez.nl',
+        title: 'Ministerie van Economische Zaken',
       },
       {
-        link: "https://www.rijksoverheid.nl",
-        title: "Rijksoverheid",
+        link: 'https://www.rijksoverheid.nl',
+        title: 'Rijksoverheid',
       },
     ],
   },

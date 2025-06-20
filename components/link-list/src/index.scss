@@ -1,4 +1,4 @@
-@use 'mixin' as mixin;
+@use "mixin" as mixin;
 
 .dictu-link-list {
   @include mixin.reset-ul;
@@ -11,5 +11,5 @@
 }
 
 .dictu-link-list__link {
- @include mixin.dictu-link-list--link
+  @include mixin.dictu-link-list--link;
 }

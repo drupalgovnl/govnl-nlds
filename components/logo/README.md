@@ -1,6 +1,7 @@
 <!-- @license CC0-1.0 -->
 
-Het logo component toont het logo van Dictu, bestaande uit een afbeelding, een titel en een subtitel.
+Het logo component toont het logo van Dictu, bestaande uit een afbeelding, een
+titel en een subtitel.
 
 ## Gebruik deze component
 
@@ -41,6 +42,7 @@ import "@dictu/design-tokens/dist/logo.css";
 ```
 
 ## CSS Klassen
+
 - `.dictu-logo` — container voor het logo
 - `.dictu-logo__image` — bevat de logo-afbeelding (SVG of img)
 - `.dictu-logo__text` - Tekst wrapper van het logo

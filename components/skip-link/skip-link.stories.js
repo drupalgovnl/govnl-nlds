@@ -9,7 +9,7 @@ export default {
     },
     href: {
       control: 'text',
-    }
+    },
   },
   parameters: {
     docs: {
@@ -18,7 +18,7 @@ export default {
       },
     },
   },
-  render: ({ innerHTML, href, ...args }) => {
+  render: ({ innerHTML, href }) => {
     const classes = ['dictu-skip-link'];
     const $skipLink = document.createElement('a');
 
@@ -35,6 +35,6 @@ export default {
 export const SkipLink = {
   args: {
     innerHTML: 'Ga direct naar inhoud',
-    href: '#content'
+    href: '#content',
   },
 };

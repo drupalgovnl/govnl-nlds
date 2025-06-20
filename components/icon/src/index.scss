@@ -1,4 +1,4 @@
-@use 'mixin' as mixin;
+@use "mixin" as mixin;
 
 .dictu-icon {
   @include mixin.dictu-icon;
