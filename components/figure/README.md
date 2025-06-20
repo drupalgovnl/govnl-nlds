@@ -1,6 +1,6 @@
 # Figure component
 
-De figure component is een semantische container voor afbeeldingen met bijschrift.
+De figure component is een semantische container met bijschrift.
 
 ## Gebruik deze component
 

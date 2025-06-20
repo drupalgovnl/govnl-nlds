@@ -6,10 +6,7 @@
  @use 'pkg:@dictu/image/src/index' as dictu-image;
 
  @mixin reset {
-  margin-block-end: 0;
-  margin-block-start: 0;
-  margin-inline-end: 0;
-  margin-inline-start: 0;
+  margin: 0;
 }
 
 @mixin dictu-figure {

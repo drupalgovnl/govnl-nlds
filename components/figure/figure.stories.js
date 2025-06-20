@@ -12,7 +12,6 @@ export default {
     decorative: false,
     width: "100%",
     height: "100%",
-    aspectRatio: "16/9",
   },
   argTypes: {
     caption: {
@@ -57,68 +56,5 @@ export const Figure = {
     width: "640",
     height: "640",
     aspectRatio: "square",
-  },
-};
-
-export const Decorative = {
-  name: 'Decorative Figure',
-  args: {
-    src: '/example-image.jpg',
-    caption: 'Dit is een voorbeeld van een decoratieve afbeelding',
-    alt: 'Dit is een voorbeeld van een decoratieve afbeelding',
-    loading: 'lazy',
-    decorative: true,
-    ariaDescribedBy: '',
-    width: '640',
-    height: '640',
-    aspectRatio: 'square',
-  },
-};
-
-export const Landscape = {
-  name: 'Landscape Aspect Ratio',
-  args: {
-    src: '/example-image.jpg',
-    caption: 'Landscape figure example',
-    alt: 'Landscape image example',
-    aspectRatio: 'landscape',
-    width: '640',
-    height: '360',
-  },
-};
-
-export const Portrait = {
-  name: 'Portrait Aspect Ratio',
-  args: {
-    src: '/example-image.jpg',
-    caption: 'Portrait figure example',
-    alt: 'Portrait image example',
-    aspectRatio: 'portrait',
-    width: '360',
-    height: '640',
-  },
-};
-
-export const Square = {
-  name: 'Square Aspect Ratio',
-  args: {
-    src: '/example-image.jpg',
-    caption: 'Square figure example',
-    alt: 'Square image example',
-    aspectRatio: 'square',
-    width: '640',
-    height: '640',
-  },
-};
-
-export const Video = {
-  name: 'Video Aspect Ratio',
-  args: {
-    src: '/example-image.jpg',
-    caption: 'Video aspect ratio figure example',
-    alt: 'Video aspect ratio image example',
-    aspectRatio: 'video',
-    width: '960',
-    height: '540',
   },
 };
