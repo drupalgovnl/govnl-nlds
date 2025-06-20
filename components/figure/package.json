@@ -1,19 +1,18 @@
 {
-  "name": "@dictu/header",
-  "version": "1.0.0-alpha.0",
+  "name": "@dictu/figure",
+  "version": "1.0.0-alpha.1",
   "author": "Dienst ICT Uitvoering",
-  "description": "Header CSS component.",
+  "description": "Figure CSS component.",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system",
     "css",
-    "header"
+    "figure"
   ],
-  "private": true,
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/header"
+    "directory": "components/figure"
   },
   "files": [
     "src/",
@@ -28,7 +27,8 @@
     "provenance": true
   },
   "scripts": {
-    "build": "",
+    "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
     "clean": "rimraf ./dist/"
   }
 }
