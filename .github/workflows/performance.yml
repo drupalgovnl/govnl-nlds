@@ -3,9 +3,6 @@ name: Performance Monitoring
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-  schedule:
-    # Run weekly on Sundays at 2 AM UTC
-    - cron: '0 2 * * 0'
 
 jobs:
   bundle-analysis:
@@ -32,60 +29,6 @@ jobs:
 
       - name: Check size limits
         run: npm run size
-
-      - name: Comment PR with bundle analysis
-        if: github.event_name == 'pull_request'
-        uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6.4.0
-        with:
-          script: |
-            const { execSync } = require('child_process');
-
-            try {
-              // Run size-limit to get the output
-              const output = execSync('npm run size', { encoding: 'utf8' }).toString();
-
-              const comment = `## 📦 Bundle Size Analysis
-
-              \`\`\`
-              ${output}
-              \`\`\`
-
-              > This analysis helps ensure our design system components remain lightweight and performant.
-              `;
-
-              github.rest.issues.createComment({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: comment
-              });
-            } catch (error) {
-              console.error('Failed to run bundle analysis:', error);
-            }
-
-  lighthouse-ci:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout branch
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-
-      - name: Set up Node.js version
-        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0
-        with:
-          node-version-file: .nvmrc
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci --frozen-lockfile
-
-      - name: Build Storybook
-        run: npm run build
-
-      - name: Run Lighthouse CI
-        run: |
-          npm install -g @lhci/cli@0.14.x
-          lhci autorun
 
 permissions:
   contents: read

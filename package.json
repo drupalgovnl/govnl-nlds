@@ -71,7 +71,7 @@
     "security:audit": "npm audit --audit-level=moderate",
     "security:check": "npx audit-ci --moderate",
     "size": "size-limit",
-    "size:analyze": "size-limit --why",
+    "size:analyze": "size-limit --json",
     "start": "http-server packages/storybook/dist/",
     "storybook": "npm-run-all --parallel watch:storybook watch:style-dictionary watch:components",
     "test:quality": "npm run lint && npm run security:audit && npm run size",
