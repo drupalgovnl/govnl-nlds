@@ -6,7 +6,7 @@
         "type": "dimension"
       },
       "padding-inline": {
-        "value": "{govnl.dimension.size.100}",
+        "value": "{govnl.dimension.size.200}",
         "type": "dimension"
       }
     }
