@@ -43,16 +43,16 @@ jobs:
             try {
               // Run size-limit to get the output
               const output = execSync('npm run size', { encoding: 'utf8' }).toString();
-              
+
               const comment = `## 📦 Bundle Size Analysis
-              
+
               \`\`\`
               ${output}
               \`\`\`
-              
+
               > This analysis helps ensure our design system components remain lightweight and performant.
               `;
-              
+
               github.rest.issues.createComment({
                 issue_number: context.issue.number,
                 owner: context.repo.owner,
