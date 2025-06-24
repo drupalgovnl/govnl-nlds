@@ -22,7 +22,8 @@
       "components/container.tokens": "enabled",
       "components/section.tokens": "enabled",
       "components/figure.tokens": "enabled",
-      "components/hero.tokens": "enabled"
+      "components/hero.tokens": "enabled",
+      "components/card.tokens.wip": "disabled"
     },
     "$figmaVariableReferences": {},
     "group": "GovNL"

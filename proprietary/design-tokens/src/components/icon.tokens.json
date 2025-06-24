@@ -2,12 +2,12 @@
   "govnl": {
     "icon": {
       "color": {
-        "value": "{govnl.document.color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.document.color}"
       },
       "size": {
-        "value": "1.5em",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "1.5em"
       }
     }
   }

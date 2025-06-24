@@ -3,65 +3,65 @@
     "logo": {
       "image": {
         "background-color": {
-          "value": "{govnl.color.white}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.color.white}"
         },
         "inline-size": {
-          "value": "{govnl.lint.size.lint}",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "{govnl.lint.size.lint}"
         },
         "block-size": {
-          "value": "{govnl.lint.size.2-lint}",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "{govnl.lint.size.2-lint}"
         },
         "color": {
-          "value": "{govnl.color.lintblauw.500}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.500}"
         }
       },
       "title": {
         "font-weight": {
-          "value": "{govnl.typography.font-weight.semi-bold}",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{govnl.typography.font-weight.semi-bold}"
         },
         "line-height": {
-          "value": "1.063rem",
-          "type": "lineHeights"
+          "$type": "lineHeights",
+          "$value": "1.063rem"
         },
         "font-size": {
-          "value": "0.913rem",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "0.913rem"
         },
         "padding-block-start": {
-          "value": "3.125rem",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "3.125rem"
         }
       },
       "subtitle": {
         "font-weight": {
-          "value": "{govnl.typography.font-weight.regular}",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{govnl.typography.font-weight.regular}"
         },
         "line-height": {
-          "value": "1rem",
-          "type": "lineHeights"
+          "$type": "lineHeights",
+          "$value": "1rem"
         },
         "font-size": {
-          "value": "0.775rem",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "0.775rem"
         }
       },
       "column-gap": {
-        "value": "{govnl.lint.size.quarter-lint}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{govnl.lint.size.quarter-lint}"
       },
       "font-family": {
-        "value": "{govnl.typography.font-family.sans}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{govnl.typography.font-family.sans}"
       },
       "color": {
-        "value": "{govnl.color.lintblauw.500}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.color.lintblauw.500}"
       }
     }
   }

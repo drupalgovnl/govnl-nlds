@@ -1,0 +1,230 @@
+{
+  "govnl": {
+    "card": {
+      "default": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.document.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.line.subtle.border-color}"
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.100}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.line.border-color}"
+          }
+        },
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.200}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.line.strong.border-color}"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.focus.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparant"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.focus.color}"
+          }
+        },
+        "main": {
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "0px"
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": "{govnl.space.xs}"
+          }
+        },
+        "footer": {
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "0px"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": "{govnl.space.xs}"
+          }
+        },
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{govnl.border.border-radius.sm}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{govnl.border.border-width.sm}"
+        }
+      },
+      "text-decoration": {
+        "$type": "textDecoration",
+        "$value": "none"
+      },
+      "horizontal": {
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{govnl.space.sm}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{govnl.space.sm}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{govnl.space.sm}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{govnl.space.sm}"
+        },
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{govnl.border.border-radius.sm}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "img": {
+          "border-top-left-radius": {
+            "$type": "dimension",
+            "$value": "{govnl.border.border-radius.sm}"
+          },
+          "border-top-right-radius": {
+            "$type": "dimension",
+            "$value": "0px"
+          },
+          "border-bottom-right-radius": {
+            "$type": "dimension",
+            "$value": "0px"
+          },
+          "border-bottom-left-radius": {
+            "$type": "dimension",
+            "$value": "{govnl.border.border-radius.sm}"
+          }
+        }
+      },
+      "accent": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.brand.primary.500}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "transparant"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.document.inverse.color}"
+        },
+        "hover": {
+          "background-color": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.2",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{govnl.brand.primary.500}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparant"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.inverse.color}"
+          }
+        },
+        "active": {
+          "background-color": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.4",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{govnl.brand.primary.500}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparant"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.inverse.color}"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.focus.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparant"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.focus.color}"
+          }
+        }
+      },
+      "hover": {
+        "text-decoration": {
+          "$type": "textDecoration",
+          "$value": "underline"
+        }
+      }
+    }
+  }
+}
