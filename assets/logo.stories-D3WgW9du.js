@@ -1,4 +1,4 @@
-const d=`<!-- @license CC0-1.0 -->
+/* empty css             */const d=`<!-- @license CC0-1.0 -->
 
 Het logo component toont het logo van Dictu, bestaande uit een afbeelding, een titel en een subtitel.
 
@@ -46,7 +46,7 @@ import "@dictu/design-tokens/dist/logo.css";
 - \`.dictu-logo__text\` - Tekst wrapper van het logo
 - \`.dictu-logo__title\` — titel van het logo
 - \`.dictu-logo__subtitle\` — subtitel van het logo
-`,a={argTypes:{title:{control:"text"},subtitle:{control:"text"}},parameters:{docs:{description:{component:d}}},tags:["autodocs"],title:"Componenten/Logo"},c={render:o=>{const e=document.createElement("div"),{title:i,subtitle:s}=o||"";return e.classList.add("dictu-logo"),e.innerHTML=`
+`,r={argTypes:{title:{control:"text"},subtitle:{control:"text"}},parameters:{docs:{description:{component:d}}},tags:["autodocs"],title:"Componenten/Logo"},c={render:o=>{const t=document.createElement("div"),{title:i,subtitle:s}=o||"";return t.classList.add("dictu-logo"),t.innerHTML=`
       <div class="dictu-logo__image">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 44 88" role="img">
           <title>Logo Rijksoverheid</title>
@@ -65,7 +65,7 @@ import "@dictu/design-tokens/dist/logo.css";
           ${s}
         </span>
       </div>
-    `,e},args:{title:"Dienst ICT Uitvoering",subtitle:"Ministerie van Economische Zaken"}};var t,l,n;c.parameters={...c.parameters,docs:{...(t=c.parameters)==null?void 0:t.docs,source:{originalSource:`{
+    `,t},args:{title:"Dienst ICT Uitvoering",subtitle:"Ministerie van Economische Zaken"}};var e,l,n;c.parameters={...c.parameters,docs:{...(e=c.parameters)==null?void 0:e.docs,source:{originalSource:`{
   render: args => {
     const logo = document.createElement("div");
     const {
@@ -99,4 +99,4 @@ import "@dictu/design-tokens/dist/logo.css";
     title: "Dienst ICT Uitvoering",
     subtitle: "Ministerie van Economische Zaken"
   }
-}`,...(n=(l=c.parameters)==null?void 0:l.docs)==null?void 0:n.source}}};const r=["Logo"];export{c as Logo,r as __namedExportsOrder,a as default};
+}`,...(n=(l=c.parameters)==null?void 0:l.docs)==null?void 0:n.source}}};const g=["Logo"];export{c as Logo,g as __namedExportsOrder,r as default};
