@@ -27,7 +27,7 @@ import "@dictu/image/dist/index.css";
 - Gebruik in CSS de `.dictu-image` class name voor de image component.
 - Specificeer altijd `width` en `height` attributen voor layout shift preventie.
 - Gebruik beschrijvende alt-tekst voor betekenisvolle afbeeldingen.
-- Voor decoratieve afbeeldingen gebruik `alt=""` en `role="presentation"`.
+- Voor decoratieve afbeeldingen gebruik `alt=""`.
 
 ## Beschrijving
 De image component biedt een toegankelijke en responsieve manier om afbeeldingen weer te geven. De component ondersteunt verschillende beeldverhoudingen, lazy loading, en heeft ingebouwde toegankelijkheidsfeatures voor zowel betekenisvolle als decoratieve afbeeldingen.
@@ -46,7 +46,6 @@ De image component biedt een toegankelijke en responsieve manier om afbeeldingen
 <img class="dictu-image dictu-image__aspect-ratio-landscape"
      src="/decorative-image.jpg"
      alt=""
-     role="presentation"
      width="640"
      height="480"
      loading="lazy">
@@ -110,8 +109,7 @@ Voor afbeeldingen die alleen visueel zijn:
 ```html
 <img class="dictu-image"
      src="decoration.jpg"
-     alt=""
-     role="presentation">
+     alt="">
 ```
 
 ### Linked afbeeldingen
@@ -129,7 +127,7 @@ De component ondersteunt alle standaard HTML img attributes:
 - **alt**: Alternatieve tekst (verplicht, kan leeg zijn voor decoratieve afbeeldingen)
 - **width/height**: Afmetingen voor layout shift preventie
 - **loading**: `lazy` of `eager` voor laadstrategie
-- **role**: `img` of `presentation` voor toegankelijkheid
+- **role**: `img`
 - **aria-describedby**: Koppeling met beschrijvende tekst
 
 ## Performance

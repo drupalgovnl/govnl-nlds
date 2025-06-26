@@ -9,7 +9,6 @@ Gebruik deze component voor puur decoratieve afbeeldingen zoals achtergronden, s
 <img class="dictu-image dictu-image__aspect-ratio-square"
      src="/decorative-image.jpg"
      alt=""
-     role="presentation"
      width="640"
      height="640"
      loading="lazy">
@@ -17,7 +16,6 @@ Gebruik deze component voor puur decoratieve afbeeldingen zoals achtergronden, s
 
 ## Kenmerken
 - **Lege alt-tekst**: `alt=""` zorgt ervoor dat screenreaders de afbeelding overslaan
-- **Presentation role**: `role="presentation"` markeert expliciet als decoratief
 - **Geen keyboard focus**: Voorkomt onnodige tab stops voor niet-interactieve content
 - **Normale styling**: Behoudt alle visuele eigenschappen van standaard images
 
@@ -25,7 +23,7 @@ Gebruik deze component voor puur decoratieve afbeeldingen zoals achtergronden, s
 | Eigenschap | Standaard | Decoratief |
 |------------|-----------|------------|
 | `alt` attribuut | Beschrijvende tekst | Leeg (`""`) |
-| `role` attribuut | `img` | `presentation` |
+| `role` attribuut | `img` |
 | Keyboard focus | Kan focus ontvangen | Geen focus |
 | Screenreader | Wordt voorgelezen | Wordt overgeslagen |
 
@@ -48,8 +46,7 @@ Gebruik deze component voor puur decoratieve afbeeldingen zoals achtergronden, s
 ```html
 <img class="dictu-image"
      src="/pattern-decoration.svg"
-     alt=""
-     role="presentation">
+     alt="">
 ```
 
 ### Visuele scheiding
@@ -57,7 +54,6 @@ Gebruik deze component voor puur decoratieve afbeeldingen zoals achtergronden, s
 <img class="dictu-image dictu-image__aspect-ratio-landscape"
      src="/divider-image.jpg"
      alt=""
-     role="presentation"
      width="800"
      height="100">
 ```
@@ -73,7 +69,6 @@ Volgens [WCAG 2.1.1 Non-text Content](https://www.w3.org/WAI/WCAG21/Understandin
 - Decoratieve afbeeldingen moeten `alt=""` hebben
 - Ze mogen geen betekenisvolle informatie bevatten
 - Ze moeten overgeslagen worden door assistive technology
-- `role="presentation"` geeft expliciete indicatie van decoratief karakter
 
 ## Veelgemaakte fouten
 - **Alt-tekst toevoegen**: Decoratieve afbeeldingen moeten een lege alt hebben

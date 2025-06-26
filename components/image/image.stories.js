@@ -82,7 +82,6 @@ export default {
 
     // Handle accessibility attributes
     if (decorative) {
-      img.setAttribute("role", "presentation");
       img.alt = "";
     } else {
       img.setAttribute("role", "img");
@@ -96,7 +95,7 @@ export default {
 
     // Apply aspect ratio styling
     if (aspectRatio) {
-      img.classList.add(`dictu-image__aspect-ratio-${aspectRatio}`);
+      img.classList.add(`dictu-image__aspect-ratio:${aspectRatio}`);
     }
 
     return img;

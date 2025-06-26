@@ -7,7 +7,7 @@ export default {
   args: {
     src: "/example-image.jpg",
     caption: "Dit is een voorbeeld van een bijschrift",
-    alt: "Dit is een voorbeeld van een bijschrift",
+    alt: "Dit is een voorbeeld afbeelding",
     loading: "lazy",
     decorative: false,
     width: "100%",
@@ -52,7 +52,7 @@ export const Figure = {
   args: {
     src: "/example-image.jpg",
     caption: "Dit is een voorbeeld van een bijschrift",
-    alt: "Dit is een voorbeeld van een bijschrift",
+    alt: "Dit is een voorbeeld afbeelding",
     width: "640",
     height: "640",
     aspectRatio: "square",
