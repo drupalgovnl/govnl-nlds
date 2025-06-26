@@ -3,33 +3,30 @@
  * Copyright (c) 2021-2025 dictu
  */
 
- @mixin reset {
-  margin-block-end: 0;
-  margin-block-start: 0;
-  margin-inline-end: 0;
-  margin-inline-start: 0;
+@mixin reset {
+  margin-block: 0;
+  margin-inline: 0;
 }
 
 @mixin dictu-page-header {
   @include reset;
 
   background-color: var(--govnl-header-background-color, transparent);
-  padding-block-end: var(--govnl-header-padding-block-end, 0);
   max-inline-size: var (--govnl-header-container-max-inline-width, 100%);
+  padding-block-end: var(--govnl-header-padding-block-end, 0);
   padding-inline: var(--govnl-header-container-padding-inline, 1rem);
 
   .dictu-logo {
     margin-inline-start: calc(50% - 1.5rem);
   }
 
-  @media (max-width: 20em) {
+  @media (max-width <= 20em) {
     .dictu-logo {
       margin-inline-start: calc(50% - 1rem);
     }
   }
 
-  // Responsive: mobile
-  @media (max-width: 48em) {
+  @media (max-width <= 48em) {
     .dictu-logo {
       margin-inline-start: calc(50% - 1.15rem);
     }

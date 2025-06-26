@@ -3,17 +3,18 @@
  * Copyright (c) 2021-2025 dictu
  */
 
- @use 'pkg:@dictu/image/src/index' as dictu-image;
+@use "pkg:@dictu/image/src/index" as dictu-image;
 
- @mixin reset {
+@mixin reset {
   margin: 0;
 }
 
 @mixin dictu-figure {
   @include reset;
+
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: var(--govnl-figure-column-gap);
 }
 

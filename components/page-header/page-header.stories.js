@@ -13,15 +13,15 @@ export default {
       },
     },
   },
-  tags: ["autodocs"],
-  title: "Componenten/Page Header",
+  tags: ['autodocs'],
+  title: 'Componenten/Page Header',
 };
 
-const createLogo = (args) => {
-  const logo = document.createElement("div");
-  const { title, subtitle } = args || "";
+const createLogo = args => {
+  const logo = document.createElement('div');
+  const { title, subtitle } = args || '';
 
-  logo.classList.add("dictu-logo");
+  logo.classList.add('dictu-logo');
   logo.innerHTML = `
     <div class="dictu-logo__image">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 44 88" role="img">
@@ -44,20 +44,19 @@ const createLogo = (args) => {
   `;
 
   return logo;
-}
+};
 
 const createContainer = () => {
   const container = document.createElement('div');
-  container.className = "dictu-page-container";
-  container.appendChild(createLogo({title: 'Dictu', subtitle: 'Ministerie van Economische Zaken'}));
+  container.className = 'dictu-page-container';
+  container.appendChild(createLogo({ title: 'Dictu', subtitle: 'Ministerie van Economische Zaken' }));
   return container;
 };
-
 
 export const PageHeader = {
   render: () => {
     const header = document.createElement('header');
-    header.className = "dictu-page-header";
+    header.className = 'dictu-page-header';
     const container = createContainer();
 
     header.appendChild(container);

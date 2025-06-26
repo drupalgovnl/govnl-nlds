@@ -5,7 +5,7 @@ const preview = {
   parameters: {
     controls: { expanded: false },
     docs: {
-      codePanel: true
+      codePanel: true,
     },
     options: {
       panelPosition: 'bottom',

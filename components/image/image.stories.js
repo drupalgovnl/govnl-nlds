@@ -3,15 +3,10 @@ import '@dictu/design-tokens/dist/figure.css';
 import './dist/index.css';
 
 // Aspect ratio options (define this constant if not imported)
-const ASPECT_RATIO_OPTIONS = [
-  'landscape',
-  'portrait',
-  'square',
-  'video'
-];
+const ASPECT_RATIO_OPTIONS = ['landscape', 'portrait', 'square', 'video'];
 
 export default {
-  title: "Components/Image",
+  title: 'Components/Image',
   parameters: {
     docs: {
       description: {
@@ -20,57 +15,56 @@ export default {
     },
   },
   args: {
-    src: "/example-image.jpg",
-    alt: "Dit is een voorbeeld van een bijschrift",
-    loading: "lazy",
+    src: '/example-image.jpg',
+    alt: 'Dit is een voorbeeld van een bijschrift',
+    loading: 'lazy',
     decorative: false,
-    width: "100%",
-    height: "100%",
-    aspectRatio: "16/9",
+    width: '100%',
+    height: '100%',
+    aspectRatio: '16/9',
   },
   argTypes: {
     src: {
-      control: "text",
-      description: "De URL van de afbeelding",
+      control: 'text',
+      description: 'De URL van de afbeelding',
     },
     alt: {
-      control: "text",
-      description: "Alternatieve tekst voor de afbeelding",
+      control: 'text',
+      description: 'Alternatieve tekst voor de afbeelding',
     },
     loading: {
-      control: "select",
-      options: ["lazy", "eager"],
-      description: "Laad de afbeelding lui of direct",
+      control: 'select',
+      options: ['lazy', 'eager'],
+      description: 'Laad de afbeelding lui of direct',
     },
     decorative: {
-      control: "boolean",
-      description: "Is de afbeelding decoratief?",
+      control: 'boolean',
+      description: 'Is de afbeelding decoratief?',
     },
     ariaDescribedBy: {
-      control: "text",
-      description: "De ID van het element dat de afbeelding beschrijft",
+      control: 'text',
+      description: 'De ID van het element dat de afbeelding beschrijft',
     },
     width: {
-      control: "text",
-      description: "De breedte van de afbeelding",
+      control: 'text',
+      description: 'De breedte van de afbeelding',
     },
     height: {
-      control: "text",
-      description: "De hoogte van de afbeelding",
+      control: 'text',
+      description: 'De hoogte van de afbeelding',
     },
     aspectRatio: {
-      control: "select",
+      control: 'select',
       options: ASPECT_RATIO_OPTIONS,
-      description: "De beeldverhouding van de afbeelding",
+      description: 'De beeldverhouding van de afbeelding',
     },
   },
-  tags: ["autodocs"],
-  title: "Componenten/Image",
-  render: (args) => {
+  tags: ['autodocs'],
+  render: args => {
     const { src, alt, loading, decorative, ariaDescribedBy, width, height, aspectRatio } = args;
 
-    const img = document.createElement("img");
-    img.classList.add("dictu-image");
+    const img = document.createElement('img');
+    img.classList.add('dictu-image');
 
     // Set source and loading attributes
     if (src) img.src = src;
@@ -82,15 +76,15 @@ export default {
 
     // Handle accessibility attributes
     if (decorative) {
-      img.alt = "";
+      img.alt = '';
     } else {
-      img.setAttribute("role", "img");
+      img.setAttribute('role', 'img');
       if (alt) img.alt = alt;
     }
 
     // Handle aria-describedby
     if (ariaDescribedBy) {
-      img.setAttribute("aria-describedby", ariaDescribedBy);
+      img.setAttribute('aria-describedby', ariaDescribedBy);
     }
 
     // Apply aspect ratio styling

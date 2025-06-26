@@ -27,7 +27,7 @@ export default {
     title: {
       control: 'text',
       description: 'Titel van de sectie, gebruikt voor toegankelijkheid en structuur',
-    }
+    },
   },
   parameters: {
     docs: {
@@ -52,14 +52,14 @@ export default {
     }
 
     if (content) {
-      if (typeof content === "string") {
+      if (typeof content === 'string') {
         // Sanitize and insert HTML
         const parser = new DOMParser();
-        const doc = parser.parseFromString(content, "text/html");
+        const doc = parser.parseFromString(content, 'text/html');
         const fragment = document.createDocumentFragment();
 
         // Append all body children to fragment
-        Array.from(doc.body.childNodes).forEach((node) => {
+        Array.from(doc.body.childNodes).forEach(node => {
           fragment.appendChild(node.cloneNode(true));
         });
 

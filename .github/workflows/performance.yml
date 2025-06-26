@@ -1,0 +1,35 @@
+name: Performance Monitoring
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  bundle-analysis:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Node.js version
+        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --frozen-lockfile
+
+      - name: Build packages
+        run: npm run build
+
+      - name: Analyze bundle size
+        run: npm run size:analyze
+
+      - name: Check size limits
+        run: npm run size
+
+permissions:
+  contents: read
+  pull-requests: write

@@ -1,0 +1,41 @@
+echo "🔍 Running pre-commit checks..."
+
+# Check if there are staged files
+if [ -z "$(git diff --cached --name-only)" ]; then
+  echo "⚠️  No staged files found. Skipping pre-commit checks."
+  exit 0
+fi
+
+# Run TypeScript type checking on the entire project
+echo "🔎 Checking TypeScript types..."
+npm run lint:types
+if [ $? -ne 0 ]; then
+  echo "❌ TypeScript type checking failed"
+  exit 1
+fi
+
+# Run size limit check to ensure bundle size constraints
+echo "📦 Checking bundle size limits..."
+npm run size
+if [ $? -ne 0 ]; then
+  echo "❌ Bundle size limit exceeded"
+  exit 1
+fi
+
+# Run lint-staged which will run linting and formatting on staged files
+echo "🎨 Running linting and formatting on staged files..."
+npx lint-staged
+if [ $? -ne 0 ]; then
+  echo "❌ Linting or formatting failed on staged files"
+  exit 1
+fi
+
+# Check for common issues in commit message (if available)
+if [ -n "$(git diff --cached --name-only | grep -E '\.(js|ts|jsx|tsx|css|scss|md|json)$')" ]; then
+  echo "📝 Checking for TODO/FIXME comments in staged files..."
+  if git diff --cached | grep -E "^\+.*\b(TODO|FIXME|XXX|HACK)\b" > /dev/null; then
+    echo "⚠️  Warning: Found TODO/FIXME comments in staged files. Consider addressing them before committing."
+  fi
+fi
+
+echo "✅ All pre-commit checks completed successfully!"

@@ -8,7 +8,8 @@ export default create({
   appContentBg: `transparent`,
 
   // Typography
-  fontBase: '"Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif',
+  fontBase:
+    '"Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif',
   fontCode: 'Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
 
   brandTitle: 'DICTU Design System',

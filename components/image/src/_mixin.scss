@@ -4,11 +4,11 @@
  */
 
 @mixin dictu-image {
-  margin: 0;
-  max-inline-size: 100%;
+  aspect-ratio: auto;
   block-size: auto;
   inline-size: auto;
-  aspect-ratio: auto;
+  margin: 0;
+  max-inline-size: 100%;
   outline: none;
 
   // Focus styles
