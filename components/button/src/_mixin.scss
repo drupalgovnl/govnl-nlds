@@ -5,44 +5,42 @@
   border-style: solid;
   border-width: var(--govnl-button-border-width);
   box-sizing: border-box;
-  gap: calc(var(--govnl-button-column-gap));
   display: inline-flex;
+  gap: calc(var(--govnl-button-column-gap));
   justify-content: center;
-  padding-block-end: var(--govnl-button-padding-block-end);
-  padding-block-start: var(--govnl-button-padding-block-start);
-  padding-inline-end: var(--govnl-button-padding-inline-end);
-  padding-inline-start: var(--govnl-button-padding-inline-start);
+  padding-block: var(--govnl-button-padding-block-start) var(--govnl-button-padding-block-end);
+  padding-inline: var(--govnl-button-padding-inline-start) var(--govnl-button-padding-inline-end);
   scale: 1;
   -webkit-user-select: none;
   user-select: none;
 }
 
 @mixin dictu-button--primary-action {
-  background-color: var( --govnl-button-primary-action-background-color);
+  background-color: var(--govnl-button-primary-action-background-color);
   border-color: var(--govnl-button-primary-action-border-color);
   color: var(--govnl-button-primary-action-color);
 }
 
 @mixin dictu-button--primary-action-hover {
-  background-color: var( --govnl-button-primary-action-hover-background-color);
+  background-color: var(--govnl-button-primary-action-hover-background-color);
   border-color: var(--govnl-button-primary-action-hover-border-color);
   color: var(--govnl-button-primary-action-hover-color);
 }
 
 @mixin dictu-button--primary-action-active {
-  background-color: var( --govnl-button-primary-action-active-background-color);
+  background-color: var(--govnl-button-primary-action-active-background-color);
   border-color: var(--govnl-button-primary-action-active-border-color);
   color: var(--govnl-button-primary-action-active-color);
 }
 
 @mixin dictu-button--primary-action-focus {
-  background-color: var( --govnl-button-primary-action-focus-background-color);
+  background-color: var(--govnl-button-primary-action-focus-background-color);
   border-color: var(--govnl-button-primary-action-focus-border-color);
   color: var(--govnl-button-primary-action-focus-color);
 }
 
 @mixin dictu-button--primary-action-disabled {
-  background-color: var( --govnl-button-primary-action-disabled-background-color);
+  background-color: var(--govnl-button-primary-action-disabled-background-color);
   border-color: var(--govnl-button-primary-actiondisabled--border-color);
   color: var(--govnl-button-primary-actiondisabled--color);
 }

@@ -1,8 +1,10 @@
 <!-- @license CC0-1.0 -->
 
-Een verwijzing om een een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.
+Een verwijzing om een een externe bron of bestand te openen of te navigeren
+binnen dezelfde pagina of website.
 
 ## Gebruik deze component
+
 Je kunt de CSS zo in je project installeren:
 
 ```console
@@ -22,11 +24,14 @@ import "@dictu/link/index.css";
 ```
 
 ## Link gebruiken
+
 Gebruik in CSS de `.dictu-link` class name.
 
 ## Link om een Image of andere inline-box componenten
 
-Om te zorgen dat de states van een Link component goed werken als een link om een inline-box element zoals een Image is gezet gebruik je de `dictu-link` class name in combinatie met `dictu-link--inline-box` class name.
+Om te zorgen dat de states van een Link component goed werken als een link om
+een inline-box element zoals een Image is gezet gebruik je de `dictu-link` class
+name in combinatie met `dictu-link--inline-box` class name.
 
 ## Links
 

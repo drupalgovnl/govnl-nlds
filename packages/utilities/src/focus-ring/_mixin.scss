@@ -1,8 +1,7 @@
 @mixin dictu-focus-ring {
-  outline-color: var(--govnl-focus-outline-color, revert);
+  outline: var(--govnl-focus-outline-color, revert) var(--govnl-focus-outline-style, revert)
+    var(--govnl-focus-outline-width, revert);
   outline-offset: var(--govnl-focus-outline-offset, revert);
-  outline-style: var(--govnl-focus-outline-style, revert);
-  outline-width: var(--govnl-focus-outline-width, revert);
   z-index: 1;
 }
 

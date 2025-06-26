@@ -1,0 +1,67 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin reset {
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+@mixin dictu-page-footer {
+  @include reset;
+
+  background-color: var(--govnl-page-footer-background-color);
+  border-color: var(--govnl-page-footer-border-color);
+  border-width: var(--govnl-page-footer-border-width);
+  color: var(--govnl-page-footer-color);
+  padding-block: var(--govnl-page-footer-padding-block-start) var(--govnl-page-footer-padding-block-end);
+
+  .dictu-icon {
+    --govnl-icon-color: var(--govnl-page-footer-icon-color);
+    --govnl-icon-size: 1.5rem;
+  }
+
+  .dictu-paragraph {
+    color: var(--govnl-page-footer-color);
+  }
+}
+
+@mixin dictu-page-footer__container {
+  @include reset;
+
+  display: flex;
+  flex-direction: row;
+  gap: var(--govnl-space-sm);
+  max-width: var(--govnl-page-footer-container-max-inline-width);
+  padding-inline: var(--govnl-page-footer-container-padding-inline);
+  width: 100%;
+}
+
+@mixin dictu-page-footer__text-container {
+  padding-inline: var(--govnl-page-footer-container-padding-inline);
+  width: 100%;
+}
+
+@mixin dictu-page-footer__columns {
+  display: grid;
+  gap: var(--govnl-page-footer-content-row-gap) var(--govnl-page-footer-content-column-gap);
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  grid-template-rows: 1fr;
+  padding-inline: var(--govnl-page-footer-container-padding-inline);
+  width: 100%;
+
+  // Responsive: mobile
+  @media (width <= 48em) {
+    grid-auto-columns: unset;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    width: 100%;
+  }
+}
+
+@mixin dictu-page-footer__column {
+  gap: var(--govnl-space-sm);
+}
