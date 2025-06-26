@@ -1,18 +1,18 @@
 {
-  "name": "@dictu/image",
+  "name": "@dictu/page-container",
   "version": "1.0.0-alpha.0",
   "author": "Dienst ICT Uitvoering",
-  "description": "Image CSS component.",
+  "description": "Page container CSS component.",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system",
     "css",
-    "image"
+    "page-container"
   ],
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/image"
+    "directory": "components/page-container"
   },
   "files": [
     "src/",
@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
-    "clean": "rimraf ./dist/",
-    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/"
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
+    "clean": "rimraf ./dist/"
   }
 }

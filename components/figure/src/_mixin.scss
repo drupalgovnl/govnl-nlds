@@ -1,0 +1,25 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "pkg:@dictu/image/src/index" as dictu-image;
+
+@mixin reset {
+  margin: 0;
+}
+
+@mixin dictu-figure {
+  @include reset;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--govnl-figure-column-gap);
+}
+
+@mixin dictu-figcaption {
+  color: var(--govnl-figure-caption-color, #000);
+  font-size: var(--govnl-figure-caption-font-size, 1rem);
+  line-height: var(--govnl-figure-caption-line-height, 1);
+}

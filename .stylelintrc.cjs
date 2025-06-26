@@ -33,10 +33,10 @@ module.exports = {
         message: 'Class names should follow BEM methodology with dictu- or nl- prefix',
       },
     ],
-    'selector-nested-pattern': '^&:(hover|focus|active|disabled|focus-visible)|^&\\.|^&\\[',
+    'selector-nested-pattern': '^&:(hover|focus|active|disabled|focus-visible|not)|^&\\.|^&\\[',
 
     // Property ordering - use a more flexible approach
-    'order/properties-alphabetical-order': null, // Disable strict alphabetical ordering
+    'order/properties-alphabetical-order': true, // Disable strict alphabetical ordering
     'declaration-empty-line-before': [
       'always',
       {
@@ -44,7 +44,6 @@ module.exports = {
         ignore: ['inside-single-line-block'],
       },
     ],
-
     // Vendor prefixes
     'property-no-vendor-prefix': [
       true,
@@ -94,7 +93,12 @@ module.exports = {
         ignore: ['custom-elements'],
       },
     ],
-    'selector-pseudo-class-no-unknown': true,
+    'selector-pseudo-class-no-unknown': [
+      true,
+      {
+        ignorePseudoClasses: ['square', 'portrait', 'landscape', 'video'],
+      },
+    ],
     'selector-pseudo-element-no-unknown': true,
     'selector-max-id': 0, // Disallow ID selectors in design system
     'selector-max-universal': 1,

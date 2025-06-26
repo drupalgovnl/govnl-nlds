@@ -1,4 +1,5 @@
 import '@dictu/design-tokens/dist/index.css';
+import '../src/fonts.css';
 
 const preview = {
   parameters: {

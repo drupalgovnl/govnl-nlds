@@ -15,6 +15,8 @@ export default [
         document: 'readonly',
         window: 'readonly',
         console: 'readonly',
+        DOMParser: 'readonly',
+        HTMLElement: 'readonly',
       },
     },
   },

@@ -8,7 +8,7 @@
     "components/container.tokens",
     "components/figure.tokens",
     "components/heading.tokens",
-    "components/hero.tokens.wip",
+    "components/hero.tokens",
     "components/icon.tokens",
     "components/link-list.tokens",
     "components/link.tokens",

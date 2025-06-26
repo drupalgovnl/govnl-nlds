@@ -63,7 +63,6 @@ npm run size:analyze
 ### GitHub Actions Workflows
 
 1. **Continuous Deployment** (`.github/workflows/continuous-deployment.yml`)
-
    - Runs on all pushes and PRs
    - Parallel execution of lint, test, and build jobs
    - Optimized caching for faster builds

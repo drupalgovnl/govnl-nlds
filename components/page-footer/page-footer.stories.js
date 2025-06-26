@@ -34,7 +34,7 @@ export default {
     },
   },
   tags: ['autodocs'],
-  title: 'Componenten/PageFooter',
+  title: 'Componenten/Page Footer',
 };
 
 const createArrowIcon = () => {

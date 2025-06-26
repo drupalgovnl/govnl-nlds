@@ -11,37 +11,38 @@
 @mixin dictu-logo {
   @include reset;
 
-  display: flex;
-  line-height: var(--govnl-logo-title-line-height);
-  font-size: var(--govnl-logo-title-font-size);
-  padding-block-start: var(--govnl-logo-title-padding-block-start);
-  column-gap: var(--govnl-logo-column-gap);
-  font-family: var(--govnl-logo-font-family);
   color: var(--govnl-logo-color);
+  column-gap: var(--govnl-logo-column-gap);
+  display: flex;
+  font-family: var(--govnl-logo-font-family);
+  font-size: var(--govnl-logo-title-font-size);
+  line-height: var(--govnl-logo-title-line-height);
+  max-width: fit-content;
+  padding-block-start: var(--govnl-logo-title-padding-block-start);
 }
 
 @mixin dictu-logo__image {
   background-color: var(--govnl-logo-image-background-color);
-  inline-size: var(--govnl-logo-image-inline-size);
   block-size: var(--govnl-logo-image-block-size);
   color: var(--govnl-logo-image-color);
+  inline-size: var(--govnl-logo-image-inline-size);
 }
 
 @mixin dictu-logo__text {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
 }
 
 @mixin dictu-logo__title {
-  line-height: var(--govnl-logo-title-line-height);
   font-size: var(--govnl-logo-title-font-size);
   font-weight: var(--govnl-logo-title-font-weight);
+  line-height: var(--govnl-logo-title-line-height);
 }
 
 @mixin dictu-logo__subtitle {
-  line-height: var(--govnl-logo-subtitle-line-height);
   font-size: var(--govnl-logo-subtitle-font-size);
   font-weight: var(--govnl-logo-subtitle-font-weight);
+  line-height: var(--govnl-logo-subtitle-line-height);
 }
