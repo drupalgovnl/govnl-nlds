@@ -35,7 +35,7 @@ De image component biedt een toegankelijke en responsieve manier om afbeeldingen
 ### Voorbeeldgebruik
 ```html
 <!-- Standaard afbeelding -->
-<img class="dictu-image dictu-image__aspect-ratio-square"
+<img class="dictu-image dictu-image__aspect-ratio:square"
      src="/example-image.jpg"
      alt="Beschrijving van de afbeelding"
      width="640"
@@ -43,7 +43,7 @@ De image component biedt een toegankelijke en responsieve manier om afbeeldingen
      loading="lazy">
 
 <!-- Decoratieve afbeelding -->
-<img class="dictu-image dictu-image__aspect-ratio-landscape"
+<img class="dictu-image dictu-image__aspect-ratio:landscape"
      src="/decorative-image.jpg"
      alt=""
      width="640"
@@ -53,10 +53,10 @@ De image component biedt een toegankelijke en responsieve manier om afbeeldingen
 
 ## CSS Klassen
 - `.dictu-image` — basis styling voor afbeeldingen
-- `.dictu-image__aspect-ratio-square` — vierkante beeldverhouding (1:1)
-- `.dictu-image__aspect-ratio-landscape` — liggende beeldverhouding (4:3)
-- `.dictu-image__aspect-ratio-portrait` — staande beeldverhouding (3:4)
-- `.dictu-image__aspect-ratio-video` — video beeldverhouding (16:9)
+- `.dictu-image__aspect-ratio:square` — vierkante beeldverhouding (1:1)
+- `.dictu-image__aspect-ratio:landscape` — liggende beeldverhouding (4:3)
+- `.dictu-image__aspect-ratio:portrait` — staande beeldverhouding (3:4)
+- `.dictu-image__aspect-ratio:video` — video beeldverhouding (16:9)
 
 ## Functies
 - **Responsief ontwerp**: Automatische aanpassing aan containergrootte
@@ -71,25 +71,25 @@ De component ondersteunt vier standaard beeldverhoudingen:
 
 ### Square (1:1)
 ```html
-<img class="dictu-image dictu-image__aspect-ratio-square" src="..." alt="...">
+<img class="dictu-image dictu-image__aspect-ratio:square" src="..." alt="...">
 ```
 Ideaal voor profielfoto's, iconen en vierkante afbeeldingen.
 
 ### Landscape (4:3)
 ```html
-<img class="dictu-image dictu-image__aspect-ratio-landscape" src="..." alt="...">
+<img class="dictu-image dictu-image__aspect-ratio:landscape" src="..." alt="...">
 ```
 Geschikt voor landschapsfoto's en horizontale content.
 
 ### Portrait (3:4)
 ```html
-<img class="dictu-image dictu-image__aspect-ratio-portrait" src="..." alt="...">
+<img class="dictu-image dictu-image__aspect-ratio:portrait" src="..." alt="...">
 ```
 Perfect voor portretfoto's en verticale content.
 
 ### Video (16:9)
 ```html
-<img class="dictu-image dictu-image__aspect-ratio-video" src="..." alt="...">
+<img class="dictu-image dictu-image__aspect-ratio:video" src="..." alt="...">
 ```
 Ideaal voor thumbnails van video's en widescreen content.
 

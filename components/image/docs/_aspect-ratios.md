@@ -6,16 +6,16 @@ De image component biedt vier gestandaardiseerde beeldverhoudingen die geschikt 
 
 | Verhouding | Ratio | CSS Class | Gebruik voor |
 |------------|-------|-----------|---------------|
-| Square | 1:1 | `dictu-image__aspect-ratio-square` | Profielfoto's, iconen, sociale media |
-| Landscape | 4:3 | `dictu-image__aspect-ratio-landscape` | Landschapsfoto's, traditionele foto's |
-| Portrait | 3:4 | `dictu-image__aspect-ratio-portrait` | Portretfoto's, verticale content |
-| Video | 16:9 | `dictu-image__aspect-ratio-video` | Video thumbnails, widescreen |
+| Square | 1:1 | `dictu-image__aspect-ratio:square` | Profielfoto's, iconen, sociale media |
+| Landscape | 4:3 | `dictu-image__aspect-ratio:landscape` | Landschapsfoto's, traditionele foto's |
+| Portrait | 3:4 | `dictu-image__aspect-ratio:portrait` | Portretfoto's, verticale content |
+| Video | 16:9 | `dictu-image__aspect-ratio:video` | Video thumbnails, widescreen |
 
 ## Implementatie voorbeelden
 
 ### Square (1:1) - Vierkant
 ```html
-<img class="dictu-image dictu-image__aspect-ratio-square"
+<img class="dictu-image dictu-image__aspect-ratio:square"
      src="/profile-photo.jpg"
      alt="Profielfoto van Jan Jansen"
      width="400"
@@ -25,7 +25,7 @@ De image component biedt vier gestandaardiseerde beeldverhoudingen die geschikt 
 
 ### Landscape (4:3) - Liggend
 ```html
-<img class="dictu-image dictu-image__aspect-ratio-landscape"
+<img class="dictu-image dictu-image__aspect-ratio:landscape"
      src="/nature-photo.jpg"
      alt="Zonsondergang boven de Nederlandse polders"
      width="800"
@@ -35,7 +35,7 @@ De image component biedt vier gestandaardiseerde beeldverhoudingen die geschikt 
 
 ### Portrait (3:4) - Staand
 ```html
-<img class="dictu-image dictu-image__aspect-ratio-portrait"
+<img class="dictu-image dictu-image__aspect-ratio:portrait"
      src="/building-photo.jpg"
      alt="Moderne kantoorgebouw tegen blauwe lucht"
      width="600"
@@ -45,7 +45,7 @@ De image component biedt vier gestandaardiseerde beeldverhoudingen die geschikt 
 
 ### Video (16:9) - Widescreen
 ```html
-<img class="dictu-image dictu-image__aspect-ratio-video"
+<img class="dictu-image dictu-image__aspect-ratio:video"
      src="/video-thumbnail.jpg"
      alt="Thumbnail van instructievideo over toegankelijkheid"
      width="1280"
@@ -57,19 +57,19 @@ De image component biedt vier gestandaardiseerde beeldverhoudingen die geschikt 
 
 ### CSS implementatie
 ```scss
-.dictu-image__aspect-ratio-square {
+.dictu-image__aspect-ratio:square {
   aspect-ratio: 1;
 }
 
-.dictu-image__aspect-ratio-landscape {
+.dictu-image__aspect-ratio:landscape {
   aspect-ratio: 4/3;
 }
 
-.dictu-image__aspect-ratio-portrait {
+.dictu-image__aspect-ratio:portrait {
   aspect-ratio: 3/4;
 }
 
-.dictu-image__aspect-ratio-video {
+.dictu-image__aspect-ratio:video {
   aspect-ratio: 16/9;
 }
 ```
@@ -95,11 +95,11 @@ Alle beeldverhoudingen zijn volledig responsive:
 Specificeer altijd `width` en `height` attributen:
 ```html
 <!-- ✅ Goed: voorkomt layout shift -->
-<img class="dictu-image dictu-image__aspect-ratio-square"
+<img class="dictu-image dictu-image__aspect-ratio:square"
      width="400" height="400" ...>
 
 <!-- ❌ Slecht: kan layout shift veroorzaken -->
-<img class="dictu-image dictu-image__aspect-ratio-square" ...>
+<img class="dictu-image dictu-image__aspect-ratio:square" ...>
 ```
 
 ## Gebruik in verschillende contexts
@@ -107,16 +107,16 @@ Specificeer altijd `width` en `height` attributen:
 ### Grid layouts
 ```html
 <div class="image-grid">
-  <img class="dictu-image dictu-image__aspect-ratio-square" ...>
-  <img class="dictu-image dictu-image__aspect-ratio-square" ...>
-  <img class="dictu-image dictu-image__aspect-ratio-square" ...>
+  <img class="dictu-image dictu-image__aspect-ratio:square" ...>
+  <img class="dictu-image dictu-image__aspect-ratio:square" ...>
+  <img class="dictu-image dictu-image__aspect-ratio:square" ...>
 </div>
 ```
 
 ### Flexible containers
 ```html
 <div style="width: 50vw;">
-  <img class="dictu-image dictu-image__aspect-ratio-landscape"
+  <img class="dictu-image dictu-image__aspect-ratio:landscape"
        style="width: 100%;" ...>
 </div>
 ```

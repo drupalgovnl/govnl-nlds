@@ -6,7 +6,7 @@ De `Decoratieve Image` component is specifiek ontworpen voor afbeeldingen die ge
 Gebruik deze component voor puur decoratieve afbeeldingen zoals achtergronden, scheidingslijnen, patronen, of visuele elementen die geen inhoudelijke waarde toevoegen.
 
 ```html
-<img class="dictu-image dictu-image__aspect-ratio-square"
+<img class="dictu-image dictu-image__aspect-ratio:square"
      src="/decorative-image.jpg"
      alt=""
      width="640"
@@ -51,7 +51,7 @@ Gebruik deze component voor puur decoratieve afbeeldingen zoals achtergronden, s
 
 ### Visuele scheiding
 ```html
-<img class="dictu-image dictu-image__aspect-ratio-landscape"
+<img class="dictu-image dictu-image__aspect-ratio:landscape"
      src="/divider-image.jpg"
      alt=""
      width="800"

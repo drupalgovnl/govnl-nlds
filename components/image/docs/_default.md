@@ -6,7 +6,7 @@ De standaard `Image` component biedt een basis implementatie voor het tonen van 
 Gebruik deze component voor informatieve afbeeldingen die betekenisvolle content bevatten en beschreven moeten worden voor screenreaders.
 
 ```html
-<img class="dictu-image dictu-image__aspect-ratio-square"
+<img class="dictu-image dictu-image__aspect-ratio:square"
      src="/example-image.jpg"
      alt="Beschrijvende tekst van de afbeelding"
      width="640"
@@ -37,16 +37,16 @@ Gebruik deze component voor informatieve afbeeldingen die betekenisvolle content
 Alle aspect ratio opties zijn beschikbaar:
 ```html
 <!-- Vierkant -->
-<img class="dictu-image dictu-image__aspect-ratio-square" ...>
+<img class="dictu-image dictu-image__aspect-ratio:square" ...>
 
 <!-- Liggend -->
-<img class="dictu-image dictu-image__aspect-ratio-landscape" ...>
+<img class="dictu-image dictu-image__aspect-ratio:landscape" ...>
 
 <!-- Staand -->
-<img class="dictu-image dictu-image__aspect-ratio-portrait" ...>
+<img class="dictu-image dictu-image__aspect-ratio:portrait" ...>
 
 <!-- Video -->
-<img class="dictu-image dictu-image__aspect-ratio-video" ...>
+<img class="dictu-image dictu-image__aspect-ratio:video" ...>
 ```
 
 ## Gebruik in Storybook
