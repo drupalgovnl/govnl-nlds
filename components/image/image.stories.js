@@ -83,9 +83,9 @@ export default {
     // Handle accessibility attributes
     if (decorative) {
       img.alt = "";
-    } else {
-      img.setAttribute("role", "img");
-      if (alt) img.alt = alt;
+    }
+    if (alt) {
+      img.alt = alt;
     }
 
     // Handle aria-describedby

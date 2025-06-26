@@ -23,7 +23,6 @@ Gebruik deze component voor puur decoratieve afbeeldingen zoals achtergronden, s
 | Eigenschap | Standaard | Decoratief |
 |------------|-----------|------------|
 | `alt` attribuut | Beschrijvende tekst | Leeg (`""`) |
-| `role` attribuut | `img` |
 | Keyboard focus | Kan focus ontvangen | Geen focus |
 | Screenreader | Wordt voorgelezen | Wordt overgeslagen |
 

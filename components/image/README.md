@@ -100,8 +100,7 @@ Voor afbeeldingen die informatie overbrengen:
 ```html
 <img class="dictu-image"
      src="chart.jpg"
-     alt="Verkoopcijfers Q1 2024 tonen 15% stijging"
-     role="img">
+     alt="Verkoopcijfers Q1 2024 tonen 15% stijging">
 ```
 
 ### Decoratieve afbeeldingen
@@ -127,7 +126,6 @@ De component ondersteunt alle standaard HTML img attributes:
 - **alt**: Alternatieve tekst (verplicht, kan leeg zijn voor decoratieve afbeeldingen)
 - **width/height**: Afmetingen voor layout shift preventie
 - **loading**: `lazy` of `eager` voor laadstrategie
-- **role**: `img`
 - **aria-describedby**: Koppeling met beschrijvende tekst
 
 ## Performance

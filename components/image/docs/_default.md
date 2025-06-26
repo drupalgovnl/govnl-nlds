@@ -11,12 +11,10 @@ Gebruik deze component voor informatieve afbeeldingen die betekenisvolle content
      alt="Beschrijvende tekst van de afbeelding"
      width="640"
      height="640"
-     loading="lazy"
-     role="img">
+     loading="lazy">
 ```
 
 ## Kenmerken
-- **Semantische toegankelijkheid**: Correct `role="img"` attribuut
 - **Beschrijvende alt-tekst**: Betekenisvolle alternatieve tekst
 - **Responsief ontwerp**: Automatische aanpassing aan containergrootte
 - **Performance optimalisatie**: Lazy loading ondersteuning
@@ -30,7 +28,6 @@ Gebruik deze component voor informatieve afbeeldingen die betekenisvolle content
 
 ## Optionele attributen
 - **loading**: `lazy` of `eager` (standaard: `lazy`)
-- **role**: `img` voor informatieve afbeeldingen (standaard)
 - **aria-describedby**: Koppeling met uitgebreidere beschrijving
 
 ## Beeldverhoudingen
@@ -59,7 +56,6 @@ In Storybook kunt u de standaard variant aanpassen via:
 
 ## Toegankelijkheid
 - **Alt-tekst**: Beschrijft de inhoud en betekenis van de afbeelding
-- **Role**: `img` zorgt voor correcte interpretatie door screenreaders
 - **Focus**: Ontvangt keyboard focus wanneer interactief
 - **Contrast**: Voldoet aan WCAG contrast vereisten voor focus indicators
 
