@@ -1,5 +1,11 @@
 # @dictu/image
 
+## 1.0.1
+
+### Patch Changes
+
+- 4d84556: Update packages
+
 ## 1.0.0
 
 ### Patch Changes
