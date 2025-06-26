@@ -1,4 +1,4 @@
-import{j as e,M as t,a as r}from"./blocks-ypVuTfq6.js";import{useMDXComponents as a}from"./index-MUiMIq80.js";import"./DocsRenderer-3PZUHFFL-CswxTEI1.js";import"./iframe-X-INq0wo.js";import"./_commonjsHelpers-CqkleIqs.js";const s=`# EUROPEAN UNION PUBLIC LICENCE v. 1.2
+import{j as e,M as t,a as r}from"./blocks-5YSWfNxQ.js";import{useMDXComponents as a}from"./index-Bo5kOxQQ.js";import"./DocsRenderer-3PZUHFFL-Cgoru3H9.js";import"./iframe-BIM2E5tF.js";import"./_commonjsHelpers-CqkleIqs.js";const s=`# EUROPEAN UNION PUBLIC LICENCE v. 1.2
 
 EUPL © the European Union 2007, 2016
 
