@@ -6,7 +6,7 @@ import './dist/index.css';
 const ASPECT_RATIO_OPTIONS = ['landscape', 'portrait', 'square', 'video'];
 
 export default {
-  title: 'Components/Image',
+  title: 'Componenten/Image',
   parameters: {
     docs: {
       description: {

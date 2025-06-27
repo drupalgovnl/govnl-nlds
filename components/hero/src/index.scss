@@ -1,0 +1,45 @@
+@use "./mixin" as mixin;
+
+.dictu-hero {
+  @include mixin.dictu-hero;
+}
+
+.dictu-hero__container {
+  @include mixin.dictu-hero__container;
+}
+
+.dictu-hero__image {
+  @include mixin.dictu-hero__image;
+}
+
+.dictu-hero__message {
+  @include mixin.dictu-hero__message;
+}
+
+.dictu-hero__message--left {
+  @include mixin.message-left;
+}
+
+.dictu-hero__message--right {
+  @include mixin.message-right;
+}
+
+.dictu-hero__heading {
+  @include mixin.dictu-hero__heading;
+}
+
+.dictu-hero__subheading {
+  @include mixin.dictu-hero__subheading;
+}
+
+.dictu-hero__image-aspect-ratio:square {
+  @include mixin.aspect-ratio-square;
+}
+
+.dictu-hero__image-aspect-ratio:landscape {
+  @include mixin.aspect-ratio-landscape;
+}
+
+.dictu-hero__image-aspect-ratio:video {
+  @include mixin.aspect-ratio-video;
+}

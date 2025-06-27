@@ -1,0 +1,85 @@
+@use "pkg:@dictu/image/src/mixin" as image;
+@use "pkg:@dictu/page-container/src/mixin" as container;
+@use "pkg:@dictu/page-section/src/mixin" as section;
+
+@mixin reset {
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+@mixin dictu-hero {
+  @include section.dictu-page-section;
+}
+
+@mixin radius-top-left {
+  border-top-left-radius: var(--govnl-hero-border-radius, 0.5rem);
+}
+
+@mixin radius-top-right {
+  border-top-right-radius: var(--govnl-hero-border-radius, 0.5rem);
+}
+
+@mixin radius-bottom-left {
+  border-bottom-left-radius: var(--govnl-hero-border-radius, 0.5rem);
+}
+
+@mixin radius-bottom-right {
+  border-bottom-right-radius: var(--govnl-hero-border-radius, 0.5rem);
+}
+
+@mixin dictu-hero__container {
+  @include container.dictu-page-container;
+}
+
+@mixin dictu-hero__image {
+  @include image.dictu-image;
+}
+
+@mixin aspect-ratio-square {
+  @include image.aspect-ratio-square;
+}
+
+@mixin aspect-ratio-video {
+  @include image.aspect-ratio-video;
+}
+
+@mixin aspect-ratio-landscape {
+  @include image.aspect-ratio-landscape;
+}
+
+@mixin dictu-hero__message {
+  background-color: var(--govnl-hero-message-background-color, var(--govnl-brand-primary-500));
+  color: var(--govnl-hero-message-color, var(--govnl-text-color));
+  display: flex;
+  flex-direction: column;
+  max-inline-size: var(--govnl-hero-message-max-inline-size, 100%);
+  padding-block: var(--govnl-hero-message-padding-block-start, 0.5rem)
+    var(--govnl-hero-message-padding-block-end, 0.5rem);
+  padding-inline: var(--govnl-hero-message-padding-inline-start, 0.5rem)
+    var(--govnl-hero-message-padding-inline-end, 0.5rem);
+  row-gap: var(--govnl-hero-message-row-gap, 0.5rem);
+}
+
+@mixin message-left {
+  border-top-right-radius: var(--govnl-hero-message-border-radius, 1.25rem);
+  justify-content: flex-start;
+}
+
+@mixin message-right {
+  border-top-left-radius: var(--govnl-hero-message-border-radius, 1.25rem);
+  justify-content: flex-end;
+}
+
+@mixin dictu-hero__heading {
+  font-family: var(--govnl-hero-heading-font-family, Fira Sans, system-ui);
+  font-size: var(--govnl-hero-heading-font-size, 2rem);
+  font-weight: var(--govnl-hero-heading-font-weight, 700);
+  line-height: var(--govnl-hero-heading-line-height, 1.2);
+}
+
+@mixin dictu-hero__subheading {
+  font-family: var(--govnl-hero-subheading-font-family, Fira Sans, system-ui);
+  font-size: var(--govnl-hero-subheading-font-size, 2rem);
+  font-weight: var(--govnl-hero-subheading-font-weight, 700);
+  line-height: var(--govnl-hero-subheading-line-height, 1.2);
+}
