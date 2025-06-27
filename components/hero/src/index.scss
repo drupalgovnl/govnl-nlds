@@ -2,7 +2,17 @@
 
 .dictu-hero {
   @include mixin.dictu-hero;
+
+  // Responsive: mobile
+  @media (width <= 48em) {
+    @include mixin.dictu-hero-mobile;
+  }
 }
+
+// Responsive: desktop
+// @media (width >= 48.01em) {
+//   @include mixin.dictu-navigation-bar--desktop;
+// }
 
 .dictu-hero__container {
   @include mixin.dictu-hero__container;
@@ -12,8 +22,29 @@
   @include mixin.dictu-hero__image;
 }
 
+.dictu-hero__image--corner-top-left {
+  @include mixin.radius-top-left;
+}
+
+.dictu-hero__image--corner-top-right {
+  @include mixin.radius-top-right;
+}
+
+.dictu-hero__image--corner-bottom-left {
+  @include mixin.radius-bottom-left;
+}
+
+.dictu-hero__image--corner-bottom-right {
+  @include mixin.radius-bottom-right;
+}
+
 .dictu-hero__message {
   @include mixin.dictu-hero__message;
+
+  // Responsive: mobile
+  @media (width <= 48em) {
+    @include mixin.dictu-hero__message-mobile;
+  }
 }
 
 .dictu-hero__message--left {
@@ -26,20 +57,30 @@
 
 .dictu-hero__heading {
   @include mixin.dictu-hero__heading;
+
+  // Responsive: mobile
+  @media (width <= 48em) {
+    @include mixin.dictu-hero__heading-mobile;
+  }
 }
 
 .dictu-hero__subheading {
   @include mixin.dictu-hero__subheading;
+
+  // Responsive: mobile
+  @media (width <= 48em) {
+    @include mixin.dictu-hero__subheading-mobile;
+  }
 }
 
-.dictu-hero__image-aspect-ratio:square {
+.dictu-hero__image-ratio-square {
   @include mixin.aspect-ratio-square;
 }
 
-.dictu-hero__image-aspect-ratio:landscape {
+.dictu-hero__image-ratio-landscape {
   @include mixin.aspect-ratio-landscape;
 }
 
-.dictu-hero__image-aspect-ratio:video {
+.dictu-hero__image-ratio-video {
   @include mixin.aspect-ratio-video;
 }
