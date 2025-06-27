@@ -3,17 +3,17 @@
     "section": {
       "container": {
         "max-inline-size": {
-          "value": "{govnl.container.max-inline-size}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{govnl.container.max-inline-size}"
         },
         "padding-inline": {
-          "value": "{govnl.container.padding-inline}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{govnl.container.padding-inline}"
         }
       },
       "margin-block-end": {
-        "value": "{govnl.dimension.size.1000}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.dimension.size.1000}"
       }
     }
   }

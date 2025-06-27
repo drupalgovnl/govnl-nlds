@@ -2,12 +2,12 @@
   "govnl": {
     "container": {
       "max-inline-size": {
-        "value": "calc(8 * {govnl.dimension.size.2000})",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "calc(8 * {govnl.dimension.size.2000})"
       },
       "padding-inline": {
-        "value": "{govnl.dimension.size.200}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.dimension.size.200}"
       }
     }
   }

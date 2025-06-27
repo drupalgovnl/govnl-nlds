@@ -2,38 +2,38 @@
   "govnl": {
     "link-list": {
       "row-gap": {
-        "value": "{govnl.gap-content.min} / 2",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{govnl.gap-content.min} / 2"
       },
       "icon": {
         "inset-block-start": {
-          "value": "0px",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "0px"
         },
         "size": {
-          "value": "1.125em",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "1.125em"
         }
       },
       "link": {
         "column-gap": {
-          "value": "{govnl.gap-content.min} / 2",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{govnl.gap-content.min} / 2"
         },
         "text-decoration": {
-          "value": "None",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "None"
         },
         "hover": {
           "text-decoration": {
-            "value": "underline",
-            "type": "textDecoration"
+            "$type": "textDecoration",
+            "$value": "underline"
           }
         }
       },
       "font-weight": {
-        "value": "{govnl.document.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{govnl.document.font-weight}"
       }
     }
   }

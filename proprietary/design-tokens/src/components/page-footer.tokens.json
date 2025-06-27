@@ -2,48 +2,48 @@
   "govnl": {
     "page-footer": {
       "background-color": {
-        "value": "{govnl.root.background-color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.root.background-color}"
       },
       "color": {
-        "value": "{govnl.brand.primary.500}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.brand.primary.500}"
       },
       "padding-block-start": {
-        "value": "{govnl.space.2xl}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.space.2xl}"
       },
       "padding-block-end": {
-        "value": "{govnl.space.2xl}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.space.2xl}"
       },
       "container": {
         "max-inline-width": {
-          "value": "{govnl.container.max-inline-size}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{govnl.container.max-inline-size}"
         },
         "padding-inline": {
-          "value": "{govnl.container.padding-inline}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{govnl.container.padding-inline}"
         }
       },
       "content": {
         "column-gap": {
-          "value": "{govnl.gap-content.min} * 2",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{govnl.gap-content.min} * 2"
         },
         "row-gap": {
-          "value": "{govnl.gap-content.min} * 1.5",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{govnl.gap-content.min} * 1.5"
         }
       },
       "border-width": {
-        "value": "{govnl.border.border-width.sm}",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "{govnl.border.border-width.sm}"
       },
       "border-color": {
-        "value": "{govnl.brand.primary.200}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.brand.primary.200}"
       }
     }
   }

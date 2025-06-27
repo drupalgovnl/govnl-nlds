@@ -2,85 +2,85 @@
   "nl": {
     "link": {
       "color": {
-        "value": "{govnl.interaction.color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.interaction.color}"
       },
       "text-decoration-color": {
-        "value": "{govnl.interaction.color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.interaction.color}"
       },
       "text-decoration-line": {
-        "value": "underline",
-        "type": "textDecoration"
+        "$type": "textDecoration",
+        "$value": "underline"
       },
       "text-decoration-thickness": {
-        "value": "max(1px, .0625rem)",
-        "type": "other"
+        "$type": "other",
+        "$value": "max(1px, .0625rem)"
       },
       "text-underline-offset": {
-        "value": ".1578em",
-        "type": "other"
+        "$type": "other",
+        "$value": ".1578em"
       },
       "active": {
         "color": {
-          "value": "{govnl.interaction.active.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.interaction.active.color}"
         },
         "text-decoration-line": {
-          "value": "underline",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "underline"
         },
         "text-decoration-thickness": {
-          "value": "max(3px, .1875rem, .12em)",
-          "type": "other"
+          "$type": "other",
+          "$value": "max(3px, .1875rem, .12em)"
         }
       },
       "current": {
         "cursor": {
-          "value": "default",
-          "type": "other"
+          "$type": "other",
+          "$value": "default"
         }
       },
       "disabled": {
         "color": {
-          "value": "{govnl.color.grijs.500}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.color.grijs.500}"
         },
         "cursor": {
-          "value": "disabled",
-          "type": "other"
+          "$type": "other",
+          "$value": "disabled"
         }
       },
       "focus-visible": {
         "background-color": {
-          "value": "{govnl.focus.background-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.focus.background-color}"
         },
         "color": {
-          "value": "{govnl.focus.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.focus.color}"
         },
         "text-decoration-line": {
-          "value": "underline",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "underline"
         },
         "text-decoration-thickness": {
-          "value": "max(3px, .1875rem, .12em)",
-          "type": "other"
+          "$type": "other",
+          "$value": "max(3px, .1875rem, .12em)"
         }
       },
       "hover": {
         "color": {
-          "value": "{govnl.interaction.hover.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.interaction.hover.color}"
         },
         "text-decoration-line": {
-          "value": "underline",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "underline"
         },
         "text-decoration-thickness": {
-          "value": "max(3px, .1875rem, .12em)",
-          "type": "other"
+          "$type": "other",
+          "$value": "max(3px, .1875rem, .12em)"
         }
       }
     }
