@@ -81,7 +81,7 @@ const renderHero = ({ heading, subheading, cornerPosition, messagePosition, ...r
   heroImage.src = rest.src;
   heroImage.alt = rest.alt || '';
   heroImage.loading = rest.imageLoading || 'lazy';
-  heroImage.classList.add('dictu-hero__image', `dictu-hero__image-ratio-${rest.aspectRatio}`);
+  heroImage.classList.add('dictu-hero__image', `dictu-aspect-ratio-${rest.aspectRatio}`);
 
   // Set corner position class
   heroImage.classList.add(`dictu-hero__image--corner-${cornerPosition}`);

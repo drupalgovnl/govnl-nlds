@@ -72,15 +72,3 @@
     @include mixin.dictu-hero__subheading-mobile;
   }
 }
-
-.dictu-hero__image-ratio-square {
-  @include mixin.aspect-ratio-square;
-}
-
-.dictu-hero__image-ratio-landscape {
-  @include mixin.aspect-ratio-landscape;
-}
-
-.dictu-hero__image-ratio-video {
-  @include mixin.aspect-ratio-video;
-}
