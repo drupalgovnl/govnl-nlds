@@ -23,6 +23,7 @@
     "./proprietary/*",
     "./packages/utilities",
     "./components/*",
+    "./utilities/*",
     "./packages/storybook"
   ],
   "devDependencies": {

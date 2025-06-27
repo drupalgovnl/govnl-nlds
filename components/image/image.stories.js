@@ -6,7 +6,7 @@ import './dist/index.css';
 const ASPECT_RATIO_OPTIONS = ['landscape', 'portrait', 'square', 'video'];
 
 export default {
-  title: 'Components/Image',
+  title: 'Componenten/Image',
   parameters: {
     docs: {
       description: {
@@ -21,7 +21,7 @@ export default {
     decorative: false,
     width: '100%',
     height: '100%',
-    aspectRatio: '16/9',
+    aspectRatio: 'video',
   },
   argTypes: {
     src: {
@@ -89,7 +89,7 @@ export default {
 
     // Apply aspect ratio styling
     if (aspectRatio) {
-      img.classList.add(`dictu-image__aspect-ratio:${aspectRatio}`);
+      img.classList.add(`dictu-aspect-ratio-${aspectRatio}`);
     }
 
     return img;

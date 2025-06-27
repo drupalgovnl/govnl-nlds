@@ -8,11 +8,10 @@
   margin-inline: 0;
 }
 
-@mixin dictu-page-container {
+@mixin dictu-container {
   @include reset;
 
   margin: 0 auto;
   max-inline-size: var(--govnl-container-max-inline-size, 100%);
-  max-width: var(--govnl-container-max-inline-size, 1280px);
   padding-inline: var(--govnl-container-padding-inline, 1rem);
 }
