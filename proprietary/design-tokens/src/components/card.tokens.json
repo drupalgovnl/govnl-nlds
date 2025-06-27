@@ -1,0 +1,220 @@
+{
+  "govnl": {
+    "card": {
+      "default": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.document.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.line.subtle.border-color}"
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.100}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.line.border-color}"
+          }
+        },
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.200}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.line.strong.border-color}"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.focus.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparant"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.focus.color}"
+          }
+        },
+        "main": {
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "0px"
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": "{govnl.space.xs}"
+          }
+        },
+        "footer": {
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "0px"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": "{govnl.space.xs}"
+          }
+        },
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{govnl.border.border-radius.sm}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{govnl.border.border-width.sm}"
+        }
+      },
+      "heading": {
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "underline"
+        },
+        "hover": {
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          },
+          "text-decoration-thickness": {
+            "$type": "other",
+            "$value": "max(3px, .1875rem, .12em)"
+          }
+        },
+        "text-decoration-thickness": {
+          "$type": "other",
+          "$value": "max(1px, .0625rem)"
+        },
+        "text-underline-offset": {
+          "$type": "other",
+          "$value": ".1578em"
+        },
+        "active": {
+          "text-decoration-thickness": {
+            "$type": "other",
+            "$value": "max(3px, .1875rem, .12em)"
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          }
+        },
+        "focus-visible": {
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          },
+          "text-decoration-thickness": {
+            "$type": "other",
+            "$value": "max(3px, .1875rem, .12em)"
+          }
+        }
+      },
+      "accent": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.brand.primary.500}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "transparant"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.document.inverse.color}"
+        },
+        "hover": {
+          "background-color": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.2",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{govnl.brand.primary.500}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparant"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.inverse.color}"
+          }
+        },
+        "active": {
+          "background-color": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.4",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{govnl.brand.primary.500}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparant"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.inverse.color}"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.focus.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparant"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.focus.color}"
+          }
+        }
+      }
+    }
+  }
+}

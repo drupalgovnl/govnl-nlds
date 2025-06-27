@@ -2,21 +2,21 @@
   "govnl": {
     "header": {
       "background-color": {
-        "value": "{govnl.document.background-color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.document.background-color}"
       },
       "padding-block-end": {
-        "value": "{govnl.lint.size.half-lint}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.lint.size.half-lint}"
       },
       "container": {
         "max-inline-width": {
-          "value": "{govnl.container.max-inline-size}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{govnl.container.max-inline-size}"
         },
         "padding-inline": {
-          "value": "{govnl.container.padding-inline}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{govnl.container.padding-inline}"
         }
       }
     }
