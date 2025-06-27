@@ -46,7 +46,7 @@ NOTICE*
 
 # Design tokens build output
 proprietary/design-tokens/build/
-proprietary/design-tokens/src/components/
+proprietary/design-tokens/src/
 
 # Storybook build
 packages/storybook/storybook-static/
