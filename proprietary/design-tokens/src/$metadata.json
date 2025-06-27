@@ -5,7 +5,7 @@
     "components/accordion.tokens",
     "components/breadcrumb.tokens",
     "components/button.tokens",
-    "components/card.tokens.wip",
+    "components/card.tokens",
     "components/container.tokens",
     "components/figure.tokens",
     "components/heading.tokens",

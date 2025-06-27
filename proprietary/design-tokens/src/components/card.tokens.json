@@ -97,51 +97,47 @@
           "$value": "{govnl.border.border-width.sm}"
         }
       },
-      "text-decoration": {
-        "$type": "textDecoration",
-        "$value": "none"
-      },
-      "horizontal": {
-        "padding-block-start": {
-          "$type": "dimension",
-          "$value": "{govnl.space.sm}"
+      "heading": {
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "underline"
         },
-        "padding-inline-end": {
-          "$type": "dimension",
-          "$value": "{govnl.space.sm}"
-        },
-        "padding-block-end": {
-          "$type": "dimension",
-          "$value": "{govnl.space.sm}"
-        },
-        "padding-inline-start": {
-          "$type": "dimension",
-          "$value": "{govnl.space.sm}"
-        },
-        "border-radius": {
-          "$type": "dimension",
-          "$value": "{govnl.border.border-radius.sm}"
-        },
-        "border-width": {
-          "$type": "dimension",
-          "$value": "{govnl.border.border-width.sm}"
-        },
-        "img": {
-          "border-top-left-radius": {
-            "$type": "dimension",
-            "$value": "{govnl.border.border-radius.sm}"
+        "hover": {
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": "underline"
           },
-          "border-top-right-radius": {
-            "$type": "dimension",
-            "$value": "0px"
+          "text-decoration-thickness": {
+            "$type": "other",
+            "$value": "max(3px, .1875rem, .12em)"
+          }
+        },
+        "text-decoration-thickness": {
+          "$type": "other",
+          "$value": "max(1px, .0625rem)"
+        },
+        "text-underline-offset": {
+          "$type": "other",
+          "$value": ".1578em"
+        },
+        "active": {
+          "text-decoration-thickness": {
+            "$type": "other",
+            "$value": "max(3px, .1875rem, .12em)"
           },
-          "border-bottom-right-radius": {
-            "$type": "dimension",
-            "$value": "0px"
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          }
+        },
+        "focus-visible": {
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": "underline"
           },
-          "border-bottom-left-radius": {
-            "$type": "dimension",
-            "$value": "{govnl.border.border-radius.sm}"
+          "text-decoration-thickness": {
+            "$type": "other",
+            "$value": "max(3px, .1875rem, .12em)"
           }
         }
       },
@@ -217,12 +213,6 @@
             "$type": "color",
             "$value": "{govnl.focus.color}"
           }
-        }
-      },
-      "hover": {
-        "text-decoration": {
-          "$type": "textDecoration",
-          "$value": "underline"
         }
       }
     }
