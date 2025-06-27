@@ -1,10 +1,11 @@
 import '@dictu/design-tokens/dist/index.css';
+import '../src/fonts.css';
 
 const preview = {
   parameters: {
     controls: { expanded: false },
     docs: {
-      codePanel: true
+      codePanel: true,
     },
     options: {
       panelPosition: 'bottom',

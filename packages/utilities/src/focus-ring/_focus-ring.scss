@@ -1,4 +1,4 @@
-@use 'mixin' as mixin;
+@use "mixin" as mixin;
 
 .dictu-focus-ring:focus-visible {
   @include mixin.dictu-focus-visible;

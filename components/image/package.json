@@ -1,6 +1,6 @@
 {
   "name": "@dictu/image",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.1",
   "author": "Dienst ICT Uitvoering",
   "description": "Image CSS component.",
   "license": "EUPL-1.2",
@@ -9,7 +9,6 @@
     "css",
     "image"
   ],
-  "private": true,
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
@@ -28,7 +27,8 @@
     "provenance": true
   },
   "scripts": {
-    "build": "",
-    "clean": "rimraf ./dist/"
+    "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "clean": "rimraf ./dist/",
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/"
   }
 }

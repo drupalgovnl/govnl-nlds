@@ -1,11 +1,11 @@
-@use './mixin.scss' as mixin;
+@use "./mixin.scss" as mixin;
 
 // Import child component styles to make page-footer self-contained
-@use 'pkg:@dictu/heading/src/index' as heading;
-@use 'pkg:@dictu/paragraph/src/index' as paragraph;
-@use 'pkg:@dictu/link-list/src/index' as link-list;
-@use 'pkg:@dictu/link/src/index' as link;
-@use 'pkg:@dictu/icon/src/index' as icon;
+@use "pkg:@dictu/heading/src/index" as heading;
+@use "pkg:@dictu/paragraph/src/index" as paragraph;
+@use "pkg:@dictu/link-list/src/index" as link-list;
+@use "pkg:@dictu/link/src/index" as link;
+@use "pkg:@dictu/icon/src/index" as icon;
 
 .dictu-page-footer {
   @include mixin.dictu-page-footer;

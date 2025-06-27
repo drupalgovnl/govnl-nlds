@@ -1,14 +1,14 @@
 import readme from './README.md?raw';
-import "@dictu/design-tokens/dist/logo.css";
-import "./dist/index.css";
+import '@dictu/design-tokens/dist/logo.css';
+import './dist/index.css';
 
 export default {
   argTypes: {
     title: {
-      control: "text",
+      control: 'text',
     },
     subtitle: {
-      control: "text",
+      control: 'text',
     },
   },
   parameters: {
@@ -18,16 +18,16 @@ export default {
       },
     },
   },
-  tags: ["autodocs"],
-  title: "Componenten/Logo",
+  tags: ['autodocs'],
+  title: 'Componenten/Logo',
 };
 
 export const Logo = {
-  render: (args) => {
-    const logo = document.createElement("div");
-    const { title, subtitle } = args || "";
+  render: args => {
+    const logo = document.createElement('div');
+    const { title, subtitle } = args || '';
 
-    logo.classList.add("dictu-logo");
+    logo.classList.add('dictu-logo');
     logo.innerHTML = `
       <div class="dictu-logo__image">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 44 88" role="img">
@@ -52,7 +52,7 @@ export const Logo = {
     return logo;
   },
   args: {
-    title: "Dienst ICT Uitvoering",
-    subtitle: "Ministerie van Economische Zaken",
+    title: 'Dienst ICT Uitvoering',
+    subtitle: 'Ministerie van Economische Zaken',
   },
 };
