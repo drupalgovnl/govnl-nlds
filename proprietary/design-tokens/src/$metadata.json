@@ -8,6 +8,7 @@
     "components/card.tokens",
     "components/container.tokens",
     "components/figure.tokens",
+    "components/grid.tokens",
     "components/heading.tokens",
     "components/hero.tokens",
     "components/icon.tokens",

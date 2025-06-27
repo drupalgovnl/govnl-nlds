@@ -1,0 +1,54 @@
+{
+  "govnl": {
+    "grid": {
+      "template": {
+        "columns": {
+          "col-1": {
+            "$type": "dimension",
+            "$value": "repeat(1, 1fr)"
+          },
+          "col-2": {
+            "$type": "dimension",
+            "$value": "repeat(2, 1fr)"
+          },
+          "col-3": {
+            "$type": "dimension",
+            "$value": "repeat(3, 1fr)"
+          },
+          "col-4": {
+            "$type": "dimension",
+            "$value": "repeat(4, 1fr)"
+          }
+        },
+        "rows": {
+          "auto": {
+            "$type": "dimension",
+            "$value": "auto"
+          }
+        }
+      },
+      "gap": {
+        "row": {
+          "min": {
+            "$type": "dimension",
+            "$value": "{govnl.gap-content.min}"
+          },
+          "max": {
+            "$type": "dimension",
+            "$value": "{govnl.gap-content.max}"
+          }
+        },
+        "column": {
+          "min": {
+            "$type": "dimension",
+            "$value": "{govnl.gap-content.min}"
+          },
+          "max": {
+            "$type": "dimension",
+            "$value": "{govnl.gap-content.max}"
+          }
+        }
+      }
+    }
+  }
+}
