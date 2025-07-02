@@ -5,6 +5,26 @@
         "$type": "color",
         "$value": "{govnl.root.background-color}"
       },
+      "border-color": {
+        "$type": "color",
+        "$value": "none"
+      },
+      "padding-block-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.lg}"
+      },
+      "padding-block-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.lg}"
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.lg}"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.lg}"
+      },
       "toggle-icon": {
         "sm": {
           "padding-inline-start": {
@@ -106,6 +126,10 @@
           "$type": "dimension",
           "$value": "{govnl.gap-content.min}"
         }
+      },
+      "border-radius": {
+        "$type": "borderRadius",
+        "$value": "{govnl.border.border-radius.sm}"
       }
     }
   }
