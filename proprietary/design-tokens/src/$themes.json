@@ -25,7 +25,7 @@
       "components/hero.tokens": "enabled",
       "components/grid.tokens": "enabled",
       "components/card.tokens": "enabled",
-      "components/timeline.tokens": "disabled"
+      "components/timeline.tokens": "enabled"
     },
     "$figmaVariableReferences": {},
     "group": "GovNL"
