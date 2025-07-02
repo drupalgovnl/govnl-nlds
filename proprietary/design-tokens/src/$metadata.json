@@ -20,6 +20,7 @@
     "components/paragraph.tokens",
     "components/page-header.tokens",
     "components/section.tokens",
-    "components/skip-link.tokens"
+    "components/skip-link.tokens",
+    "components/timeline.tokens"
   ]
 }
