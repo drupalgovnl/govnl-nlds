@@ -1,6 +1,6 @@
+import { register } from '@tokens-studio/sd-transforms';
 import { globSync } from 'glob';
 import path from 'path';
-import { register } from '@tokens-studio/sd-transforms';
 import StyleDictionary from 'style-dictionary';
 
 // will register them on StyleDictionary object
@@ -58,7 +58,7 @@ const components = new StyleDictionary({
           format: 'css/variables',
           filter: token => token.filePath === file,
           options: {
-            selector: `.dictu-${path.parse(file).name.toLowerCase().replace('.tokens', '')}`,
+            selector: `.dictu-theme`,
             outputReferences: true,
           },
         })),
