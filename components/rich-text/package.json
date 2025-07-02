@@ -1,0 +1,38 @@
+{
+  "name": "@dictu/rich-text",
+  "version": "1.0.0",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Rich Text CSS component.",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system",
+    "css",
+    "rich-text"
+  ],
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "components/rich-text"
+  },
+  "files": [
+    "src/",
+    "dist/",
+    "*.md"
+  ],
+  "exports": {
+    "./dist/*": "./dist/*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "devDependencies": {
+    "@dictu/heading": "^1.0.0",
+    "@dictu/link": "^1.0.0"
+  },
+  "scripts": {
+    "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
+    "clean": "rimraf ./dist/"
+  }
+}

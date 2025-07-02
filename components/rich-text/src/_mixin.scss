@@ -1,0 +1,54 @@
+@use "pkg:@dictu/heading/src/mixin" as dictu-heading;
+@use "pkg:@dictu/link/src/mixin" as dictu-link;
+@use "pkg:@dictu/paragraph/src/mixin" as dictu-paragraph;
+
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin dictu-rich-text {
+  :where(h1, h2, h3, h4, h5, h6) {
+    @include dictu-heading.dictu-heading;
+  }
+
+  :where(h1) {
+    @include dictu-heading.dictu-heading--level-1;
+  }
+
+  :where(h2) {
+    @include dictu-heading.dictu-heading--level-2;
+  }
+
+  :where(h3) {
+    @include dictu-heading.dictu-heading--level-3;
+  }
+
+  :where(h4) {
+    @include dictu-heading.dictu-heading--level-4;
+  }
+
+  :where(h5) {
+    @include dictu-heading.dictu-heading--level-5;
+  }
+
+  :where(h6) {
+    @include dictu-heading.dictu-heading--level-6;
+  }
+
+  :where(a) {
+    @include dictu-link.dictu-link;
+  }
+
+  :where(a:hover) {
+    @include dictu-link.dictu-link--hover;
+  }
+
+  :where(a:active) {
+    @include dictu-link.dictu-link--active;
+  }
+
+  :where(p) {
+    @include dictu-paragraph.dictu-paragraph;
+  }
+}
