@@ -17,16 +17,6 @@
         "$type": "dimension",
         "$value": "{govnl.space.2xl}"
       },
-      "container": {
-        "max-inline-width": {
-          "$type": "dimension",
-          "$value": "{govnl.container.max-inline-size}"
-        },
-        "padding-inline": {
-          "$type": "dimension",
-          "$value": "{govnl.container.padding-inline}"
-        }
-      },
       "content": {
         "column-gap": {
           "$type": "dimension",
