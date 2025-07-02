@@ -18,7 +18,7 @@ export default {
   argTypes: {
     content: {
       control: 'text',
-      description: 'De HTML inhoud van de page-container',
+      description: 'De HTML inhoud van de rich-text component',
     },
     id: {
       control: 'text',
