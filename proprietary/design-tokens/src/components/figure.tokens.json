@@ -3,21 +3,21 @@
     "figure": {
       "caption": {
         "color": {
-          "value": "{govnl.document.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.document.color}"
         },
         "font-size": {
-          "value": "{govnl.typography.font-size.sm}",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "{govnl.typography.font-size.sm}"
         },
         "line-height": {
-          "value": "{govnl.typography.line-height.sm}",
-          "type": "lineHeights"
+          "$type": "lineHeights",
+          "$value": "{govnl.typography.line-height.sm}"
         }
       },
       "row-gap": {
-        "value": "{govnl.gap-content.min} / 2",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{govnl.gap-content.min} / 2"
       }
     }
   }

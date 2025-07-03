@@ -1,19 +1,9 @@
 {
   "govnl": {
     "section": {
-      "container": {
-        "max-inline-size": {
-          "value": "{govnl.container.max-inline-size}",
-          "type": "dimension"
-        },
-        "padding-inline": {
-          "value": "{govnl.container.padding-inline}",
-          "type": "dimension"
-        }
-      },
       "margin-block-end": {
-        "value": "{govnl.dimension.size.1000}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.dimension.size.1000}"
       }
     }
   }
