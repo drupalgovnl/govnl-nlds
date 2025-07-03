@@ -3,6 +3,9 @@
  * Copyright (c) 2021-2025 dictu
  */
 
+@use "pkg:@dictu/design-tokens/dist/header.css" as design-tokens;
+@use "pkg:@dictu/logo/dist/index" as dictu-logo;
+
 @mixin reset {
   margin-block: 0;
   margin-inline: 0;

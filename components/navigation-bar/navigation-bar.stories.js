@@ -1,5 +1,4 @@
 import readme from './README.md?raw';
-import '@dictu/design-tokens/dist/navigation-bar.css';
 import './dist/index.css';
 
 export default {
