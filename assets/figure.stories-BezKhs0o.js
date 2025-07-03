@@ -1,4 +1,4 @@
-import t from"./image.stories-DK-x6cx_.js";const l=`# Figure component
+import t from"./image.stories-BCznW9dJ.js";const l=`# Figure component
 
 De figure component is een semantische container met bijschrift.
 

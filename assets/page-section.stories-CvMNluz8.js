@@ -1,4 +1,4 @@
-const f=`Gebruik in CSS de \`.dictu-page-section\` class name voor de page-section
+/* empty css                */const f=`Gebruik in CSS de \`.dictu-page-section\` class name voor de page-section
 component.
 
 ## Beschrijving
@@ -147,10 +147,10 @@ De styling wordt verzorgd door de page-section CSS:
 ## Licentie
 
 EUPL-1.2
-`,y={args:{content:`
+`,L={args:{content:`
       <p>Dit is een page-section component die gestructureerde content gebieden biedt met consistente spacing en styling. De component is toegankelijk en gebruikt semantische HTML.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non malesuada magna. Etiam lobortis, mauris ut euismod mattis, eros erat blandit nibh, ut finibus libero orci et elit.</p>
-    `,title:"Sectie titel",id:"page-section-1"},argTypes:{content:{control:"text",description:"De HTML inhoud van de page-section"},id:{control:"text",description:"Sectie ID voor navigatie en toegankelijkheid"},ariaLabel:{control:"text",description:"Toegankelijke naam voor de sectie"},title:{control:"text",description:"Titel van de sectie, gebruikt voor toegankelijkheid en structuur"}},parameters:{docs:{description:{component:D}}},render:({content:n,id:s,ariaLabel:c,title:r})=>{const e=document.createElement("section");if(e.classList.add("dictu-page-section"),r){const t=document.createElement("h2");t.classList.add("dictu-heading","dictu-heading--level-2"),t.textContent=r,s&&(t.id=s,e.setAttribute("aria-labelledby",s)),e.appendChild(t)}if(n){if(typeof n=="string"){const j=new DOMParser().parseFromString(n,"text/html"),d=document.createDocumentFragment();Array.from(j.body.childNodes).forEach(S=>{d.appendChild(S.cloneNode(!0))}),e.appendChild(d)}n instanceof HTMLElement&&e.appendChild(n)}return c&&!r&&e.setAttribute("aria-label",c),e},tags:["autodocs"],title:"Componenten/Page Section"},i={args:{},parameters:{docs:{description:{story:f}}}},a={args:{ariaLabel:"Voorbeeld sectie met aria label",content:"<p>Deze sectie heeft een aria-label voor betere toegankelijkheid, zonder titel.</p>"},parameters:{docs:{description:{story:"Deze sectie heeft een aria-label voor betere toegankelijkheid."}}}},o={args:{title:"",content:`
+    `,title:"Sectie titel",id:"page-section-1"},argTypes:{content:{control:"text",description:"De HTML inhoud van de page-section"},id:{control:"text",description:"Sectie ID voor navigatie en toegankelijkheid"},ariaLabel:{control:"text",description:"Toegankelijke naam voor de sectie"},title:{control:"text",description:"Titel van de sectie, gebruikt voor toegankelijkheid en structuur"}},parameters:{docs:{description:{component:D}}},render:({content:n,id:s,ariaLabel:c,title:r})=>{const e=document.createElement("section");if(e.classList.add("dictu-section"),r){const t=document.createElement("h2");t.classList.add("dictu-heading","dictu-heading--level-2"),t.textContent=r,s&&(t.id=s,e.setAttribute("aria-labelledby",s)),e.appendChild(t)}if(n){if(typeof n=="string"){const j=new DOMParser().parseFromString(n,"text/html"),d=document.createDocumentFragment();Array.from(j.body.childNodes).forEach(S=>{d.appendChild(S.cloneNode(!0))}),e.appendChild(d)}n instanceof HTMLElement&&e.appendChild(n)}return c&&!r&&e.setAttribute("aria-label",c),e},tags:["autodocs"],title:"Componenten/Page Section"},i={args:{},parameters:{docs:{description:{story:f}}}},a={args:{ariaLabel:"Voorbeeld sectie met aria label",content:"<p>Deze sectie heeft een aria-label voor betere toegankelijkheid, zonder titel.</p>"},parameters:{docs:{description:{story:"Deze sectie heeft een aria-label voor betere toegankelijkheid."}}}},o={args:{title:"",content:`
       <p>Een sectie zonder titel, maar met rijke content.</p>
       <ul>
         <li>Lijst item 1</li>
@@ -197,4 +197,4 @@ EUPL-1.2
       }
     }
   }
-}`,...(v=(k=o.parameters)==null?void 0:k.docs)==null?void 0:v.source}}};const L=["Default","WithAriaLabel","WithoutTitle"];export{i as Default,a as WithAriaLabel,o as WithoutTitle,L as __namedExportsOrder,y as default};
+}`,...(v=(k=o.parameters)==null?void 0:k.docs)==null?void 0:v.source}}};const C=["Default","WithAriaLabel","WithoutTitle"];export{i as Default,a as WithAriaLabel,o as WithoutTitle,C as __namedExportsOrder,L as default};
