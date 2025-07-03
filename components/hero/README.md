@@ -91,29 +91,6 @@ import "@dictu/hero/dist/index.css";
 De component gebruikt design tokens voor kleuren, spacing, typografie, etc.
 Voorbeeld:
 
-```css
-.dictu-hero {
-  --govnl-hero-border-radius: 0.5rem;
-  --govnl-hero-message-background-color: var(--govnl-brand-primary-500);
-  --govnl-hero-message-color: var(--govnl-text-color);
-  --govnl-hero-message-border-radius: 1.25rem;
-  --govnl-hero-message-max-inline-size: 100%;
-  --govnl-hero-message-padding-block-start: 0.5rem;
-  --govnl-hero-message-padding-block-end: 0.5rem;
-  --govnl-hero-message-padding-inline-start: 0.5rem;
-  --govnl-hero-message-padding-inline-end: 0.5rem;
-  --govnl-hero-message-row-gap: 0.5rem;
-  --govnl-hero-heading-font-family: Fira Sans, system-ui;
-  --govnl-hero-heading-font-size: 2rem;
-  --govnl-hero-heading-font-weight: 700;
-  --govnl-hero-heading-line-height: 1.2;
-  --govnl-hero-subheading-font-family: Fira Sans, system-ui;
-  --govnl-hero-subheading-font-size: 1.25rem;
-  --govnl-hero-subheading-font-weight: 700;
-  --govnl-hero-subheading-line-height: 1.2;
-}
-```
-
 ## Responsive gedrag
 
 De hero component is volledig responsive:

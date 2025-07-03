@@ -9,11 +9,6 @@
   }
 }
 
-// Responsive: desktop
-// @media (width >= 48.01em) {
-//   @include mixin.dictu-navigation-bar--desktop;
-// }
-
 .dictu-hero__container {
   @include mixin.dictu-hero__container;
 }
@@ -48,11 +43,11 @@
 }
 
 .dictu-hero__message--left {
-  @include mixin.message-left;
+  @include mixin.dictu-hero__message-left;
 }
 
 .dictu-hero__message--right {
-  @include mixin.message-right;
+  @include mixin.dictu-hero__message-right;
 }
 
 .dictu-hero__heading {

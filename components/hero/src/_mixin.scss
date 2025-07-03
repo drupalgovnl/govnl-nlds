@@ -3,6 +3,11 @@
 @use "pkg:@dictu/page-container/src/mixin" as container;
 @use "pkg:@dictu/page-section/src/mixin" as section;
 @use "pkg:@dictu/utility-aspect-ratio/src/index" as aspect-ratio;
+@use "pkg:@dictu/design-tokens/dist/paragraph.css" as dictu-paragraph-tokens;
+@use "pkg:@dictu/design-tokens/dist/hero.css" as dictu-hero-tokens;
+@use "pkg:@dictu/design-tokens/dist/figure.css" as dictu-figure-tokens;
+@use "pkg:@dictu/design-tokens/dist/container.css" as container-tokens;
+@use "pkg:@dictu/design-tokens/dist/section.css" as section-tokens;
 
 @mixin dictu-hero {
   @include section.dictu-section;
@@ -64,12 +69,12 @@
   inline-size: calc(100% - (var(--govnl-dimension-size-200) * 4));
 }
 
-@mixin message-left {
+@mixin dictu-hero__message-left {
   border-top-right-radius: var(--govnl-hero-message-border-radius, 1.25rem);
   inset-inline-start: var(--govnl-dimension-size-200);
 }
 
-@mixin message-right {
+@mixin dictu-hero__message-right {
   border-top-left-radius: var(--govnl-hero-message-border-radius, 1.25rem);
   inset-inline-end: var(--govnl-dimension-size-200);
 }
