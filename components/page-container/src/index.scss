@@ -5,6 +5,6 @@
 
 @use "mixin" as mixin;
 
-.dictu-page-container {
-  @include mixin.dictu-page-container;
+.dictu-container {
+  @include mixin.dictu-container;
 }

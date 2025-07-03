@@ -17,24 +17,14 @@
         "$type": "dimension",
         "$value": "{govnl.space.2xl}"
       },
-      "container": {
-        "max-inline-width": {
-          "$type": "dimension",
-          "$value": "{govnl.container.max-inline-size}"
-        },
-        "padding-inline": {
-          "$type": "dimension",
-          "$value": "{govnl.container.padding-inline}"
-        }
-      },
       "content": {
         "column-gap": {
           "$type": "dimension",
-          "$value": "{govnl.gap-content.min} * 2"
+          "$value": "calc(2 * {govnl.gap-content.min})"
         },
         "row-gap": {
           "$type": "dimension",
-          "$value": "{govnl.gap-content.min} * 1.5"
+          "$value": "calc(1.5 * {govnl.gap-content.min})"
         }
       },
       "border-width": {

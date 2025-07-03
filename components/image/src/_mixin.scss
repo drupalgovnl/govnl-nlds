@@ -3,8 +3,9 @@
  * Copyright (c) 2021-2025 dictu
  */
 
+@use "pkg:@dictu/utility-aspect-ratio/src/index" as aspect-ratio;
+
 @mixin dictu-image {
-  aspect-ratio: auto;
   block-size: auto;
   inline-size: auto;
   margin: 0;
@@ -23,21 +24,4 @@
       pointer-events: none;
     }
   }
-}
-
-// Modern aspect ratio mixins with better naming
-@mixin aspect-ratio-square {
-  aspect-ratio: 1;
-}
-
-@mixin aspect-ratio-portrait {
-  aspect-ratio: 3/4;
-}
-
-@mixin aspect-ratio-landscape {
-  aspect-ratio: 4/3;
-}
-
-@mixin aspect-ratio-video {
-  aspect-ratio: 16/9;
 }

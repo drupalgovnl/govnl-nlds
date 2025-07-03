@@ -1,0 +1,24 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "sass:map";
+@use "sass:list";
+
+$aspect-ratios: (
+  "auto": "auto",
+  "square": "1",
+  "landscape": "4 / 3",
+  "video": "16 / 9",
+  "ultrawide": "21 / 9",
+  "portrait": "3 / 4",
+  "tall": "9 / 16",
+  "photo": "3 / 2",
+);
+
+@each $name, $ratio in $aspect-ratios {
+  .dictu-aspect-ratio-#{$name} {
+    aspect-ratio: #{$ratio};
+  }
+}

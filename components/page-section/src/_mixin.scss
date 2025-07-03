@@ -8,9 +8,9 @@
   margin-inline: 0;
 }
 
-@mixin dictu-page-section {
+@mixin dictu-section {
   @include reset;
 
-  max-inline-size: var(--govnl-section-max-inline-width);
-  padding-inline: var(--govnl-section-padding-inline);
+  margin-block-end: var(--govnl-section-margin-block-end, 2rem);
+  max-inline-size: var(--govnl-section-container-max-inline-size, 100%);
 }

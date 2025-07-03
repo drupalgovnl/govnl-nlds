@@ -1,0 +1,69 @@
+@use "./mixin" as mixin;
+
+.dictu-hero {
+  @include mixin.dictu-hero;
+
+  // Responsive: mobile
+  @media (width <= 48em) {
+    @include mixin.dictu-hero-mobile;
+  }
+}
+
+.dictu-hero__container {
+  @include mixin.dictu-hero__container;
+}
+
+.dictu-hero__image {
+  @include mixin.dictu-hero__image;
+}
+
+.dictu-hero__image--corner-top-left {
+  @include mixin.radius-top-left;
+}
+
+.dictu-hero__image--corner-top-right {
+  @include mixin.radius-top-right;
+}
+
+.dictu-hero__image--corner-bottom-left {
+  @include mixin.radius-bottom-left;
+}
+
+.dictu-hero__image--corner-bottom-right {
+  @include mixin.radius-bottom-right;
+}
+
+.dictu-hero__message {
+  @include mixin.dictu-hero__message;
+
+  // Responsive: mobile
+  @media (width <= 48em) {
+    @include mixin.dictu-hero__message-mobile;
+  }
+}
+
+.dictu-hero__message--left {
+  @include mixin.dictu-hero__message-left;
+}
+
+.dictu-hero__message--right {
+  @include mixin.dictu-hero__message-right;
+}
+
+.dictu-hero__heading {
+  @include mixin.dictu-hero__heading;
+
+  // Responsive: mobile
+  @media (width <= 48em) {
+    @include mixin.dictu-hero__heading-mobile;
+  }
+}
+
+.dictu-hero__subheading {
+  @include mixin.dictu-hero__subheading;
+
+  // Responsive: mobile
+  @media (width <= 48em) {
+    @include mixin.dictu-hero__subheading-mobile;
+  }
+}

@@ -1,5 +1,11 @@
 # @dictu/heading
 
+## 1.0.1
+
+### Patch Changes
+
+- 8455459: add sass mixins
+
 ## 1.0.0
 
 ### Patch Changes

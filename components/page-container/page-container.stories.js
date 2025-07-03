@@ -1,6 +1,7 @@
 import defaultDocs from './docs/_page-container.md?raw';
 import readme from './README.md?raw';
 import './dist/index.css';
+import '@dictu/design-tokens/dist/container.css';
 
 export default {
   args: {
@@ -29,7 +30,7 @@ export default {
   },
   render: ({ content, id }) => {
     const container = document.createElement('div');
-    container.classList.add('dictu-page-container');
+    container.classList.add('dictu-container');
     container.setAttribute('id', id);
 
     if (content) {

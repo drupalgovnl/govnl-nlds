@@ -8,16 +8,6 @@
       "padding-block-end": {
         "$type": "dimension",
         "$value": "{govnl.lint.size.half-lint}"
-      },
-      "container": {
-        "max-inline-width": {
-          "$type": "dimension",
-          "$value": "{govnl.container.max-inline-size}"
-        },
-        "padding-inline": {
-          "$type": "dimension",
-          "$value": "{govnl.container.padding-inline}"
-        }
       }
     }
   }
