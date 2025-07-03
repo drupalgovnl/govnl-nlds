@@ -1,6 +1,9 @@
 @use "pkg:@dictu/heading/src/mixin" as dictu-heading;
 @use "pkg:@dictu/link/src/mixin" as dictu-link;
 @use "pkg:@dictu/paragraph/src/mixin" as dictu-paragraph;
+@use "pkg:@dictu/design-tokens/dist/heading.css" as dictu-heading-tokens;
+@use "pkg:@dictu/design-tokens/dist/link.css" as dictu-link-tokens;
+@use "pkg:@dictu/design-tokens/dist/paragraph.css" as dictu-paragraph-tokens;
 
 /**
  * @license EUPL-1.2
@@ -9,6 +12,8 @@
 
 @mixin dictu-rich-text {
   :where(h1, h2, h3, h4, h5, h6) {
+    /* stylelint-disable-next-line scss/at-extend-no-missing-placeholder */
+    @extend .dictu-heading;
     @include dictu-heading.dictu-heading;
   }
 
@@ -37,6 +42,8 @@
   }
 
   :where(a) {
+    /* stylelint-disable-next-line scss/at-extend-no-missing-placeholder */
+    @extend .dictu-link;
     @include dictu-link.dictu-link;
   }
 
@@ -49,6 +56,8 @@
   }
 
   :where(p) {
+    /* stylelint-disable-next-line scss/at-extend-no-missing-placeholder */
+    @extend .dictu-paragraph;
     @include dictu-paragraph.dictu-paragraph;
   }
 }

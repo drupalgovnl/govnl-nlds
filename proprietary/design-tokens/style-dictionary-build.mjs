@@ -58,7 +58,7 @@ const components = new StyleDictionary({
           format: 'css/variables',
           filter: token => token.filePath === file,
           options: {
-            selector: `.dictu-theme`,
+            selector: `.dictu-${path.parse(file).name.toLowerCase().replace('.tokens', '')}`,
             outputReferences: true,
           },
         })),
