@@ -213,6 +213,42 @@
             "$type": "color",
             "$value": "{govnl.focus.color}"
           }
+        },
+        "heading": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.inverse.color}"
+          },
+          "hover": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.document.inverse.color}"
+            }
+          },
+          "active": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.document.inverse.color}"
+            }
+          }
+        },
+        "paragraph": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.inverse.color}"
+          },
+          "hover": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.document.inverse.color}"
+            }
+          },
+          "active": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.document.inverse.color}"
+            }
+          }
         }
       }
     }
