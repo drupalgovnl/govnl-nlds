@@ -1,4 +1,4 @@
-Gebruik in CSS de `.dictu-page-container` class name voor de page-container
+Gebruik in CSS de `.dictu-container` class name voor de page-container
 component.
 
 ## Beschrijving
@@ -11,7 +11,7 @@ pagina-indeling.
 ### Voorbeeldgebruik
 
 ```html
-<div class="dictu-page-container">
+<div class="dictu-container">
   <h1 class="dictu-heading dictu-heading--level-1">Pagina titel</h1>
   <p class="dictu-paragraph">
     Dit is de inhoud van de pagina met consistente styling en spacing.
@@ -22,8 +22,8 @@ pagina-indeling.
 ### Als hoofdcontainer
 
 ```html
-<main class="dictu-page-container">
-  <section class="dictu-page-section">
+<main class="dictu-container">
+  <section class="dictu-section">
     <h2 class="dictu-heading dictu-heading--level-2">Sectie titel</h2>
     <p class="dictu-paragraph">
       Deze container zorgt voor consistente breedte en centrering.
@@ -34,7 +34,7 @@ pagina-indeling.
 
 ## CSS Klassen
 
-- `.dictu-page-container` — hoofdcontainer voor de pagina content
+- `.dictu-container` — hoofdcontainer voor de pagina content
 
 ## Functies
 

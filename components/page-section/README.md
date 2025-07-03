@@ -25,7 +25,7 @@ import "@dictu/page-section/dist/index.css";
 
 ## Richtlijnen
 
-- Gebruik altijd de `.dictu-page-section` class voor de sectie-container.
+- Gebruik altijd de `.dictu-section` class voor de sectie-container.
 - Gebruik semantische HTML: `<section>` voor de hoofdcontainer.
 - Voeg indien nodig een `aria-label` of `aria-labelledby` attribuut toe.
 - Gebruik logische heading niveaus binnen de sectie.
@@ -33,7 +33,7 @@ import "@dictu/page-section/dist/index.css";
 ### Voorbeeldgebruik
 
 ```html
-<section class="dictu-page-section">
+<section class="dictu-section">
   <h2 class="dictu-heading dictu-heading--level-2">Sectie titel</h2>
   <p class="dictu-paragraph">
     Dit is de inhoud van de sectie met consistente styling en spacing.
@@ -41,7 +41,7 @@ import "@dictu/page-section/dist/index.css";
 </section>
 
 <!-- Met aria-label voor toegankelijkheid -->
-<section class="dictu-page-section" aria-label="Belangrijke informatie">
+<section class="dictu-section" aria-label="Belangrijke informatie">
   <h2 class="dictu-heading dictu-heading--level-2">Belangrijke update</h2>
   <p class="dictu-paragraph">
     Deze sectie bevat belangrijke informatie voor gebruikers.
@@ -49,7 +49,7 @@ import "@dictu/page-section/dist/index.css";
 </section>
 
 <!-- Met aria-labelledby voor toegankelijkheid -->
-<section class="dictu-page-section" aria-labelledby="contact-heading">
+<section class="dictu-section" aria-labelledby="contact-heading">
   <h2 id="contact-heading" class="dictu-heading dictu-heading--level-2">
     Contact informatie
   </h2>
@@ -61,14 +61,14 @@ import "@dictu/page-section/dist/index.css";
 
 ## CSS Klassen
 
-- `.dictu-page-section` — hoofdcontainer voor de sectie
+- `.dictu-section` — hoofdcontainer voor de sectie
 
 ## Design Tokens / CSS-variabelen
 
 De component gebruikt design tokens voor breedte en spacing. Voorbeeld:
 
 ```css
-.dictu-page-section {
+.dictu-section {
   --govnl-section-max-inline-width: 75rem;
   --govnl-section-padding-inline: 1rem;
   /* ... */
@@ -105,8 +105,7 @@ export const Default = {
 
 De styling wordt verzorgd door de page-section CSS:
 
-- `.dictu-page-section` — basis sectie styling met consistente breedte en
-  padding
+- `.dictu-section` — basis sectie styling met consistente breedte en padding
 
 ## Licentie
 

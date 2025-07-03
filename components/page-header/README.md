@@ -37,7 +37,7 @@ import "@dictu/design-tokens/dist/page-header.css";
 
 ```html
 <header class="dictu-page-header" lang="nl">
-  <div class="dictu-page-container">
+  <div class="dictu-container">
     <div class="dictu-logo">
       <div class="dictu-logo__image">
         <svg
@@ -63,7 +63,7 @@ import "@dictu/design-tokens/dist/page-header.css";
 ## CSS Klassen
 
 - `.dictu-page-header` — hoofdcontainer voor de hoofding
-- `.dictu-page-container` — interne container voor de inhoud
+- `.dictu-container` — interne container voor de inhoud
 - `.dictu-logo` — container voor het logo en tekst
 
 ## Design Tokens / CSS-variabelen
@@ -145,7 +145,7 @@ De styling wordt verzorgd door de page-header CSS en importeert automatisch de
 benodigde child components:
 
 - `.dictu-page-header`
-- `.dictu-page-container`
+- `.dictu-container`
 - `.dictu-logo`
 
 Plus alle gerelateerde klassen van logo en page-container components.

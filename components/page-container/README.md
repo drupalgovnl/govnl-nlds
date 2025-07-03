@@ -28,7 +28,7 @@ import "@dictu/page-container/dist/index.css";
 
 ## Richtlijnen
 
-- Gebruik altijd de `.dictu-page-container` class voor de container-element.
+- Gebruik altijd de `.dictu-container` class voor de container-element.
 - Gebruik semantische HTML: `<div>` of `<main>` voor de hoofdcontainer.
 - Voeg indien nodig een `id` attribuut toe voor navigatie en toegankelijkheid.
 - De component zorgt voor consistente maximale breedte en centrering van
@@ -37,7 +37,7 @@ import "@dictu/page-container/dist/index.css";
 ### Voorbeeldgebruik
 
 ```html
-<div class="dictu-page-container">
+<div class="dictu-container">
   <h1 class="dictu-heading dictu-heading--level-1">Pagina titel</h1>
   <p class="dictu-paragraph">
     Dit is de inhoud van de pagina met consistente styling en spacing.
@@ -45,8 +45,8 @@ import "@dictu/page-container/dist/index.css";
 </div>
 
 <!-- Als hoofdcontainer voor de pagina -->
-<main class="dictu-page-container">
-  <section class="dictu-page-section">
+<main class="dictu-container">
+  <section class="dictu-section">
     <h2 class="dictu-heading dictu-heading--level-2">Sectie titel</h2>
     <p class="dictu-paragraph">
       Deze container zorgt voor consistente breedte en centrering.
@@ -55,7 +55,7 @@ import "@dictu/page-container/dist/index.css";
 </main>
 
 <!-- Met ID voor navigatie en toegankelijkheid -->
-<div class="dictu-page-container" id="main-content">
+<div class="dictu-container" id="main-content">
   <h1 class="dictu-heading dictu-heading--level-1">Welkom</h1>
   <p class="dictu-paragraph">
     Deze container heeft een ID voor betere toegankelijkheid.
@@ -65,14 +65,14 @@ import "@dictu/page-container/dist/index.css";
 
 ## CSS Klassen
 
-- `.dictu-page-container` — hoofdcontainer voor de pagina content
+- `.dictu-container` — hoofdcontainer voor de pagina content
 
 ## Design Tokens / CSS-variabelen
 
 De component gebruikt design tokens voor breedte en spacing. Voorbeeld:
 
 ```css
-.dictu-page-container {
+.dictu-container {
   --govnl-container-max-inline-width: 80rem;
   --govnl-container-padding-inline: 1rem;
   --govnl-container-max-width: 1280px;
@@ -111,8 +111,8 @@ export const Default = {
 
 De styling wordt verzorgd door de page-container CSS:
 
-- `.dictu-page-container` — basis container styling met maximale breedte,
-  centrering en padding
+- `.dictu-container` — basis container styling met maximale breedte, centrering
+  en padding
 
 ## Functies
 

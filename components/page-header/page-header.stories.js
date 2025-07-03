@@ -48,7 +48,7 @@ const createLogo = args => {
 
 const createContainer = () => {
   const container = document.createElement('div');
-  container.className = 'dictu-page-container';
+  container.className = 'dictu-container';
   container.appendChild(createLogo({ title: 'Dictu', subtitle: 'Ministerie van Economische Zaken' }));
   return container;
 };

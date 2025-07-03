@@ -38,7 +38,7 @@ export default {
   },
   render: ({ content, id, ariaLabel, title }) => {
     const section = document.createElement('section');
-    section.classList.add('dictu-page-section');
+    section.classList.add('dictu-section');
 
     if (title) {
       const titleElement = document.createElement('h2');

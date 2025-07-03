@@ -10,7 +10,7 @@ responsief en volledig toegankelijk.
 
 ```html
 <header class="dictu-page-header" lang="nl">
-  <div class="dictu-page-container">
+  <div class="dictu-container">
     <div class="dictu-logo">
       <div class="dictu-logo__image">
         <svg
@@ -36,7 +36,7 @@ responsief en volledig toegankelijk.
 ## CSS Klassen
 
 - `.dictu-page-header` — hoofdcontainer voor de hoofding
-- `.dictu-page-container` — interne container voor de inhoud
+- `.dictu-container` — interne container voor de inhoud
 - `.dictu-logo` — container voor het logo en bijbehorende tekst
 - `.dictu-logo__image` — container voor het SVG logo
 - `.dictu-logo__text` — container voor de titel en ondertitel

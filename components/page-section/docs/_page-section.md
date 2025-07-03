@@ -1,5 +1,4 @@
-Gebruik in CSS de `.dictu-page-section` class name voor de page-section
-component.
+Gebruik in CSS de `.dictu-section` class name voor de page-section component.
 
 ## Beschrijving
 
@@ -10,7 +9,7 @@ toegankelijkheidsrichtlijnen.
 ### Voorbeeldgebruik
 
 ```html
-<section class="dictu-page-section">
+<section class="dictu-section">
   <h2 class="dictu-heading dictu-heading--level-2">Sectie titel</h2>
   <p class="dictu-paragraph">
     Dit is de inhoud van de sectie met consistente styling en spacing.
@@ -20,7 +19,7 @@ toegankelijkheidsrichtlijnen.
 
 ## CSS Klassen
 
-- `.dictu-page-section` — hoofdcontainer voor de sectie
+- `.dictu-section` — hoofdcontainer voor de sectie
 
 ## Functies
 

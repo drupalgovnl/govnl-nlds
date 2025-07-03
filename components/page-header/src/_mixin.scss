@@ -12,9 +12,7 @@
   @include reset;
 
   background-color: var(--govnl-header-background-color, transparent);
-  max-inline-size: var (--govnl-header-container-max-inline-width, 100%);
   padding-block-end: var(--govnl-header-padding-block-end, 0);
-  padding-inline: var(--govnl-header-container-padding-inline, 1rem);
 
   .dictu-logo {
     margin-inline-start: calc(50% - 1.5rem);
