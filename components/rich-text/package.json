@@ -1,6 +1,6 @@
 {
   "name": "@dictu/rich-text",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Dienst ICT Uitvoering",
   "description": "Rich Text CSS component.",
   "license": "EUPL-1.2",
@@ -27,8 +27,8 @@
     "provenance": true
   },
   "devDependencies": {
-    "@dictu/heading": "^1.0.0",
-    "@dictu/link": "^1.0.0"
+    "@dictu/heading": "^1.0.1",
+    "@dictu/link": "^1.0.1"
   },
   "scripts": {
     "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",

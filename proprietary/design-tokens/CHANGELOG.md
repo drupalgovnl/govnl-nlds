@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 1.0.3
+
+### Patch Changes
+
+- 8455459: set selector to ".dictu-theme" for component tokens
+
 ## 1.0.2
 
 ### Patch Changes
