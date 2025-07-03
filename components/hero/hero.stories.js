@@ -1,6 +1,6 @@
 import readme from './README.md?raw';
 import './dist/index.css';
-import { default as ImageStory } from '../core/image/image.stories.js';
+import { default as ImageStory } from '../image/image.stories.js';
 
 const CORNER_POSITION_OPTIONS = ['top-left', 'top-right', 'bottom-left', 'bottom-right'];
 const CONTENT_POSITION_OPTIONS = ['left', 'right'];

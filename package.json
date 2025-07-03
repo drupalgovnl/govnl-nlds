@@ -22,7 +22,6 @@
   "workspaces": [
     "./proprietary/*",
     "./packages/utilities",
-    "./components/core/*",
     "./components/*",
     "./utilities/*",
     "./packages/storybook"
