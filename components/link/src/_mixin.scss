@@ -1,0 +1,17 @@
+@use "pkg:@nl-design-system-candidate/link-css/src/mixin" as mixin;
+
+@mixin dictu-link {
+  @include mixin.nl-link;
+}
+
+@mixin dictu-link--hover {
+  @include mixin.nl-link--hover;
+}
+
+@mixin dictu-link--active {
+  @include mixin.nl-link--active;
+}
+
+@mixin dictu-link--inline-box {
+  @include mixin.nl-link--inline-box;
+}

@@ -1,0 +1,9 @@
+@use "pkg:@nl-design-system-candidate/paragraph-css/src/mixin" as mixin;
+
+@mixin dictu-paragraph {
+  @include mixin.nl-paragraph;
+}
+
+@mixin dictu-paragraph--lead {
+  @include mixin.nl-paragraph--lead;
+}

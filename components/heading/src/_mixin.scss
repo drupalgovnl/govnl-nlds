@@ -1,0 +1,36 @@
+@use "pkg:@nl-design-system-candidate/heading-css/src/mixin" as nl-heading;
+
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin dictu-heading {
+  @include nl-heading.nl-heading;
+
+  max-inline-size: var(--govnl-heading-max-inline-size);
+}
+
+@mixin dictu-heading--level-1 {
+  @include nl-heading.nl-heading--level-1;
+}
+
+@mixin dictu-heading--level-2 {
+  @include nl-heading.nl-heading--level-2;
+}
+
+@mixin dictu-heading--level-3 {
+  @include nl-heading.nl-heading--level-3;
+}
+
+@mixin dictu-heading--level-4 {
+  @include nl-heading.nl-heading--level-4;
+}
+
+@mixin dictu-heading--level-5 {
+  @include nl-heading.nl-heading--level-5;
+}
+
+@mixin dictu-heading--level-6 {
+  @include nl-heading.nl-heading--level-6;
+}

@@ -1,6 +1,6 @@
+import { register } from '@tokens-studio/sd-transforms';
 import { globSync } from 'glob';
 import path from 'path';
-import { register } from '@tokens-studio/sd-transforms';
 import StyleDictionary from 'style-dictionary';
 
 // will register them on StyleDictionary object
