@@ -28,7 +28,8 @@
     "provenance": true
   },
   "scripts": {
-    "build": "",
+    "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
     "clean": "rimraf ./dist/"
   }
 }
