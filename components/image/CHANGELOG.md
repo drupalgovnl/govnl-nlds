@@ -1,5 +1,11 @@
 # @dictu/image
 
+## 1.0.3
+
+### Patch Changes
+
+- f3aa764: Card component, minor optimalisations in @use for other components
+
 ## 1.0.2
 
 ### Patch Changes
