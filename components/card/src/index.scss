@@ -29,3 +29,7 @@
 .dictu-card__link {
   @include mixin.dictu-card__heading;
 }
+
+.dictu-card__paragraph {
+  @include mixin.dictu-card__paragraph;
+}

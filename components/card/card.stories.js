@@ -1,15 +1,15 @@
 import readme from './README.md?raw';
 import '@dictu/utilities/dist/index.css';
-import '@dictu/design-tokens/dist/heading.css';
-import '@dictu/design-tokens/dist/link.css';
-import '@dictu/design-tokens/dist/paragraph.css';
+import '@dictu/heading/dist/index.css';
+import '@dictu/link/dist/index.css';
+import '@dictu/paragraph/dist/index.css';
 import './dist/index.css';
 
 export default {
   args: {
     image_src: '/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding',
-    headingLevel: 2,
+    headingLevel: 3,
     link: {
       href: '#',
       text: 'Lees meer',
@@ -29,7 +29,7 @@ export default {
     },
     headingLevel: {
       control: 'select',
-      options: ['1', '2', '3', '4', '5', '6'],
+      options: [1, 2, 3, 4, 5, 6],
       description: 'Het niveau van de heading',
     },
     link: {
@@ -111,7 +111,7 @@ export const Card = {
   args: {
     image_src: '/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding voor een kaart',
-    headingLevel: 2,
+    headingLevel: 3,
     link: {
       href: '#',
       text: 'De titel van de kaart',
@@ -126,7 +126,7 @@ export const AccentCard = {
   args: {
     image_src: '/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding voor een accent kaart',
-    headingLevel: 2,
+    headingLevel: 3,
     link: {
       href: '#',
       text: 'De titel van de accent kaart',
