@@ -1,4 +1,8 @@
 import readme from './README.md?raw';
+import '@dictu/utilities/dist/index.css';
+import '@dictu/design-tokens/dist/heading.css';
+import '@dictu/design-tokens/dist/link.css';
+import '@dictu/design-tokens/dist/paragraph.css';
 import './dist/index.css';
 
 export default {
@@ -55,7 +59,8 @@ export default {
   },
   render: ({ headingLevel, link, content, metadata, variant = 'default' }) => {
     const card = document.createElement('div');
-    card.classList.add('dictu-card', `dictu-card--${variant}`);
+    card.classList.add('dictu-card', `dictu-card--${variant}`, 'dictu-focus-ring');
+    card.setAttribute('tabindex', '0');
 
     const imageContainer = document.createElement('div');
     imageContainer.classList.add('dictu-card__image-container');

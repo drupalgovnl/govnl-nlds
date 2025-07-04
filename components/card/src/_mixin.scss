@@ -5,12 +5,10 @@
 
 @use "pkg:@nl-design-system-candidate/link-css/src/mixin" as nl-link;
 @use "pkg:@dictu/design-tokens/dist/card";
-@use "pkg:@dictu/design-tokens/dist/link";
-@use "pkg:@dictu/design-tokens/dist/heading";
-@use "pkg:@dictu/image/src/index";
 
 @mixin reset {
   margin: 0;
+  padding: 0;
 }
 
 @mixin dictu-card {
@@ -39,7 +37,16 @@
     background-color: var(--govnl-card-default-focus-background-color);
     border-color: var(--govnl-card-default-focus-border-color);
     color: var(--govnl-card-default-focus-color);
-    outline: none;
+
+    /* stylelint-disable-next-line selector-nested-pattern */
+    .dictu-card__heading {
+      /* stylelint-disable-next-line selector-nested-pattern */
+      .dictu-card__link {
+        color: var(--govnl-card-accent-focus-color, #000);
+        text-decoration-line: var(--govnl-card-accent-focus-color, #000);
+        text-decoration-thickness: var(--govnl-card-heading-hover-text-decoration-thickness);
+      }
+    }
   }
 }
 
@@ -47,6 +54,14 @@
   background-color: var(--govnl-card-accent-background-color);
   border-color: var(--govnl-card-accent-border-color);
   color: var(--govnl-card-accent-color);
+
+  .dictu-card__heading {
+    /* stylelint-disable-next-line selector-nested-pattern */
+    .dictu-card__link {
+      color: var(--govnl-card-accent-heading-color, #fff);
+      text-decoration-line: var(--govnl-card-accent-heading-color, #fff);
+    }
+  }
 
   &:hover {
     background-color: var(--govnl-card-accent-hover-background-color);
@@ -64,6 +79,16 @@
     background-color: var(--govnl-card-accent-focus-background-color);
     border-color: var(--govnl-card-accent-focus-border-color);
     color: var(--govnl-card-accent-focus-color);
+
+    /* stylelint-disable-next-line selector-nested-pattern */
+    .dictu-card__heading {
+      /* stylelint-disable-next-line selector-nested-pattern */
+      .dictu-card__link {
+        color: var(--govnl-card-accent-focus-color, #000);
+        text-decoration-line: var(--govnl-card-accent-focus-color, #000);
+        text-decoration-thickness: var(--govnl-card-heading-hover-text-decoration-thickness);
+      }
+    }
   }
 }
 
@@ -78,6 +103,8 @@
 }
 
 @mixin dictu-card__content {
+  @include reset;
+
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -93,6 +120,8 @@
 }
 
 @mixin dictu-card__metadata {
+  @include reset;
+
   display: flex;
   flex-direction: column;
   gap: var(--govnl-card-default-footer-row-gap);
@@ -103,6 +132,8 @@
 }
 
 @mixin dictu-card__heading {
+  @include reset;
+
   a {
     @include nl-link.nl-link;
   }
@@ -126,7 +157,7 @@
     text-decoration-thickness: var(--govnl-card-heading-focus-visible-text-decoration-thickness);
   }
 
-  &::after {
+  &::before {
     content: "";
     inset: 0;
     position: absolute;
