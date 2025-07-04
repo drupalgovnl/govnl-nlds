@@ -1,4 +1,5 @@
 @use "pkg:@nl-design-system-candidate/paragraph-css/src/mixin" as mixin;
+@use "pkg:@dictu/design-tokens/dist/paragraph.css" as design-tokens;
 
 @mixin dictu-paragraph {
   @include mixin.nl-paragraph;

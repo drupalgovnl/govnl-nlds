@@ -1,10 +1,5 @@
 import readme from './README.md?raw';
 import './dist/index.css';
-import '@dictu/design-tokens/dist/hero.css';
-import '@dictu/design-tokens/dist/figure.css';
-import '@dictu/design-tokens/dist/container.css';
-import '@dictu/design-tokens/dist/section.css';
-import '@dictu/design-tokens/dist/paragraph.css';
 import { default as ImageStory } from '../image/image.stories.js';
 
 const CORNER_POSITION_OPTIONS = ['top-left', 'top-right', 'bottom-left', 'bottom-right'];

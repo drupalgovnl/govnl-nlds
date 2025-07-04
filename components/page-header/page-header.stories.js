@@ -1,7 +1,5 @@
 import readme from './README.md?raw';
 import './dist/index.css';
-import '@dictu/design-tokens/dist/page-header.css';
-import '@dictu/design-tokens/dist/logo.css';
 
 export default {
   args: {},

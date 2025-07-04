@@ -1,11 +1,9 @@
 import readme from './README.md?raw';
-import '@dictu/design-tokens/dist/page-footer.css';
-import '@dictu/design-tokens/dist/paragraph.css';
-import '@dictu/design-tokens/dist/link-list.css';
-import '@dictu/design-tokens/dist/link.css';
-import '@dictu/design-tokens/dist/icon.css';
-import '@dictu/design-tokens/dist/heading.css';
 import './dist/index.css';
+import '@dictu/paragraph/dist/index.css';
+import '@dictu/link-list/dist/index.css';
+import '@dictu/link/dist/index.css';
+import '@dictu/heading/dist/index.css';
 
 export default {
   argTypes: {

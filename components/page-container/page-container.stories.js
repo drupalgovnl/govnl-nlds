@@ -1,7 +1,6 @@
 import defaultDocs from './docs/_page-container.md?raw';
 import readme from './README.md?raw';
 import './dist/index.css';
-import '@dictu/design-tokens/dist/container.css';
 
 export default {
   args: {

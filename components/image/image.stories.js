@@ -1,5 +1,4 @@
 import readme from './README.md?raw';
-import '@dictu/design-tokens/dist/figure.css';
 import './dist/index.css';
 
 // Aspect ratio options (define this constant if not imported)

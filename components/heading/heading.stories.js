@@ -5,7 +5,6 @@ import level3Docs from './docs/_level3.md?raw';
 import level4Docs from './docs/_level4.md?raw';
 import level5Docs from './docs/_level5.md?raw';
 import level6Docs from './docs/_level6.md?raw';
-import '@dictu/design-tokens/dist/heading.css';
 import './dist/index.css';
 
 export default {
