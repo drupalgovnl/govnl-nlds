@@ -9,7 +9,7 @@ export default {
   args: {
     image_src: '/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding',
-    headingLevel: 3,
+    headingLevel: 2,
     link: {
       href: '#',
       text: 'Lees meer',
@@ -29,7 +29,7 @@ export default {
     },
     headingLevel: {
       control: 'select',
-      options: [1, 2, 3, 4, 5, 6],
+      options: [2, 3, 4, 5, 6],
       description: 'Het niveau van de heading',
     },
     link: {
@@ -97,9 +97,10 @@ export default {
     metadataElement.classList.add('dictu-card__metadata');
     metadataElement.innerText = metadata;
 
+    contentElement.appendChild(metadataElement);
+
     card.appendChild(imageContainer);
     card.appendChild(contentElement);
-    card.appendChild(metadataElement);
 
     return card;
   },
@@ -111,7 +112,7 @@ export const Card = {
   args: {
     image_src: '/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding voor een kaart',
-    headingLevel: 3,
+    headingLevel: 2,
     link: {
       href: '#',
       text: 'De titel van de kaart',
@@ -126,7 +127,7 @@ export const AccentCard = {
   args: {
     image_src: '/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding voor een accent kaart',
-    headingLevel: 3,
+    headingLevel: 2,
     link: {
       href: '#',
       text: 'De titel van de accent kaart',

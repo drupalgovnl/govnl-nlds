@@ -24,7 +24,7 @@ module.exports = {
     ],
 
     // Custom property patterns for your design tokens
-    'custom-property-pattern': '^govnl-[a-z][a-zA-Z0-9-]*$',
+    'custom-property-pattern': '^(govnl|nl)-[a-z][a-zA-Z0-9-]*$',
 
     // Selector patterns for your BEM methodology - allow nested pseudo-classes
     'selector-class-pattern': [
