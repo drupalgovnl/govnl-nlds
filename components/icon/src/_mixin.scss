@@ -1,4 +1,4 @@
-@use "pkg:@dictu/design-tokens/dist/icon.css" as design-tokens;
+@use "pkg:@dictu/design-tokens/dist/icon" as design-tokens;
 
 @mixin dictu-icon {
   block-size: var(--govnl-icon-size);
