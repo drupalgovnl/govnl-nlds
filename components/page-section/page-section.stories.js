@@ -1,7 +1,6 @@
 import defaultDocs from './docs/_page-section.md?raw';
 import readme from './README.md?raw';
 import './dist/index.css';
-import '@dictu/design-tokens/dist/section.css';
 
 export default {
   args: {

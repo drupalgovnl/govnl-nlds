@@ -1,3 +1,6 @@
+@use "pkg:@dictu/design-tokens/dist/button.css" as design-tokens;
+@use "pkg:@dictu/utilities/dist/index.css" as utilities;
+
 @mixin dictu-button {
   align-items: center;
   block-size: fit-content;
