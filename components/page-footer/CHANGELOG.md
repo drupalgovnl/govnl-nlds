@@ -1,5 +1,11 @@
 # @dictu/page-footer
 
+## 1.0.3
+
+### Patch Changes
+
+- d94fadf: Minor optimalisations.
+
 ## 1.0.2
 
 ### Patch Changes

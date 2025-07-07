@@ -1,5 +1,11 @@
 # @dictu/navigation-bar
 
+## 1.0.4
+
+### Patch Changes
+
+- d94fadf: Minor optimalisations.
+
 ## 1.0.3
 
 ### Patch Changes
