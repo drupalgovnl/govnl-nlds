@@ -128,7 +128,7 @@ const createColumn = (column, headingLevel) => {
 };
 
 // Reusable data for stories
-const defaultFooterData = {
+export const DefaultFooterData = {
   heading: 'Footer kop',
   text: 'Dit is een voettekst die extra informatie biedt.',
   headingLevel: 2,
@@ -272,7 +272,7 @@ export const PageFooter = {
     pageFooter.appendChild(container);
     return pageFooter;
   },
-  args: defaultFooterData,
+  args: DefaultFooterData,
 };
 
 // Minimal variant with no columns
