@@ -1,4 +1,4 @@
-import t from"./image.stories-BCznW9dJ.js";const l=`# Figure component
+/* empty css              */import t from"./image.stories-B9egdvZX.js";/* empty css              */const l=`# Figure component
 
 De figure component is een semantische container met bijschrift.
 
@@ -108,7 +108,7 @@ De component gebruikt de volgende CSS custom properties:
 ## Licentie
 
 EUPL-1.2
-`,u={args:{src:"/example-image.jpg",caption:"Dit is een voorbeeld van een bijschrift",alt:"Dit is een voorbeeld afbeelding",loading:"lazy",decorative:!1,width:"100%",height:"100%"},argTypes:{caption:{control:"text",description:"De bijschrift van de afbeelding"},...t.argTypes},parameters:{docs:{description:{component:l}}},render:({caption:s,...d})=>{const e=document.createElement("figure");e.classList.add("dictu-figure");const c=t.render(d),i=document.createElement("figcaption");return i.classList.add("dictu-figure__caption"),i.innerText=s,e.appendChild(c),e.appendChild(i),e},tags:["autodocs"],title:"Componenten/Figure"},n={args:{src:"/example-image.jpg",caption:"Dit is een voorbeeld van een bijschrift",alt:"Dit is een voorbeeld afbeelding",width:"640",height:"640",aspectRatio:"square"}};var o,r,a;n.parameters={...n.parameters,docs:{...(o=n.parameters)==null?void 0:o.docs,source:{originalSource:`{
+`,f={args:{src:"/example-image.jpg",caption:"Dit is een voorbeeld van een bijschrift",alt:"Dit is een voorbeeld afbeelding",loading:"lazy",decorative:!1,width:"100%",height:"100%"},argTypes:{caption:{control:"text",description:"De bijschrift van de afbeelding"},...t.argTypes},parameters:{docs:{description:{component:l}}},render:({caption:s,...d})=>{const e=document.createElement("figure");e.classList.add("dictu-figure");const c=t.render(d),i=document.createElement("figcaption");return i.classList.add("dictu-figure__caption"),i.innerText=s,e.appendChild(c),e.appendChild(i),e},tags:["autodocs"],title:"Componenten/Figure"},n={args:{src:"/example-image.jpg",caption:"Dit is een voorbeeld van een bijschrift",alt:"Dit is een voorbeeld afbeelding",width:"640",height:"640",aspectRatio:"square"}};var o,r,a;n.parameters={...n.parameters,docs:{...(o=n.parameters)==null?void 0:o.docs,source:{originalSource:`{
   args: {
     src: '/example-image.jpg',
     caption: 'Dit is een voorbeeld van een bijschrift',
@@ -117,4 +117,4 @@ EUPL-1.2
     height: '640',
     aspectRatio: 'square'
   }
-}`,...(a=(r=n.parameters)==null?void 0:r.docs)==null?void 0:a.source}}};const p=["Figure"];export{n as Figure,p as __namedExportsOrder,u as default};
+}`,...(a=(r=n.parameters)==null?void 0:r.docs)==null?void 0:a.source}}};const m=["Figure"];export{n as Figure,m as __namedExportsOrder,f as default};

@@ -1,4 +1,4 @@
-const l=`Gebruik in CSS de \`.dictu-page-container\` class name voor de page-container
+/* empty css              */const l=`Gebruik in CSS de \`.dictu-page-container\` class name voor de page-container
 component.
 
 ## Beschrijving
@@ -188,7 +188,7 @@ De styling wordt verzorgd door de page-container CSS:
 ## Licentie
 
 EUPL-1.2
-`,m={args:{content:`
+`,u={args:{content:`
       <p>Dit is een page-container component die gestructureerde content gebieden biedt met consistente spacing en styling. De component is toegankelijk en gebruikt semantische HTML.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non malesuada magna. Etiam lobortis, mauris ut euismod mattis, eros erat blandit nibh, ut finibus libero orci et elit.</p>
     `,id:"page-container-1"},argTypes:{content:{control:"text",description:"De HTML inhoud van de page-container"},id:{control:"text",description:"Container ID voor navigatie en toegankelijkheid"}},parameters:{docs:{description:{component:g}}},render:({content:n,id:s})=>{const e=document.createElement("div");if(e.classList.add("dictu-container"),e.setAttribute("id",s),n){if(typeof n=="string"){const c=new DOMParser().parseFromString(n,"text/html"),t=document.createDocumentFragment();Array.from(c.body.childNodes).forEach(d=>{t.appendChild(d.cloneNode(!0))}),e.appendChild(t)}n instanceof HTMLElement&&e.appendChild(n)}return e},tags:["autodocs"],title:"Componenten/Page Container"},i={args:{},parameters:{docs:{description:{story:l}}}};var a,o,r;i.parameters={...i.parameters,docs:{...(a=i.parameters)==null?void 0:a.docs,source:{originalSource:`{
@@ -200,4 +200,4 @@ EUPL-1.2
       }
     }
   }
-}`,...(r=(o=i.parameters)==null?void 0:o.docs)==null?void 0:r.source}}};const u=["Default"];export{i as Default,u as __namedExportsOrder,m as default};
+}`,...(r=(o=i.parameters)==null?void 0:o.docs)==null?void 0:r.source}}};const h=["Default"];export{i as Default,h as __namedExportsOrder,u as default};

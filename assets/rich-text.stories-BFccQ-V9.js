@@ -1,4 +1,4 @@
-const l=`<!-- @license CC0-1.0 -->
+/* empty css              */const l=`<!-- @license CC0-1.0 -->
 
 Gebruik in CSS de \`.dictu-rich-text\` class name.
 `,p=`<!-- @license CC0-1.0 -->
@@ -47,7 +47,7 @@ componenten ook hebt ingeladen als je dit component gebruikt.
 ## Links
 
 - [Rich Text Content](https://www.nldesignsystem.nl/rich-text-content/)
-`,m={args:{content:`
+`,u={args:{content:`
       <p>Paragraaf met een <a href="#">link</a>.</p>
       <h1>Heading 1</h1>
       <h2>Heading 2</h2>
@@ -64,4 +64,4 @@ componenten ook hebt ingeladen als je dit component gebruikt.
       }
     }
   }
-}`,...(i=(a=t.parameters)==null?void 0:a.docs)==null?void 0:i.source}}};const u=["Default"];export{t as Default,u as __namedExportsOrder,m as default};
+}`,...(i=(a=t.parameters)==null?void 0:a.docs)==null?void 0:i.source}}};const g=["Default"];export{t as Default,g as __namedExportsOrder,u as default};

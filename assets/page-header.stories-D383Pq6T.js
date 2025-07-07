@@ -1,4 +1,4 @@
-const d=`<!-- @license CC0-1.0 -->
+/* empty css              */const d=`<!-- @license CC0-1.0 -->
 
 De page-header component toont de hoofding van het Dictu Design Systeem.
 
@@ -153,7 +153,7 @@ Plus alle gerelateerde klassen van logo en page-container components.
 ## Licentie
 
 EUPL-1.2
-`,g={args:{},argTypes:{},parameters:{docs:{description:{component:d}}},tags:["autodocs"],title:"Componenten/Page Header"},s=c=>{const e=document.createElement("div"),{title:i,subtitle:r}=c||"";return e.classList.add("dictu-logo"),e.innerHTML=`
+`,h={args:{},argTypes:{},parameters:{docs:{description:{component:d}}},tags:["autodocs"],title:"Componenten/Page Header"},s=c=>{const e=document.createElement("div"),{title:i,subtitle:r}=c||"";return e.classList.add("dictu-logo"),e.innerHTML=`
     <div class="dictu-logo__image">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 44 88" role="img">
         <title>Logo Rijksoverheid</title>
@@ -180,4 +180,4 @@ EUPL-1.2
     header.appendChild(container);
     return header;
   }
-}`,...(a=(o=n.parameters)==null?void 0:o.docs)==null?void 0:a.source}}};const h=["PageHeader"];export{n as PageHeader,h as __namedExportsOrder,g as default};
+}`,...(a=(o=n.parameters)==null?void 0:o.docs)==null?void 0:a.source}}};const p=["PageHeader"];export{n as PageHeader,p as __namedExportsOrder,h as default};
