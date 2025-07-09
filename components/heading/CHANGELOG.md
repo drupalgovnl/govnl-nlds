@@ -1,5 +1,11 @@
 # @dictu/heading
 
+## 1.0.4
+
+### Patch Changes
+
+- b84fde6: Add "margin-inline: auto" to heading and paragraph component
+
 ## 1.0.3
 
 ### Patch Changes
