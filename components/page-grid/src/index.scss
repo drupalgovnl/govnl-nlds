@@ -1,0 +1,19 @@
+@use "./mixin" as mixin;
+@use "sass:map" as map;
+
+$grid-columns: (
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+);
+
+@each $name, $value in $grid-columns {
+  .dictu-grid--columns-#{$name} {
+    @include mixin.grid-columns($value);
+  }
+}
+
+.dictu-grid {
+  @include mixin.dictu-grid;
+}

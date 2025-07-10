@@ -73,7 +73,7 @@ export default {
     imageContainer.appendChild(imageElement);
 
     const headingElement = document.createElement(`h${headingLevel}`);
-    headingElement.classList.add('dictu-heading', 'dictu-card__heading');
+    headingElement.classList.add('dictu-card__heading');
 
     const linkElement = document.createElement('a');
     linkElement.classList.add('dictu-link', 'dictu-card__link');
@@ -88,7 +88,7 @@ export default {
     contentElement.appendChild(headingElement);
 
     const paragraphElement = document.createElement('p');
-    paragraphElement.classList.add('dictu-paragraph', 'dictu-card__paragraph');
+    paragraphElement.classList.add('dictu-card__paragraph');
     paragraphElement.innerText = content;
 
     contentElement.appendChild(paragraphElement);
