@@ -1,4 +1,4 @@
-import defaultDocs from './docs/_page-grid.md?raw';
+import defaultDocs from './docs/_grid.md?raw';
 import readme from './README.md?raw';
 import './dist/index.css';
 import '@dictu/utilities/dist/index.css';
