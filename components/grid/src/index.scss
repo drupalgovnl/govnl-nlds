@@ -15,8 +15,10 @@ $grid-columns: (
 );
 
 @each $name, $value in $grid-columns {
-  .dictu-grid--columns-#{$name} {
-    @include mixin.grid-columns($value);
+  .dictu-grid {
+    &.dictu-grid--columns-#{$name} {
+      @include mixin.grid-columns($value);
+    }
   }
 }
 
@@ -24,6 +26,6 @@ $grid-columns: (
   @include mixin.dictu-grid;
 }
 
-.dictu-grid-autoflow {
+.dictu-grid--autoflow {
   @include mixin.dictu-grid-autoflow;
 }

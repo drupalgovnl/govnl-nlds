@@ -1,18 +1,18 @@
-# WithCards component
+# WithCards variant
 
-De `WithCards` variant van de page-grid component toont kaart componenten in een
+De `WithCards` variant van de grid component toont kaart componenten in een
 drie-kolommen grid layout. Deze variant demonstreert hoe verschillende card
 varianten (standaard en accent) samen kunnen worden gebruikt in een
-gestructureerd grid.
+gestructureerd grid met volledige kaart content inclusief afbeeldingen.
 
 ## Gebruik
 
-Gebruik deze variant wanneer u kaart componenten wilt weergeven in een
+Gebruik deze variant wanneer u rijke kaart componenten wilt weergeven in een
 overzichtelijk grid. Perfect voor nieuwsartikelen, productoverzichten, of andere
-content die gestructureerd gepresenteerd moet worden.
+content die visueel aantrekkelijk gepresenteerd moet worden.
 
 ```html
-<div class="dictu-grid dictu-grid--columns-3" id="page-grid-cards">
+<div class="dictu-grid dictu-grid--columns-3">
   <article class="dictu-card dictu-focus-ring" tabindex="0">
     <div class="dictu-card__image-container">
       <img
@@ -22,11 +22,12 @@ content die gestructureerd gepresenteerd moet worden.
       />
     </div>
     <div class="dictu-card__content">
-      <h2 class="dictu-heading dictu-card__heading">
+      <h2 class="dictu-card__heading">
         <a href="#" class="dictu-link dictu-card__link">Eerste Kaart</a>
       </h2>
-      <p class="dictu-paragraph dictu-card__paragraph">
-        Dit is de inhoud van de eerste kaart in het grid.
+      <p class="dictu-card__paragraph">
+        Dit is de inhoud van de eerste kaart in het grid. Een korte beschrijving
+        die de gebruiker interesseert.
       </p>
     </div>
     <small class="dictu-card__metadata">Gepubliceerd op 8 juli 2025</small>
@@ -41,13 +42,14 @@ content die gestructureerd gepresenteerd moet worden.
       />
     </div>
     <div class="dictu-card__content">
-      <h2 class="dictu-heading dictu-card__heading">
+      <h2 class="dictu-card__heading">
         <a href="#" class="dictu-link dictu-card__link"
           >Tweede Kaart (Accent)</a
         >
       </h2>
-      <p class="dictu-paragraph dictu-card__paragraph">
-        Dit is de inhoud van de tweede kaart in accent stijl.
+      <p class="dictu-card__paragraph">
+        Dit is de inhoud van de tweede kaart in accent stijl. Deze kaart valt
+        meer op door de accent styling.
       </p>
     </div>
     <small class="dictu-card__metadata">Gepubliceerd op 9 juli 2025</small>
@@ -62,11 +64,12 @@ content die gestructureerd gepresenteerd moet worden.
       />
     </div>
     <div class="dictu-card__content">
-      <h2 class="dictu-heading dictu-card__heading">
+      <h2 class="dictu-card__heading">
         <a href="#" class="dictu-link dictu-card__link">Derde Kaart</a>
       </h2>
-      <p class="dictu-paragraph dictu-card__paragraph">
-        Dit is de inhoud van de derde kaart in het grid.
+      <p class="dictu-card__paragraph">
+        Dit is de inhoud van de derde kaart in het grid. Een mooie afsluiting
+        van de drie kaarten.
       </p>
     </div>
     <small class="dictu-card__metadata">Gepubliceerd op 10 juli 2025</small>
@@ -78,9 +81,10 @@ content die gestructureerd gepresenteerd moet worden.
 
 - **Drie kolommen layout**: Optimaal voor content overzichten
 - **Mixed card varianten**: Combinatie van standaard en accent kaarten
-- **Volledige kaart content**: Afbeelding, titel, tekst en metadata
-- **Interactieve elementen**: Focus states en klikbare kaarten
-- **Semantische HTML**: Gebruik van `<article>` elementen
+- **Volledige kaart content**: Afbeelding, titel, beschrijvende tekst en
+  metadata
+- **Interactieve elementen**: Focus states en klikbare kaarten met tabindex
+- **Semantische HTML**: Gebruik van `<article>` elementen voor elke kaart
 
 ## Card Varianten
 

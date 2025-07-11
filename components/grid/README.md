@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-De page-grid component biedt een flexibel en responsief grid systeem voor het
+De grid component biedt een flexibel en responsief grid systeem voor het
 organiseren van content in kolommen van het Dictu Design Systeem.
 
 ## Gebruik deze component
@@ -8,19 +8,19 @@ organiseren van content in kolommen van het Dictu Design Systeem.
 Je kunt de CSS zo in je project installeren:
 
 ```console
-npm install --save-dev @dictu/page-grid
+npm install --save-dev @dictu/grid
 ```
 
 Je kunt de CSS uit `node_modules/` importeren:
 
 ```html
-<link rel="stylesheet" href="node_modules/@dictu/page-grid/dist/index.css" />
+<link rel="stylesheet" href="node_modules/@dictu/grid/dist/index.css" />
 ```
 
 Als je CSS imports gebruikt vanuit JavaScript:
 
 ```javascript
-import "@dictu/page-grid/dist/index.css";
+import "@dictu/grid/dist/index.css";
 ```
 
 ## Richtlijnen
@@ -48,7 +48,7 @@ import "@dictu/page-grid/dist/index.css";
         Een korte beschrijving van het eerste artikel in het grid.
       </p>
     </div>
-    <small class="dictu-card__metadata">Gepubliceerd op 10 juli 2025</small>
+    <small class="dictu-card__metadata">Gepubliceerd op 11 juli 2025</small>
   </article>
 
   <article class="dictu-card dictu-card--accent">
@@ -62,7 +62,7 @@ import "@dictu/page-grid/dist/index.css";
         Een highlighted artikel met accent styling voor extra aandacht.
       </p>
     </div>
-    <small class="dictu-card__metadata">Gepubliceerd op 9 juli 2025</small>
+    <small class="dictu-card__metadata">Gepubliceerd op 10 juli 2025</small>
   </article>
 
   <article class="dictu-card">
@@ -76,7 +76,7 @@ import "@dictu/page-grid/dist/index.css";
         Het derde artikel completeert de eerste rij van het grid.
       </p>
     </div>
-    <small class="dictu-card__metadata">Gepubliceerd op 8 juli 2025</small>
+    <small class="dictu-card__metadata">Gepubliceerd op 9 juli 2025</small>
   </article>
 </div>
 ```
@@ -88,6 +88,7 @@ import "@dictu/page-grid/dist/index.css";
 - `.dictu-grid--columns-2` — twee kolommen layout
 - `.dictu-grid--columns-3` — drie kolommen layout (standaard)
 - `.dictu-grid--columns-4` — vier kolommen layout
+- `.dictu-grid--autoflow` — automatische plaatsing van items in kolommen
 
 ## Design Tokens / CSS-variabelen
 

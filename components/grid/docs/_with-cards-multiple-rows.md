@@ -1,18 +1,19 @@
-# WithCardsOnMultipleRows component
+# WithCardsOnMultipleRows variant
 
-De `WithCardsOnMultipleRows` variant van de page-grid component toont zes kaart
+De `WithCardsOnMultipleRows` variant van de grid component toont zes kaart
 componenten in een drie-kolommen grid dat zich uitstrekt over meerdere rijen.
 Deze variant demonstreert hoe het grid systeem grote hoeveelheden content kan
-organiseren.
+organiseren met vereenvoudigde kaarten zonder afbeeldingen.
 
 ## Gebruik
 
 Gebruik deze variant wanneer u veel kaart componenten hebt die georganiseerd
 moeten worden in een consistent grid. Perfect voor uitgebreide content
-overzichten, productcatalogi, of nieuwssecties.
+overzichten, productcatalogi, of nieuwssecties waar de focus ligt op tekstuele
+content.
 
 ```html
-<div class="dictu-grid dictu-grid--columns-3" id="page-grid-multiple-cards">
+<div class="dictu-grid dictu-grid--columns-3">
   <article class="dictu-card dictu-focus-ring" tabindex="0">
     <div class="dictu-card__content">
       <h2 class="dictu-card__heading">
@@ -35,7 +36,7 @@ overzichten, productcatalogi, of nieuwssecties.
     </div>
   </article>
 
-  <!-- Meer kaarten... -->
+  <!-- Vier meer kaarten... -->
 
   <article class="dictu-card dictu-card--accent dictu-focus-ring" tabindex="0">
     <div class="dictu-card__content">
@@ -54,7 +55,8 @@ overzichten, productcatalogi, of nieuwssecties.
 
 - **Meerdere rijen**: Grid strekt zich automatisch uit over benodigde rijen
 - **Zes kaart componenten**: Demonstratie van veel content in georganiseerd grid
-- **Minimale kaart variant**: Kaarten zonder afbeeldingen voor snellere loading
+- **Vereenvoudigde kaarten**: Kaarten zonder afbeeldingen voor snellere loading
+  en focus op tekstuele content
 - **Accent kaart highlight**: Laatste kaart gebruikt accent styling voor nadruk
 - **Consistente spacing**: Gelijke spacing tussen alle grid items
 
@@ -67,7 +69,7 @@ Het grid gedraagt zich als volgt:
 - **Gelijke hoogtes**: Alle kaarten in een rij hebben dezelfde hoogte
 - **Responsive aanpassing**: Past zich aan op kleinere schermen
 
-## Minimale Kaart Variant
+## Vereenvoudigde Kaart Variant
 
 Deze variant gebruikt vereenvoudigde kaarten zonder afbeeldingen:
 

@@ -30,7 +30,7 @@
 }
 
 @mixin dictu-grid-autoflow {
-  grid-auto-columns: var(--govnl-grid-cols, auto-fit);
+  grid-auto-columns: var(--govnl-grid-cols);
   grid-auto-flow: column;
   grid-template-columns: none;
 }

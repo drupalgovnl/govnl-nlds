@@ -1,35 +1,24 @@
-Gebruik in CSS de `.dictu-grid` class name voor de page-grid component.
+Gebruik in CSS de `.dictu-grid` class name voor de grid component.
 
 ## Beschrijving
 
-De page-grid component toont een responsief grid systeem dat content kan
-weergeven in 1 tot 4 kolommen. Het grid past zich automatisch aan verschillende
-schermgroottes aan en biedt een consistente spacing tussen grid items.
+De grid component toont een responsief grid systeem dat content kan weergeven in
+1 tot 4 kolommen. Het grid past zich automatisch aan verschillende
+schermgroottes aan en biedt een consistente spacing tussen grid items. De
+component ondersteunt ook autoflow functionaliteit voor automatische plaatsing
+van items.
 
-### Voorbeeldgebruik
+### Standaard Gebruik
+
+De standaard variant toont een eenvoudig drie-kolommen grid met placeholder
+content. Deze variant demonstreert de basis functionaliteit van het grid
+systeem.
 
 ```html
-<div class="dictu-grid dictu-grid--columns-3" id="page-grid-example">
-  <article class="dictu-card">
-    <div class="dictu-card__content">
-      <h2 class="dictu-heading">Eerste Item</h2>
-      <p class="dictu-paragraph">Inhoud van het eerste grid item.</p>
-    </div>
-  </article>
-
-  <article class="dictu-card">
-    <div class="dictu-card__content">
-      <h2 class="dictu-heading">Tweede Item</h2>
-      <p class="dictu-paragraph">Inhoud van het tweede grid item.</p>
-    </div>
-  </article>
-
-  <article class="dictu-card">
-    <div class="dictu-card__content">
-      <h2 class="dictu-heading">Derde Item</h2>
-      <p class="dictu-paragraph">Inhoud van het derde grid item.</p>
-    </div>
-  </article>
+<div class="dictu-grid dictu-grid--columns-3" id="page-grid-1">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
 </div>
 ```
 
@@ -40,12 +29,14 @@ schermgroottes aan en biedt een consistente spacing tussen grid items.
 - `.dictu-grid--columns-2` — twee kolommen layout
 - `.dictu-grid--columns-3` — drie kolommen layout (standaard)
 - `.dictu-grid--columns-4` — vier kolommen layout
+- `.dictu-grid--autoflow` — automatische plaatsing van items in kolommen
 
 ## Functies
 
 - **Responsief ontwerp**: Automatische aanpassing aan verschillende
   schermgroottes
 - **Flexibele kolommen**: Ondersteuning voor 1 tot 4 kolommen
+- **Autoflow ondersteuning**: Automatische plaatsing van items wanneer enabled
 - **Consistente spacing**: Gestandaardiseerde spacing tussen grid items
 - **Semantische HTML**: Gebruik van semantische elementen binnen grid items
 - **Toegankelijkheid**: Volledig toegankelijk voor screenreaders
@@ -59,10 +50,22 @@ Het grid past zich automatisch aan op kleinere schermen:
 
 ## Gebruik Cases
 
+- **Basis content grid**: Voor eenvoudige content organisatie
 - **Kaarten grid**: Voor het weergeven van meerdere kaart componenten
-- **Afbeeldingen galerij**: Voor het tonen van afbeeldingen in een grid
+- **Afbeeldingen galerij**: Voor het tonen van afbeeldingen in een grid layout
 - **Content blokken**: Voor gestructureerde content weergave
 - **Product overzichten**: Voor e-commerce toepassingen
+
+## Parameters
+
+De grid component accepteert de volgende parameters:
+
+- **`autoflow`** (boolean): Geeft aan of het grid automatische plaatsing moet
+  gebruiken. Als dit waar is, worden items in de volgende beschikbare ruimte
+  geplaatst.
+- **`content`** (string|HTMLElement): De HTML inhoud van het grid
+- **`columns`** (1|2|3|4): Aantal kolommen in het grid. Standaard is 3.
+- **`id`** (string): ID voor navigatie en toegankelijkheid
 
 ## Toegankelijkheid
 

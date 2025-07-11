@@ -1,8 +1,8 @@
-# WithImages component
+# WithImages variant
 
-De `WithImages` variant van de page-grid component toont afbeeldingen in een
-twee-kolommen grid layout. Deze variant is geoptimaliseerd voor het weergeven
-van visuele content met consistente spacing en aspect ratio's.
+De `WithImages` variant van de grid component toont afbeeldingen in een
+twee-kolommen grid layout. Deze variant demonstreert hoe het grid systeem
+gebruikt kan worden voor visuele content met verschillende aspect ratio's.
 
 ## Gebruik
 
@@ -27,15 +27,16 @@ responsief.
     alt="Tweede voorbeeld afbeelding in landscape formaat"
     loading="lazy"
     width="640"
-    height="360"
+    height="640"
   />
 </div>
 ```
 
 ## Kenmerken
 
-- **Twee kolommen layout**: Optimaal voor afbeeldingen vergelijking
-- **Aspect ratio behoud**: Consistente beeldverhoudingen
+- **Twee kolommen layout**: Optimaal voor afbeeldingen vergelijking en weergave
+- **Mixed aspect ratios**: Demonstratie van verschillende beeldverhoudingen in
+  hetzelfde grid
 - **Lazy loading**: Prestatie-optimalisatie met `loading="lazy"`
 - **Toegankelijke alt-tekst**: Betekenisvolle beschrijvingen voor screenreaders
 - **Responsive afbeeldingen**: Automatische aanpassing aan schermgrootte

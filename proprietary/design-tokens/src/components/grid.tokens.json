@@ -5,7 +5,7 @@
         "columns": {
           "width": {
             "$type": "dimension",
-            "$value": "{govnl.dimension.size.300}"
+            "$value": "{govnl.dimension.size.2000}"
           },
           "col-1": {
             "$type": "dimension",
