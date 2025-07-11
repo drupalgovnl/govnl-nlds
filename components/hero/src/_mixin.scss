@@ -1,13 +1,11 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
 @use "pkg:@dictu/image/src/mixin" as image;
-@use "pkg:@dictu/image/src/index" as dictu-image;
 @use "pkg:@dictu/page-container/src/mixin" as container;
 @use "pkg:@dictu/page-section/src/mixin" as section;
-@use "pkg:@dictu/utility-aspect-ratio/src/index" as aspect-ratio;
-@use "pkg:@dictu/design-tokens/dist/paragraph" as dictu-paragraph-tokens;
-@use "pkg:@dictu/design-tokens/dist/hero" as dictu-hero-tokens;
-@use "pkg:@dictu/design-tokens/dist/figure" as dictu-figure-tokens;
-@use "pkg:@dictu/design-tokens/dist/container" as container-tokens;
-@use "pkg:@dictu/design-tokens/dist/section" as section-tokens;
 
 @mixin dictu-hero {
   @include section.dictu-section;

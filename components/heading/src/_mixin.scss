@@ -1,10 +1,9 @@
-@use "pkg:@dictu/design-tokens/dist/heading" as design-tokens;
-@use "pkg:@nl-design-system-candidate/heading-css/src/mixin" as nl-heading;
-
 /**
  * @license EUPL-1.2
  * Copyright (c) 2021-2025 dictu
  */
+
+@use "pkg:@nl-design-system-candidate/heading-css/src/mixin" as nl-heading;
 
 @mixin dictu-heading {
   @include nl-heading.nl-heading;
