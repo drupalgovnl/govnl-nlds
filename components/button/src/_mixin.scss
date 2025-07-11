@@ -1,5 +1,7 @@
-@use "pkg:@dictu/design-tokens/dist/button" as design-tokens;
-@use "pkg:@dictu/utilities/dist/index" as utilities;
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
 
 @mixin dictu-button {
   align-items: center;

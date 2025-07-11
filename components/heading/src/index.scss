@@ -1,4 +1,10 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
 @use "mixin" as mixin;
+@use "pkg:@dictu/design-tokens/dist/heading" as design-tokens;
 
 .dictu-heading {
   @include mixin.dictu-heading;

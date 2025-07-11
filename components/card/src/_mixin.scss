@@ -3,9 +3,6 @@
  * Copyright (c) 2021-2025 dictu
  */
 
-@use "pkg:@nl-design-system-candidate/link-css/src/mixin" as nl-link;
-@use "pkg:@dictu/design-tokens/dist/card";
-
 @mixin reset {
   margin: 0;
   margin-inline: 0;

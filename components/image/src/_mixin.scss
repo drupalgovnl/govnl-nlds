@@ -3,9 +3,6 @@
  * Copyright (c) 2021-2025 dictu
  */
 
-@use "pkg:@dictu/design-tokens/dist/figure" as design-tokens;
-@use "pkg:@dictu/utility-aspect-ratio/src/index" as aspect-ratio;
-
 @mixin dictu-image {
   block-size: auto;
   inline-size: auto;

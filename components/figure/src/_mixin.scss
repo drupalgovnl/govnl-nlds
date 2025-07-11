@@ -3,9 +3,6 @@
  * Copyright (c) 2021-2025 dictu
  */
 
-@use "pkg:@dictu/design-tokens/dist/figure" as design-tokens;
-@use "pkg:@dictu/image/src/index" as dictu-image;
-
 @mixin reset {
   margin: 0;
 }
