@@ -1,5 +1,5 @@
 ---
-"@dictu/page-grid": patch
+"@dictu/grid": patch
 "@dictu/card": patch
 "@dictu/hero": patch
 ---
