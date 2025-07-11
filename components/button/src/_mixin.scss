@@ -1,5 +1,5 @@
-@use "pkg:@dictu/design-tokens/dist/button.css" as design-tokens;
-@use "pkg:@dictu/utilities/dist/index.css" as utilities;
+@use "pkg:@dictu/design-tokens/dist/button" as design-tokens;
+@use "pkg:@dictu/utilities/dist/index" as utilities;
 
 @mixin dictu-button {
   align-items: center;

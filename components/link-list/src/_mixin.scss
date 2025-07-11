@@ -1,6 +1,6 @@
-@use "pkg:@dictu/design-tokens/dist/link-list.css" as design-tokens;
-@use "pkg:@dictu/link/dist/index.css" as link-component;
-@use "pkg:@dictu/icon/dist/index.css" as icon-component;
+@use "pkg:@dictu/design-tokens/dist/link-list" as design-tokens;
+@use "pkg:@dictu/link/dist/index" as link-component;
+@use "pkg:@dictu/icon/dist/index" as icon-component;
 
 @mixin reset-ul() {
   margin-block: 0;

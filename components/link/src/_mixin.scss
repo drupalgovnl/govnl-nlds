@@ -1,4 +1,4 @@
-@use "pkg:@dictu/design-tokens/dist/link.css" as design-tokens;
+@use "pkg:@dictu/design-tokens/dist/link" as design-tokens;
 @use "pkg:@nl-design-system-candidate/link-css/src/mixin" as mixin;
 
 @mixin dictu-link {
