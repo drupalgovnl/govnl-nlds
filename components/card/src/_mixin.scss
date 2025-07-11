@@ -8,7 +8,9 @@
 
 @mixin reset {
   margin: 0;
+  margin-inline: 0;
   padding: 0;
+  padding-inline: 0;
 }
 
 @mixin dictu-card {
@@ -171,8 +173,6 @@
 }
 
 @mixin dictu-card__paragraph {
-  @include reset;
-
   font-size: var(--govnl-card-content-font-size);
   line-height: 150%;
 }
