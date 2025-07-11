@@ -1,3 +1,9 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "pkg:@dictu/design-tokens/dist/grid" as design-tokens;
 @use "./mixin" as mixin;
 @use "sass:map" as map;
 
@@ -16,4 +22,8 @@ $grid-columns: (
 
 .dictu-grid {
   @include mixin.dictu-grid;
+}
+
+.dictu-grid-autoflow {
+  @include mixin.dictu-grid-autoflow;
 }
