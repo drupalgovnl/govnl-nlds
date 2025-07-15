@@ -12,3 +12,11 @@
 .dictu-page-header {
   @include mixin.dictu-page-header;
 }
+
+.dictu-page-header__logo-wrapper {
+  @include mixin.dictu-page-header-logo-wrapper;
+}
+
+.dictu-page-header__logo-link {
+  @include mixin.dictu-page-header-logo-link;
+}

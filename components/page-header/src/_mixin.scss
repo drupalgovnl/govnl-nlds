@@ -12,23 +12,26 @@
   @include reset;
 
   background-color: var(--govnl-header-background-color, transparent);
-  max-inline-size: var (--govnl-header-container-max-inline-width, 100%);
+  max-inline-size: var(--govnl-header-container-max-inline-width, 100%);
   padding-block-end: var(--govnl-header-padding-block-end, 0);
   padding-inline: var(--govnl-header-container-padding-inline, 1rem);
+}
 
-  .dictu-logo {
-    margin-inline-start: calc(50% - 1.5rem);
-  }
+// Slightly too specific for a generic page header component.
+// Perhaps set margin-inline-start as a design token?
+@mixin dictu-page-header-logo-wrapper {
+  margin-inline-start: calc(50% - 1.5rem);
+  width: fit-content;
 
   @media (max-width <= 20em) {
-    .dictu-logo {
-      margin-inline-start: calc(50% - 1rem);
-    }
+    margin-inline-start: calc(50% - 1rem);
   }
 
   @media (max-width <= 48em) {
-    .dictu-logo {
-      margin-inline-start: calc(50% - 1.15rem);
-    }
+    margin-inline-start: calc(50% - 1.15rem);
   }
+}
+
+@mixin dictu-page-header-logo-link {
+  text-decoration: none;
 }
