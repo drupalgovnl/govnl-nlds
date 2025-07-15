@@ -1,5 +1,11 @@
 # @dictu/logo
 
+## 1.1.1
+
+### Patch Changes
+
+- aa90bab: Moves padding styling intended for title to correct mixin
+
 ## 1.1.0
 
 ### Minor Changes
