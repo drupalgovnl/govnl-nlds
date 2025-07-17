@@ -17,8 +17,8 @@
     "components/logo.tokens",
     "components/navigation-bar.tokens",
     "components/page-footer.tokens",
-    "components/paragraph.tokens",
     "components/page-header.tokens",
+    "components/paragraph.tokens",
     "components/section.tokens",
     "components/skip-link.tokens",
     "components/timeline.tokens"

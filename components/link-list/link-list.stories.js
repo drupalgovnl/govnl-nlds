@@ -1,9 +1,4 @@
 import readme from './README.md?raw';
-import '@dictu/design-tokens/dist/link-list.css';
-import '@dictu/design-tokens/dist/link.css';
-import '@dictu/design-tokens/dist/icon.css';
-import '@dictu/link/dist/index.css';
-import '@dictu/icon/dist/index.css';
 import './dist/index.css';
 
 export default {

@@ -1,4 +1,11 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
 @use "mixin" as mixin;
+@use "pkg:@dictu/design-tokens/dist/button" as design-tokens;
+@use "pkg:@dictu/utilities/dist/index" as utilities;
 
 .dictu-button {
   @include mixin.dictu-button;

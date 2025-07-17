@@ -4,7 +4,8 @@
  */
 
 @use "mixin" as mixin;
+@use "pkg:@dictu/design-tokens/dist/section" as design-tokens;
 
-.dictu-page-section {
-  @include mixin.dictu-page-section;
+.dictu-section {
+  @include mixin.dictu-section;
 }

@@ -1,29 +1,35 @@
-@use "pkg:@nl-design-system-candidate/heading-css/src/mixin" as mixin;
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "mixin" as mixin;
+@use "pkg:@dictu/design-tokens/dist/heading" as design-tokens;
 
 .dictu-heading {
-  @include mixin.nl-heading;
+  @include mixin.dictu-heading;
 }
 
-.dictu-heading--level-1 {
-  @include mixin.nl-heading--level-1;
+:where(.dictu-heading--level-1) {
+  @include mixin.dictu-heading--level-1;
 }
 
-.dictu-heading--level-2 {
-  @include mixin.nl-heading--level-2;
+:where(.dictu-heading--level-2) {
+  @include mixin.dictu-heading--level-2;
 }
 
-.dictu-heading--level-3 {
-  @include mixin.nl-heading--level-3;
+:where(.dictu-heading--level-3) {
+  @include mixin.dictu-heading--level-3;
 }
 
-.dictu-heading--level-4 {
-  @include mixin.nl-heading--level-4;
+:where(.dictu-heading--level-4) {
+  @include mixin.dictu-heading--level-4;
 }
 
-.dictu-heading--level-5 {
-  @include mixin.nl-heading--level-5;
+:where(.dictu-heading--level-5) {
+  @include mixin.dictu-heading--level-5;
 }
 
-.dictu-heading--level-6 {
-  @include mixin.nl-heading--level-6;
+:where(.dictu-heading--level-6) {
+  @include mixin.dictu-heading--level-6;
 }

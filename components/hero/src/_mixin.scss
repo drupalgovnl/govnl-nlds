@@ -1,0 +1,104 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "pkg:@dictu/image/src/mixin" as image;
+@use "pkg:@dictu/page-container/src/mixin" as container;
+@use "pkg:@dictu/page-section/src/mixin" as section;
+
+@mixin dictu-hero {
+  @include section.dictu-section;
+}
+
+@mixin dictu-hero-mobile {
+  margin-block-end: calc(var(--govnl-section-margin-block-end, 2rem) / 2);
+}
+
+@mixin radius-top-left {
+  border-top-left-radius: var(--govnl-hero-border-radius, 0.5rem);
+}
+
+@mixin radius-top-right {
+  border-top-right-radius: var(--govnl-hero-border-radius, 0.5rem);
+}
+
+@mixin radius-bottom-left {
+  border-bottom-left-radius: var(--govnl-hero-border-radius, 0.5rem);
+}
+
+@mixin radius-bottom-right {
+  border-bottom-right-radius: var(--govnl-hero-border-radius, 0.5rem);
+}
+
+@mixin dictu-hero__container {
+  @include container.dictu-container;
+
+  line-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+@mixin dictu-hero__image {
+  block-size: auto;
+  inline-size: 100%;
+  max-width: 100%;
+}
+
+@mixin dictu-hero__message {
+  background-color: var(--govnl-hero-message-background-color, var(--govnl-brand-primary-500));
+  box-sizing: border-box;
+  color: var(--govnl-hero-message-color, var(--govnl-text-color));
+  display: flex;
+  flex-direction: column;
+  inline-size: var(--govnl-hero-message-max-inline-size, 100%);
+  inset-block-end: 0;
+  margin: 0;
+  max-width: 100%;
+  padding-block: var(--govnl-hero-message-padding-block-start, 0.5rem)
+    var(--govnl-hero-message-padding-block-end, 0.5rem);
+  padding-inline: var(--govnl-hero-message-padding-inline-start, 0.5rem)
+    var(--govnl-hero-message-padding-inline-end, 0.5rem);
+  position: absolute;
+  row-gap: var(--govnl-hero-message-row-gap, 0.5rem);
+}
+
+@mixin dictu-hero__message-mobile {
+  inline-size: calc(100% - (var(--govnl-dimension-size-200) * 4));
+}
+
+@mixin dictu-hero__message-left {
+  border-top-right-radius: var(--govnl-hero-message-border-radius, 1.25rem);
+  inset-inline-start: var(--govnl-dimension-size-200);
+}
+
+@mixin dictu-hero__message-right {
+  border-top-left-radius: var(--govnl-hero-message-border-radius, 1.25rem);
+  inset-inline-end: var(--govnl-dimension-size-200);
+}
+
+@mixin dictu-hero__heading {
+  color: var(--govnl-hero-message-color);
+  font-family: var(--govnl-hero-heading-font-family, "Fira Sans, system-ui");
+  font-size: var(--govnl-hero-heading-font-size, 2rem);
+  font-weight: var(--govnl-hero-heading-font-weight, 700);
+  line-height: var(--govnl-hero-heading-line-height, 1.2);
+  margin: 0;
+}
+
+@mixin dictu-hero__heading-mobile {
+  font-size: calc(var(--govnl-hero-heading-font-size, 2rem) / 2);
+}
+
+@mixin dictu-hero__subheading {
+  color: var(--govnl-hero-message-color);
+  font-family: var(--govnl-hero-subheading-font-family, "Fira Sans, system-ui");
+  font-size: var(--govnl-hero-subheading-font-size, 1.25rem);
+  font-weight: var(--govnl-hero-subheading-font-weight, 700);
+  line-height: var(--govnl-hero-subheading-line-height, 1.2);
+  margin: 0;
+}
+
+@mixin dictu-hero__subheading-mobile {
+  font-size: calc(var(--govnl-hero-subheading-font-size, 2rem) / 1.5);
+}

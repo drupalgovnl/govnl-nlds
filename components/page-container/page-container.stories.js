@@ -29,7 +29,7 @@ export default {
   },
   render: ({ content, id }) => {
     const container = document.createElement('div');
-    container.classList.add('dictu-page-container');
+    container.classList.add('dictu-container');
     container.setAttribute('id', id);
 
     if (content) {

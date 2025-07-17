@@ -1,17 +1,23 @@
-@use "pkg:@nl-design-system-candidate/link-css/src/mixin" as mixin;
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "pkg:@dictu/design-tokens/dist/link" as design-tokens;
+@use "./mixin" as mixin;
 
 .dictu-link {
-  @include mixin.nl-link;
+  @include mixin.dictu-link;
 }
 
 .dictu-link:hover {
-  @include mixin.nl-link--hover;
+  @include mixin.dictu-link--hover;
 }
 
 .dictu-link:active {
-  @include mixin.nl-link--active;
+  @include mixin.dictu-link--active;
 }
 
 .dictu-link--inline-box {
-  @include mixin.nl-link--inline-box;
+  @include mixin.dictu-link--inline-box;
 }

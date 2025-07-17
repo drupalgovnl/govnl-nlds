@@ -1,5 +1,4 @@
 import readme from './README.md?raw';
-import '@dictu/design-tokens/dist/button.css';
 import '@dictu/utilities/dist/index.css';
 import './dist/index.css';
 

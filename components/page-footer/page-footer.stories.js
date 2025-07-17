@@ -1,11 +1,9 @@
 import readme from './README.md?raw';
-import '@dictu/design-tokens/dist/page-footer.css';
-import '@dictu/design-tokens/dist/paragraph.css';
-import '@dictu/design-tokens/dist/link-list.css';
-import '@dictu/design-tokens/dist/link.css';
-import '@dictu/design-tokens/dist/icon.css';
-import '@dictu/design-tokens/dist/heading.css';
 import './dist/index.css';
+import '@dictu/paragraph/dist/index.css';
+import '@dictu/link-list/dist/index.css';
+import '@dictu/link/dist/index.css';
+import '@dictu/heading/dist/index.css';
 
 export default {
   argTypes: {
@@ -130,7 +128,7 @@ const createColumn = (column, headingLevel) => {
 };
 
 // Reusable data for stories
-const defaultFooterData = {
+export const DefaultFooterData = {
   heading: 'Footer kop',
   text: 'Dit is een voettekst die extra informatie biedt.',
   headingLevel: 2,
@@ -274,7 +272,7 @@ export const PageFooter = {
     pageFooter.appendChild(container);
     return pageFooter;
   },
-  args: defaultFooterData,
+  args: DefaultFooterData,
 };
 
 // Minimal variant with no columns

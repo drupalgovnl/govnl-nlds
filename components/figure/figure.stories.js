@@ -1,5 +1,4 @@
 import readme from './README.md?raw';
-import '@dictu/design-tokens/dist/figure.css';
 import './dist/index.css';
 import { default as ImageStory } from '../image/image.stories.js';
 

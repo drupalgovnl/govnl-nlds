@@ -1,0 +1,13 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "mixin" as mixin;
+@use "pkg:@dictu/design-tokens/dist/heading" as dictu-heading-tokens;
+@use "pkg:@dictu/design-tokens/dist/link" as dictu-link-tokens;
+@use "pkg:@dictu/design-tokens/dist/paragraph" as dictu-paragraph-tokens;
+
+.dictu-rich-text {
+  @include mixin.dictu-rich-text;
+}

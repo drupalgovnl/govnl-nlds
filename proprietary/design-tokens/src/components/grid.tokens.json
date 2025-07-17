@@ -3,6 +3,10 @@
     "grid": {
       "template": {
         "columns": {
+          "width": {
+            "$type": "dimension",
+            "$value": "{govnl.dimension.size.2000}"
+          },
           "col-1": {
             "$type": "dimension",
             "$value": "repeat(1, 1fr)"

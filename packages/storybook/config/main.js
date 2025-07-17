@@ -17,9 +17,13 @@ const config = {
 
   staticDirs: ['../../../proprietary/assets/src'],
   stories: [
+    '../src/**/*.mdx',
     '../../../components/**/*stories.@(js|jsx|ts|tsx)',
     '../../../examples/**/*stories.@(js|jsx|ts|tsx)',
   ],
+  docs: {
+    autodocs: true,
+  },
 };
 
 export default config;

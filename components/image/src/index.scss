@@ -4,23 +4,9 @@
  */
 
 @use "./mixin" as mixin;
+@use "pkg:@dictu/design-tokens/dist/figure" as design-tokens;
+@use "pkg:@dictu/utility-aspect-ratio/src/index" as aspect-ratio;
 
-.dictu-figure {
+.dictu-image {
   @include mixin.dictu-image;
-}
-
-.dictu-image__aspect-ratio:square {
-  @include mixin.aspect-ratio-square;
-}
-
-.dictu-image__aspect-ratio:portrait {
-  @include mixin.aspect-ratio-portrait;
-}
-
-.dictu-image__aspect-ratio:landscape {
-  @include mixin.aspect-ratio-landscape;
-}
-
-.dictu-image__aspect-ratio:video {
-  @include mixin.aspect-ratio-video;
 }

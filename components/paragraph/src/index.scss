@@ -1,9 +1,15 @@
-@use "pkg:@nl-design-system-candidate/paragraph-css/src/mixin" as mixin;
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "mixin" as mixin;
+@use "pkg:@dictu/design-tokens/dist/paragraph" as design-tokens;
 
 .dictu-paragraph {
-  @include mixin.nl-paragraph;
+  @include mixin.dictu-paragraph;
 }
 
 .dictu-paragraph--lead {
-  @include mixin.nl-paragraph--lead;
+  @include mixin.dictu-paragraph--lead;
 }
