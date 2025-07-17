@@ -1,0 +1,19 @@
+@use "./mixin" as mixin;
+@use "pkg:@dictu/design-tokens/dist/accordion" as design-tokens;
+@use "pkg:@dictu/utilities/dist/index" as utilities;
+
+.dictu-accordion {
+  @include mixin.dictu-accordion;
+}
+
+.dictu-accordion__heading {
+  @include mixin.dictu-accordion-heading;
+}
+
+.dictu-accordion__button {
+  @include mixin.dictu-accordion-button;
+}
+
+.dictu-accordion__body {
+  @include mixin.dictu-accordion-body;
+}
