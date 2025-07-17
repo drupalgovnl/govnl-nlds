@@ -153,7 +153,7 @@ Plus alle gerelateerde klassen van logo en page-container components.
 ## Licentie
 
 EUPL-1.2
-`,h={args:{},argTypes:{},parameters:{docs:{description:{component:d}}},tags:["autodocs"],title:"Componenten/Page Header"},s=c=>{const e=document.createElement("div"),{title:i,subtitle:r}=c||"";return e.classList.add("dictu-logo"),e.innerHTML=`
+`,p={args:{},argTypes:{},parameters:{docs:{description:{component:d}}},tags:["autodocs"],title:"Componenten/Page Header"},s=c=>{const e=document.createElement("div"),{title:i,subtitle:r}=c||"";return e.classList.add("dictu-logo"),e.innerHTML=`
     <div class="dictu-logo__image">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 44 88" role="img">
         <title>Logo Rijksoverheid</title>
@@ -172,7 +172,7 @@ EUPL-1.2
         ${r}
       </span>
     </div>
-  `,e},l=()=>{const c=document.createElement("div");return c.className="dictu-page-container",c.appendChild(s({title:"Dictu",subtitle:"Ministerie van Economische Zaken"})),c},n={render:()=>{const c=document.createElement("header");c.className="dictu-page-header";const e=l();return c.appendChild(e),c}};var t,o,a;n.parameters={...n.parameters,docs:{...(t=n.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  `,e},l=c=>{const e=document.createElement("a");return e.classList.add("dictu-link","dictu-page-header__logo-link"),e.setAttribute("href",c.url),e.appendChild(s({title:"Dictu",subtitle:"Ministerie van Economische Zaken"})),e},g=()=>{const c=document.createElement("div");return c.className="dictu-page-header__logo-wrapper",c.appendChild(l({url:"/"})),c},n={render:()=>{const c=document.createElement("header");c.className="dictu-page-header";const e=g();return c.appendChild(e),c}};var t,o,a;n.parameters={...n.parameters,docs:{...(t=n.parameters)==null?void 0:t.docs,source:{originalSource:`{
   render: () => {
     const header = document.createElement('header');
     header.className = 'dictu-page-header';
@@ -180,4 +180,4 @@ EUPL-1.2
     header.appendChild(container);
     return header;
   }
-}`,...(a=(o=n.parameters)==null?void 0:o.docs)==null?void 0:a.source}}};const p=["PageHeader"];export{n as PageHeader,p as __namedExportsOrder,h as default};
+}`,...(a=(o=n.parameters)==null?void 0:o.docs)==null?void 0:a.source}}};const u=["PageHeader"];export{n as PageHeader,u as __namedExportsOrder,p as default};
