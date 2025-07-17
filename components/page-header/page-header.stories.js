@@ -44,10 +44,20 @@ const createLogo = args => {
   return logo;
 };
 
+const createLink = args => {
+  const link = document.createElement('a');
+  link.classList.add('dictu-link', 'dictu-page-header__logo-link');
+  link.setAttribute('href', args.url);
+  link.appendChild(createLogo({ title: 'Dictu', subtitle: 'Ministerie van Economische Zaken' }));
+
+  return link;
+};
+
 const createContainer = () => {
   const container = document.createElement('div');
-  container.className = 'dictu-page-container';
-  container.appendChild(createLogo({ title: 'Dictu', subtitle: 'Ministerie van Economische Zaken' }));
+  container.className = 'dictu-page-header__logo-wrapper';
+  container.appendChild(createLink({ url: '/' }));
+
   return container;
 };
 
