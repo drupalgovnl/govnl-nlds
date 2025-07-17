@@ -1,5 +1,13 @@
 # @dictu/design-tokens
 
+## 1.1.0
+
+### Minor Changes
+
+- b8671fe: replace mixin @use to index for better usage.
+- 30ef651: Added new token for column width for grid component. Changed html
+  markup of the card component. Added grid component.
+
 ## 1.0.3
 
 ### Patch Changes

@@ -1,5 +1,23 @@
 # @dictu/page-header
 
+## 1.2.0
+
+### Minor Changes
+
+- bb44559: Replaces hard link to logo component classnames with page-header
+  specific classes
+
+### Patch Changes
+
+- 8cddb3d: Removes misplaced dependancies to logo and page-container components
+
+## 1.1.0
+
+### Minor Changes
+
+- b8671fe: replace mixin @use to index for better usage.
+- ff8484d: add tokens import to index instead of the mixin
+
 ## 1.0.2
 
 ### Patch Changes

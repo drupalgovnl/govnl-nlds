@@ -1,5 +1,4 @@
 // Import all necessary CSS and dependencies
-import '@dictu/design-tokens/dist/index.css';
 import '@dictu/utilities/dist/index.css';
 
 // Import component styles
