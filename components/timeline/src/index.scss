@@ -1,0 +1,63 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "mixin" as mixin;
+@use "pkg:@dictu/design-tokens/dist/timeline" as dictu-timeline-tokens;
+
+.dictu-timeline {
+  @include mixin.dictu-timeline;
+}
+
+.dictu-timeline__title {
+  @include mixin.dictu-timeline__title;
+}
+
+.dictu-timeline__toggle {
+  @include mixin.dictu-timeline-toggle;
+}
+
+.dictu-timeline__element-wrapper {
+  @include mixin.dictu-timeline__element-wrapper;
+}
+
+.dictu-timeline__element {
+  @include mixin.dictu-timeline__element;
+}
+
+.dictu-timeline__element-heading-wrapper {
+  @include mixin.dictu-timeline-heading-wrapper;
+}
+
+.dictu-timeline__element-heading {
+  @include mixin.dictu-timeline__element-heading;
+}
+
+.dictu-timeline__heading-icon {
+  @include mixin.dictu-timeline__element-heading-icon;
+}
+
+.dictu-timeline__element-subheading-wrapper {
+  @include mixin.dictu-timeline-element-subheading-wrapper;
+}
+
+.dictu-timeline__element-subheading {
+  @include mixin.dictu-timeline__element-subheading;
+}
+
+.dictu-timeline__element-subheading-icon {
+  @include mixin.dictu-timeline-element-subheading-icon;
+}
+
+.dictu-timeline__element-content {
+  @include mixin.dictu-timeline__element_content;
+}
+
+.dictu-timeline__icon-wrapper {
+  @include mixin.dictu-timeline__icon-wrapper;
+}
+
+.dictu-timeline__icon {
+  @include mixin.dictu-timeline-icon;
+}
