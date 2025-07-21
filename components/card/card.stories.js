@@ -1,5 +1,5 @@
 import readme from './README.md?raw';
-import '@dictu/utilities/dist/index.css';
+import '@dictu/utility-focus-ring/dist/index.css';
 import '@dictu/heading/dist/index.css';
 import '@dictu/link/dist/index.css';
 import '@dictu/paragraph/dist/index.css';

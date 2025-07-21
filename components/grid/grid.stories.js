@@ -4,7 +4,7 @@ import withCardsDocs from './docs/_with-cards.md?raw';
 import withCardsMultipleRowsDocs from './docs/_with-cards-multiple-rows.md?raw';
 import readme from './README.md?raw';
 import './dist/index.css';
-import '@dictu/utilities/dist/index.css';
+import '@dictu/utility-focus-ring/dist/index.css';
 import '@dictu/heading/dist/index.css';
 import '@dictu/link/dist/index.css';
 import '@dictu/paragraph/dist/index.css';

@@ -1,6 +1,5 @@
 @use "./mixin" as mixin;
 @use "pkg:@dictu/design-tokens/dist/accordion" as design-tokens;
-@use "pkg:@dictu/utilities/dist/index" as utilities;
 
 .dictu-accordion {
   @include mixin.dictu-accordion;
