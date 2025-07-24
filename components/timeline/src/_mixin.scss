@@ -1,0 +1,104 @@
+@mixin reset {
+  margin: 0;
+  margin-inline: 0;
+  padding: 0;
+  padding-inline: 0;
+}
+
+@mixin dictu-timeline {
+  border-color: var(--govnl-timeline-border-color);
+}
+
+@mixin dictu-timeline-title {
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: var(--govnl-timeline-title-padding-block-start) var(--govnl-timeline-title-padding-block-end);
+}
+
+@mixin dictu-timeline-body {
+  display: flex;
+  flex-direction: column;
+  padding-block: var(--govnl-timeline-padding-block-start) var(--govnl-timeline-padding-block-end);
+}
+
+@mixin dictu-timeline-element-content-wrapper {
+  padding-inline-start: calc(var(--govnl-timeline-padding-inline-start) / 2);
+  position: relative;
+}
+
+@mixin dictu-timeline-element-content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  gap: var(--govnl-timeline-content-column-gap);
+
+  // calc moet eruit, oplossing voor verzinnen.
+  padding-inline-start: calc(var(--govnl-timeline-padding-inline-start) + 16px);
+}
+
+@mixin dictu-timeline-element-button {
+  align-self: start;
+
+  // @TODO: Deze important is voor nu onvermijdelijk. In een refactor hier weer naar kijken.
+  border: 0 !important;
+}
+
+@mixin dictu-timeline-element-heading-content {
+  display: inline-flex;
+  gap: var(--govnl-timeline-content-column-gap);
+  justify-content: start;
+}
+
+@mixin dictu-timeline-element-heading {
+  @include reset;
+
+  text-decoration: var(--govnl-timeline-heading-text-decoration);
+
+  &:hover {
+    text-decoration: var(--govnl-timeline-heading-hover-text-decoration);
+  }
+}
+
+@mixin dictu-timeline-connector {
+  background-color: var(--govnl-timeline-connector-color);
+  content: "";
+  display: block;
+  height: 100%;
+
+  // fix this token..
+  margin-inline-start: calc((var(--govnl-timeline-padding-inline-start) / 2) - 1px);
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+@mixin dictu-timeline-connector-start {
+  height: 50%;
+  top: 50%;
+}
+
+@mixin dictu-timeline-connector-end {
+  height: 50%;
+}
+
+@mixin dictu-timeline-icon {
+  align-items: center;
+  color: var(--govnl-icon-color);
+  display: flex;
+  height: var(--govnl-icon-size);
+  justify-content: center;
+  width: var(--govnl-space-lg);
+  z-index: 1;
+}
+
+@mixin dictu-timeline-icon-expanded {
+  transform: rotate(45deg);
+}
+
+@mixin dictu-timeline-heading-icon {
+  --govnl-icon-size: 32px;
+}
+
+@mixin dictu-timeline-subheading-icon {
+  --govnl-icon-size: 24px;
+}
