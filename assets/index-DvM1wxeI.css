@@ -1,1 +1,0 @@
-.dictu-focus-ring:focus-visible{outline:var(--govnl-focus-outline-color, revert) var(--govnl-focus-outline-style, revert) var(--govnl-focus-outline-width, revert);outline-offset:var(--govnl-focus-outline-offset, revert);z-index:1}
