@@ -12,10 +12,6 @@ export default {
       control: 'text',
       description: 'De titel van de timeline',
     },
-    toggleText: {
-      control: 'text',
-      description: 'De tekst voor de toggle link',
-    },
     data: {
       control: 'object',
     },
@@ -124,7 +120,7 @@ const iconElement = (subheading = false) => {
 };
 
 export const Timeline = {
-  render: ({ title, toggleText, data }) => {
+  render: ({ title, data }) => {
     const timeline = document.createElement('div');
     timeline.classList.add('dictu-timeline');
 
@@ -135,24 +131,14 @@ export const Timeline = {
     timeline.appendChild(timelineTitle);
 
     // Dit zou geen link moeten zijn maar een button.
-    const toggleLink = document.createElement('a');
-    toggleLink.classList.add('dictu-timeline__toggle', 'dictu-link');
-    toggleLink.href = '#';
-    toggleLink.textContent = toggleText;
-
-    timeline.appendChild(toggleLink);
 
     const elements = createTimeline(data);
     timeline.appendChild(elements);
-
-    // addd toggle on bottom again
-    timeline.appendChild(toggleLink.cloneNode(true));
 
     return timeline;
   },
   args: {
     title: 'Tijdlijn',
-    toggleText: 'Overzicht inklappen',
     data: [
       {
         label: 'Tijdlijn Heading',

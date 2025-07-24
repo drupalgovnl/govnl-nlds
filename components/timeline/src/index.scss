@@ -22,10 +22,6 @@
   @include mixin.dictu-timeline-body;
 }
 
-.dictu-timeline__toggle {
-  @include mixin.dictu-timeline-toggle;
-}
-
 .dictu-timeline__element-button {
   @include mixin.dictu-timeline-element-button;
 
@@ -87,4 +83,4 @@
 .dictu-timeline__element-content {
   @include mixin.dictu-timeline-element_content;
 }
-/* stylelint-enaable */
+/* stylelint-enable */

@@ -36,21 +36,10 @@
   padding-inline-start: calc(var(--govnl-timeline-padding-inline-start) + 16px);
 }
 
-@mixin dictu-timeline-toggle {
-  align-items: center;
-  display: inline-flex;
-  gap: var(--govnl-space-xs);
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
 @mixin dictu-timeline-element-button {
   align-self: start;
 
-  // Ik weet het ook niet meer hoor..
+  // @TODO: Deze important is voor nu onvermijdelijk. In een refactor hier weer naar kijken.
   border: 0 !important;
 }
 
