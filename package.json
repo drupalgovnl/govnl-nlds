@@ -21,14 +21,14 @@
   "type": "module",
   "workspaces": [
     "./proprietary/*",
-    "./packages/utilities",
-    "./components/*",
     "./utilities/*",
+    "./components/*",
     "./packages/storybook"
   ],
   "devDependencies": {
     "@changesets/cli": "^2.29.4",
     "@eslint/js": "^9.29.0",
+    "@size-limit/preset-small-lib": "^11.1.6",
     "@types/node": "^22.9.3",
     "@typescript-eslint/eslint-plugin": "^8.34.1",
     "@typescript-eslint/parser": "^8.34.1",
@@ -43,7 +43,6 @@
     "prettier": "^3.5.3",
     "sass": "^1.89.2",
     "size-limit": "^11.1.6",
-    "@size-limit/preset-small-lib": "^11.1.6",
     "stylelint": "^16.21.0",
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-standard-scss": "^15.0.1",
@@ -102,7 +101,6 @@
     ]
   },
   "dependencies": {
-    "@dictu/utilities": "*",
     "http-server": "14.1.1"
   },
   "size-limit": [
