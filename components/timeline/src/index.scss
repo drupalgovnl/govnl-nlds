@@ -1,0 +1,86 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "mixin" as mixin;
+@use "pkg:@dictu/design-tokens/dist/timeline" as dictu-timeline-tokens;
+
+// TODO: ::before etc doesn't match stylelint rules. No documentation
+// found on wether that is deliberate or an oversight. Due to time
+// constraints stylelint is disabled in this file.
+/* stylelint-disable */
+.dictu-timeline {
+  @include mixin.dictu-timeline;
+}
+
+.dictu-timeline__title {
+  @include mixin.dictu-timeline-title;
+}
+
+.dictu-timeline__body {
+  @include mixin.dictu-timeline-body;
+}
+
+.dictu-timeline__element-button {
+  @include mixin.dictu-timeline-element-button;
+
+  &[aria-expanded="true"] {
+    .dictu-timeline__icon {
+      svg {
+        @include mixin.dictu-timeline-icon-expanded;
+      }
+    }
+  }
+
+  &:first-of-type {
+    .dictu-timeline__element-heading-body::before {
+      @include mixin.dictu-timeline-connector-start;
+    }
+  }
+
+  &:last-of-type {
+    .dictu-timeline__element-heading-body::before {
+      @include mixin.dictu-timeline-connector-end;
+    }
+  }
+}
+
+.dictu-timeline__element-heading-body {
+  @include mixin.dictu-timeline-element-heading-content;
+
+  &::before {
+    @include mixin.dictu-timeline-connector;
+  }
+}
+
+.dictu-timeline__element-heading {
+  @include mixin.dictu-timeline-element-heading;
+}
+
+.dictu-timeline__icon {
+  @include mixin.dictu-timeline-icon;
+}
+
+.dictu-timeline__icon--heading {
+  @include mixin.dictu-timeline-heading-icon;
+}
+
+.dictu-timeline__icon--subheading {
+  @include mixin.dictu-timeline-subheading-icon;
+}
+
+.dictu-timeline__element-content-wrapper {
+  @include mixin.dictu-timeline-element_content-wrapper;
+
+  &:not(:last-of-type) {
+    &::before {
+      @include mixin.dictu-timeline-connector;
+    }
+  }
+}
+
+.dictu-timeline__element-content {
+  @include mixin.dictu-timeline-element_content;
+}
+/* stylelint-enable */
