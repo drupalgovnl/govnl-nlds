@@ -1,5 +1,5 @@
 // Import all necessary CSS and dependencies
-import '@dictu/utilities/dist/index.css';
+import '@dictu/utility-focus-ring/dist/index.css';
 
 // Import component styles
 import '@dictu/button/dist/index.css';
