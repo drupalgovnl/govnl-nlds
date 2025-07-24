@@ -1,5 +1,9 @@
 import './dist/index.css';
 import readme from './README.md?raw';
+import '@dictu/heading/dist/index.css';
+import '@dictu/link/dist/index.css';
+import '@dictu/paragraph/dist/index.css';
+import '@dictu/button/dist/index.css';
 
 export default {
   args: {},
@@ -12,9 +16,8 @@ export default {
       control: 'text',
       description: 'De tekst voor de toggle link',
     },
-    elementsCount: {
-      control: 'number',
-      description: 'Aantal elementen in de timeline',
+    data: {
+      control: 'object',
     },
   },
   parameters: {
@@ -28,85 +31,100 @@ export default {
   title: 'Componenten/Timeline',
 };
 
-const timelineData = {
-  title: 'Timeline title',
-  toggleText: 'Overzicht inklappen',
-  elementsCount: 2,
+const createTimeline = timelineData => {
+  const element = document.createElement('div');
+  element.classList.add('dictu-timeline__body');
+
+  for (let i = 0; i < timelineData.length; i += 1) {
+    const timelineElements = timelineData[i];
+    const heading = headingElement(false, '3', timelineElements.label, timelineElements.expanded);
+    element.appendChild(heading);
+
+    if (timelineElements.content) {
+      const content = contentElement(timelineElements.content);
+
+      element.appendChild(content);
+    }
+
+    if (timelineElements.children) {
+      for (let i = 0; i < timelineElements.children.length; i += 1) {
+        const child = timelineElements.children[i];
+
+        const subHeading = headingElement(true, '4', child.label, child.expanded);
+        element.appendChild(subHeading);
+
+        if (child.content) {
+          const content = contentElement(child.content);
+
+          element.appendChild(content);
+        }
+      }
+    }
+  }
+
+  return element;
 };
 
-const createTimelineElement = index => {
-  const correctNumber = index + 1;
-  const elementWrapper = document.createElement('div');
-  elementWrapper.classList.add('dictu-timeline__element-wrapper');
+const contentElement = content => {
+  const contentWrapper = document.createElement('div');
+  contentWrapper.classList.add('dictu-timeline__element-content-wrapper');
+  const contentElement = document.createElement('div');
+  contentElement.classList.add('dictu-timeline__element-content');
+  contentElement.innerHTML = content;
+  contentWrapper.appendChild(contentElement);
 
-  const element = document.createElement('div');
-  element.classList.add('dictu-timeline__element');
+  return contentWrapper;
+};
 
-  const headingWrapper = document.createElement('div');
-  headingWrapper.classList.add('dictu-timeline__element-heading-wrapper');
-  element.appendChild(headingWrapper);
+const headingElement = (subheading = false, headingLevel, label, expanded) => {
+  const headingButton = document.createElement('button');
+  headingButton.classList.add('dictu-timeline__element-button', 'dictu-button', 'dictu-button--subtle');
+  headingButton.setAttribute('aria-expanded', expanded);
 
-  const headingIcon = iconElement();
-  headingIcon.classList.add('dictu-timeline__heading-icon');
-  headingWrapper.appendChild(headingIcon);
+  const headingBody = document.createElement('span');
+  headingBody.classList.add('dictu-timeline__element-heading-body');
 
-  const heading = document.createElement('h3');
-  heading.classList.add('dictu-timeline__element-heading', 'dictu-heading--level-3');
-  heading.textContent = `Timeline heading ${correctNumber}`;
+  const headingIcon = iconElement(subheading);
+  headingIcon.classList.add(subheading ? 'dictu-timeline__icon--subheading' : 'dictu-timeline__icon--heading');
 
-  headingWrapper.appendChild(heading);
+  const heading = document.createElement(`h${headingLevel}`);
+  heading.classList.add('dictu-heading', `dictu-heading--level-${headingLevel}`, 'dictu-timeline__element-heading');
+  heading.textContent = label;
 
-  const subheadingWrapper = document.createElement('div');
-  subheadingWrapper.classList.add('dictu-timeline__element-subheading-wrapper');
-  element.appendChild(subheadingWrapper);
+  headingBody.appendChild(headingIcon);
+  headingBody.appendChild(heading);
+  headingButton.appendChild(headingBody);
 
-  const subheadingIcon = iconElement(true);
-  subheadingIcon.classList.add('dictu-timeline__element-subheading-icon');
-  subheadingWrapper.appendChild(subheadingIcon);
-
-  const subheading = document.createElement('h4');
-  subheading.classList.add('dictu-timeline__element-subheading', 'dictu-heading--level-4');
-  subheading.textContent = `Timeline subheading ${correctNumber}`;
-  subheadingWrapper.appendChild(subheading);
-
-  const content = document.createElement('div');
-  content.classList.add('dictu-timeline__element-content');
-  content.innerHTML = `
-    <p>Dit is de inhoud van de timeline. Hier kan je meer informatie plaatsen over dit specifieke element. Je kunt hier ook links, afbeeldingen of andere HTML elementen toevoegen.</p>
-  `;
-
-  element.appendChild(content);
-  elementWrapper.appendChild(element);
-
-  return elementWrapper;
+  return headingButton;
 };
 
 const iconElement = (subheading = false) => {
-  const iconWrapper = document.createElement('div');
-  iconWrapper.classList.add('dictu-timeline__icon-wrapper');
-  const icon = document.createElement('span');
-  icon.innerHTML = `
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.291723 0.294057C0.68218 -0.0965354 1.31534 -0.0966451 1.70594 0.293812L6.99975 5.58579L12.2917 0.291978C12.6822 -0.0986139 13.3153 -0.0987236 13.7059 0.291733C14.0965 0.68219 14.0966 1.31535 13.7062 1.70595L8.4142 6.99976L13.708 12.2917C14.0986 12.6822 14.0987 13.3154 13.7083 13.7059C13.3178 14.0965 12.6846 14.0966 12.294 13.7062L7.00024 8.41421L1.70826 13.708C1.3178 14.0986 0.684639 14.0987 0.294047 13.7083C-0.0965453 13.3178 -0.0966549 12.6846 0.293802 12.2941L5.58578 7.00025L0.291968 1.70827C-0.0986238 1.31781 -0.0987334 0.684648 0.291723 0.294057Z" fill="#154273"/>
-    </svg>
-    `;
+  const iconElement = document.createElement('span');
 
   if (subheading) {
-    icon.innerHTML = `
-    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.970318 0.97054C1.26316 0.677596 1.73803 0.677514 2.03098 0.970356L6.00134 4.93934L9.97032 0.968981C10.2632 0.676037 10.738 0.675955 11.031 0.968797C11.3239 1.26164 11.324 1.73651 11.0312 2.02946L7.06218 5.99981L11.0325 9.9688C11.3255 10.2616 11.3256 10.7365 11.0327 11.0295C10.7399 11.3224 10.265 11.3225 9.97206 11.0296L6.0017 7.06066L2.03272 11.031C1.73988 11.324 1.265 11.324 0.972061 11.0312C0.679117 10.7384 0.679035 10.2635 0.971877 9.97054L4.94086 6.00018L0.970502 2.0312C0.677558 1.73836 0.677476 1.26348 0.970318 0.97054Z" fill="white"/>
+    iconElement.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <rect width="24.0031" height="24" rx="12" fill="#154273"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0005 6C12.4147 5.99993 12.7505 6.33565 12.7506 6.74987L12.7514 11.2499L17.2514 11.2491C17.6656 11.249 18.0015 11.5847 18.0015 11.999C18.0016 12.4132 17.6659 12.749 17.2517 12.7491L12.7517 12.7499L12.7524 17.2499C12.7525 17.6641 12.4168 17.9999 12.0026 18C11.5884 18.0001 11.2525 17.6643 11.2524 17.2501L11.2517 12.7501L6.75166 12.7509C6.33744 12.751 6.0016 12.4153 6.00153 12.001C6.00146 11.5868 6.33718 11.251 6.7514 11.2509L11.2514 11.2501L11.2506 6.75013C11.2505 6.33591 11.5863 6.00007 12.0005 6Z" fill="white"/>
+    </svg>
+    `;
+  } else {
+    iconElement.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <rect x="1" y="1" width="30" height="30" rx="15" fill="white"/>
+      <rect x="1" y="1" width="30" height="30" rx="15" stroke="#154273" stroke-width="2"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9987 8C16.5509 7.99991 16.9987 8.44754 16.9988 8.99983L16.9999 14.9998L22.9999 14.9988C23.5522 14.9987 23.9999 15.4463 24 15.9986C24.0001 16.5509 23.5525 16.9987 23.0002 16.9988L17.0002 16.9998L17.0013 22.9998C17.0014 23.5521 16.5537 23.9999 16.0014 24C15.4491 24.0001 15.0014 23.5525 15.0013 23.0002L15.0002 17.0002L9.00022 17.0012C8.44793 17.0013 8.00014 16.5537 8.00004 16.0014C7.99995 15.4491 8.44758 15.0013 8.99987 15.0012L14.9999 15.0002L14.9988 9.00018C14.9987 8.44789 15.4464 8.0001 15.9987 8Z" fill="#154273"/>
     </svg>
     `;
   }
 
-  icon.classList.add('dictu-timeline__icon');
-  iconWrapper.appendChild(icon);
+  iconElement.classList.add('dictu-timeline__icon');
 
-  return iconWrapper;
+  return iconElement;
 };
 
 export const Timeline = {
-  render: ({ title, toggleText, elementsCount }) => {
+  render: ({ title, toggleText, data }) => {
     const timeline = document.createElement('div');
     timeline.classList.add('dictu-timeline');
 
@@ -116,6 +134,7 @@ export const Timeline = {
 
     timeline.appendChild(timelineTitle);
 
+    // Dit zou geen link moeten zijn maar een button.
     const toggleLink = document.createElement('a');
     toggleLink.classList.add('dictu-timeline__toggle', 'dictu-link');
     toggleLink.href = '#';
@@ -123,33 +142,53 @@ export const Timeline = {
 
     timeline.appendChild(toggleLink);
 
-    // Create timeline elements
-    // loop through the number of elements and create each element
-    for (let i = 0; i < elementsCount; i++) {
-      // const element = createTimelineElement(i);
-      const element = createTimelineElement(i);
-      timeline.appendChild(element);
-    }
+    const elements = createTimeline(data);
+    timeline.appendChild(elements);
 
     // addd toggle on bottom again
     timeline.appendChild(toggleLink.cloneNode(true));
 
-    // <div
-    //   data-heading="default"
-    //   style="width: 100%; height: 100%; padding-top: 2px; padding-bottom: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex"
-    // >
-    //   <div
-    //     data-appearance="Heading-3"
-    //     data-level="3"
-    //     style="align-self: stretch; justify-content: flex-start; align-items: flex-start; display: inline-flex"
-    //   >
-    //     <div style="flex: 1 1 0; color: #154273; font-size: 24px; font-family: RijksSans; font-weight: 700; line-height: 30px; word-wrap: break-word">
-    //       Timeline heading
-    //     </div>
-    //   </div>
-    // </div>;
-
     return timeline;
   },
-  args: timelineData,
+  args: {
+    title: 'Tijdlijn',
+    toggleText: 'Overzicht inklappen',
+    data: [
+      {
+        label: 'Tijdlijn Heading',
+        expanded: true,
+        children: [
+          {
+            label: 'Tijdlijn Subheading',
+            expanded: true,
+            content: `
+              <p class="dictu-paragraph">Content informatie. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+            `,
+          },
+          {
+            label: 'Tijdlijn Subheading',
+            expanded: false,
+          },
+        ],
+      },
+      {
+        label: 'Tijdlijn Heading',
+        expanded: true,
+        content: `
+          <p class="dictu-paragraph">Content informatie. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+        `,
+      },
+      {
+        label: 'Tijdlijn Heading',
+        expanded: false,
+      },
+      {
+        label: 'Tijdlijn Heading',
+        expanded: true,
+        content: `
+          <p class="dictu-paragraph">Content informatie. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+        `,
+      },
+    ],
+  },
 };

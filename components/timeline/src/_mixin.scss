@@ -1,134 +1,39 @@
-// .dictu-timeline {
-//   --govnl-timeline-border-color: none;
-//   --govnl-timeline-toggle-icon-lg-padding-inline-start: 0px;
-//   --govnl-timeline-toggle-icon-lg-padding-inline-end: 0px;
-//   --govnl-timeline-toggle-link-padding-block-start: 0px;
-//   --govnl-timeline-connector-padding-inline-end: 0px;
-//   --govnl-timeline-title-padding-block-start: 0px;
-//   --govnl-timeline-heading-text-decoration: none;
-//   --govnl-timeline-heading-hover-text-decoration: underline;
-//   --govnl-timeline-subheading-padding-block-start: 0px;
-//   --govnl-timeline-connector-border-width: var(--govnl-border-border-width-md);
-//   --govnl-timeline-border-radius: var(--govnl-border-border-radius-sm);
-//   --govnl-timeline-background-color: var(--govnl-root-background-color);
-//   --govnl-timeline-padding-block-start: var(--govnl-space-lg);
-//   --govnl-timeline-padding-block-end: var(--govnl-space-lg);
-//   --govnl-timeline-padding-inline-start: var(--govnl-space-lg);
-//   --govnl-timeline-padding-inline-end: var(--govnl-space-lg);
-//   --govnl-timeline-toggle-icon-sm-padding-inline-start: var(--govnl-space-3xs);
-//   --govnl-timeline-toggle-icon-sm-padding-inline-end: var(--govnl-space-3xs);
-//   --govnl-timeline-toggle-link-padding-block-end: var(--govnl-space-sm);
-//   --govnl-timeline-connector-color: var(--govnl-brand-primary-500);
-//   --govnl-timeline-connector-padding-inline-start: var(--govnl-space-sm);
-//   --govnl-timeline-title-padding-block-end: var(--govnl-space-sm);
-//   --govnl-timeline-heading-padding-block-start: var(--govnl-space-4xs);
-//   --govnl-timeline-heading-padding-block-end: var(--govnl-space-md);
-//   --govnl-timeline-subheading-padding-block-end: var(--govnl-space-2xs);
-//   --govnl-timeline-header-column-gap: var(--govnl-gap-content-min);
-//   --govnl-timeline-content-column-gap: var(--govnl-gap-content-min);
-// }
+@mixin reset {
+  margin: 0;
+  margin-inline: 0;
+  padding: 0;
+  padding-inline: 0;
+}
 
 @mixin dictu-timeline {
   border-color: var(--govnl-timeline-border-color);
 }
 
-@mixin dictu-timeline-toggle-icon {
-  align-items: center;
-  aspect-ratio: 1/1;
+@mixin dictu-timeline-title {
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: var(--govnl-timeline-title-padding-block-start) var(--govnl-timeline-title-padding-block-end);
+}
+
+@mixin dictu-timeline-body {
   display: flex;
-  gap: 10px;
-  height: 32px;
-  justify-content: center;
-  padding: 7px;
-  padding-block: var(--govnl-timeline-toggle-link-padding-block-start)
-    var(--govnl-timeline-toggle-link-padding-block-end);
-  padding-inline: var(--govnl-timeline-toggle-icon-lg-padding-inline-start)
-    var(--govnl-timeline-toggle-icon-lg-padding-inline-end);
-  width: 32px;
+  flex-direction: column;
+  padding-block: var(--govnl-timeline-padding-block-start) var(--govnl-timeline-padding-block-end);
 }
 
-@mixin dictu-timeline-heading-wrapper {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  gap: 16px;
+@mixin dictu-timeline-element-content-wrapper {
+  padding-inline-start: calc(var(--govnl-timeline-padding-inline-start) / 2);
+  position: relative;
 }
 
-@mixin dictu-timeline__element-heading {
-  :is(h3) {
-    margin-block: 0;
-    margin-inline: 0;
-    padding-block: var(--govnl-timeline-heading-padding-block-start) var(--govnl-timeline-heading-padding-block-end);
-    text-decoration: var(--govnl-timeline-heading-text-decoration);
-
-    &:hover {
-      text-decoration: var(--govnl-timeline-heading-hover-text-decoration);
-    }
-  }
-}
-
-@mixin dictu-timeline__element-subheading {
-  :is(h4) {
-    padding-block: var(--govnl-timeline-subheading-padding-block-start)
-      var(--govnl-timeline-subheading-padding-block-end);
-  }
-}
-
-@mixin dictu-timeline-connector {
-  border-color: var(--govnl-timeline-connector-color);
-  border-width: var(--govnl-timeline-connector-border-width);
-  padding-inline: var(--govnl-timeline-connector-padding-inline-start)
-    var(--govnl-timeline-connector-padding-inline-end);
-}
-
-@mixin dictu-timeline__element-content {
+@mixin dictu-timeline-element-content {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
   gap: var(--govnl-timeline-content-column-gap);
-  margin-inline-start: var(--govnl-timeline-padding-inline-start);
-}
 
-@mixin dictu-timeline__element-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: var(--govnl-timeline-header-column-gap);
-  position: relative;
-  z-index: 1;
-
-  &::before {
-    background-color: var(--govnl-timeline-connector-color);
-    content: "";
-    display: block;
-    height: calc(100% - (var(--govnl-timeline-padding-block-start) - var(--govnl-timeline-padding-block-end)));
-    margin-inline: var(--govnl-timeline-connector-padding-inline-start)
-      var(--govnl-timeline-connector-padding-inline-end);
-    position: absolute;
-    top: var(--govnl-timeline-connector-padding-inline-start);
-    width: 2px;
-    z-index: 0;
-  }
-}
-
-@mixin dictu-timeline__element {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  gap: var(--govnl-timeline-content-column-gap);
-  z-index: 1;
-}
-
-@mixin dictu-timeline__title {
-  &:is(h2) {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-block: 0;
-    margin-inline: 0;
-    padding-block: var(--govnl-timeline-title-padding-block-start) var(--govnl-timeline-title-padding-block-end);
-    padding-bottom: 16px;
-  }
+  // calc moet eruit, oplossing voor verzinnen.
+  padding-inline-start: calc(var(--govnl-timeline-padding-inline-start) + 16px);
 }
 
 @mixin dictu-timeline-toggle {
@@ -142,61 +47,69 @@
   }
 }
 
-@mixin dictu-timeline__element-heading-icon {
-  --govnl-icon-size: 32px;
-  --govnl-border-size: 2px;
-  --govnl-padding-block-start: 0;
-  --govnl-padding-block-end: 0;
-  --govnl-background: var(--govnl-color-white);
-  --govnl-border-radius: 50%;
+@mixin dictu-timeline-element-button {
+  align-self: start;
 
-  align-items: center;
-  color: var(--govnl-icon-color);
-  display: flex;
-  height: var(--govnl-icon-size);
-  justify-content: center;
-  width: var(--govnl-icon-size);
+  // Ik weet het ook niet meer hoor..
+  border: 0 !important;
 }
 
-@mixin dictu-timeline-element-subheading-wrapper {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  gap: var(--govnl-timeline-header-column-gap);
-}
-
-@mixin dictu-timeline-element-subheading-icon {
-  --govnl-icon-size: 24px;
-  --govnl-border-size: 0;
-  --govnl-margin-inline-start: 0.325rem;
-  --govnl-background: var(--govnl-brand-primary-500);
-  --govnl-border-radius: 50%;
-
-  align-items: center;
-  color: var(--govnl-icon-color);
+@mixin dictu-timeline-element-heading-content {
   display: inline-flex;
-  height: var(--govnl-icon-size);
-  justify-content: center;
-  width: var(--govnl-icon-size);
+  gap: var(--govnl-timeline-content-column-gap);
+  justify-content: start;
+}
+
+@mixin dictu-timeline-element-heading {
+  @include reset;
+
+  text-decoration: var(--govnl-timeline-heading-text-decoration);
+
+  &:hover {
+    text-decoration: var(--govnl-timeline-heading-hover-text-decoration);
+  }
+}
+
+@mixin dictu-timeline-connector {
+  background-color: var(--govnl-timeline-connector-color);
+  content: "";
+  display: block;
+  height: 100%;
+
+  // fix this token..
+  margin-inline-start: calc((var(--govnl-timeline-padding-inline-start) / 2) - 1px);
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+@mixin dictu-timeline-connector-start {
+  height: 50%;
+  top: 50%;
+}
+
+@mixin dictu-timeline-connector-end {
+  height: 50%;
 }
 
 @mixin dictu-timeline-icon {
   align-items: center;
+  color: var(--govnl-icon-color);
   display: flex;
   height: var(--govnl-icon-size);
   justify-content: center;
-  width: var(--govnl-icon-size);
+  width: var(--govnl-space-lg);
+  z-index: 1;
 }
 
-@mixin dictu-timeline__icon-wrapper {
-  align-items: center;
-  background: var(--govnl-background, transparent);
-  border: var(--govnl-border-size) solid var(--govnl-brand-primary-500);
-  border-radius: var(--govnl-border-radius, 0);
-  display: flex;
-  justify-content: center;
-  margin-block: var(--govnl-margin-block-start, initial) var(--govnl-margin-block-end, initial);
-  margin-inline: var(--govnl-margin-inline-start, initial) var(--govnl-margin-inline-end, initial);
-  padding-block: var(--govnl-padding-block-start, initial) var(--govnl-padding-block-end, initial);
-  padding-inline: var(--govnl-padding-inline-start, initial) var(--govnl-padding-inline-end, initial);
+@mixin dictu-timeline-icon-expanded {
+  transform: rotate(45deg);
+}
+
+@mixin dictu-timeline-heading-icon {
+  --govnl-icon-size: 32px;
+}
+
+@mixin dictu-timeline-subheading-icon {
+  --govnl-icon-size: 24px;
 }
