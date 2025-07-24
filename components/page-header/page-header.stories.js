@@ -1,5 +1,7 @@
 import readme from './README.md?raw';
 import './dist/index.css';
+import '@dictu/link/dist/index.css';
+import '@dictu/logo/dist/index.css';
 
 export default {
   args: {},
@@ -44,31 +46,32 @@ const createLogo = args => {
   return logo;
 };
 
-const createLink = args => {
-  const link = document.createElement('a');
-  link.classList.add('dictu-link', 'dictu-page-header__logo-link');
-  link.setAttribute('href', args.url);
-  link.appendChild(createLogo({ title: 'Dictu', subtitle: 'Ministerie van Economische Zaken' }));
+const createLink = () => {
+  const $link = document.createElement('a');
+  $link.classList.add('dictu-page-header__logo-link');
+  $link.setAttribute('href', '#');
+  $link.appendChild(createLogo({ title: 'Dictu', subtitle: 'Ministerie van Economische Zaken' }));
 
-  return link;
+  return $link;
 };
 
 const createContainer = () => {
-  const container = document.createElement('div');
-  container.className = 'dictu-page-header__logo-wrapper';
-  container.appendChild(createLink({ url: '/' }));
+  const $container = document.createElement('div');
+  $container.className = 'dictu-page-header__logo-wrapper';
 
-  return container;
+  return $container;
 };
 
 export const PageHeader = {
   render: () => {
-    const header = document.createElement('header');
-    header.className = 'dictu-page-header';
+    const $header = document.createElement('header');
+    $header.className = 'dictu-page-header';
     const container = createContainer();
+    const logo = createLink();
 
-    header.appendChild(container);
+    container.appendChild(logo);
+    $header.appendChild(container);
 
-    return header;
+    return $header;
   },
 };
