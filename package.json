@@ -73,7 +73,7 @@
     "size": "size-limit",
     "size:analyze": "size-limit --json",
     "start": "http-server packages/storybook/dist/",
-    "storybook": "npm-run-all --parallel watch:storybook watch:style-dictionary watch:components",
+    "storybook": "npm-run-all --parallel watch:storybook watch:components",
     "test:quality": "npm run lint && npm run security:audit && npm run size",
     "watch": "npm --ws run watch --if-present",
     "watch:components": "node scripts/watch-components.mjs",
