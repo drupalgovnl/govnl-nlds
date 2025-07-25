@@ -4,6 +4,7 @@
  */
 
 @use "pkg:@nl-design-system-candidate/skip-link-css/src/mixin" as mixin;
+@use "pkg:@dictu/design-tokens/dist/skip-link" as design-tokens;
 
 .dictu-skip-link {
   @include mixin.nl-skip-link;
