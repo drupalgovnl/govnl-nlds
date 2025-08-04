@@ -5,6 +5,8 @@
 
 @use "mixin" as mixin;
 @use "pkg:@dictu/design-tokens/dist/timeline" as dictu-timeline-tokens;
+@use "pkg:@dictu/heading/dist/index" as heading-component;
+@use "pkg:@dictu/button/dist/index" as button-component;
 
 // TODO: ::before etc doesn't match stylelint rules. No documentation
 // found on wether that is deliberate or an oversight. Due to time
