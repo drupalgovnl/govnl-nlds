@@ -22,7 +22,7 @@
       "content": {
         "column-gap": {
           "$type": "spacing",
-          "$value": "{govnl.gap-content.min}"
+          "$value": "0px"
         }
       },
       "icon": {
