@@ -1,5 +1,11 @@
 # @dictu/page-header
 
+## 1.2.1
+
+### Patch Changes
+
+- 1385bac: Removes misplaced dependancies to logo and page-container components
+
 ## 1.2.0
 
 ### Minor Changes

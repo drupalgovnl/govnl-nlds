@@ -1,5 +1,11 @@
 # @dictu/timeline
 
+## 1.1.1
+
+### Patch Changes
+
+- a390646: Moves import of component dependencies from story to index.scss
+
 ## 1.1.0
 
 ### Minor Changes
