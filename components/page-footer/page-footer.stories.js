@@ -238,7 +238,7 @@ export const PageFooter = {
 
     // Create container
     const container = document.createElement('div');
-    container.classList.add('dictu-page-footer__container');
+    container.classList.add('dictu-page-footer__container', 'dictu-container');
 
     // Create text container
     if (heading || text) {
