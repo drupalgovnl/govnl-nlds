@@ -5,6 +5,9 @@
 
 @use "./mixin.scss" as mixin;
 @use "pkg:@dictu/design-tokens/dist/page-header" as design-tokens;
+@use "pkg:@dictu/page-container/src/index" as page-container;
+@use "pkg:@dictu/link/src/index" as link;
+@use "pkg:@dictu/logo/src/index" as logo;
 
 .dictu-page-header {
   @include mixin.dictu-page-header;

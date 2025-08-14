@@ -31,6 +31,11 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+
+  // Responsive: mobile
+  @media (width <= 48em) {
+    display: none;
+  }
 }
 
 @mixin dictu-logo__title {
