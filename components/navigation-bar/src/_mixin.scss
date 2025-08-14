@@ -95,44 +95,35 @@
     grid-template-rows: auto auto;
     justify-content: space-between;
     max-inline-size: 100%;
-
-    // Place first 3 children in first row, fourth in second row
-    &.dictu-navigation-bar__toggle {
-      grid-column: 2;
-      grid-row: 1;
-    }
-
-    &.dictu-navigation-bar__home {
-      grid-column: 1;
-      grid-row: 1;
-    }
-
-    &.dictu-navigation-bar__menu-label {
-      grid-column: 2;
-      grid-row: 1;
-    }
-
-    &.dictu-navigation-bar__list {
-      grid-column: 1 / span 6;
-      grid-row: 2;
-    }
   }
 
-  .dictu-navigation-bar__home {
+  // Place first 3 children in first row, fourth in second row
+  .dictu-navigation-bar .dictu-navigation-bar__toggle {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .dictu-navigation-bar .dictu-navigation-bar__home {
     display: block;
+    grid-column: 1;
+    grid-row: 1;
   }
 
-  .dictu-navigation-bar__list {
+  .dictu-navigation-bar .dictu-navigation-bar__menu-label {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .dictu-navigation-bar .dictu-navigation-bar__list {
     background: var(--govnl-nav-bar-background-color);
     display: none;
     flex-direction: column;
+    grid-column: 1 / span 6;
+    grid-row: 2;
   }
 
   .dictu-navigation-bar__toggle:checked ~ .dictu-navigation-bar__list {
-    display: flex;
-  }
-
-  .dictu-navigation-bar__menu-label {
     display: flex;
   }
 }
