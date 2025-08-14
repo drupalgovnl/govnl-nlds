@@ -1,5 +1,12 @@
 # @dictu/page-header
 
+## 1.2.2
+
+### Patch Changes
+
+- b70c1d4: Correct position of lint in logo. Removed underlines in logo in
+  header component.
+
 ## 1.2.1
 
 ### Patch Changes
