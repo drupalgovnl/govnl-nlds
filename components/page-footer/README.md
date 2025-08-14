@@ -34,6 +34,25 @@ import "@dictu/design-tokens/dist/page-footer.css";
 - Gebruik logische heading niveaus voor de structuur.
 - Zorg voor goede focus-states en toetsenbordnavigatie voor alle links.
 
+## Layout (zonder media queries)
+
+- `.dictu-page-footer__container` gebruikt CSS Grid en toont maximaal twee
+  kolommen (tekst + kolommen). Als er niet genoeg ruimte is, valt de layout
+  automatisch terug naar één kolom — zonder media queries.
+- De schakelbreedte is instelbaar via een CSS-variabele:
+  `--govnl-page-footer-container-min-column-width` (standaard ± 28rem).
+- Praktisch: bij brede schermen staan de tekst en de kolommen naast elkaar; bij
+  smallere schermen worden ze onder elkaar gestapeld.
+
+Instellen van de minimale kolombreedte:
+
+```css
+.dictu-page-footer__container {
+  /* Laat eerder naar 1 kolom terugvallen (bijv. ~24rem) */
+  --govnl-page-footer-container-min-column-width: 24rem;
+}
+```
+
 ### Voorbeeldgebruik
 
 ```html
@@ -91,6 +110,11 @@ overzicht van beschikbare tokens. Voorbeeld:
   --govnl-page-footer-background-color: #fff;
   --govnl-page-footer-color: #123456;
   /* ... */
+}
+
+/* Layout tuning voor container (2→1 kolom zonder media queries) */
+.dictu-page-footer__container {
+  --govnl-page-footer-container-min-column-width: 28rem; /* default */
 }
 ```
 

@@ -27,8 +27,11 @@ beschrijving.
 - Alleen hoofdtekst en beschrijving
 - Geen kolommen met links
 - Compact en minimalistisch ontwerp
-- Volledig responsive
+- Volledig responsive (container schakelt 2→1 kolom zonder media queries)
 - Configureerbare heading levels
+
+Tip: je kunt de omschakelbreedte voor de container-kolommen aanpassen met
+`--govnl-page-footer-container-min-column-width`.
 
 ## Gebruik in Storybook
 

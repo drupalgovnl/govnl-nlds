@@ -1,9 +1,10 @@
+import { NodePackageImporter } from 'sass';
 import { createRequire } from 'node:module';
 import { dirname, join } from 'node:path';
+
 const require = createRequire(import.meta.url);
 const config = {
   addons: [getAbsolutePath('@storybook/addon-a11y'), getAbsolutePath('@storybook/addon-docs')],
-
   core: {
     disableTelemetry: true,
     disableWhatsNewNotifications: true,
@@ -12,7 +13,6 @@ const config = {
 
   framework: {
     name: getAbsolutePath('@storybook/html'),
-    options: {},
   },
 
   staticDirs: ['../../../proprietary/assets/src'],
@@ -23,6 +23,21 @@ const config = {
   ],
   docs: {
     autodocs: true,
+  },
+
+  async viteFinal(config) {
+    // Merge custom configuration into the default config
+    const { mergeConfig } = await import('vite');
+
+    return mergeConfig(config, {
+      css: {
+        preprocessorOptions: {
+          scss: {
+            pkgImporter: new NodePackageImporter(),
+          },
+        },
+      },
+    });
   },
 };
 

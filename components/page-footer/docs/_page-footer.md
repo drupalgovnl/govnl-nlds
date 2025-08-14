@@ -6,6 +6,23 @@ De page-footer component toont een voettekst aan de onderkant van een pagina met
 een hoofdtekst, optionele beschrijving en kolommen met links. De component
 ondersteunt verschillende varianten en is volledig toegankelijk.
 
+## Layout (max. 2 kolommen → 1 kolom)
+
+- De `.dictu-page-footer__container` gebruikt CSS Grid met maximaal twee
+  kolommen (tekst en kolommen).
+- Zonder media queries schakelt de layout automatisch naar één kolom wanneer er
+  onvoldoende ruimte is.
+- Stel de overschakelbreedte in via
+  `--govnl-page-footer-container-min-column-width` (default ± 28rem).
+
+Voorbeeld om eerder naar één kolom te gaan:
+
+```css
+.dictu-page-footer__container {
+  --govnl-page-footer-container-min-column-width: 24rem;
+}
+```
+
 ### Voorbeeldgebruik
 
 ```html

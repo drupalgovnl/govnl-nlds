@@ -87,7 +87,8 @@ footer.
 - Automatische externe link behandeling
 - Download link ondersteuning
 - Flexibele heading levels voor kolomtitels
-- Volledig responsive kolommen-layout
+- Volledig responsive kolommen-layout (container schakelt 2→1 kolom zonder media
+  queries)
 
 ## Link Types
 
@@ -128,6 +129,11 @@ De styling gebruikt alle page-footer CSS klassen:
 - `.dictu-page-footer__column`
 
 Plus alle link-list gerelateerde klassen voor de navigatie.
+
+Opmerking: de `.dictu-page-footer__container` gebruikt een fluid CSS Grid dat
+maximaal twee kolommen toont en automatisch naar één kolom terugvalt wanneer er
+onvoldoende ruimte is. Pas de drempel aan met
+`--govnl-page-footer-container-min-column-width`.
 
 ## Licentie
 
