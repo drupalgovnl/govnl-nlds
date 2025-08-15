@@ -4,7 +4,7 @@
   font-family: RijksSans;
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/FiraSans-Regular.woff2") format("woff2");
+  src: url("assets/fonts/FiraSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -12,7 +12,7 @@
   font-family: RijksSans;
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/FiraSans-Bold.woff2") format("woff2");
+  src: url("assets/fonts/FiraSans-Bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -20,7 +20,7 @@
   font-family: RijksSans;
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/FiraSans-Italic.woff2") format("woff2");
+  src: url("assets/fonts/FiraSans-Italic.woff2") format("woff2");
 }
 
 /* Set Fira Sans as the default font family for the entire Storybook */
