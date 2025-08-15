@@ -50,8 +50,11 @@
   &:focus {
     background-color: var(--govnl-nav-bar-link-focus-background-color);
     color: var(--govnl-nav-bar-link-focus-color);
-    outline: 2px solid var(--govnl-nav-bar-link-focus-color);
-    outline-offset: 2px;
+  }
+
+  &:focus-visible {
+    background-color: var(--govnl-nav-bar-link-focus-background-color);
+    color: var(--govnl-nav-bar-link-focus-color);
   }
 
   &-active {

@@ -45,7 +45,7 @@ export const NavigationBar = {
           .map(
             item => `
           <li class="dictu-navigation-bar__item" role="none">
-            <a href="${item.link}" class="dictu-navigation-bar__link" role="menuitem" tabindex="0">
+            <a href="${item.link}" class="dictu-navigation-bar__link dictu-focus-ring" role="menuitem" tabindex="0">
               <span class="dictu-navigation-bar__title">${item.title}</span>
             </a>
           </li>
