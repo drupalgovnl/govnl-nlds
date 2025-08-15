@@ -199,10 +199,10 @@ De component heeft ingebouwde focus styling:
 ## Licentie
 
 EUPL-1.2
-`,C=["landscape","portrait","square","video"],G={title:"Componenten/Image",parameters:{docs:{description:{component:I}}},args:{src:"/assets/example-image.jpg",alt:"Dit is een voorbeeld van een bijschrift",loading:"lazy",decorative:!1,width:"100%",height:"100%",aspectRatio:"video"},argTypes:{src:{control:"text",description:"De URL van de afbeelding"},alt:{control:"text",description:"Alternatieve tekst voor de afbeelding"},loading:{control:"select",options:["lazy","eager"],description:"Laad de afbeelding lui of direct"},decorative:{control:"boolean",description:"Is de afbeelding decoratief?"},ariaDescribedBy:{control:"text",description:"De ID van het element dat de afbeelding beschrijft"},width:{control:"text",description:"De breedte van de afbeelding"},height:{control:"text",description:"De hoogte van de afbeelding"},aspectRatio:{control:"select",options:C,description:"De beeldverhouding van de afbeelding"}},tags:["autodocs"],render:P=>{const{src:s,alt:d,loading:c,decorative:V,ariaDescribedBy:l,width:g,height:m,aspectRatio:p}=P,e=document.createElement("img");return e.classList.add("dictu-image"),s&&(e.src=s),c&&(e.loading=c),g&&(e.width=g),m&&(e.height=m),V?e.alt="":(e.setAttribute("role","img"),d&&(e.alt=d)),l&&e.setAttribute("aria-describedby",l),p&&e.classList.add(`dictu-aspect-ratio-${p}`),e}},n={name:"Default Image",args:{src:"/assets/example-image.jpg",alt:"Dit is een voorbeeld van een bijschrift",width:"640",height:"640",aspectRatio:"square"}},a={name:"Decorative Image",args:{src:"/assets/example-image.jpg",alt:"Dit is een voorbeeld van een decoratieve afbeelding",loading:"lazy",decorative:!0,ariaDescribedBy:"",width:"640",height:"640",aspectRatio:"square"}},t={name:"Landscape Aspect Ratio",args:{src:"/assets/example-image.jpg",alt:"Landscape image example",aspectRatio:"landscape",width:"640",height:"360"}},i={name:"Portrait Aspect Ratio",args:{src:"/assets/example-image.jpg",alt:"Portrait image example",aspectRatio:"portrait",width:"360",height:"640"}},r={name:"Square Aspect Ratio",args:{src:"/assets/example-image.jpg",alt:"Square image example",aspectRatio:"square",width:"640",height:"640"}},o={name:"Video Aspect Ratio",args:{src:"/assets/example-image.jpg",alt:"Video aspect ratio image example",aspectRatio:"video",width:"960",height:"540"}};var u,h,v;n.parameters={...n.parameters,docs:{...(u=n.parameters)==null?void 0:u.docs,source:{originalSource:`{
+`,C=["landscape","portrait","square","video"],G={title:"Componenten/Image",parameters:{docs:{description:{component:I}}},args:{src:"assets/example-image.jpg",alt:"Dit is een voorbeeld van een bijschrift",loading:"lazy",decorative:!1,width:"100%",height:"100%",aspectRatio:"video"},argTypes:{src:{control:"text",description:"De URL van de afbeelding"},alt:{control:"text",description:"Alternatieve tekst voor de afbeelding"},loading:{control:"select",options:["lazy","eager"],description:"Laad de afbeelding lui of direct"},decorative:{control:"boolean",description:"Is de afbeelding decoratief?"},ariaDescribedBy:{control:"text",description:"De ID van het element dat de afbeelding beschrijft"},width:{control:"text",description:"De breedte van de afbeelding"},height:{control:"text",description:"De hoogte van de afbeelding"},aspectRatio:{control:"select",options:C,description:"De beeldverhouding van de afbeelding"}},tags:["autodocs"],render:P=>{const{src:s,alt:d,loading:c,decorative:V,ariaDescribedBy:l,width:g,height:m,aspectRatio:p}=P,e=document.createElement("img");return e.classList.add("dictu-image"),s&&(e.src=s),c&&(e.loading=c),g&&(e.width=g),m&&(e.height=m),V?e.alt="":(e.setAttribute("role","img"),d&&(e.alt=d)),l&&e.setAttribute("aria-describedby",l),p&&e.classList.add(`dictu-aspect-ratio-${p}`),e}},n={name:"Default Image",args:{src:"assets/example-image.jpg",alt:"Dit is een voorbeeld van een bijschrift",width:"640",height:"640",aspectRatio:"square"}},a={name:"Decorative Image",args:{src:"assets/example-image.jpg",alt:"Dit is een voorbeeld van een decoratieve afbeelding",loading:"lazy",decorative:!0,ariaDescribedBy:"",width:"640",height:"640",aspectRatio:"square"}},t={name:"Landscape Aspect Ratio",args:{src:"assets/example-image.jpg",alt:"Landscape image example",aspectRatio:"landscape",width:"640",height:"360"}},i={name:"Portrait Aspect Ratio",args:{src:"assets/example-image.jpg",alt:"Portrait image example",aspectRatio:"portrait",width:"360",height:"640"}},r={name:"Square Aspect Ratio",args:{src:"assets/example-image.jpg",alt:"Square image example",aspectRatio:"square",width:"640",height:"640"}},o={name:"Video Aspect Ratio",args:{src:"assets/example-image.jpg",alt:"Video aspect ratio image example",aspectRatio:"video",width:"960",height:"540"}};var u,h,v;n.parameters={...n.parameters,docs:{...(u=n.parameters)==null?void 0:u.docs,source:{originalSource:`{
   name: 'Default Image',
   args: {
-    src: '/assets/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld van een bijschrift',
     width: '640',
     height: '640',
@@ -211,7 +211,7 @@ EUPL-1.2
 }`,...(v=(h=n.parameters)==null?void 0:h.docs)==null?void 0:v.source}}};var b,f,k;a.parameters={...a.parameters,docs:{...(b=a.parameters)==null?void 0:b.docs,source:{originalSource:`{
   name: 'Decorative Image',
   args: {
-    src: '/assets/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld van een decoratieve afbeelding',
     loading: 'lazy',
     decorative: true,
@@ -223,7 +223,7 @@ EUPL-1.2
 }`,...(k=(f=a.parameters)==null?void 0:f.docs)==null?void 0:k.source}}};var j,S,w;t.parameters={...t.parameters,docs:{...(j=t.parameters)==null?void 0:j.docs,source:{originalSource:`{
   name: 'Landscape Aspect Ratio',
   args: {
-    src: '/assets/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Landscape image example',
     aspectRatio: 'landscape',
     width: '640',
@@ -232,7 +232,7 @@ EUPL-1.2
 }`,...(w=(S=t.parameters)==null?void 0:S.docs)==null?void 0:w.source}}};var D,x,y;i.parameters={...i.parameters,docs:{...(D=i.parameters)==null?void 0:D.docs,source:{originalSource:`{
   name: 'Portrait Aspect Ratio',
   args: {
-    src: '/assets/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Portrait image example',
     aspectRatio: 'portrait',
     width: '360',
@@ -241,7 +241,7 @@ EUPL-1.2
 }`,...(y=(x=i.parameters)==null?void 0:x.docs)==null?void 0:y.source}}};var R,_,A;r.parameters={...r.parameters,docs:{...(R=r.parameters)==null?void 0:R.docs,source:{originalSource:`{
   name: 'Square Aspect Ratio',
   args: {
-    src: '/assets/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Square image example',
     aspectRatio: 'square',
     width: '640',
@@ -250,7 +250,7 @@ EUPL-1.2
 }`,...(A=(_=r.parameters)==null?void 0:_.docs)==null?void 0:A.source}}};var z,q,L;o.parameters={...o.parameters,docs:{...(z=o.parameters)==null?void 0:z.docs,source:{originalSource:`{
   name: 'Video Aspect Ratio',
   args: {
-    src: '/assets/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Video aspect ratio image example',
     aspectRatio: 'video',
     width: '960',
