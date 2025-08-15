@@ -30,6 +30,7 @@ const config = {
     const { mergeConfig } = await import('vite');
 
     return mergeConfig(config, {
+      base: process.env.BASE_URL ?? '/',
       css: {
         preprocessorOptions: {
           scss: {

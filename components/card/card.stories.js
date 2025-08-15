@@ -7,7 +7,7 @@ import './dist/index.css';
 
 export default {
   args: {
-    image_src: '/assets/example-image.jpg',
+    image_src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding',
     headingLevel: 2,
     link: {
@@ -110,7 +110,7 @@ export default {
 
 export const Card = {
   args: {
-    image_src: '/assets/example-image.jpg',
+    image_src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding voor een kaart',
     headingLevel: 2,
     link: {
@@ -125,7 +125,7 @@ export const Card = {
 
 export const AccentCard = {
   args: {
-    image_src: '/assets/example-image.jpg',
+    image_src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding voor een accent kaart',
     headingLevel: 2,
     link: {

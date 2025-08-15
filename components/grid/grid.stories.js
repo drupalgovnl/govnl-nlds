@@ -99,14 +99,14 @@ export const WithImages = {
   args: {
     content: `
       <img class="dictu-image dictu-aspect-ratio-landscape"
-           src="/assets/example-image.jpg"
+           src="assets/example-image.jpg"
            alt="Eerste voorbeeld afbeelding in landscape formaat"
            loading="lazy"
            width="640"
            height="360" />
 
       <img class="dictu-image dictu-aspect-ratio-landscape"
-           src="/assets/example-image.jpg"
+           src="assets/example-image.jpg"
            alt="Tweede voorbeeld afbeelding in landscape formaat"
            loading="lazy"
            width="640"
@@ -129,7 +129,7 @@ export const WithCards = {
     content: `
       <article class="dictu-card dictu-focus-ring" tabindex="0">
         <div class="dictu-card__image-container">
-          <img class="dictu-image dictu-card__image" src="/assets/example-image.jpg" alt="Eerste voorbeeld afbeelding" />
+          <img class="dictu-image dictu-card__image" src="assets/example-image.jpg" alt="Eerste voorbeeld afbeelding" />
         </div>
         <div class="dictu-card__content">
           <h2 class="dictu-card__heading">
@@ -144,7 +144,7 @@ export const WithCards = {
 
       <article class="dictu-card dictu-card--accent dictu-focus-ring" tabindex="0">
         <div class="dictu-card__image-container">
-          <img class="dictu-image dictu-card__image" src="/assets/example-image.jpg" alt="Tweede voorbeeld afbeelding" />
+          <img class="dictu-image dictu-card__image" src="assets/example-image.jpg" alt="Tweede voorbeeld afbeelding" />
         </div>
         <div class="dictu-card__content">
           <h2 class="dictu-card__heading">
@@ -159,7 +159,7 @@ export const WithCards = {
 
       <article class="dictu-card dictu-focus-ring" tabindex="0">
         <div class="dictu-card__image-container">
-          <img class="dictu-image dictu-card__image" src="/assets/example-image.jpg" alt="Derde voorbeeld afbeelding" />
+          <img class="dictu-image dictu-card__image" src="assets/example-image.jpg" alt="Derde voorbeeld afbeelding" />
         </div>
         <div class="dictu-card__content">
           <h2 class="dictu-card__heading">
