@@ -1,5 +1,11 @@
 # @dictu/page-footer
 
+## 1.1.2
+
+### Patch Changes
+
+- d71d912: Minor optimalisations
+
 ## 1.1.1
 
 ### Patch Changes
