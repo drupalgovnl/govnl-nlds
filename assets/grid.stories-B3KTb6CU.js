@@ -727,14 +727,14 @@ EUPL-1.2
       <div>Item 3</div>
     `,columns:3,id:"page-grid-1"},argTypes:{autoflow:{control:"boolean",description:"Geeft aan of het grid automatische plaatsing moet gebruiken. Als dit waar is, worden items in de volgende beschikbare ruimte geplaatst."},content:{control:"text",description:"De HTML inhoud van het grid"},columns:{control:"select",options:[1,2,3,4],description:"Aantal kolommen in het grid. Standaard is 3."},id:{control:"text",description:"ID voor navigatie en toegankelijkheid"}},parameters:{docs:{description:{component:C}}},render:({autoflow:b,content:n,columns:f,id:w})=>{const e=document.createElement("div");if(e.classList.add("dictu-grid",`dictu-grid--columns-${f}`),b&&e.classList.add("dictu-grid--autoflow"),e.setAttribute("id",w),n){if(typeof n=="string"){const j=new DOMParser().parseFromString(n,"text/html"),d=document.createDocumentFragment();Array.from(j.body.childNodes).forEach(y=>{d.appendChild(y.cloneNode(!0))}),e.appendChild(d)}n instanceof HTMLElement&&e.appendChild(n)}return e},tags:["autodocs"],title:"Componenten/Grid"},a={args:{},parameters:{docs:{description:{story:D}}}},i={args:{content:`
       <img class="dictu-image dictu-aspect-ratio-landscape"
-           src="/example-image.jpg"
+           src="/assets/example-image.jpg"
            alt="Eerste voorbeeld afbeelding in landscape formaat"
            loading="lazy"
            width="640"
            height="360" />
 
       <img class="dictu-image dictu-aspect-ratio-landscape"
-           src="/example-image.jpg"
+           src="/assets/example-image.jpg"
            alt="Tweede voorbeeld afbeelding in landscape formaat"
            loading="lazy"
            width="640"
@@ -742,7 +742,7 @@ EUPL-1.2
     `,columns:2,id:"page-grid-images"},parameters:{docs:{description:{story:x}}}},t={args:{content:`
       <article class="dictu-card dictu-focus-ring" tabindex="0">
         <div class="dictu-card__image-container">
-          <img class="dictu-image dictu-card__image" src="/example-image.jpg" alt="Eerste voorbeeld afbeelding" />
+          <img class="dictu-image dictu-card__image" src="/assets/example-image.jpg" alt="Eerste voorbeeld afbeelding" />
         </div>
         <div class="dictu-card__content">
           <h2 class="dictu-card__heading">
@@ -757,7 +757,7 @@ EUPL-1.2
 
       <article class="dictu-card dictu-card--accent dictu-focus-ring" tabindex="0">
         <div class="dictu-card__image-container">
-          <img class="dictu-image dictu-card__image" src="/example-image.jpg" alt="Tweede voorbeeld afbeelding" />
+          <img class="dictu-image dictu-card__image" src="/assets/example-image.jpg" alt="Tweede voorbeeld afbeelding" />
         </div>
         <div class="dictu-card__content">
           <h2 class="dictu-card__heading">
@@ -772,7 +772,7 @@ EUPL-1.2
 
       <article class="dictu-card dictu-focus-ring" tabindex="0">
         <div class="dictu-card__image-container">
-          <img class="dictu-image dictu-card__image" src="/example-image.jpg" alt="Derde voorbeeld afbeelding" />
+          <img class="dictu-image dictu-card__image" src="/assets/example-image.jpg" alt="Derde voorbeeld afbeelding" />
         </div>
         <div class="dictu-card__content">
           <h2 class="dictu-card__heading">
@@ -863,14 +863,14 @@ EUPL-1.2
   args: {
     content: \`
       <img class="dictu-image dictu-aspect-ratio-landscape"
-           src="/example-image.jpg"
+           src="/assets/example-image.jpg"
            alt="Eerste voorbeeld afbeelding in landscape formaat"
            loading="lazy"
            width="640"
            height="360" />
 
       <img class="dictu-image dictu-aspect-ratio-landscape"
-           src="/example-image.jpg"
+           src="/assets/example-image.jpg"
            alt="Tweede voorbeeld afbeelding in landscape formaat"
            loading="lazy"
            width="640"
@@ -891,7 +891,7 @@ EUPL-1.2
     content: \`
       <article class="dictu-card dictu-focus-ring" tabindex="0">
         <div class="dictu-card__image-container">
-          <img class="dictu-image dictu-card__image" src="/example-image.jpg" alt="Eerste voorbeeld afbeelding" />
+          <img class="dictu-image dictu-card__image" src="/assets/example-image.jpg" alt="Eerste voorbeeld afbeelding" />
         </div>
         <div class="dictu-card__content">
           <h2 class="dictu-card__heading">
@@ -906,7 +906,7 @@ EUPL-1.2
 
       <article class="dictu-card dictu-card--accent dictu-focus-ring" tabindex="0">
         <div class="dictu-card__image-container">
-          <img class="dictu-image dictu-card__image" src="/example-image.jpg" alt="Tweede voorbeeld afbeelding" />
+          <img class="dictu-image dictu-card__image" src="/assets/example-image.jpg" alt="Tweede voorbeeld afbeelding" />
         </div>
         <div class="dictu-card__content">
           <h2 class="dictu-card__heading">
@@ -921,7 +921,7 @@ EUPL-1.2
 
       <article class="dictu-card dictu-focus-ring" tabindex="0">
         <div class="dictu-card__image-container">
-          <img class="dictu-image dictu-card__image" src="/example-image.jpg" alt="Derde voorbeeld afbeelding" />
+          <img class="dictu-image dictu-card__image" src="/assets/example-image.jpg" alt="Derde voorbeeld afbeelding" />
         </div>
         <div class="dictu-card__content">
           <h2 class="dictu-card__heading">
