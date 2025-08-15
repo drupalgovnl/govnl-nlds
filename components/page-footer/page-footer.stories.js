@@ -48,7 +48,7 @@ const createArrowIcon = () => {
 const createParagraph = text => {
   if (!text) return null;
   const p = document.createElement('p');
-  p.classList.add('dictu-page-footer-paragraph');
+  p.classList.add('dictu-page-footer-page-footer-paragraph');
   p.textContent = text;
   return p;
 };
@@ -128,8 +128,8 @@ const createColumn = (column, headingLevel) => {
 };
 
 // Reusable data for stories
-const DefaultFooterData = {
-  heading: 'Footer kop',
+export const DefaultFooterData = {
+  heading: 'Footer heading',
   text: 'Dit is een voettekst die extra informatie biedt.',
   headingLevel: 2,
   columns: [
