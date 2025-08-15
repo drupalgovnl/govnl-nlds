@@ -15,7 +15,7 @@ const config = {
     name: getAbsolutePath('@storybook/html'),
   },
 
-  staticDirs: ['../../../proprietary/assets/src'],
+  staticDirs: [{ from: '../../../proprietary/assets/src', to: '/assets' }],
   stories: [
     '../src/**/*.mdx',
     '../../../components/**/*stories.@(js|jsx|ts|tsx)',
