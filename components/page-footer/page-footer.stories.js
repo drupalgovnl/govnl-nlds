@@ -48,7 +48,7 @@ const createArrowIcon = () => {
 const createParagraph = text => {
   if (!text) return null;
   const p = document.createElement('p');
-  p.classList.add('dictu-paragraph');
+  p.classList.add('dictu-page-footer-paragraph');
   p.textContent = text;
   return p;
 };
@@ -56,7 +56,7 @@ const createParagraph = text => {
 const createHeading = (text, level) => {
   if (!text || !level) return null;
   const heading = document.createElement(`h${level}`);
-  heading.classList.add('dictu-heading', `dictu-heading--level-${level}`);
+  heading.classList.add('dictu-page-footer-heading', 'dictu-heading', `dictu-heading--level-${level}`);
   heading.textContent = text;
   return heading;
 };
@@ -128,7 +128,7 @@ const createColumn = (column, headingLevel) => {
 };
 
 // Reusable data for stories
-export const DefaultFooterData = {
+const DefaultFooterData = {
   heading: 'Footer kop',
   text: 'Dit is een voettekst die extra informatie biedt.',
   headingLevel: 2,
@@ -178,55 +178,6 @@ export const DefaultFooterData = {
   ],
 };
 
-// Accessible footer data example (used for documentation)
-// eslint-disable-next-line no-unused-vars
-const accessibleFooterData = {
-  heading: 'Toegankelijke Footer',
-  text: 'Een volledig toegankelijke footer met uitgebreide aria-labels en externe link indicatoren.',
-  headingLevel: 3,
-  columns: [
-    {
-      title: 'Belangrijke Links',
-      items: [
-        {
-          label: 'Toegankelijkheidsverklaring',
-          href: '/toegankelijkheid',
-          title: 'Lees onze toegankelijkheidsverklaring',
-          ariaLabel: 'Toegankelijkheidsverklaring - hoe wij toegankelijkheid waarborgen',
-        },
-        {
-          label: 'Sitemap',
-          href: '/sitemap',
-          title: 'Bekijk de volledige sitemap',
-        },
-        {
-          label: 'PDF Handleiding',
-          href: '/handleiding.pdf',
-          title: 'Download de handleiding als PDF',
-          download: 'handleiding.pdf',
-        },
-      ],
-    },
-    {
-      title: 'Externe Bronnen',
-      items: [
-        {
-          label: 'W3C WCAG Richtlijnen',
-          href: 'https://www.w3.org/WAI/WCAG22/quickref/',
-          title: 'Bezoek de officiële WCAG 2.2 richtlijnen',
-          external: true,
-        },
-        {
-          label: 'Nederlandse Overheid',
-          href: 'https://www.rijksoverheid.nl',
-          title: 'Bezoek de website van de Nederlandse overheid',
-          external: true,
-        },
-      ],
-    },
-  ],
-};
-
 export const PageFooter = {
   render: args => {
     const { heading, text, columns, headingLevel = 2 } = args || {};
@@ -262,7 +213,7 @@ export const PageFooter = {
 
       const fragment = document.createDocumentFragment();
       columns.forEach(column => {
-        fragment.appendChild(createColumn(column, headingLevel));
+        fragment.appendChild(createColumn(column, 4));
       });
 
       columnsContainer.appendChild(fragment);
@@ -325,7 +276,7 @@ export const MinimalPageFooterOnlyColumns = {
         ],
       },
       {
-        title: 'EHeading 2',
+        title: 'Heading 2',
         items: [
           {
             label: 'W3C WCAG Richtlijnen',

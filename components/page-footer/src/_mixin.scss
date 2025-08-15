@@ -71,3 +71,17 @@
 @mixin dictu-page-footer__column {
   gap: var(--govnl-space-sm);
 }
+
+@mixin dictu-page-footer-heading {
+  @include reset;
+
+  padding-block-end: var(--govnl-dimension-size-200);
+}
+
+@mixin dictu-page-footer-paragraph {
+  @include reset;
+
+  font-size: var(--govnl-typography-font-size-sm);
+  padding-block: 0;
+  padding-inline: 0;
+}

@@ -33,3 +33,11 @@
 .dictu-page-footer__column {
   @include mixin.dictu-page-footer__column;
 }
+
+.dictu-page-footer-heading {
+  @include mixin.dictu-page-footer-heading;
+}
+
+.dictu-page-footer-paragraph {
+  @include mixin.dictu-page-footer-paragraph;
+}
