@@ -1,5 +1,11 @@
 # @dictu/figure
 
+## 1.1.1
+
+### Patch Changes
+
+- 53c7c62: Storybook optimalisations
+
 ## 1.1.0
 
 ### Minor Changes
