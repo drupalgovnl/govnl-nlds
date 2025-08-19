@@ -8,10 +8,15 @@ specifieke use cases en biedt consistente presentatie.
 
 | Verhouding | Ratio | CSS Class                             | Gebruik voor                          |
 | ---------- | ----- | ------------------------------------- | ------------------------------------- |
-| Square     | 1:1   | `dictu-image__aspect-ratio:square`    | Profielfoto's, iconen, sociale media  |
+| Auto       | auto  | `dictu-image__aspect-ratio:auto`      | Geen voorkeur ratio                   |
+| Hero       | 32:9  | `dictu-image__aspect-ratio:hero`      | Hero image, banner                    |
 | Landscape  | 4:3   | `dictu-image__aspect-ratio:landscape` | Landschapsfoto's, traditionele foto's |
+| Photo      | 3:2   | `dictu-image__aspect-ratio:photo`     | Traditionele foto's                   |
 | Portrait   | 3:4   | `dictu-image__aspect-ratio:portrait`  | Portretfoto's, verticale content      |
-| Video      | 16:9  | `dictu-image__aspect-ratio:video`     | Video thumbnails, widescreen          |
+| Square     | 1:1   | `dictu-image__aspect-ratio:square`    | Profielfoto's, iconen, sociale media  |
+| Tall       | 9:16  | `dictu-image__aspect-ratio:tall`      | Mobiele schermen, verticale video     |
+| Ultrawide  | 21:9  | `dictu-image__aspect-ratio:ultrawide` |                                       |
+| Wide       | 16:9  | `dictu-image__aspect-ratio:wide`      | Video thumbnails, widescreen          |
 
 ## Implementatie voorbeelden
 
@@ -59,11 +64,11 @@ overzichten
 
 **Ideaal voor**: Portretfotografie, verticale architectuur, mobiele screenshots
 
-### Video (16:9) - Widescreen
+### Wide (16:9) - Widescreen
 
 ```html
 <img
-  class="dictu-image dictu-image__aspect-ratio:video"
+  class="dictu-image dictu-image__aspect-ratio:wide"
   src="/video-thumbnail.jpg"
   alt="Thumbnail van instructievideo over toegankelijkheid"
   width="1280"
@@ -78,19 +83,39 @@ overzichten
 ### CSS implementatie
 
 ```scss
-.dictu-image__aspect-ratio:square {
-  aspect-ratio: 1;
+.dictu-image__aspect-ratio:auto {
+  aspect-ratio: auto;
+}
+
+.dictu-image__aspect-ratio:hero {
+  aspect-ratio: 32/9;
 }
 
 .dictu-image__aspect-ratio:landscape {
   aspect-ratio: 4/3;
 }
 
+.dictu-image__aspect-ratio:photo {
+  aspect-ratio: 3/2;
+}
+
 .dictu-image__aspect-ratio:portrait {
   aspect-ratio: 3/4;
 }
 
-.dictu-image__aspect-ratio:video {
+.dictu-image__aspect-ratio:square {
+  aspect-ratio: 1;
+}
+
+.dictu-image__aspect-ratio:tall {
+  aspect-ratio: 9/16;
+}
+
+.dictu-image__aspect-ratio:ultrawide {
+  aspect-ratio: 21/9;
+}
+
+.dictu-image__aspect-ratio:wide {
   aspect-ratio: 16/9;
 }
 ```
@@ -179,10 +204,15 @@ Specificeer altijd `width` en `height` attributen:
 
 Alle beeldverhoudingen zijn beschikbaar als aparte stories:
 
-- **Square**: `aspectRatio: 'square'`
+- **Auto**: `aspectRatio: 'auto'`
+- **Hero**: `aspectRatio: 'hero'`
 - **Landscape**: `aspectRatio: 'landscape'`
+- **Photo**: `aspectRatio: 'photo'`
 - **Portrait**: `aspectRatio: 'portrait'`
-- **Video**: `aspectRatio: 'video'`
+- **Square**: `aspectRatio: 'square'`
+- **Tall**: `aspectRatio: 'tall'`
+- **Ultrawide**: `aspectRatio: 'ultrawide'`
+- **Wide**: `aspectRatio: 'wide'`
 
 ## Licentie
 
