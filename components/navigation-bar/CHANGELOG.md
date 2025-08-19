@@ -1,5 +1,17 @@
 # @dictu/navigation-bar
 
+## 1.1.2
+
+### Patch Changes
+
+- 75bf2d7: Added focus-visible style
+
+## 1.1.1
+
+### Patch Changes
+
+- 18f2c86: Correct styling of navigation items on mobile.
+
 ## 1.1.0
 
 ### Minor Changes

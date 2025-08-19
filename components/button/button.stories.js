@@ -4,7 +4,7 @@ import './dist/index.css';
 export default {
   argTypes: {
     label: {
-      control: 'string',
+      control: 'text',
     },
     variant: {
       control: 'radio',

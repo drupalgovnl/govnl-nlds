@@ -7,7 +7,7 @@ import './dist/index.css';
 
 export default {
   args: {
-    image_src: '/example-image.jpg',
+    image_src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding',
     headingLevel: 2,
     link: {
@@ -57,7 +57,7 @@ export default {
       },
     },
   },
-  render: ({ headingLevel, link, content, metadata, variant = 'default' }) => {
+  render: ({ headingLevel, link, content, metadata, variant = 'default', image_src, alt }) => {
     const card = document.createElement('div');
     card.classList.add('dictu-card', `dictu-card--${variant}`, 'dictu-focus-ring');
     card.setAttribute('tabindex', '0');
@@ -67,8 +67,8 @@ export default {
 
     const imageElement = document.createElement('img');
     imageElement.classList.add('dictu-image', 'dictu-card__image');
-    imageElement.src = '/example-image.jpg';
-    imageElement.alt = 'Dit is een voorbeeld afbeelding';
+    imageElement.src = image_src || '';
+    imageElement.alt = alt || '';
 
     imageContainer.appendChild(imageElement);
 
@@ -110,7 +110,7 @@ export default {
 
 export const Card = {
   args: {
-    image_src: '/example-image.jpg',
+    image_src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding voor een kaart',
     headingLevel: 2,
     link: {
@@ -125,7 +125,7 @@ export const Card = {
 
 export const AccentCard = {
   args: {
-    image_src: '/example-image.jpg',
+    image_src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding voor een accent kaart',
     headingLevel: 2,
     link: {

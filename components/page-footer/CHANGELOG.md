@@ -1,5 +1,17 @@
 # @dictu/page-footer
 
+## 1.1.2
+
+### Patch Changes
+
+- d71d912: Minor optimalisations
+
+## 1.1.1
+
+### Patch Changes
+
+- 8922263: Mobile footer styling and enhancements
+
 ## 1.1.0
 
 ### Minor Changes

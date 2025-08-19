@@ -340,7 +340,7 @@ export const InformationPage = {
 
     // create figure section
     const figureSection = createSection();
-    const figureContent = createFigure('/huis-in-groningen.jpg', 'Placeholder afbeelding', 'Huis in Groningen');
+    const figureContent = createFigure('assets/huis-in-groningen.jpg', 'Placeholder afbeelding', 'Huis in Groningen');
     const figureContainer = createContainer([figureContent]);
     figureSection.appendChild(figureContainer);
     main.appendChild(figureSection);

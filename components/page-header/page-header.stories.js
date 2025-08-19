@@ -55,7 +55,7 @@ const createLink = args => {
 
 const createContainer = () => {
   const container = document.createElement('div');
-  container.className = 'dictu-page-header__logo-wrapper';
+  container.classList.add('dictu-page-header__logo-wrapper', 'dictu-container');
   container.appendChild(createLink({ url: '/' }));
 
   return container;
