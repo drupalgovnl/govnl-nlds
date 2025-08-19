@@ -8,13 +8,14 @@
 
 $aspect-ratios: (
   "auto": "auto",
-  "square": "1",
+  "hero": "32 / 9",
   "landscape": "4 / 3",
-  "video": "16 / 9",
-  "ultrawide": "21 / 9",
-  "portrait": "3 / 4",
-  "tall": "9 / 16",
   "photo": "3 / 2",
+  "portrait": "3 / 4",
+  "square": "1",
+  "tall": "9 / 16",
+  "ultrawide": "21 / 9",
+  "wide": "16 / 9",
 );
 
 @each $name, $ratio in $aspect-ratios {
