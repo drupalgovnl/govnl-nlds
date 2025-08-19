@@ -13,7 +13,7 @@ const tokens = globSync('./src/**/*.tokens.json');
 
 // Unified SD config that handles both base tokens and component tokens in a single build.
 const unified = new StyleDictionary({
-  source: tokens, // Use all tokens so references can be resolved across files
+  source: tokens,
   preprocessors: ['tokens-studio'],
   platforms: {
     css: {
