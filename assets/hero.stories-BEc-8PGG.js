@@ -1,4 +1,4 @@
-/* empty css              */import u from"./image.stories-g8_Vz8ZO.js";/* empty css              */const H=`<!-- @license CC0-1.0 -->
+/* empty css              */import u from"./image.stories-C50-XWXd.js";/* empty css              */const H=`<!-- @license CC0-1.0 -->
 
 De hero component toont een opvallende sectie met een achtergrondafbeelding en
 tekstinhoud aan de bovenkant van een pagina.
