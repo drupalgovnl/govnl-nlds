@@ -12,6 +12,7 @@
 @use "pkg:@dictu/link-list/src/index" as link-list;
 @use "pkg:@dictu/link/src/index" as link;
 @use "pkg:@dictu/icon/src/index" as icon;
+@use "pkg:@dictu/page-container/src/index" as page-container;
 
 .dictu-page-footer {
   @include mixin.dictu-page-footer;
@@ -31,4 +32,12 @@
 
 .dictu-page-footer__column {
   @include mixin.dictu-page-footer__column;
+}
+
+.dictu-page-footer-heading {
+  @include mixin.dictu-page-footer-heading;
+}
+
+.dictu-page-footer-paragraph {
+  @include mixin.dictu-page-footer-paragraph;
 }

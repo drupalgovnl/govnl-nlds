@@ -1,5 +1,17 @@
 # @dictu/card
 
+## 1.2.1
+
+### Patch Changes
+
+- 53c7c62: Storybook optimalisations
+
+## 1.2.0
+
+### Minor Changes
+
+- 1385bac: Moves focus ring utility to utility folder
+
 ## 1.1.0
 
 ### Minor Changes

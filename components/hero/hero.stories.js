@@ -73,7 +73,7 @@ const renderHero = ({ heading, subheading, cornerPosition, messagePosition, ...r
   hero.appendChild(pageContainer);
 
   const heroImage = document.createElement('img');
-  heroImage.src = rest.src;
+  heroImage.src = 'assets/huis-in-groningen.jpg';
   heroImage.alt = rest.alt || '';
   heroImage.loading = rest.imageLoading || 'lazy';
   heroImage.classList.add('dictu-hero__image', `dictu-aspect-ratio-${rest.aspectRatio}`);

@@ -14,7 +14,7 @@ export default {
     },
   },
   args: {
-    src: '/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld van een bijschrift',
     loading: 'lazy',
     decorative: false,
@@ -98,7 +98,7 @@ export default {
 export const Default = {
   name: 'Default Image',
   args: {
-    src: '/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld van een bijschrift',
     width: '640',
     height: '640',
@@ -109,7 +109,7 @@ export const Default = {
 export const Decorative = {
   name: 'Decorative Image',
   args: {
-    src: '/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld van een decoratieve afbeelding',
     loading: 'lazy',
     decorative: true,
@@ -123,7 +123,7 @@ export const Decorative = {
 export const Landscape = {
   name: 'Landscape Aspect Ratio',
   args: {
-    src: '/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Landscape image example',
     aspectRatio: 'landscape',
     width: '640',
@@ -134,7 +134,7 @@ export const Landscape = {
 export const Portrait = {
   name: 'Portrait Aspect Ratio',
   args: {
-    src: '/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Portrait image example',
     aspectRatio: 'portrait',
     width: '360',
@@ -145,7 +145,7 @@ export const Portrait = {
 export const Square = {
   name: 'Square Aspect Ratio',
   args: {
-    src: '/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Square image example',
     aspectRatio: 'square',
     width: '640',
@@ -156,7 +156,7 @@ export const Square = {
 export const Video = {
   name: 'Video Aspect Ratio',
   args: {
-    src: '/example-image.jpg',
+    src: 'assets/example-image.jpg',
     alt: 'Video aspect ratio image example',
     aspectRatio: 'video',
     width: '960',

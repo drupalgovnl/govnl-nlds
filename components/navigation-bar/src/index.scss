@@ -4,6 +4,8 @@
  */
 
 @use "pkg:@dictu/design-tokens/dist/navigation-bar" as design-tokens;
+@use "pkg:@dictu/utility-focus-ring/dist/index" as focus-ring;
+
 @use "./mixin.scss" as mixin;
 
 .dictu-navigation-bar {
