@@ -45,6 +45,10 @@ const createTimeline = timelineData => {
       const subList = document.createElement('ol');
       subList.classList.add('dictu-timeline__sub-list');
 
+      if (!timelineElements.expanded) {
+        subList.setAttribute('hidden', '');
+      }
+
       for (let j = 0; j < timelineElements.children.length; j += 1) {
         const child = timelineElements.children[j];
         const subListItem = document.createElement('li');
@@ -155,7 +159,7 @@ export const Timeline = {
     title: 'Tijdlijn',
     data: [
       {
-        label: 'Tijdlijn Heading',
+        label: 'Tijdlijn Heading met children',
         expanded: true,
         children: [
           {
@@ -170,6 +174,26 @@ export const Timeline = {
             expanded: false,
             content: `
               <p class="dictu-paragraph">Content informatie 1.2. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+            `,
+          },
+        ],
+      },
+      {
+        label: 'Tijdelijke Heading met children niet expanded',
+        expanded: false,
+        children: [
+          {
+            label: 'Tijdelijke Subheading',
+            expanded: false,
+            content: `
+              <p class="dictu-paragraph">Dit is tijdelijke content voor een subheading. Expanded staat op false.</p>
+            `,
+          },
+          {
+            label: 'Tijdelijke Subheading',
+            expanded: false,
+            content: `
+              <p class="dictu-paragraph">Nog een tijdelijke subheading met expanded op false.</p>
             `,
           },
         ],
