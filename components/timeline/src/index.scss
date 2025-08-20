@@ -24,6 +24,10 @@
   @include mixin.dictu-timeline-body;
 }
 
+.dictu-timeline__sub-list {
+  @include mixin.dictu-timeline-sublist;
+}
+
 .dictu-timeline__element-button {
   @include mixin.dictu-timeline-element-button;
 
@@ -75,7 +79,7 @@
 .dictu-timeline__element-content-wrapper {
   @include mixin.dictu-timeline-element_content-wrapper;
 
-  &:not(:last-of-type) {
+  & {
     &::before {
       @include mixin.dictu-timeline-connector;
     }

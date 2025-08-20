@@ -16,9 +16,22 @@
 }
 
 @mixin dictu-timeline-body {
+  @include reset;
+
   display: flex;
   flex-direction: column;
+  list-style: none;
   padding-block: var(--govnl-timeline-padding-block-start) var(--govnl-timeline-padding-block-end);
+}
+
+@mixin dictu-timeline-sublist {
+  @include reset;
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-block: var(--govnl-timeline-padding-block-start) var(--govnl-timeline-padding-block-end);
+  position: relative;
 }
 
 @mixin dictu-timeline-element-content-wrapper {

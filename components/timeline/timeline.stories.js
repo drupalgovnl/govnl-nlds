@@ -25,42 +25,59 @@ export default {
 };
 
 const createTimeline = timelineData => {
-  const element = document.createElement('div');
+  const element = document.createElement('ol');
   element.classList.add('dictu-timeline__body');
 
   for (let i = 0; i < timelineData.length; i += 1) {
     const timelineElements = timelineData[i];
+    const listItem = document.createElement('li');
+    listItem.classList.add('dictu-timeline__item');
+
     const heading = headingElement(false, '3', timelineElements.label, timelineElements.expanded);
-    element.appendChild(heading);
+    listItem.appendChild(heading);
 
     if (timelineElements.content) {
-      const content = contentElement(timelineElements.content);
-
-      element.appendChild(content);
+      const content = contentElement(timelineElements.content, timelineElements.expanded);
+      listItem.appendChild(content);
     }
 
     if (timelineElements.children) {
-      for (let i = 0; i < timelineElements.children.length; i += 1) {
-        const child = timelineElements.children[i];
+      const subList = document.createElement('ol');
+      subList.classList.add('dictu-timeline__sub-list');
+
+      for (let j = 0; j < timelineElements.children.length; j += 1) {
+        const child = timelineElements.children[j];
+        const subListItem = document.createElement('li');
+        subListItem.classList.add('dictu-timeline__sub-item');
 
         const subHeading = headingElement(true, '4', child.label, child.expanded);
-        element.appendChild(subHeading);
+        subListItem.appendChild(subHeading);
 
         if (child.content) {
-          const content = contentElement(child.content);
-
-          element.appendChild(content);
+          const content = contentElement(child.content, child.expanded);
+          subListItem.appendChild(content);
         }
+
+        subList.appendChild(subListItem);
       }
+
+      listItem.appendChild(subList);
     }
+
+    element.appendChild(listItem);
   }
 
   return element;
 };
 
-const contentElement = content => {
+const contentElement = (content, expanded) => {
   const contentWrapper = document.createElement('div');
   contentWrapper.classList.add('dictu-timeline__element-content-wrapper');
+
+  if (!expanded) {
+    contentWrapper.setAttribute('hidden', '');
+  }
+
   const contentElement = document.createElement('div');
   contentElement.classList.add('dictu-timeline__element-content');
   contentElement.innerHTML = content;
