@@ -26,6 +26,10 @@
 
 .dictu-timeline__sub-list {
   @include mixin.dictu-timeline-sublist;
+
+  &::before {
+    @include mixin.dictu-timeline-connector;
+  }
 }
 
 .dictu-timeline__element-button {
@@ -38,26 +42,10 @@
       }
     }
   }
-
-  &:first-of-type {
-    .dictu-timeline__element-heading-body::before {
-      @include mixin.dictu-timeline-connector-start;
-    }
-  }
-
-  &:last-of-type {
-    .dictu-timeline__element-heading-body::before {
-      @include mixin.dictu-timeline-connector-end;
-    }
-  }
 }
 
 .dictu-timeline__element-heading-body {
   @include mixin.dictu-timeline-element-heading-content;
-
-  &::before {
-    @include mixin.dictu-timeline-connector;
-  }
 }
 
 .dictu-timeline__element-heading {
@@ -77,16 +65,50 @@
 }
 
 .dictu-timeline__element-content-wrapper {
-  @include mixin.dictu-timeline-element_content-wrapper;
+  @include mixin.dictu-timeline-element-content-wrapper;
+}
 
-  & {
-    &::before {
-      @include mixin.dictu-timeline-connector;
+.dictu-timeline__element-content {
+  @include mixin.dictu-timeline-element-content;
+}
+
+.dictu-timeline__item {
+  .dictu-timeline__element-heading-body::before {
+    @include mixin.dictu-timeline-connector;
+  }
+
+  &:first-child {
+    .dictu-timeline__element-heading-body::before {
+      @include mixin.dictu-timeline-connector-start;
+    }
+  }
+
+  &:last-child {
+    .dictu-timeline__element-heading-body::before {
+      @include mixin.dictu-timeline-connector-end;
+    }
+
+    .dictu-timeline__element-content-wrapper::before {
+      display: none;
+    }
+  }
+
+  // For content wrappers, also add connectors to continue the line
+  .dictu-timeline__element-content-wrapper::before {
+    @include mixin.dictu-timeline-connector;
+  }
+
+  // Sub-list should also continue the main timeline connector
+  .dictu-timeline__sub-list::before {
+    @include mixin.dictu-timeline-connector;
+    height: 100%;
+  }
+
+  &:last-child {
+    .dictu-timeline__sub-list::before {
+      display: none;
     }
   }
 }
 
-.dictu-timeline__element-content {
-  @include mixin.dictu-timeline-element_content;
-}
 /* stylelint-enable */
