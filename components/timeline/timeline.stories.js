@@ -179,7 +179,7 @@ export const Timeline = {
         ],
       },
       {
-        label: 'Tijdelijke Heading met children niet expanded',
+        label: 'Tijdelijke Heading met children',
         expanded: false,
         children: [
           {
@@ -215,9 +215,15 @@ export const Timeline = {
       {
         label: 'Tijdlijn Heading',
         expanded: true,
-        content: `
-          <p class="dictu-paragraph">Content informatie 4. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
-        `,
+        children: [
+          {
+            label: 'Tijdlijn Subheading',
+            expanded: true,
+            content: `
+              <p class="dictu-paragraph">Content informatie 4.1. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+            `,
+          },
+        ],
       },
     ],
   },

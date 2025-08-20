@@ -80,16 +80,23 @@
   }
 
   &:last-child {
-    .dictu-timeline__element-heading-body::before {
-      @include mixin.dictu-timeline-connector-end;
+    &:not(:has(.dictu-timeline__sub-list:not([hidden]))) {
+      .dictu-timeline__element-heading-body::before {
+        @include mixin.dictu-timeline-connector-end;
+      }
     }
 
     .dictu-timeline__element-content-wrapper::before {
       display: none;
     }
+
+    .dictu-timeline__sub-item:last-child {
+      .dictu-timeline__element-heading-body::before {
+        @include mixin.dictu-timeline-connector-end;
+      }
+    }
   }
 
-  // For content wrappers, also add connectors to continue the line
   .dictu-timeline__element-content-wrapper::before {
     @include mixin.dictu-timeline-connector;
   }
