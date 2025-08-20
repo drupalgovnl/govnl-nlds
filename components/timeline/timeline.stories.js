@@ -162,12 +162,15 @@ export const Timeline = {
             label: 'Tijdlijn Subheading',
             expanded: true,
             content: `
-              <p class="dictu-paragraph">Content informatie. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+              <p class="dictu-paragraph">Content informatie 1.1. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
             `,
           },
           {
             label: 'Tijdlijn Subheading',
             expanded: false,
+            content: `
+              <p class="dictu-paragraph">Content informatie 1.2. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+            `,
           },
         ],
       },
@@ -175,18 +178,21 @@ export const Timeline = {
         label: 'Tijdlijn Heading',
         expanded: true,
         content: `
-          <p class="dictu-paragraph">Content informatie. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+          <p class="dictu-paragraph">Content informatie 2. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
         `,
       },
       {
         label: 'Tijdlijn Heading',
         expanded: false,
+        content: `
+          <p class="dictu-paragraph">Content informatie 3. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+        `,
       },
       {
         label: 'Tijdlijn Heading',
         expanded: true,
         content: `
-          <p class="dictu-paragraph">Content informatie. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+          <p class="dictu-paragraph">Content informatie 4. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
         `,
       },
     ],

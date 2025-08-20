@@ -26,10 +26,6 @@
 
 .dictu-timeline__sub-list {
   @include mixin.dictu-timeline-sublist;
-
-  &::before {
-    @include mixin.dictu-timeline-connector;
-  }
 }
 
 .dictu-timeline__element-button {
@@ -98,16 +94,14 @@
     @include mixin.dictu-timeline-connector;
   }
 
-  // Sub-list should also continue the main timeline connector
-  .dictu-timeline__sub-list::before {
-    @include mixin.dictu-timeline-connector;
-    height: 100%;
-  }
-
   &:last-child {
     .dictu-timeline__sub-list::before {
       display: none;
     }
+  }
+
+  .dictu-timeline__sub-list .dictu-timeline__element-heading-body::before {
+    @include mixin.dictu-timeline-connector;
   }
 }
 
