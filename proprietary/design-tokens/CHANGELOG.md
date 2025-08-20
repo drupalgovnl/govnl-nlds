@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 1.1.1
+
+### Patch Changes
+
+- 880beb9: unified SD config for core-token-references
+
 ## 1.1.0
 
 ### Minor Changes

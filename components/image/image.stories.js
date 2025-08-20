@@ -2,7 +2,7 @@ import readme from './README.md?raw';
 import './dist/index.css';
 
 // Aspect ratio options (define this constant if not imported)
-const ASPECT_RATIO_OPTIONS = ['landscape', 'portrait', 'square', 'video'];
+const ASPECT_RATIO_OPTIONS = ['auto', 'hero', 'landscape', 'photo', 'portrait', 'square', 'tall', 'ultrawide', 'wide'];
 
 export default {
   title: 'Componenten/Image',
@@ -20,7 +20,7 @@ export default {
     decorative: false,
     width: '100%',
     height: '100%',
-    aspectRatio: 'video',
+    aspectRatio: 'wide',
   },
   argTypes: {
     src: {
@@ -120,14 +120,47 @@ export const Decorative = {
   },
 };
 
+export const Auto = {
+  name: 'Auto Aspect Ratio',
+  args: {
+    src: 'assets/example-image.jpg',
+    alt: 'Auto aspect ratio image example',
+    aspectRatio: 'auto',
+    width: '960',
+    height: '540',
+  },
+};
+
+export const Hero = {
+  name: 'Hero Aspect Ratio',
+  args: {
+    src: 'assets/example-image.jpg',
+    alt: 'Hero aspect ratio image example',
+    aspectRatio: 'hero',
+    width: '960',
+    height: '540',
+  },
+};
+
 export const Landscape = {
   name: 'Landscape Aspect Ratio',
   args: {
     src: 'assets/example-image.jpg',
-    alt: 'Landscape image example',
+    alt: 'Landscape aspect ratio image example',
     aspectRatio: 'landscape',
-    width: '640',
-    height: '360',
+    width: '960',
+    height: '540',
+  },
+};
+
+export const Photo = {
+  name: 'Photo Aspect Ratio',
+  args: {
+    src: 'assets/example-image.jpg',
+    alt: 'Photo aspect ratio image example',
+    aspectRatio: 'photo',
+    width: '960',
+    height: '540',
   },
 };
 
@@ -135,10 +168,10 @@ export const Portrait = {
   name: 'Portrait Aspect Ratio',
   args: {
     src: 'assets/example-image.jpg',
-    alt: 'Portrait image example',
+    alt: 'Portrait aspect ratio image example',
     aspectRatio: 'portrait',
-    width: '360',
-    height: '640',
+    width: '960',
+    height: '540',
   },
 };
 
@@ -146,19 +179,41 @@ export const Square = {
   name: 'Square Aspect Ratio',
   args: {
     src: 'assets/example-image.jpg',
-    alt: 'Square image example',
+    alt: 'Square aspect ratio image example',
     aspectRatio: 'square',
-    width: '640',
-    height: '640',
+    width: '960',
+    height: '540',
   },
 };
 
-export const Video = {
-  name: 'Video Aspect Ratio',
+export const Tall = {
+  name: 'Tall Aspect Ratio',
   args: {
     src: 'assets/example-image.jpg',
-    alt: 'Video aspect ratio image example',
-    aspectRatio: 'video',
+    alt: 'Tall aspect ratio image example',
+    aspectRatio: 'tall',
+    width: '960',
+    height: '540',
+  },
+};
+
+export const Ultrawide = {
+  name: 'Ultrawide Aspect Ratio',
+  args: {
+    src: 'assets/example-image.jpg',
+    alt: 'Ultrawide aspect ratio image example',
+    aspectRatio: 'ultrawide',
+    width: '960',
+    height: '540',
+  },
+};
+
+export const Wide = {
+  name: 'Wide Aspect Ratio',
+  args: {
+    src: 'assets/example-image.jpg',
+    alt: 'Wide aspect ratio image example',
+    aspectRatio: 'wide',
     width: '960',
     height: '540',
   },

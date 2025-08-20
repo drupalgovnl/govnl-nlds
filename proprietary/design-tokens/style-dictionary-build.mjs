@@ -11,9 +11,9 @@ register(StyleDictionary);
 const baseTokens = ['./src/**/common.tokens.json', './src/**/core.tokens.json'];
 const tokens = globSync('./src/**/*.tokens.json');
 
-// Base SD config that combines core and common tokens in a single output.
-const base = new StyleDictionary({
-  source: [baseTokens],
+// Unified SD config that handles both base tokens and component tokens in a single build.
+const unified = new StyleDictionary({
+  source: tokens,
   preprocessors: ['tokens-studio'],
   platforms: {
     css: {
@@ -21,50 +21,34 @@ const base = new StyleDictionary({
       transforms: ['attribute/cti', 'name/kebab', 'color/hsl'],
       buildPath: 'dist/',
       files: [
+        // Base tokens file (core and common tokens)
         {
           destination: 'index.css',
           format: 'css/variables',
+          filter: token =>
+            baseTokens.some(pattern =>
+              token.filePath.match(pattern.replace('./src/**/', '').replace('.tokens.json', ''))
+            ),
           options: {
             selector: '.dictu-theme',
-            outputReferences: true,
+            outputReferences: false,
           },
         },
+        // Component-specific token files
+        ...tokens
+          .filter(file => file.startsWith('src/components/'))
+          .map(file => ({
+            destination: `${path.parse(file).name.toLowerCase().replace('.tokens', '')}.css`,
+            format: 'css/variables',
+            filter: token => token.filePath === file,
+            options: {
+              selector: `.dictu-${path.parse(file).name.toLowerCase().replace('.tokens', '')}`,
+              outputReferences: true,
+            },
+          })),
       ],
     },
   },
 });
 
-// SD config that outputs a file per component.
-const components = new StyleDictionary({
-  // Logging is set to silent, because the warning for filtered out token references
-  // is not relevant for the component tokens.
-  // It is only relevant for the base tokens, which are not filtered out.
-  // This is a workaround for the issue with the warning not being silenced.
-  //
-  log: {
-    verbosity: 'verbose',
-  },
-  source: [tokens],
-  preprocessors: ['tokens-studio'],
-  platforms: {
-    css: {
-      transformGroup: 'tokens-studio',
-      transforms: ['attribute/cti', 'name/kebab', 'color/hsl'],
-      buildPath: 'dist/',
-      files: tokens
-        .filter(file => file.startsWith('src/components/'))
-        .map(file => ({
-          destination: `${path.parse(file).name.toLowerCase().replace('.tokens', '')}.css`,
-          format: 'css/variables',
-          filter: token => token.filePath === file,
-          options: {
-            selector: `.dictu-${path.parse(file).name.toLowerCase().replace('.tokens', '')}`,
-            outputReferences: true,
-          },
-        })),
-    },
-  },
-});
-
-await base.buildAllPlatforms();
-await components.buildAllPlatforms();
+await unified.buildAllPlatforms();
