@@ -1,0 +1,10 @@
+{
+  "govnl": {
+    "content": {
+      "max-inline-size": {
+        "$type": "dimension",
+        "$value": "calc(5 * {govnl.dimension.size.2000})"
+      }
+    }
+  }
+}
