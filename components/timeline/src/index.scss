@@ -8,10 +8,6 @@
 @use "pkg:@dictu/heading/dist/index" as heading-component;
 @use "pkg:@dictu/button/dist/index" as button-component;
 
-// TODO: ::before etc doesn't match stylelint rules. No documentation
-// found on wether that is deliberate or an oversight. Due to time
-// constraints stylelint is disabled in this file.
-/* stylelint-disable */
 .dictu-timeline {
   @include mixin.dictu-timeline;
 }
@@ -30,14 +26,10 @@
 
 .dictu-timeline__element-button {
   @include mixin.dictu-timeline-element-button;
+}
 
-  &[aria-expanded="true"] {
-    .dictu-timeline__icon {
-      svg {
-        @include mixin.dictu-timeline-icon-expanded;
-      }
-    }
-  }
+.dictu-timeline__element-button[aria-expanded="true"] .dictu-timeline__icon svg {
+  @include mixin.dictu-timeline-icon-expanded;
 }
 
 .dictu-timeline__element-heading-body {
@@ -68,6 +60,10 @@
   @include mixin.dictu-timeline-element-content;
 }
 
+// TODO: ::before etc doesn't match stylelint rules. No documentation
+// found on whether that is deliberate or an oversight. Due to time
+// constraints stylelint is disabled in this file.
+/* stylelint-disable selector-nested-pattern */
 .dictu-timeline__item {
   .dictu-timeline__element-heading-body::before {
     @include mixin.dictu-timeline-connector;
@@ -101,15 +97,8 @@
     @include mixin.dictu-timeline-connector;
   }
 
-  &:last-child {
-    .dictu-timeline__sub-list::before {
-      display: none;
-    }
-  }
-
   .dictu-timeline__sub-list .dictu-timeline__element-heading-body::before {
     @include mixin.dictu-timeline-connector;
   }
 }
-
-/* stylelint-enable */
+/* stylelint-enable selector-nested-pattern */
