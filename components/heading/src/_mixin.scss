@@ -7,8 +7,6 @@
 
 @mixin dictu-heading {
   @include nl-heading.nl-heading;
-
-  max-inline-size: var(--govnl-heading-max-inline-size);
 }
 
 @mixin dictu-heading--level-1 {

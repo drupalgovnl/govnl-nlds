@@ -1,0 +1,6 @@
+@use "pkg:@dictu/design-tokens/dist/content" as design-tokens;
+@use "mixin" as mixin;
+
+.dictu-max-inline-size {
+  @include mixin.dictu-max-inline-size;
+}

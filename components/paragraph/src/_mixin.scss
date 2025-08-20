@@ -7,8 +7,6 @@
 
 @mixin dictu-paragraph {
   @include mixin.nl-paragraph;
-
-  max-inline-size: var(--govnl-paragraph-max-inline-size);
 }
 
 @mixin dictu-paragraph--lead {
