@@ -32,7 +32,7 @@
 }
 
 @mixin dictu-hero__container {
-  @include container.dictu-container;
+  --govnl-document-color: var(--govnl-hero-message-color);
 
   line-height: 0;
   overflow: hidden;
@@ -43,6 +43,8 @@
   block-size: auto;
   inline-size: 100%;
   max-width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 @mixin dictu-hero__message {
@@ -69,12 +71,12 @@
 
 @mixin dictu-hero__message-left {
   border-top-right-radius: var(--govnl-hero-message-border-radius, 1.25rem);
-  inset-inline-start: var(--govnl-dimension-size-200);
+  inset-inline-start: 0;
 }
 
 @mixin dictu-hero__message-right {
   border-top-left-radius: var(--govnl-hero-message-border-radius, 1.25rem);
-  inset-inline-end: var(--govnl-dimension-size-200);
+  inset-inline-end: 0;
 }
 
 @mixin dictu-hero__heading {
