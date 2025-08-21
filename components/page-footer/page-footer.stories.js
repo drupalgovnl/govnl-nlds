@@ -22,6 +22,9 @@ export default {
     headingLevel: {
       control: { type: 'range', min: 1, max: 6 },
       description: 'Heading level for the main footer heading (affects column titles too)',
+      table: {
+        disable: true,
+      },
     },
   },
   parameters: {
@@ -48,7 +51,7 @@ const createArrowIcon = () => {
 const createParagraph = text => {
   if (!text) return null;
   const p = document.createElement('p');
-  p.classList.add('dictu-page-footer-page-footer-paragraph');
+  p.classList.add('dictu-page-footer-page-footer-paragraph', 'dictu-paragraph');
   p.textContent = text;
   return p;
 };
@@ -98,7 +101,7 @@ const createLinkList = items => {
   if (!items?.length) return null;
 
   const list = document.createElement('ul');
-  list.classList.add('dictu-link-list');
+  list.classList.add('dictu-link-list', 'dictu-page-footer__link-list');
 
   const fragment = document.createDocumentFragment();
   items.forEach(item => {
@@ -213,7 +216,7 @@ export const PageFooter = {
 
       const fragment = document.createDocumentFragment();
       columns.forEach(column => {
-        fragment.appendChild(createColumn(column, 4));
+        fragment.appendChild(createColumn(column, headingLevel));
       });
 
       columnsContainer.appendChild(fragment);
