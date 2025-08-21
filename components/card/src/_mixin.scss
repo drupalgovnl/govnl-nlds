@@ -105,6 +105,7 @@
 
 @mixin dictu-card__image-container {
   max-height: var(--govnl-card-default-image-container-max-height, 10rem);
+  overflow: hidden;
 
   img {
     height: 100%;
@@ -172,4 +173,5 @@
 @mixin dictu-card__paragraph {
   font-size: var(--govnl-card-content-font-size);
   line-height: 150%;
+  margin-top: auto;
 }
