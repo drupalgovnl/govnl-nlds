@@ -1,5 +1,12 @@
 # @dictu/hero
 
+## 1.1.2
+
+### Patch Changes
+
+- a09b379: Add media query to dictu-aspect-ratio-hero utility. Removed paddings
+  from container in hero component.
+
 ## 1.1.1
 
 ### Patch Changes
