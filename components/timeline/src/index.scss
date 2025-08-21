@@ -8,10 +8,6 @@
 @use "pkg:@dictu/heading/dist/index" as heading-component;
 @use "pkg:@dictu/button/dist/index" as button-component;
 
-// TODO: ::before etc doesn't match stylelint rules. No documentation
-// found on wether that is deliberate or an oversight. Due to time
-// constraints stylelint is disabled in this file.
-/* stylelint-disable */
 .dictu-timeline {
   @include mixin.dictu-timeline;
 }
@@ -24,36 +20,20 @@
   @include mixin.dictu-timeline-body;
 }
 
+.dictu-timeline__sub-list {
+  @include mixin.dictu-timeline-sublist;
+}
+
 .dictu-timeline__element-button {
   @include mixin.dictu-timeline-element-button;
+}
 
-  &[aria-expanded="true"] {
-    .dictu-timeline__icon {
-      svg {
-        @include mixin.dictu-timeline-icon-expanded;
-      }
-    }
-  }
-
-  &:first-of-type {
-    .dictu-timeline__element-heading-body::before {
-      @include mixin.dictu-timeline-connector-start;
-    }
-  }
-
-  &:last-of-type {
-    .dictu-timeline__element-heading-body::before {
-      @include mixin.dictu-timeline-connector-end;
-    }
-  }
+.dictu-timeline__element-button[aria-expanded="true"] .dictu-timeline__icon svg {
+  @include mixin.dictu-timeline-icon-expanded;
 }
 
 .dictu-timeline__element-heading-body {
   @include mixin.dictu-timeline-element-heading-content;
-
-  &::before {
-    @include mixin.dictu-timeline-connector;
-  }
 }
 
 .dictu-timeline__element-heading {
@@ -73,16 +53,52 @@
 }
 
 .dictu-timeline__element-content-wrapper {
-  @include mixin.dictu-timeline-element_content-wrapper;
-
-  &:not(:last-of-type) {
-    &::before {
-      @include mixin.dictu-timeline-connector;
-    }
-  }
+  @include mixin.dictu-timeline-element-content-wrapper;
 }
 
 .dictu-timeline__element-content {
-  @include mixin.dictu-timeline-element_content;
+  @include mixin.dictu-timeline-element-content;
 }
-/* stylelint-enable */
+
+// TODO: ::before etc doesn't match stylelint rules. No documentation
+// found on whether that is deliberate or an oversight. Due to time
+// constraints stylelint is disabled in this file.
+/* stylelint-disable selector-nested-pattern */
+.dictu-timeline__item {
+  .dictu-timeline__element-heading-body::before {
+    @include mixin.dictu-timeline-connector;
+  }
+
+  &:first-child {
+    .dictu-timeline__element-heading-body::before {
+      @include mixin.dictu-timeline-connector-start;
+    }
+  }
+
+  &:last-child {
+    &:not(:has(.dictu-timeline__sub-list:not([hidden]))) {
+      .dictu-timeline__element-heading-body::before {
+        @include mixin.dictu-timeline-connector-end;
+      }
+    }
+
+    .dictu-timeline__element-content-wrapper::before {
+      display: none;
+    }
+
+    .dictu-timeline__sub-item:last-child {
+      .dictu-timeline__element-heading-body::before {
+        @include mixin.dictu-timeline-connector-end;
+      }
+    }
+  }
+
+  .dictu-timeline__element-content-wrapper::before {
+    @include mixin.dictu-timeline-connector;
+  }
+
+  .dictu-timeline__sub-list .dictu-timeline__element-heading-body::before {
+    @include mixin.dictu-timeline-connector;
+  }
+}
+/* stylelint-enable selector-nested-pattern */
