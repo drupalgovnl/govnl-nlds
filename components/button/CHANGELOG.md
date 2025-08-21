@@ -1,5 +1,11 @@
 # @dictu/button
 
+## 1.2.1
+
+### Patch Changes
+
+- be6d402: Semantic Structure & Hidden State Fixes
+
 ## 1.2.0
 
 ### Minor Changes
