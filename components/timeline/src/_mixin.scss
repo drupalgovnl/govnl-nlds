@@ -49,10 +49,15 @@
 }
 
 @mixin dictu-timeline-element-button {
-  border: 0 !important;
+  --govnl-button-border-width: 0;
+
+  &.dictu-button {
+    --govnl-button-border-width: 0;
+  }
 }
 
 @mixin dictu-timeline-element-heading-content {
+  align-items: center;
   display: inline-flex;
   gap: var(--govnl-timeline-content-column-gap);
   justify-content: start;
@@ -73,7 +78,7 @@
   content: "";
   display: block;
   height: 100%;
-  margin-inline-start: 15px;
+  margin-inline-start: var(--govnl-timeline-connector-margin-inline-start);
   position: absolute;
   top: 0;
   width: 2px;

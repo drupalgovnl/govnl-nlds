@@ -49,6 +49,7 @@
   background-color: var(--govnl-button-primary-action-disabled-background-color);
   border-color: var(--govnl-button-primary-actiondisabled--border-color);
   color: var(--govnl-button-primary-actiondisabled--color);
+  cursor: not-allowed;
 }
 
 @mixin dictu-button--secondary-action {
