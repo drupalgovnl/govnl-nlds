@@ -1,0 +1,11 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin dictu-embed {
+  border: 0;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
