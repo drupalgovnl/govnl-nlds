@@ -11,7 +11,7 @@
       },
       "padding-inline": {
         "$type": "spacing",
-        "$value": "{govnl.space.sm}"
+        "$value": "0px"
       },
       "container": {
         "inline-size": {
