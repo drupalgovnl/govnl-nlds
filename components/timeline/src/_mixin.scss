@@ -5,6 +5,10 @@
   padding-inline: 0;
 }
 
+@mixin reset-li {
+  list-style: none;
+}
+
 @mixin dictu-timeline {
   border-color: var(--govnl-timeline-border-color);
 }
@@ -17,15 +21,15 @@
 
 @mixin dictu-timeline-body {
   @include reset;
+  @include reset-li;
 
-  list-style: none;
   padding-block: var(--govnl-timeline-padding-block-start) var(--govnl-timeline-padding-block-end);
 }
 
 @mixin dictu-timeline-sublist {
   @include reset;
+  @include reset-li;
 
-  list-style: none;
   position: relative;
 }
 
@@ -69,7 +73,7 @@
   content: "";
   display: block;
   height: 100%;
-  left: 30.85px;
+  margin-inline-start: 15px;
   position: absolute;
   top: 0;
   width: 2px;
