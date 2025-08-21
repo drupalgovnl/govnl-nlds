@@ -73,6 +73,10 @@
         "padding-inline-end": {
           "$type": "dimension",
           "$value": "0px"
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": "15px"
         }
       },
       "title": {
