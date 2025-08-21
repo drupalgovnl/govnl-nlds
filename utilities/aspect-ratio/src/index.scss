@@ -8,7 +8,6 @@
 
 $aspect-ratios: (
   "auto": "auto",
-  "hero": "32 / 9",
   "landscape": "4 / 3",
   "photo": "3 / 2",
   "portrait": "3 / 4",
@@ -21,5 +20,13 @@ $aspect-ratios: (
 @each $name, $ratio in $aspect-ratios {
   .dictu-aspect-ratio-#{$name} {
     aspect-ratio: #{$ratio};
+  }
+}
+
+.dictu-aspect-ratio-hero {
+  aspect-ratio: 1 / 1;
+
+  @media (width > 480px) {
+    aspect-ratio: 32 / 9;
   }
 }
