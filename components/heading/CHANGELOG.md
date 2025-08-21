@@ -1,5 +1,12 @@
 # @dictu/heading
 
+## 2.0.0
+
+### Major Changes
+
+- 8f42600: Adds max-size utility with max-inline-size class, removes
+  max-inline-size on heading and paragraph components
+
 ## 1.1.0
 
 ### Minor Changes
