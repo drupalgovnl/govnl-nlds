@@ -1,6 +1,5 @@
 import readme from './README.md?raw';
 import './dist/index.css';
-import { default as ImageStory } from '../image/image.stories.js';
 
 const CORNER_POSITION_OPTIONS = ['top-left', 'top-right', 'bottom-left', 'bottom-right'];
 const CONTENT_POSITION_OPTIONS = ['left', 'right'];
@@ -12,7 +11,6 @@ export default {
     subheading: 'Hero Subheading',
     cornerPosition: 'top-right',
     messagePosition: 'left',
-    ...ImageStory.args, // Spread the image args from the Image component
     width: '1280',
     height: '495',
   },
@@ -40,7 +38,6 @@ export default {
       options: CONTENT_POSITION_OPTIONS,
       description: 'De positie van de inhoud in de hero',
     },
-    ...ImageStory.argTypes, // Include image-related argTypes
   },
   parameters: {
     docs: {
@@ -76,7 +73,7 @@ const renderHero = ({ heading, subheading, cornerPosition, messagePosition, ...r
   heroImage.src = 'assets/huis-in-groningen.jpg';
   heroImage.alt = rest.alt || '';
   heroImage.loading = rest.imageLoading || 'lazy';
-  heroImage.classList.add('dictu-hero__image', `dictu-aspect-ratio-${rest.aspectRatio}`);
+  heroImage.classList.add('dictu-hero__image', `dictu-aspect-ratio-hero`);
 
   // Set corner position class
   heroImage.classList.add(`dictu-hero__image--corner-${cornerPosition}`);
