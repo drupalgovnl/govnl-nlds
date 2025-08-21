@@ -32,7 +32,7 @@
         },
         "max-inline-size": {
           "$type": "sizing",
-          "$value": "640px"
+          "$value": "50%"
         },
         "border-radius": {
           "$type": "borderRadius",
