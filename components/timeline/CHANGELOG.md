@@ -1,5 +1,11 @@
 # @dictu/timeline
 
+## 1.1.2
+
+### Patch Changes
+
+- be6d402: Semantic Structure & Hidden State Fixes
+
 ## 1.1.1
 
 ### Patch Changes
