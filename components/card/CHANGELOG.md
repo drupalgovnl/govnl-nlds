@@ -1,5 +1,12 @@
 # @dictu/card
 
+## 1.3.0
+
+### Minor Changes
+
+- 914970f: Correct view in all modern browsers when the card contains an image.
+  last paragraph should align to the bottom of the card when used in a grid.
+
 ## 1.2.1
 
 ### Patch Changes
