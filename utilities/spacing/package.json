@@ -1,11 +1,11 @@
 {
-  "name": "@dictu/utility-max-size",
+  "name": "@dictu/utility-spacing",
   "author": "Dienst ICT Uitvoering",
-  "description": "Max size utility for the DICTU design system",
+  "description": "Spacing utility for the DICTU design system",
   "license": "EUPL-1.2",
   "keywords": [
     "utilities",
-    "max-size"
+    "spacing"
   ],
   "private": true,
   "repository": {
