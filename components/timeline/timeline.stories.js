@@ -25,42 +25,63 @@ export default {
 };
 
 const createTimeline = timelineData => {
-  const element = document.createElement('div');
+  const element = document.createElement('ol');
   element.classList.add('dictu-timeline__body');
 
   for (let i = 0; i < timelineData.length; i += 1) {
     const timelineElements = timelineData[i];
+    const listItem = document.createElement('li');
+    listItem.classList.add('dictu-timeline__item');
+
     const heading = headingElement(false, '3', timelineElements.label, timelineElements.expanded);
-    element.appendChild(heading);
+    listItem.appendChild(heading);
 
     if (timelineElements.content) {
-      const content = contentElement(timelineElements.content);
-
-      element.appendChild(content);
+      const content = contentElement(timelineElements.content, timelineElements.expanded);
+      listItem.appendChild(content);
     }
 
     if (timelineElements.children) {
-      for (let i = 0; i < timelineElements.children.length; i += 1) {
-        const child = timelineElements.children[i];
+      const subList = document.createElement('ol');
+      subList.classList.add('dictu-timeline__sub-list');
+
+      if (!timelineElements.expanded) {
+        subList.setAttribute('hidden', '');
+      }
+
+      for (let j = 0; j < timelineElements.children.length; j += 1) {
+        const child = timelineElements.children[j];
+        const subListItem = document.createElement('li');
+        subListItem.classList.add('dictu-timeline__sub-item');
 
         const subHeading = headingElement(true, '4', child.label, child.expanded);
-        element.appendChild(subHeading);
+        subListItem.appendChild(subHeading);
 
         if (child.content) {
-          const content = contentElement(child.content);
-
-          element.appendChild(content);
+          const content = contentElement(child.content, child.expanded);
+          subListItem.appendChild(content);
         }
+
+        subList.appendChild(subListItem);
       }
+
+      listItem.appendChild(subList);
     }
+
+    element.appendChild(listItem);
   }
 
   return element;
 };
 
-const contentElement = content => {
+const contentElement = (content, expanded) => {
   const contentWrapper = document.createElement('div');
   contentWrapper.classList.add('dictu-timeline__element-content-wrapper');
+
+  if (!expanded) {
+    contentWrapper.setAttribute('hidden', '');
+  }
+
   const contentElement = document.createElement('div');
   contentElement.classList.add('dictu-timeline__element-content');
   contentElement.innerHTML = content;
@@ -138,19 +159,42 @@ export const Timeline = {
     title: 'Tijdlijn',
     data: [
       {
-        label: 'Tijdlijn Heading',
+        label: 'Tijdlijn Heading met children',
         expanded: true,
         children: [
           {
             label: 'Tijdlijn Subheading',
             expanded: true,
             content: `
-              <p class="dictu-paragraph">Content informatie. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+              <p class="dictu-paragraph">Content informatie 1.1. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
             `,
           },
           {
             label: 'Tijdlijn Subheading',
             expanded: false,
+            content: `
+              <p class="dictu-paragraph">Content informatie 1.2. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+            `,
+          },
+        ],
+      },
+      {
+        label: 'Tijdelijke Heading met children',
+        expanded: false,
+        children: [
+          {
+            label: 'Tijdelijke Subheading',
+            expanded: false,
+            content: `
+              <p class="dictu-paragraph">Dit is tijdelijke content voor een subheading. Expanded staat op false.</p>
+            `,
+          },
+          {
+            label: 'Tijdelijke Subheading',
+            expanded: false,
+            content: `
+              <p class="dictu-paragraph">Nog een tijdelijke subheading met expanded op false.</p>
+            `,
           },
         ],
       },
@@ -158,19 +202,21 @@ export const Timeline = {
         label: 'Tijdlijn Heading',
         expanded: true,
         content: `
-          <p class="dictu-paragraph">Content informatie. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+          <p class="dictu-paragraph">Content informatie 2. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
         `,
-      },
-      {
-        label: 'Tijdlijn Heading',
-        expanded: false,
       },
       {
         label: 'Tijdlijn Heading',
         expanded: true,
-        content: `
-          <p class="dictu-paragraph">Content informatie. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
-        `,
+        children: [
+          {
+            label: 'Tijdlijn Subheading',
+            expanded: true,
+            content: `
+              <p class="dictu-paragraph">Content informatie 4.1. Content was nog niet geschreven. Linkjes in de tekst verwijst naar het document Door gaswinning uit het Groningenveld ontstaan in Groningen aardbevingen. Met het definitief beëindigen van de gaswinning in 2024 is de oorzaak van aardbevingen weggenomen. </p>
+            `,
+          },
+        ],
       },
     ],
   },

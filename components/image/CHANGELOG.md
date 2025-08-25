@@ -1,5 +1,11 @@
 # @dictu/image
 
+## 2.0.0
+
+### Major Changes
+
+- c388fe6: Adds 'hero' aspect ratio, renames 'video' aspect ratio to 'wide'
+
 ## 1.1.1
 
 ### Patch Changes

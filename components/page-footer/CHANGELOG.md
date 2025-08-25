@@ -1,5 +1,11 @@
 # @dictu/page-footer
 
+## 1.1.3
+
+### Patch Changes
+
+- d7c6cf7: Removes padding from dictu-page-footer mixin
+
 ## 1.1.2
 
 ### Patch Changes

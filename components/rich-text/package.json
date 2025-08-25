@@ -27,7 +27,7 @@
     "provenance": true
   },
   "devDependencies": {
-    "@dictu/heading": "^1.1.0",
+    "@dictu/heading": "^2.0.0",
     "@dictu/link": "^1.1.0"
   },
   "scripts": {

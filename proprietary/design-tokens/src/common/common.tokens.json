@@ -33,10 +33,28 @@
           "$value": "{govnl.color.lintblauw.500}"
         },
         "active": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "darken",
+                "value": "0.4",
+                "space": "srgb"
+              }
+            }
+          },
           "$type": "color",
           "$value": "{govnl.color.lintblauw.500}"
         },
         "hover": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "darken",
+                "value": "0.2",
+                "space": "srgb"
+              }
+            }
+          },
           "$type": "color",
           "$value": "{govnl.color.lintblauw.500}"
         }
@@ -424,6 +442,12 @@
       "4xl": {
         "$type": "dimension",
         "$value": "{govnl.dimension.size.1000}"
+      }
+    },
+    "content": {
+      "inline-size": {
+        "$type": "dimension",
+        "$value": "calc(5 * {govnl.dimension.size.2000})"
       }
     }
   }
