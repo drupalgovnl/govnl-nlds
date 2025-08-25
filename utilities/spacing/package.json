@@ -1,0 +1,27 @@
+{
+  "name": "@dictu/utility-max-size",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Max size utility for the DICTU design system",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "utilities",
+    "max-size"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "packages/utilities"
+  },
+  "exports": {
+    "./dist/*": "./dist/*"
+  },
+  "scripts": {
+    "build": "npx sass --pkg-importer=node --style=compressed ./src/index.scss:./dist/index.css",
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/index.scss:./dist/index.css",
+    "clean": "rimraf ./dist/"
+  },
+  "files": [
+    "dist/"
+  ]
+}
