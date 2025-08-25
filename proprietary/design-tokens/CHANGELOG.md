@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 1.2.0
+
+### Minor Changes
+
+- a4c2778: new tokens
+
 ## 1.1.1
 
 ### Patch Changes
