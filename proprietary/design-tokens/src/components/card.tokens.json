@@ -59,28 +59,6 @@
           },
           "padding-block-end": {
             "$type": "dimension",
-            "$value": "0px"
-          },
-          "row-gap": {
-            "$type": "dimension",
-            "$value": "{govnl.space.xs}"
-          }
-        },
-        "footer": {
-          "padding-block-start": {
-            "$type": "dimension",
-            "$value": "0px"
-          },
-          "padding-inline-end": {
-            "$type": "dimension",
-            "$value": "{govnl.space.sm}"
-          },
-          "padding-block-end": {
-            "$type": "dimension",
-            "$value": "{govnl.space.sm}"
-          },
-          "padding-inline-start": {
-            "$type": "dimension",
             "$value": "{govnl.space.sm}"
           },
           "row-gap": {
