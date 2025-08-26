@@ -1,0 +1,5 @@
+@use "mixin" as mixin;
+
+.dictu-margin-inline-auto {
+  @include mixin.dictu-margin-inline-auto;
+}
