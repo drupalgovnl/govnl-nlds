@@ -1,13 +1,13 @@
 {
-  "name": "@dictu/utility-focus-ring",
-  "version": "1.2.0",
+  "name": "@dictu/utility-spacing",
+  "version": "1.1.0",
   "author": "Dienst ICT Uitvoering",
-  "description": "Focus ring utility for the DICTU design system",
+  "description": "Spacing utility for the DICTU design system",
   "license": "EUPL-1.2",
   "keywords": [
     "utilities",
     "css",
-    "focus-ring"
+    "spacing"
   ],
   "repository": {
     "type": "git+ssh",
