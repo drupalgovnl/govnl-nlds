@@ -1,0 +1,18 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "pkg:@nl-design-system-candidate/skip-link-css/src/mixin" as nl-skip-link;
+
+@mixin dictu-skip-link {
+  @include nl-skip-link.nl-skip-link;
+}
+
+@mixin dictu-skip-link--hidden {
+  @include nl-skip-link.nl-skip-link--hidden;
+}
+
+@mixin dictu-skip-link--visible {
+  @include nl-skip-link.nl-skip-link--visible;
+}
