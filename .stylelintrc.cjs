@@ -33,7 +33,8 @@ module.exports = {
         message: 'Class names should follow BEM methodology with dictu- or nl- prefix',
       },
     ],
-    'selector-nested-pattern': '^&:(hover|focus|active|disabled|focus-visible|not)|^&\\.|^&\\[',
+    'selector-nested-pattern':
+      '^&:(hover|focus|active|disabled|focus-visible|not|first-child|last-child|has|before|after)|^&\\.|^&\\[|^\\.',
 
     // Property ordering - use a more flexible approach
     'order/properties-alphabetical-order': true, // Disable strict alphabetical ordering

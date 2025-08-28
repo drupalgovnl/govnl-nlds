@@ -1,5 +1,11 @@
 # @dictu/card
 
+## 1.4.0
+
+### Minor Changes
+
+- 9a90098: Card spacing and gap properties now align with design
+
 ## 1.3.0
 
 ### Minor Changes

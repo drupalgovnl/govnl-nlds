@@ -1,5 +1,17 @@
 # @dictu/design-tokens
 
+## 1.4.1
+
+### Patch Changes
+
+- 9a90098: Card spacing and gap properties now align with design
+
+## 1.4.0
+
+### Minor Changes
+
+- ef2c5bf: New design token values
+
 ## 1.3.0
 
 ### Minor Changes

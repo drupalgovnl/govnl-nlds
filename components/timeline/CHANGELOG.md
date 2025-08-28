@@ -1,5 +1,11 @@
 # @dictu/timeline
 
+## 1.1.3
+
+### Patch Changes
+
+- 8eba07c: Timeline component line fixes
+
 ## 1.1.2
 
 ### Patch Changes
