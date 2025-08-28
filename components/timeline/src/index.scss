@@ -75,6 +75,15 @@
     }
   }
 
+  &:first-child:last-child {
+    &:not(:has(.dictu-timeline__sub-list:not([hidden]))),
+    &:has(.dictu-timeline__sub-list[hidden]) {
+      .dictu-timeline__element-heading-body::before {
+        display: none;
+      }
+    }
+  }
+
   &:last-child {
     &:not(:has(.dictu-timeline__sub-list:not([hidden]))) {
       .dictu-timeline__element-heading-body::before {
