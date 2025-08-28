@@ -44,7 +44,7 @@
   align-items: flex-start;
   align-self: stretch;
   display: flex;
-  gap: var(--govnl-timeline-content-column-gap);
+  flex-direction: column;
 
   // calc moet eruit, oplossing voor verzinnen.
   padding-inline-start: calc(var(--govnl-timeline-padding-inline-start) + 16px);
@@ -114,4 +114,57 @@
 
 @mixin dictu-timeline-subheading-icon {
   --govnl-icon-size: 24px;
+}
+
+@mixin dictu-timeline-item {
+  .dictu-timeline__element-heading-body::before {
+    @include dictu-timeline-connector;
+  }
+
+  &:first-child {
+    .dictu-timeline__element-heading-body::before {
+      @include dictu-timeline-connector-start;
+    }
+  }
+
+  &:first-child:last-child {
+    &:not(:has(.dictu-timeline__sub-list:not([hidden]))),
+    &:has(.dictu-timeline__sub-list[hidden]) {
+      .dictu-timeline__element-heading-body::before {
+        display: none;
+      }
+    }
+  }
+
+  &:last-child {
+    &:not(:has(.dictu-timeline__sub-list:not([hidden]))) {
+      .dictu-timeline__element-heading-body::before {
+        @include dictu-timeline-connector-end;
+      }
+
+      .dictu-timeline__element-content-wrapper::before {
+        display: none;
+      }
+    }
+
+    &:has(.dictu-timeline__sub-list:not([hidden])) {
+      .dictu-timeline__sub-item:last-child {
+        .dictu-timeline__element-heading-body::before {
+          @include dictu-timeline-connector-end;
+        }
+
+        .dictu-timeline__element-content-wrapper::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .dictu-timeline__element-content-wrapper::before {
+    @include dictu-timeline-connector;
+  }
+
+  .dictu-timeline__sub-list .dictu-timeline__element-heading-body::before {
+    @include dictu-timeline-connector;
+  }
 }
