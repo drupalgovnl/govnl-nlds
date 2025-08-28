@@ -35,9 +35,11 @@
 @mixin dictu-navigation-bar__link {
   align-items: center;
   background-color: var(--govnl-nav-bar-link-background-color);
+  box-sizing: border-box;
   color: var(--govnl-nav-bar-link-color);
   column-gap: calc(var(--govnl-nav-bar-link-column-gap));
   display: flex;
+  height: 100%;
   padding-block: var(--govnl-nav-bar-link-padding-block);
   padding-inline: var(--govnl-nav-bar-link-padding-inline);
   text-decoration: var(--govnl-nav-bar-link-text-decoration);
@@ -94,9 +96,8 @@
     align-items: center;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: minmax(50px, max-content);
     grid-template-rows: auto auto;
-    justify-content: space-between;
     max-inline-size: 100%;
   }
 
@@ -116,6 +117,10 @@
     display: flex;
     grid-column: 2;
     grid-row: 1;
+  }
+
+  .dictu-navigation-bar .dictu-navigation-bar__link {
+    width: 100%;
   }
 
   .dictu-navigation-bar .dictu-navigation-bar__list {
