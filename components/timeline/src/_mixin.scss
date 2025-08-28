@@ -44,7 +44,7 @@
   align-items: flex-start;
   align-self: stretch;
   display: flex;
-  gap: var(--govnl-timeline-content-column-gap);
+  flex-direction: column;
 
   // calc moet eruit, oplossing voor verzinnen.
   padding-inline-start: calc(var(--govnl-timeline-padding-inline-start) + 16px);
