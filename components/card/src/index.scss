@@ -4,7 +4,7 @@
  */
 
 @use "./mixin" as mixin;
-@use "pkg:@nl-design-system-candidate/link-css/src/mixin" as nl-link;
+@use "pkg:@dictu/link/dist/index" as link-component;
 @use "pkg:@dictu/design-tokens/dist/card";
 
 .dictu-card {

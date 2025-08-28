@@ -10,7 +10,6 @@
 @use "pkg:@dictu/design-tokens/dist/hero" as dictu-hero-tokens;
 @use "pkg:@dictu/design-tokens/dist/figure" as dictu-figure-tokens;
 @use "pkg:@dictu/design-tokens/dist/container" as container-tokens;
-@use "pkg:@dictu/design-tokens/dist/section" as section-tokens;
 
 .dictu-hero {
   @include mixin.dictu-hero;
