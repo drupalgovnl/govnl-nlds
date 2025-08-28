@@ -1,5 +1,11 @@
 # @dictu/page-footer
 
+## 1.2.0
+
+### Minor Changes
+
+- e7b9747: Correction in footer text color.
+
 ## 1.1.3
 
 ### Patch Changes
