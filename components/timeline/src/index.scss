@@ -80,15 +80,21 @@
       .dictu-timeline__element-heading-body::before {
         @include mixin.dictu-timeline-connector-end;
       }
+
+      .dictu-timeline__element-content-wrapper::before {
+        display: none;
+      }
     }
 
-    .dictu-timeline__element-content-wrapper::before {
-      display: none;
-    }
+    &:has(.dictu-timeline__sub-list:not([hidden])) {
+      .dictu-timeline__sub-item:last-child {
+        .dictu-timeline__element-heading-body::before {
+          @include mixin.dictu-timeline-connector-end;
+        }
 
-    .dictu-timeline__sub-item:last-child {
-      .dictu-timeline__element-heading-body::before {
-        @include mixin.dictu-timeline-connector-end;
+        .dictu-timeline__element-content-wrapper::before {
+          display: none;
+        }
       }
     }
   }
