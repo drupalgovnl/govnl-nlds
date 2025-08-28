@@ -11,14 +11,15 @@ export default {
     subheading: 'Hero Subheading',
     cornerPosition: 'top-right',
     messagePosition: 'left',
-    width: '1280',
-    height: '495',
   },
   argTypes: {
     headingLevel: {
       control: 'select',
       options: [1, 2, 3, 4, 5],
       description: 'Heading level in de hero',
+      table: {
+        disable: true,
+      },
     },
     heading: {
       control: 'text',
@@ -65,7 +66,7 @@ const renderHero = ({ heading, subheading, cornerPosition, messagePosition, ...r
   hero.classList.add('dictu-hero');
 
   const pageContainer = document.createElement('div');
-  pageContainer.classList.add('dictu-container', 'dictu-hero__container');
+  pageContainer.classList.add('dictu-hero__container');
 
   hero.appendChild(pageContainer);
 
@@ -108,15 +109,15 @@ export const Hero = {
 };
 
 export const HeroMobiel = {
+  globals: {
+    viewport: { value: 'mobile1', isRotated: false },
+  },
   args: {
     ...Hero.args,
     heading: 'Hero Titel Mobiel',
     subheading: 'Dit is een beschrijvende ondertitel speciaal voor mobiele weergave.',
   },
   parameters: {
-    viewport: {
-      defaultViewport: 'mobile1',
-    },
     docs: {
       description: {
         story:
