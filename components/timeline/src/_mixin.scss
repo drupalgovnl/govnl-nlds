@@ -116,10 +116,6 @@
   --govnl-icon-size: 24px;
 }
 
-// TODO: ::before etc doesn't match stylelint rules. No documentation
-// found on whether that is deliberate or an oversight. Due to time
-// constraints stylelint is disabled in this file.
-/* stylelint-disable selector-nested-pattern */
 @mixin dictu-timeline-item {
   .dictu-timeline__element-heading-body::before {
     @include dictu-timeline-connector;
@@ -163,7 +159,6 @@
       }
     }
   }
-  /* stylelint-enable selector-nested-pattern */
 
   .dictu-timeline__element-content-wrapper::before {
     @include dictu-timeline-connector;
