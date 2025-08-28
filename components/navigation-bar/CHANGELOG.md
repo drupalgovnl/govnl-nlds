@@ -1,5 +1,11 @@
 # @dictu/navigation-bar
 
+## 1.2.0
+
+### Minor Changes
+
+- b71ea04: Correction in css token values.
+
 ## 1.1.2
 
 ### Patch Changes
