@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 1.4.0
+
+### Minor Changes
+
+- ef2c5bf: New design token values
+
 ## 1.3.0
 
 ### Minor Changes
