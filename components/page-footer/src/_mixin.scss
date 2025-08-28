@@ -85,6 +85,7 @@
 @mixin dictu-page-footer-paragraph {
   @include reset;
 
+  color: var(--govnl-page-footer-color);
   font-size: var(--govnl-typography-font-size-sm);
   padding-block: 0;
   padding-inline: 0;
