@@ -1,5 +1,11 @@
 # @dictu/navigation-bar
 
+## 1.3.0
+
+### Minor Changes
+
+- 698bfab: Better responsive styling
+
 ## 1.2.0
 
 ### Minor Changes
