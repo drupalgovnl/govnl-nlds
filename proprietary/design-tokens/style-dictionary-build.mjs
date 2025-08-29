@@ -18,7 +18,7 @@ const unified = new StyleDictionary({
   platforms: {
     css: {
       transformGroup: 'tokens-studio',
-      transforms: ['attribute/cti', 'name/kebab', 'color/hsl'],
+      transforms: ['attribute/cti', 'name/kebab', 'color/rgb'],
       buildPath: 'dist/',
       files: [
         // Base tokens file (core and common tokens)
