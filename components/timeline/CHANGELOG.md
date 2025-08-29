@@ -1,5 +1,13 @@
 # @dictu/timeline
 
+## 1.2.0
+
+### Minor Changes
+
+- aaf915d: Optimalisations for packages.
+- aaf915d: Components now have import and dependencies only from components that
+  are an integral part of the component
+
 ## 1.1.3
 
 ### Patch Changes

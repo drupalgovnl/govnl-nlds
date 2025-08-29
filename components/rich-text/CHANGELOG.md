@@ -1,5 +1,13 @@
 # @dictu/rich-text
 
+## 2.2.0
+
+### Minor Changes
+
+- aaf915d: Optimalisations for packages.
+- aaf915d: Components now have import and dependencies only from components that
+  are an integral part of the component
+
 ## 2.1.0
 
 ### Minor Changes

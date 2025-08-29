@@ -1,5 +1,15 @@
 # @dictu/figure
 
+## 1.2.0
+
+### Minor Changes
+
+- aaf915d: Optimalisations for packages.
+- aaf915d: Components now have import and dependencies only from components that
+  are an integral part of the component
+- aaf915d: Certain component imports removed because they are not an integral
+  part of the component
+
 ## 1.1.1
 
 ### Patch Changes
