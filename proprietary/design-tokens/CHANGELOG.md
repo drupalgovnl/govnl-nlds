@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 1.5.0
+
+### Minor Changes
+
+- 76a0ff0: Replace HSL to RGB for correct color usage.
+
 ## 1.4.1
 
 ### Patch Changes
