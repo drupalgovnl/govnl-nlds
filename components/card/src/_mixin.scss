@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--govnl-card-default-main-row-gap);
+  overflow-wrap: anywhere;
   padding-block: var(--govnl-card-default-main-padding-block-start) var(--govnl-card-default-main-padding-block-end);
   padding-inline: var(--govnl-card-default-main-padding-inline-start) var(--govnl-card-default-main-padding-inline-end);
   position: relative;
