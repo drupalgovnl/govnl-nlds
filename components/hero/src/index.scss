@@ -5,12 +5,11 @@
 
 @use "./mixin" as mixin;
 @use "pkg:@dictu/image/src/index" as dictu-image;
-@use "pkg:@dictu/utility-aspect-ratio/src/index" as aspect-ratio;
+@use "pkg:@dictu/utility-aspect-ratio/dist/index" as aspect-ratio;
 @use "pkg:@dictu/design-tokens/dist/paragraph" as dictu-paragraph-tokens;
 @use "pkg:@dictu/design-tokens/dist/hero" as dictu-hero-tokens;
 @use "pkg:@dictu/design-tokens/dist/figure" as dictu-figure-tokens;
 @use "pkg:@dictu/design-tokens/dist/container" as container-tokens;
-@use "pkg:@dictu/design-tokens/dist/section" as section-tokens;
 
 .dictu-hero {
   @include mixin.dictu-hero;

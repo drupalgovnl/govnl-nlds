@@ -4,7 +4,6 @@
  */
 
 @use "pkg:@dictu/image/src/mixin" as image;
-@use "pkg:@dictu/page-container/src/mixin" as container;
 @use "pkg:@dictu/page-section/src/mixin" as section;
 
 @mixin dictu-hero {

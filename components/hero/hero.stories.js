@@ -1,5 +1,7 @@
 import readme from './README.md?raw';
 import './dist/index.css';
+import '@dictu/page-container/dist/index.css';
+import '@dictu/page-section/dist/index.css';
 
 const CORNER_POSITION_OPTIONS = ['top-left', 'top-right', 'bottom-left', 'bottom-right'];
 const CONTENT_POSITION_OPTIONS = ['left', 'right'];
