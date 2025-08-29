@@ -1,5 +1,11 @@
 # @dictu/card
 
+## 1.5.1
+
+### Patch Changes
+
+- 744dd77: Content in card now wraps within card, instead of overflowing
+
 ## 1.5.0
 
 ### Minor Changes
