@@ -1,159 +1,4 @@
-/* empty css              */const d=`<!-- @license CC0-1.0 -->
-
-De page-header component toont de hoofding van het Dictu Design Systeem.
-
-## Gebruik deze component
-
-Je kunt de CSS zo in je project installeren:
-
-\`\`\`console
-npm install --save-dev @dictu/design-tokens
-\`\`\`
-
-Je kunt de CSS uit \`node_modules/\` importeren:
-
-\`\`\`html
-<link
-  rel="stylesheet"
-  href="node_modules/@dictu/design-tokens/dist/page-header.css"
-/>
-\`\`\`
-
-Als je CSS imports gebruikt vanuit JavaScript:
-
-\`\`\`javascript
-import "@dictu/design-tokens/dist/page-header.css";
-\`\`\`
-
-## Richtlijnen
-
-- Gebruik altijd de \`.dictu-page-header\` class voor de hoofding.
-- Gebruik semantische HTML: \`<header>\` voor de hoofdcontainer.
-- Voeg een \`lang\` attribuut toe om de taal aan te geven.
-- Zorg voor goede focus-states en toetsenbordnavigatie voor alle interactieve
-  elementen.
-
-### Voorbeeldgebruik
-
-\`\`\`html
-<header class="dictu-page-header" lang="nl">
-  <div class="dictu-page-container">
-    <div class="dictu-logo">
-      <div class="dictu-logo__image">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 -12 44 88"
-          role="img"
-        >
-          <title>Logo Rijksoverheid</title>
-          <!-- SVG content -->
-        </svg>
-      </div>
-      <div class="dictu-logo__text">
-        <span class="dictu-logo__title">Dictu</span>
-        <span class="dictu-logo__subtitle"
-          >Ministerie van Economische Zaken</span
-        >
-      </div>
-    </div>
-  </div>
-</header>
-\`\`\`
-
-## CSS Klassen
-
-- \`.dictu-page-header\` — hoofdcontainer voor de hoofding
-- \`.dictu-page-container\` — interne container voor de inhoud
-- \`.dictu-logo\` — container voor het logo en tekst
-
-## Design Tokens / CSS-variabelen
-
-De component gebruikt design tokens voor kleuren, spacing, etc. Zie
-\`proprietary/design-tokens/src/components/page-header.tokens.json\` voor een
-overzicht van beschikbare tokens. Voorbeeld:
-
-\`\`\`css
-.dictu-page-header {
-  --govnl-header-background-color: transparent;
-  --govnl-header-padding-block-end: 0;
-  --govnl-header-container-max-inline-width: 100%;
-  --govnl-header-container-padding-inline: 1rem;
-  /* ... */
-}
-\`\`\`
-
-## Toegankelijkheid
-
-- Gebruik altijd een \`<header>\` element voor de hoofdcontainer.
-- Voeg een \`lang\` attribuut toe voor de juiste taal.
-- Het logo bevat een \`<title>\` element voor screenreaders.
-- Het SVG element heeft \`role="img"\` voor toegankelijkheid.
-- Zie
-  [WCAG 2.1.3 Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
-  en
-  [WCAG 1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html).
-
-# Varianten
-
-## PageHeader (Standaard)
-
-De standaard page-header component met logo en tekst.
-
-\`\`\`js
-export const PageHeader = {
-  render: () => {
-    const header = document.createElement("header");
-    header.className = "dictu-page-header";
-    const container = createContainer();
-
-    header.appendChild(container);
-
-    return header;
-  },
-};
-\`\`\`
-
-## Logo Configuratie
-
-Het logo binnen de page-header kan worden geconfigureerd met:
-
-- **Titel**: De hoofdtitel van de organisatie
-- **Ondertitel**: De subtitel of afdeling
-- **SVG Logo**: Het officiële Rijksoverheid logo
-
-### Logo voorbeeld:
-
-\`\`\`js
-const logo = {
-  title: "Dictu",
-  subtitle: "Ministerie van Economische Zaken",
-  svg: "<!-- Rijksoverheid SVG content -->",
-};
-\`\`\`
-
-## Responsief Gedrag
-
-De component past zich automatisch aan verschillende schermgroottes aan:
-
-- **Desktop**: Standaard logo centrering
-- **Tablet** (max-width: 48em): Aangepaste logo positie
-- **Mobiel** (max-width: 20em): Compacte logo weergave
-
-## Styling
-
-De styling wordt verzorgd door de page-header CSS en importeert automatisch de
-benodigde child components:
-
-- \`.dictu-page-header\`
-- \`.dictu-page-container\`
-- \`.dictu-logo\`
-
-Plus alle gerelateerde klassen van logo en page-container components.
-
-## Licentie
-
-EUPL-1.2
-`,p={args:{},argTypes:{},parameters:{docs:{description:{component:d}}},tags:["autodocs"],title:"Componenten/Page Header"},s=c=>{const e=document.createElement("div"),{title:i,subtitle:r}=c||"";return e.classList.add("dictu-logo"),e.innerHTML=`
+/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */import{DefaultFooterData as H}from"./page-footer.stories-BGAjiro4.js";/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */const c0={title:"Voorbeelden/Informatiepagina",parameters:{layout:"fullscreen",docs:{description:{component:"Een complete informatiepagina die alle componenten uit het NLDS toont in een samenhangende layout."}}},tags:["autodocs"]},d=(c,e,n)=>{const t=document.createElement("section");return t.classList.add("dictu-section"),t},p=c=>{const e=document.createElement("div");return e.classList.add("dictu-container"),c.forEach(n=>{if(n instanceof HTMLElement)e.appendChild(n);else if(typeof n=="string"){const t=document.createElement("div");t.innerHTML=n,e.appendChild(t)}}),e},h=(c,e=1)=>{const n=document.createElement(`h${e}`);return n.classList.add("dictu-heading",`dictu-heading--level-${e}`),n.textContent=c,n},u=c=>{const e=document.createElement("p");return e.classList.add("dictu-paragraph"),e.textContent=c,e},S=c=>{const e=document.createElement("div"),{title:n,subtitle:t}=c||"";return e.classList.add("dictu-logo"),e.innerHTML=`
     <div class="dictu-logo__image">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 44 88" role="img">
         <title>Logo Rijksoverheid</title>
@@ -166,18 +11,112 @@ EUPL-1.2
     </div>
     <div class="dictu-logo__text">
       <span class="dictu-logo__title">
-        ${i}
+        ${n}
       </span>
       <span class="dictu-logo__subtitle">
-        ${r}
+        ${t}
       </span>
     </div>
-  `,e},l=c=>{const e=document.createElement("a");return e.classList.add("dictu-link","dictu-page-header__logo-link"),e.setAttribute("href",c.url),e.appendChild(s({title:"Dictu",subtitle:"Ministerie van Economische Zaken"})),e},g=()=>{const c=document.createElement("div");return c.classList.add("dictu-page-header__logo-wrapper","dictu-container"),c.appendChild(l({url:"/"})),c},n={render:()=>{const c=document.createElement("header");c.className="dictu-page-header";const e=g();return c.appendChild(e),c}};var t,o,a;n.parameters={...n.parameters,docs:{...(t=n.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  `,e},P=()=>{const c=[{link:"https://www.dictu.nl",title:"Dienst ICT Uitvoering"},{link:"https://www.ez.nl",title:"Ministerie van Economische Zaken"},{link:"https://www.rijksoverheid.nl",title:"Rijksoverheid"}],e=document.createElement("nav");return e.classList.add("dictu-navigation-bar"),e.setAttribute("aria-label","Hoofdnavigatie"),e.setAttribute("role","navigation"),e.innerHTML=`
+        <input type="checkbox" id="nav-toggle" class="dictu-navigation-bar__toggle" aria-controls="nav-list" aria-label="Menu tonen/verbergen" />
+        <a href="#" class="dictu-navigation-bar__link dictu-navigation-bar__home" aria-label="Home">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2929 2.29289C11.6834 1.90237 12.3166 1.90237 12.7071 2.29289L21.7071 11.2929C21.9931 11.5789 22.0787 12.009 21.9239 12.3827C21.7691 12.7564 21.4045 13 21 13H20V19C20 20.6569 18.6569 22 17 22H7.00003C5.34318 22 4.00003 20.6569 4.00003 19V13H3.00003C2.59557 13 2.23093 12.7564 2.07615 12.3827C1.92137 12.009 2.00692 11.5789 2.29292 11.2929L11.2929 2.29289ZM11 14C10.4477 14 10 14.4477 10 15V20H14V15C14 14.4477 13.5523 14 13 14H11ZM18 19C18 19.5523 17.5523 20 17 20H16V15C16 13.3431 14.6569 12 13 12H11C9.34318 12 8.00003 13.3431 8.00003 15V20H7.00003C6.44775 20 6.00003 19.5523 6.00003 19L6.00003 12C6.00003 11.5712 5.73013 11.2054 5.35094 11.0633L12 4.41421L18.6491 11.0633C18.2699 11.2054 18 11.5712 18 12L18 19Z" fill="#154273"/>
+          </svg>
+        </a>
+        <label for="nav-toggle" class="dictu-navigation-bar__menu-label" tabindex="0">
+          <span class="dictu-navigation-bar__menu-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z" fill="#154273"/>
+          </svg>
+          </span>
+        </label>
+        <ul class="dictu-navigation-bar__list" id="nav-list" role="menubar">
+          ${c.map(n=>`
+            <li class="dictu-navigation-bar__item" role="none">
+              <a href="${n.link}" class="dictu-navigation-bar__link" role="menuitem" tabindex="0">
+                <span class="dictu-navigation-bar__title">${n.title}</span>
+              </a>
+            </li>
+          `).join("")}
+        </ul>
+      `,e},D=(c,e,n)=>{const t=document.createElement("figure");return t.classList.add("dictu-figure"),t.innerHTML=`
+    <img src="${c}" alt="${e}" class="dictu-image" />
+    <figcaption class="dictu-figure__caption">${n}</figcaption>
+  `,t},F=c=>{const{heading:e,text:n,columns:t,headingLevel:a=2}=c||{},r=document.createElement("footer");r.classList.add("dictu-page-footer"),r.setAttribute("role","contentinfo");const o=document.createElement("div");if(o.classList.add("dictu-container","dictu-page-footer__container"),e||n){const i=document.createElement("div");i.classList.add("dictu-page-footer__text-container");const l=h(e,a);l&&i.appendChild(l);const s=u(n);s&&i.appendChild(s),o.appendChild(i)}if(t!=null&&t.length){const i=document.createElement("div");i.classList.add("dictu-page-footer__columns");const l=document.createDocumentFragment();t.forEach(s=>{l.appendChild(Z(s,a))}),i.appendChild(l),o.appendChild(i)}return r.appendChild(o),r},T=c=>{if(!(c!=null&&c.length))return null;const e=document.createElement("ul");e.classList.add("dictu-link-list");const n=document.createDocumentFragment();return c.forEach(t=>{const a=document.createElement("li");a.classList.add("dictu-link-list__item"),a.appendChild($(t)),n.appendChild(a)}),e.appendChild(n),e},y=()=>{const c=document.createElement("span");return c.classList.add("dictu-icon","dictu-link-list__icon"),c.setAttribute("role","presentation"),c.innerHTML=`<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289L15.7071 11.2929C16.0976 11.6834 16.0976 12.3166 15.7071 12.7071L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071C7.90237 18.3166 7.90237 17.6834 8.29289 17.2929L13.5858 12L8.29289 6.70711C7.90237 6.31658 7.90237 5.68342 8.29289 5.29289Z" fill="currentColor"/>
+  </svg>`,c},$=c=>{const e=document.createElement("a");e.classList.add("dictu-link","dictu-link-list__link"),e.href=c.href||"#",e.appendChild(y());const n=document.createElement("span");return n.textContent=c.label||"",e.appendChild(n),[{condition:c.title,attr:"title",value:c.title},{condition:c.download,attr:"download",value:c.download},{condition:c.ariaLabel&&!c.external,attr:"aria-label",value:c.ariaLabel}].forEach(({condition:a,attr:r,value:o})=>{a&&e.setAttribute(r,o)}),c.external&&(e.setAttribute("target","_blank"),e.setAttribute("rel","noopener noreferrer"),e.setAttribute("aria-label",c.ariaLabel||`${c.label} (opent in nieuw venster)`)),e},Z=(c,e)=>{const n=document.createElement("div");n.classList.add("dictu-page-footer__column");const t=h(c.title,e+1);t&&n.appendChild(t);const a=T(c.items);return a&&n.appendChild(a),n},g={render:()=>{const c=document.createElement("div");c.classList.add("dictu-theme");const e=document.createElement("header");e.classList.add("dictu-page-header");const n=document.createElement("main");n.classList.add("dictu-page-main");const t=F(H),a=S({title:"Dictu",subtitle:"Ministerie van Economische Zaken"});e.appendChild(a);const r=P(),o=d(),i=p([r]);o.appendChild(i),n.appendChild(o);const l=d(),s=h("Informatiepagina",1),w=u("Deze pagina is ontworpen om een overzicht te geven van de verschillende componenten en hoe ze samen kunnen worden gebruikt in een realistische layout."),L=p([s,w]);l.appendChild(L),n.appendChild(l);const m=d(),x=D("assets/huis-in-groningen.jpg","Placeholder afbeelding","Huis in Groningen"),_=p([x]);m.appendChild(_),n.appendChild(m);const C=d(),M=u("Dit is een extra paragraaf die kan worden gebruikt om meer informatie te geven over de inhoud van de pagina. Het doel is om te laten zien hoe verschillende componenten kunnen worden gecombineerd in een realistische context."),E=p([M]);C.appendChild(E),n.appendChild(C);const v=d(),z=p([`<div class="dictu-rich-text"><p>Dit is een voorbeeld van rijke tekst die kan worden gebruikt om meer gedetailleerde informatie te geven. Het kan verschillende elementen bevatten zoals <strong>vetgedrukte tekst</strong>, <em>cursieve tekst</em>, en zelfs <a href="https://www.dictu.nl">links</a>.</p>
+       <ul>
+         <li>Opsomming 1</li>
+         <li>Opsomming 2</li>
+         <li>Opsomming 3</li>
+       </ul></div>`]);return v.appendChild(z),n.appendChild(v),c.appendChild(e),c.appendChild(n),c.appendChild(t),c},parameters:{docs:{description:{story:"Een complete voorbeeldpagina die alle componenten toont in een realistische layout."}}}};var f,b,k;g.parameters={...g.parameters,docs:{...(f=g.parameters)==null?void 0:f.docs,source:{originalSource:`{
   render: () => {
+    // Create main page container
+    const page = document.createElement('div');
+    page.classList.add('dictu-theme');
+
+    // Create header
     const header = document.createElement('header');
-    header.className = 'dictu-page-header';
-    const container = createContainer();
-    header.appendChild(container);
-    return header;
+    header.classList.add('dictu-page-header');
+    const main = document.createElement('main');
+    main.classList.add('dictu-page-main');
+    const footer = createFooter(DefaultFooterData);
+
+    // Create logo
+    const logo = createLogo({
+      title: 'Dictu',
+      subtitle: 'Ministerie van Economische Zaken'
+    });
+    header.appendChild(logo);
+    const nav = createNavigation();
+    const navSection = createSection();
+    const navContainer = createContainer([nav]);
+    navSection.appendChild(navContainer);
+    main.appendChild(navSection);
+
+    // create heading section
+    const headingSection = createSection();
+    const headingContent = createHeading('Informatiepagina', 1);
+    const headingParagraph = createParagraph('Deze pagina is ontworpen om een overzicht te geven van de verschillende componenten en hoe ze samen kunnen worden gebruikt in een realistische layout.');
+    const headingContainer = createContainer([headingContent, headingParagraph]);
+    headingSection.appendChild(headingContainer);
+    main.appendChild(headingSection);
+
+    // create figure section
+    const figureSection = createSection();
+    const figureContent = createFigure('assets/huis-in-groningen.jpg', 'Placeholder afbeelding', 'Huis in Groningen');
+    const figureContainer = createContainer([figureContent]);
+    figureSection.appendChild(figureContainer);
+    main.appendChild(figureSection);
+
+    // create extra paragraph section
+    const extraParagraphSection = createSection();
+    const extraParagraphContent = createParagraph('Dit is een extra paragraaf die kan worden gebruikt om meer informatie te geven over de inhoud van de pagina. Het doel is om te laten zien hoe verschillende componenten kunnen worden gecombineerd in een realistische context.');
+    const extraParagraphContainer = createContainer([extraParagraphContent]);
+    extraParagraphSection.appendChild(extraParagraphContainer);
+    main.appendChild(extraParagraphSection);
+    const richTextSection = createSection();
+    const richTextContent = createContainer([\`<div class="dictu-rich-text"><p>Dit is een voorbeeld van rijke tekst die kan worden gebruikt om meer gedetailleerde informatie te geven. Het kan verschillende elementen bevatten zoals <strong>vetgedrukte tekst</strong>, <em>cursieve tekst</em>, en zelfs <a href="https://www.dictu.nl">links</a>.</p>
+       <ul>
+         <li>Opsomming 1</li>
+         <li>Opsomming 2</li>
+         <li>Opsomming 3</li>
+       </ul></div>\`]);
+    richTextSection.appendChild(richTextContent);
+    main.appendChild(richTextSection);
+
+    // append all elements to the page
+    page.appendChild(header);
+    page.appendChild(main);
+    page.appendChild(footer);
+    return page;
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Een complete voorbeeldpagina die alle componenten toont in een realistische layout.'
+      }
+    }
   }
-}`,...(a=(o=n.parameters)==null?void 0:o.docs)==null?void 0:a.source}}};const u=["PageHeader"];export{n as PageHeader,u as __namedExportsOrder,p as default};
+}`,...(k=(b=g.parameters)==null?void 0:b.docs)==null?void 0:k.source}}};const n0=["InformationPage"];export{g as InformationPage,n0 as __namedExportsOrder,c0 as default};
