@@ -27,8 +27,6 @@
 }
 
 @mixin dictu-page-footer__container {
-  @include reset;
-
   display: grid;
   gap: var(--govnl-space-sm);
   grid-auto-flow: row;
@@ -37,8 +35,6 @@
     minmax(min(100%, var(--govnl-page-footer-container-min-column-width, 28rem)), 1fr)
   );
   grid-template-rows: auto;
-  max-width: var(--govnl-page-footer-container-max-inline-width);
-  width: 100%;
 }
 
 @mixin dictu-page-footer__text-container {
