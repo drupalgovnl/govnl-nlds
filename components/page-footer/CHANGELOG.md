@@ -1,5 +1,12 @@
 # @dictu/page-footer
 
+## 1.4.0
+
+### Minor Changes
+
+- 2c0f6fa: Make sure that there is no overlap between dictu-container styles and
+  dictu-page-footer styles.
+
 ## 1.3.0
 
 ### Minor Changes
