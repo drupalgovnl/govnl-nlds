@@ -141,7 +141,7 @@
     "heading": {
       "color": {
         "$type": "color",
-        "$value": "{govnl.color.lintblauw.500}"
+        "$value": "{govnl.brand.primary.500}"
       },
       "font-family": {
         "$type": "fontFamilies",
@@ -323,7 +323,7 @@
     "interaction": {
       "color": {
         "$type": "color",
-        "$value": "{govnl.brand.primary.500}"
+        "$value": "{govnl.color.lintblauw.500}"
       },
       "active": {
         "color": {
