@@ -12,7 +12,10 @@
 }
 
 @mixin dictu-timeline {
+  background-color: var(--govnl-timeline-background-color);
   border-color: var(--govnl-timeline-border-color);
+  padding-block: var(--govnl-timeline-padding-block-start) var(--govnl-timeline-padding-block-end);
+  padding-inline: var(--govnl-timeline-padding-inline-start) var(--govnl-timeline-padding-inline-end);
 }
 
 @mixin dictu-timeline-title {
