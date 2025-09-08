@@ -1,4 +1,4 @@
-import{j as e,b as s,c as a}from"./blocks-CpUhoIDL.js";import{useMDXComponents as r}from"./index-DvwkufxU.js";import"./iframe-D_QnVeB1.js";import"./_commonjsHelpers-CqkleIqs.js";const o=`<!-- @license CC0-1.0 -->
+import{j as e,b as s,c as a}from"./blocks-DbWYcHbi.js";import{useMDXComponents as r}from"./index-DusF_UxV.js";import"./iframe-QGlc_lrc.js";import"./_commonjsHelpers-CqkleIqs.js";const o=`<!-- @license CC0-1.0 -->
 
 # NL Design System introductie
 
