@@ -1,5 +1,12 @@
 # @dictu/accordeon
 
+## 1.1.1
+
+### Patch Changes
+
+- 90bc825: Labeltext in toggle button now aligns to the left when flowing over a
+  single line
+
 ## 1.1.0
 
 ### Minor Changes
