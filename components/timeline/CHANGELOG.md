@@ -1,5 +1,12 @@
 # @dictu/timeline
 
+## 1.3.0
+
+### Minor Changes
+
+- e7ac80d: Timeline component now has a background-color for the background
+  around the entire timeline
+
 ## 1.2.0
 
 ### Minor Changes
