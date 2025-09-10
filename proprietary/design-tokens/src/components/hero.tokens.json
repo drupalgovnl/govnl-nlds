@@ -24,7 +24,7 @@
         },
         "background-color": {
           "$type": "color",
-          "$value": "{govnl.brand.primary.500}"
+          "$value": "{govnl.brand.primary-1.500}"
         },
         "color": {
           "$type": "color",
