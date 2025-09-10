@@ -60,7 +60,7 @@
       "connector": {
         "color": {
           "$type": "color",
-          "$value": "{govnl.brand.primary.500}"
+          "$value": "{govnl.brand.primary-1.500}"
         },
         "padding-inline-start": {
           "$type": "dimension",

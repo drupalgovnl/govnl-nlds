@@ -7,7 +7,7 @@
       }
     },
     "brand": {
-      "primary": {
+      "primary-1": {
         "50": {
           "$type": "color",
           "$value": "{govnl.color.lintblauw.50}"
@@ -31,32 +31,32 @@
         "500": {
           "$type": "color",
           "$value": "{govnl.color.lintblauw.500}"
-        },
-        "active": {
-          "$extensions": {
-            "studio.tokens": {
-              "modify": {
-                "type": "darken",
-                "value": "0.4",
-                "space": "srgb"
-              }
-            }
-          },
+        }
+      },
+      "primary-2": {
+        "50": {
           "$type": "color",
-          "$value": "{govnl.color.lintblauw.500}"
+          "$value": "{govnl.color.groen.50}"
         },
-        "hover": {
-          "$extensions": {
-            "studio.tokens": {
-              "modify": {
-                "type": "darken",
-                "value": "0.2",
-                "space": "srgb"
-              }
-            }
-          },
+        "100": {
           "$type": "color",
-          "$value": "{govnl.color.lintblauw.500}"
+          "$value": "{govnl.color.groen.100}"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "{govnl.color.groen.200}"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "{govnl.color.groen.300}"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "{govnl.color.groen.400}"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "{govnl.color.groen.500}"
         }
       },
       "accent-1": {
@@ -69,6 +69,12 @@
         "color": {
           "$type": "color",
           "$value": "{govnl.color.oranje.500}"
+        }
+      },
+      "accent-3": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.robijnrood.500}"
         }
       }
     },
@@ -141,7 +147,7 @@
     "heading": {
       "color": {
         "$type": "color",
-        "$value": "{govnl.brand.primary.500}"
+        "$value": "{govnl.brand.primary-1.500}"
       },
       "font-family": {
         "$type": "fontFamilies",
@@ -337,7 +343,7 @@
             }
           },
           "$type": "color",
-          "$value": "{govnl.brand.primary.500}"
+          "$value": "{govnl.brand.primary-1.500}"
         }
       },
       "hover": {
@@ -352,7 +358,7 @@
             }
           },
           "$type": "color",
-          "$value": "{govnl.brand.primary.500}"
+          "$value": "{govnl.brand.primary-1.500}"
         }
       }
     },

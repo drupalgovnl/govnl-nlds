@@ -7,7 +7,7 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{govnl.brand.primary.500}"
+        "$value": "{govnl.brand.primary-1.500}"
       },
       "padding-block-start": {
         "$type": "dimension",
@@ -33,7 +33,7 @@
       },
       "border-color": {
         "$type": "color",
-        "$value": "{govnl.brand.primary.200}"
+        "$value": "{govnl.brand.primary-1.200}"
       }
     }
   }
