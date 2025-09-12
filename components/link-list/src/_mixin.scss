@@ -24,6 +24,8 @@
 
   .dictu-icon {
     --govnl-icon-size: var(--govnl-link-list-icon-size);
+
+    flex-shrink: 0;
   }
 }
 
@@ -32,7 +34,7 @@
 }
 
 @mixin dictu-link-list__link {
-  align-items: center;
+  align-items: start;
   column-gap: var(--govnl-link-list-link-column-gap);
   display: inline-flex;
   font-weight: var(--govnl-link-list-link-font-weight);
