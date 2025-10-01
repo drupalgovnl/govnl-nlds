@@ -1,0 +1,156 @@
+{
+  "govnl": {
+    "table": {
+      "margin-block-start": {
+        "value": "{govnl.space.sm}",
+        "type": "dimension"
+      },
+      "margin-block-end": {
+        "value": "0",
+        "type": "dimension"
+      },
+      "caption": {
+        "font-size": {
+          "value": "{govnl.typography.font-size.xl}",
+          "type": "fontSizes"
+        },
+        "font-weight": {
+          "value": "{govnl.document.font-weight}",
+          "type": "fontWeights"
+        },
+        "text-align": {
+          "value": "start",
+          "type": "other"
+        },
+        "margin-block-end": {
+          "value": "{govnl.space.sm}",
+          "type": "dimension"
+        },
+        "color": {
+          "value": "{govnl.document.color}",
+          "type": "color"
+        }
+      },
+      "header": {
+        "font-weight": {
+          "value": "{govnl.heading.font-weight}",
+          "type": "fontWeights"
+        },
+        "color": {
+          "value": "{govnl.heading.color}",
+          "type": "color"
+        },
+        "border-block-end-color": {
+          "value": "{govnl.line.strong.border-color}",
+          "type": "color"
+        },
+        "border-block-end-width": {
+          "value": "{govnl.border.border-width.md}",
+          "type": "border"
+        },
+        "sticky": {
+          "background-color": {
+            "value": "{govnl.color.white}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{govnl.color.black}",
+            "type": "color"
+          },
+          "border-block-end-color": {
+            "value": "{govnl.line.strong.border-color}",
+            "type": "color"
+          },
+          "border-block-end-width": {
+            "value": "2px",
+            "type": "border"
+          }
+        }
+      },
+      "footer": {
+        "sticky": {
+          "background-color": {
+            "value": "{govnl.color.white}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{govnl.color.black}",
+            "type": "color"
+          },
+          "border-block-start-color": {
+            "value": "{govnl.line.strong.border-color}",
+            "type": "color"
+          },
+          "border-block-start-width": {
+            "value": "2px",
+            "type": "border"
+          }
+        }
+      },
+      "cell": {
+        "padding-block-end": {
+          "value": "0.5em",
+          "type": "dimension"
+        },
+        "padding-block-start": {
+          "value": "0.5em",
+          "type": "dimension"
+        },
+        "padding-inline-end": {
+          "value": "0.4em",
+          "type": "dimension"
+        },
+        "padding-inline-start": {
+          "value": "0.4em",
+          "type": "dimension"
+        },
+        "selected": {
+          "background-color": {
+            "value": "{govnl.brand.primary-1.50}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{govnl.color.black}",
+            "type": "color"
+          }
+        },
+        "icon": {
+          "size": {
+            "value": "1em",
+            "type": "sizing"
+          }
+        }
+      },
+      "row": {
+        "border-block-end-width": {
+          "value": "{govnl.border.border-width.sm}",
+          "type": "border"
+        },
+        "border-block-end-color": {
+          "value": "{govnl.line.border-color}",
+          "type": "color"
+        },
+        "alternate-odd": {
+          "background-color": {
+            "value": "{govnl.color.white}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{govnl.color.black}",
+            "type": "color"
+          }
+        },
+        "alternate-even": {
+          "color": {
+            "value": "{govnl.color.black}",
+            "type": "color"
+          },
+          "background-color": {
+            "value": "{govnl.color.grijs.100}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}
