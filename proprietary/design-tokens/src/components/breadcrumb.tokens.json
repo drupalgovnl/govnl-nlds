@@ -59,7 +59,7 @@
           },
           "text-decoration": {
             "$type": "textDecoration",
-            "$value": "None"
+            "$value": "underline"
           }
         },
         "hover": {
@@ -69,7 +69,7 @@
           },
           "text-decoration": {
             "$type": "textDecoration",
-            "$value": "None"
+            "$value": "underline"
           }
         },
         "current": {
@@ -118,6 +118,18 @@
     },
     "link": {
       "active": {
+        "text-decoration-thickness": {
+          "$type": "other",
+          "$value": "max(3px, .1875rem, .12em)"
+        }
+      },
+      "hover": {
+        "text-decoration-thickness": {
+          "$type": "other",
+          "$value": "max(3px, .1875rem, .12em)"
+        }
+      },
+      "focus-visible": {
         "text-decoration-thickness": {
           "$type": "other",
           "$value": "max(3px, .1875rem, .12em)"
