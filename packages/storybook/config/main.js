@@ -4,7 +4,11 @@ import { dirname, join } from 'node:path';
 
 const require = createRequire(import.meta.url);
 const config = {
-  addons: [getAbsolutePath('@storybook/addon-a11y'), getAbsolutePath('@storybook/addon-docs')],
+  addons: [
+    getAbsolutePath('@storybook/addon-a11y'),
+    getAbsolutePath('@storybook/addon-docs'),
+    getAbsolutePath('storybook-addon-tag-badges'),
+  ],
   core: {
     disableTelemetry: true,
     disableWhatsNewNotifications: true,
@@ -18,8 +22,8 @@ const config = {
   staticDirs: [{ from: '../../../proprietary/assets/src', to: '/assets' }],
   stories: [
     '../src/**/*.mdx',
-    '../../../components/**/*stories.@(js|jsx|ts|tsx)',
-    '../../../examples/**/*stories.@(js|jsx|ts|tsx)',
+    '../../../components/**/*stories.@(js|jsx|ts|tsx|mdx)',
+    '../../../examples/**/*stories.@(js|jsx|ts|tsx|mdx)',
   ],
   docs: {
     autodocs: true,

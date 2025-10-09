@@ -1,4 +1,3 @@
-import readme from './README.md?raw';
 import './dist/index.css';
 import '@dictu/button/dist/index.css';
 
@@ -17,8 +16,8 @@ export default {
   },
   parameters: {
     docs: {
-      description: {
-        component: readme,
+      toc: {
+        headingSelector: 'h2, h3',
       },
     },
   },
@@ -54,7 +53,7 @@ export default {
 
     return $accordion;
   },
-  tags: ['autodocs'],
+  tags: ['autodocs', 'wip'],
   title: 'Componenten/Accordion',
 };
 

@@ -1,0 +1,46 @@
+{ /* accordion.mdx */ }
+
+import { Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as AccordionStories from './accordion.stories.js';
+
+<Meta of="AccordionStories" title="Componenten/Accordion" />
+
+De Accordion component geeft een gebruiker de mogelijkheid om bepaalde content te verbergen of te laten zien.
+
+## Wanneer gebruik je de Accordion component
+Een accordeon verbergt inhoud voor gebruikers. Het is daarom belangrijk dat een accordeon enkel wordt ingezet
+
+## Wanneer gebruik je de Accordion component niet
+
+### Richtlijnen
+
+- Maak gebruik van het `aria-expanded` attribuut op de accordion. Wanneer de
+  accordion gesloten is, staat dit attribuut op `false`, wanneer de accordion
+  open is, op `true`. Zorg dat dit attribuut meeverandert met de state van de
+  accordion.
+- Gebruik het `hidden` attribuut op de body van het accordion waneer de
+  accordion gesloten is. Dit zorgt ervoor dat de body niet zichtbaar is.
+
+### Relevante WCAG regels
+
+### voorbeeld
+
+Aanpassen:
+
+- [WCAG eis 1.3.1](https://www.w3.org/TR/WCAG21/#info-and-relationships)
+- [WCAG eis 1.4.12](https://www.w3.org/TR/WCAG21/#text-spacing)
+
+
+## Help mee om deze component te verbeteren
+ - Neem deel aan de discussie over de [Accordion component op GitHub]().
+ - [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team]()
+
+
+<Canvas of={AccordionStories.AccordionOpen} />
+
+jhfguygjh 
+
+<Canvas of={AccordionStories.AccordionClosed} />

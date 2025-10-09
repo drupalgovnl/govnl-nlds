@@ -31,6 +31,8 @@ const preview = {
       storySort: {
         order: [
           'Introductie',
+          'Voor designers',
+          'Voor ontwikkelaars',
           'Design Tokens',
           ['Design Tokens', 'Core', 'Common'],
           'Components',
