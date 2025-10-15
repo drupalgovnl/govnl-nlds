@@ -21,6 +21,7 @@
     "components/paragraph.tokens",
     "components/section.tokens",
     "components/skip-link.tokens",
+    "components/table.tokens.wip",
     "components/timeline.tokens"
   ]
 }
