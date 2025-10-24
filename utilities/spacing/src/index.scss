@@ -3,3 +3,11 @@
 .dictu-margin-inline-auto {
   @include mixin.dictu-margin-inline-auto;
 }
+
+.dictu-margin-block-start-small {
+  @include mixin.dictu-margin-block-start-small;
+}
+
+.dictu-margin-block-start-none {
+  @include mixin.dictu-margin-block-start-none;
+}
