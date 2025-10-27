@@ -172,7 +172,7 @@ EUPL-1.2
         ${r}
       </span>
     </div>
-  `,e},l=c=>{const e=document.createElement("a");return e.classList.add("dictu-link","dictu-page-header__logo-link"),e.setAttribute("href",c.url),e.appendChild(s({title:"Dictu",subtitle:"Ministerie van Economische Zaken"})),e},g=()=>{const c=document.createElement("div");return c.classList.add("dictu-page-header__logo-wrapper","dictu-container"),c.appendChild(l({url:"/"})),c},n={render:()=>{const c=document.createElement("header");c.className="dictu-page-header";const e=g();return c.appendChild(e),c}};var t,o,a;n.parameters={...n.parameters,docs:{...(t=n.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  `,e},l=c=>{const e=document.createElement("a");return e.classList.add("dictu-link","dictu-page-header__logo-link"),e.setAttribute("href",c.url),e.appendChild(s({title:"Dictu",subtitle:"Ministerie van Economische Zaken"})),e},g=()=>{const c=document.createElement("div");return c.classList.add("dictu-page-header__logo-wrapper"),c.appendChild(l({url:"/"})),c},n={render:()=>{const c=document.createElement("header");c.className="dictu-page-header";const e=g();return c.appendChild(e),c}};var t,o,a;n.parameters={...n.parameters,docs:{...(t=n.parameters)==null?void 0:t.docs,source:{originalSource:`{
   render: () => {
     const header = document.createElement('header');
     header.className = 'dictu-page-header';
