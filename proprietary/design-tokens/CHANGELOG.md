@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 1.6.0
+
+### Minor Changes
+
+- e66a615: Add color tokens for primary-2 and accent-3
+
 ## 1.5.0
 
 ### Minor Changes
