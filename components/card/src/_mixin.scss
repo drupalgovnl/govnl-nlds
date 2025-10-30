@@ -58,7 +58,8 @@
   color: var(--govnl-card-accent-color);
 
   .dictu-card__heading {
-    /* stylelint-disable-next-line selector-nested-pattern */
+    color: var(--govnl-card-accent-heading-color);
+
     .dictu-card__link {
       color: var(--govnl-card-accent-heading-color);
       text-decoration-line: var(--govnl-card-accent-heading-color);

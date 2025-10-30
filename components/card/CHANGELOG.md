@@ -1,5 +1,12 @@
 # @dictu/card
 
+## 1.5.2
+
+### Patch Changes
+
+- 828928a: Text color for accent variant without anchor link set to
+  corresponding token
+
 ## 1.5.1
 
 ### Patch Changes

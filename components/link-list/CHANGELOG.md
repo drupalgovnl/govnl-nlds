@@ -1,5 +1,11 @@
 # @dictu/link-list
 
+## 1.3.0
+
+### Minor Changes
+
+- ba889d4: Icon size doesn't shrink anymore when link text wraps
+
 ## 1.2.0
 
 ### Minor Changes

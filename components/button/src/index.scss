@@ -25,6 +25,10 @@
 
 .dictu-button--primary-action:focus-visible {
   @include mixin.dictu-button--primary-action-focus;
+
+  &:hover {
+    @include mixin.dictu-button--primary-action-hover;
+  }
 }
 
 .dictu-button--primary-action:disabled {
@@ -45,6 +49,10 @@
 
 .dictu-button--secondary-action:focus-visible {
   @include mixin.dictu-button--secondary-action-focus;
+
+  &:hover {
+    @include mixin.dictu-button--secondary-action-hover;
+  }
 }
 
 .dictu-button--secondary-action:disabled {
@@ -65,6 +73,10 @@
 
 .dictu-button--subtle:focus-visible {
   @include mixin.dictu-button--subtle-focus;
+
+  &:hover {
+    @include mixin.dictu-button--subtle-hover;
+  }
 }
 
 .dictu-button--subtle:disabled {
@@ -85,6 +97,10 @@
 
 .dictu-button--icon-only:focus-visible {
   @include mixin.dictu-button--icon-only-focus;
+
+  &:hover {
+    @include mixin.dictu-button--icon-only-hover;
+  }
 }
 
 .dictu-button--icon-only:disabled {

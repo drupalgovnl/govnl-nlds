@@ -195,7 +195,7 @@
         "heading": {
           "color": {
             "$type": "color",
-            "$value": "{govnl.document.inverse.color}"
+            "$value": "{govnl.color.white}"
           },
           "hover": {
             "color": {
