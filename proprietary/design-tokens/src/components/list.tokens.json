@@ -1,0 +1,32 @@
+{
+  "govnl": {
+    "list": {
+      "list-item": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.50}"
+        },
+        "level2": {
+          "indent": {
+            "$type": "spacing",
+            "$value": "{govnl.dimension.size.300}"
+          }
+        },
+        "level3": {
+          "indent": {
+            "$type": "spacing",
+            "$value": "{govnl.dimension.size.600}"
+          }
+        }
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{govnl.dimension.size.100}"
+      },
+      "prefix": {
+        "$type": "sizing",
+        "$value": "{govnl.dimension.size.300}"
+      }
+    }
+  }
+}
