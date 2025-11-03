@@ -14,6 +14,7 @@
     "components/icon.tokens",
     "components/link-list.tokens",
     "components/link.tokens",
+    "components/list.tokens.wip",
     "components/logo.tokens",
     "components/navigation-bar.tokens",
     "components/page-footer.tokens",

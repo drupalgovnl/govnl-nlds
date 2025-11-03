@@ -1,5 +1,11 @@
 # @dictu/button
 
+## 1.2.2
+
+### Patch Changes
+
+- 46f4ca0: Adds correct styling for focus-visible + hover combination
+
 ## 1.2.1
 
 ### Patch Changes

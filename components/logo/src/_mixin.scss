@@ -24,6 +24,7 @@
   background-color: var(--govnl-logo-image-background-color);
   block-size: var(--govnl-logo-image-block-size);
   color: var(--govnl-logo-image-color);
+  flex-shrink: 0;
   inline-size: var(--govnl-logo-image-inline-size);
 }
 
@@ -31,11 +32,6 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-
-  // Responsive: mobile
-  @media (width <= 48em) {
-    display: none;
-  }
 }
 
 @mixin dictu-logo__title {
