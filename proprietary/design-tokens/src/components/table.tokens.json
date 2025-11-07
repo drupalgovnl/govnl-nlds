@@ -1,0 +1,162 @@
+{
+  "govnl": {
+    "table": {
+      "margin-block-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.sm}"
+      },
+      "margin-block-end": {
+        "$type": "dimension",
+        "$value": "0"
+      },
+      "caption": {
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{govnl.typography.font-size.xl}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.document.font-weight}"
+        },
+        "text-align": {
+          "$type": "other",
+          "$value": "start"
+        },
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": "{govnl.space.sm}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.document.color}"
+        }
+      },
+      "header": {
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.heading.font-weight}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.heading.color}"
+        },
+        "border-block-end-color": {
+          "$type": "color",
+          "$value": "{govnl.line.strong.border-color}"
+        },
+        "border-block-end-width": {
+          "$type": "border",
+          "$value": "{govnl.border.border-width.md}"
+        },
+        "sticky": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.black}"
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": "{govnl.line.strong.border-color}"
+          },
+          "border-block-end-width": {
+            "$type": "border",
+            "$value": "2px"
+          }
+        },
+        "icon": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.interaction.color}"
+          }
+        }
+      },
+      "footer": {
+        "sticky": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.black}"
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": "{govnl.line.strong.border-color}"
+          },
+          "border-block-start-width": {
+            "$type": "border",
+            "$value": "2px"
+          }
+        }
+      },
+      "cell": {
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "0.5em"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "0.5em"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "0.4em"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "0.4em"
+        },
+        "selected": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.brand.primary-1.50}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.black}"
+          }
+        },
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "1em"
+          }
+        }
+      },
+      "row": {
+        "border-block-end-width": {
+          "$type": "border",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "border-block-end-color": {
+          "$type": "color",
+          "$value": "{govnl.line.border-color}"
+        },
+        "alternate-odd": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.black}"
+          }
+        },
+        "alternate-even": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.black}"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.100}"
+          }
+        }
+      }
+    }
+  }
+}

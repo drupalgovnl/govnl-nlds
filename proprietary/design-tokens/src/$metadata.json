@@ -21,6 +21,9 @@
     "components/paragraph.tokens",
     "components/section.tokens",
     "components/skip-link.tokens",
-    "components/timeline.tokens"
+    "components/table.tokens",
+    "components/timeline.tokens",
+    "components/searchbar.tokens.wip",
+    "components/list.tokens"
   ]
 }
