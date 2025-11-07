@@ -48,6 +48,12 @@
   position: relative;
   text-align: start;
   width: 100%;
+
+  &[aria-expanded="true"] {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 @mixin dictu-accordion-body {
