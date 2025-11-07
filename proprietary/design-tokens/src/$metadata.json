@@ -20,7 +20,7 @@
     "components/page-footer.tokens",
     "components/page-header.tokens",
     "components/paragraph.tokens",
-    "components/searchbar.tokens.wip,
+    "components/searchbar.tokens.wip",
     "components/section.tokens",
     "components/skip-link.tokens",
     "components/table.tokens",
