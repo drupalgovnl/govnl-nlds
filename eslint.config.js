@@ -9,7 +9,7 @@ export default [
 
   // Storybook story files need browser globals
   {
-    files: ['**/*.stories.@(js|jsx|ts|tsx)'],
+    files: ['**/*.stories.@(js|jsx|ts|tsx)', 'components/**/*.@(js|jsx|ts|tsx)'],
     languageOptions: {
       globals: {
         document: 'readonly',
