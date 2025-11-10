@@ -12,7 +12,6 @@ export function Accordion({ label, content, headingLevel, ...args }) {
   $heading.classList.add('dictu-accordion__heading');
   $accordion.appendChild($heading);
 
-  // @TODO: import button component.
   const $button = new Button({
     label: label,
     variant: 'subtle',
