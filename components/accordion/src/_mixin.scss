@@ -38,7 +38,7 @@
   --govnl-button-icon-gap: var(--govnl-accordion-button-gap);
   --govnl-icon-size: var(--govnl-accordion-button-icon-size);
   --govnl-icon-color: var(--govnl-accordion-button-icon-color);
-  --govnl-button-padding-inline-end: 24px;
+  --govnl-button-padding-inline-end: var(--govnl-icon-size);
   --govnl-button-justify-content: space-between;
 
   font-family: var(--govnl-accordion-button-font-family);
