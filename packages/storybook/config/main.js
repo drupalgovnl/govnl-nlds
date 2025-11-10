@@ -22,8 +22,9 @@ const config = {
   staticDirs: [{ from: '../../../proprietary/assets/src', to: '/assets' }],
   stories: [
     '../src/**/*.mdx',
-    '../../../components/**/*stories.@(js|jsx|ts|tsx|mdx)',
-    '../../../examples/**/*stories.@(js|jsx|ts|tsx|mdx)',
+    '../../../components/**/*stories.@(js|jsx|ts|tsx)',
+    '../../../components/**/*.mdx',
+    '../../../examples/**/*stories.@(js|jsx|ts|tsx)',
   ],
   docs: {
     autodocs: true,

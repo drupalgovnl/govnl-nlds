@@ -6,7 +6,6 @@ const preview = {
     controls: { expanded: false },
     docs: {
       codePanel: true,
-      toc: true,
       source: {
         transform: async source => {
           const prettier = await import('prettier/standalone');

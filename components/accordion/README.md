@@ -5,7 +5,7 @@
 Je kunt de CSS zo in je project installeren:
 
 ```console
-npm install --save-dev @dictu/button
+npm install --save-dev @dictu/accordion
 ```
 
 Je kunt de CSS uit `node_modules/` importeren:

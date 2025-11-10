@@ -5,6 +5,16 @@ addons.setConfig({
   theme: theme,
   tagBadges: [
     {
+      tags: 'doc',
+      badge: {
+        text: 'Documentation',
+        style: {
+          backgroundColor: '#39870c',
+          color: '#fff',
+        },
+      },
+    },
+    {
       tags: 'wip',
       badge: {
         text: 'WIP',

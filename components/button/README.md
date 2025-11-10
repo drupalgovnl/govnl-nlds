@@ -1,8 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Button uitleg
-
-## Gebruik deze component
+## De Button component implementeren
 
 Je kunt de CSS zo in je project installeren:
 
@@ -21,16 +19,3 @@ Als je CSS imports gebruikt vanuit JavaScript:
 ```javascript
 import "@dictu/button/index.css";
 ```
-
-## Richtlijnen
-
-Tekst toevoegen
-
-## Links
-
-### Relevante WCAG regels
-
-Aanpassen:
-
-- [WCAG eis 1.3.1](https://www.w3.org/TR/WCAG21/#info-and-relationships)
-- [WCAG eis 1.4.12](https://www.w3.org/TR/WCAG21/#text-spacing)
