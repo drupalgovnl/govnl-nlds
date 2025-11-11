@@ -1,0 +1,99 @@
+{/* accordion.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as ButtonStories from './button.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={ButtonStories} title="Componenten/Button" />
+
+<Title>Button</Title>
+
+<Subtitle>
+  De Button component wordt gebruikt voor het uitvoeren van een actie op de huidige pagina.
+</Subtitle>
+
+<Canvas of={ButtonStories.PrimaryAction} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={ButtonStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Accordion component
+
+Gebruik een accordion alleen wanneer het voor de gebruiker handig is om:
+
+- Een overzicht te hebben van meerdere - aan elkaar gerelateerde - onderdelen van de content.
+- De keuze te hebben om verschillende onderdelen van de content die relevant voor de gebruiker zijn, te kunnen verbergen of zichtbaar te maken.
+
+Test met de gebruikers om te kijken of de voordelen van het gebruik van een accordion de potentiële problemen met het verbergen van content overstijgt.
+
+## Wanneer gebruik je de Accordion component niet
+
+Een accordion verbergt informatie voor gebruikers. Niet alle gebruikers zullen dit zien, of begrijpen hoe een accordion werkt. Accordions zouden daarom alleen in specifieke gevallen ingezet moeten worden. Gebruik nooit een accordion voor content dat iedereen zou moeten kunnen zien.
+
+In de meeste gevallen zou je in plaats van het gebruiken van een accordion ook kunnen kijken naar:
+
+- Het verkleinen en versimpelen van de content.
+- De content verdelen over meerdere pagina's.
+
+Gebruik hoe dan ook nooit een accordion in een accordion.
+
+## Richtlijnen
+
+- Maak gebruik van het `aria-expanded` attribuut op de accordion. Wanneer de
+  accordion gesloten is, staat dit attribuut op `false`, wanneer de accordion
+  open is, op `true`. Zorg dat dit attribuut meeverandert met de state van de
+  accordion.
+- Gebruik het `hidden` attribuut op de body van het accordion waneer de
+  accordion gesloten is. Dit zorgt ervoor dat de body niet zichtbaar is.
+
+## Voorbeelden
+
+### Open Accordion
+
+Bij een open accordion is de gehele accordion zichtbaar. Op de toggler wordt het `aria-expanded` attribuut op `true` gezet, zodat het voor screenreaders duidelijk is dat de accordion open staat.
+
+<Canvas of={ButtonStories.PrimaryAction} />
+
+### Gesloten Accordion
+
+Bij een gesloten accordion is alleen de toggler zichtbaar, en is body van de accordion uitgesloten van weergave.
+
+Wanneer de accordion gesloten is, staat er op het `div` element met de `.dictu-accordion__body` class een `hidden` attribuut. Zo wordt de body verborgen voor weergave.
+Op de toggler wordt het `aria-expanded` attribuut op `false` gezet, zodat het voor screenreaders duidelijk is dat de accordion gesloten is.
+
+<Canvas of={ButtonStories.PrimaryAction} />
+
+## Afhankelijkheden
+
+De variant met
+
+- [Icon component](?path=/docs/componenten-icon--docs)
+
+## Relevante WCAG succescriteria
+
+- [WCAG succescriterium 1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
+- [WCAG succescriterium 1.4.4](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html)
+- [WCAG succescriterium 2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html)
+- [WCAG succescriterium 2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
+- [WCAG succescriterium 2.4.6](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
+- [WCAG succescriterium 2.4.7](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Button component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).
