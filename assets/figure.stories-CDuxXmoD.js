@@ -1,4 +1,4 @@
-/* empty css              *//* empty css              */import t from"./image.stories-Cub8C3Ef.js";const l=`# Figure component
+/* empty css              *//* empty css              */import t from"./image.stories-Ct_bbzpM.js";const l=`# Figure component
 
 De figure component is een semantische container met bijschrift.
 
