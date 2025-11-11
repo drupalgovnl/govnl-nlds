@@ -17,7 +17,8 @@ import Readme from './README.md?raw';
 <Title>Icon</Title>
 
 <Subtitle>
-  De Icon component wordt gebruikt om onderdelen van de applicatie en mogelijke acties visueel te communiceren.
+  De Icon component wordt gebruikt om onderdelen van de applicatie en mogelijke acties visueel te
+  communiceren.
 </Subtitle>
 
 <Canvas of={IconStories.IconDecorative} sourceState="none" />
@@ -38,7 +39,6 @@ import Readme from './README.md?raw';
 - Gebruik een icoon niet wanneer de bedoeling van het icoon niet direct duidelijk is. Wanneer het voor gebruikers niet direct duidelijk is wat de betekenis van een icoon is, zorg dan voor begeleidende tekst of kies ervoor om het icoon helemaal niet te gebruiken.
 - Gebruik geen icoon als illustratieve content. Een icoon wordt gebruikt als visuele cue om belangrijke informatie of een actie herkenbaar te maken. Als je inhoud visueel wilt verduidelijken, of een pagina er visueel beter uit wilt laten zien, gebruik dan illustraties in plaats van een icoon.
 
-
 ## Richtlijnen
 
 - Gebruik een icoon zo min mogelijk losstaand. Een functionele icoon op zichzelf kan voor gebruikers niet direct duidelijk zijn. Voeg begeleidende tekst toe, zoals bijvoorbeeld de tekst 'menu' naast een hamburger icon om duidelijk te maken dat er een menu achter het icoon zit.
@@ -55,7 +55,7 @@ Een puur decoratieve icoon heeft geen label. In plaats daarvan wordt het `aria-h
 
 ## Functioneel icoon
 
-Er zijn situaties waarin een icoon functioneel kan zijn. Denk hierbij bijvoorbeeld aan het 'hamburger' icoon dat gebruikt wordt om een verborgen menu te openen. De correcte oplossing hiervoor is om naast het icoon een begeleidende tekst te plaatsen 
+Er zijn situaties waarin een icoon functioneel kan zijn. Denk hierbij bijvoorbeeld aan het 'hamburger' icoon dat gebruikt wordt om een verborgen menu te openen. De correcte oplossing hiervoor is om naast het icoon een begeleidende tekst te plaatsen
 (in dit geval bijvoorbeeld de tekst 'Menu' achter het icoon). In situaties waarbij dit geen mogelijkheid is, wordt er een `aria-label` meegegeven aan het icon component.
 
 <Canvas of={IconStories.IconFunctional} />
