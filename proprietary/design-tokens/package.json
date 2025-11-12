@@ -1,6 +1,6 @@
 {
   "name": "@dictu/design-tokens",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "author": "Dienst ICT Uitvoering",
   "description": "Design Tokens for DICTU Design system, based on the NL Design System architecture",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -23,11 +23,14 @@
     "watch:style-dictionary": "chokidar --follow-symlinks --initial --command 'npm run build' 'src/**/*.tokens.json'"
   },
   "devDependencies": {
-    "@tokens-studio/sd-transforms": "1.2.3",
+    "@tokens-studio/sd-transforms": "2.0.1",
     "chokidar-cli": "3.0.0",
     "glob": "^11.0.2",
     "npm-run-all": "4.1.5",
     "rimraf": "6.0.1",
-    "style-dictionary": "^4.4.0"
+    "style-dictionary": "^5.1.1"
+  },
+  "overrides": {
+    "expr-eval-fork": "3.0.0"
   }
 }

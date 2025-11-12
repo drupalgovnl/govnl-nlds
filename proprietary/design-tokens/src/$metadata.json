@@ -14,14 +14,16 @@
     "components/icon.tokens",
     "components/link-list.tokens",
     "components/link.tokens",
+    "components/list.tokens",
     "components/logo.tokens",
     "components/navigation-bar.tokens",
     "components/page-footer.tokens",
     "components/page-header.tokens",
     "components/paragraph.tokens",
+    "components/searchbar.tokens.wip",
     "components/section.tokens",
     "components/skip-link.tokens",
-    "components/table.tokens.wip",
+    "components/table.tokens",
     "components/timeline.tokens"
   ]
 }

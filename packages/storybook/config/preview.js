@@ -6,7 +6,6 @@ const preview = {
     controls: { expanded: false },
     docs: {
       codePanel: true,
-      toc: true,
       source: {
         transform: async source => {
           const prettier = await import('prettier/standalone');
@@ -31,6 +30,8 @@ const preview = {
       storySort: {
         order: [
           'Introductie',
+          'Voor designers',
+          'Voor ontwikkelaars',
           'Design Tokens',
           ['Design Tokens', 'Core', 'Common'],
           'Components',

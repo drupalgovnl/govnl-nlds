@@ -3,6 +3,10 @@
  * Copyright (c) 2021-2025 dictu
  */
 
+:root {
+  --govnl-button-justify-content: center;
+}
+
 @mixin dictu-button {
   align-items: center;
   block-size: fit-content;
@@ -13,7 +17,7 @@
   cursor: pointer;
   display: inline-flex;
   gap: calc(var(--govnl-button-column-gap));
-  justify-content: center;
+  justify-content: var(--govnl-button-justify-content);
   padding-block: var(--govnl-button-padding-block-start) var(--govnl-button-padding-block-end);
   padding-inline: var(--govnl-button-padding-inline-start) var(--govnl-button-padding-inline-end);
   scale: 1;
