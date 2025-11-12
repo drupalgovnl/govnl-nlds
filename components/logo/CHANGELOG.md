@@ -1,5 +1,11 @@
 # @dictu/logo
 
+## 1.2.0
+
+### Minor Changes
+
+- 4019980: Logo shows text on mobile viewports
+
 ## 1.1.2
 
 ### Patch Changes
