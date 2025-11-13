@@ -109,4 +109,3 @@ jobs:
           else
             echo "✅ All code quality checks passed!"
           fi
-        continue-on-error: true
