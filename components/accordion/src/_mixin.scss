@@ -48,11 +48,6 @@
   text-align: start;
   width: 100%;
 
-  svg {
-    min-height: var(--govnl-icon-size);
-    min-width: var(--govnl-icon-size);
-  }
-
   &[aria-expanded="true"] {
     svg {
       transform: rotate(180deg);
