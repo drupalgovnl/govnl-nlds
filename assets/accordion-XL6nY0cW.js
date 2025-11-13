@@ -1,4 +1,4 @@
-import{j as e,M as s,T as a,S as l,C as r,A as h,h as j}from"./blocks-CJ-Gv7l-.js";import{useMDXComponents as c}from"./index-DCU_Z7dF.js";import{A as i,a as d,b as u}from"./accordion.stories-fNb_Au0Y.js";import"./iframe-dDh05noI.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              */import"./button-BKsnMOXS.js";const p=`<!-- @license CC0-1.0 -->
+import{j as e,M as s,T as a,S as l,C as r,A as h,h as j}from"./blocks-B7x6lNk4.js";import{useMDXComponents as c}from"./index-BUnke8o4.js";import{A as i,a as d,b as u}from"./accordion.stories-D4rx7hrx.js";import"./iframe-df8z8RIK.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./button-BKsnMOXS.js";const p=`<!-- @license CC0-1.0 -->
 
 ## De Accordion component implementeren
 
@@ -84,4 +84,4 @@ Op de toggler wordt het `,e.jsx(n.code,{children:"aria-expanded"})," attribuut o
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function w(o={}){const{wrapper:n}={...c(),...o.components};return n?e.jsx(n,{...o,children:e.jsx(t,{...o})}):t(o)}export{w as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function A(o={}){const{wrapper:n}={...c(),...o.components};return n?e.jsx(n,{...o,children:e.jsx(t,{...o})}):t(o)}export{A as default};

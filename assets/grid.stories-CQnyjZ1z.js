@@ -1,4 +1,4 @@
-/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */const D=`Gebruik in CSS de \`.dictu-grid\` class name voor de grid component.
+/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */const D=`Gebruik in CSS de \`.dictu-grid\` class name voor de grid component.
 
 ## Beschrijving
 
@@ -721,7 +721,7 @@ De styling wordt verzorgd door de page-grid CSS en gebruikt:
 ## Licentie
 
 EUPL-1.2
-`,T={args:{autoflow:!1,content:`
+`,W={args:{autoflow:!1,content:`
       <div>Item 1</div>
       <div>Item 2</div>
       <div>Item 3</div>
@@ -1023,4 +1023,4 @@ EUPL-1.2
       }
     }
   }
-}`,...(_=(k=r.parameters)==null?void 0:k.docs)==null?void 0:_.source}}};const W=["Default","WithImages","WithCards","WithCardsOnMultipleRows"];export{a as Default,t as WithCards,r as WithCardsOnMultipleRows,i as WithImages,W as __namedExportsOrder,T as default};
+}`,...(_=(k=r.parameters)==null?void 0:k.docs)==null?void 0:_.source}}};const I=["Default","WithImages","WithCards","WithCardsOnMultipleRows"];export{a as Default,t as WithCards,r as WithCardsOnMultipleRows,i as WithImages,I as __namedExportsOrder,W as default};

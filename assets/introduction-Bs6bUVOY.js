@@ -1,0 +1,2 @@
+import{j as t,M as r,T as s}from"./blocks-B7x6lNk4.js";import{useMDXComponents as i}from"./index-BUnke8o4.js";import"./iframe-df8z8RIK.js";import"./_commonjsHelpers-CqkleIqs.js";function o(e){return t.jsxs(t.Fragment,{children:[t.jsx(r,{title:"Voor ontwikkelaars/Introductie"}),`
+`,t.jsx(s,{children:"DICTU Design System voor ontwikkelaars"})]})}function x(e={}){const{wrapper:n}={...i(),...e.components};return n?t.jsx(n,{...e,children:t.jsx(o,{...e})}):o()}export{x as default};
