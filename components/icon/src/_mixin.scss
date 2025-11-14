@@ -5,16 +5,8 @@
 
 @mixin dictu-icon {
   block-size: var(--govnl-icon-size);
-  color: var(--govnl-icon-color);
   display: inline-block;
-  font-size: var(--govnl-icon-size);
   inline-size: var(--govnl-icon-size);
-  position: relative;
-
-  & svg {
-    /* stylelint-disable-next-line property-disallowed-list */
-    fill: var(--govnl-icon-color, currentcolor);
-  }
 }
 
 @mixin dictu-icon__svg {
@@ -24,13 +16,10 @@
    *
    *   <svg width="128px" height="128px">
    */
-
-  /* stylelint-disable-next-line property-disallowed-list */
-  height: 100%;
+  block-size: 100%;
+  fill: currentcolor;
+  inline-size: 100%;
 
   /* Remove tooltip from SVG `<title>` element using `pointer-events: none` */
   pointer-events: none;
-
-  /* stylelint-disable-next-line property-disallowed-list */
-  width: 100%;
 }

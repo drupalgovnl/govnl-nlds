@@ -1,3 +1,5 @@
+import { Icon } from '../icon/icon';
+
 export function Button({ label, variant, iconPosition, icon, disabled }) {
   const classes = ['dictu-button', `dictu-button--${variant}`, 'dictu-focus-ring'];
   const $button = document.createElement('button');
@@ -9,11 +11,7 @@ export function Button({ label, variant, iconPosition, icon, disabled }) {
   }
 
   if (icon) {
-    // @TODO: Import icon component.
-    const $icon = document.createElement('span');
-    $icon.classList.add('dictu-icon');
-    $icon.setAttribute('aria-hidden', true);
-    $icon.innerHTML = icon;
+    const $icon = new Icon({ icon });
     $button.insertAdjacentElement(iconPosition === 'before' ? 'afterbegin' : 'beforeend', $icon);
   }
 
