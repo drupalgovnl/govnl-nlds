@@ -4,7 +4,6 @@
  */
 
 @use "./mixin.scss" as mixin;
-@use "pkg:@dictu/design-tokens/dist/page-header" as design-tokens;
 
 .dictu-page-header {
   @include mixin.dictu-page-header;

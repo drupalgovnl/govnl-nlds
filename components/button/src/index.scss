@@ -4,7 +4,6 @@
  */
 
 @use "mixin" as mixin;
-@use "pkg:@dictu/design-tokens/dist/button" as design-tokens;
 @use "pkg:@dictu/utility-focus-ring/dist/index" as focus-ring;
 
 .dictu-button {
