@@ -19,7 +19,7 @@ Je kunt de CSS uit `node_modules/` importeren:
 Als je CSS imports gebruikt vanuit JavaScript:
 
 ```javascript
-import "@dictu/icon/index.css";
+import "@dictu/icon/dist/index.css";
 ```
 
 ## Richtlijnen
