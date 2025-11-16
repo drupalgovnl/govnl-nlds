@@ -1,5 +1,19 @@
 # @dictu/accordeon
 
+## 1.1.3
+
+### Patch Changes
+
+- 330fc2d: Added svg rotation on aria-expanded
+- 1baa32d: Added dictu-focus-ring utility to accordion
+
+## 1.1.2
+
+### Patch Changes
+
+- e9d0a52: Add new local css variable for button justify-content, added svg
+  width and height
+
 ## 1.1.1
 
 ### Patch Changes

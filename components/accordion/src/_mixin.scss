@@ -38,16 +38,21 @@
   --govnl-button-icon-gap: var(--govnl-accordion-button-gap);
   --govnl-icon-size: var(--govnl-accordion-button-icon-size);
   --govnl-icon-color: var(--govnl-accordion-button-icon-color);
+  --govnl-button-padding-inline-end: var(--govnl-icon-size);
+  --govnl-button-justify-content: space-between;
 
-  display: flex;
   font-family: var(--govnl-accordion-button-font-family);
   font-size: var(--govnl-accordion-button-font-size);
   font-weight: var(--govnl-accordion-button-font-weight);
-  justify-content: space-between !important;
   line-height: var(--govnl-accordion-button-line-height);
-  position: relative;
   text-align: start;
   width: 100%;
+
+  &[aria-expanded="true"] {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 @mixin dictu-accordion-body {

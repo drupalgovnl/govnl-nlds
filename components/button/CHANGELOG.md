@@ -1,5 +1,12 @@
 # @dictu/button
 
+## 1.2.3
+
+### Patch Changes
+
+- e9d0a52: Add new local css variable for button justify-content, added svg
+  width and height
+
 ## 1.2.2
 
 ### Patch Changes
