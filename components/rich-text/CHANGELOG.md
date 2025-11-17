@@ -1,5 +1,12 @@
 # @dictu/rich-text
 
+## 3.0.0
+
+### Major Changes
+
+- 38e03b8: Removed import of design tokens inside component css
+- 38e03b8: Breaking: All tokens in one import file, for better usage.
+
 ## 2.2.0
 
 ### Minor Changes
