@@ -3,12 +3,7 @@
  * Copyright (c) 2021-2025 dictu
  */
 
-@use "pkg:@dictu/image/src/mixin" as image;
-@use "pkg:@dictu/page-section/src/mixin" as section;
-
-@mixin dictu-hero {
-  @include section.dictu-section;
-}
+@use "pkg:@dictu/utility-aspect-ratio/dist/index" as mixins;
 
 @mixin dictu-hero-mobile {
   margin-block-end: calc(var(--govnl-section-margin-block-end, 2rem) / 2);
@@ -47,7 +42,7 @@
 }
 
 @mixin dictu-hero__message {
-  background-color: var(--govnl-hero-message-background-color, var(--govnl-brand-primary-500));
+  background-color: var(--govnl-hero-message-background-color);
   box-sizing: border-box;
   color: var(--govnl-hero-message-color, var(--govnl-text-color));
   display: flex;

@@ -23,7 +23,7 @@ const sd = new StyleDictionary({
           format: 'css/variables',
           options: {
             selector: '.dictu-theme',
-            outputReferences: false,
+            outputReferences: true,
           },
         },
       ],
