@@ -1,4 +1,4 @@
-import{j as e,M as s}from"./blocks-Cyqsr5vN.js";import{useMDXComponents as i}from"./index-Cia7quZ9.js";import"./iframe-Dwx7kdG5.js";import"./_commonjsHelpers-CqkleIqs.js";function t(r){const n={h1:"h1",h2:"h2",p:"p",...i(),...r.components};return e.jsxs(e.Fragment,{children:[e.jsx(s,{title:"Informatie/Team"}),`
+import{j as e,M as s}from"./blocks-C6841aSw.js";import{useMDXComponents as i}from"./index-QCHRPBsX.js";import"./iframe-Cl44jaBI.js";import"./_commonjsHelpers-CqkleIqs.js";function t(r){const n={h1:"h1",h2:"h2",p:"p",...i(),...r.components};return e.jsxs(e.Fragment,{children:[e.jsx(s,{title:"Informatie/Team"}),`
 `,e.jsx(n.h1,{id:"dictu-design-systeem-team",children:"DICTU Design Systeem Team"}),`
 `,e.jsx(n.h2,{id:"kyra-de-vries",children:"Kyra de Vries"}),`
 `,e.jsx(n.p,{children:"UX designer"}),`
