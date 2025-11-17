@@ -1,5 +1,12 @@
 # @dictu/button
 
+## 2.0.0
+
+### Major Changes
+
+- 6e79ad0: Updates documentation for Icon component, Button component now
+  imports Icon component
+
 ## 1.2.3
 
 ### Patch Changes

@@ -1,0 +1,80 @@
+{/* icon.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as IconStories from './icon.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={IconStories} title="Componenten/Icon" />
+
+<Title>Icon</Title>
+
+<Subtitle>
+  De Icon component wordt gebruikt om onderdelen van de applicatie en mogelijke acties visueel te
+  communiceren.
+</Subtitle>
+
+<Canvas of={IconStories.IconDecorative} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={IconStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Icon component
+
+- Gebruik een icoon om aandacht te richten acties die op een pagina gedaan kunnen worden.
+- Een icoon kan ook gebruikt worden als visuele herkenning om gebruikers sneller richting belangrijke informatie te sturen.
+
+## Wanneer gebruik je de Icon component niet
+
+- Gebruik een icoon niet wanneer de bedoeling van het icoon niet direct duidelijk is. Wanneer het voor gebruikers niet direct duidelijk is wat de betekenis van een icoon is, zorg dan voor begeleidende tekst of kies ervoor om het icoon helemaal niet te gebruiken.
+- Gebruik geen icoon als illustratieve content. Een icoon wordt gebruikt als visuele cue om belangrijke informatie of een actie herkenbaar te maken. Als je inhoud visueel wilt verduidelijken, of een pagina er visueel beter uit wilt laten zien, gebruik dan illustraties in plaats van een icoon.
+
+## Richtlijnen
+
+- Gebruik een icoon zo min mogelijk losstaand. Een functionele icoon op zichzelf kan voor gebruikers niet direct duidelijk zijn. Voeg begeleidende tekst toe, zoals bijvoorbeeld de tekst 'menu' naast een hamburger icon om duidelijk te maken dat er een menu achter het icoon zit.
+- Maak gebruik van het `aria-label` attribuut op het icoon wanneer het om een functionele icoon gaat, zodat het ook voor gebruikers van screenreaders duidelijk is wat het icoon doet.
+- Gebruik het `aria-hidden` attribuut op iconen die puur decoratief zijn, zodat ze niet worden opgenomen in de `accessibility tree`.
+
+## Voorbeelden
+
+## Decoratieve icoon
+
+Een puur decoratieve icoon heeft geen label. In plaats daarvan wordt het `aria-hidden` attrbuut aan het icoon toegevoegd, zodat het element uit de `accessibility tree` wordt gehaald. Het icoon wordt dan niet voorgelezen door spraaksoftware.
+
+<Canvas of={IconStories.IconDecorative} />
+
+## Functioneel icoon
+
+Er zijn situaties waarin een icoon functioneel kan zijn. Denk hierbij bijvoorbeeld aan het 'hamburger' icoon dat gebruikt wordt om een verborgen menu te openen. De correcte oplossing hiervoor is om naast het icoon een begeleidende tekst te plaatsen
+(in dit geval bijvoorbeeld de tekst 'Menu' achter het icoon). In situaties waarbij dit geen mogelijkheid is, wordt er een `aria-label` meegegeven aan het icon component.
+
+<Canvas of={IconStories.IconFunctional} />
+
+## Relevante WCAG succescriteria
+
+- [WCAG succescriterium 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
+- [WCAG succescriterium 1.3.6](https://www.w3.org/WAI/WCAG21/Understanding/identify-purpose.html)
+- [WCAG succescriterium 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
+- [WCAG succescriterium 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
+- [WCAG succescriterium 1.4.11](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)
+- [WCAG succescriterium 3.1.5](https://www.w3.org/WAI/WCAG21/Understanding/reading-level.html)
+- [WCAG succescriterium 3.2.4](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Icon component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).
