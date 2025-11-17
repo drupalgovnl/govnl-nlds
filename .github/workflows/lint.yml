@@ -93,7 +93,7 @@ jobs:
 
       - name: Check for known vulnerabilities
         run: npx audit-ci --moderate
-        continue-on-error: true
+        continue-on-error: false
 
   lint-summary:
     name: Lint Summary

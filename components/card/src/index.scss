@@ -5,7 +5,6 @@
 
 @use "./mixin" as mixin;
 @use "pkg:@dictu/link/src/index" as link-component;
-@use "pkg:@dictu/design-tokens/dist/card";
 
 .dictu-card {
   @include mixin.dictu-card;

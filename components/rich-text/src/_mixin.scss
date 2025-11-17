@@ -9,8 +9,6 @@
 
 @mixin dictu-rich-text {
   :where(h1, h2, h3, h4, h5, h6) {
-    /* stylelint-disable-next-line scss/at-extend-no-missing-placeholder */
-    @extend .dictu-heading;
     @include dictu-heading.dictu-heading;
   }
 
@@ -39,8 +37,6 @@
   }
 
   :where(a) {
-    /* stylelint-disable-next-line scss/at-extend-no-missing-placeholder */
-    @extend .dictu-link;
     @include dictu-link.dictu-link;
   }
 
@@ -53,8 +49,6 @@
   }
 
   :where(p) {
-    /* stylelint-disable-next-line scss/at-extend-no-missing-placeholder */
-    @extend .dictu-paragraph;
     @include dictu-paragraph.dictu-paragraph;
   }
 }

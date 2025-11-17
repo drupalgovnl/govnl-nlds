@@ -26,7 +26,7 @@ Je kunt de CSS uit `node_modules/` importeren:
 Als je CSS imports gebruikt vanuit JavaScript:
 
 ```javascript
-import "@dictu/rich-text/index.css";
+import "@dictu/rich-text/dist/index.css";
 ```
 
 Dit component maakt gebruik van de design tokens van `@dictu/paragraph`,

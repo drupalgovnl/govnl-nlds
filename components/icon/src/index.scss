@@ -4,7 +4,6 @@
  */
 
 @use "mixin" as mixin;
-@use "pkg:@dictu/design-tokens/dist/icon" as design-tokens;
 
 .dictu-icon {
   @include mixin.dictu-icon;

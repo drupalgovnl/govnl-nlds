@@ -4,9 +4,6 @@
  */
 
 @use "mixin" as mixin;
-@use "pkg:@dictu/design-tokens/dist/timeline" as dictu-timeline-tokens;
-@use "pkg:@dictu/heading/dist/index" as heading-component;
-@use "pkg:@dictu/button/dist/index" as button-component;
 
 .dictu-timeline {
   @include mixin.dictu-timeline;
