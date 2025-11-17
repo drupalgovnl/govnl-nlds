@@ -1,0 +1,155 @@
+/* empty css              *//* empty css              *//* empty css              */const f=`<!-- @license CC0-1.0 -->
+
+De hero component toont een opvallende sectie met een achtergrondafbeelding en
+tekstinhoud aan de bovenkant van een pagina.
+
+## Gebruik deze component
+
+Je kunt de CSS zo in je project installeren:
+
+\`\`\`console
+npm install --save-dev @dictu/hero
+\`\`\`
+
+Je kunt de CSS uit \`node_modules/\` importeren:
+
+\`\`\`html
+<link rel="stylesheet" href="node_modules/@dictu/hero/dist/index.css" />
+\`\`\`
+
+Als je CSS imports gebruikt vanuit JavaScript:
+
+\`\`\`javascript
+import "@dictu/hero/dist/index.css";
+\`\`\`
+
+## Richtlijnen
+
+- Gebruik altijd de \`.dictu-hero\` class voor de hero sectie.
+- Gebruik semantische HTML: \`<section>\` voor de hoofdcontainer.
+- Voeg een \`lang\` attribuut toe om de taal aan te geven.
+- Gebruik logische heading niveaus voor de structuur.
+- Zorg ervoor dat de achtergrondafbeelding een alt-tekst heeft voor
+  toegankelijkheid.
+- De hero is responsive en past zich automatisch aan op mobiele apparaten.
+
+### Voorbeeldgebruik
+
+\`\`\`html
+<section class="dictu-section dictu-hero" lang="nl">
+  <div class="dictu-container dictu-hero__container">
+    <img
+      src="/path/to/hero-image.jpg"
+      alt="Beschrijving van de afbeelding"
+      class="dictu-hero__image dictu-hero__image-ratio-video dictu-hero__image--corner-top-right"
+      loading="lazy"
+    />
+    <div class="dictu-hero__message dictu-hero__message--left">
+      <h1 class="dictu-hero__heading dictu-heading dictu-heading--level-1">
+        Hero Titel
+      </h1>
+      <p class="dictu-paragraph dictu-hero__subheading">
+        Dit is een beschrijvende ondertitel die meer context geeft over de hero
+        sectie.
+      </p>
+    </div>
+  </div>
+</section>
+\`\`\`
+
+## CSS Klassen
+
+### Hoofdcontainer
+
+- \`.dictu-hero\` — hoofdcontainer voor de hero sectie
+- \`.dictu-hero__container\` — interne container voor de inhoud
+
+### Afbeelding
+
+- \`.dictu-hero__image\` — de achtergrondafbeelding van de hero
+- \`.dictu-hero__image-ratio-square\` — vierkante beeldverhouding (1:1)
+- \`.dictu-hero__image-ratio-landscape\` — landschap beeldverhouding (4:3)
+- \`.dictu-hero__image-ratio-video\` — video beeldverhouding (16:9)
+
+### Hoekposities
+
+- \`.dictu-hero__image--corner-top-left\` — afgeronde hoek linksboven
+- \`.dictu-hero__image--corner-top-right\` — afgeronde hoek rechtsboven
+- \`.dictu-hero__image--corner-bottom-left\` — afgeronde hoek linksonder
+- \`.dictu-hero__image--corner-bottom-right\` — afgeronde hoek rechtsonder
+
+### Bericht
+
+- \`.dictu-hero__message\` — container voor de tekstinhoud
+- \`.dictu-hero__message--left\` — positioneert het bericht links
+- \`.dictu-hero__message--right\` — positioneert het bericht rechts
+- \`.dictu-hero__heading\` — de hoofdtitel van de hero
+- \`.dictu-hero__subheading\` — de ondertitel van de hero
+
+## Design Tokens / CSS-variabelen
+
+De component gebruikt design tokens voor kleuren, spacing, typografie, etc.
+Voorbeeld:
+
+## Responsive gedrag
+
+De hero component is volledig responsive:
+
+- **Desktop**: Volledige grootte met optimale tekst- en afbeeldingsverhoudingen
+- **Mobiel** (≤ 48em):
+  - Kleinere marges voor betere ruimtebenutting
+  - Aangepaste tekstgroottes voor leesbaarheid
+  - Compactere lay-out van het berichtgedeelte
+
+## Toegankelijkheid
+
+- Gebruik altijd een \`<section>\` element voor de hero container.
+- Voeg een \`lang\` attribuut toe voor de juiste taal.
+- Zorg voor voldoende kleurcontrast tussen tekst en achtergrond.
+- Gebruik logische heading hiërarchie (meestal h1 voor de hoofdtitel).
+- Voeg betekenisvolle alt-teksten toe aan afbeeldingen.
+- Test de component met een schermlezer om te controleren of de content goed
+  voorgelezen wordt.
+
+## Varianten
+
+### Berichtposities
+
+- **Links**: Bericht verschijnt aan de linkerkant van de afbeelding
+- **Rechts**: Bericht verschijnt aan de rechterkant van de afbeelding
+
+### Hoekposities voor afbeeldingen
+
+- **Linksboven**: Afgeronde hoek linksboven
+- **Rechtsboven**: Afgeronde hoek rechtsboven
+- **Linksonder**: Afgeronde hoek linksonder
+- **Rechtsonder**: Afgeronde hoek rechtsonder
+
+### Beeldverhoudingen
+
+- **Vierkant** (1:1): Voor vierkante afbeeldingen
+- **Landschap** (4:3): Voor traditionele landschapsafbeeldingen
+- **Video** (16:9): Voor widescreen afbeeldingen
+`,H=["top-left","top-right","bottom-left","bottom-right"],C=["left","right"],T={args:{headingLevel:2,heading:"Hero Heading",subheading:"Hero Subheading",cornerPosition:"top-right",messagePosition:"left"},argTypes:{headingLevel:{control:"select",options:[1,2,3,4,5],description:"Heading level in de hero",table:{disable:!0}},heading:{control:"text",description:"De titel van de hero"},subheading:{control:"text",description:"De ondertitel van de hero"},cornerPosition:{control:"select",options:H,description:"De positie van de hoekafbeelding"},messagePosition:{control:"select",options:C,description:"De positie van de inhoud in de hero"}},parameters:{docs:{description:{component:f}}},tags:["autodocs"],title:"Componenten/Hero"},L=(r,o,l="heading")=>{if(!r||!o)return null;const h=`dictu-hero__${l}`,e=document.createElement(`h${o}`);return e.classList.add(`${h}`,"dictu-heading",`dictu-heading--level-${o}`),e.textContent=r,e},k=({heading:r,subheading:o,cornerPosition:l,messagePosition:h,...e})=>{const a=document.createElement("section");a.classList.add("dictu-section"),a.classList.add("dictu-hero");const d=document.createElement("div");d.classList.add("dictu-hero__container"),a.appendChild(d);const n=document.createElement("img");n.src="assets/huis-in-groningen.jpg",n.alt=e.alt||"",n.loading=e.imageLoading||"lazy",n.classList.add("dictu-hero__image","dictu-aspect-ratio-hero"),n.classList.add(`dictu-hero__image--corner-${l}`),n&&d.appendChild(n);const t=document.createElement("div");t.classList.add("dictu-hero__message"),t.classList.add(`dictu-hero__message--${h}`),d.appendChild(t);const g=L(r,e.headingLevel);g&&(g.classList.add("dictu-hero__heading"),t.appendChild(g));const s=document.createElement("p");return s.classList.add("dictu-hero__subheading"),s.textContent=o,s&&t.appendChild(s),a},i={render:k},c={globals:{viewport:{value:"mobile1",isRotated:!1}},args:{...i.args,heading:"Hero Titel Mobiel",subheading:"Dit is een beschrijvende ondertitel speciaal voor mobiele weergave."},parameters:{docs:{description:{story:"De hero component geoptimaliseerd voor mobiele weergave met aangepaste lettergroottes en compactere layout."}}},render:k};var u,m,p;i.parameters={...i.parameters,docs:{...(u=i.parameters)==null?void 0:u.docs,source:{originalSource:`{
+  render: renderHero
+}`,...(p=(m=i.parameters)==null?void 0:m.docs)==null?void 0:p.source}}};var v,b,_;c.parameters={...c.parameters,docs:{...(v=c.parameters)==null?void 0:v.docs,source:{originalSource:`{
+  globals: {
+    viewport: {
+      value: 'mobile1',
+      isRotated: false
+    }
+  },
+  args: {
+    ...Hero.args,
+    heading: 'Hero Titel Mobiel',
+    subheading: 'Dit is een beschrijvende ondertitel speciaal voor mobiele weergave.'
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'De hero component geoptimaliseerd voor mobiele weergave met aangepaste lettergroottes en compactere layout.'
+      }
+    }
+  },
+  render: renderHero
+}`,...(_=(b=c.parameters)==null?void 0:b.docs)==null?void 0:_.source}}};const V=["Hero","HeroMobiel"];export{i as Hero,c as HeroMobiel,V as __namedExportsOrder,T as default};
