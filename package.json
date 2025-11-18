@@ -104,7 +104,8 @@
     "http-server": "14.1.1"
   },
   "overrides": {
-    "expr-eval-fork": "3.0.0"
+    "expr-eval-fork": "3.0.0",
+    "js-yaml": "3.14.2"
   },
   "size-limit": [
     {

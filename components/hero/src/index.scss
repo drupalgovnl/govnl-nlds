@@ -4,16 +4,8 @@
  */
 
 @use "./mixin" as mixin;
-@use "pkg:@dictu/image/src/index" as dictu-image;
-@use "pkg:@dictu/utility-aspect-ratio/dist/index" as aspect-ratio;
-@use "pkg:@dictu/design-tokens/dist/paragraph" as dictu-paragraph-tokens;
-@use "pkg:@dictu/design-tokens/dist/hero" as dictu-hero-tokens;
-@use "pkg:@dictu/design-tokens/dist/figure" as dictu-figure-tokens;
-@use "pkg:@dictu/design-tokens/dist/container" as container-tokens;
 
 .dictu-hero {
-  @include mixin.dictu-hero;
-
   // Responsive: mobile
   @media (width <= 48em) {
     @include mixin.dictu-hero-mobile;

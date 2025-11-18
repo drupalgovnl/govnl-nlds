@@ -1,5 +1,19 @@
 # @dictu/icon
 
+## 2.0.0
+
+### Major Changes
+
+- 38e03b8: Removed import of design tokens inside component css
+- 38e03b8: Breaking: All tokens in one import file, for better usage.
+
+## 1.2.0
+
+### Minor Changes
+
+- 6e79ad0: Updates documentation for Icon component, Button component now
+  imports Icon component
+
 ## 1.1.0
 
 ### Minor Changes
