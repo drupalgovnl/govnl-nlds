@@ -1,0 +1,156 @@
+{
+  "govnl": {
+    "checkbox": {
+      "border-radius": {
+        "value": "{govnl.border.border-radius.sm}",
+        "type": "borderRadius"
+      },
+      "size": {
+        "value": "{govnl.dimension.size.300}",
+        "type": "sizing"
+      },
+      "unchecked": {
+        "background-color": {
+          "value": "{govnl.form-control.background-color}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{govnl.form-control.border-color}",
+          "type": "color"
+        },
+        "border-width": {
+          "value": "{govnl.border.border-width.sm}",
+          "type": "borderWidth"
+        },
+        "hover": {
+          "background-color": {
+            "value": "{govnl.form-control.hover.background-color}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{govnl.form-control.hover.border-color}",
+            "type": "color"
+          },
+          "border-width": {
+            "value": "{govnl.border.border-width.md}",
+            "type": "borderWidth"
+          }
+        },
+        "active": {
+          "background-color": {
+            "value": "{govnl.form-control.active.background-color}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{govnl.form-control.active.border-color}",
+            "type": "color"
+          },
+          "border-width": {
+            "value": "{govnl.border.border-width.md}",
+            "type": "borderWidth"
+          }
+        },
+        "focus-visible": {
+          "background-color": {
+            "value": "{govnl.form-control.focus.background-color}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{govnl.form-control.focus.color}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{govnl.form-control.border-color}",
+            "type": "color"
+          },
+          "border-width": {
+            "value": "{govnl.border.border-width.sm}",
+            "type": "borderWidth"
+          }
+        }
+      },
+      "checked": {
+        "background-color": {
+          "value": "{govnl.interaction.color}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "transparant",
+          "type": "color"
+        },
+        "color": {
+          "value": "{govnl.color.white}",
+          "type": "color"
+        },
+        "border-width": {
+          "value": "{govnl.border.border-width.sm}",
+          "type": "borderWidth"
+        },
+        "hover": {
+          "background-color": {
+            "value": "{govnl.interaction.hover.color}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "transparant",
+            "type": "color"
+          },
+          "color": {
+            "value": "{govnl.color.white}",
+            "type": "color"
+          },
+          "border-width": {
+            "value": "{govnl.border.border-width.sm}",
+            "type": "borderWidth"
+          }
+        },
+        "active": {
+          "background-color": {
+            "value": "{govnl.interaction.active.color}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "transparant",
+            "type": "color"
+          },
+          "color": {
+            "value": "{govnl.color.white}",
+            "type": "color"
+          },
+          "border-width": {
+            "value": "{govnl.border.border-width.sm}",
+            "type": "borderWidth"
+          }
+        },
+        "focus-visible": {
+          "background-color": {
+            "value": "{govnl.form-control.focus.background-color}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{govnl.form-control.focus.color}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{govnl.form-control.border-color}",
+            "type": "color"
+          },
+          "border-width": {
+            "value": "{govnl.border.border-width.sm}",
+            "type": "borderWidth"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{govnl.icon.size}",
+          "type": "sizing"
+        }
+      },
+      "column-gap": {
+        "value": "{govnl.space.2xs}",
+        "type": "dimension"
+      }
+    }
+  }
+}
