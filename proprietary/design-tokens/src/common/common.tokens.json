@@ -282,12 +282,16 @@
           "value": "{govnl.focus.background-color}",
           "type": "color"
         },
-        "border-color": {
+        "outline-color": {
           "value": "{govnl.focus.outline-color}",
           "type": "color"
         },
         "color": {
           "value": "{govnl.focus.color}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{govnl.form-control.border-color}",
           "type": "color"
         }
       },

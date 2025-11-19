@@ -9,6 +9,7 @@
     "components/container.tokens",
     "components/figure.tokens",
     "components/form-elements/checkbox.tokens.wip",
+    "components/form-elements/date-input.tokens.wip",
     "components/form-elements/form-field.tokens.wip",
     "components/grid.tokens",
     "components/heading.tokens",
