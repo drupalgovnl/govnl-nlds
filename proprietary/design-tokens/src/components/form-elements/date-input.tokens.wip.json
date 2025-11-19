@@ -135,6 +135,86 @@
           "type": "color"
         }
       }
+    },
+    "text-input": {
+      "background-color": {
+        "value": "{govnl.form-control.background-color}",
+        "type": "color"
+      },
+      "border-color": {
+        "value": "{govnl.form-control.border-color}",
+        "type": "color"
+      },
+      "color": {
+        "value": "{govnl.form-control.color}",
+        "type": "color"
+      },
+      "hover": {
+        "background-color": {
+          "value": "{govnl.form-control.hover.background-color}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{govnl.form-control.hover.border-color}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{govnl.form-control.hover.color}",
+          "type": "color"
+        }
+      },
+      "focus-visible": {
+        "background-color": {
+          "value": "{govnl.form-control.focus.background-color}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{govnl.form-control.focus.border-color}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{govnl.form-control.focus.color}",
+          "type": "color"
+        },
+        "outline-color": {
+          "value": "{govnl.form-control.focus.outline-color}",
+          "type": "color"
+        }
+      },
+      "error": {
+        "background-color": {
+          "value": "{govnl.form-control.invalid.background-color}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{govnl.form-control.invalid.border-color}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{govnl.form-control.color}",
+          "type": "color"
+        }
+      },
+      "icon": {
+        "color": {
+          "value": "{govnl.form-control.color}",
+          "type": "color"
+        }
+      },
+      "active": {
+        "background-color": {
+          "value": "{govnl.form-control.active.background-color}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{govnl.form-control.active.border-color}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{govnl.form-control.active.color}",
+          "type": "color"
+        }
+      }
     }
   }
 }
