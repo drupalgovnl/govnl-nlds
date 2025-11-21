@@ -2,12 +2,6 @@ import { Heading } from '../heading/heading.component.js';
 import { Icon } from '../icon/icon.component.js';
 import { Link } from '../link/link.component.js';
 
-let cardIdCounter = 0;
-const createCardId = () => {
-  cardIdCounter += 1;
-  return `dictu-card-${cardIdCounter}`;
-};
-
 export const Card = ({
   headingLevel,
   link,
@@ -20,13 +14,10 @@ export const Card = ({
   subheading,
   full_card_link,
 }) => {
-  const cardId = createCardId();
-  const hasFullCardLink = Boolean(full_card_link && link?.href);
-  const canRenderHeadingLink = Boolean(!hasFullCardLink && link?.href);
+  const hasFullCardLink = Boolean(full_card_link);
 
-  const card = document.createElement(hasFullCardLink ? 'a' : 'div');
+  const card = document.createElement('div');
   card.classList.add('dictu-card', `dictu-card--${variant}`, 'dictu-focus-ring');
-  card.setAttribute('aria-labelledby', `${cardId}-heading`);
 
   if (hasFullCardLink) {
     card.href = link.href;
@@ -47,17 +38,14 @@ export const Card = ({
 
   const iconElement = icon ? Icon({ icon, label: alt }) : null;
 
-  const headingContent =
-    hasFullCardLink || !canRenderHeadingLink
-      ? (link?.text ?? '')
-      : Link({
-          text: link?.text ?? '',
-          href: link.href,
-          classNames: 'dictu-card__link',
-        });
+  const headingContent = Link({
+    text: link?.text ?? '',
+    href: link.href,
+    classNames: hasFullCardLink ? 'card__link dictu-card__full-card-link' : 'dictu-card__link',
+  });
+
   const headingElement = Heading({ innerHTML: headingContent, level: headingLevel });
   headingElement.classList.add('dictu-card__heading');
-  headingElement.id = `${cardId}-heading`;
 
   const contentElement = document.createElement('div');
   contentElement.classList.add('dictu-card__content');
@@ -73,7 +61,6 @@ export const Card = ({
   const describedByIds = [];
 
   if (subheading) {
-    subHeadingElement.id = `${cardId}-subheading`;
     describedByIds.push(subHeadingElement.id);
     contentElement.appendChild(subHeadingElement);
   }
@@ -81,7 +68,6 @@ export const Card = ({
   const paragraphElement = document.createElement('p');
   paragraphElement.classList.add('dictu-card__paragraph');
   paragraphElement.innerText = content ?? '';
-  paragraphElement.id = `${cardId}-content`;
   describedByIds.push(paragraphElement.id);
 
   contentElement.appendChild(paragraphElement);
@@ -91,18 +77,7 @@ export const Card = ({
 
   if (footer_content) {
     metadataElement.innerText = footer_content;
-    metadataElement.id = `${cardId}-metadata`;
     describedByIds.push(metadataElement.id);
-  }
-
-  if (describedByIds.length > 0) {
-    card.setAttribute('aria-describedby', describedByIds.join(' '));
-    if (canRenderHeadingLink) {
-      const headingLink = headingElement.querySelector('a');
-      if (headingLink) {
-        headingLink.setAttribute('aria-describedby', describedByIds.join(' '));
-      }
-    }
   }
 
   if (footer_content) {

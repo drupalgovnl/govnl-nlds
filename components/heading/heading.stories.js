@@ -6,7 +6,7 @@ import level4Docs from './docs/_level4.md?raw';
 import level5Docs from './docs/_level5.md?raw';
 import level6Docs from './docs/_level6.md?raw';
 import './dist/index.css';
-import { Heading } from './heading';
+import { Heading } from './heading.component';
 
 export default {
   args: {
