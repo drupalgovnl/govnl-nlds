@@ -12,6 +12,7 @@
     "components/form-elements/date-input.tokens.wip",
     "components/form-elements/text-input.tokens.wip",
     "components/form-elements/text-area.tokens.wip",
+    "components/form-elements/select.tokens.wip",
     "components/form-elements/form-field.tokens.wip",
     "components/grid.tokens",
     "components/heading.tokens",

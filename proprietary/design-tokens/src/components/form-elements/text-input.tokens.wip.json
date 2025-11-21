@@ -2,129 +2,129 @@
   "govnl": {
     "text-input": {
       "font-family": {
-        "value": "{govnl.form-control.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{govnl.form-control.font-family}"
       },
       "font-size": {
-        "value": "{govnl.form-control.font-size}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{govnl.form-control.font-size}"
       },
       "font-weight": {
-        "value": "{govnl.form-control.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{govnl.form-control.font-weight}"
       },
       "line-height": {
-        "value": "{govnl.form-control.line-height}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{govnl.form-control.line-height}"
       },
       "background-color": {
-        "value": "{govnl.form-control.background-color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.form-control.background-color}"
       },
       "border-color": {
-        "value": "{govnl.form-control.border-color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.form-control.border-color}"
       },
       "color": {
-        "value": "{govnl.form-control.color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.form-control.color}"
       },
       "min-block-size": {
-        "value": "{govnl.dimension.pointer-target.min-size}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.dimension.pointer-target.min-size}"
       },
       "padding-block-start": {
-        "value": "{govnl.space.xs}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
       },
       "padding-inline-end": {
-        "value": "{govnl.space.xs}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
       },
       "padding-block-end": {
-        "value": "{govnl.space.xs}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
       },
       "padding-inline-start": {
-        "value": "{govnl.space.xs}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
       },
       "border-radius": {
-        "value": "{govnl.border.border-radius.sm}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{govnl.border.border-radius.sm}"
       },
       "border-width": {
-        "value": "{govnl.border.border-width.sm}",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "{govnl.border.border-width.sm}"
       },
       "hover": {
         "background-color": {
-          "value": "{govnl.form-control.hover.background-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.background-color}"
         },
         "border-color": {
-          "value": "{govnl.form-control.hover.border-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.border-color}"
         },
         "color": {
-          "value": "{govnl.form-control.hover.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.color}"
         }
       },
-      "focus-visible": {
+      "focus": {
         "background-color": {
-          "value": "{govnl.form-control.focus.background-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.background-color}"
         },
         "border-color": {
-          "value": "{govnl.form-control.focus.border-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.border-color}"
         },
         "color": {
-          "value": "{govnl.form-control.focus.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.color}"
         },
         "outline-color": {
-          "value": "{govnl.form-control.focus.outline-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.outline-color}"
         }
       },
       "error": {
         "background-color": {
-          "value": "{govnl.form-control.invalid.background-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.background-color}"
         },
         "border-color": {
-          "value": "{govnl.form-control.invalid.border-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.border-color}"
         },
         "color": {
-          "value": "{govnl.form-control.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.color}"
         },
         "border-width": {
-          "value": "{govnl.border.border-width.md}",
-          "type": "borderWidth"
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.md}"
         }
       },
       "read-only": {
         "background-color": {
-          "value": "{govnl.form-control.read-only.background-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.read-only.background-color}"
         },
         "border-color": {
-          "value": "{govnl.form-control.read-only.border-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.read-only.border-color}"
         },
         "color": {
-          "value": "{govnl.form-control.read-only.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.read-only.color}"
         }
       },
       "placeholder": {
         "color": {
-          "value": "{govnl.form-control.placeholder.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.placeholder.color}"
         }
       }
     }
