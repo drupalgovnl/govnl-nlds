@@ -32,7 +32,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install --frozen-lockfile
+          npm install
 
       - name: Verify installation
         run: npm ls --depth=0
