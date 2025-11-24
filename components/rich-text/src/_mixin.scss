@@ -6,6 +6,7 @@
 @use "pkg:@dictu/heading/src/mixin" as dictu-heading;
 @use "pkg:@dictu/link/src/mixin" as dictu-link;
 @use "pkg:@dictu/paragraph/src/mixin" as dictu-paragraph;
+@use "pkg:@dictu/table/src/mixin" as dictu-table;
 
 @mixin dictu-rich-text {
   :where(h1, h2, h3, h4, h5, h6) {
@@ -50,5 +51,29 @@
 
   :where(p) {
     @include dictu-paragraph.dictu-paragraph;
+  }
+
+  :where(table) {
+    @include dictu-table.dictu-table;
+  }
+
+  :where(caption) {
+    @include dictu-table.dictu-table__caption;
+  }
+
+  :where(tr) {
+    @include dictu-table.dictu-table__row;
+  }
+
+  :where(th) {
+    @include dictu-table.dictu-table__header;
+  }
+
+  :where(td) {
+    @include dictu-table.dictu-table__cell;
+  }
+
+  :where(tfoot) {
+    @include dictu-table.dictu-table__foot;
   }
 }
