@@ -1,0 +1,91 @@
+{/* table.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as TableStories from './table.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={TableStories} title="Componenten/Table" />
+
+<Title>Table</Title>
+
+<Subtitle>
+  De Table component organiseert data op een voor de gebruiker makkelijk te scannen manier van rijen en kolommen.
+</Subtitle>
+
+<Canvas of={TableStories.DefaultTable} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={TableStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Table component
+
+Gebruik de Table component om gebruikers makkelijk data te laten vergelijken in rijen en kolommen.
+
+## Wanneer gebruik je de Table component niet
+
+Gebruik de Table component niet om een layout op te zetten op een pagina, hiervoor is de [Grid component](?path=/docs/componenten-grid--docs).
+
+## Richtlijnen
+
+- Gebruik een `<caption>` element om te beschrijven wat er in de tabel staat, zodat het voor gebruikers makkelijk is om de tabel te begrijpen.
+- Gebruiker table headers (`th`) om aan gebruikers te vertellen wat de inhoud is van elke rij en kolom.
+
+## Voorbeelden
+
+Een basis tabel heeft een caption met daarin de beschrijving van de tabel. De tabel begint met een `thead` element, waarin de table headers voor elke kolom in zijn opgenomen.
+Deze headers beschrijven wat de inhoud is van de kolommen. Om duidelijk te maken dat het gaat om headers voor de kolommen, wordt op het `th` element een `scope` attribuut met als waarde `col` gezet.
+
+<Canvas of={TableStories.DefaultTable} />
+
+### Tabel met headers voor rijen
+
+Een tabel kan naast headers voor de kolommen ook headers voor de rijen hebben. Deze headers hoeven niet in de `thead` worden opgenomen, maar kunnen ook aan de `tbody`
+toegevoegd worden. De headers voor de rijen beschrijven wat de inhoud van de betreffende rij is. Om duidelijk te maken dat het gaat om headers voor de rijen, wordt op het `th`
+element een `scope` met als waarde `row` gezet.
+
+<Canvas of={TableStories.RowHeaderTable} />
+
+### Tabel met een footer
+
+Aan de tabel kan een `tfoot` element worden toegevoegd. De footer van een tabel bevat informatie over de bovenliggende kolommen. Vaak is dit een samenvatting van de kolom, of de totale som van bovenliggende kolom.
+
+<Canvas of={TableStories.FootTable} />
+
+### Tabel met cellen over meerdere rijen of kolommen
+
+Het is mogelijk om cellen over meerdere rijen of kolommen te laten lopen. Hiervoor voeg je aan het `td` element een `colspan` attribuut toe voor kolommen, en/of een `rowspan` attribuut voor rijen. 
+De waarde van het attribuut is het aantal kolommen of rijen dat overbrugt moet worden.
+
+#### Tabel met colspan
+
+<Canvas of={TableStories.ColspanTable} />
+
+#### Tabel met rowspan
+
+<Canvas of={TableStories.RowspanTable} />
+
+
+## Relevante WCAG succescriteria
+
+(Nog in te vullen)
+
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Table component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).
