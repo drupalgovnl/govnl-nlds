@@ -4,12 +4,16 @@ import './dist/index.css';
 export default {
   args: {
     href: 'dictu.nl',
+    classNames: '',
   },
   argTypes: {
     innerHTML: {
       control: 'text',
     },
     href: {
+      control: 'text',
+    },
+    classNames: {
       control: 'text',
     },
   },
@@ -20,16 +24,7 @@ export default {
       },
     },
   },
-  render: ({ innerHTML, href }) => {
-    const classes = ['dictu-link'];
-    const $link = document.createElement('a');
-
-    $link.innerText = innerHTML;
-    $link.href = href;
-    $link.classList.add(...classes);
-
-    return $link;
-  },
+  render: Link,
   tags: ['autodocs'],
   title: 'Componenten/Link',
 };

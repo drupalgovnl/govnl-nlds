@@ -160,7 +160,9 @@
     text-decoration-line: var(--govnl-card-heading-focus-visible-text-decoration-line);
     text-decoration-thickness: var(--govnl-card-heading-focus-visible-text-decoration-thickness);
   }
+}
 
+@mixin dictu-card__full-card-link {
   &::before {
     content: "";
     inset: 0;
