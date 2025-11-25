@@ -1,5 +1,11 @@
 # @dictu/rich-text
 
+## 3.1.0
+
+### Minor Changes
+
+- 562551c: Tabel toegevoegd aan rich text component
+
 ## 3.0.0
 
 ### Major Changes
