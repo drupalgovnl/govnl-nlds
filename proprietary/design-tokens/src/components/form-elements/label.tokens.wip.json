@@ -27,9 +27,11 @@
         "$type": "fontFamilies",
         "$value": "{govnl.form-control.font-family}"
       },
-      "font-weight": {
-        "$type": "fontWeights",
-        "$value": "{govnl.document.strong.font-weight}"
+      "regular": {
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.form-control.font-weight}"
+        }
       },
       "font-size": {
         "$type": "fontSizes",
@@ -38,6 +40,12 @@
       "column-gap": {
         "$type": "dimension",
         "$value": "{govnl.space.3xs}"
+      },
+      "strong": {
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.form-control.strong.font-weight}"
+        }
       }
     }
   }
