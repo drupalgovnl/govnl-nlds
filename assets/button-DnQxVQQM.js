@@ -1,4 +1,4 @@
-import{j as e,M as s,T as a,S as l,C as i,A as h,h as j}from"./blocks-Bsho0YXL.js";import{useMDXComponents as c}from"./index-kMZt6BEg.js";import{B as t,P as o}from"./button.stories-rh6V8-7j.js";import"./iframe-B3_BhJIj.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./button-BFxmQ4_Q.js";import"./icon-CoxNzpgJ.js";const u=`<!-- @license CC0-1.0 -->
+import{j as e,M as s,T as a,S as l,C as i,A as h,h as j}from"./blocks-Cmzn6Uc4.js";import{useMDXComponents as c}from"./index-Cn3OuqmY.js";import{B as t,P as o}from"./button.stories-rh6V8-7j.js";import"./iframe-DkkBrqMb.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./button-BFxmQ4_Q.js";import"./icon-CoxNzpgJ.js";const u=`<!-- @license CC0-1.0 -->
 
 ## De Button component implementeren
 
