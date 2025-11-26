@@ -126,6 +126,34 @@
           "$type": "color",
           "$value": "{govnl.form-control.placeholder.color}"
         }
+      },
+      "small": {
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{govnl.typography.font-size.sm}"
+        }
+      }
+    },
+    "text-input-small": {
+      "min-block-size": {
+        "$type": "dimension",
+        "$value": "{govnl.dimension.size.500}"
+      },
+      "padding-block-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
+      },
+      "padding-block-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
       }
     }
   }
