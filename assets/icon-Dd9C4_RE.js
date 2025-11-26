@@ -1,4 +1,4 @@
-import{j as e,M as l,T as d,S as a,C as o,A as h,h as u}from"./blocks-DiQqVEox.js";import{useMDXComponents as c}from"./index-C9cZC4lQ.js";import{I as t,a as r,b as j}from"./icon.stories-ZESGqLWe.js";import"./iframe-BqgPCNei.js";import"./_commonjsHelpers-CqkleIqs.js";import"./icon-CoxNzpgJ.js";/* empty css              */const m=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as d,S as a,C as o,A as h,h as u}from"./blocks-Bsho0YXL.js";import{useMDXComponents as c}from"./index-kMZt6BEg.js";import{I as t,a as r,b as j}from"./icon.stories-ZESGqLWe.js";import"./iframe-B3_BhJIj.js";import"./_commonjsHelpers-CqkleIqs.js";import"./icon-CoxNzpgJ.js";/* empty css              */const m=`<!-- @license CC0-1.0 -->
 
 ## Gebruik deze component
 
