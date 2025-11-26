@@ -8,6 +8,13 @@
     "components/card.tokens",
     "components/container.tokens",
     "components/figure.tokens",
+    "components/form-elements/checkbox.tokens.wip",
+    "components/form-elements/date-input.tokens.wip",
+    "components/form-elements/text-input.tokens.wip",
+    "components/form-elements/text-area.tokens.wip",
+    "components/form-elements/select.tokens.wip",
+    "components/form-elements/label.tokens.wip",
+    "components/form-elements/form-field.tokens.wip",
     "components/grid.tokens",
     "components/heading.tokens",
     "components/hero.tokens",
@@ -24,7 +31,6 @@
     "components/section.tokens",
     "components/skip-link.tokens",
     "components/table.tokens",
-    "components/form-elements/form-field.tokens.wip",
     "components/timeline.tokens"
   ]
 }

@@ -1,45 +1,5 @@
 {
   "govnl": {
-    "form-field-label": {
-      "font-family": {
-        "$type": "fontFamilies",
-        "$value": "{govnl.form-control.font-family}"
-      },
-      "font-weight": {
-        "$type": "fontWeights",
-        "$value": "{govnl.document.strong.font-weight}"
-      },
-      "font-size": {
-        "$type": "fontSizes",
-        "$value": "{govnl.form-control.font-size}"
-      },
-      "required": {
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{govnl.form-control.font-family}"
-        },
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{govnl.form-control.font-weight}"
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.typography.font-size.xs}"
-        },
-        "color": {
-          "$type": "color",
-          "$value": "{govnl.color.grijs.700}"
-        }
-      },
-      "column-gap": {
-        "$type": "dimension",
-        "$value": "{govnl.space.3xs}"
-      },
-      "color": {
-        "$type": "color",
-        "$value": "{govnl.form-control.color}"
-      }
-    },
     "form-field-description": {
       "font-family": {
         "$type": "fontFamilies",
@@ -55,7 +15,7 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{govnl.form-control.color}"
+        "$value": "{govnl.document.subtle.color}"
       }
     },
     "form-field-error-message": {
