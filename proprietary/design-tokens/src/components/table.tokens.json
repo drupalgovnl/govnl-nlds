@@ -74,6 +74,10 @@
         }
       },
       "footer": {
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.document.strong.font-weight}"
+        },
         "background-color": {
           "$type": "color",
           "$value": "{govnl.color.white}"
