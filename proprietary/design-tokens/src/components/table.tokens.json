@@ -134,7 +134,7 @@
         },
         "border-block-end-color": {
           "$type": "color",
-          "$value": "{govnl.line.border-color}"
+          "$value": "{govnl.line.subtle.border-color}"
         },
         "alternate-odd": {
           "background-color": {

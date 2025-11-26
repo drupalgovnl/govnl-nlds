@@ -1,118 +1,78 @@
 {
   "govnl": {
-    "form-field-label": {
-      "font-family": {
-        "value": "{govnl.form-control.font-family}",
-        "type": "fontFamilies"
-      },
-      "font-weight": {
-        "value": "{govnl.document.strong.font-weight}",
-        "type": "fontWeights"
-      },
-      "font-size": {
-        "value": "{govnl.form-control.font-size}",
-        "type": "fontSizes"
-      },
-      "required": {
-        "font-family": {
-          "value": "{govnl.form-control.font-family}",
-          "type": "fontFamilies"
-        },
-        "font-weight": {
-          "value": "{govnl.form-control.font-weight}",
-          "type": "fontWeights"
-        },
-        "font-size": {
-          "value": "{govnl.typography.font-size.xs}",
-          "type": "fontSizes"
-        },
-        "color": {
-          "value": "{govnl.color.grijs.700}",
-          "type": "color"
-        }
-      },
-      "column-gap": {
-        "value": "{govnl.space.3xs}",
-        "type": "dimension"
-      },
-      "color": {
-        "value": "{govnl.form-control.color}",
-        "type": "color"
-      }
-    },
     "form-field-description": {
       "font-family": {
-        "value": "{govnl.form-control.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{govnl.form-control.font-family}"
       },
       "font-size": {
-        "value": "{govnl.typography.font-size.sm}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{govnl.typography.font-size.sm}"
       },
       "font-weight": {
-        "value": "{govnl.form-control.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{govnl.form-control.font-weight}"
       },
       "color": {
-        "value": "{govnl.document.subtle.color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.document.subtle.color}"
       }
     },
     "form-field-error-message": {
       "font-family": {
-        "value": "{govnl.form-control.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{govnl.form-control.font-family}"
       },
       "font-size": {
-        "value": "{govnl.typography.font-size.sm}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{govnl.typography.font-size.sm}"
       },
       "font-weight": {
-        "value": "{govnl.form-control.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{govnl.form-control.font-weight}"
       },
       "icon": {
         "size": {
-          "value": "{govnl.icon.size}",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "{govnl.icon.size}"
         },
         "color": {
-          "value": "{govnl.form-control.invalid.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.color}"
         }
       },
       "column-gap": {
-        "value": "{govnl.space.3xs}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.space.3xs}"
       },
       "color": {
-        "value": "{govnl.form-control.invalid.color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.form-control.invalid.color}"
       }
     },
     "form-field-label-group": {
       "row-gap": {
-        "value": "0rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "0rem"
       }
     },
     "form-field": {
       "row-gap": {
-        "value": "{govnl.space.2xs}",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
       },
       "error": {
         "padding-inline-start": {
-          "value": "{govnl.space.sm}",
-          "type": "dimension"
+          "$type": "dimension",
+          "$value": "{govnl.space.sm}"
         },
         "border-inline-start-width": {
-          "value": "{govnl.border.border-width.md}",
-          "type": "borderWidth"
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.md}"
         },
         "border-color": {
-          "value": "{govnl.form-control.invalid.border-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.border-color}"
         }
       }
     }
