@@ -14,6 +14,7 @@
     "components/form-elements/text-area.tokens.wip",
     "components/form-elements/select.tokens.wip",
     "components/form-elements/label.tokens.wip",
+    "components/form-elements/radio-button.tokens.wip",
     "components/form-elements/form-field.tokens.wip",
     "components/grid.tokens",
     "components/heading.tokens",
