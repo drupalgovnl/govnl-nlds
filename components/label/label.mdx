@@ -17,7 +17,8 @@ import Readme from './README.md?raw';
 <Title>Label</Title>
 
 <Subtitle>
-Een label is beschrijvende tekst die het doel van een form element, zoals een text input of select list, communiceert aan de gebruiker.
+  Een label is beschrijvende tekst die het doel van een form element, zoals een text input of select
+  list, communiceert aan de gebruiker.
 </Subtitle>
 
 <Canvas of={LabelStories.LabelDefault} sourceState="none" />
@@ -32,14 +33,13 @@ Een label is beschrijvende tekst die het doel van een form element, zoals een te
 
 Gebruik de Label component voor een beschrijving van een onderdeel van de user interface. In de meeste gevallen is dit een input, textarea of select component in een formulier.
 
-
 ## Richtlijnen
 
 - Wanneer de label gebruikt wordt voor een bijbehorend form element, geef dan door middel van het `for` attribuut een verwijzing mee naar het `id` van het form element.
 - Wanneer de labl niet gebruikt wordt voor een form element, dan kan het `for` attribuut achterwege worden gelaten.
 - Zet geen heading in het label component. Het is voor screenreaders lastig om dit te intepreteren, waardoor gebruikers van screenreaders niet de juiste informatie krijgen.
 - Zet geen interactieve elementen als een link in een label. Een label dat verbonden is aan een form element werkt als een verlengde van dat element. Wanneer je op de label klikt
-geldt dit als een klik op het form element. Deze functionaliteit werkt niet samen met bijvoorbeeld een link in de label.
+  geldt dit als een klik op het form element. Deze functionaliteit werkt niet samen met bijvoorbeeld een link in de label.
 
 ## Voorbeelden
 
@@ -56,7 +56,7 @@ element in een fieldset, zodat de gehele flow van een formulier er visueel beter
 
 ### Label met een toevoeging voor het verplicht invullen
 
-Als het voor het bijbehorende form element verplicht is om in te vullen, kan dit duidelijk worden gemaakt in het label. Hiervoor kan een `span` element worden toegevoegd met 
+Als het voor het bijbehorende form element verplicht is om in te vullen, kan dit duidelijk worden gemaakt in het label. Hiervoor kan een `span` element worden toegevoegd met
 de className `dictu-label__required`.
 
 <Canvas of={LabelStories.LabelRequired} />
