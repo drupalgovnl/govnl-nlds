@@ -120,11 +120,11 @@
           "$type": "dimension",
           "$value": "0.4em"
         },
-        "border-inline-start-width": {
+        "border-inline-end-width": {
           "$type": "border",
           "$value": "{govnl.border.border-width.sm}"
         },
-        "border-inline-start-color": {
+        "border-inline-end-color": {
           "$type": "color",
           "$value": "{govnl.line.subtle.border-color}"
         },
