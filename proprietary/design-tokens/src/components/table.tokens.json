@@ -124,7 +124,7 @@
           "$type": "border",
           "$value": "{govnl.border.border-width.sm}"
         },
-        "border-color": {
+        "border-inline-start-color": {
           "$type": "color",
           "$value": "{govnl.line.subtle.border-color}"
         },
@@ -160,7 +160,7 @@
           "$type": "border",
           "$value": "{govnl.border.border-width.sm}"
         },
-        "border-color": {
+        "border-block-end-color": {
           "$type": "color",
           "$value": "{govnl.line.subtle.border-color}"
         },
