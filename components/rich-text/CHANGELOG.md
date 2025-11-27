@@ -1,5 +1,11 @@
 # @dictu/rich-text
 
+## 3.2.0
+
+### Minor Changes
+
+- fa2711a: Usage of table component version tot 1.1.0
+
 ## 3.1.0
 
 ### Minor Changes
