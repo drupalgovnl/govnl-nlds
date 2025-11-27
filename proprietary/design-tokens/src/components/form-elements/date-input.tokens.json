@@ -1,0 +1,220 @@
+{
+  "govnl": {
+    "date-input": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{govnl.form-control.background-color}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{govnl.form-control.border-color}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{govnl.form-control.color}"
+      },
+      "border-radius": {
+        "$type": "borderRadius",
+        "$value": "{govnl.border.border-radius.sm}"
+      },
+      "border-width": {
+        "$type": "borderWidth",
+        "$value": "{govnl.border.border-width.sm}"
+      },
+      "min-block-size": {
+        "$type": "dimension",
+        "$value": "{govnl.dimension.pointer-target.min-size}"
+      },
+      "padding-block-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
+      },
+      "padding-block-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
+      },
+      "column-gap": {
+        "$type": "dimension",
+        "$value": "{govnl.space.3xs}"
+      },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{govnl.form-control.font-family}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{govnl.form-control.font-size}"
+      },
+      "font-weight": {
+        "$type": "fontWeights",
+        "$value": "{govnl.form-control.font-weight}"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{govnl.form-control.line-height}"
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.color}"
+        }
+      },
+      "focus": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.color}"
+        },
+        "outline-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.outline-color}"
+        }
+      },
+      "error": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.color}"
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.md}"
+        }
+      },
+      "icon": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.color}"
+        },
+        "size": {
+          "$type": "sizing",
+          "$value": "{govnl.icon.size}"
+        }
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.active.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.active.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.active.color}"
+        }
+      }
+    },
+    "text-input": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{govnl.form-control.background-color}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{govnl.form-control.border-color}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{govnl.form-control.color}"
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.color}"
+        }
+      },
+      "focus-visible": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.color}"
+        },
+        "outline-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.outline-color}"
+        }
+      },
+      "error": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.color}"
+        }
+      },
+      "icon": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.color}"
+        }
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.active.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.active.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.active.color}"
+        }
+      }
+    }
+  }
+}

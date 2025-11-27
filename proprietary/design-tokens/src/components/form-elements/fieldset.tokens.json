@@ -1,46 +1,6 @@
 {
   "govnl": {
-    "form-field-label": {
-      "font-family": {
-        "$type": "fontFamilies",
-        "$value": "{govnl.form-control.font-family}"
-      },
-      "font-weight": {
-        "$type": "fontWeights",
-        "$value": "{govnl.document.strong.font-weight}"
-      },
-      "font-size": {
-        "$type": "fontSizes",
-        "$value": "{govnl.form-control.font-size}"
-      },
-      "required": {
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{govnl.form-control.font-family}"
-        },
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{govnl.form-control.font-weight}"
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.typography.font-size.xs}"
-        },
-        "color": {
-          "$type": "color",
-          "$value": "{govnl.color.grijs.700}"
-        }
-      },
-      "column-gap": {
-        "$type": "dimension",
-        "$value": "{govnl.space.3xs}"
-      },
-      "color": {
-        "$type": "color",
-        "$value": "{govnl.form-control.color}"
-      }
-    },
-    "form-field-description": {
+    "fieldset-description": {
       "font-family": {
         "$type": "fontFamilies",
         "$value": "{govnl.form-control.font-family}"
@@ -55,10 +15,10 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{govnl.form-control.color}"
+        "$value": "{govnl.document.subtle.color}"
       }
     },
-    "form-field-error-message": {
+    "fieldset-error-message": {
       "font-family": {
         "$type": "fontFamilies",
         "$value": "{govnl.form-control.font-family}"
@@ -90,13 +50,13 @@
         "$value": "{govnl.form-control.invalid.color}"
       }
     },
-    "form-field-label-group": {
+    "fieldset-legend-group": {
       "row-gap": {
         "$type": "dimension",
         "$value": "0rem"
       }
     },
-    "form-field": {
+    "fieldset": {
       "row-gap": {
         "$type": "dimension",
         "$value": "{govnl.space.2xs}"
@@ -114,6 +74,28 @@
           "$type": "color",
           "$value": "{govnl.form-control.invalid.border-color}"
         }
+      }
+    },
+    "fieldset-legend": {
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{govnl.form-control.font-family}"
+      },
+      "regular": {
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.form-control.font-weight}"
+        }
+      },
+      "strong": {
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.form-control.strong.font-weight}"
+        }
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{govnl.form-control.font-size}"
       }
     }
   }

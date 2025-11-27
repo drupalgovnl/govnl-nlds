@@ -155,6 +155,16 @@
         "max-inline-size": {
           "$type": "sizing",
           "$value": "100%"
+        },
+        "submenu": {
+          "padding-inline-start": {
+            "$type": "spacing",
+            "$value": "{govnl.space.md}"
+          },
+          "padding-inline-end": {
+            "$type": "spacing",
+            "$value": "{govnl.space.md}"
+          }
         }
       },
       "font-size": {

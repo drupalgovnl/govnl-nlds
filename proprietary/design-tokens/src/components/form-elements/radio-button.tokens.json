@@ -1,0 +1,160 @@
+{
+  "govnl": {
+    "radio-button": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{govnl.dimension.size.300}"
+      },
+      "border-radius": {
+        "$type": "borderRadius",
+        "$value": "{govnl.border.border-radius.round}"
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{govnl.icon.size}"
+        }
+      },
+      "unchecked": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.border-color}"
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.hover.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.hover.border-color}"
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "{govnl.border.border-width.md}"
+          }
+        },
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.active.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.hover.border-color}"
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "{govnl.border.border-width.md}"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.focus.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.focus.border-color}"
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.focus.outline-color}"
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "{govnl.border.border-width.sm}"
+          }
+        }
+      },
+      "checked": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.interaction.color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "transparant"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.document.inverse.color}"
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.interaction.hover.color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparant"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.inverse.color}"
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "{govnl.border.border-width.md}"
+          }
+        },
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.interaction.active.color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparant"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.inverse.color}"
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "{govnl.border.border-width.md}"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.focus.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.focus.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.focus.color}"
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.focus.outline-color}"
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "{govnl.border.border-width.sm}"
+          }
+        }
+      },
+      "column-gap": {
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
+      }
+    }
+  }
+}

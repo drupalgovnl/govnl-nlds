@@ -280,15 +280,19 @@
       "focus": {
         "background-color": {
           "$type": "color",
-          "$value": "{govnl.color.white}"
+          "$value": "{govnl.focus.background-color}"
         },
-        "border-color": {
+        "outline-color": {
           "$type": "color",
-          "$value": "{govnl.color.black}"
+          "$value": "{govnl.focus.outline-color}"
         },
         "color": {
           "$type": "color",
-          "$value": "{govnl.color.black}"
+          "$value": "{govnl.focus.color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.border-color}"
         }
       },
       "invalid": {
@@ -323,6 +327,26 @@
         "color": {
           "$type": "color",
           "$value": "{govnl.color.grijs.600}"
+        }
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.100}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.800}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.900}"
+        }
+      },
+      "strong": {
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.typography.font-weight.bold}"
         }
       }
     },

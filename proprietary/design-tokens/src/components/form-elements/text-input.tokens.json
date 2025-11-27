@@ -1,0 +1,160 @@
+{
+  "govnl": {
+    "text-input": {
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{govnl.form-control.font-family}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{govnl.form-control.font-size}"
+      },
+      "font-weight": {
+        "$type": "fontWeights",
+        "$value": "{govnl.form-control.font-weight}"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{govnl.form-control.line-height}"
+      },
+      "background-color": {
+        "$type": "color",
+        "$value": "{govnl.form-control.background-color}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{govnl.form-control.border-color}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{govnl.form-control.color}"
+      },
+      "min-block-size": {
+        "$type": "dimension",
+        "$value": "{govnl.dimension.pointer-target.min-size}"
+      },
+      "padding-block-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
+      },
+      "padding-block-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
+      },
+      "border-radius": {
+        "$type": "borderRadius",
+        "$value": "{govnl.border.border-radius.sm}"
+      },
+      "border-width": {
+        "$type": "borderWidth",
+        "$value": "{govnl.border.border-width.sm}"
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.color}"
+        }
+      },
+      "focus": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.color}"
+        },
+        "outline-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.outline-color}"
+        }
+      },
+      "error": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.color}"
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.md}"
+        }
+      },
+      "read-only": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.read-only.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.read-only.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.read-only.color}"
+        }
+      },
+      "placeholder": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.placeholder.color}"
+        }
+      },
+      "small": {
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{govnl.typography.font-size.sm}"
+        }
+      }
+    },
+    "text-input-small": {
+      "min-block-size": {
+        "$type": "dimension",
+        "$value": "{govnl.dimension.size.500}"
+      },
+      "padding-block-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
+      },
+      "padding-block-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
+      }
+    }
+  }
+}

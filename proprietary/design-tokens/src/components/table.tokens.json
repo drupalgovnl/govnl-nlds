@@ -74,23 +74,25 @@
         }
       },
       "footer": {
-        "sticky": {
-          "background-color": {
-            "$type": "color",
-            "$value": "{govnl.color.white}"
-          },
-          "color": {
-            "$type": "color",
-            "$value": "{govnl.color.black}"
-          },
-          "border-block-start-color": {
-            "$type": "color",
-            "$value": "{govnl.line.strong.border-color}"
-          },
-          "border-block-start-width": {
-            "$type": "border",
-            "$value": "2px"
-          }
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.document.strong.font-weight}"
+        },
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.color.white}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.black}"
+        },
+        "border-block-start-color": {
+          "$type": "color",
+          "$value": "{govnl.line.strong.border-color}"
+        },
+        "border-block-start-width": {
+          "$type": "border",
+          "$value": "2px"
         }
       },
       "cell": {
@@ -125,6 +127,16 @@
             "$type": "sizing",
             "$value": "1em"
           }
+        },
+        "header": {
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": "{govnl.line.strong.border-color}"
+          },
+          "border-inline-end-width": {
+            "$type": "border",
+            "$value": "2px"
+          }
         }
       },
       "row": {
@@ -132,9 +144,13 @@
           "$type": "border",
           "$value": "{govnl.border.border-width.sm}"
         },
-        "border-block-end-color": {
+        "border-inline-start-width": {
+          "$type": "border",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "border-color": {
           "$type": "color",
-          "$value": "{govnl.line.border-color}"
+          "$value": "{govnl.line.subtle.border-color}"
         },
         "alternate-odd": {
           "background-color": {
