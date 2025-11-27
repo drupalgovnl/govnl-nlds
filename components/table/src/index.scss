@@ -13,6 +13,14 @@
   @include mixin.dictu-table__caption;
 }
 
+.dictu-table__head {
+  @include mixin.dictu-table__head;
+}
+
+.dictu-table__head--sticky {
+  @include mixin.dictu-table__head--sticky;
+}
+
 .dictu-table__foot {
   @include mixin.dictu-table__foot;
 }

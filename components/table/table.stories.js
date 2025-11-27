@@ -100,7 +100,7 @@ export const RowHeaderTable = {
         section: 'head',
         data: [
           {
-            purpose: 'column-header',
+            purpose: 'cell',
             value: '',
           },
           {
@@ -193,7 +193,7 @@ export const FootTable = {
         section: 'head',
         data: [
           {
-            purpose: 'column-header',
+            purpose: 'cell',
             value: '',
           },
           {
@@ -303,7 +303,7 @@ export const ColspanTable = {
         section: 'head',
         data: [
           {
-            purpose: 'column-header',
+            purpose: 'cell',
             value: '',
           },
           {
@@ -393,7 +393,7 @@ export const RowspanTable = {
         section: 'head',
         data: [
           {
-            purpose: 'column-header',
+            purpose: 'cell',
             value: '',
           },
           {
