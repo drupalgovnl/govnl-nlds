@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 2.1.0
+
+### Minor Changes
+
+- 7ffe9c0: Added new tokens for Table component
+
 ## 2.0.0
 
 ### Major Changes
