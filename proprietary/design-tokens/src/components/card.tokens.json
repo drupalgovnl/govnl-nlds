@@ -119,6 +119,57 @@
           }
         }
       },
+      "metadata-subheading": {
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "none"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.document.font-family}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{govnl.document.font-size}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.document.font-weight}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{govnl.document.line-height}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.document.subtle.color}"
+        },
+      "metadata-footer": {
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "none"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.document.font-family}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{govnl.document.font-size}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.document.font-weight}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{govnl.document.line-height}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.document.subtle.color}"
+        }
+      },
       "accent": {
         "background-color": {
           "$type": "color",
