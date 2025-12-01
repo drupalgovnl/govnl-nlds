@@ -1,5 +1,13 @@
 # @dictu/design-tokens
 
+## 2.2.0
+
+### Minor Changes
+
+- b474a6c: Changes to table component:
+  - Smaller caption font-size
+  - Word wrap set on table header
+
 ## 2.1.0
 
 ### Minor Changes

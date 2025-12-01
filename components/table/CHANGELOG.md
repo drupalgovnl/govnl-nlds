@@ -1,5 +1,13 @@
 # @dictu/table
 
+## 1.3.0
+
+### Minor Changes
+
+- b474a6c: Changes to table component:
+  - Smaller caption font-size
+  - Word wrap set on table header
+
 ## 1.2.0
 
 ### Minor Changes
