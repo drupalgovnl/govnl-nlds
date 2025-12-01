@@ -73,6 +73,18 @@
         "border-width": {
           "$type": "dimension",
           "$value": "{govnl.border.border-width.sm}"
+        },
+        "metadata-subheading": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.subtle.color}"
+          }
+        },
+        "metadata-footer": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.subtle.color}"
+          }
         }
       },
       "heading": {
@@ -139,39 +151,21 @@
         "line-height": {
           "$type": "lineHeights",
           "$value": "{govnl.document.line-height}"
-        },
-        "color": {
-          "$type": "color",
-          "$value": "{govnl.document.subtle.color}"
-        }
-      },
-      "metadata-footer": {
-        "text-decoration-line": {
-          "$type": "textDecoration",
-          "$value": "none"
-        },
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{govnl.document.font-family}"
-        },
-        "font-size": {
-          "$type": "fontSizes",
-          "$value": "{govnl.document.font-size}"
-        },
-        "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{govnl.document.font-weight}"
-        },
-        "line-height": {
-          "$type": "lineHeights",
-          "$value": "{govnl.document.line-height}"
-        },
-        "color": {
-          "$type": "color",
-          "$value": "{govnl.document.subtle.color}"
         }
       },
       "accent": {
+        "metadata-subheading": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.inverse.color}"
+          }
+        },
+        "metadata-footer": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.inverse.color}"
+          }
+        },
         "background-color": {
           "$type": "color",
           "$value": "{govnl.brand.primary-1.500}"
@@ -279,6 +273,28 @@
               "$value": "{govnl.document.inverse.color}"
             }
           }
+        }
+      },
+      "metadata-footer": {
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "none"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.document.font-family}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{govnl.document.font-size}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.document.font-weight}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{govnl.document.line-height}"
         }
       }
     }
