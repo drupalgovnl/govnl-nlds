@@ -1,0 +1,85 @@
+{/* list.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as ListStories from './list.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={ListStories} title="Componenten/List" />
+
+<Title>List</Title>
+
+<Subtitle>
+  De List component wordt gebruikt om gerelateerde items te groeperen en weer te geven.
+</Subtitle>
+
+<Canvas of={ListStories.Unordered} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={ListStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de List component
+
+Gebruik een lijst wanneer je een verzameling van items wilt weergeven die bij elkaar horen.
+
+- **Ongeordende lijst:** Gebruik dit wanneer de volgorde van de items niet belangrijk is.
+- **Geordende lijst:** Gebruik dit wanneer de volgorde van de items wel belangrijk is (bijvoorbeeld een stappenplan).
+- **Lijst met iconen:** Gebruik dit om visuele indicatoren toe te voegen aan lijstitems, bijvoorbeeld om kenmerken of statussen aan te duiden.
+
+## Wanneer gebruik je de List component niet
+
+- Gebruik geen lijst voor alleenstaande items die geen relatie met elkaar hebben.
+- Voor complexe navigatiestructuren kan een specifiek navigatiecomponent geschikter zijn, hoewel deze vaak onderliggend wel lijsten gebruiken.
+
+## Richtlijnen
+
+- Zorg voor een logische structuur in geneste lijsten.
+- Gebruik semantisch correcte HTML elementen (`<ul>`, `<ol>`, `<li>`).
+- Zorg bij de icoon-variant dat het icoon decoratief is of voorzien is van de juiste alternatieve tekst indien het betekenis draagt.
+
+## Voorbeelden
+
+### Ongeordende lijst
+
+Een standaard lijst met bullets. Gebruik dit type wanneer de volgorde van de items willekeurig is.
+
+<Canvas of={ListStories.Unordered} />
+
+### Geordende lijst
+
+Een lijst met nummering. Gebruik dit type wanneer de volgorde van de items van belang is, zoals bij instructies of ranglijsten.
+
+<Canvas of={ListStories.Ordered} />
+
+### Lijst met iconen
+
+Een variant waarbij de standaard bullets worden vervangen door iconen. Dit kan handig zijn om bijvoorbeeld plus- en minpunten of takenlijsten weer te geven.
+
+<Canvas of={ListStories.IconList} />
+
+## Afhankelijkheden
+
+De List component maakt voor de icoon-variant gebruik van de volgende componenten:
+
+- [Icon component](?path=/docs/componenten-icon--docs)
+
+## Relevante WCAG succescriteria
+
+- [WCAG succescriterium 1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [List component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?

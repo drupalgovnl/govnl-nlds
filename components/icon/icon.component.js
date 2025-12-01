@@ -1,5 +1,5 @@
-export function Icon({ icon, label = undefined }) {
-  const classes = ['dictu-icon'];
+export function Icon({ icon, label = undefined, classes = ['dictu-icon'] }) {
+  const componentClasses = [...classes];
   const $icon = document.createElement('span');
 
   if (label) {
@@ -9,7 +9,7 @@ export function Icon({ icon, label = undefined }) {
   }
 
   $icon.innerHTML = icon;
-  $icon.classList.add(...classes);
+  $icon.classList.add(...componentClasses);
 
   return $icon;
 }
