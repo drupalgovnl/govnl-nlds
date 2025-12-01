@@ -1,5 +1,23 @@
 # @dictu/rich-text
 
+## 3.2.1
+
+### Patch Changes
+
+- fd31554: Added thead element to rich text component to support table head
+
+## 3.2.0
+
+### Minor Changes
+
+- fa2711a: Usage of table component version tot 1.1.0
+
+## 3.1.0
+
+### Minor Changes
+
+- 562551c: Tabel toegevoegd aan rich text component
+
 ## 3.0.0
 
 ### Major Changes

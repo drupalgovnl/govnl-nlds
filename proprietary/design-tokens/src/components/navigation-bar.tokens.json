@@ -143,17 +143,59 @@
         "font-size": {
           "$type": "fontSizes",
           "$value": "{govnl.document.font-size}"
+        },
+        "active": {
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{govnl.document.strong.font-weight}"
+          }
         }
       },
       "mobile": {
         "max-inline-size": {
           "$type": "sizing",
           "$value": "100%"
+        },
+        "submenu": {
+          "padding-inline-start": {
+            "$type": "spacing",
+            "$value": "{govnl.space.md}"
+          },
+          "padding-inline-end": {
+            "$type": "spacing",
+            "$value": "{govnl.space.md}"
+          }
         }
       },
       "font-size": {
         "$type": "fontSizes",
         "$value": "{govnl.document.font-size}"
+      },
+      "submenu": {
+        "padding-inline-start": {
+          "$type": "spacing",
+          "$value": "{govnl.space.lg}"
+        },
+        "padding-inline-end": {
+          "$type": "spacing",
+          "$value": "{govnl.space.xl}"
+        },
+        "padding-block-start": {
+          "$type": "spacing",
+          "$value": "{govnl.space.lg}"
+        },
+        "padding-block-end": {
+          "$type": "spacing",
+          "$value": "{govnl.space.lg}"
+        },
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.button.subtle.active.background-color}"
+        },
+        "max-inline-size": {
+          "$type": "sizing",
+          "$value": "{govnl.nav-bar.container.inline-size}"
+        }
       }
     }
   }

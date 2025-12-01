@@ -1,18 +1,18 @@
 {
-  "name": "@dictu/rich-text",
-  "version": "3.2.1",
+  "name": "@dictu/label",
+  "version": "1.0.0",
   "author": "Dienst ICT Uitvoering",
-  "description": "Rich Text CSS component.",
+  "description": "Label CSS component.",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system",
     "css",
-    "rich-text"
+    "label"
   ],
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/rich-text"
+    "directory": "components/label"
   },
   "files": [
     "src/",
@@ -26,14 +26,12 @@
     "access": "public",
     "provenance": true
   },
-  "devDependencies": {
-    "@dictu/heading": "^3.0.0",
-    "@dictu/link": "^2.0.0",
-    "@dictu/paragraph": "^3.0.0"
-  },
   "scripts": {
     "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
     "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
     "clean": "rimraf ./dist/"
+  },
+  "devDependencies": {
+    "@dictu/utility-focus-ring": "*"
   }
 }

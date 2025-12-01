@@ -1,18 +1,18 @@
 {
-  "name": "@dictu/rich-text",
-  "version": "3.2.1",
+  "name": "@dictu/table",
+  "version": "1.3.0",
   "author": "Dienst ICT Uitvoering",
-  "description": "Rich Text CSS component.",
+  "description": "Table CSS component.",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system",
     "css",
-    "rich-text"
+    "table"
   ],
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/rich-text"
+    "directory": "components/table"
   },
   "files": [
     "src/",
@@ -25,11 +25,6 @@
   "publishConfig": {
     "access": "public",
     "provenance": true
-  },
-  "devDependencies": {
-    "@dictu/heading": "^3.0.0",
-    "@dictu/link": "^2.0.0",
-    "@dictu/paragraph": "^3.0.0"
   },
   "scripts": {
     "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",

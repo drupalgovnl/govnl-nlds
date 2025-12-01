@@ -26,7 +26,18 @@
       "components/grid.tokens": "enabled",
       "components/card.tokens": "enabled",
       "components/timeline.tokens": "enabled",
-      "components/table.tokens": "enabled"
+      "components/table.tokens": "enabled",
+      "components/list.tokens": "enabled",
+      "components/form-elements/checkbox.tokens": "enabled",
+      "components/form-elements/date-input.tokens": "enabled",
+      "components/form-elements/fieldset.tokens": "enabled",
+      "components/form-elements/form-field.tokens": "enabled",
+      "components/form-elements/label.tokens": "enabled",
+      "components/form-elements/radio-button.tokens": "enabled",
+      "components/form-elements/select.tokens": "enabled",
+      "components/form-elements/text-area.tokens": "enabled",
+      "components/form-elements/text-input.tokens": "enabled",
+      "components/searchbar.tokens": "enabled"
     },
     "$figmaVariableReferences": {},
     "group": "GovNL"
