@@ -3,18 +3,8 @@ import { Icon } from '../icon/icon.component.js';
 export const List = ({ items, type = 'unordered', icon }) => {
   const listTag = type === 'ordered' ? 'ol' : 'ul';
   const list = document.createElement(listTag);
-  list.classList.add('dictu-list');
-
-  switch (type) {
-    case 'ordered':
-      list.classList.add('dictu-list--ordered');
-      break;
-    case 'icon':
-      list.classList.add('dictu-list--icon');
-      break;
-    default:
-      list.classList.add('dictu-list--unordered');
-  }
+  const classes = ['dictu-list', `dictu-list--${type}`];
+  list.classList.add(...classes);
 
   items.forEach(item => {
     const li = document.createElement('li');
@@ -34,6 +24,7 @@ export const List = ({ items, type = 'unordered', icon }) => {
       const iconElement = Icon({ icon, label: content, classes: ['dictu-list__item-icon'] });
       li.appendChild(iconElement);
     }
+
     contentSpan.textContent = content;
     li.appendChild(contentSpan);
 

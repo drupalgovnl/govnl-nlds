@@ -21,6 +21,10 @@
 
 @mixin dictu-list--icon {
   --govnl-icon-size: var(--nl-icon-size);
+
+  &:not(:has(dictu-list__item-icon)) {
+    list-style-type: disc;
+  }
 }
 
 @mixin dictu-list__item {
