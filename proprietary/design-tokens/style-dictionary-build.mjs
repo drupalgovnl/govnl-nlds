@@ -1,4 +1,5 @@
 import { register } from '@tokens-studio/sd-transforms';
+import { outputReferencesTransformed } from 'style-dictionary/utils';
 import { globSync } from 'glob';
 import StyleDictionary from 'style-dictionary';
 
@@ -23,7 +24,7 @@ const sd = new StyleDictionary({
           format: 'css/variables',
           options: {
             selector: '.dictu-theme',
-            outputReferences: true,
+            outputReferences: outputReferencesTransformed,
           },
         },
       ],

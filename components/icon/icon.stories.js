@@ -1,4 +1,4 @@
-import { Icon } from './icon';
+import { Icon } from './icon.component';
 import './dist/index.css';
 
 const meta = {
