@@ -1,5 +1,13 @@
 # @dictu/design-tokens
 
+## 2.3.0
+
+### Minor Changes
+
+- 3df7fb8: Added list component and support in the rich text component
+- 3df7fb8: new list component, applied in rich text component, updated button
+  and icon component, new design tokens
+
 ## 2.2.0
 
 ### Minor Changes
