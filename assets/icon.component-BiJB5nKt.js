@@ -1,0 +1,1 @@
+function c({icon:n,label:e="",classes:s=["dictu-icon"]}){const i=[...s],t=document.createElement("span");return e&&e.length>0?t.setAttribute("aria-label",e):t.setAttribute("aria-hidden","true"),t.innerHTML=n,t.classList.add(...i),t}export{c as I};

@@ -1,1 +1,0 @@
-import{I as r}from"./icon-CoxNzpgJ.js";function d({label:o,variant:c,iconPosition:s,icon:n,disabled:e}){const u=["dictu-button",`dictu-button--${c}`,"dictu-focus-ring"],t=document.createElement("button");if(t.textContent=o,e&&(t.disabled=e),n){const i=new r({icon:n});t.insertAdjacentElement(s==="before"?"afterbegin":"beforeend",i)}return t.classList.add(...u),t}export{d as B};
