@@ -92,6 +92,10 @@ function createTableCell(cell, scope) {
     $tableCell.setAttribute('rowspan', cell.rowspan);
   }
 
+  if (cell.align === 'end') {
+    $tableCell.classList.add('dictu-table__cell--align-end');
+  }
+
   $tableCell.classList.add('dictu-table__cell');
 
   return $tableCell;
@@ -112,6 +116,10 @@ function createTableHeader(cell, scope) {
 
   if (cell.rowspan) {
     $tableHeader.setAttribute('rowspan', cell.rowspan);
+  }
+
+  if (cell.align === 'end') {
+    $tableHeader.classList.add('dictu-table__cell--align-end');
   }
 
   $tableHeader.classList.add('dictu-table__header');

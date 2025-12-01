@@ -57,6 +57,7 @@
 @mixin dictu-table__header {
   color: var(--govnl-table-header-color);
   font-weight: var(--govnl-table-header-font-weight);
+  overflow-wrap: break-word;
   padding-block: var(--govnl-table-cell-padding-block-start) var(--govnl-table-cell-padding-block-end);
   padding-inline: var(--govnl-table-cell-padding-inline-start) var(--govnl-table-cell-padding-inline-end);
   text-align: start;
@@ -71,6 +72,7 @@
 @mixin dictu-table__cell {
   border-inline-end: var(--govnl-table-cell-border-inline-end-width) solid
     var(--govnl-table-cell-border-inline-end-color);
+  overflow-wrap: break-word;
   padding-block: var(--govnl-table-cell-padding-block-start) var(--govnl-table-cell-padding-block-end);
   padding-inline: var(--govnl-table-cell-padding-inline-start) var(--govnl-table-cell-padding-inline-end);
   text-align: start;
@@ -79,4 +81,8 @@
   &:last-of-type {
     border-inline-end: none;
   }
+}
+
+@mixin dictu-table__cell--align-end {
+  text-align: end;
 }

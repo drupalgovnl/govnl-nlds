@@ -75,6 +75,10 @@
     @include dictu-table.dictu-table__cell;
   }
 
+  :where(thead) {
+    @include dictu-table.dictu-table__head;
+  }
+
   :where(tfoot) {
     @include dictu-table.dictu-table__foot;
   }

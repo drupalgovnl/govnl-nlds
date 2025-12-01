@@ -475,3 +475,101 @@ export const RowspanTable = {
     caption: 'Dit is een tabel met een rowspan',
   },
 };
+
+export const AlignEndTable = {
+  args: {
+    data: [
+      {
+        section: 'head',
+        data: [
+          {
+            purpose: 'cell',
+            value: '',
+          },
+          {
+            purpose: 'column-header',
+            value: 'Column 1',
+          },
+          {
+            purpose: 'column-header',
+            value: 'Column 2',
+            align: 'end',
+          },
+        ],
+      },
+      {
+        section: 'body',
+        data: [
+          {
+            purpose: 'row-header',
+            value: 'Bedrag 1',
+          },
+          {
+            purpose: 'cell',
+            value: '100',
+          },
+          {
+            purpose: 'cell',
+            value: '400',
+            align: 'end',
+          },
+        ],
+      },
+      {
+        section: 'body',
+        data: [
+          {
+            purpose: 'row-header',
+            value: 'Bedrag 2',
+          },
+          {
+            purpose: 'cell',
+            value: '400',
+          },
+          {
+            purpose: 'cell',
+            value: '400',
+            align: 'end',
+          },
+        ],
+      },
+      {
+        section: 'body',
+        data: [
+          {
+            purpose: 'row-header',
+            value: 'Bedrag 3',
+          },
+          {
+            purpose: 'cell',
+            value: '50',
+          },
+          {
+            purpose: 'cell',
+            value: '100',
+            align: 'end',
+          },
+        ],
+      },
+      {
+        section: 'body',
+        data: [
+          {
+            purpose: 'row-header',
+            value: 'Bedrag 4',
+          },
+          {
+            purpose: 'cell',
+            value: '100',
+          },
+          {
+            purpose: 'cell',
+            value: '50',
+            align: 'end',
+          },
+        ],
+      },
+    ],
+    caption: 'Dit is een tabel met cellen die rechts uitgelijnd zijn',
+  },
+};

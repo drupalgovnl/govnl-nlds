@@ -12,7 +12,7 @@
       "caption": {
         "font-size": {
           "$type": "fontSizes",
-          "$value": "{govnl.typography.font-size.xl}"
+          "$value": "{govnl.typography.font-size.sm}"
         },
         "font-weight": {
           "$type": "fontWeights",
