@@ -1,0 +1,28 @@
+{
+  "govnl": {
+    "searchbar": {
+      "gap": {
+        "$type": "dimension",
+        "$value": "{govnl.dimension.size.50}"
+      },
+      "small": {
+        "min-inline-size": {
+          "$type": "dimension",
+          "$value": "240px"
+        },
+        "max-inline-size": {
+          "$type": "dimension",
+          "$value": "480px"
+        }
+      },
+      "min-inline-size": {
+        "$type": "dimension",
+        "$value": "400px"
+      },
+      "max-inline-size": {
+        "$type": "dimension",
+        "$value": "640px"
+      }
+    }
+  }
+}

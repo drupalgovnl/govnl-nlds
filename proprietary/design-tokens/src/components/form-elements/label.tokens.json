@@ -1,0 +1,52 @@
+{
+  "govnl": {
+    "label": {
+      "required": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.700}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.form-control.font-family}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.form-control.font-weight}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{govnl.typography.font-size.xs}"
+        }
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{govnl.form-control.color}"
+      },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{govnl.form-control.font-family}"
+      },
+      "regular": {
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.form-control.font-weight}"
+        }
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{govnl.form-control.font-size}"
+      },
+      "column-gap": {
+        "$type": "dimension",
+        "$value": "{govnl.space.3xs}"
+      },
+      "strong": {
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.form-control.strong.font-weight}"
+        }
+      }
+    }
+  }
+}
