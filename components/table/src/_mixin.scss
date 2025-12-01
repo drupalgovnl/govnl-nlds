@@ -57,6 +57,7 @@
 @mixin dictu-table__header {
   color: var(--govnl-table-header-color);
   font-weight: var(--govnl-table-header-font-weight);
+  overflow-wrap: break-word;
   padding-block: var(--govnl-table-cell-padding-block-start) var(--govnl-table-cell-padding-block-end);
   padding-inline: var(--govnl-table-cell-padding-inline-start) var(--govnl-table-cell-padding-inline-end);
   text-align: start;
