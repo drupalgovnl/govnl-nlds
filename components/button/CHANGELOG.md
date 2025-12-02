@@ -1,5 +1,12 @@
 # @dictu/button
 
+## 3.2.0
+
+### Minor Changes
+
+- 79b64cd: New way of component documentation, added new properties to the card
+  component (subheading, full_card_link)
+
 ## 3.1.0
 
 ### Minor Changes
