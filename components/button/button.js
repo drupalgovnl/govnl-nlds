@@ -1,4 +1,4 @@
-import { Icon } from '../icon/icon';
+import { Icon } from '../icon/icon.component';
 
 export function Button({ label, variant, iconPosition, icon, disabled }) {
   const classes = ['dictu-button', `dictu-button--${variant}`, 'dictu-focus-ring'];

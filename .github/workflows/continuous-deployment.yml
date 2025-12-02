@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install --frozen-lockfile
+          npm install
 
   lint:
     runs-on: ubuntu-latest
@@ -39,7 +39,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install --frozen-lockfile
+        run: npm install
 
       - name: 'Continuous Integration: lint JavaScript'
         run: npm run lint:js
@@ -68,8 +68,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install --frozen-lockfile
-
+        run: npm install
       - name: 'Continuous Integration: build'
         env:
           BASE_URL: '/govnl-nlds/'
@@ -96,7 +95,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install --frozen-lockfile
+        run: npm install
       - name: 'Continuous Integration: test'
         run: npm run --if-present test
 
@@ -117,8 +116,7 @@ jobs:
 
       - name: 'Continuous Deployment: install'
         run: |
-          npm install --frozen-lockfile
-
+          npm install
       - name: 'Continuous Deployment: build'
         run: npm run --if-present build
 

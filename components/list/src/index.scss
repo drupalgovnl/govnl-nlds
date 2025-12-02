@@ -1,0 +1,29 @@
+@use "./mixin" as mixin;
+
+.dictu-list {
+  @include mixin.dictu-list;
+}
+
+.dictu-list--ordered {
+  @include mixin.dictu-list--ordered;
+}
+
+.dictu-list--unordered {
+  @include mixin.dictu-list--unordered;
+}
+
+.dictu-list--icon {
+  @include mixin.dictu-list--icon;
+}
+
+.dictu-list__item {
+  @include mixin.dictu-list__item;
+}
+
+.dictu-list__item-content {
+  @include mixin.dictu-list__item-content;
+}
+
+.dictu-list__item-icon {
+  @include mixin.dictu-list__item-icon;
+}

@@ -12,6 +12,39 @@ export default {
       <h4>Heading 4</h4>
       <h5>Heading 5</h5>
       <h6>Heading 6</h6>
+      <img src="assets/example-image.jpg" alt="Voorbeeldafbeelding" />
+      <ul>
+        <li>Ongesorteerde lijst item 1</li>
+        <li>Ongesorteerde lijst item 2</li>
+        <li>Ongesorteerde lijst item 3</li>
+      </ul>
+      <ol>
+        <li>Gesorteerde lijst item 1</li>
+        <li>Gesorteerde lijst item 2</li>
+        <li>Gesorteerde lijst item 3</li>
+      </ol>
+      <blockquote>Dit is een citaat.</blockquote>
+      <table>
+        <thead>
+          <tr>
+            <th>Kop 1</th>
+            <th>Kop 2</th>
+            <th>Kop 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rij 1, Cel 1</td>
+            <td>Rij 1, Cel 2</td>
+            <td>Rij 1, Cel 3</td>
+          </tr>
+          <tr>
+            <td>Rij 2, Cel 1</td>
+            <td>Rij 2, Cel 2</td>
+            <td>Rij 2, Cel 3</td>
+          </tr>
+        </tbody>
+      </table>
     `,
     id: 'rich-text-1',
   },

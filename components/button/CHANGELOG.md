@@ -1,5 +1,20 @@
 # @dictu/button
 
+## 3.2.0
+
+### Minor Changes
+
+- 79b64cd: New way of component documentation, added new properties to the card
+  component (subheading, full_card_link)
+
+## 3.1.0
+
+### Minor Changes
+
+- 3df7fb8: Added list component and support in the rich text component
+- 3df7fb8: new list component, applied in rich text component, updated button
+  and icon component, new design tokens
+
 ## 3.0.0
 
 ### Major Changes
