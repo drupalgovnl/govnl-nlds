@@ -1,4 +1,4 @@
-/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */const C=`<!-- @license CC0-1.0 -->
+import{j as e,M as o,T as c,S as s,C as t,A as l,h}from"./blocks-DYgA7PyC.js";import{useMDXComponents as d}from"./index-D2J8DNLZ.js";import{C as i,A as u}from"./card.stories-zBGrQjcT.js";import"./iframe-C-G9komg.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./heading.component--w7arIA8.js";import"./icon.component-BiJB5nKt.js";const g=`<!-- @license CC0-1.0 -->
 
 De card component toont een kaart met afbeelding, titel, inhoud en metadata van
 het Dictu Design Systeem.
@@ -185,30 +185,37 @@ Plus alle gerelateerde klassen van image, heading, link en paragraph components.
 ## Licentie
 
 EUPL-1.2
-`,w={args:{image_src:"assets/example-image.jpg",alt:"Dit is een voorbeeld afbeelding",headingLevel:2,link:{href:"#",text:"Lees meer"},content:"Dit is een voorbeeld van de inhoud van de kaart.",metadata:"Dit is een voorbeeld van metadata",variant:"default"},argTypes:{image_src:{control:"text",description:"De bron van de afbeelding in de kaart"},alt:{control:"text",description:"Alternatieve tekst voor de afbeelding"},headingLevel:{control:"select",options:[2,3,4,5,6],description:"Het niveau van de heading"},link:{control:"object",description:"Link object met href en tekst voor de link"},content:{control:"text",description:"De inhoud van de kaart"},variant:{control:"select",options:["default","accent"],description:"De variant van de kaart"},metadata:{control:"text",description:"Metadata die onderaan de kaart wordt weergegeven"}},parameters:{docs:{description:{component:C}}},render:({headingLevel:h,link:l,content:b,metadata:_,variant:f="default",image_src:D,alt:j})=>{const e=document.createElement("div");e.classList.add("dictu-card",`dictu-card--${f}`,"dictu-focus-ring"),e.setAttribute("tabindex","0");const r=document.createElement("div");r.classList.add("dictu-card__image-container");const a=document.createElement("img");a.classList.add("dictu-image","dictu-card__image"),a.src=D||"",a.alt=j||"",r.appendChild(a);const o=document.createElement(`h${h}`);o.classList.add("dictu-card__heading");const t=document.createElement("a");t.classList.add("dictu-link","dictu-card__link"),t.href=l.href,t.innerText=l.text,o.appendChild(t);const n=document.createElement("div");n.classList.add("dictu-card__content"),n.appendChild(o);const c=document.createElement("p");c.classList.add("dictu-card__paragraph"),c.innerText=b,n.appendChild(c);const s=document.createElement("small");return s.classList.add("dictu-card__metadata"),s.innerText=_,n.appendChild(s),e.appendChild(r),e.appendChild(n),e},tags:["autodocs"],title:"Componenten/Card"},d={args:{image_src:"assets/example-image.jpg",alt:"Dit is een voorbeeld afbeelding voor een kaart",headingLevel:2,link:{href:"#",text:"De titel van de kaart"},content:"Dit is een voorbeeld van de inhoud van de kaart.",metadata:"Dit is een voorbeeld van de metadata",variant:"default"}},i={args:{image_src:"assets/example-image.jpg",alt:"Dit is een voorbeeld afbeelding voor een accent kaart",headingLevel:2,link:{href:"#",text:"De titel van de accent kaart"},content:"Dit is een voorbeeld van de inhoud van de accent kaart.",metadata:"Dit is een voorbeeld van de accent metadata",variant:"accent"}};var v,g,m;d.parameters={...d.parameters,docs:{...(v=d.parameters)==null?void 0:v.docs,source:{originalSource:`{
-  args: {
-    image_src: 'assets/example-image.jpg',
-    alt: 'Dit is een voorbeeld afbeelding voor een kaart',
-    headingLevel: 2,
-    link: {
-      href: '#',
-      text: 'De titel van de kaart'
-    },
-    content: 'Dit is een voorbeeld van de inhoud van de kaart.',
-    metadata: 'Dit is een voorbeeld van de metadata',
-    variant: 'default'
-  }
-}`,...(m=(g=d.parameters)==null?void 0:g.docs)==null?void 0:m.source}}};var u,k,p;i.parameters={...i.parameters,docs:{...(u=i.parameters)==null?void 0:u.docs,source:{originalSource:`{
-  args: {
-    image_src: 'assets/example-image.jpg',
-    alt: 'Dit is een voorbeeld afbeelding voor een accent kaart',
-    headingLevel: 2,
-    link: {
-      href: '#',
-      text: 'De titel van de accent kaart'
-    },
-    content: 'Dit is een voorbeeld van de inhoud van de accent kaart.',
-    metadata: 'Dit is een voorbeeld van de accent metadata',
-    variant: 'accent'
-  }
-}`,...(p=(k=i.parameters)==null?void 0:k.docs)==null?void 0:p.source}}};const G=["Card","AccentCard"];export{i as AccentCard,d as Card,G as __namedExportsOrder,w as default};
+`;function r(a){const n={a:"a",h2:"h2",h3:"h3",li:"li",p:"p",ul:"ul",...d(),...a.components};return e.jsxs(e.Fragment,{children:[`
+`,`
+`,e.jsx(o,{of:i,title:"Componenten/Card"}),`
+`,e.jsx(c,{children:"Card"}),`
+`,e.jsx(s,{children:e.jsx(n.p,{children:`Gebruik een card op een overzichtspagina om te linken naar een artikelpagina, zoals een
+nieuwsartikel, een vacature of een zoekresultaat. De card bevat doorgaans de afbeelding, titel,
+subtitel, inleiding en een meta footer van de content.`})}),`
+`,e.jsx(t,{of:void 0,sourceState:"none"}),`
+`,e.jsx(n.h2,{id:"parameters",children:"Parameters"}),`
+`,e.jsx(l,{of:i}),`
+`,e.jsx(h,{children:g}),`
+`,e.jsx(n.h2,{id:"wanneer-gebruik-je-de-card-component",children:"Wanneer gebruik je de Card component"}),`
+`,e.jsx(n.p,{children:"WIP"}),`
+`,e.jsx(n.h2,{id:"richtlijnen",children:"Richtlijnen"}),`
+`,e.jsxs(n.ul,{children:[`
+`,e.jsx(n.li,{children:"WIP"}),`
+`]}),`
+`,e.jsx(n.h2,{id:"voorbeelden",children:"Voorbeelden"}),`
+`,e.jsx(n.h3,{id:"card",children:"Card"}),`
+`,e.jsx(n.p,{children:"WIP"}),`
+`,e.jsx(t,{of:void 0}),`
+`,e.jsx(n.h3,{id:"accent-card",children:"Accent Card"}),`
+`,e.jsx(n.p,{children:"WIP"}),`
+`,e.jsx(t,{of:u}),`
+`,e.jsx(n.h2,{id:"afhankelijkheden",children:"Afhankelijkheden"}),`
+`,e.jsx(n.p,{children:"De Card component maakt gebruik van de volgende componenten:"}),`
+`,e.jsx(n.h2,{id:"relevante-wcag-succescriteria",children:"Relevante WCAG succescriteria"}),`
+`,e.jsx(n.h2,{id:"help-mee-om-deze-component-te-verbeteren",children:"Help mee om deze component te verbeteren"}),`
+`,e.jsxs(n.ul,{children:[`
+`,e.jsxs(n.li,{children:["Neem deel aan de discussie over de ",e.jsx(n.a,{href:"",children:"Card component op GitHub"}),"."]}),`
+`,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
+`]}),`
+`,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function C(a={}){const{wrapper:n}={...d(),...a.components};return n?e.jsx(n,{...a,children:e.jsx(r,{...a})}):r(a)}export{C as default};
