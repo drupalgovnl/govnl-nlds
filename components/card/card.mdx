@@ -1,0 +1,68 @@
+{/* card.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as CardStories from './card.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={CardStories} title="Componenten/Card" />
+
+<Title>Card</Title>
+
+<Subtitle>
+  Gebruik een card op een overzichtspagina om te linken naar een artikelpagina, zoals een
+  nieuwsartikel, een vacature of een zoekresultaat. De card bevat doorgaans de afbeelding, titel,
+  subtitel, inleiding en een meta footer van de content.
+</Subtitle>
+
+<Canvas of={CardStories.Card} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={CardStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Card component
+
+WIP
+
+## Richtlijnen
+
+- WIP
+
+## Voorbeelden
+
+### Card
+
+WIP
+
+<Canvas of={CardStories.Card} />
+
+### Accent Card
+
+WIP
+
+<Canvas of={CardStories.AccentCard} />
+
+## Afhankelijkheden
+
+De Card component maakt gebruik van de volgende componenten:
+
+## Relevante WCAG succescriteria
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Card component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).

@@ -39,8 +39,8 @@
 
 @mixin dictu-list__item-icon {
   align-items: center;
-  block-size: 24px; // @TODO: replace with design token when available
+  block-size: 24px; // Replace with design token when available
   display: inline-flex;
-  inline-size: 24px; // @TODO: replace with design token when available
+  inline-size: 24px; // Replace with design token when available
   justify-content: center;
 }
