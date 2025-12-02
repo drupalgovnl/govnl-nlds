@@ -1,5 +1,18 @@
 # @dictu/link
 
+## 2.1.0
+
+### Minor Changes
+
+- 79b64cd: New way of component documentation, added new properties to the card
+  component (subheading, full_card_link)
+
+### Patch Changes
+
+- 79b64cd: Major: The default classname for the Card component now only has a
+  title as link. For a fullcard link use the "dictu-card\_\_full-card-link"
+  class.
+
 ## 2.0.0
 
 ### Major Changes
