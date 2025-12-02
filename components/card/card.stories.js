@@ -1,7 +1,7 @@
 import '@dictu/utility-focus-ring/dist/index.css';
 
 import './dist/index.css';
-import { Card as CardComponent } from './card.component';
+import { Card } from './card.component';
 
 export default {
   args: {
@@ -66,11 +66,11 @@ export default {
     },
   },
   tags: ['wip'],
-  render: CardComponent,
+  render: Card,
   title: 'Componenten/Card',
 };
 
-export const Card = {
+export const DefaultCard = {
   args: {
     image_src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding voor een kaart',
