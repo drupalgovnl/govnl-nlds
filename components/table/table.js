@@ -1,7 +1,15 @@
-export function Table({ data, caption }) {
+export function Table({ data, caption, responsive }) {
   const classes = ['dictu-table'];
   const $table = createTable(data, caption);
   $table.classList.add(...classes);
+
+  if (responsive) {
+    const $tableWrapper = document.createElement('div');
+    $tableWrapper.classList.add('dictu-table__wrapper');
+    $tableWrapper.appendChild($table);
+
+    return $tableWrapper;
+  }
 
   return $table;
 }
