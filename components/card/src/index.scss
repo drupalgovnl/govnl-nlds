@@ -38,3 +38,7 @@
 .dictu-card__paragraph {
   @include mixin.dictu-card__paragraph;
 }
+
+.dictu-card__subheading {
+  @include mixin.dictu-card__subheading;
+}

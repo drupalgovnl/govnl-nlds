@@ -1,7 +1,5 @@
 import '@dictu/utility-focus-ring/dist/index.css';
-import '@dictu/heading/dist/index.css';
-import '@dictu/link/dist/index.css';
-import '@dictu/paragraph/dist/index.css';
+
 import './dist/index.css';
 import { Card as CardComponent } from './card.component';
 
