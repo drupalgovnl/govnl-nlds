@@ -4,7 +4,6 @@
  */
 
 @use "./mixin" as mixin;
-@use "pkg:@dictu/design-tokens/dist/figure" as design-tokens;
 @use "pkg:@dictu/utility-aspect-ratio/src/index" as aspect-ratio;
 
 .dictu-image {

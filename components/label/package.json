@@ -1,0 +1,37 @@
+{
+  "name": "@dictu/label",
+  "version": "1.0.0",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Label CSS component.",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system",
+    "css",
+    "label"
+  ],
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "components/label"
+  },
+  "files": [
+    "src/",
+    "dist/",
+    "*.md"
+  ],
+  "exports": {
+    "./dist/*": "./dist/*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
+    "clean": "rimraf ./dist/"
+  },
+  "devDependencies": {
+    "@dictu/utility-focus-ring": "*"
+  }
+}

@@ -97,7 +97,7 @@ const renderHero = ({ heading, subheading, cornerPosition, messagePosition, ...r
   }
 
   const heroSubheading = document.createElement('p');
-  heroSubheading.classList.add('dictu-paragraph', 'dictu-hero__subheading');
+  heroSubheading.classList.add('dictu-hero__subheading');
   heroSubheading.textContent = subheading;
   if (heroSubheading) {
     messageContainer.appendChild(heroSubheading);

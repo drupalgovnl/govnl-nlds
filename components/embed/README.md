@@ -17,7 +17,7 @@ Je kunt de CSS uit `node_modules/` importeren:
 Als je CSS imports gebruikt vanuit JavaScript:
 
 ```javascript
-import "@dictu/embed/index.css";
+import "@dictu/embed/dist/index.css";
 ```
 
 ## Richtlijnen

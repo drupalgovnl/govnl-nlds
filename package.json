@@ -36,7 +36,7 @@
     "eslint": "^9.29.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-storybook": "^9.0.12",
-    "glob": "^11.0.3",
+    "glob": "^11.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
     "npm-run-all": "4.1.5",
@@ -104,7 +104,8 @@
     "http-server": "14.1.1"
   },
   "overrides": {
-    "expr-eval-fork": "3.0.0"
+    "expr-eval-fork": "3.0.0",
+    "js-yaml": "3.14.2"
   },
   "size-limit": [
     {

@@ -1,5 +1,19 @@
 # @dictu/accordeon
 
+## 2.0.0
+
+### Major Changes
+
+- 38e03b8: Removed import of design tokens inside component css
+- 38e03b8: Breaking: All tokens in one import file, for better usage.
+
+## 1.1.3
+
+### Patch Changes
+
+- 330fc2d: Added svg rotation on aria-expanded
+- 1baa32d: Added dictu-focus-ring utility to accordion
+
 ## 1.1.2
 
 ### Patch Changes

@@ -5,7 +5,6 @@
 
 @use "./mixin" as mixin;
 @use "pkg:@dictu/link/src/index" as link-component;
-@use "pkg:@dictu/design-tokens/dist/card";
 
 .dictu-card {
   @include mixin.dictu-card;
@@ -32,6 +31,14 @@
   @include mixin.dictu-card__heading;
 }
 
+.dictu-card__full-card-link {
+  @include mixin.dictu-card__full-card-link;
+}
+
 .dictu-card__paragraph {
   @include mixin.dictu-card__paragraph;
+}
+
+.dictu-card__subheading {
+  @include mixin.dictu-card__subheading;
 }

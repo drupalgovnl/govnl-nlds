@@ -4,9 +4,6 @@
  */
 
 @use "mixin" as mixin;
-@use "pkg:@dictu/design-tokens/dist/heading" as dictu-heading-tokens;
-@use "pkg:@dictu/design-tokens/dist/link" as dictu-link-tokens;
-@use "pkg:@dictu/design-tokens/dist/paragraph" as dictu-paragraph-tokens;
 
 .dictu-rich-text {
   @include mixin.dictu-rich-text;

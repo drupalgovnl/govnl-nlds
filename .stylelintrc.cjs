@@ -34,7 +34,7 @@ module.exports = {
       },
     ],
     'selector-nested-pattern':
-      '^&:(hover|focus|active|disabled|focus-visible|not|first-child|last-child|has|before|after)|svg|^&\\.|^&\\[|^\\.',
+      '^&:(hover|focus|active|disabled|focus-visible|not|first-child|last-child|has|before|after)|^&\\.|^&\\[|^\\.|svg',
 
     // Property ordering - use a more flexible approach
     'order/properties-alphabetical-order': true, // Disable strict alphabetical ordering

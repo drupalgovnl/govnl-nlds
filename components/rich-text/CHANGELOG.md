@@ -1,5 +1,44 @@
 # @dictu/rich-text
 
+## 3.4.0
+
+### Minor Changes
+
+- e34f51f: Small fixes for table component
+
+## 3.3.0
+
+### Minor Changes
+
+- 3df7fb8: Added list component and support in the rich text component
+- 3df7fb8: new list component, applied in rich text component, updated button
+  and icon component, new design tokens
+
+## 3.2.1
+
+### Patch Changes
+
+- fd31554: Added thead element to rich text component to support table head
+
+## 3.2.0
+
+### Minor Changes
+
+- fa2711a: Usage of table component version tot 1.1.0
+
+## 3.1.0
+
+### Minor Changes
+
+- 562551c: Tabel toegevoegd aan rich text component
+
+## 3.0.0
+
+### Major Changes
+
+- 38e03b8: Removed import of design tokens inside component css
+- 38e03b8: Breaking: All tokens in one import file, for better usage.
+
 ## 2.2.0
 
 ### Minor Changes
