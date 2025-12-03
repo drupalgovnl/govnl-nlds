@@ -1,1 +1,0 @@
-import{j as e,M as r}from"./blocks-DYgA7PyC.js";import{useMDXComponents as s}from"./index-D2J8DNLZ.js";import"./iframe-C-G9komg.js";import"./_commonjsHelpers-CqkleIqs.js";function o(t){return e.jsx(r,{title:"Voor designers/Design Tokens"})}function u(t={}){const{wrapper:n}={...s(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(o,{...t})}):o()}export{u as default};
