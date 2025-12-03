@@ -1,4 +1,4 @@
-import{j as e,M as o,T as c,S as s,C as t,A as l,h}from"./blocks-BpQWFNEv.js";import{useMDXComponents as d}from"./index-BVPzliWv.js";import{C as i,A as u}from"./card.stories-zBGrQjcT.js";import"./iframe-BDIq9sPw.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./heading.component--w7arIA8.js";import"./icon.component-BiJB5nKt.js";const g=`<!-- @license CC0-1.0 -->
+import{j as e,M as o,T as c,S as s,C as t,A as l,h}from"./blocks-BZrYTkMX.js";import{useMDXComponents as d}from"./index-BiQuewch.js";import{C as i,A as u}from"./card.stories-zBGrQjcT.js";import"./iframe-C_N1L5Y8.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./heading.component--w7arIA8.js";import"./icon.component-BiJB5nKt.js";const g=`<!-- @license CC0-1.0 -->
 
 De card component toont een kaart met afbeelding, titel, inhoud en metadata van
 het Dictu Design Systeem.
