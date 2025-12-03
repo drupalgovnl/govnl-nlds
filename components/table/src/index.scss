@@ -9,6 +9,10 @@
   @include mixin.dictu-table;
 }
 
+.dictu-table__wrapper {
+  @include mixin.dictu-table__wrapper;
+}
+
 .dictu-table__caption {
   @include mixin.dictu-table__caption;
 }
@@ -25,8 +29,10 @@
   @include mixin.dictu-table__foot;
 }
 
-.dictu-table__row {
-  @include mixin.dictu-table__row;
+.dictu-table__body {
+  .dictu-table__row {
+    @include mixin.dictu-table__row;
+  }
 }
 
 .dictu-table__header {

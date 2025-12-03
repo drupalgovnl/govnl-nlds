@@ -63,8 +63,11 @@
     @include dictu-table.dictu-table__caption;
   }
 
-  :where(tr) {
-    @include dictu-table.dictu-table__row;
+  :where(tbody) {
+    /* stylelint-disable-next-line selector-nested-pattern */
+    > tr {
+      @include dictu-table.dictu-table__row;
+    }
   }
 
   :where(th) {
