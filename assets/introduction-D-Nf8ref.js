@@ -1,0 +1,1 @@
+import{j as n,M as r}from"./blocks-CRRqGsS6.js";import{useMDXComponents as s}from"./index-jheeR9-i.js";import"./iframe-CHuORxRB.js";import"./_commonjsHelpers-CqkleIqs.js";function e(t){return n.jsx(r,{title:"Introductie"})}function p(t={}){const{wrapper:o}={...s(),...t.components};return o?n.jsx(o,{...t,children:n.jsx(e,{...t})}):e()}export{p as default};
