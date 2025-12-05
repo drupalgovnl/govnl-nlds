@@ -28,6 +28,7 @@
     "components/navigation-bar.tokens",
     "components/page-footer.tokens",
     "components/page-header.tokens",
+    "components/pagination.tokens.wip",
     "components/paragraph.tokens",
     "components/searchbar.tokens",
     "components/section.tokens",

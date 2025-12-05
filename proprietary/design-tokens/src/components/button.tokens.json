@@ -212,6 +212,74 @@
         }
       },
       "icon-only": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.interaction.color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "transparant"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.white}"
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.interaction.hover.color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparent"
+          }
+        },
+        "active": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.interaction.active.color}"
+          }
+        },
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.50}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.500}"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.focus.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.focus.color}"
+          }
+        },
         "padding-block-end": {
           "$type": "dimension",
           "$value": "{govnl.space.xs}"
@@ -286,6 +354,66 @@
       "column-gap": {
         "$type": "dimension",
         "$value": "{govnl.gap-content.min} / 2"
+      },
+      "small": {
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{govnl.typography.font-size.sm}"
+        }
+      }
+    },
+    "button-small": {
+      "icon-only": {
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{govnl.space.2xs}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{govnl.space.2xs}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{govnl.space.2xs}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{govnl.space.2xs}"
+        }
+      },
+      "icon": {
+        "size": {
+          "$type": "dimension",
+          "$value": "1em"
+        }
+      },
+      "padding-block-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
+      },
+      "padding-block-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.xs}"
+      },
+      "min-block-size": {
+        "$type": "dimension",
+        "$value": "{govnl.dimension.size.500}"
+      },
+      "min-inline-size": {
+        "$type": "dimension",
+        "$value": "{govnl.dimension.size.500}"
+      },
+      "column-gap": {
+        "$type": "dimension",
+        "$value": "{govnl.gap-content.min} / 4"
       }
     },
     "button-small": {
