@@ -4,7 +4,6 @@
  */
 
 @mixin dictu-checkbox {
-  accent-color: var(--govnl-checkbox-unchecked-background-color);
   border: var(--govnl-checkbox-unchecked-border-width) solid var(--govnl-checkbox-unchecked-border-color);
   border-radius: var(--govnl-checkbox-border-radius);
   height: var(--govnl-checkbox-size);
@@ -12,13 +11,11 @@
 }
 
 @mixin dictu-checkbox--hover {
-  accent-color: var(--govnl-checkbox-unchecked-hover-background-color);
   border: var(--govnl-checkbox-unchecked-hover-border-width) solid var(--govnl-checkbox-unchecked-hover-border-color);
   color: var(--govnl-checkbox-unchecked-hover-color);
 }
 
 @mixin dictu-checkbox--active {
-  accent-color: var(--govnl-checkbox-unchecked-active-background-color);
   border: var(--govnl-checkbox-unchecked-active-border-width) solid var(--govnl-checkbox-unchecked-active-border-color);
   color: var(--govnl-checkbox-unchecked-active-color);
 }
