@@ -1,0 +1,40 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "mixin" as mixin;
+@use "pkg:@dictu/utility-focus-ring/dist/index" as focus-ring;
+
+.dictu-checkbox {
+  @include mixin.dictu-checkbox;
+
+  &:hover {
+    @include mixin.dictu-checkbox--hover;
+  }
+
+  &:active {
+    @include mixin.dictu-checkbox--active;
+  }
+
+  &:focus-visible {
+    @include mixin.dictu-checkbox--focus-visible;
+  }
+
+  /* stylelint-disable-next-line selector-nested-pattern */
+  &:checked {
+    @include mixin.dictu-checkbox--checked;
+
+    &:hover {
+      @include mixin.dictu-checkbox--checked-hover;
+    }
+
+    &:active {
+      @include mixin.dictu-checkbox--checked-active;
+    }
+
+    &:focus-visible {
+      @include mixin.dictu-checkbox--checked-focus-visible;
+    }
+  }
+}
