@@ -1,8 +1,6 @@
 ---
 "@dictu/heading": minor
-"@dictu/button": minor
-"@dictu/card": minor
-"@dictu/icon": minor
+"@dictu/card": major
 "@dictu/link": minor
 ---
 
