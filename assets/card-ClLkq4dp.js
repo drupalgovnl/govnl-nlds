@@ -1,4 +1,4 @@
-import{j as e,M as o,T as c,S as s,C as t,A as l,h}from"./blocks-CkqFc3__.js";import{useMDXComponents as d}from"./index-DegaEofW.js";import{C as i,A as u}from"./card.stories-zBGrQjcT.js";import"./iframe-CWC7crkF.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./heading.component--w7arIA8.js";import"./icon.component-BiJB5nKt.js";const g=`<!-- @license CC0-1.0 -->
+import{j as e,M as o,T as c,S as s,C as t,A as l,h}from"./blocks-dek93xOT.js";import{useMDXComponents as d}from"./index-BpAOrOGA.js";import{C as i,A as u}from"./card.stories-pQKjLBjt.js";import"./iframe-DdqUscYL.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./heading.component--w7arIA8.js";import"./icon.component-BiJB5nKt.js";import"./link.component-BYsGuHfD.js";const g=`<!-- @license CC0-1.0 -->
 
 De card component toont een kaart met afbeelding, titel, inhoud en metadata van
 het Dictu Design Systeem.
@@ -218,4 +218,4 @@ subtitel, inleiding en een meta footer van de content.`})}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function C(a={}){const{wrapper:n}={...d(),...a.components};return n?e.jsx(n,{...a,children:e.jsx(r,{...a})}):r(a)}export{C as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function D(a={}){const{wrapper:n}={...d(),...a.components};return n?e.jsx(n,{...a,children:e.jsx(r,{...a})}):r(a)}export{D as default};

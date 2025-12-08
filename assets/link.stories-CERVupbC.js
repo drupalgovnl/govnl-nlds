@@ -1,4 +1,4 @@
-/* empty css              */const s=`<!-- @license CC0-1.0 -->
+/* empty css              */import{L as o}from"./link.component-BYsGuHfD.js";const s=`<!-- @license CC0-1.0 -->
 
 Een verwijzing om een een externe bron of bestand te openen of te navigeren
 binnen dezelfde pagina of website.
@@ -36,8 +36,8 @@ name in combinatie met \`dictu-link--inline-box\` class name.
 ## Links
 
 - [MDN: \`<a>\`: The Anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a)
-`,r={args:{href:"dictu.nl",classNames:""},argTypes:{innerHTML:{control:"text"},href:{control:"text"},classNames:{control:"text"}},parameters:{docs:{description:{component:s}}},render:e,tags:["autodocs"],title:"Componenten/Link"},e={args:{innerHTML:"Dit is een link"}};var n,i,t;e.parameters={...e.parameters,docs:{...(n=e.parameters)==null?void 0:n.docs,source:{originalSource:`{
+`,l={args:{href:"dictu.nl",classNames:""},argTypes:{content:{control:"text"},href:{control:"text"},classNames:{control:"text"}},parameters:{docs:{description:{component:s}}},render:o,tags:["autodocs"],title:"Componenten/Link"},e={args:{content:"Dit is een link"}};var n,t,i;e.parameters={...e.parameters,docs:{...(n=e.parameters)==null?void 0:n.docs,source:{originalSource:`{
   args: {
-    innerHTML: 'Dit is een link'
+    content: 'Dit is een link'
   }
-}`,...(t=(i=e.parameters)==null?void 0:i.docs)==null?void 0:t.source}}};const a=["Link"];export{e as Link,a as __namedExportsOrder,r as default};
+}`,...(i=(t=e.parameters)==null?void 0:t.docs)==null?void 0:i.source}}};const c=["DefaultLink"];export{e as DefaultLink,c as __namedExportsOrder,l as default};
