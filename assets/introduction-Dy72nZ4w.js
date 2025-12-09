@@ -1,4 +1,4 @@
-import{j as e,M as s}from"./blocks-D6YSpTGD.js";import{useMDXComponents as o}from"./index-D3XEcvWw.js";import"./iframe-CPy718pL.js";import"./_commonjsHelpers-CqkleIqs.js";function i(t){const n={a:"a",h1:"h1",h2:"h2",p:"p",...o(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(s,{title:"Voor designers/Introductie"}),`
+import{j as e,M as s}from"./blocks-4ee6DOrg.js";import{useMDXComponents as o}from"./index-BC_eenoj.js";import"./iframe-Z28uwmna.js";import"./_commonjsHelpers-CqkleIqs.js";function i(t){const n={a:"a",h1:"h1",h2:"h2",p:"p",...o(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(s,{title:"Voor designers/Introductie"}),`
 `,e.jsx(n.h1,{id:"dictu-design-systeem-voor-designers",children:"DICTU Design Systeem voor designers"}),`
 `,e.jsx(n.h2,{id:"figma",children:"Figma"}),`
 `,e.jsx(n.p,{children:"Voor de ontwerpen van componenten gebruiken we twee Figma bestanden: De bibliotheek waarin alle componenten uit het design systeem zijn opgenomen, en de speeltuin waarin vrij geëxperimenteerd kan worden met nieuwe en bestaande componenten."}),`
