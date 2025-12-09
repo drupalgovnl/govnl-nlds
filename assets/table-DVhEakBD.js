@@ -1,4 +1,4 @@
-import{j as e,M as l,T as s,S as c,C as o,A as h,h as m}from"./blocks-D19UJTfX.js";import{useMDXComponents as i}from"./index-CEN9Fv7k.js";import{T as r,D as t,R as j,F as b,C as p,a as u,A as x,b as v,c as k,d as g}from"./table.stories-CpcIXU8y.js";import"./iframe-9wB--kQf.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              */const f=`<!-- @license CC0-1.0 -->
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as i}from"./index-DtTc1g6o.js";import{Meta as l,Title as s,Subtitle as c,Canvas as o,ArgTypes as h,Markdown as m}from"@storybook/addon-docs/blocks";import{T as t,D as a,R as j,F as b,C as p,a as u,A as x,b as v,c as k,d as g}from"./table.stories-CpcIXU8y.js";import"./index-BynWX4my.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              */const f=`<!-- @license CC0-1.0 -->
 
 ## De Table component implementeren
 
@@ -19,15 +19,15 @@ Als je CSS imports gebruikt vanuit JavaScript:
 \`\`\`javascript
 import "@dictu/table/dist/index.css";
 \`\`\`
-`;function d(a){const n={a:"a",code:"code",h2:"h2",h3:"h3",h4:"h4",li:"li",p:"p",ul:"ul",...i(),...a.components};return e.jsxs(e.Fragment,{children:[`
+`;function d(r){const n={a:"a",code:"code",h2:"h2",h3:"h3",h4:"h4",li:"li",p:"p",ul:"ul",...i(),...r.components};return e.jsxs(e.Fragment,{children:[`
 `,`
-`,e.jsx(l,{of:r,title:"Componenten/Table"}),`
+`,e.jsx(l,{of:t,title:"Componenten/Table"}),`
 `,e.jsx(s,{children:"Table"}),`
 `,e.jsx(c,{children:e.jsx(n.p,{children:`De Table component organiseert data op een voor de gebruiker makkelijk te scannen manier van rijen
 en kolommen.`})}),`
-`,e.jsx(o,{of:t,sourceState:"none"}),`
+`,e.jsx(o,{of:a,sourceState:"none"}),`
 `,e.jsx(n.h2,{id:"parameters",children:"Parameters"}),`
-`,e.jsx(h,{of:r}),`
+`,e.jsx(h,{of:t}),`
 `,e.jsx(m,{children:f}),`
 `,e.jsx(n.h2,{id:"wanneer-gebruik-je-de-table-component",children:"Wanneer gebruik je de Table component"}),`
 `,e.jsx(n.p,{children:"Gebruik de Table component om gebruikers makkelijk data te laten vergelijken in rijen en kolommen."}),`
@@ -41,7 +41,7 @@ en kolommen.`})}),`
 `,e.jsx(n.h2,{id:"voorbeelden",children:"Voorbeelden"}),`
 `,e.jsxs(n.p,{children:["Een basis tabel heeft een caption met daarin de beschrijving van de tabel. De tabel begint met een ",e.jsx(n.code,{children:"thead"}),` element, waarin de table headers voor elke kolom in zijn opgenomen.
 Deze headers beschrijven wat de inhoud is van de kolommen. Om duidelijk te maken dat het gaat om headers voor de kolommen, wordt op het `,e.jsx(n.code,{children:"th"})," element een ",e.jsx(n.code,{children:"scope"})," attribuut met als waarde ",e.jsx(n.code,{children:"col"})," gezet."]}),`
-`,e.jsx(o,{of:t}),`
+`,e.jsx(o,{of:a}),`
 `,e.jsx(n.h3,{id:"tabel-met-headers-voor-rijen",children:"Tabel met headers voor rijen"}),`
 `,e.jsxs(n.p,{children:["Een tabel kan naast headers voor de kolommen ook headers voor de rijen hebben. Deze headers hoeven niet in de ",e.jsx(n.code,{children:"thead"})," worden opgenomen, maar kunnen ook aan de ",e.jsx(n.code,{children:"tbody"}),`
 toegevoegd worden. De headers voor de rijen beschrijven wat de inhoud van de betreffende rij is. Om duidelijk te maken dat het gaat om headers voor de rijen, wordt op het `,e.jsx(n.code,{children:"th"}),`
@@ -78,4 +78,4 @@ Gebruik hiervoor de `,e.jsx(n.code,{children:"rowspan"})," en ",e.jsx(n.code,{ch
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function H(a={}){const{wrapper:n}={...i(),...a.components};return n?e.jsx(n,{...a,children:e.jsx(d,{...a})}):d(a)}export{H as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function R(r={}){const{wrapper:n}={...i(),...r.components};return n?e.jsx(n,{...r,children:e.jsx(d,{...r})}):d(r)}export{R as default};

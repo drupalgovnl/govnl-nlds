@@ -1,4 +1,4 @@
-import{j as e,M as d,T as s,S as c,C as i,A as h,h as m}from"./blocks-D19UJTfX.js";import{useMDXComponents as a}from"./index-CEN9Fv7k.js";import{L as l,a as r,b as j,c as b}from"./label.stories-23Q9H2og.js";import"./iframe-9wB--kQf.js";import"./_commonjsHelpers-CqkleIqs.js";const u=`<!-- @license CC0-1.0 -->
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as a}from"./index-DtTc1g6o.js";import{Meta as d,Title as s,Subtitle as c,Canvas as i,ArgTypes as h,Markdown as m}from"@storybook/addon-docs/blocks";import{L as l,a as r,b as j,c as b}from"./label.stories-23Q9H2og.js";import"./index-BynWX4my.js";import"./_commonjsHelpers-CqkleIqs.js";const u=`<!-- @license CC0-1.0 -->
 
 ## De Label component implementeren
 
@@ -58,4 +58,4 @@ de className `,e.jsx(n.code,{children:"dictu-label__required"}),"."]}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function k(t={}){const{wrapper:n}={...a(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(o,{...t})}):o(t)}export{k as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function w(t={}){const{wrapper:n}={...a(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(o,{...t})}):o(t)}export{w as default};

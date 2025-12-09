@@ -1,4 +1,4 @@
-import{j as e,M as l,T as d,S as a,C as o,A as h,h as u}from"./blocks-D19UJTfX.js";import{useMDXComponents as c}from"./index-CEN9Fv7k.js";import{I as t,a as r,b as j}from"./icon.stories-CxzxnsYY.js";import"./iframe-9wB--kQf.js";import"./_commonjsHelpers-CqkleIqs.js";import"./icon.component-BiJB5nKt.js";/* empty css              */const m=`<!-- @license CC0-1.0 -->
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as c}from"./index-DtTc1g6o.js";import{Meta as l,Title as d,Subtitle as a,Canvas as o,ArgTypes as h,Markdown as u}from"@storybook/addon-docs/blocks";import{I as t,a as r,b as j}from"./icon.stories-CxzxnsYY.js";import"./index-BynWX4my.js";import"./_commonjsHelpers-CqkleIqs.js";import"./icon.component-BiJB5nKt.js";/* empty css              */const m=`<!-- @license CC0-1.0 -->
 
 ## Gebruik deze component
 
@@ -69,4 +69,4 @@ communiceren.`})}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function v(i={}){const{wrapper:n}={...c(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(s,{...i})}):s(i)}export{v as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function C(i={}){const{wrapper:n}={...c(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(s,{...i})}):s(i)}export{C as default};
