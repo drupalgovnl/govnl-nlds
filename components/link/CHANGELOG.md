@@ -1,5 +1,12 @@
 # @dictu/link
 
+## 2.2.0
+
+### Minor Changes
+
+- e3a95d9: New way of component documentation, added new properties to the card
+  component (subheading, full_card_link)
+
 ## 2.1.0
 
 ### Minor Changes

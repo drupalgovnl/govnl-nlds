@@ -1,6 +1,6 @@
 {
   "name": "@dictu/card",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "author": "Dienst ICT Uitvoering",
   "description": "Card CSS component.",
   "license": "EUPL-1.2",
@@ -32,6 +32,6 @@
     "clean": "rimraf ./dist/"
   },
   "devDependencies": {
-    "@dictu/link": "^2.1.0"
+    "@dictu/link": "^2.2.0"
   }
 }
