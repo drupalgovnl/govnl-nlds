@@ -39,7 +39,7 @@ export const Card = ({
   const iconElement = icon ? Icon({ icon, label: alt }) : null;
 
   const headingContent = Link({
-    content: link?.text ?? '',
+    text: link?.text ?? '',
     href: link.href,
     classNames: hasFullCardLink ? 'card__link dictu-card__full-card-link' : 'dictu-card__link',
   });

@@ -76,11 +76,30 @@ De waarde van het attribuut is het aantal kolommen of rijen dat overbrugt moet w
 
 <Canvas of={TableStories.RowspanTable} />
 
-#### Tabel met uitlijning aan het einde van de cel
+### Tabel met uitlijning aan het einde van de cel
 
 Standaard wordt de inhoud van een cel uitgelijnd aan het begin. Om de inhoud van een cel uit te lijnen aan het einde van de cel voeg je de classname `dictu-table__cell--align-end` toe aan de `td` element.
 
 <Canvas of={TableStories.AlignEndTable} />
+
+### Tabel met dubbele headers
+
+Het is mogelijk om voor zowel row headers als voor column headers een dubbele header toe te voegen. De eerste header is dan de overkoepelende header voor de headers die op de rij eronder of de kolom erna komen.
+Gebruik hiervoor de `rowspan` en `colspan` die eerder in deze documentatie beschreven zijn.
+
+#### Tabel met dubbele column headers
+
+<Canvas of={TableStories.DoubleColumnHeaderTable} />
+
+#### Tabel met dubbele row headers
+
+<Canvas of={TableStories.DoubleRowHeaderTable} />
+
+### Responsive tabel
+
+Voor een responsive tabel voeg je een wrapper toe met een `dictu-table__wrapper` class. Door het toevoegen van deze wrapper wordt de tabel horizontaal scrollbaar.
+
+<Canvas of={TableStories.ResponsiveTable} />
 
 ## Relevante WCAG succescriteria
 

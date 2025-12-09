@@ -6,9 +6,12 @@
 @mixin dictu-table {
   border-collapse: collapse;
   margin-block: var(--govnl-table-margin-block-start) var(--govnl-table-margin-block-end);
-  overflow-x: scroll;
   table-layout: fixed;
   width: 100%;
+}
+
+@mixin dictu-table__wrapper {
+  overflow: auto;
 }
 
 @mixin dictu-table__caption {
@@ -61,7 +64,6 @@
   padding-block: var(--govnl-table-cell-padding-block-start) var(--govnl-table-cell-padding-block-end);
   padding-inline: var(--govnl-table-cell-padding-inline-start) var(--govnl-table-cell-padding-inline-end);
   text-align: start;
-  width: 100%;
 
   &[scope="row"] {
     border-inline-end: var(--govnl-table-cell-header-border-inline-end-width) solid
@@ -76,7 +78,6 @@
   padding-block: var(--govnl-table-cell-padding-block-start) var(--govnl-table-cell-padding-block-end);
   padding-inline: var(--govnl-table-cell-padding-inline-start) var(--govnl-table-cell-padding-inline-end);
   text-align: start;
-  width: 100%;
 
   &:last-of-type {
     border-inline-end: none;

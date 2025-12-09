@@ -1,5 +1,19 @@
 # @dictu/rich-text
 
+## 3.4.0
+
+### Minor Changes
+
+- e34f51f: Small fixes for table component
+
+## 3.3.0
+
+### Minor Changes
+
+- 3df7fb8: Added list component and support in the rich text component
+- 3df7fb8: new list component, applied in rich text component, updated button
+  and icon component, new design tokens
+
 ## 3.2.1
 
 ### Patch Changes
