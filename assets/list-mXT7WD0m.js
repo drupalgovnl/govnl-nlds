@@ -1,4 +1,4 @@
-import{j as e,M as l,T as a,S as c,C as r,A as j,h}from"./blocks-4ee6DOrg.js";import{useMDXComponents as d}from"./index-BC_eenoj.js";import{L as t,U as s,O as m,I as x}from"./list.stories-YopHKJRs.js";import"./iframe-Z28uwmna.js";import"./_commonjsHelpers-CqkleIqs.js";import"./icon.component-BiJB5nKt.js";/* empty css              */const g="";function o(i){const n={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...d(),...i.components};return e.jsxs(e.Fragment,{children:[`
+import{j as e,M as l,T as a,S as c,C as r,A as j,h}from"./blocks-CO7v4ldw.js";import{useMDXComponents as d}from"./index-e1gIzzqo.js";import{L as t,U as s,O as m,I as x}from"./list.stories-YopHKJRs.js";import"./iframe-DWXNcNJJ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./icon.component-BiJB5nKt.js";/* empty css              */const g="";function o(i){const n={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...d(),...i.components};return e.jsxs(e.Fragment,{children:[`
 `,`
 `,e.jsx(l,{of:t,title:"Componenten/List"}),`
 `,e.jsx(a,{children:"List"}),`

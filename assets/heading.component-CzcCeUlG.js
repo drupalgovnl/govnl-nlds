@@ -1,0 +1,1 @@
+const s=({content:d,level:i=2}={})=>{const e=document.createElement(`h${i}`);return e.classList.add("dictu-heading",`dictu-heading--level-${i}`),(d==null?void 0:d.nodeType)!==void 0?e.appendChild(d):d!=null&&(e.innerText=d),e};export{s as H};
