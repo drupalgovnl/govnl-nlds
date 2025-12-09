@@ -28,13 +28,13 @@
     "components/navigation-bar.tokens",
     "components/page-footer.tokens",
     "components/page-header.tokens",
+    "components/pagination.tokens",
     "components/paragraph.tokens",
     "components/searchbar.tokens",
     "components/section.tokens",
     "components/skip-link.tokens",
     "components/table.tokens",
     "components/timeline.tokens",
-    "components/pagination.tokens",
     "components/video-player.tokens"
   ]
 }
