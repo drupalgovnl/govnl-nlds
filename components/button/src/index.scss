@@ -86,22 +86,10 @@
   @include mixin.dictu-button--icon-only;
 }
 
-.dictu-button--icon-only:hover {
-  @include mixin.dictu-button--icon-only-hover;
+.dictu-button--small {
+  @include mixin.dictu-button--small;
 }
 
-.dictu-button--icon-only:active {
-  @include mixin.dictu-button--icon-only-active;
-}
-
-.dictu-button--icon-only:focus-visible {
-  @include mixin.dictu-button--icon-only-focus;
-
-  &:hover {
-    @include mixin.dictu-button--icon-only-hover;
-  }
-}
-
-.dictu-button--icon-only:disabled {
-  @include mixin.dictu-button--icon-only-disabled;
+.dictu-button--icon-only.dictu-button--small {
+  @include mixin.dictu-button--icon-only-small;
 }
