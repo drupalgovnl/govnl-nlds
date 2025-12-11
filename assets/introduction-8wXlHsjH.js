@@ -1,0 +1,2 @@
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as r}from"./index-o7SW9AmG.js";import{Meta as i,Title as s}from"@storybook/addon-docs/blocks";import"./index-pHYmH9NJ.js";import"./_commonjsHelpers-CqkleIqs.js";function n(o){return t.jsxs(t.Fragment,{children:[t.jsx(i,{title:"Voor ontwikkelaars/Introductie"}),`
+`,t.jsx(s,{children:"DICTU Design System voor ontwikkelaars"})]})}function x(o={}){const{wrapper:e}={...r(),...o.components};return e?t.jsx(e,{...o,children:t.jsx(n,{...o})}):n()}export{x as default};

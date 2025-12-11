@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as c}from"./index-DtTc1g6o.js";import{Meta as s,Title as a,Subtitle as l,Canvas as i,ArgTypes as h,Markdown as j}from"@storybook/addon-docs/blocks";import{B as t,P as o}from"./button.stories-EmND38U9.js";import"./index-BynWX4my.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./button-DWuSISss.js";import"./icon.component-BiJB5nKt.js";const u=`<!-- @license CC0-1.0 -->
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as c}from"./index-o7SW9AmG.js";import{Meta as s,Title as a,Subtitle as l,Canvas as i,ArgTypes as h,Markdown as j}from"@storybook/addon-docs/blocks";import{B as t,P as o}from"./button.stories-EmND38U9.js";import"./index-pHYmH9NJ.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./button-DWuSISss.js";import"./icon.component-BiJB5nKt.js";const u=`<!-- @license CC0-1.0 -->
 
 ## De Button component implementeren
 

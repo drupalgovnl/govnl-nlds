@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as a}from"./index-DtTc1g6o.js";import{Meta as d,Title as s,Subtitle as c,Canvas as i,ArgTypes as h,Markdown as m}from"@storybook/addon-docs/blocks";import{L as l,a as r,b as j,c as b}from"./label.stories-23Q9H2og.js";import"./index-BynWX4my.js";import"./_commonjsHelpers-CqkleIqs.js";const u=`<!-- @license CC0-1.0 -->
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as a}from"./index-o7SW9AmG.js";import{Meta as d,Title as s,Subtitle as c,Canvas as i,ArgTypes as h,Markdown as m}from"@storybook/addon-docs/blocks";import{L as l,a as r,b as j,c as b}from"./label.stories-23Q9H2og.js";import"./index-pHYmH9NJ.js";import"./_commonjsHelpers-CqkleIqs.js";const u=`<!-- @license CC0-1.0 -->
 
 ## De Label component implementeren
 

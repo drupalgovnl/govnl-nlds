@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as i}from"./index-DtTc1g6o.js";import{Meta as l,Title as s,Subtitle as c,Canvas as o,ArgTypes as h,Markdown as m}from"@storybook/addon-docs/blocks";import{T as t,D as a,R as j,F as b,C as p,a as u,A as x,b as v,c as k,d as g}from"./table.stories-CpcIXU8y.js";import"./index-BynWX4my.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              */const f=`<!-- @license CC0-1.0 -->
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as i}from"./index-o7SW9AmG.js";import{Meta as l,Title as s,Subtitle as c,Canvas as o,ArgTypes as h,Markdown as m}from"@storybook/addon-docs/blocks";import{T as t,D as a,R as j,F as b,C as p,a as u,A as x,b as v,c as k,d as g}from"./table.stories-CpcIXU8y.js";import"./index-pHYmH9NJ.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              */const f=`<!-- @license CC0-1.0 -->
 
 ## De Table component implementeren
 

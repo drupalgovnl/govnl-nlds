@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as c}from"./index-DtTc1g6o.js";import{Meta as l,Title as d,Subtitle as a,Canvas as o,ArgTypes as h,Markdown as u}from"@storybook/addon-docs/blocks";import{I as t,a as r,b as j}from"./icon.stories-CxzxnsYY.js";import"./index-BynWX4my.js";import"./_commonjsHelpers-CqkleIqs.js";import"./icon.component-BiJB5nKt.js";/* empty css              */const m=`<!-- @license CC0-1.0 -->
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as c}from"./index-o7SW9AmG.js";import{Meta as l,Title as d,Subtitle as a,Canvas as o,ArgTypes as h,Markdown as u}from"@storybook/addon-docs/blocks";import{I as t,a as r,b as j}from"./icon.stories-CxzxnsYY.js";import"./index-pHYmH9NJ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./icon.component-BiJB5nKt.js";/* empty css              */const m=`<!-- @license CC0-1.0 -->
 
 ## Gebruik deze component
 
