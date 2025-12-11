@@ -7,7 +7,6 @@ import {
   ArgTypes,
   Title,
   Subtitle,
-  Story,
 } from '@storybook/addon-docs/blocks';
 import * as ButtonStories from './button.stories.js';
 import Readme from './README.md?raw';
@@ -53,7 +52,6 @@ Gebruik de button component niet als navigatie. Wanneer de gebruiker ergens naar
 - Gebruik de `<button>` altijd voor het uitvoeren van een actie en niet als navigatie.
 - Gebruik de `<button>`-tag om een klikbare knop te definiëren.
 - Binnen het `<button>`-element kun je tekst plaatsen (en tags zoals `<i>`, `<b>`, `<strong>`, `<image>`, enz.).
-- Geef altijd het type-attribuut op voor `<button>`-element, zodat browsers weten welk type knop het is.
 - Zorg ervoor dat het klikbare element een minimale afmeting hebben van 24 bij 24 CSS-pixels.
 
 ## Voorbeelden
@@ -80,21 +78,18 @@ De Subtle Button kan gebruikt worden voor de minst belangrijke acties op de pagi
 
 De Icon Only Button heeft een eenvoudig en herkenbaar icon die een specifieke actie of functionaliteit weergeeft. Ze worden gebruikt op plekken waar de ruimte beperkt is, zoals in toolbars, navigation. Bij voorkeur wordt er altijd gekeken of er een button met tekst gebruikt kan worden in verband met de toegankelijkheid
 
+#### Primary Action Icon-Only
 <Canvas of={ButtonStories.PrimaryActionIconOnly} />
+
+#### Secondary Action Icon-Only
 <Canvas of={ButtonStories.SecondaryActionIconOnly} />
+
+#### Subtle Icon-Only
 <Canvas of={ButtonStories.SubtleIconOnly} />
-
-
-<Canvas of={ButtonStories.PrimaryActionSmall} />
-<Canvas of={ButtonStories.SecondaryActionSmall} />
-<Canvas of={ButtonStories.SubtleSmall} />
-
-<Canvas of={ButtonStories.PrimaryActionIconOnlySmall} />
-
-
+{/* moet nog gekeken worden of we dit alleen in de documentatie kunnen tonen
 ---
 
-### States
+ ### States
 
 #### Default
 
@@ -108,9 +103,13 @@ De Icon Only Button heeft een eenvoudig en herkenbaar icon die een specifieke ac
 
 <Canvas of={ButtonStories.PrimaryAction} /> 
 
-#### Focus
+#### Focus-visible
 
 <Canvas of={ButtonStories.PrimaryAction} />
+
+#### Disabled
+
+<Canvas of={ButtonStories.PrimaryActionDisabled} /> */}
 
 ---
 
@@ -124,20 +123,20 @@ De Primary Action Button, Secondary Action Button en de Subtle Button kunnen een
 <Canvas of={ButtonStories.PrimaryAction} />
 
 ##### Icon voor de tekst
-<Canvas of={ButtonStories.PrimaryAction} />
+<Canvas of={ButtonStories.PrimaryActionIconBefore} />
 
 ##### Icon na de tekst
-<Canvas of={ButtonStories.PrimaryAction} />
+<Canvas of={ButtonStories.PrimaryActionIconAfter} />
 
 #### Size
 
-De button wordt aangeboden in een `default` en `small`. De `small` button kan bijvoorbeeld gebruikt worden wanneer de ruimte beperkt is.
+Alle verschillende varianten van de button worden aangeboden in een `default` en `small` formaat. De `small` button kan bijvoorbeeld gebruikt worden wanneer de ruimte beperkt is.
 
 ##### Default
 <Canvas of={ButtonStories.PrimaryAction} />
 
 ##### Small
-<Canvas of={ButtonStories.PrimaryAction} />
+<Canvas of={ButtonStories.PrimaryActionSmall} />
 
 ## Afhankelijkheden
 
