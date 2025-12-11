@@ -4,10 +4,10 @@
  */
 
 @mixin dictu-checkbox {
+  block-size: var(--govnl-checkbox-size);
   border: var(--govnl-checkbox-unchecked-border-width) solid var(--govnl-checkbox-unchecked-border-color);
   border-radius: var(--govnl-checkbox-border-radius);
-  height: var(--govnl-checkbox-size);
-  width: var(--govnl-checkbox-size);
+  inline-size: var(--govnl-checkbox-size);
 }
 
 @mixin dictu-checkbox--hover {
