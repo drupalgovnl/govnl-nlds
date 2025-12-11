@@ -29,7 +29,6 @@
     "@changesets/cli": "^2.29.4",
     "@eslint/js": "^9.29.0",
     "@size-limit/preset-small-lib": "^11.1.6",
-    "@storybook/addon-docs": "10.1.4",
     "@types/node": "^22.9.3",
     "@typescript-eslint/eslint-plugin": "^8.34.1",
     "@typescript-eslint/parser": "^8.34.1",
@@ -90,7 +89,7 @@
       "stylelint --fix",
       "prettier --write"
     ],
-    "*.{md,json,yaml,yml}": [
+    "*.{md,mdx,json,yaml,yml}": [
       "prettier --write"
     ],
     "package.json": [

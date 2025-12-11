@@ -31,11 +31,6 @@ const config = {
 
     return mergeConfig(config, {
       base: process.env.BASE_URL ?? '/',
-      build: {
-        rollupOptions: {
-          external: ['@storybook/addon-docs/blocks'],
-        },
-      },
       css: {
         preprocessorOptions: {
           scss: {
