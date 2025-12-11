@@ -1,4 +1,4 @@
-import{j as e,M as l,T as s,S as c,C as o,A as h,k as m}from"./blocks-CLO_ufQd.js";import{useMDXComponents as i}from"./index-BQN4FiDi.js";import{T as r,D as t,R as j,F as b,C as p,a as u,A as x,b as v,c as k,d as g}from"./table.stories-CpcIXU8y.js";import"./iframe-B1ddhaRt.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              */const f=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as s,S as c,C as o,A as h,k as m}from"./blocks-aJEjVOFa.js";import{useMDXComponents as i}from"./index-aTLGAvtq.js";import{T as r,D as t,R as j,F as b,C as p,a as u,A as x,b as v,c as k,d as g}from"./table.stories-CpcIXU8y.js";import"./iframe-Bu4iz_Z2.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              */const f=`<!-- @license CC0-1.0 -->
 
 ## De Table component implementeren
 
