@@ -1,5 +1,12 @@
 # @dictu/button
 
+## 4.0.0
+
+### Major Changes
+
+- c1027f3: Removed icon-only as a specific variant and added it as a modifier
+  for other variants, added modifier for small button, updated documentation
+
 ## 3.2.0
 
 ### Minor Changes
