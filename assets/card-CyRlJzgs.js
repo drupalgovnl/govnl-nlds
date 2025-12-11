@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as d}from"./index-o7SW9AmG.js";import{Meta as a,Title as c,Subtitle as l,Canvas as t,ArgTypes as h,Markdown as m}from"@storybook/addon-docs/blocks";import{C as r,D as o,A as j}from"./card.stories-C-qlWmoL.js";import"./index-pHYmH9NJ.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./heading.component-CzcCeUlG.js";import"./icon.component-BiJB5nKt.js";import"./link.component-BYsGuHfD.js";const p=`<!-- @license CC0-1.0 -->
+import{j as e,M as o,T as c,S as l,C as t,A as h,k as j}from"./blocks-CLO_ufQd.js";import{useMDXComponents as d}from"./index-BQN4FiDi.js";import{C as r,D as s,A as m}from"./card.stories-C-qlWmoL.js";import"./iframe-B1ddhaRt.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./heading.component-CzcCeUlG.js";import"./icon.component-BiJB5nKt.js";import"./link.component-BYsGuHfD.js";const p=`<!-- @license CC0-1.0 -->
 
 ## Gebruik deze component
 
@@ -19,17 +19,17 @@ Als je CSS imports gebruikt vanuit JavaScript:
 \`\`\`javascript
 import "@dictu/design-tokens/dist/card.css";
 \`\`\`
-`;function s(i){const n={a:"a",h2:"h2",h3:"h3",li:"li",p:"p",ul:"ul",...d(),...i.components};return e.jsxs(e.Fragment,{children:[`
+`;function a(i){const n={a:"a",h2:"h2",h3:"h3",li:"li",p:"p",ul:"ul",...d(),...i.components};return e.jsxs(e.Fragment,{children:[`
 `,`
-`,e.jsx(a,{of:r,title:"Componenten/Card"}),`
+`,e.jsx(o,{of:r,title:"Componenten/Card"}),`
 `,e.jsx(c,{children:"Card"}),`
 `,e.jsx(l,{children:e.jsx(n.p,{children:`Gebruik een card op een overzichtspagina om te linken naar een artikelpagina, zoals een
 nieuwsartikel, een vacature of een zoekresultaat. De card bevat doorgaans de afbeelding, titel,
 subtitel, inleiding en een meta footer van de content.`})}),`
-`,e.jsx(t,{of:o,sourceState:"none"}),`
+`,e.jsx(t,{of:s,sourceState:"none"}),`
 `,e.jsx(n.h2,{id:"parameters",children:"Parameters"}),`
 `,e.jsx(h,{of:r}),`
-`,e.jsx(m,{children:p}),`
+`,e.jsx(j,{children:p}),`
 `,e.jsx(n.h2,{id:"wanneer-gebruik-je-de-card-component",children:"Wanneer gebruik je de Card component"}),`
 `,e.jsx(n.p,{children:"WIP"}),`
 `,e.jsx(n.h2,{id:"richtlijnen",children:"Richtlijnen"}),`
@@ -39,10 +39,10 @@ subtitel, inleiding en een meta footer van de content.`})}),`
 `,e.jsx(n.h2,{id:"voorbeelden",children:"Voorbeelden"}),`
 `,e.jsx(n.h3,{id:"card",children:"Card"}),`
 `,e.jsx(n.p,{children:"WIP"}),`
-`,e.jsx(t,{of:o}),`
+`,e.jsx(t,{of:s}),`
 `,e.jsx(n.h3,{id:"accent-card",children:"Accent Card"}),`
 `,e.jsx(n.p,{children:"WIP"}),`
-`,e.jsx(t,{of:j}),`
+`,e.jsx(t,{of:m}),`
 `,e.jsx(n.h2,{id:"afhankelijkheden",children:"Afhankelijkheden"}),`
 `,e.jsx(n.p,{children:"De Card component maakt gebruik van de volgende componenten:"}),`
 `,e.jsx(n.h2,{id:"relevante-wcag-succescriteria",children:"Relevante WCAG succescriteria"}),`
@@ -52,4 +52,4 @@ subtitel, inleiding en een meta footer van de content.`})}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function w(i={}){const{wrapper:n}={...d(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(s,{...i})}):s(i)}export{w as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function D(i={}){const{wrapper:n}={...d(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(a,{...i})}):a(i)}export{D as default};
