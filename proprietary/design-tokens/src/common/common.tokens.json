@@ -348,6 +348,12 @@
           "$type": "fontWeights",
           "$value": "{govnl.typography.font-weight.bold}"
         }
+      },
+      "accent": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.200}"
+        }
       }
     },
     "interaction": {

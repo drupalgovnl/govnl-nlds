@@ -10,10 +10,10 @@ import { Heading } from './heading.component';
 
 export default {
   args: {
-    innerHTML: 'Dit is een voorbeeld van een heading',
+    content: 'Dit is een voorbeeld van een heading',
   },
   argTypes: {
-    innerHTML: {
+    content: {
       control: 'text',
       description: 'De tekst van de heading',
     },
@@ -37,7 +37,7 @@ export default {
 
 export const HeadingLevel1 = {
   args: {
-    innerHTML: 'Dit is een hoofdkop van een pagina',
+    content: 'Dit is een hoofdkop van een pagina',
     level: 1,
   },
   parameters: {
@@ -51,7 +51,7 @@ export const HeadingLevel1 = {
 
 export const HeadingLevel2 = {
   args: {
-    innerHTML: 'Een koptekst die in de koppenstructuur op het tweede niveau staat',
+    content: 'Een koptekst die in de koppenstructuur op het tweede niveau staat',
     level: 2,
   },
   parameters: {
@@ -65,7 +65,7 @@ export const HeadingLevel2 = {
 
 export const HeadingLevel3 = {
   args: {
-    innerHTML: 'Een koptekst die in de koppenstructuur op het derde niveau staat',
+    content: 'Een koptekst die in de koppenstructuur op het derde niveau staat',
     level: 3,
   },
   parameters: {
@@ -79,7 +79,7 @@ export const HeadingLevel3 = {
 
 export const HeadingLevel4 = {
   args: {
-    innerHTML: 'Een koptekst die in de koppenstructuur op het vierde niveau staat',
+    content: 'Een koptekst die in de koppenstructuur op het vierde niveau staat',
     level: 4,
   },
   parameters: {
@@ -93,7 +93,7 @@ export const HeadingLevel4 = {
 
 export const HeadingLevel5 = {
   args: {
-    innerHTML: 'Een koptekst die in de koppenstructuur op het vijfde niveau staat',
+    content: 'Een koptekst die in de koppenstructuur op het vijfde niveau staat',
     level: 5,
   },
   parameters: {
@@ -107,7 +107,7 @@ export const HeadingLevel5 = {
 
 export const HeadingLevel6 = {
   args: {
-    innerHTML: 'Een koptekst die in de koppenstructuur op het zesde niveau staat',
+    content: 'Een koptekst die in de koppenstructuur op het zesde niveau staat',
     level: 6,
   },
   parameters: {

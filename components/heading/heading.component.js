@@ -1,4 +1,4 @@
-export const Heading = ({ innerHTML: content, level = 2 } = {}) => {
+export const Heading = ({ content, level = 2 } = {}) => {
   const heading = document.createElement(`h${level}`);
   heading.classList.add('dictu-heading', `dictu-heading--level-${level}`);
 

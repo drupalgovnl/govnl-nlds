@@ -37,7 +37,9 @@
       "components/form-elements/select.tokens": "enabled",
       "components/form-elements/text-area.tokens": "enabled",
       "components/form-elements/text-input.tokens": "enabled",
-      "components/searchbar.tokens": "enabled"
+      "components/searchbar.tokens": "enabled",
+      "components/pagination.tokens": "enabled",
+      "components/video-player.tokens": "enabled"
     },
     "$figmaVariableReferences": {},
     "group": "GovNL"

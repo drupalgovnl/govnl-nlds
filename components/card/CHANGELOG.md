@@ -1,5 +1,16 @@
 # @dictu/card
 
+## 4.0.0
+
+### Major Changes
+
+- e3a95d9: New way of component documentation, added new properties to the card
+  component (subheading, full_card_link)
+
+### Minor Changes
+
+- e3a95d9: Refactor text to content in Link component.
+
 ## 3.0.0
 
 ### Major Changes

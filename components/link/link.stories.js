@@ -1,5 +1,6 @@
 import readme from './README.md?raw';
 import './dist/index.css';
+import { Link } from './link.component';
 
 export default {
   args: {
@@ -7,7 +8,7 @@ export default {
     classNames: '',
   },
   argTypes: {
-    innerHTML: {
+    content: {
       control: 'text',
     },
     href: {
@@ -29,8 +30,8 @@ export default {
   title: 'Componenten/Link',
 };
 
-export const Link = {
+export const DefaultLink = {
   args: {
-    innerHTML: 'Dit is een link',
+    content: 'Dit is een link',
   },
 };
