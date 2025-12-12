@@ -1,4 +1,4 @@
-import{j as e,M as s,T as a,S as l,C as r,A as h,k as j}from"./blocks-DKVKp0BO.js";import{useMDXComponents as c}from"./index-B22uvsUe.js";import{A as i,a as d,b as p}from"./accordion.stories-C6NoLL9i.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-CWeOUBzF.js";/* empty css              *//* empty css              */import"./button-xYv2GNeb.js";import"./icon.component-BiJB5nKt.js";const u=`<!-- @license CC0-1.0 -->
+import{j as e,M as s,T as a,S as l,C as r,A as h,k as j}from"./blocks-BlOjAMsy.js";import{useMDXComponents as c}from"./index-9qzCju2r.js";import{A as i,a as d,b as u}from"./accordion.stories-C6NoLL9i.js";import"./iframe-CFZfypHf.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./button-xYv2GNeb.js";import"./icon.component-BiJB5nKt.js";const p=`<!-- @license CC0-1.0 -->
 
 ## De Accordion component implementeren
 
@@ -28,7 +28,7 @@ laten zien.`})}),`
 `,e.jsx(r,{of:d,sourceState:"none"}),`
 `,e.jsx(n.h2,{id:"parameters",children:"Parameters"}),`
 `,e.jsx(h,{of:i}),`
-`,e.jsx(j,{children:u}),`
+`,e.jsx(j,{children:p}),`
 `,e.jsx(n.h2,{id:"wanneer-gebruik-je-de-accordion-component",children:"Wanneer gebruik je de Accordion component"}),`
 `,e.jsx(n.p,{children:"Gebruik een accordion alleen wanneer het voor de gebruiker handig is om:"}),`
 `,e.jsxs(n.ul,{children:[`
@@ -61,7 +61,7 @@ accordion gesloten is. Dit zorgt ervoor dat de body niet zichtbaar is.`]}),`
 `,e.jsx(n.p,{children:"Bij een gesloten accordion is alleen de toggler zichtbaar, en is body van de accordion uitgesloten van weergave."}),`
 `,e.jsxs(n.p,{children:["Wanneer de accordion gesloten is, staat er op het ",e.jsx(n.code,{children:"div"})," element met de ",e.jsx(n.code,{children:".dictu-accordion__body"})," class een ",e.jsx(n.code,{children:"hidden"}),` attribuut. Zo wordt de body verborgen voor weergave.
 Op de toggler wordt het `,e.jsx(n.code,{children:"aria-expanded"})," attribuut op ",e.jsx(n.code,{children:"false"})," gezet, zodat het voor screenreaders duidelijk is dat de accordion gesloten is."]}),`
-`,e.jsx(r,{of:p}),`
+`,e.jsx(r,{of:u}),`
 `,e.jsx(n.h2,{id:"afhankelijkheden",children:"Afhankelijkheden"}),`
 `,e.jsx(n.p,{children:"De Accordion component maakt voor de toggler gebruik van de volgende componenten:"}),`
 `,e.jsxs(n.ul,{children:[`
@@ -84,4 +84,4 @@ Op de toggler wordt het `,e.jsx(n.code,{children:"aria-expanded"})," attribuut o
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function C(o={}){const{wrapper:n}={...c(),...o.components};return n?e.jsx(n,{...o,children:e.jsx(t,{...o})}):t(o)}export{C as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function z(o={}){const{wrapper:n}={...c(),...o.components};return n?e.jsx(n,{...o,children:e.jsx(t,{...o})}):t(o)}export{z as default};

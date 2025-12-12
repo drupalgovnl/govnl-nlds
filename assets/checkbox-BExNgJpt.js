@@ -1,4 +1,4 @@
-import{j as e,M as d,T as h,S as a,C as i,A as l,k as m}from"./blocks-DKVKp0BO.js";import{useMDXComponents as s}from"./index-B22uvsUe.js";import{C as t,D as r,a as x}from"./checkbox.stories-B02oO6Zy.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-CWeOUBzF.js";/* empty css              */const j=`<!-- @license CC0-1.0 -->
+import{j as e,M as d,T as h,S as a,C as i,A as l,k as m}from"./blocks-BlOjAMsy.js";import{useMDXComponents as s}from"./index-9qzCju2r.js";import{C as t,D as r,a as x}from"./checkbox.stories-B02oO6Zy.js";import"./iframe-CFZfypHf.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              */const j=`<!-- @license CC0-1.0 -->
 
 ## De Checkbox component implementeren
 
@@ -50,4 +50,4 @@ gaan met algemene voorwaarden.`}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function v(o={}){const{wrapper:n}={...s(),...o.components};return n?e.jsx(n,{...o,children:e.jsx(c,{...o})}):c(o)}export{v as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function f(o={}){const{wrapper:n}={...s(),...o.components};return n?e.jsx(n,{...o,children:e.jsx(c,{...o})}):c(o)}export{f as default};
