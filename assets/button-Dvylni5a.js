@@ -1,4 +1,4 @@
-import{j as e,M as l,T as c,S as a,C as i,A as h,k as u}from"./blocks-aJEjVOFa.js";import{useMDXComponents as d}from"./index-aTLGAvtq.js";import{B as r,P as o,S as j,a as m,b as x,c as p,d as b,e as g,f as k,g as w}from"./button.stories-CUSKmAbz.js";import"./iframe-Bu4iz_Z2.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              *//* empty css              */import"./button-xYv2GNeb.js";import"./icon.component-BiJB5nKt.js";const f=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as c,S as a,C as i,A as h,k as u}from"./blocks-D7ajUXwH.js";import{useMDXComponents as d}from"./index-DHyYxNjl.js";import{B as r,P as o,S as j,a as m,b as x,c as p,d as b,e as g,f as k,g as w}from"./button.stories-CUSKmAbz.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-GReVBzi9.js";/* empty css              *//* empty css              */import"./button-xYv2GNeb.js";import"./icon.component-BiJB5nKt.js";const f=`<!-- @license CC0-1.0 -->
 
 ## De Button component implementeren
 
@@ -113,4 +113,4 @@ import "@dictu/button/dist/index.css";
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function D(t={}){const{wrapper:n}={...d(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(s,{...t})}):s(t)}export{D as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function z(t={}){const{wrapper:n}={...d(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(s,{...t})}):s(t)}export{z as default};

@@ -1,4 +1,4 @@
-import{j as e,M as l,T as s,S as c,C as o,A as h,k as m}from"./blocks-aJEjVOFa.js";import{useMDXComponents as i}from"./index-aTLGAvtq.js";import{T as r,D as t,R as j,F as b,C as p,a as u,A as x,b as v,c as k,d as g}from"./table.stories-CpcIXU8y.js";import"./iframe-Bu4iz_Z2.js";import"./_commonjsHelpers-CqkleIqs.js";/* empty css              */const f=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as s,S as c,C as o,A as h,k as m}from"./blocks-D7ajUXwH.js";import{useMDXComponents as i}from"./index-DHyYxNjl.js";import{T as a,D as t,R as j,F as b,C as p,a as u,A as x,b as v,c as k,d as g}from"./table.stories-CpcIXU8y.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-GReVBzi9.js";/* empty css              */const f=`<!-- @license CC0-1.0 -->
 
 ## De Table component implementeren
 
@@ -19,15 +19,15 @@ Als je CSS imports gebruikt vanuit JavaScript:
 \`\`\`javascript
 import "@dictu/table/dist/index.css";
 \`\`\`
-`;function d(a){const n={a:"a",code:"code",h2:"h2",h3:"h3",h4:"h4",li:"li",p:"p",ul:"ul",...i(),...a.components};return e.jsxs(e.Fragment,{children:[`
+`;function d(r){const n={a:"a",code:"code",h2:"h2",h3:"h3",h4:"h4",li:"li",p:"p",ul:"ul",...i(),...r.components};return e.jsxs(e.Fragment,{children:[`
 `,`
-`,e.jsx(l,{of:r,title:"Componenten/Table"}),`
+`,e.jsx(l,{of:a,title:"Componenten/Table"}),`
 `,e.jsx(s,{children:"Table"}),`
 `,e.jsx(c,{children:e.jsx(n.p,{children:`De Table component organiseert data op een voor de gebruiker makkelijk te scannen manier van rijen
 en kolommen.`})}),`
 `,e.jsx(o,{of:t,sourceState:"none"}),`
 `,e.jsx(n.h2,{id:"parameters",children:"Parameters"}),`
-`,e.jsx(h,{of:r}),`
+`,e.jsx(h,{of:a}),`
 `,e.jsx(m,{children:f}),`
 `,e.jsx(n.h2,{id:"wanneer-gebruik-je-de-table-component",children:"Wanneer gebruik je de Table component"}),`
 `,e.jsx(n.p,{children:"Gebruik de Table component om gebruikers makkelijk data te laten vergelijken in rijen en kolommen."}),`
@@ -78,4 +78,4 @@ Gebruik hiervoor de `,e.jsx(n.code,{children:"rowspan"})," en ",e.jsx(n.code,{ch
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function H(a={}){const{wrapper:n}={...i(),...a.components};return n?e.jsx(n,{...a,children:e.jsx(d,{...a})}):d(a)}export{H as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function R(r={}){const{wrapper:n}={...i(),...r.components};return n?e.jsx(n,{...r,children:e.jsx(d,{...r})}):d(r)}export{R as default};

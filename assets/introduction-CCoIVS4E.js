@@ -1,6 +1,0 @@
-import{j as e,M as s}from"./blocks-aJEjVOFa.js";import{useMDXComponents as o}from"./index-aTLGAvtq.js";import"./iframe-Bu4iz_Z2.js";import"./_commonjsHelpers-CqkleIqs.js";function i(t){const n={a:"a",h1:"h1",h2:"h2",p:"p",...o(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(s,{title:"Voor designers/Introductie"}),`
-`,e.jsx(n.h1,{id:"dictu-design-systeem-voor-designers",children:"DICTU Design Systeem voor designers"}),`
-`,e.jsx(n.h2,{id:"figma",children:"Figma"}),`
-`,e.jsx(n.p,{children:"Voor de ontwerpen van componenten gebruiken we twee Figma bestanden: De bibliotheek waarin alle componenten uit het design systeem zijn opgenomen, en de speeltuin waarin vrij geëxperimenteerd kan worden met nieuwe en bestaande componenten."}),`
-`,e.jsx(n.p,{children:e.jsx(n.a,{href:"https://www.figma.com/files/1215337725247982465/project/410543983",rel:"nofollow",children:"Bekijk de bestanden op Figma"})}),`
-`,e.jsxs(n.p,{children:["Kun je niet bij de Figma bestanden? ",e.jsx(n.a,{href:"?path=informatie-team--docs",children:"Neem dan contact op met het Dictu Design System team"}),"."]})]})}function c(t={}){const{wrapper:n}={...o(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(i,{...t})}):i(t)}export{c as default};
