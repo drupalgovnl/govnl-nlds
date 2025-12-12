@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 2.3.1
+
+### Patch Changes
+
+- 4542fff: New tokens release
+
 ## 2.3.0
 
 ### Minor Changes
