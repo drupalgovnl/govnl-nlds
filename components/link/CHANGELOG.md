@@ -1,5 +1,11 @@
 # @dictu/link
 
+## 2.3.0
+
+### Minor Changes
+
+- 68e00c8: Added correct focus style
+
 ## 2.2.0
 
 ### Minor Changes
