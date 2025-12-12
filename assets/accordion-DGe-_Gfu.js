@@ -1,4 +1,4 @@
-import{j as e,M as s,T as a,S as l,C as r,A as h,k as j}from"./blocks-D7ajUXwH.js";import{useMDXComponents as c}from"./index-DHyYxNjl.js";import{A as i,a as d,b as p}from"./accordion.stories-C6NoLL9i.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-GReVBzi9.js";/* empty css              *//* empty css              */import"./button-xYv2GNeb.js";import"./icon.component-BiJB5nKt.js";const u=`<!-- @license CC0-1.0 -->
+import{j as e,M as s,T as a,S as l,C as r,A as h,k as j}from"./blocks-DKVKp0BO.js";import{useMDXComponents as c}from"./index-B22uvsUe.js";import{A as i,a as d,b as p}from"./accordion.stories-C6NoLL9i.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-CWeOUBzF.js";/* empty css              *//* empty css              */import"./button-xYv2GNeb.js";import"./icon.component-BiJB5nKt.js";const u=`<!-- @license CC0-1.0 -->
 
 ## De Accordion component implementeren
 
