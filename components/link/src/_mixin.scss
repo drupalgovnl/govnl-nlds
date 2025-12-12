@@ -17,6 +17,13 @@
   @include mixin.nl-link--active;
 }
 
+@mixin dictu-link--focus {
+  background: var(--govnl-focus-background-color);
+  color: var(--govnl-focus-color);
+  outline: 0;
+  text-decoration-thickness: var(--govnl-link-focus-visible-text-decoration-thickness);
+}
+
 @mixin dictu-link--inline-box {
   @include mixin.nl-link--inline-box;
 }
