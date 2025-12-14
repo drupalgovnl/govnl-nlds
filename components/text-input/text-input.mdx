@@ -1,0 +1,79 @@
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as TextInputStories from './text-input.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={TextInputStories} title="Componenten/Form elements/Text input" />
+
+<Title>Text input</Title>
+
+<Subtitle>Een Text Input component is een tekstveld voor het invoeren van korte stukken tekst</Subtitle>
+
+<Canvas of={TextInputStories.TextInputDefault} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={TextInputStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Text Input component
+
+Gebruik de Text Input component wanneer de gebruiker tekst moet invoeren dat niet langer is dan één regel, zoals bijvoorbeeld een straatnaam of telefoonnummer.
+
+## Wanneer gebruik je de Text Input component niet
+
+Gebruik de Text Input component niet wanneer het verwachte antwoord van de gebruiker bestaat uit tekst dat over meerdere regels valt. Gebruik dan de Textarea component.
+
+## Richtlijnen
+
+- Gebruik de Text Input component in combinatie met de [Label component](?path=/docs/componenten-form-elements-label--docs)
+
+## Voorbeelden
+
+### Text input
+
+<Canvas of={TextInputStories.TextInputDefault} />
+
+### Klein variant van de text input 
+
+Voor een kleinere variant van de Text Input component voeg je de class `dictu-text-input--small` toe.
+
+<Canvas of={TextInputStories.TextInputSmall} />
+
+### Text input met foutieve invoer
+
+Wanneer je visueel wilt laten zien dat de invoer van het inputveld foutief is, voeg dan de class `dictu-text-input--error` toe aan het input element.
+
+<Canvas of={TextInputStories.TextInputError} />
+
+### Text input met placeholder
+
+Het is mogelijk om een placeholder te laten zien in het inputveld. Voeg hiervoor het `placeholder` attribuut toe aan het `input` element.
+
+**Let op:** Een placeholder is nooit een vervanging voor het Label elemement. Gebruik alleen een placeholder als de informatie niet op een andere manier 
+weergegeven kan worden. Een placeholder verdwijnt namelijk wanneer de gebruiker het inputveld vult. Hierdoor is het niet mogelijk om de informatie uit
+de placeholder tussentijds nogmaals te bekijken. Ook wanneer er een foutmelding wordt weergegeven, is het voor gebruikers niet mogelijk om te controleren
+wat er precies fout is.
+
+<Canvas of={TextInputStories.TextInputPlaceholder} />
+
+## Relevante WCAG succescriteria
+
+(nog in te vullen)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Text Input component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).

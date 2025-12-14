@@ -1,0 +1,30 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "mixin" as mixin;
+
+.dictu-text-input {
+  @include mixin.dictu-text-input;
+
+  &:hover {
+    @include mixin.dictu-text-input-hover;
+  }
+
+  &:active {
+    @include mixin.dictu-text-input-active;
+  }
+
+  &:focus-visible {
+    @include mixin.dictu-text-input-focus;
+  }
+}
+
+.dictu-text-input--small {
+  @include mixin.dictu-text-input--small;
+}
+
+.dictu-text-input--error {
+  @include mixin.dictu-text-input--error;
+}
