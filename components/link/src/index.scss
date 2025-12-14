@@ -17,6 +17,11 @@
   @include mixin.dictu-link--active;
 }
 
+.dictu-link:focus,
+.dictu-link:focus-visible {
+  @include mixin.dictu-link--focus;
+}
+
 .dictu-link--inline-box {
   @include mixin.dictu-link--inline-box;
 }

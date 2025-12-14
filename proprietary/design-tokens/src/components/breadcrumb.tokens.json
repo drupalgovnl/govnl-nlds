@@ -81,6 +81,24 @@
         "text-decoration": {
           "$type": "textDecoration",
           "$value": "underline"
+        },
+        "mobile": {
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.xs}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.xs}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.xs}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "0rem"
+          }
         }
       },
       "current": {

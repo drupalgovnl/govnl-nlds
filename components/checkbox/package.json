@@ -1,18 +1,18 @@
 {
-  "name": "@dictu/card",
-  "version": "4.0.0",
+  "name": "@dictu/checkbox",
+  "version": "1.0.0",
   "author": "Dienst ICT Uitvoering",
-  "description": "Card CSS component.",
+  "description": "Checkbox CSS component.",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system",
     "css",
-    "card"
+    "checkbox"
   ],
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/card"
+    "directory": "components/checkbox"
   },
   "files": [
     "src/",
@@ -32,6 +32,6 @@
     "clean": "rimraf ./dist/"
   },
   "devDependencies": {
-    "@dictu/link": "^2.2.0"
+    "@dictu/utility-focus-ring": "*"
   }
 }

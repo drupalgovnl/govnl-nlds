@@ -16,6 +16,7 @@
   box-sizing: border-box;
   cursor: pointer;
   display: inline-flex;
+  font-size: var(--govnl-button-font-size);
   gap: calc(var(--govnl-button-column-gap));
   justify-content: var(--govnl-button-justify-content);
   padding-block: var(--govnl-button-padding-block-start) var(--govnl-button-padding-block-end);
@@ -117,31 +118,22 @@
 }
 
 @mixin dictu-button--icon-only {
-  background-color: var(--govnl-button-icon-only-background-color);
-  border-color: var(--govnl-button-icon-only-border-color);
-  color: var(--govnl-button-icon-only-color);
+  padding-block: var(--govnl-button-icon-only-padding-block-start) var(--govnl-button-icon-only-padding-block-end);
+  padding-inline: var(--govnl-button-icon-only-padding-inline-start) var(--govnl-button-icon-only-padding-inline-end);
 }
 
-@mixin dictu-button--icon-only-hover {
-  background-color: var(--govnl-button-icon-only-hover-background-color);
-  border-color: var(--govnl-button-icon-only-hover-border-color);
-  color: var(--govnl-button-icon-only-hover-color);
+@mixin dictu-button--small {
+  column-gap: var(--govnl-button-small-column-gap);
+  font-size: var(--govnl-button-small-font-size);
+  min-block-size: var(--govnl-button-small-min-inline-size);
+  min-inline-size: var(--govnl-button-small-min-block-size);
+  padding-block: var(--govnl-button-small-padding-block-start) var(--govnl-button-small-padding-block-end);
+  padding-inline: var(--govnl-button-small-padding-inline-start) var(--govnl-button-small-padding-inline-end);
 }
 
-@mixin dictu-button--icon-only-active {
-  background-color: var(--govnl-button-icon-only-active-background-color);
-  border-color: var(--govnl-button-icon-only-active-border-color);
-  color: var(--govnl-button-icon-only-active-color);
-}
-
-@mixin dictu-button--icon-only-focus {
-  background-color: var(--govnl-button-icon-only-focus-background-color);
-  border-color: var(--govnl-button-icon-only-focus-border-color);
-  color: var(--govnl-button-icon-only-focus-color);
-}
-
-@mixin dictu-button--icon-only-disabled {
-  background-color: var(--govnl-button-icon-only-disabled-background-color);
-  border-color: var(--govnl-button-icon-only-disabled-border-color);
-  color: var(--govnl-button-icon-only-color);
+@mixin dictu-button--icon-only-small {
+  padding-block: var(--govnl-button-small-icon-only-padding-block-start)
+    var(--govnl-button-small-icon-only-padding-block-end);
+  padding-inline: var(--govnl-button-small-icon-only-padding-inline-start)
+    var(--govnl-button-small-icon-only-padding-inline-end);
 }

@@ -35,7 +35,7 @@
     "audit-ci": "^7.1.0",
     "eslint": "^9.29.0",
     "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-storybook": "^9.0.12",
+    "eslint-plugin-storybook": "^10.0.0",
     "glob": "^11.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
@@ -89,7 +89,7 @@
       "stylelint --fix",
       "prettier --write"
     ],
-    "*.{md,json,yaml,yml}": [
+    "*.{md,mdx,json,yaml,yml}": [
       "prettier --write"
     ],
     "package.json": [
@@ -104,7 +104,7 @@
     "http-server": "14.1.1"
   },
   "overrides": {
-    "expr-eval-fork": "3.0.0",
+    "expr-eval-fork": "3.0.1",
     "js-yaml": "3.14.2"
   },
   "size-limit": [

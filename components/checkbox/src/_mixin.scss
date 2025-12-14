@@ -1,0 +1,53 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin dictu-checkbox {
+  block-size: var(--govnl-checkbox-size);
+  border: var(--govnl-checkbox-unchecked-border-width) solid var(--govnl-checkbox-unchecked-border-color);
+  border-radius: var(--govnl-checkbox-border-radius);
+  inline-size: var(--govnl-checkbox-size);
+}
+
+@mixin dictu-checkbox--hover {
+  border: var(--govnl-checkbox-unchecked-hover-border-width) solid var(--govnl-checkbox-unchecked-hover-border-color);
+  color: var(--govnl-checkbox-unchecked-hover-color);
+}
+
+@mixin dictu-checkbox--active {
+  border: var(--govnl-checkbox-unchecked-active-border-width) solid var(--govnl-checkbox-unchecked-active-border-color);
+  color: var(--govnl-checkbox-unchecked-active-color);
+}
+
+@mixin dictu-checkbox--focus-visible {
+  accent-color: var(--govnl-checkbox-unchecked-focus-background-color);
+  border: var(--govnl-checkbox-unchecked-focus-visible-border-width) solid
+    var(--govnl-checkbox-unchecked-focus-border-color);
+  color: var(--govnl-checkbox-unchecked-focus-color);
+}
+
+@mixin dictu-checkbox--checked {
+  accent-color: var(--govnl-checkbox-checked-background-color);
+  border: var(--govnl-checkbox-checked-border-width) solid var(--govnl-checkbox-checked-border-color);
+  color: var(--govnl-checkbox-checked-color);
+}
+
+@mixin dictu-checkbox--checked-hover {
+  accent-color: var(--govnl-checkbox-checked-hover-background-color);
+  border: var(--govnl-checkbox-checked-hover-border-width) solid var(--govnl-checkbox-checked-hover-border-color);
+  color: var(--govnl-checkbox-checked-hover-color);
+}
+
+@mixin dictu-checkbox--checked-active {
+  accent-color: var(--govnl-checkbox-checked-active-background-color);
+  border: var(--govnl-checkbox-checked-active-border-width) solid var(--govnl-checkbox-checked-active-border-color);
+  color: var(--govnl-checkbox-checked-active-color);
+}
+
+@mixin dictu-checkbox--checked-focus-visible {
+  accent-color: var(--govnl-checkbox-checked-focus-background-color);
+  border: var(--govnl-checkbox-checked-focus-visible-border-width) solid
+    var(--govnl-checkbox-checked-focus-border-color);
+  color: var(--govnl-checkbox-checked-focus-color);
+}

@@ -1,22 +1,17 @@
+// This file has been automatically migrated to valid ESM format by Storybook.
 import { NodePackageImporter } from 'sass';
-import { createRequire } from 'node:module';
-import { dirname, join } from 'node:path';
 
-const require = createRequire(import.meta.url);
 const config = {
-  addons: [
-    getAbsolutePath('@storybook/addon-a11y'),
-    getAbsolutePath('@storybook/addon-docs'),
-    getAbsolutePath('storybook-addon-tag-badges'),
-  ],
+  addons: ['@storybook/addon-a11y', '@storybook/addon-docs', 'storybook-addon-tag-badges'],
+
   core: {
     disableTelemetry: true,
     disableWhatsNewNotifications: true,
-    builder: getAbsolutePath('@storybook/builder-vite'),
+    builder: '@storybook/builder-vite',
   },
 
   framework: {
-    name: getAbsolutePath('@storybook/html'),
+    name: '@storybook/html-vite',
   },
 
   staticDirs: [{ from: '../../../proprietary/assets/src', to: '/assets' }],
@@ -48,7 +43,3 @@ const config = {
 };
 
 export default config;
-
-function getAbsolutePath(value) {
-  return dirname(require.resolve(join(value, 'package.json')));
-}

@@ -32,7 +32,7 @@
     "clean": "rimraf ./dist/"
   },
   "devDependencies": {
-    "@dictu/button": "^3.0.0",
+    "@dictu/button": "^4.0.0",
     "@dictu/heading": "^3.0.0"
   }
 }
