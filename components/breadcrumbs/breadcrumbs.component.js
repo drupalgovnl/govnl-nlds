@@ -16,11 +16,11 @@ export const Breadcrumbs = ({ crumbs, classNames, isMobile }) => {
     classes: ['dictu-breadcrumbs__icon'],
   });
   const classes = ['dictu-breadcrumbs', ...(classNames || [])];
-  const breadcrumbNav = document.createElement('nav');
+  const breadcrumbs = document.createElement('nav');
   const breadcrumbList = document.createElement('ol');
 
-  breadcrumbNav.setAttribute('aria-label', 'Breadcrumb');
-  breadcrumbNav.classList.add(...classes);
+  breadcrumbs.setAttribute('aria-label', 'Breadcrumb');
+  breadcrumbs.classList.add(...classes);
   breadcrumbList.classList.add('dictu-breadcrumbs__list');
 
   crumbs.forEach((crumb, index) => {
@@ -50,9 +50,7 @@ export const Breadcrumbs = ({ crumbs, classNames, isMobile }) => {
         listItem.appendChild(chevronLeftIcon.cloneNode(true));
         listItem.appendChild(link);
       }
-    }
-
-    if (!isMobile) {
+    } else {
       listItem.appendChild(link);
 
       if (index !== crumbs.length - 1) {
@@ -63,7 +61,7 @@ export const Breadcrumbs = ({ crumbs, classNames, isMobile }) => {
     breadcrumbList.appendChild(listItem);
   });
 
-  breadcrumbNav.appendChild(breadcrumbList);
+  breadcrumbs.appendChild(breadcrumbList);
 
-  return breadcrumbNav;
+  return breadcrumbs;
 };
