@@ -1,0 +1,64 @@
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as SearchbarStories from './searchbar.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={SearchbarStories} title="Componenten/Searchbar" />
+
+<Title>Searchbar</Title>
+
+<Subtitle>
+  Een **searchbar**, ook wel zoekbalk genoemd, is een text input met een button op een website of
+  applicatie waarmee gebruikers snel relevante informatie of content kunnen vinden door zoektermen
+  of -zinnen in te typen.
+</Subtitle>
+
+<Canvas of={SearchbarStories.SearchbarDefault} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={SearchbarStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Search Bar component
+
+(nog in te vullen)
+
+## Richtlijnen
+
+(nog in te vullen)
+
+## Voorbeelden
+
+### Search Bar
+
+De default variant wordt in de meeste gevallen gebruikt. Hierbij wordt gebruik gemaakt van tekst in de button, omdat dit de toegankelijkheid verbeterd. Wanneer er ruimte is voor tekst wordt er altijd geadviseerd om tekst te gebruiken naast een icoon.
+
+<Canvas of={SearchbarStories.SearchbarDefault} />
+
+### Small variant
+
+De small variant is bedoelt voor in bijvoorbeeld de navigatie. Hierbij wordt geen gebruik gemaakt van tekst in de button, omdat er weinig ruimte is voor dit element.
+
+<Canvas of={SearchbarStories.SearchbarSmall} />
+
+## Relevante WCAG succescriteria
+
+(nog in te vullen)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Searchbar component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).

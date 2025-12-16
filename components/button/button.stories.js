@@ -1,6 +1,6 @@
 import './dist/index.css';
 import '@dictu/icon/dist/index.css';
-import { Button } from './button';
+import { Button } from './button.component';
 
 export default {
   args: {
