@@ -1,4 +1,4 @@
-import{j as e,M as l,T as c,S as o,C as i,A as h,h as m}from"./blocks-BZGJzuRg.js";import{useMDXComponents as a}from"./index-TJ0CsbKr.js";import{B as s,D as d,L as u,M as j}from"./breadcrumbs.stories-BhE9vqi7.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-Du7L6YIp.js";import"./link.component-C0Dy0Q2q.js";import"./icon.component-C3zd11FN.js";const b=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as c,S as o,C as i,A as h,h as m}from"./blocks-CIqg5mTn.js";import{useMDXComponents as a}from"./index-Bt6bb6sO.js";import{B as s,D as d,L as u,M as j}from"./breadcrumbs.stories-BhE9vqi7.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-BZgElRhX.js";import"./link.component-C0Dy0Q2q.js";import"./icon.component-C3zd11FN.js";const b=`<!-- @license CC0-1.0 -->
 
 ## De Breadcrumbs component implementeren
 
