@@ -1,0 +1,89 @@
+{/* breadcrumbs.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as BreadcrumbsStories from './breadcrumbs.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={BreadcrumbsStories} title="Componenten/Breadcrumbs" />
+
+<Title>Breadcrumbs</Title>
+
+<Subtitle>
+  De Breadcrumbs component toont de gebruiker het pad naar de huidige pagina binnen de website
+  structuur.
+</Subtitle>
+
+<Canvas of={BreadcrumbsStories.DefaultBreadcrumbs} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={BreadcrumbsStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Breadcrumbs component
+
+Gebruik breadcrumbs wanneer:
+
+- Je de gebruiker wilt laten zien waar deze zich bevindt in de hiërarchie van de website.
+- Je de gebruiker een snelle manier wilt bieden om naar bovenliggende niveaus te navigeren.
+- De website een diepe hiërarchische structuur heeft (meer dan 2 niveaus).
+
+## Wanneer gebruik je de Breadcrumbs component niet
+
+Gebruik geen breadcrumbs:
+
+- Op de homepage.
+- Als de website een platte structuur heeft.
+- Als vervanging voor de hoofdnavigatie.
+
+## Richtlijnen
+
+- Gebruik het `<nav>` element met een `aria-label="Breadcrumb"` om het navigatiegebied te markeren.
+- Gebruik een geordende lijst `<ol>` voor de items, omdat de volgorde van de hiërarchie belangrijk is.
+- Voeg `aria-current="page"` toe aan het laatste item in de lijst (de huidige pagina) om aan screenreaders door te geven dat dit de actieve pagina is.
+- Zorg dat alle items behalve de huidige pagina links zijn.
+
+## Voorbeelden
+
+### Standaard Breadcrumbs
+
+De standaard weergave van breadcrumbs toont het volledige pad.
+
+<Canvas of={BreadcrumbsStories.DefaultBreadcrumbs} />
+
+### Mobiele Breadcrumbs
+
+Op mobiele apparaten kan de ruimte beperkt zijn. In dit geval kan er gekozen worden om alleen de vorige pagina te tonen met een pijl terug.
+
+<Canvas of={BreadcrumbsStories.MobileBreadcrumbs} />
+
+## Afhankelijkheden
+
+De Breadcrumbs component maakt gebruik van de volgende componenten:
+
+- [Link component](?path=/docs/componenten-link--docs)
+- [Icon component](?path=/docs/componenten-icon--docs)
+
+## Relevante WCAG succescriteria
+
+- [WCAG succescriterium 1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
+- [WCAG succescriterium 2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html)
+- [WCAG succescriterium 2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
+- [WCAG succescriterium 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
+- [WCAG succescriterium 2.4.8](https://www.w3.org/WAI/WCAG21/Understanding/location.html)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Breadcrumbs component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
