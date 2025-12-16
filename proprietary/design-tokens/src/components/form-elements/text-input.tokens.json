@@ -35,7 +35,7 @@
       },
       "padding-block-start": {
         "$type": "dimension",
-        "$value": "{govnl.space.xs}"
+        "$value": "0rem"
       },
       "padding-inline-end": {
         "$type": "dimension",
@@ -43,7 +43,7 @@
       },
       "padding-block-end": {
         "$type": "dimension",
-        "$value": "{govnl.space.xs}"
+        "$value": "0rem"
       },
       "padding-inline-start": {
         "$type": "dimension",
@@ -141,7 +141,7 @@
       },
       "padding-block-start": {
         "$type": "dimension",
-        "$value": "{govnl.space.2xs}"
+        "$value": "0rem"
       },
       "padding-inline-end": {
         "$type": "dimension",
@@ -149,7 +149,7 @@
       },
       "padding-block-end": {
         "$type": "dimension",
-        "$value": "{govnl.space.2xs}"
+        "$value": "0rem"
       },
       "padding-inline-start": {
         "$type": "dimension",
