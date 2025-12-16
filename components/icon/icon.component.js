@@ -1,4 +1,4 @@
-export function Icon({ icon, label = '', classes }) {
+export function Icon({ icon, label = '', classes = [] }) {
   const componentClasses = ['dictu-icon', ...classes];
   const $icon = document.createElement('span');
 
