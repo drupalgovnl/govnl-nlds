@@ -1,4 +1,4 @@
-import{j as e,M as d,T as s,S as c,C as i,A as h,k as m}from"./blocks-Mcj_zkSB.js";import{useMDXComponents as a}from"./index-7NOiRaLD.js";import{L as l,a as r,b as j,c as b}from"./label.stories-23Q9H2og.js";import"./iframe-zh-4dt7S.js";import"./_commonjsHelpers-CqkleIqs.js";const u=`<!-- @license CC0-1.0 -->
+import{j as e,M as d,T as s,S as c,C as i,A as h,k as m}from"./blocks-DxTau7-9.js";import{useMDXComponents as a}from"./index-Xwn45u5m.js";import{L as l,a as r,b as j,c as b}from"./label.stories-23Q9H2og.js";import"./iframe-DR1yAQCr.js";import"./_commonjsHelpers-CqkleIqs.js";const u=`<!-- @license CC0-1.0 -->
 
 ## De Label component implementeren
 

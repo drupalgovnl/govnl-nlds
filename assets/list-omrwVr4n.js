@@ -1,4 +1,4 @@
-import{j as e,M as l,T as a,S as c,C as r,A as j,k as h}from"./blocks-Mcj_zkSB.js";import{useMDXComponents as d}from"./index-7NOiRaLD.js";import{L as t,U as s,O as m,I as x}from"./list.stories-YopHKJRs.js";import"./iframe-zh-4dt7S.js";import"./_commonjsHelpers-CqkleIqs.js";import"./icon.component-BiJB5nKt.js";/* empty css              */const g="";function o(i){const n={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...d(),...i.components};return e.jsxs(e.Fragment,{children:[`
+import{j as e,M as l,T as a,S as c,C as r,A as j,k as h}from"./blocks-DxTau7-9.js";import{useMDXComponents as d}from"./index-Xwn45u5m.js";import{L as t,U as s,O as m,I as x}from"./list.stories-YopHKJRs.js";import"./iframe-DR1yAQCr.js";import"./_commonjsHelpers-CqkleIqs.js";import"./icon.component-BiJB5nKt.js";/* empty css              */const g="";function o(i){const n={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...d(),...i.components};return e.jsxs(e.Fragment,{children:[`
 `,`
 `,e.jsx(l,{of:t,title:"Componenten/List"}),`
 `,e.jsx(a,{children:"List"}),`
