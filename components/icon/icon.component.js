@@ -1,5 +1,5 @@
-export function Icon({ icon, label = '', classes = ['dictu-icon'] }) {
-  const componentClasses = [...classes];
+export function Icon({ icon, label = '', classes }) {
+  const componentClasses = ['dictu-icon', ...classes];
   const $icon = document.createElement('span');
 
   if (label && label.length > 0) {

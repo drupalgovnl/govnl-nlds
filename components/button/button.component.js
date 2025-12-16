@@ -17,7 +17,7 @@ export function Button({ label, variant, iconPosition, icon, disabled, size, cla
   }
 
   if (icon) {
-    const $icon = new Icon({ icon });
+    const $icon = new Icon({ icon, classes: ['dictu-button__icon'] });
     $button.insertAdjacentElement(iconPosition === 'before' ? 'afterbegin' : 'beforeend', $icon);
   }
 

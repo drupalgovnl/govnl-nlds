@@ -1,0 +1,26 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "./mixin" as mixin;
+
+.dictu-breadcrumbs {
+  @include mixin.dictu-breadcrumbs;
+}
+
+.dictu-breadcrumbs__list {
+  @include mixin.dictu-breadcrumbs__list;
+}
+
+.dictu-breadcrumbs__list-item {
+  @include mixin.dictu-breadcrumbs__list-item;
+}
+
+.dictu-breadcrumbs__link {
+  @include mixin.dictu-breadcrumbs__link;
+}
+
+.dictu-breadcrumbs__icon {
+  @include mixin.dictu-breadcrumbs__icon;
+}

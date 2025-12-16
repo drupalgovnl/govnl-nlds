@@ -256,7 +256,7 @@
       "icon": {
         "size": {
           "$type": "dimension",
-          "$value": "1.125em"
+          "$value": "1em"
         }
       },
       "padding-block-end": {
