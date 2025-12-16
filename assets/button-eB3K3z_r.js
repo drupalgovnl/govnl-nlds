@@ -1,4 +1,4 @@
-import{j as e,M as l,T as c,S as a,C as i,A as h,h as u}from"./blocks-CIqg5mTn.js";import{useMDXComponents as d}from"./index-Bt6bb6sO.js";import{B as r,P as o,S as j,a as m,b as x,c as p,d as b,e as g,f as w,g as k}from"./button.stories-vVtDgw0e.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-BZgElRhX.js";/* empty css              *//* empty css              */import"./button-Cxw03G4z.js";import"./icon.component-C3zd11FN.js";const f=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as c,S as a,C as i,A as h,h as u}from"./blocks-C7Iv_egf.js";import{useMDXComponents as d}from"./index-zJfPsqaq.js";import{B as r,P as o,S as j,a as m,b as x,c as p,d as b,e as g,f as w,g as k}from"./button.stories-Cgb8BZZX.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-CifIXbgr.js";/* empty css              *//* empty css              */import"./button-DHuwf8xI.js";import"./icon.component-X7CMXdF1.js";const f=`<!-- @license CC0-1.0 -->
 
 ## De Button component implementeren
 

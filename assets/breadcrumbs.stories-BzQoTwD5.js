@@ -1,4 +1,4 @@
-import{L as b}from"./link.component-C0Dy0Q2q.js";import{I as m}from"./icon.component-C3zd11FN.js";const N=({crumbs:n,classNames:B,isMobile:y})=>{const M=m({icon:`<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+import{L as b}from"./link.component-C0Dy0Q2q.js";import{I as m}from"./icon.component-X7CMXdF1.js";const N=({crumbs:n,classNames:B,isMobile:y})=>{const M=m({icon:`<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52851 3.52864C5.78886 3.26829 6.21097 3.26829 6.47132 3.52864L10.4713 7.52864C10.7317 7.78899 10.7317 8.2111 10.4713 8.47144L6.47132 12.4714C6.21097 12.7318 5.78886 12.7318 5.52851 12.4714C5.26816 12.2111 5.26816 11.789 5.52851 11.5286L9.05711 8.00004L5.52851 4.47145C5.26816 4.2111 5.26816 3.78899 5.52851 3.52864Z" fill="#475569"/>
 </svg>
 `,classes:["dictu-breadcrumbs__icon"]}),H=m({icon:`<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +42,7 @@ import{L as b}from"./link.component-C0Dy0Q2q.js";import{I as m}from"./icon.compo
       link: '#'
     }]
   }
-}`,...(w=(v=i.parameters)==null?void 0:v.docs)==null?void 0:w.source}}};var L,C,S;t.parameters={...t.parameters,docs:{...(L=t.parameters)==null?void 0:L.docs,source:{originalSource:`{
+}`,...(w=(v=i.parameters)==null?void 0:v.docs)==null?void 0:w.source}}};var L,S,C;t.parameters={...t.parameters,docs:{...(L=t.parameters)==null?void 0:L.docs,source:{originalSource:`{
   args: {
     crumbs: [{
       label: 'Home',
@@ -61,4 +61,4 @@ import{L as b}from"./link.component-C0Dy0Q2q.js";import{I as m}from"./icon.compo
       defaultViewport: 'mobileSmall'
     }
   }
-}`,...(S=(C=t.parameters)==null?void 0:C.docs)==null?void 0:S.source}}};const E=["DefaultBreadcrumbs","SingleBreadcrumb","LongBreadcrumbs","MobileBreadcrumbs"],j=Object.freeze(Object.defineProperty({__proto__:null,DefaultBreadcrumbs:r,LongBreadcrumbs:i,MobileBreadcrumbs:t,SingleBreadcrumb:s,__namedExportsOrder:E,default:D},Symbol.toStringTag,{value:"Module"}));export{j as B,r as D,i as L,t as M};
+}`,...(C=(S=t.parameters)==null?void 0:S.docs)==null?void 0:C.source}}};const E=["DefaultBreadcrumbs","SingleBreadcrumb","LongBreadcrumbs","MobileBreadcrumbs"],j=Object.freeze(Object.defineProperty({__proto__:null,DefaultBreadcrumbs:r,LongBreadcrumbs:i,MobileBreadcrumbs:t,SingleBreadcrumb:s,__namedExportsOrder:E,default:D},Symbol.toStringTag,{value:"Module"}));export{j as B,r as D,i as L,t as M,s as S};
