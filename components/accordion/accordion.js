@@ -1,4 +1,4 @@
-import { Button } from '../button/button';
+import { Button } from '../button/button.component';
 
 export function Accordion({ label, content, headingLevel, ...args }) {
   const classes = ['dictu-accordion'];
@@ -18,8 +18,8 @@ export function Accordion({ label, content, headingLevel, ...args }) {
     iconPosition: 'after',
     icon: icon,
     disabled: false,
+    classNames: ['dictu-accordion__button'],
   });
-  $button.classList.add('dictu-accordion__button');
   $button.setAttribute('aria-expanded', args.expanded);
   $heading.appendChild($button);
 

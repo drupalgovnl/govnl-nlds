@@ -1,5 +1,5 @@
-export function TextInput({ id, placeholder, size, error, classNames }) {
-  const classes = ['dictu-text-input', ...classNames.split(' ').filter(cn => cn)];
+export function TextInput({ id, placeholder, size, error, classNames = [] }) {
+  const classes = ['dictu-text-input', ...classNames];
   const $textInput = document.createElement('input');
 
   $textInput.id = id;

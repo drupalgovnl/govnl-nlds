@@ -1,8 +1,13 @@
 import { Button } from '../button/button.component';
 import { TextInput } from '../text-input/text-input.component';
 
-export function Searchbar({ id, placeholder, size, label, icon, classNames = '' }) {
-  const classes = ['dictu-searchbar', ...classNames.split(' ').filter(cn => cn)];
+export function Searchbar({ id, placeholder, size, label, icon, classNames = [] }) {
+  const classes = ['dictu-searchbar', ...classNames];
+  const inputClasses = ['dictu-searchbar__input'];
+
+  if (size === 'small') {
+    inputClasses.push('dictu-searchbar__input');
+  }
 
   const $searchbar = document.createElement('div');
 
@@ -10,7 +15,7 @@ export function Searchbar({ id, placeholder, size, label, icon, classNames = '' 
     id,
     placeholder,
     size,
-    classNames: `dictu-searchbar__input ${size === 'small' ? 'dictu-searchbar__input--small' : null}`,
+    classNames: inputClasses,
   });
 
   const $searchButton = new Button({
@@ -19,7 +24,7 @@ export function Searchbar({ id, placeholder, size, label, icon, classNames = '' 
     iconPosition: 'before',
     icon,
     size,
-    classNames: 'dictu-searchbar__button',
+    classNames: ['dictu-searchbar__button'],
   });
 
   $searchbar.appendChild($searchInput);

@@ -1,12 +1,7 @@
 import { Icon } from '../icon/icon.component';
 
-export function Button({ label, variant, iconPosition, icon, disabled, size, classNames = '' }) {
-  const classes = [
-    'dictu-button',
-    `dictu-button--${variant}`,
-    'dictu-focus-ring',
-    ...classNames.split(' ').filter(cn => cn),
-  ];
+export function Button({ label, variant, iconPosition, icon, disabled, size, classNames = [] }) {
+  const classes = ['dictu-button', `dictu-button--${variant}`, 'dictu-focus-ring', ...classNames];
   const $button = document.createElement('button');
 
   $button.textContent = label;

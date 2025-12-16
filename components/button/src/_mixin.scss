@@ -5,6 +5,7 @@
 
 :root {
   --govnl-button-justify-content: center;
+  --govnl-icon-size: var(--govnl-button-icon-size);
 }
 
 @mixin dictu-button {
@@ -19,6 +20,7 @@
   font-size: var(--govnl-button-font-size);
   gap: calc(var(--govnl-button-column-gap));
   justify-content: var(--govnl-button-justify-content);
+  min-block-size: var(--govnl-button-min-block-size);
   padding-block: var(--govnl-button-padding-block-start) var(--govnl-button-padding-block-end);
   padding-inline: var(--govnl-button-padding-inline-start) var(--govnl-button-padding-inline-end);
   scale: 1;
@@ -125,8 +127,8 @@
 @mixin dictu-button--small {
   column-gap: var(--govnl-button-small-column-gap);
   font-size: var(--govnl-button-small-font-size);
-  min-block-size: var(--govnl-button-small-min-inline-size);
-  min-inline-size: var(--govnl-button-small-min-block-size);
+  min-block-size: var(--govnl-button-small-min-block-size);
+  min-inline-size: var(--govnl-button-small-min-inline-size);
   padding-block: var(--govnl-button-small-padding-block-start) var(--govnl-button-small-padding-block-end);
   padding-inline: var(--govnl-button-small-padding-inline-start) var(--govnl-button-small-padding-inline-end);
 }
