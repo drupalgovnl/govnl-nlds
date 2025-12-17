@@ -28,3 +28,7 @@
 .dictu-text-input--error {
   @include mixin.dictu-text-input--error;
 }
+
+.dictu-text-input--read-only {
+  @include mixin.dictu-text-input--read-only;
+}

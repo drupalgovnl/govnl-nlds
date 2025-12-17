@@ -1,5 +1,5 @@
-export function TextInput({ id, placeholder, size, error, classNames = [] }) {
-  const classes = ['dictu-text-input', ...classNames];
+export function TextInput({ id, placeholder, size, error, disabled, classNames = [] }) {
+  const classes = ['dictu-text-input', 'dictu-focus-ring', ...classNames];
   const $textInput = document.createElement('input');
 
   $textInput.id = id;
@@ -12,6 +12,10 @@ export function TextInput({ id, placeholder, size, error, classNames = [] }) {
 
   if (error) {
     $textInput.classList.add('dictu-text-input--error');
+  }
+  if (disabled) {
+    $textInput.classList.add('dictu-text-input--read-only');
+    $textInput.setAttribute('disabled', '');
   }
 
   if (placeholder) {

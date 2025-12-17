@@ -1,5 +1,5 @@
 ---
-"@dictu/text-input": patch
+"@dictu/text-input": major
 "@dictu/label": patch
 ---
 

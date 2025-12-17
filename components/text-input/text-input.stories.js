@@ -6,6 +6,7 @@ export default {
     size: 'default',
     error: false,
     placeholder: '',
+    disabled: false,
   },
   argTypes: {
     id: {
@@ -24,6 +25,10 @@ export default {
       control: 'radio',
       description: 'Grootte van de text input',
       options: ['default', 'small'],
+    },
+    disabled: {
+      control: 'boolean',
+      description: 'De disabled state van de text input',
     },
   },
   component: TextInput,
@@ -51,9 +56,16 @@ export const TextInputError = {
   },
 };
 
-export const TextInputPlaceholder = {
+export const TextInputReadOnly = {
   args: {
     id: 'text-input-4',
+    disabled: true,
+  },
+};
+
+export const TextInputPlaceholder = {
+  args: {
+    id: 'text-input-5',
     placeholder: 'Dit is een placeholder',
   },
 };
