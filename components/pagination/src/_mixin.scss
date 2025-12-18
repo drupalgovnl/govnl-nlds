@@ -1,0 +1,74 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin dictu-pagination {
+  align-items: center;
+  column-gap: var(--govnl-pagination-column-gap);
+  display: flex;
+}
+
+@mixin dictu-pagination__link {
+  padding-block: var(--govnl-pagination-page-link-padding-block-start)
+    var(--govnl-pagination-page-link-padding-block-end);
+  padding-inline: var(--govnl-pagination-page-link-padding-inline-start)
+    var(--govnl-pagination-page-link-padding-inline-end);
+}
+
+@mixin dictu-pagination__current {
+  background-color: var(--govnl-pagination-page-link-current-page-background-color);
+  border-color: var(--govnl-pagination-page-link-current-page-border-color);
+  color: var(--govnl-pagination-page-link-current-page-color);
+  font-family: var(--govnl-pagination-page-link-current-page-font-family);
+  font-size: var(--govnl-pagination-page-link-current-page-font-size);
+  font-weight: var(--govnl-pagination-page-link-current-page-font-weight);
+  padding-block: var(--govnl-pagination-page-link-padding-block-start)
+    var(--govnl-pagination-page-link-padding-block-end);
+  padding-inline: var(--govnl-pagination-page-link-padding-inline-start)
+    var(--govnl-pagination-page-link-padding-inline-end);
+}
+
+@mixin dictu-pagination__relative-link {
+  --govnl-icon-size: var(--govnl-pagination-relative-link-icon-size);
+
+  column-gap: var(--govnl-pagination-relative-link-column-gap);
+}
+
+@mixin dictu-pagination__relative-link-focus {
+  background-color: var(--govnl-pagination-relative-link-focus-background-color);
+  border-color: var(--govnl-pagination-relative-link-focus-border-color);
+  color: var(--govnl-pagination-relative-link-focus-color);
+}
+
+@mixin dictu-pagination__relative-link-previous {
+  padding-block: var(--govnl-pagination-relative-link-large-previous-padding-block-start)
+    var(--govnl-pagination-relative-link-large-previous-padding-block-end);
+  padding-inline: var(--govnl-pagination-relative-link-large-previous-padding-inline-start)
+    var(--govnl-pagination-relative-link-large-previous-padding-inline-end);
+}
+
+@mixin dictu-pagination__relative-link-next {
+  padding-block: var(--govnl-pagination-relative-link-large-next-padding-block-start)
+    var(--govnl-pagination-relative-link-large-next-padding-block-end);
+  padding-inline: var(--govnl-pagination-relative-link-large-next-padding-inline-start)
+    var(--govnl-pagination-relative-link-large-next-padding-inline-end);
+}
+
+@mixin dictu-pagination__relative-link-previous--small {
+  padding-block: var(--govnl-pagination-relative-link-small-previous-padding-block-start)
+    var(--govnl-pagination-relative-link-small-previous-padding-block-end);
+  padding-inline: var(--govnl-pagination-relative-link-small-previous-padding-inline-start)
+    var(--govnl-pagination-relative-link-small-previous-padding-inline-end);
+}
+
+@mixin dictu-pagination__relative-link-next--small {
+  padding-block: var(--govnl-pagination-relative-link-small-next-padding-block-start)
+    var(--govnl-pagination-relative-link-small-next-padding-block-end);
+  padding-inline: var(--govnl-pagination-relative-link-small-next-padding-inline-start)
+    var(--govnl-pagination-relative-link-small-next-padding-inline-end);
+}
+
+@mixin dictu-pagination__ellipses {
+  // --govnl-pagination-ellipses: var(--govnl-document-subtle-color);
+}
