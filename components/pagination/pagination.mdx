@@ -1,0 +1,59 @@
+{/* label.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as PaginationStories from './pagination.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={PaginationStories} title="Componenten/Pagination" />
+
+<Title>Pagination</Title>
+
+<Subtitle>
+  Paginering, paginatie of in het Engels pagination, is een techniek waarbij grote hoeveelheden
+  informatie opgedeeld wordt in kleinere delen die op afzonderlijke pagina's worden weergegeven.
+</Subtitle>
+
+<Canvas of={PaginationStories.PaginationDefault} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={PaginationStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Pagination component
+
+[...]
+
+## Richtlijnen
+
+[...]
+
+## Voorbeelden
+
+### Label
+
+<Canvas of={PaginationStories.PaginationDefault} />
+
+<Canvas of={PaginationStories.PaginationSmall} />
+
+## Relevante WCAG succescriteria
+
+(nog in te vullen)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Label component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).
