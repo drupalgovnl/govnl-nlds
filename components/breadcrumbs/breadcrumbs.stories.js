@@ -1,14 +1,11 @@
 import './dist/index.css';
-
+import '@dictu/link/dist/index.css';
+import '@dictu/icon/dist/index.css';
 import { Breadcrumbs } from './breadcrumbs.component';
 
 const meta = {
   args: {
-    crumbs: [
-      { label: 'Home', link: '/' },
-      { label: 'Category 1', link: '/category1' },
-      { label: 'Subcategory', link: '/category1/subcategory' },
-    ],
+    crumbs: [{ label: 'Home', link: '/' }, { label: 'Category 1', link: '/category1' }, { label: 'Subcategory' }],
     classNames: [],
     isMobile: false,
   },
@@ -35,11 +32,7 @@ export default meta;
 
 export const DefaultBreadcrumbs = {
   args: {
-    crumbs: [
-      { label: 'Home', link: '/' },
-      { label: 'Pagina', link: '#' },
-      { label: 'Subpagina', link: '#' },
-    ],
+    crumbs: [{ label: 'Home', link: '/' }, { label: 'Pagina', link: '#' }, { label: 'Subpagina' }],
   },
 };
 
@@ -56,18 +49,14 @@ export const LongBreadcrumbs = {
       { label: 'Pagina', link: '#' },
       { label: 'Subpagina', link: '#' },
       { label: 'Onderwerp', link: '#' },
-      { label: 'Details', link: '#' },
+      { label: 'Details' },
     ],
   },
 };
 
 export const MobileBreadcrumbs = {
   args: {
-    crumbs: [
-      { label: 'Home', link: '/' },
-      { label: 'Pagina', link: '#' },
-      { label: 'Subpagina', link: '#' },
-    ],
+    crumbs: [{ label: 'Home', link: '/' }, { label: 'Pagina', link: '#' }, { label: 'Subpagina' }],
     isMobile: true,
   },
   parameters: {
