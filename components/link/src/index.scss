@@ -19,7 +19,9 @@
 
 .dictu-link:focus,
 .dictu-link:focus-visible {
-  @include mixin.dictu-link--focus;
+  &:not(:active) {
+    @include mixin.dictu-link--focus;
+  }
 }
 
 .dictu-link--inline-box {
