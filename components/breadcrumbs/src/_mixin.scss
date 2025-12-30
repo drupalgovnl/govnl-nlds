@@ -33,15 +33,25 @@
   padding-block: var(--govnl-breadcrumb-nav-link-padding-block-start) var(--govnl-breadcrumb-nav-link-padding-block-end);
   padding-inline: var(--govnl-breadcrumb-nav-link-padding-inline-start)
     var(--govnl-breadcrumb-nav-link-padding-inline-end);
+}
 
-  &:focus-visible {
-    background: var(--govnl-breadcrumb-nav-link-focus-visible-background-color);
-    color: var(--govnl-breadcrumb-nav-link-focus-visible-color);
-  }
+@mixin dictu-breadcrumbs__link--mobile {
+  padding-block: var(--govnl-breadcrumb-nav-link-mobile-padding-block-start)
+    var(--govnl-breadcrumb-nav-link-mobile-padding-block-end);
+  padding-inline: var(--govnl-breadcrumb-nav-link-mobile-padding-inline-start)
+    var(--govnl-breadcrumb-nav-link-mobile-padding-inline-end);
 }
 
 @mixin dictu-breadcrumbs__icon {
-  --govnl-icon-size: 1em;
+  --govnl-icon-size: var(--govnl-breadcrumb-nav-separator-size);
 
   color: var(--govnl-breadcrumb-nav-separator-color);
+}
+
+@mixin dictu-breadcrumbs__current {
+  color: var(--govnl-breadcrumb-nav-link-current-color);
+  padding-block: var(--govnl-breadcrumb-nav-current-padding-block-start)
+    var(--govnl-breadcrumb-nav-current-padding-block-end);
+  padding-inline: var(--govnl-breadcrumb-nav-current-padding-inline-start)
+    var(--govnl-breadcrumb-nav-current-padding-inline-end);
 }

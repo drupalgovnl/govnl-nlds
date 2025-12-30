@@ -23,45 +23,52 @@ export const Breadcrumbs = ({ crumbs, classNames, isMobile }) => {
   breadcrumbs.classList.add(...classes);
   breadcrumbList.classList.add('dictu-breadcrumbs__list');
 
-  crumbs.forEach((crumb, index) => {
-    if (!crumb.label || !crumb.link) return;
+  if (isMobile) {
+    // breadcrumbs should always have at least 2 levels: the current level and one above.
+    if (!crumbs.length >= 1) return;
 
-    const listItem = document.createElement('li');
-    listItem.classList.add('dictu-breadcrumbs__list-item');
-    let link = Link({
+    const listItem = createBreadcrumbListItem(crumbs.at(crumbs.length - 2));
+
+    listItem.insertAdjacentElement('afterbegin', chevronLeftIcon.cloneNode(true));
+
+    breadcrumbList.appendChild(listItem);
+  } else {
+    crumbs.forEach((crumb, index) => {
+      const listItem = createBreadcrumbListItem(crumb);
+
+      if (index !== crumbs.length - 1) {
+        listItem.insertAdjacentElement('beforeend', chevronRightIcon.cloneNode(true));
+      }
+
+      breadcrumbList.appendChild(listItem);
+    });
+  }
+
+  breadcrumbs.appendChild(breadcrumbList);
+
+  return breadcrumbs;
+};
+
+const createBreadcrumbListItem = crumb => {
+  if (!crumb.label) return;
+
+  const listItem = document.createElement('li');
+  listItem.classList.add('dictu-breadcrumbs__list-item');
+
+  if (crumb.link) {
+    const link = Link({
       content: `${crumb.label}`,
       href: crumb.link,
       classNames: 'dictu-breadcrumbs__link',
     });
 
-    if (index === crumbs.length - 1) {
-      link = Link({
-        content: crumb.label,
-        href: crumb.link,
-        classNames: 'dictu-breadcrumbs__link',
-      });
-      link.setAttribute('aria-current', 'page');
-      link.classList.add('dictu-breadcrumbs__link--current');
-    }
+    listItem.appendChild(link);
+  } else {
+    const content = document.createElement('span');
+    content.innerHTML = crumb.label;
+    content.classList.add('dictu-breadcrumbs__current');
+    listItem.appendChild(content);
+  }
 
-    // if isMobile, add left chevron and only show the last crumb
-    if (isMobile) {
-      if (index === crumbs.length - 1 && crumbs.length >= 1) {
-        listItem.appendChild(chevronLeftIcon.cloneNode(true));
-        listItem.appendChild(link);
-      }
-    } else {
-      listItem.appendChild(link);
-
-      if (index !== crumbs.length - 1) {
-        listItem.appendChild(chevronRightIcon.cloneNode(true));
-      }
-    }
-
-    breadcrumbList.appendChild(listItem);
-  });
-
-  breadcrumbs.appendChild(breadcrumbList);
-
-  return breadcrumbs;
+  return listItem;
 };
