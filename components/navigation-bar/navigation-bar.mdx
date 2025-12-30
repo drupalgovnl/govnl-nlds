@@ -1,0 +1,42 @@
+{/* accordion.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Controls,
+} from '@storybook/addon-docs/blocks';
+import * as NavigationBarStories from './navigation-bar.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={NavigationBarStories} title="Componenten/Navigation Bar" />
+
+<Title>Navigation Bar</Title>
+
+<Subtitle>/</Subtitle>
+
+<Canvas of={NavigationBarStories.NavigationBarDefault} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={NavigationBarStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Voorbeelden
+
+### Navigation Bar
+
+<Canvas of={NavigationBarStories.NavigationBarDefault} />
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Navigation Bar component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).
