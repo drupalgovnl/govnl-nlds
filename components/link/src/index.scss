@@ -17,7 +17,6 @@
   @include mixin.dictu-link--active;
 }
 
-.dictu-link:focus,
 .dictu-link:focus-visible {
   &:not(:active) {
     @include mixin.dictu-link--focus;
