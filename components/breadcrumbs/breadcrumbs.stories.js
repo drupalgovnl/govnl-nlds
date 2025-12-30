@@ -36,12 +36,6 @@ export const DefaultBreadcrumbs = {
   },
 };
 
-export const SingleBreadcrumb = {
-  args: {
-    crumbs: [{ label: 'Home', link: '/' }],
-  },
-};
-
 export const LongBreadcrumbs = {
   args: {
     crumbs: [
