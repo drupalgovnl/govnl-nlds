@@ -1,4 +1,4 @@
-import{j as e,M as d,T as h,S as a,C as i,A as l,h as m}from"./blocks-Bz9OdMdA.js";import{useMDXComponents as s}from"./index-CaUtAhQ8.js";import{C as t,D as r,a as x}from"./checkbox.stories-B02oO6Zy.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-y-4uJzyQ.js";/* empty css              */const j=`<!-- @license CC0-1.0 -->
+import{j as e,M as d,T as h,S as a,C as i,A as l,h as m}from"./blocks-D0D1OJ2o.js";import{useMDXComponents as s}from"./index-lrSs_UO1.js";import{C as t,D as r,a as x}from"./checkbox.stories-B02oO6Zy.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-DT7fMKM4.js";/* empty css              */const j=`<!-- @license CC0-1.0 -->
 
 ## De Checkbox component implementeren
 
