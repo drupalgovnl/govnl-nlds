@@ -1,4 +1,4 @@
-import{j as e,M as l,T as c,S as o,C as i,A as h,h as m}from"./blocks-CyzwBsGP.js";import{useMDXComponents as a}from"./index-Y2f7z4mY.js";import{B as s,D as d,S as u,L as j,M as b}from"./breadcrumbs.stories-BzQoTwD5.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-FCxRoLha.js";import"./link.component-C0Dy0Q2q.js";import"./icon.component-X7CMXdF1.js";const p=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as c,S as o,C as i,A as h,h as m}from"./blocks-CeYOgd5x.js";import{useMDXComponents as a}from"./index-Doj5pd5l.js";import{B as s,D as d,S as u,L as j,M as b}from"./breadcrumbs.stories-C8oUXQpG.js";import"./preload-helper-Z2-GuEqQ.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-CFq4E-HJ.js";/* empty css              *//* empty css              */import"./link.component-C0Dy0Q2q.js";import"./icon.component-X7CMXdF1.js";const p=`<!-- @license CC0-1.0 -->
 
 ## De Breadcrumbs component implementeren
 
@@ -81,4 +81,4 @@ structuur.`})}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function B(r={}){const{wrapper:n}={...a(),...r.components};return n?e.jsx(n,{...r,children:e.jsx(t,{...r})}):t(r)}export{B as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function G(r={}){const{wrapper:n}={...a(),...r.components};return n?e.jsx(n,{...r,children:e.jsx(t,{...r})}):t(r)}export{G as default};
