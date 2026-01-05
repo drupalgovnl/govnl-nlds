@@ -10,6 +10,10 @@
   @include mixin.dictu-button;
 }
 
+.dictu-button__icon {
+  @include mixin.dictu-button__icon;
+}
+
 .dictu-button--primary-action {
   @include mixin.dictu-button--primary-action;
 }

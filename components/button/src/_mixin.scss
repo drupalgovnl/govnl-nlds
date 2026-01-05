@@ -28,6 +28,10 @@
   user-select: none;
 }
 
+@mixin dictu-button__icon {
+  flex-shrink: 0;
+}
+
 @mixin dictu-button--primary-action {
   background-color: var(--govnl-button-primary-action-background-color);
   border-color: var(--govnl-button-primary-action-border-color);

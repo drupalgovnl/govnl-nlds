@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 2.4.0
+
+### Minor Changes
+
+- 24e1b37: Changed tokens for button, input
+
 ## 2.3.1
 
 ### Patch Changes

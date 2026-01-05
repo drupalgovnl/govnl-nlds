@@ -19,8 +19,16 @@
 
 .dictu-breadcrumbs__link {
   @include mixin.dictu-breadcrumbs__link;
+
+  @media (width <= 48em) {
+    @include mixin.dictu-breadcrumbs__link--mobile;
+  }
 }
 
 .dictu-breadcrumbs__icon {
   @include mixin.dictu-breadcrumbs__icon;
+}
+
+.dictu-breadcrumbs__current {
+  @include mixin.dictu-breadcrumbs__current;
 }

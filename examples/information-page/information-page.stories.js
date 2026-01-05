@@ -21,9 +21,6 @@ import '@dictu/paragraph/dist/index.css';
 import '@dictu/rich-text/dist/index.css';
 import '@dictu/skip-link/dist/index.css';
 
-// import default component data
-import { DefaultFooterData } from '../../components/page-footer/page-footer.stories.js';
-
 export default {
   title: 'Voorbeelden/Informatiepagina',
   parameters: {
@@ -315,7 +312,7 @@ export const InformationPage = {
     const main = document.createElement('main');
     main.classList.add('dictu-page-main');
 
-    const footer = createFooter(DefaultFooterData);
+    const footer = createFooter();
 
     // Create logo
     const logo = createLogo({ title: 'Dictu', subtitle: 'Ministerie van Economische Zaken' });

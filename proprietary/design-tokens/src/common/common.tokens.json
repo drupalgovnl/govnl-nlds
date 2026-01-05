@@ -422,6 +422,10 @@
       "outline-width": {
         "$type": "other",
         "$value": "{govnl.border.border-width.md}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{govnl.color.geel.500}"
       }
     },
     "gap-content": {
