@@ -1,5 +1,11 @@
 # @dictu/rich-text
 
+## 4.0.0
+
+### Major Changes
+
+- de4b2eb: Deprecated Rich Text component
+
 ## 3.4.0
 
 ### Minor Changes
