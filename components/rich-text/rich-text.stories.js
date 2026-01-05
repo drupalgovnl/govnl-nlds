@@ -2,6 +2,8 @@ import './dist/index.css';
 import defaultDocs from './docs/_rich-text.md?raw';
 import readme from './README.md?raw';
 
+// DEPRECATED: Rich Text component is deprecated and will be removed in future releases.
+
 export default {
   args: {
     content: `
@@ -92,7 +94,7 @@ export default {
 
     return container;
   },
-  tags: ['autodocs'],
+  tags: ['deprecated', 'autodocs'],
   title: 'Componenten/Rich Text',
 };
 
