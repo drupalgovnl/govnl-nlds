@@ -1,0 +1,80 @@
+{/* page-footer.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as PageFooterStories from './page-footer.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={PageFooterStories} title="Componenten/Page Footer" />
+
+<Title>Page Footer</Title>
+
+<Subtitle>De page-footer component toont de voettekst van het Dictu Design Systeem.</Subtitle>
+
+<Canvas of={PageFooterStories.DefaultPageFooter} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={PageFooterStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Breadcrumbs component
+
+(nog in te vullen)
+
+## Wanneer gebruik je de Breadcrumbs component niet
+
+(nog in te vullen)
+
+## Richtlijnen
+
+- Gebruik altijd de `.dictu-page-footer` class voor de voettekst.
+- Gebruik semantische HTML: `<footer role="contentinfo">` voor de
+  hoofdcontainer.
+- Voeg een `lang` attribuut toe om de taal aan te geven.
+- Gebruik logische heading niveaus voor de structuur.
+- Zorg voor goede focus-states en toetsenbordnavigatie voor alle links.
+
+## Voorbeelden
+
+<Canvas of={PageFooterStories.DefaultPageFooter} />
+
+## Minimale page footer
+
+Een minimale variant van de PageFooter met alleen een hoofdtekst en geen kolommen voor eenvoudige use cases.
+
+<Canvas of={PageFooterStories.MinimalPageFooter} />
+
+### Page Footer met alleen kolommen
+
+Een minimale variant van de PageFooter met alleen kolommen.
+
+<Canvas of={PageFooterStories.MinimalPageFooterOnlyColumns} />
+
+## Afhankelijkheden
+
+De Page Footer component maakt gebruik van de volgende componenten:
+
+- [Link component](?path=/docs/componenten-link--docs)
+- [Icon component](?path=/docs/componenten-icon--docs)
+
+## Relevante WCAG succescriteria
+
+(nog in te vullen)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Page Footer component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).

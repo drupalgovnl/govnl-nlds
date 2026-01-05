@@ -1,5 +1,18 @@
 # @dictu/link
 
+## 2.3.2
+
+### Patch Changes
+
+- afdea81: Removed focus styling, kept focus-visible
+
+## 2.3.1
+
+### Patch Changes
+
+- 5b502a5: Fixed focus and focus-visible states styling overrulling active state
+  style
+
 ## 2.3.0
 
 ### Minor Changes
