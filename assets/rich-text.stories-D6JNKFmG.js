@@ -3,6 +3,11 @@
 Gebruik in CSS de \`.dictu-rich-text\` class name.
 `,p=`<!-- @license CC0-1.0 -->
 
+> **Let op: De RichText component is verouderd en zal geen verdere updates
+> krijgen. **
+>
+> Gebruik in plaats daarvan de losse componenten.
+
 De Rich Text component voegt standaard styling toe aan platte HTML waar je geen
 controle over hebt, zoals content uit een CMS.
 
@@ -88,7 +93,7 @@ componenten ook hebt ingeladen als je dit component gebruikt.
           </tr>
         </tbody>
       </table>
-    `,id:"rich-text-1"},argTypes:{content:{control:"text",description:"De HTML inhoud van de rich-text component"},id:{control:"text",description:"Container ID voor navigatie en toegankelijkheid"}},parameters:{docs:{description:{component:p}}},render:({content:e,id:d})=>{const t=document.createElement("div");if(t.classList.add("dictu-rich-text"),t.setAttribute("id",d),e){if(typeof e=="string"){const s=new DOMParser().parseFromString(e,"text/html"),i=document.createDocumentFragment();Array.from(s.body.childNodes).forEach(l=>{i.appendChild(l.cloneNode(!0))}),t.appendChild(i)}e instanceof HTMLElement&&t.appendChild(e)}return t},tags:["autodocs"],title:"Componenten/Rich Text"},n={args:{},parameters:{docs:{description:{story:c}}}};var o,r,a;n.parameters={...n.parameters,docs:{...(o=n.parameters)==null?void 0:o.docs,source:{originalSource:`{
+    `,id:"rich-text-1"},argTypes:{content:{control:"text",description:"De HTML inhoud van de rich-text component"},id:{control:"text",description:"Container ID voor navigatie en toegankelijkheid"}},parameters:{docs:{description:{component:p}}},render:({content:e,id:d})=>{const t=document.createElement("div");if(t.classList.add("dictu-rich-text"),t.setAttribute("id",d),e){if(typeof e=="string"){const s=new DOMParser().parseFromString(e,"text/html"),i=document.createDocumentFragment();Array.from(s.body.childNodes).forEach(l=>{i.appendChild(l.cloneNode(!0))}),t.appendChild(i)}e instanceof HTMLElement&&t.appendChild(e)}return t},tags:["deprecated","autodocs"],title:"Componenten/Rich Text"},n={args:{},parameters:{docs:{description:{story:c}}}};var o,r,a;n.parameters={...n.parameters,docs:{...(o=n.parameters)==null?void 0:o.docs,source:{originalSource:`{
   args: {},
   parameters: {
     docs: {

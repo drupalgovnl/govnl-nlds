@@ -1,4 +1,4 @@
-/* empty css              *//* empty css              */import{L as B}from"./link.component-C0Dy0Q2q.js";import{I as d}from"./icon.component-X7CMXdF1.js";const y=({crumbs:e,classNames:a,isMobile:n})=>{const w=d({icon:`<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+/* empty css              *//* empty css              */import{L as B}from"./link.component-DvYbsg82.js";import{I as d}from"./icon.component-X7CMXdF1.js";const y=({crumbs:e,classNames:a,isMobile:n})=>{const w=d({icon:`<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52851 3.52864C5.78886 3.26829 6.21097 3.26829 6.47132 3.52864L10.4713 7.52864C10.7317 7.78899 10.7317 8.2111 10.4713 8.47144L6.47132 12.4714C6.21097 12.7318 5.78886 12.7318 5.52851 12.4714C5.26816 12.2111 5.26816 11.789 5.52851 11.5286L9.05711 8.00004L5.52851 4.47145C5.26816 4.2111 5.26816 3.78899 5.52851 3.52864Z" fill="#475569"/>
 </svg>
 `,classes:["dictu-breadcrumbs__icon"]}),_=d({icon:`<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

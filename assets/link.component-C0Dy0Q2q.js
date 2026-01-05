@@ -1,1 +1,0 @@
-const a=({content:i,href:e,classNames:s=""})=>{const d=document.createElement("a");d.classList.add("dictu-link",...s.split(" ").filter(r=>r));const l=(i==null?void 0:i.nodeType)!==void 0;return d.href=e,l?d.appendChild(i):d.innerHTML=i,d};export{a as L};

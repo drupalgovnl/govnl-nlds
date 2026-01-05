@@ -1,4 +1,4 @@
-/* empty css              */import{L as o}from"./link.component-C0Dy0Q2q.js";const s=`<!-- @license CC0-1.0 -->
+/* empty css              */import{L as o}from"./link.component-DvYbsg82.js";const s=`<!-- @license CC0-1.0 -->
 
 Een verwijzing om een een externe bron of bestand te openen of te navigeren
 binnen dezelfde pagina of website.
