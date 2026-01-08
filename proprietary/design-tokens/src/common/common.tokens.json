@@ -489,6 +489,20 @@
         "$type": "dimension",
         "$value": "calc(5 * {govnl.dimension.size.2000})"
       }
+    },
+    "rh": {
+      "min": {
+        "border-radius": {
+          "$type": "borderRadius",
+          "$value": "20px"
+        }
+      },
+      "max": {
+        "border-radius": {
+          "$type": "borderRadius",
+          "$value": "40px"
+        }
+      }
     }
   }
 }
