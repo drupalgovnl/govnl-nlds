@@ -352,7 +352,7 @@
       "accent": {
         "background-color": {
           "$type": "color",
-          "$value": "{govnl.color.grijs.200}"
+          "$value": "{govnl.color.grijs.300}"
         }
       }
     },
