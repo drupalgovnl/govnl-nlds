@@ -43,6 +43,10 @@
   @include mixin.dictu-table__cell;
 }
 
+.dictu-table__cell-accent {
+  @include mixin.dictu-table__cell-accent;
+}
+
 .dictu-table__cell--align-end {
   @include mixin.dictu-table__cell--align-end;
 }
