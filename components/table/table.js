@@ -1,4 +1,4 @@
-export function Table({ data, caption, responsive }) {
+export const Table = ({ data, caption, responsive }) => {
   const classes = ['dictu-table'];
   const $table = createTable(data, caption);
   $table.classList.add(...classes);
@@ -12,9 +12,9 @@ export function Table({ data, caption, responsive }) {
   }
 
   return $table;
-}
+};
 
-function createTable(data, caption) {
+const createTable = (data, caption) => {
   const $table = document.createElement('table');
   const $tableHead = createTableSection('thead', 'dictu-table__head');
   const $tableBody = createTableSection('tbody', 'dictu-table__body');
@@ -53,16 +53,16 @@ function createTable(data, caption) {
   }
 
   return $table;
-}
+};
 
-function createTableSection(tag, className) {
+const createTableSection = (tag, className) => {
   const $tableSection = document.createElement(tag);
   $tableSection.classList.add(className);
 
   return $tableSection;
-}
+};
 
-function createTableRow(data) {
+const createTableRow = data => {
   const $tableRow = document.createElement('tr');
 
   data.forEach(cell => {
@@ -81,9 +81,9 @@ function createTableRow(data) {
   $tableRow.classList.add('dictu-table__row');
 
   return $tableRow;
-}
+};
 
-function createTableCell(cell, scope) {
+const createTableCell = (cell, scope) => {
   const $tableCell = document.createElement('td');
 
   $tableCell.textContent = cell.value;
@@ -104,12 +104,16 @@ function createTableCell(cell, scope) {
     $tableCell.classList.add('dictu-table__cell--align-end');
   }
 
+  if (cell.accent) {
+    $tableCell.classList.add('dictu-table__cell-accent');
+  }
+
   $tableCell.classList.add('dictu-table__cell');
 
   return $tableCell;
-}
+};
 
-function createTableHeader(cell, scope) {
+const createTableHeader = (cell, scope) => {
   const $tableHeader = document.createElement('th');
 
   $tableHeader.textContent = cell.value;
@@ -133,4 +137,4 @@ function createTableHeader(cell, scope) {
   $tableHeader.classList.add('dictu-table__header');
 
   return $tableHeader;
-}
+};

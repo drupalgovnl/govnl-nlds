@@ -855,3 +855,120 @@ export const ResponsiveTable = {
     responsive: true,
   },
 };
+
+export const AccentCell = {
+  args: {
+    data: [
+      {
+        section: 'head',
+        data: [
+          {
+            purpose: 'column-header',
+            value: 'Column 1',
+          },
+          {
+            purpose: 'column-header',
+            value: 'Column 2',
+          },
+          {
+            purpose: 'column-header',
+            value: 'Column 3',
+          },
+          {
+            purpose: 'column-header',
+            value: 'Column 4',
+          },
+        ],
+      },
+      {
+        section: 'body',
+        data: [
+          {
+            purpose: 'cell',
+            value: '10',
+            accent: true,
+          },
+          {
+            purpose: 'cell',
+            value: '20',
+          },
+          {
+            purpose: 'cell',
+            value: '30',
+          },
+          {
+            purpose: 'cell',
+            value: '40',
+          },
+        ],
+      },
+      {
+        section: 'body',
+        data: [
+          {
+            purpose: 'cell',
+            value: '10',
+          },
+          {
+            purpose: 'cell',
+            value: '20',
+            accent: true,
+          },
+          {
+            purpose: 'cell',
+            value: '30',
+          },
+          {
+            purpose: 'cell',
+            value: '40',
+          },
+        ],
+      },
+      {
+        section: 'body',
+        data: [
+          {
+            purpose: 'cell',
+            value: '10',
+          },
+          {
+            purpose: 'cell',
+            value: '20',
+          },
+          {
+            purpose: 'cell',
+            value: '30',
+            accent: true,
+          },
+          {
+            purpose: 'cell',
+            value: '40',
+          },
+        ],
+      },
+      {
+        section: 'body',
+        data: [
+          {
+            purpose: 'cell',
+            value: '10',
+          },
+          {
+            purpose: 'cell',
+            value: '20',
+          },
+          {
+            purpose: 'cell',
+            value: '30',
+          },
+          {
+            purpose: 'cell',
+            value: '40',
+            accent: true,
+          },
+        ],
+      },
+    ],
+    caption: 'Dit is een tabel met accent cellen',
+  },
+};

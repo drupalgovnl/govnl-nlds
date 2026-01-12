@@ -1,18 +1,18 @@
 {
-  "name": "@dictu/rich-text",
-  "version": "4.0.0",
+  "name": "@dictu/searchbar",
+  "version": "2.0.0",
   "author": "Dienst ICT Uitvoering",
-  "description": "Rich Text CSS component.",
+  "description": "Searchbar CSS component.",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system",
     "css",
-    "rich-text"
+    "searchbar"
   ],
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/rich-text"
+    "directory": "components/searchbar"
   },
   "files": [
     "src/",
@@ -25,11 +25,6 @@
   "publishConfig": {
     "access": "public",
     "provenance": true
-  },
-  "devDependencies": {
-    "@dictu/heading": "^3.0.0",
-    "@dictu/link": "^2.0.0",
-    "@dictu/paragraph": "^3.0.0"
   },
   "scripts": {
     "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",

@@ -1,5 +1,11 @@
 # @dictu/table
 
+## 1.5.0
+
+### Minor Changes
+
+- 247bcd5: Added accent cell logic
+
 ## 1.4.0
 
 ### Minor Changes
