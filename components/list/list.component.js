@@ -8,7 +8,7 @@ export const List = ({ items, type = 'unordered', icon }) => {
 
   items.forEach(item => {
     const li = document.createElement('li');
-    li.classList.add('dictu-list__item');
+    li.classList.add('dictu-list__item', `dictu-list__item--${type}`);
 
     let content = item;
     let children = null;
@@ -21,7 +21,7 @@ export const List = ({ items, type = 'unordered', icon }) => {
     const contentSpan = document.createElement('span');
     contentSpan.classList.add('dictu-list__item-content');
     if (type === 'icon' && icon) {
-      const iconElement = Icon({ icon, classes: ['dictu-list__item-icon'] });
+      const iconElement = Icon({ icon, classes: ['dictu-icon__list-item'] });
       li.appendChild(iconElement);
     }
 

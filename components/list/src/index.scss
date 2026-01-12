@@ -24,6 +24,10 @@
   @include mixin.dictu-list__item-content;
 }
 
-.dictu-list__item-icon {
-  @include mixin.dictu-list__item-icon;
+.dictu-icon__list-item {
+  @include mixin.dictu-icon__list-item;
+}
+
+.dictu-list__item--icon {
+  @include mixin.dictu-list__item--icon;
 }
