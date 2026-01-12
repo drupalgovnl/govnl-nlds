@@ -9,12 +9,25 @@
 .dictu-checkbox {
   @include mixin.dictu-checkbox;
 
+  .dictu-checkbox-checkmark {
+    @include mixin.dictu-checkbox-checkmark;
+    @include mixin.dictu-checkbox-checkmark--hidden;
+  }
+
   &:hover {
     @include mixin.dictu-checkbox--hover;
+
+    .dictu-checkbox-checkmark {
+      @include mixin.dictu-checkbox-checkmark--visible;
+    }
   }
 
   &:active {
     @include mixin.dictu-checkbox--active;
+
+    .dictu-checkbox-checkmark {
+      @include mixin.dictu-checkbox-checkmark--visible;
+    }
   }
 
   &:focus-visible {
@@ -24,6 +37,10 @@
   /* stylelint-disable-next-line selector-nested-pattern */
   &:checked {
     @include mixin.dictu-checkbox--checked;
+
+    .dictu-checkbox-checkmark {
+      @include mixin.dictu-checkbox-checkmark--visible;
+    }
 
     &:hover {
       @include mixin.dictu-checkbox--checked-hover;
@@ -35,6 +52,10 @@
 
     &:focus-visible {
       @include mixin.dictu-checkbox--checked-focus-visible;
+
+      .dictu-checkbox-checkmark {
+        @include mixin.dictu-checkbox-checkmark--focus-visible;
+      }
     }
   }
 }
