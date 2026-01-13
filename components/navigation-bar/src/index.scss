@@ -20,8 +20,6 @@
 }
 
 .dictu-navigation-bar__item {
-  @include mixin.dictu-navigation-bar__item;
-
   &:has(.dictu-navigation-bar__submenu-toggler) {
     @include mixin.dictu-navigation-bar__item--submenu;
   }
@@ -57,10 +55,27 @@
 
 // Responsive: mobile
 @media (width <= 48em) {
-  @include mixin.dictu-navigation-bar--mobile;
-}
+  .dictu-navigation-bar {
+    @include mixin.dictu-navigation-bar--mobile;
+  }
 
-// Responsive: desktop
-@media (width >= 48.01em) {
-  @include mixin.dictu-navigation-bar--desktop;
+  .dictu-navigation-bar__submenu {
+    @include mixin.dictu-navigation-bar__submenu--mobile;
+  }
+
+  .dictu-navigation-bar__submenu-toggler {
+    @include mixin.dictu-navigation-bar__submenu-toggler--mobile;
+  }
+
+  .dictu-navigation-bar__list {
+    @include mixin.dictu-navigation-bar__list--mobile;
+  }
+
+  .dictu-navigation-bar__toggle {
+    @include mixin.dictu-navigation-bar__toggle--mobile;
+  }
+
+  .dictu-navigation-bar__link {
+    @include mixin.dictu-navigation-bar__link--mobile;
+  }
 }

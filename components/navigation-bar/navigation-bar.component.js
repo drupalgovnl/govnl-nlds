@@ -5,53 +5,44 @@ export const NavigationBar = ({
   items = [],
   expanded = false,
   isMobile = false,
+  menuId,
   classNames = [],
 }) => {
   const navigationBar = document.createElement('nav');
-
-  // Adds home link.
-  const homeIcon =
-    '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.2929 2.29289C11.6834 1.90237 12.3166 1.90237 12.7071 2.29289L21.7071 11.2929C21.9931 11.5789 22.0787 12.009 21.9239 12.3827C21.7691 12.7564 21.4045 13 21 13H20V19C20 20.6569 18.6569 22 17 22H7.00003C5.34318 22 4.00003 20.6569 4.00003 19V13H3.00003C2.59557 13 2.23093 12.7564 2.07615 12.3827C1.92137 12.009 2.00692 11.5789 2.29292 11.2929L11.2929 2.29289ZM11 14C10.4477 14 10 14.4477 10 15V20H14V15C14 14.4477 13.5523 14 13 14H11ZM18 19C18 19.5523 17.5523 20 17 20H16V15C16 13.3431 14.6569 12 13 12H11C9.34318 12 8.00003 13.3431 8.00003 15V20H7.00003C6.44775 20 6.00003 19.5523 6.00003 19L6.00003 12C6.00003 11.5712 5.73013 11.2054 5.35094 11.0633L12 4.41421L18.6491 11.0633C18.2699 11.2054 18 11.5712 18 12L18 19Z" /></svg>';
   navigationBar.classList.add('dictu-navigation-bar', ...classNames);
   navigationBar.setAttribute('aria-label', 'Hoofdnavigatie');
   navigationBar.setAttribute('role', 'navigation');
-  const homeLink = document.createElement('a');
-  homeLink.classList.add('dictu-navigation-bar__link', 'dictu-navigation-bar__home');
-  homeLink.setAttribute('aria-label', 'home');
-  homeLink.appendChild(Icon({ icon: homeIcon, classes: ['dictu-navigation-bar__icon'] }));
-
-  if (!isMobile) {
-    homeLink.setAttribute('hidden', true);
-  }
-
-  navigationBar.appendChild(homeLink);
 
   // Adds mobile menu toggle.
-  const toggleIcon =
+  const toggleIconOpen =
     '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z" /></svg>';
+  const toggleIconClose =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" /></svg>';
   const menuToggle = document.createElement('button');
   menuToggle.classList.add('dictu-navigation-bar__toggle');
-  menuToggle.setAttribute('aria-label', 'home');
-  menuToggle.setAttribute('aria-controls', 'home');
+  menuToggle.setAttribute('aria-controls', menuId);
   menuToggle.setAttribute('aria-expanded', expanded);
-  menuToggle.appendChild(Icon({ icon: toggleIcon, classes: ['dictu-navigation-bar__menu-icon'] }));
-
-  if (!isMobile) {
-    homeLink.setAttribute('hidden', true);
-  }
+  menuToggle.innerText = 'Menu';
+  menuToggle.insertAdjacentElement(
+    'afterbegin',
+    Icon({
+      icon: expanded ? toggleIconClose : toggleIconOpen,
+      classes: ['dictu-navigation-bar__menu-icon'],
+    })
+  );
 
   navigationBar.appendChild(menuToggle);
 
   // Adds navigation items.
-  navigationBar.appendChild(createNavigationList(items, isMobile, expanded));
+  navigationBar.appendChild(createNavigationList(items, isMobile, menuId, expanded));
 
   return navigationBar;
 };
 
-const createNavigationList = (items, isMobile, expanded) => {
+const createNavigationList = (items, isMobile, menuId, expanded) => {
   const navigationList = document.createElement('ul');
   navigationList.classList.add('dictu-navigation-bar__list');
-  navigationList.id = 'nav-list';
+  navigationList.id = menuId;
   navigationList.setAttribute('role', 'menubar');
 
   if (isMobile && !expanded) {

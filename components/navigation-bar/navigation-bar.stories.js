@@ -20,6 +20,7 @@ export default {
     ],
     expanded: false,
     isMobile: false,
+    menuId: 'default-menu',
   },
   argTypes: {
     items: {
@@ -53,6 +54,7 @@ export const NavigationBarDefaultMobile = {
   args: {
     expanded: false,
     isMobile: true,
+    menuId: 'default-mobile-menu',
   },
 };
 
@@ -63,6 +65,7 @@ export const NavigationBarDefaultMobileExpanded = {
   args: {
     expanded: true,
     isMobile: true,
+    menuId: 'default-mobile-menu',
   },
 };
 
@@ -99,6 +102,7 @@ export const NavigationBarSubmenu = {
         title: 'Rijksoverheid',
       },
     ],
+    expanded: true,
   },
 };
 
@@ -136,5 +140,6 @@ export const NavigationBarSubmenuOpen = {
         title: 'Rijksoverheid',
       },
     ],
+    expanded: true,
   },
 };
