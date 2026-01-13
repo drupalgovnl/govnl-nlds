@@ -41,3 +41,7 @@
 .dictu-pagination__relative-link-next-small {
   @include mixin.dictu-pagination__relative-link-previous--small;
 }
+
+.dictu-pagination__icon {
+  @include mixin.dictu-pagination__icon;
+}

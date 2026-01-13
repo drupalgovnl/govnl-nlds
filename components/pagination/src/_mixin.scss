@@ -19,6 +19,7 @@
 @mixin dictu-pagination__current {
   background-color: var(--govnl-pagination-page-link-current-page-background-color);
   border-color: var(--govnl-pagination-page-link-current-page-border-color);
+  border-radius: var(--govnl-pagination-page-link-current-page-border-radius);
   color: var(--govnl-pagination-page-link-current-page-color);
   font-family: var(--govnl-pagination-page-link-current-page-font-family);
   font-size: var(--govnl-pagination-page-link-current-page-font-size);
@@ -32,7 +33,9 @@
 @mixin dictu-pagination__relative-link {
   --govnl-icon-size: var(--govnl-pagination-relative-link-icon-size);
 
-  column-gap: var(--govnl-pagination-relative-link-column-gap);
+  align-items: center;
+  display: flex;
+  gap: var(--govnl-pagination-relative-link-column-gap);
 }
 
 @mixin dictu-pagination__relative-link-focus {
@@ -70,5 +73,11 @@
 }
 
 @mixin dictu-pagination__ellipses {
-  // --govnl-pagination-ellipses: var(--govnl-document-subtle-color);
+  --govnl-pagination-ellipses: var(--govnl-document-subtle-color);
+}
+
+@mixin dictu-pagination__icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }

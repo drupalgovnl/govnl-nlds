@@ -31,6 +31,22 @@ const config = {
 
     return mergeConfig(config, {
       base: process.env.BASE_URL ?? '/',
+      build: {
+        // Keep bundle warnings quiet while we aggressively split Storybook/vendor chunks
+        chunkSizeWarningLimit: 2048,
+        rollupOptions: {
+          output: {
+            manualChunks(id) {
+              if (!id.includes('node_modules')) return undefined;
+
+              if (id.includes('@storybook')) return 'storybook';
+              if (id.includes('prettier')) return 'prettier';
+              if (id.includes('axe-core')) return 'axe';
+              return 'vendor';
+            },
+          },
+        },
+      },
       css: {
         preprocessorOptions: {
           scss: {
