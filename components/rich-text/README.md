@@ -1,5 +1,10 @@
 <!-- @license CC0-1.0 -->
 
+> **Let op: De RichText component is verouderd en zal geen verdere updates
+> krijgen. **
+>
+> Gebruik in plaats daarvan de losse componenten.
+
 De Rich Text component voegt standaard styling toe aan platte HTML waar je geen
 controle over hebt, zoals content uit een CMS.
 

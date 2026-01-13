@@ -1,5 +1,12 @@
 # @dictu/button
 
+## 4.0.1
+
+### Patch Changes
+
+- db68a30: Icon in button doesn't shrink anymore when button label wraps to
+  multiple lines
+
 ## 4.0.0
 
 ### Major Changes
