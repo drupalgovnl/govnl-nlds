@@ -18,10 +18,18 @@ export default {
         title: 'Rijksoverheid',
       },
     ],
+    expanded: false,
+    isMobile: false,
   },
   argTypes: {
     items: {
       control: 'array',
+    },
+    expanded: {
+      control: 'boolean',
+    },
+    isMobile: {
+      control: 'boolean',
     },
   },
   parameters: {
@@ -37,3 +45,96 @@ export default {
 };
 
 export const NavigationBarDefault = {};
+
+export const NavigationBarDefaultMobile = {
+  globals: {
+    viewport: { value: 'mobile1', isRotated: false },
+  },
+  args: {
+    expanded: false,
+    isMobile: true,
+  },
+};
+
+export const NavigationBarDefaultMobileExpanded = {
+  globals: {
+    viewport: { value: 'mobile1', isRotated: false },
+  },
+  args: {
+    expanded: true,
+    isMobile: true,
+  },
+};
+
+export const NavigationBarSubmenu = {
+  args: {
+    items: [
+      {
+        link: 'https://www.dictu.nl',
+        title: 'Dienst ICT Uitvoering',
+      },
+      {
+        title: 'Submenu',
+        children: [
+          {
+            link: '#',
+            title: 'Submenu item 1',
+          },
+          {
+            link: '#',
+            title: 'Submenu item 2',
+          },
+          {
+            link: '#',
+            title: 'Submenu item 3',
+          },
+          {
+            link: '#',
+            title: 'Submenu item 4',
+          },
+        ],
+      },
+      {
+        link: 'https://www.rijksoverheid.nl',
+        title: 'Rijksoverheid',
+      },
+    ],
+  },
+};
+
+export const NavigationBarSubmenuOpen = {
+  args: {
+    items: [
+      {
+        link: 'https://www.dictu.nl',
+        title: 'Dienst ICT Uitvoering',
+      },
+      {
+        title: 'Submenu',
+        expanded: true,
+        children: [
+          {
+            href: '#',
+            label: 'Subpagina 1',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 2',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 3',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 4',
+          },
+        ],
+      },
+      {
+        link: 'https://www.rijksoverheid.nl',
+        title: 'Rijksoverheid',
+      },
+    ],
+  },
+};
