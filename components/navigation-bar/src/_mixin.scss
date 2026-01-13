@@ -79,19 +79,24 @@
 }
 
 @mixin dictu-navigation-bar__toggle {
-  border: none;
+  align-items: center;
+  background-color: var(--govnl-nav-bar-submenu-toggler-background-color);
+  border-width: var(--govnl-nav-bar-submenu-toggler-border-width);
+  box-sizing: border-box;
+  color: var(--govnl-nav-bar-submenu-toggler-color);
+  column-gap: calc(var(--govnl-nav-bar-submenu-toggler-column-gap));
+  display: flex;
+  font-size: inherit;
+  height: 100%;
+  padding-block: var(--govnl-nav-bar-submenu-toggler-padding-block);
+  padding-inline: var(--govnl-nav-bar-submenu-toggler-padding-inline);
+  text-decoration: var(--govnl-nav-bar-submenu-toggler-text-decoration);
 }
 
-@mixin dictu-navigation-bar__menu-label {
-  align-items: center;
-  background: none;
-  border: none;
-  color: inherit;
-  cursor: pointer;
-  display: none;
-  font-size: 1rem;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
+@mixin dictu-navigation-bar__menu-icon {
+  --govnl-icon-size: var(--govnl-nav-bar-icon-size);
+
+  color: var(--govnl-nav-bar-icon-color);
 }
 
 @mixin dictu-navigation-bar__item--submenu {
@@ -113,7 +118,7 @@
   text-decoration: var(--govnl-nav-bar-submenu-toggler-text-decoration);
 
   &[aria-expanded="true"] {
-    background-color: var(--govnl-nav-bar-submenu-expanded-background-color);
+    background-color: var(--govnl-nav-bar-submenu-toggler-expanded-background-color);
     font-weight: var(--govnl-nav-bar-submenu-toggler-expanded-font-weight);
   }
 
@@ -140,10 +145,12 @@
   border-bottom-left-radius: var(--govnl-nav-bar-submenu-border-bottom-left-radius);
   border-bottom-right-radius: var(--govnl-nav-bar-submenu-border-bottom-right-radius);
   max-inline-size: var(--govnl-nav-bar-submenu-max-inline-size);
+  overflow-wrap: anywhere;
   padding-block: var(--govnl-nav-bar-submenu-padding-block-start) var(--govnl-nav-bar-submenu-padding-block-end);
   padding-inline: var(--govnl-nav-bar-submenu-padding-inline-start) var(--govnl-nav-bar-submenu-padding-inline-end);
   position: absolute;
   top: 100%;
+  width: max-content;
 }
 
 @mixin dictu-navigation-bar__submenu--hidden {
@@ -170,12 +177,6 @@
   .dictu-navigation-bar__home {
     display: block;
     grid-column: 1;
-    grid-row: 1;
-  }
-
-  .dictu-navigation-bar__menu-label {
-    display: flex;
-    grid-column: 2;
     grid-row: 1;
   }
 
