@@ -24,8 +24,8 @@
   @include mixin.dictu-list__item-content;
 }
 
-.dictu-icon__list-item {
-  @include mixin.dictu-icon__list-item;
+.dictu-list__list-icon {
+  @include mixin.dictu-list__list-icon;
 }
 
 .dictu-list__item--icon {

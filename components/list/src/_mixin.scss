@@ -45,7 +45,7 @@
   padding-inline-start: var(--govnl-list-list-item-gap);
 }
 
-@mixin dictu-icon__list-item {
+@mixin dictu-list__list-icon {
   align-items: center;
   block-size: 1.5em; // Replace with design token when available
   display: inline-flex;

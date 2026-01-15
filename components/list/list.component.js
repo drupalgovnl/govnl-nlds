@@ -21,7 +21,7 @@ export const List = ({ items, type = 'unordered', icon }) => {
     const contentSpan = document.createElement('span');
     contentSpan.classList.add('dictu-list__item-content');
     if (type === 'icon' && icon) {
-      const iconElement = Icon({ icon, classes: ['dictu-icon__list-item'] });
+      const iconElement = Icon({ icon, classes: ['dictu-list__list-icon'] });
       li.appendChild(iconElement);
     }
 
