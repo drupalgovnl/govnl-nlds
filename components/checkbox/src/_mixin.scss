@@ -38,6 +38,17 @@
   background-color: var(--govnl-checkbox-checked-background-color);
   border: var(--govnl-checkbox-checked-border-width) solid var(--govnl-checkbox-checked-border-color);
   color: var(--govnl-checkbox-checked-color);
+
+  &::after {
+    background-image: var(--govnl-checkbox-checkmark-icon);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    block-size: 100%;
+    content: "";
+    display: block;
+    inline-size: 100%;
+  }
 }
 
 @mixin dictu-checkbox--checked-hover {
@@ -57,6 +68,10 @@
   border: var(--govnl-checkbox-checked-focus-visible-border-width) solid
     var(--govnl-checkbox-checked-focus-border-color);
   color: var(--govnl-checkbox-checked-focus-color);
+
+  &::after {
+    background-image: var(--govnl-checkbox-checkmark-icon-focus-visible);
+  }
 }
 
 @mixin dictu-checkbox-checkmark {
