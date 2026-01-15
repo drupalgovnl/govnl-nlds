@@ -44,6 +44,7 @@ export const Pagination = ({ pages, size, previous, next, classNames = [] }) => 
 
     if (size !== 'small') {
       previousLink.insertAdjacentText('beforeend', previous.label);
+    } else {
       previousLink.classList.add('dictu-pagination__relative-link-previous--small');
     }
 
@@ -61,7 +62,7 @@ export const Pagination = ({ pages, size, previous, next, classNames = [] }) => 
 
       const ellipsis = document.createElement('span');
       ellipsis.classList.add('dictu-pagination__ellipsis');
-      ellipsis.textContent = '...';
+      ellipsis.innerHTML = '&hellip;';
       pagination.appendChild(ellipsis);
 
       const last = pages[pages.length - 1];
@@ -91,6 +92,7 @@ export const Pagination = ({ pages, size, previous, next, classNames = [] }) => 
 
     if (size !== 'small') {
       nextLink.insertAdjacentText('afterbegin', next.label);
+    } else {
       nextLink.classList.add('dictu-pagination__relative-link-next--small');
     }
 

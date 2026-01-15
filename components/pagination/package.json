@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@dictu/utility-focus-ring": "*",
-    "@dictu/icon": "*"
+    "@dictu/icon": "*",
+    "@dictu/link": "*"
   }
 }
