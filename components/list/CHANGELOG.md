@@ -1,5 +1,11 @@
 # @dictu/list
 
+## 1.2.0
+
+### Minor Changes
+
+- 5bc9219: Added correct css rules for icon list.
+
 ## 1.1.1
 
 ### Patch Changes
