@@ -1,7 +1,7 @@
 import './dist/index.css';
 import '@dictu/button/dist/index.css';
 import '@dictu/utility-focus-ring/dist/index.css';
-import { Accordion } from './accordion';
+import { Accordion } from './accordion.component';
 
 const meta = {
   args: {

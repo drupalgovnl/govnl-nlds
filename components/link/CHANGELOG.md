@@ -1,5 +1,11 @@
 # @dictu/link
 
+## 2.3.2
+
+### Patch Changes
+
+- afdea81: Removed focus styling, kept focus-visible
+
 ## 2.3.1
 
 ### Patch Changes
