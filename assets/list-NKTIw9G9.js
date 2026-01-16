@@ -1,11 +1,11 @@
-import{I as d,J as e}from"../vite-inject-mocker-entry.js";import{j as l,T as a,S as c,k as r,A as j,l as h}from"./storybook-0AdLr-R1.js";import{L as s,U as t,O as m,I as x}from"./list.stories-qAyr9QGs.js";import"./axe-BkbROpEY.js";import"./icon.component-X7CMXdF1.js";/* empty css              */const g="";function o(i){const n={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...d(),...i.components};return e.jsxs(e.Fragment,{children:[`
+import{j as e,M as l,T as a,S as c,C as r,A as j,h}from"./blocks-Cnfsb-j-.js";import{useMDXComponents as d}from"./index-DIPkjnTN.js";import{L as t,U as s,O as m,I as x}from"./list.stories-qAyr9QGs.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-BjfbySHI.js";import"./icon.component-X7CMXdF1.js";/* empty css              */const g="";function o(i){const n={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...d(),...i.components};return e.jsxs(e.Fragment,{children:[`
 `,`
-`,e.jsx(l,{of:s,title:"Componenten/List"}),`
+`,e.jsx(l,{of:t,title:"Componenten/List"}),`
 `,e.jsx(a,{children:"List"}),`
 `,e.jsx(c,{children:e.jsx(n.p,{children:"De List component wordt gebruikt om gerelateerde items te groeperen en weer te geven."})}),`
-`,e.jsx(r,{of:t,sourceState:"none"}),`
+`,e.jsx(r,{of:s,sourceState:"none"}),`
 `,e.jsx(n.h2,{id:"parameters",children:"Parameters"}),`
-`,e.jsx(j,{of:s}),`
+`,e.jsx(j,{of:t}),`
 `,e.jsx(h,{children:g}),`
 `,e.jsx(n.h2,{id:"wanneer-gebruik-je-de-list-component",children:"Wanneer gebruik je de List component"}),`
 `,e.jsx(n.p,{children:"Gebruik een lijst wanneer je een verzameling van items wilt weergeven die bij elkaar horen."}),`
@@ -28,7 +28,7 @@ import{I as d,J as e}from"../vite-inject-mocker-entry.js";import{j as l,T as a,S
 `,e.jsx(n.h2,{id:"voorbeelden",children:"Voorbeelden"}),`
 `,e.jsx(n.h3,{id:"ongeordende-lijst",children:"Ongeordende lijst"}),`
 `,e.jsx(n.p,{children:"Een standaard lijst met bullets. Gebruik dit type wanneer de volgorde van de items willekeurig is."}),`
-`,e.jsx(r,{of:t}),`
+`,e.jsx(r,{of:s}),`
 `,e.jsx(n.h3,{id:"geordende-lijst",children:"Geordende lijst"}),`
 `,e.jsx(n.p,{children:"Een lijst met nummering. Gebruik dit type wanneer de volgorde van de items van belang is, zoals bij instructies of ranglijsten."}),`
 `,e.jsx(r,{of:m}),`
@@ -50,4 +50,4 @@ import{I as d,J as e}from"../vite-inject-mocker-entry.js";import{j as l,T as a,S
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function w(i={}){const{wrapper:n}={...d(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(o,{...i})}):o(i)}export{w as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function L(i={}){const{wrapper:n}={...d(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(o,{...i})}):o(i)}export{L as default};

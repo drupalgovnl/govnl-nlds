@@ -1,4 +1,4 @@
-import{I as d,J as e}from"../vite-inject-mocker-entry.js";import{j as l,T as a,S as c,k as i,A as p,l as h}from"./storybook-0AdLr-R1.js";import{T as r,a as o,b as u,c as x,d as m,e as j}from"./text-input.stories-DSlm3iNh.js";import"./axe-BkbROpEY.js";import"./text-input.component-CitIGVob.js";const v=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as a,S as c,C as i,A as p,h}from"./blocks-Cnfsb-j-.js";import{useMDXComponents as d}from"./index-DIPkjnTN.js";import{T as r,a as o,b as u,c as m,d as x,e as j}from"./text-input.stories-DSlm3iNh.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-BjfbySHI.js";import"./text-input.component-CitIGVob.js";const v=`<!-- @license CC0-1.0 -->
 
 ## De Text Input component implementeren
 
@@ -42,9 +42,9 @@ import "@dictu/text-input/dist/index.css";
 `,e.jsx(i,{of:u}),`
 `,e.jsx(n.h3,{id:"text-input-met-foutieve-invoer",children:"Text input met foutieve invoer"}),`
 `,e.jsxs(n.p,{children:["Wanneer je visueel wilt laten zien dat de invoer van het inputveld foutief is, voeg dan de class ",e.jsx(n.code,{children:"dictu-text-input--error"})," toe aan het input element."]}),`
-`,e.jsx(i,{of:x}),`
-`,e.jsx(n.h3,{id:"disabled-inputveld",children:"Disabled inputveld"}),`
 `,e.jsx(i,{of:m}),`
+`,e.jsx(n.h3,{id:"disabled-inputveld",children:"Disabled inputveld"}),`
+`,e.jsx(i,{of:x}),`
 `,e.jsx(n.h3,{id:"text-input-met-placeholder",children:"Text input met placeholder"}),`
 `,e.jsxs(n.p,{children:["Het is mogelijk om een placeholder te laten zien in het inputveld. Voeg hiervoor het ",e.jsx(n.code,{children:"placeholder"})," attribuut toe aan het ",e.jsx(n.code,{children:"input"})," element."]}),`
 `,e.jsxs(n.p,{children:[e.jsx(n.strong,{children:"Let op:"}),` Een placeholder is nooit een vervanging voor het Label elemement. Gebruik alleen een placeholder als de informatie niet op een andere manier
@@ -60,4 +60,4 @@ wat er precies fout is.`]}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function w(t={}){const{wrapper:n}={...d(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(s,{...t})}):s(t)}export{w as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function C(t={}){const{wrapper:n}={...d(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(s,{...t})}):s(t)}export{C as default};

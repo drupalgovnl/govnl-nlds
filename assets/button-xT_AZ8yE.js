@@ -1,4 +1,4 @@
-import{I as d,J as e}from"../vite-inject-mocker-entry.js";import{j as l,T as c,S as a,k as i,A as h,l as u}from"./storybook-0AdLr-R1.js";import{B as r,P as o,S as j,a as m,b as x,c as b,d as p,e as g,f as k,g as w}from"./button.stories-CAvpabEv.js";import"./axe-BkbROpEY.js";/* empty css              *//* empty css              */import"./button.component-DRRUjNOi.js";import"./icon.component-X7CMXdF1.js";const f=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as c,S as a,C as i,A as h,h as u}from"./blocks-Cnfsb-j-.js";import{useMDXComponents as d}from"./index-DIPkjnTN.js";import{B as r,P as o,S as j,a as m,b as x,c as p,d as b,e as g,f as w,g as k}from"./button.stories-CAvpabEv.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-BjfbySHI.js";/* empty css              *//* empty css              */import"./button.component-DRRUjNOi.js";import"./icon.component-X7CMXdF1.js";const f=`<!-- @license CC0-1.0 -->
 
 ## De Button component implementeren
 
@@ -69,9 +69,9 @@ import "@dictu/button/dist/index.css";
 `,e.jsx(n.h4,{id:"primary-action-icon-only",children:"Primary Action Icon-Only"}),`
 `,e.jsx(i,{of:x}),`
 `,e.jsx(n.h4,{id:"secondary-action-icon-only",children:"Secondary Action Icon-Only"}),`
-`,e.jsx(i,{of:b}),`
-`,e.jsx(n.h4,{id:"subtle-icon-only",children:"Subtle Icon-Only"}),`
 `,e.jsx(i,{of:p}),`
+`,e.jsx(n.h4,{id:"subtle-icon-only",children:"Subtle Icon-Only"}),`
+`,e.jsx(i,{of:b}),`
 `,`
 `,e.jsx(n.hr,{}),`
 `,e.jsx(n.h3,{id:"variabelen",children:"Variabelen"}),`
@@ -82,13 +82,13 @@ import "@dictu/button/dist/index.css";
 `,e.jsx(n.h5,{id:"icon-voor-de-tekst",children:"Icon voor de tekst"}),`
 `,e.jsx(i,{of:g}),`
 `,e.jsx(n.h5,{id:"icon-na-de-tekst",children:"Icon na de tekst"}),`
-`,e.jsx(i,{of:k}),`
+`,e.jsx(i,{of:w}),`
 `,e.jsx(n.h4,{id:"size",children:"Size"}),`
 `,e.jsxs(n.p,{children:["Alle verschillende varianten van de button worden aangeboden in een ",e.jsx(n.code,{children:"default"})," en ",e.jsx(n.code,{children:"small"})," formaat. De ",e.jsx(n.code,{children:"small"})," button kan bijvoorbeeld gebruikt worden wanneer de ruimte beperkt is."]}),`
 `,e.jsx(n.h5,{id:"default",children:"Default"}),`
 `,e.jsx(i,{of:o}),`
 `,e.jsx(n.h5,{id:"small",children:"Small"}),`
-`,e.jsx(i,{of:w}),`
+`,e.jsx(i,{of:k}),`
 `,e.jsx(n.h2,{id:"afhankelijkheden",children:"Afhankelijkheden"}),`
 `,e.jsx(n.p,{children:"De variant met icon maakt gebruik van het Icon Component:"}),`
 `,e.jsxs(n.ul,{children:[`
@@ -113,4 +113,4 @@ import "@dictu/button/dist/index.css";
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function I(t={}){const{wrapper:n}={...d(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(s,{...t})}):s(t)}export{I as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function z(t={}){const{wrapper:n}={...d(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(s,{...t})}):s(t)}export{z as default};

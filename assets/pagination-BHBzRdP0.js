@@ -1,4 +1,4 @@
-import{I as r,J as e}from"../vite-inject-mocker-entry.js";import{j as l,T as d,S as c,k as t,A as h,l as p}from"./storybook-0AdLr-R1.js";import{P as o,a,b as j,c as m}from"./pagination.stories-DLc0pznq.js";import"./axe-BkbROpEY.js";/* empty css              */import"./link.component-KS7kVO7o.js";import"./icon.component-X7CMXdF1.js";const x=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as d,S as c,C as t,A as h,h as p}from"./blocks-Cnfsb-j-.js";import{useMDXComponents as r}from"./index-DIPkjnTN.js";import{P as o,a,b as m,c as j}from"./pagination.stories-DLc0pznq.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-BjfbySHI.js";/* empty css              */import"./link.component-KS7kVO7o.js";import"./icon.component-X7CMXdF1.js";const x=`<!-- @license CC0-1.0 -->
 
 ## De Pagination component implementeren
 
@@ -36,8 +36,8 @@ informatie opgedeeld wordt in kleinere delen die op afzonderlijke pagina's worde
 `,e.jsx(n.h2,{id:"voorbeelden",children:"Voorbeelden"}),`
 `,e.jsx(n.h3,{id:"label",children:"Label"}),`
 `,e.jsx(t,{of:a}),`
-`,e.jsx(t,{of:j}),`
 `,e.jsx(t,{of:m}),`
+`,e.jsx(t,{of:j}),`
 `,e.jsx(n.h2,{id:"relevante-wcag-succescriteria",children:"Relevante WCAG succescriteria"}),`
 `,e.jsx(n.p,{children:"(nog in te vullen)"}),`
 `,e.jsx(n.h2,{id:"help-mee-om-deze-component-te-verbeteren",children:"Help mee om deze component te verbeteren"}),`
@@ -46,4 +46,4 @@ informatie opgedeeld wordt in kleinere delen die op afzonderlijke pagina's worde
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function C(i={}){const{wrapper:n}={...r(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(s,{...i})}):s(i)}export{C as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function w(i={}){const{wrapper:n}={...r(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(s,{...i})}):s(i)}export{w as default};

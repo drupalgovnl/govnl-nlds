@@ -1,4 +1,4 @@
-import{I as c,J as e}from"../vite-inject-mocker-entry.js";import{j as d,T as h,S as a,k as i,A as l,l as m}from"./storybook-0AdLr-R1.js";import{C as t,D as r,a as x}from"./checkbox.stories-B02oO6Zy.js";import"./axe-BkbROpEY.js";/* empty css              */const j=`<!-- @license CC0-1.0 -->
+import{j as e,M as d,T as h,S as a,C as i,A as l,h as m}from"./blocks-Cnfsb-j-.js";import{useMDXComponents as s}from"./index-DIPkjnTN.js";import{C as t,D as r,a as x}from"./checkbox.stories-B02oO6Zy.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-BjfbySHI.js";/* empty css              */const j=`<!-- @license CC0-1.0 -->
 
 ## De Checkbox component implementeren
 
@@ -19,7 +19,7 @@ Als je CSS imports gebruikt vanuit JavaScript:
 \`\`\`javascript
 import "@dictu/checkbox/dist/index.css";
 \`\`\`
-`;function s(o){const n={a:"a",h2:"h2",h3:"h3",li:"li",p:"p",ul:"ul",...c(),...o.components};return e.jsxs(e.Fragment,{children:[`
+`;function c(o){const n={a:"a",h2:"h2",h3:"h3",li:"li",p:"p",ul:"ul",...s(),...o.components};return e.jsxs(e.Fragment,{children:[`
 `,`
 `,e.jsx(d,{of:t,title:"Componenten/Form elements/Checkbox"}),`
 `,e.jsx(h,{children:"Checkbox"}),`
@@ -50,4 +50,4 @@ gaan met algemene voorwaarden.`}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function g(o={}){const{wrapper:n}={...c(),...o.components};return n?e.jsx(n,{...o,children:e.jsx(s,{...o})}):s(o)}export{g as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function v(o={}){const{wrapper:n}={...s(),...o.components};return n?e.jsx(n,{...o,children:e.jsx(c,{...o})}):c(o)}export{v as default};

@@ -1,4 +1,4 @@
-import{I as d,J as e}from"../vite-inject-mocker-entry.js";import{j as o,T as c,S as l,k as t,A as h,l as j}from"./storybook-0AdLr-R1.js";import{C as r,D as s,A as m}from"./card.stories-DhEajB9y.js";import"./axe-BkbROpEY.js";/* empty css              *//* empty css              */import"./heading.component-CzcCeUlG.js";import"./icon.component-X7CMXdF1.js";import"./link.component-KS7kVO7o.js";const p=`<!-- @license CC0-1.0 -->
+import{j as e,M as d,T as c,S as l,C as t,A as h,h as j}from"./blocks-Cnfsb-j-.js";import{useMDXComponents as o}from"./index-DIPkjnTN.js";import{C as r,D as s,A as m}from"./card.stories-DhEajB9y.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-BjfbySHI.js";/* empty css              *//* empty css              */import"./heading.component-CzcCeUlG.js";import"./icon.component-X7CMXdF1.js";import"./link.component-KS7kVO7o.js";const p=`<!-- @license CC0-1.0 -->
 
 ## Gebruik deze component
 
@@ -19,9 +19,9 @@ Als je CSS imports gebruikt vanuit JavaScript:
 \`\`\`javascript
 import "@dictu/design-tokens/dist/card.css";
 \`\`\`
-`;function a(i){const n={a:"a",h2:"h2",h3:"h3",li:"li",p:"p",ul:"ul",...d(),...i.components};return e.jsxs(e.Fragment,{children:[`
+`;function a(i){const n={a:"a",h2:"h2",h3:"h3",li:"li",p:"p",ul:"ul",...o(),...i.components};return e.jsxs(e.Fragment,{children:[`
 `,`
-`,e.jsx(o,{of:r,title:"Componenten/Card"}),`
+`,e.jsx(d,{of:r,title:"Componenten/Card"}),`
 `,e.jsx(c,{children:"Card"}),`
 `,e.jsx(l,{children:e.jsx(n.p,{children:`Gebruik een card op een overzichtspagina om te linken naar een artikelpagina, zoals een
 nieuwsartikel, een vacature of een zoekresultaat. De card bevat doorgaans de afbeelding, titel,
@@ -52,4 +52,4 @@ subtitel, inleiding en een meta footer van de content.`})}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function z(i={}){const{wrapper:n}={...d(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(a,{...i})}):a(i)}export{z as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function A(i={}){const{wrapper:n}={...o(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(a,{...i})}):a(i)}export{A as default};

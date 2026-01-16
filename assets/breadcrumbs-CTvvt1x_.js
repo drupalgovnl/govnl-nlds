@@ -1,4 +1,4 @@
-import{I as a,J as e}from"../vite-inject-mocker-entry.js";import{j as l,T as c,S as o,k as i,A as h,l as m}from"./storybook-0AdLr-R1.js";import{B as s,D as d,L as u,M as j}from"./breadcrumbs.stories-BsLA1Eds.js";import"./axe-BkbROpEY.js";/* empty css              *//* empty css              */import"./link.component-KS7kVO7o.js";import"./icon.component-X7CMXdF1.js";const b=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as c,S as o,C as i,A as h,h as m}from"./blocks-Cnfsb-j-.js";import{useMDXComponents as a}from"./index-DIPkjnTN.js";import{B as s,D as d,L as u,M as j}from"./breadcrumbs.stories-BsLA1Eds.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-BjfbySHI.js";/* empty css              *//* empty css              */import"./link.component-KS7kVO7o.js";import"./icon.component-X7CMXdF1.js";const p=`<!-- @license CC0-1.0 -->
 
 ## De Breadcrumbs component implementeren
 
@@ -28,7 +28,7 @@ structuur.`})}),`
 `,e.jsx(i,{of:d,sourceState:"none"}),`
 `,e.jsx(n.h2,{id:"parameters",children:"Parameters"}),`
 `,e.jsx(h,{of:s}),`
-`,e.jsx(m,{children:b}),`
+`,e.jsx(m,{children:p}),`
 `,e.jsx(n.h2,{id:"wanneer-gebruik-je-de-breadcrumbs-component",children:"Wanneer gebruik je de Breadcrumbs component"}),`
 `,e.jsx(n.p,{children:"Gebruik breadcrumbs wanneer:"}),`
 `,e.jsxs(n.ul,{children:[`
@@ -79,4 +79,4 @@ structuur.`})}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function C(r={}){const{wrapper:n}={...a(),...r.components};return n?e.jsx(n,{...r,children:e.jsx(t,{...r})}):t(r)}export{C as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function W(r={}){const{wrapper:n}={...a(),...r.components};return n?e.jsx(n,{...r,children:e.jsx(t,{...r})}):t(r)}export{W as default};

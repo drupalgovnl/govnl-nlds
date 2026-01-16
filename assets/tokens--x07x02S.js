@@ -1,1 +1,0 @@
-import{I as r,J as e}from"../vite-inject-mocker-entry.js";import{j as s}from"./storybook-0AdLr-R1.js";import"./axe-BkbROpEY.js";function o(t){return e.jsx(s,{title:"Voor designers/Design Tokens"})}function u(t={}){const{wrapper:n}={...r(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(o,{...t})}):o()}export{u as default};
