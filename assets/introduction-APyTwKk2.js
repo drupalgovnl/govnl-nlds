@@ -1,0 +1,2 @@
+import{I as r,J as t}from"../vite-inject-mocker-entry.js";import{j as s,T as a}from"./storybook-0AdLr-R1.js";import"./axe-BkbROpEY.js";function o(e){return t.jsxs(t.Fragment,{children:[t.jsx(s,{title:"Voor ontwikkelaars/Introductie"}),`
+`,t.jsx(a,{children:"DICTU Design System voor ontwikkelaars"})]})}function u(e={}){const{wrapper:n}={...r(),...e.components};return n?t.jsx(n,{...e,children:t.jsx(o,{...e})}):o()}export{u as default};

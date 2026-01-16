@@ -1,0 +1,1 @@
+import{I as r,J as n}from"../vite-inject-mocker-entry.js";import{j as s}from"./storybook-0AdLr-R1.js";import"./axe-BkbROpEY.js";function o(t){return n.jsx(s,{title:"Introductie"})}function m(t={}){const{wrapper:e}={...r(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(o,{...t})}):o()}export{m as default};
