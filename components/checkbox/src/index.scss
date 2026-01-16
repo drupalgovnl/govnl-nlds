@@ -7,8 +7,8 @@
 @use "pkg:@dictu/utility-focus-ring/dist/index" as focus-ring;
 
 .dictu-checkbox {
-  --govnl-checkbox-checkmark-icon: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.2L4.80016 12L3.86683 12.9333L9.00016 18.0666L21.0002 6.06659L20.0668 5.13325L9.00016 16.2Z' fill='white'/%3E%3C/svg%3E");
-  --govnl-checkbox-checkmark-icon-focus-visible: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.2L4.80016 12L3.86683 12.9333L9.00016 18.0666L21.0002 6.06659L20.0668 5.13325L9.00016 16.2Z' fill='black'/%3E%3C/svg%3E");
+  --govnl-checkbox-checkmark-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3e%3cpath fill='white' fill-rule='evenodd' d='M20.707 6.293a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 15.586l9.293-9.293a1 1 0 0 1 1.414 0Z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  --govnl-checkbox-checkmark-icon-focus-visible: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3e%3cpath fill='black' fill-rule='evenodd' d='M20.707 6.293a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 15.586l9.293-9.293a1 1 0 0 1 1.414 0Z' clip-rule='evenodd'/%3e%3c/svg%3e");
 
   @include mixin.dictu-checkbox;
 
