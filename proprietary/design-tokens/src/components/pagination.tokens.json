@@ -137,6 +137,10 @@
             "$type": "color",
             "$value": "{govnl.root.background-color}"
           },
+          "border-radius": {
+            "$type": "border-radius",
+            "$value": "{govnl.border.border-radius.md}"
+          },
           "color": {
             "$type": "color",
             "$value": "{govnl.brand.primary-1.400}"

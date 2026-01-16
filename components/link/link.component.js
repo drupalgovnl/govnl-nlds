@@ -1,6 +1,6 @@
 export const Link = ({ content, href, classNames = [] }) => {
   const link = document.createElement('a');
-  link.classList.add('dictu-link', ...classNames.split(' ').filter(cn => cn));
+  link.classList.add('dictu-link', ...classNames);
 
   const isDomNode = content?.nodeType !== undefined;
 
