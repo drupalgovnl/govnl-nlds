@@ -7,6 +7,9 @@
 @use "pkg:@dictu/utility-focus-ring/dist/index" as focus-ring;
 
 .dictu-checkbox {
+  --govnl-checkbox-checkmark-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3e%3cpath fill='white' fill-rule='evenodd' d='M20.707 6.293a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 15.586l9.293-9.293a1 1 0 0 1 1.414 0Z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  --govnl-checkbox-checkmark-icon-focus-visible: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3e%3cpath fill='black' fill-rule='evenodd' d='M20.707 6.293a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 15.586l9.293-9.293a1 1 0 0 1 1.414 0Z' clip-rule='evenodd'/%3e%3c/svg%3e");
+
   @include mixin.dictu-checkbox;
 
   &:hover {
@@ -25,6 +28,10 @@
   &:checked {
     @include mixin.dictu-checkbox--checked;
 
+    .dictu-checkbox-checkmark {
+      @include mixin.dictu-checkbox-checkmark--visible;
+    }
+
     &:hover {
       @include mixin.dictu-checkbox--checked-hover;
     }
@@ -35,6 +42,10 @@
 
     &:focus-visible {
       @include mixin.dictu-checkbox--checked-focus-visible;
+
+      .dictu-checkbox-checkmark {
+        @include mixin.dictu-checkbox-checkmark--focus-visible;
+      }
     }
   }
 }
