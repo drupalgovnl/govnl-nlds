@@ -36,12 +36,14 @@ export const Card = ({
 
   imageContainer.appendChild(imageElement);
 
-  const iconElement = icon ? Icon({ icon, label: alt }) : null;
+  const iconElement = icon ? Icon({ icon }) : null;
 
   const headingContent = Link({
     content: link?.text ?? '',
     href: link.href,
-    classNames: hasFullCardLink ? 'card__link dictu-card__full-card-link' : 'dictu-card__link',
+    classNames: hasFullCardLink
+      ? 'dictu-card__link dictu-card__full-card-link'
+      : 'dictu-card__link',
   });
 
   const headingElement = Heading({ content: headingContent, level: headingLevel });
