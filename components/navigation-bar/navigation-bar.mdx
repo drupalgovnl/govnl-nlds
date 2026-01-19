@@ -34,11 +34,19 @@ import Readme from './README.md?raw';
 
 <Canvas of={NavigationBarStories.NavigationBarSubmenu} />
 
-<Canvas of={NavigationBarStories.NavigationBarSubmenuOpen} />
+<Canvas of={NavigationBarStories.NavigationBarSubmenuOpen} story={{ height: '500px' }} />
 
-<Canvas of={NavigationBarStories.NavigationBarDefaultMobile} />
+<Canvas
+  of={NavigationBarStories.NavigationBarDefaultMobile}
+  className={'mobile-docs'}
+  story={{ height: '400px' }}
+/>
 
-<Canvas of={NavigationBarStories.NavigationBarDefaultMobileExpanded} />
+<Canvas
+  of={NavigationBarStories.NavigationBarDefaultMobileExpanded}
+  className={'mobile-docs'}
+  story={{ height: '400px' }}
+/>
 
 ## Help mee om deze component te verbeteren
 
