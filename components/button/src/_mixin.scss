@@ -58,8 +58,8 @@
 
 @mixin dictu-button--primary-action-disabled {
   background-color: var(--govnl-button-primary-action-disabled-background-color);
-  border-color: var(--govnl-button-primary-actiondisabled--border-color);
-  color: var(--govnl-button-primary-actiondisabled--color);
+  border-color: var(--govnl-button-primary-action-disabled-border-color);
+  color: var(--govnl-button-primary-action-disabled-color);
   cursor: not-allowed;
 }
 
