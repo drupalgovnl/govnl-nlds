@@ -1,0 +1,47 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "mixin" as mixin;
+@use "pkg:@dictu/utility-focus-ring/dist/index" as focus-ring;
+
+.dictu-pagination {
+  @include mixin.dictu-pagination;
+}
+
+.dictu-pagination__link {
+  @include mixin.dictu-pagination__link;
+}
+
+.dictu-pagination__current {
+  @include mixin.dictu-pagination__current;
+}
+
+.dictu-pagination__relative-link {
+  @include mixin.dictu-pagination__relative-link;
+
+  &:focus-visible {
+    @include mixin.dictu-pagination__relative-link-focus;
+  }
+}
+
+.dictu-pagination__relative-link-previous {
+  @include mixin.dictu-pagination__relative-link-previous;
+}
+
+.dictu-pagination__relative-link-next {
+  @include mixin.dictu-pagination__relative-link-next;
+}
+
+.dictu-pagination__relative-link-previous--small {
+  @include mixin.dictu-pagination__relative-link-previous--small;
+}
+
+.dictu-pagination__relative-link-next-small {
+  @include mixin.dictu-pagination__relative-link-previous--small;
+}
+
+.dictu-pagination__icon {
+  @include mixin.dictu-pagination__icon;
+}

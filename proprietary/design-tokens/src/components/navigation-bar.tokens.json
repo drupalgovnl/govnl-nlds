@@ -169,13 +169,25 @@
           "$value": "100%"
         },
         "submenu": {
-          "padding-inline-start": {
+          "padding-block-end": {
             "$type": "spacing",
-            "$value": "{govnl.space.md}"
+            "$value": "0px"
+          },
+          "padding-block-start": {
+            "$type": "spacing",
+            "$value": "0px"
           },
           "padding-inline-end": {
             "$type": "spacing",
             "$value": "{govnl.space.md}"
+          },
+          "padding-inline-start": {
+            "$type": "spacing",
+            "$value": "{govnl.space.md}"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": "transparant"
           }
         }
       },
@@ -230,19 +242,19 @@
         },
         "padding-inline-start": {
           "$type": "spacing",
-          "$value": "{govnl.space.lg}"
+          "$value": "{govnl.space.sm}"
         },
         "padding-inline-end": {
           "$type": "spacing",
-          "$value": "{govnl.space.xl}"
+          "$value": "{govnl.space.sm}"
         },
         "padding-block-start": {
           "$type": "spacing",
-          "$value": "{govnl.space.lg}"
+          "$value": "{govnl.space.2xs}"
         },
         "padding-block-end": {
           "$type": "spacing",
-          "$value": "{govnl.space.lg}"
+          "$value": "{govnl.space.2xs}"
         },
         "background-color": {
           "$type": "color",
@@ -252,13 +264,15 @@
           "$type": "sizing",
           "$value": "{govnl.nav-bar.container.inline-size}"
         },
-        "border-bottom-left-radius": {
-          "$type": "borderRadius",
-          "$value": "0"
-        },
-        "border-bottom-right-radius": {
-          "$type": "borderRadius",
-          "$value": "{govnl.rh.max.border-radius}"
+        "link": {
+          "padding-block": {
+            "$type": "spacing",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-inline": {
+            "$type": "spacing",
+            "$value": "{govnl.space.xs}"
+          }
         }
       }
     }

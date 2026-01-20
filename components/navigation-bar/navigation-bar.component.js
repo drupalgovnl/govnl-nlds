@@ -1,5 +1,5 @@
 import { Icon } from '../icon/icon.component';
-import { LinkList } from '../link-list/link-list.component';
+import { Link } from '../link/link.component';
 
 export const NavigationBar = ({
   items = [],
@@ -106,11 +106,21 @@ const createNavigationSubmenuToggler = (label, expanded = false) => {
 };
 
 const createNavigationSubmenuList = items => {
-  const navigationSubmenuList = LinkList({
-    items,
-    classNames: ['dictu-navigation-bar__submenu-list'],
-  });
+  const navigationSubmenuList = document.createElement('ul');
+  navigationSubmenuList.classList.add('dictu-navigation-bar__submenu-list');
   navigationSubmenuList.setAttribute('role', 'menu');
+
+  items.forEach(item => {
+    const navigationSubmenuItem = document.createElement('li');
+    navigationSubmenuItem.appendChild(
+      Link({
+        content: item.title,
+        href: item.link,
+        classNames: ['dictu-navigation-bar__submenu-link'],
+      })
+    );
+    navigationSubmenuList.appendChild(navigationSubmenuItem);
+  });
 
   return navigationSubmenuList;
 };

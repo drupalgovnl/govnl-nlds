@@ -1,18 +1,18 @@
 {
-  "name": "@dictu/checkbox",
-  "version": "2.0.0",
+  "name": "@dictu/pagination",
+  "version": "0.1.0",
   "author": "Dienst ICT Uitvoering",
-  "description": "Checkbox CSS component.",
+  "description": "Pagination CSS component.",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system",
     "css",
-    "checkbox"
+    "pagination"
   ],
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/checkbox"
+    "directory": "components/pagination"
   },
   "files": [
     "src/",
@@ -32,6 +32,8 @@
     "clean": "rimraf ./dist/"
   },
   "devDependencies": {
-    "@dictu/utility-focus-ring": "*"
+    "@dictu/utility-focus-ring": "*",
+    "@dictu/icon": "*",
+    "@dictu/link": "*"
   }
 }

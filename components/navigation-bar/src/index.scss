@@ -49,8 +49,16 @@
   @include mixin.dictu-navigation-bar__submenu;
 }
 
+.dictu-navigation-bar__submenu-list {
+  @include mixin.dictu-navigation-bar__submenu-list;
+}
+
 .dictu-navigation-bar__submenu--hidden {
   @include mixin.dictu-navigation-bar__submenu--hidden;
+}
+
+.dictu-navigation-bar__submenu-link {
+  @include mixin.dictu-navigation-bar__submenu-link;
 }
 
 // Responsive: mobile
@@ -67,12 +75,12 @@
     @include mixin.dictu-navigation-bar__submenu-toggler--mobile;
   }
 
-  .dictu-navigation-bar__list {
-    @include mixin.dictu-navigation-bar__list--mobile;
-  }
-
   .dictu-navigation-bar__toggle {
     @include mixin.dictu-navigation-bar__toggle--mobile;
+  }
+
+  .dictu-navigation-bar__list {
+    @include mixin.dictu-navigation-bar__list--mobile;
   }
 
   .dictu-navigation-bar__link {

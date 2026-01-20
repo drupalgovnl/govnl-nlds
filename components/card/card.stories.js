@@ -74,14 +74,10 @@ export const DefaultCard = {
   args: {
     image_src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding voor een kaart',
-    headingLevel: 2,
     link: {
       href: '#',
       text: 'De titel van de kaart',
     },
-    content: 'Dit is een voorbeeld van de inhoud van de kaart.',
-    metadata: 'Dit is een voorbeeld van de metadata',
-    variant: 'default',
   },
 };
 
@@ -89,7 +85,6 @@ export const AccentCard = {
   args: {
     image_src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding voor een accent kaart',
-    headingLevel: 2,
     link: {
       href: '#',
       text: 'De titel van de accent kaart',
@@ -104,14 +99,12 @@ export const FullCardLink = {
   args: {
     image_src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding voor een kaart',
-    headingLevel: 2,
     link: {
       href: '#',
       text: 'De titel van de kaart',
     },
-    content: 'Dit is een voorbeeld van de inhoud van de kaart.',
+
     footer_content: 'Dit is een voorbeeld van de metadata',
-    variant: 'default',
     full_card_link: true,
   },
 };
