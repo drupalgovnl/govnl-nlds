@@ -221,11 +221,19 @@
           "$value": "{govnl.nav-bar.container.inline-size}"
         },
         "link": {
-          "padding-block": {
+          "padding-block-end": {
             "$type": "spacing",
             "$value": "{govnl.space.sm}"
           },
-          "padding-inline": {
+          "padding-block-start": {
+            "$type": "spacing",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-inline-end": {
+            "$type": "spacing",
+            "$value": "{govnl.space.xs}"
+          },
+          "padding-inline-start": {
             "$type": "spacing",
             "$value": "{govnl.space.xs}"
           }
