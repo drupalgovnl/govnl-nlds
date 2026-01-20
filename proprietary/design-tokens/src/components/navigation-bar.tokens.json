@@ -223,19 +223,19 @@
         "link": {
           "padding-block-end": {
             "$type": "spacing",
-            "$value": "{govnl.space.sm}"
+            "$value": "{govnl.space.xs}"
           },
           "padding-block-start": {
             "$type": "spacing",
-            "$value": "{govnl.space.sm}"
+            "$value": "{govnl.space.xs}"
           },
           "padding-inline-end": {
             "$type": "spacing",
-            "$value": "{govnl.space.xs}"
+            "$value": "{govnl.space.2xs}"
           },
           "padding-inline-start": {
             "$type": "spacing",
-            "$value": "{govnl.space.xs}"
+            "$value": "{govnl.space.2xs}"
           }
         }
       }
