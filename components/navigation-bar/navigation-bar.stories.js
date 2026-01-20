@@ -142,9 +142,4 @@ export const NavigationBarSubmenuOpen = {
     ],
     expanded: true,
   },
-  decorators: [
-    Story => {
-      return `<div>${Story()}</div>`;
-    },
-  ],
 };
