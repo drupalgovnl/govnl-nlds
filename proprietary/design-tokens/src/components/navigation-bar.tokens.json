@@ -220,6 +220,14 @@
           "$type": "sizing",
           "$value": "{govnl.nav-bar.container.inline-size}"
         },
+        "border-bottom-left-radius": {
+          "$type": "borderRadius",
+          "$value": "0"
+        },
+        "border-bottom-right-radius": {
+          "$type": "borderRadius",
+          "$value": "{govnl.rh.max.border-radius}"
+        },
         "link": {
           "padding-block-end": {
             "$type": "spacing",
@@ -236,6 +244,10 @@
           "padding-inline-start": {
             "$type": "spacing",
             "$value": "{govnl.space.2xs}"
+          },
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": "none"
           }
         }
       }
