@@ -53,7 +53,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparant"
+            "$value": "transparent"
           }
         },
         "background-color": {
@@ -75,7 +75,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparant"
+            "$value": "transparent"
           }
         },
         "padding-block": {
@@ -187,7 +187,7 @@
           },
           "background-color": {
             "$type": "color",
-            "$value": "transparant"
+            "$value": "transparent"
           }
         }
       },
@@ -222,7 +222,7 @@
         },
         "border-bottom-left-radius": {
           "$type": "borderRadius",
-          "$value": "0"
+          "$value": "0px"
         },
         "border-bottom-right-radius": {
           "$type": "borderRadius",
