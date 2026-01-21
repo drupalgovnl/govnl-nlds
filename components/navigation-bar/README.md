@@ -1,7 +1,5 @@
 <!-- @license CC0-1.0 -->
 
-De navigation-bar component toont de navigatiebalk van het Dictu Design Systeem.
-
 ## Gebruik deze component
 
 Je kunt de CSS zo in je project installeren:

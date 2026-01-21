@@ -1,5 +1,4 @@
 import { Icon } from '../icon/icon.component';
-import { Link } from '../link/link.component';
 
 export const NavigationBar = ({
   items = [],
@@ -22,6 +21,7 @@ export const NavigationBar = ({
   menuToggle.classList.add('dictu-navigation-bar__toggle');
   menuToggle.setAttribute('aria-controls', menuId);
   menuToggle.setAttribute('aria-expanded', expanded);
+  menuToggle.setAttribute('aria-haspopup', true);
   menuToggle.innerText = 'Menu';
   menuToggle.insertAdjacentElement(
     'afterbegin',
@@ -61,8 +61,8 @@ const createNavigationItem = item => {
   navigationItem.classList.add('dictu-navigation-bar__item');
 
   if ('children' in item && item.children != null) {
-    navigationItem.appendChild(createNavigationSubmenuToggler(item.title, item.expanded));
-    navigationItem.appendChild(createNavigationSubmenu(item.children, item.expanded));
+    navigationItem.appendChild(createNavigationSubmenuToggler(item.title, item.id, item.expanded));
+    navigationItem.appendChild(createNavigationSubmenu(item.children, item.id, item.expanded));
   } else {
     navigationItem.appendChild(createNavigationLink(item));
   }
@@ -80,9 +80,10 @@ const createNavigationLink = item => {
   return navigationLink;
 };
 
-const createNavigationSubmenu = (items, expanded = false) => {
+const createNavigationSubmenu = (items, id, expanded = false) => {
   const navigationSubmenu = document.createElement('div');
   navigationSubmenu.classList.add('dictu-navigation-bar__submenu');
+  navigationSubmenu.id = id;
   navigationSubmenu.appendChild(createNavigationSubmenuList(items));
 
   if (!expanded) {
@@ -92,11 +93,13 @@ const createNavigationSubmenu = (items, expanded = false) => {
   return navigationSubmenu;
 };
 
-const createNavigationSubmenuToggler = (label, expanded = false) => {
+const createNavigationSubmenuToggler = (label, id, expanded = false) => {
   const navigationToggle = document.createElement('button');
   navigationToggle.classList.add('dictu-navigation-bar__submenu-toggler', 'dictu-focus-ring');
   navigationToggle.innerHTML = label;
+  navigationToggle.setAttribute('aria-controls', id);
   navigationToggle.setAttribute('aria-expanded', expanded);
+  navigationToggle.setAttribute('aria-haspopup', true);
   const icon =
     '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z"/></svg>';
   const toggleIcon = Icon({ icon });
@@ -112,13 +115,18 @@ const createNavigationSubmenuList = items => {
 
   items.forEach(item => {
     const navigationSubmenuItem = document.createElement('li');
-    navigationSubmenuItem.appendChild(
-      Link({
-        content: item.title,
-        href: item.link,
-        classNames: ['dictu-navigation-bar__submenu-link'],
-      })
+    navigationSubmenuItem.classList.add('dictu-navigation-bar__submenu-item');
+
+    const navigationSubmenuLink = document.createElement('a');
+    navigationSubmenuLink.classList.add(
+      'dictu-navigation-bar__link',
+      'dictu-navigation-bar__submenu-link',
+      'dictu-focus-ring'
     );
+    navigationSubmenuLink.href = item.link;
+    navigationSubmenuLink.innerText = item.label;
+
+    navigationSubmenuItem.appendChild(navigationSubmenuLink);
     navigationSubmenuList.appendChild(navigationSubmenuItem);
   });
 

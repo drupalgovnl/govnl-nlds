@@ -78,6 +78,7 @@ export const NavigationBarSubmenu = {
       },
       {
         title: 'Submenu',
+        id: 'submenu-1',
         children: [
           {
             link: '#',
@@ -115,6 +116,7 @@ export const NavigationBarSubmenuOpen = {
       },
       {
         title: 'Submenu',
+        id: 'submenu-1',
         expanded: true,
         children: [
           {

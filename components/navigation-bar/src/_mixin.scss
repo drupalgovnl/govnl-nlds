@@ -207,9 +207,10 @@
   padding-block: var(--govnl-nav-bar-mobile-submenu-padding-block-start)
     var(--govnl-nav-bar-mobile-submenu-padding-block-end);
   padding-inline: var(--govnl-nav-bar-mobile-submenu-padding-inline-start)
-    var(--govnl-nav-bar--submenu-padding-inline-end);
+    var(--govnl-nav-bar-mobile-submenu-padding-inline-end);
   position: relative;
   top: 0;
+  width: initial;
 }
 
 @mixin dictu-navigation-bar__submenu-list {
@@ -218,9 +219,18 @@
   list-style-type: none;
 }
 
+@mixin dictu-navigation-bar__submenu-item {
+  display: flex;
+}
+
 @mixin dictu-navigation-bar__submenu-link {
+  background-color: transparent; // token?
   padding-block: var(--govnl-nav-bar-submenu-link-padding-block-start)
     var(--govnl-nav-bar-submenu-link-padding-block-end);
   padding-inline: var(--govnl-nav-bar-submenu-link-padding-inline-start)
     var(--govnl-nav-bar-submenu-link-padding-inline-end);
+}
+
+@mixin dictu-navigation-bar__submenu-link--mobile {
+  width: 100%;
 }
