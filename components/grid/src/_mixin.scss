@@ -29,6 +29,10 @@
   );
 }
 
+@mixin grid-column-span($span) {
+  grid-column: span #{$span};
+}
+
 @mixin dictu-grid-autoflow {
   grid-auto-columns: var(--govnl-grid-cols);
   grid-auto-flow: column;
