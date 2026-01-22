@@ -31,6 +31,20 @@
   @include mixin.dictu-card__heading;
 }
 
+.dictu-card--full-card {
+  &:has(.dictu-card__link:focus-visible) {
+    @include mixin.dictu-card--focus-visible;
+  }
+
+  &:hover {
+    @include mixin.dictu-card--hover;
+  }
+
+  &:active {
+    @include mixin.dictu-card--active;
+  }
+}
+
 .dictu-card__full-card-link {
   @include mixin.dictu-card__full-card-link;
 }

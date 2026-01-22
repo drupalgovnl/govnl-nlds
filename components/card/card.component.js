@@ -18,12 +18,10 @@ export const Card = ({
 
   const card = document.createElement('div');
   card.classList.add('dictu-card', `dictu-card--${variant}`, 'dictu-focus-ring');
+  card.setAttribute('role', 'article');
 
   if (hasFullCardLink) {
-    card.href = link.href;
-    card.setAttribute('role', 'link');
-  } else {
-    card.setAttribute('role', 'article');
+    card.classList.add('dictu-card--full-card');
   }
 
   const imageContainer = document.createElement('div');
@@ -42,8 +40,8 @@ export const Card = ({
     content: link?.text ?? '',
     href: link.href,
     classNames: hasFullCardLink
-      ? 'dictu-card__link dictu-card__full-card-link'
-      : 'dictu-card__link',
+      ? ['dictu-card__link', 'dictu-card__full-card-link']
+      : ['dictu-card__link'],
   });
 
   const headingElement = Heading({ content: headingContent, level: headingLevel });
