@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 2.5.0
+
+### Minor Changes
+
+- 14ef016: RH border-radius tokens added.
+
 ## 2.4.0
 
 ### Minor Changes
