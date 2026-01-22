@@ -125,6 +125,7 @@ const createNavigationSubmenuList = items => {
     );
     navigationSubmenuLink.href = item.link;
     navigationSubmenuLink.innerText = item.label;
+    navigationSubmenuLink.setAttribute('role', 'menuitem');
 
     navigationSubmenuItem.appendChild(navigationSubmenuLink);
     navigationSubmenuList.appendChild(navigationSubmenuItem);

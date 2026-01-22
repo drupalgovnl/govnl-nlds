@@ -38,7 +38,8 @@
 }
 
 @mixin dictu-navigation-bar__list--mobile {
-  background-color: var(--govnl-nav-bar-submenu-background-color); // own token needed.
+  // @TODO: Should be --govnl-nav-bar-mobile-list-background-color when it is added.
+  background-color: var(--govnl-nav-bar-submenu-background-color);
   flex-direction: column;
 }
 
@@ -88,39 +89,57 @@
   justify-content: center;
 }
 
+/*
+@TODO: The navigation bar toggler for mobile menu does not have an own token set.
+Currently the tokens for the submenu toggler are being used. Following tokens should be added:
+- govnl.nav-bar.toggle.background-color
+- govnl.nav-bar.toggle.border-width
+- govnl.nav-bar.toggle.color
+- govnl.nav-bar.toggle.column-gap
+- govnl.nav-bar.toggle.padding-block
+- govnl.nav-bar.toggle.padding-inline
+- govnl.nav-bar.toggle.text-decoration
+- govnl.nav-bar.toggle.expanded.background-color
+- govnl.nav-bar.toggle.hover.background-color
+- govnl.nav-bar.toggle.hover.color
+- govnl.nav-bar.toggle.active.background-color
+- govnl.nav-bar.toggle.active.color
+- govnl.nav-bar.toggle.focus-visible.background-color
+- govnl.nav-bar.toggle.focus-visible.color
+*/
+
 @mixin dictu-navigation-bar__toggle {
   align-items: center;
-  background-color: var(--govnl-nav-bar-submenu-toggler-background-color); // toggler-token needed.
-  border-width: var(--govnl-nav-bar-submenu-toggler-border-width); // toggler-token needed.
+  background-color: var(--govnl-nav-bar-submenu-toggler-background-color);
+  border-width: var(--govnl-nav-bar-submenu-toggler-border-width);
   box-sizing: border-box;
-  color: var(--govnl-nav-bar-submenu-toggler-color); // toggler-token needed.
-  column-gap: calc(var(--govnl-nav-bar-submenu-toggler-column-gap)); // toggler-token needed.
+  color: var(--govnl-nav-bar-submenu-toggler-color);
+  column-gap: calc(var(--govnl-nav-bar-submenu-toggler-column-gap));
   display: none;
   font-size: inherit;
   height: 100%;
-  padding-block: var(--govnl-nav-bar-submenu-toggler-padding-block); // toggler-token needed.
-  padding-inline: var(--govnl-nav-bar-submenu-toggler-padding-inline); // toggler-token needed.
-  text-decoration: var(--govnl-nav-bar-submenu-toggler-text-decoration); // toggler-token needed.
-  width: min-content;
+  padding-block: var(--govnl-nav-bar-submenu-toggler-padding-block);
+  padding-inline: var(--govnl-nav-bar-submenu-toggler-padding-inline);
+  text-decoration: var(--govnl-nav-bar-submenu-toggler-text-decoration);
 
   &[aria-expanded="true"] {
-    background-color: var(--govnl-nav-bar-submenu-toggler-expanded-background-color); // toggler-token needed.
+    background-color: var(--govnl-nav-bar-submenu-toggler-expanded-background-color);
   }
 
   &:hover {
-    background-color: var(--govnl-nav-bar-link-hover-background-color); // toggler-token needed.
-    color: var(--govnl-nav-bar-link-hover-color); // toggler-token needed.
+    background-color: var(--govnl-nav-bar-link-hover-background-color);
+    color: var(--govnl-nav-bar-link-hover-color);
   }
 
   &:active {
-    background-color: var(--govnl-nav-bar-link-active-background-color); // toggler-token needed.
-    color: var(--govnl-nav-bar-link-active-color); // toggler-token needed.
+    background-color: var(--govnl-nav-bar-link-active-background-color);
+    color: var(--govnl-nav-bar-link-active-color);
   }
 
   &:focus-visible {
     &:not(:active) {
-      background-color: var(--govnl-nav-bar-link-focus-background-color); // toggler-token needed.
-      color: var(--govnl-nav-bar-link-focus-color); // toggler-token needed.
+      background-color: var(--govnl-nav-bar-link-focus-background-color);
+      color: var(--govnl-nav-bar-link-focus-color);
     }
   }
 }
@@ -147,7 +166,7 @@
   color: var(--govnl-nav-bar-submenu-toggler-color);
   column-gap: calc(var(--govnl-nav-bar-submenu-toggler-column-gap));
   display: flex;
-  font-size: inherit;
+  font-size: inherit; // @TODO: add --govnl-nav-bar-submenu-toggler-font-size when it is added.
   height: 100%;
   padding-block: var(--govnl-nav-bar-submenu-toggler-padding-block);
   padding-inline: var(--govnl-nav-bar-submenu-toggler-padding-inline);
@@ -186,13 +205,12 @@
   background-color: var(--govnl-nav-bar-submenu-background-color);
   border-bottom-left-radius: var(--govnl-nav-bar-submenu-border-bottom-left-radius);
   border-bottom-right-radius: var(--govnl-nav-bar-submenu-border-bottom-right-radius);
-  max-inline-size: var(--govnl-nav-bar-submenu-max-inline-size);
-  overflow-wrap: anywhere;
+  min-inline-size: var(--govnl-nav-bar-submenu-max-inline-size); // @TODO Change into min inline size token when added.
+  overflow-wrap: break-word;
   padding-block: var(--govnl-nav-bar-submenu-padding-block-start) var(--govnl-nav-bar-submenu-padding-block-end);
   padding-inline: var(--govnl-nav-bar-submenu-padding-inline-start) var(--govnl-nav-bar-submenu-padding-inline-end);
   position: absolute;
   top: 100%;
-  width: max-content;
 }
 
 @mixin dictu-navigation-bar__submenu--hidden {
@@ -210,7 +228,6 @@
     var(--govnl-nav-bar-mobile-submenu-padding-inline-end);
   position: relative;
   top: 0;
-  width: initial;
 }
 
 @mixin dictu-navigation-bar__submenu-list {
