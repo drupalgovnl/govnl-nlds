@@ -53,7 +53,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparant"
+            "$value": "transparent"
           }
         },
         "background-color": {
@@ -75,7 +75,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparant"
+            "$value": "transparent"
           }
         },
         "padding-block": {
@@ -187,7 +187,7 @@
           },
           "background-color": {
             "$type": "color",
-            "$value": "transparant"
+            "$value": "transparent"
           }
         }
       },
@@ -264,22 +264,34 @@
           "$type": "sizing",
           "$value": "{govnl.nav-bar.container.inline-size}"
         },
+        "border-bottom-left-radius": {
+          "$type": "borderRadius",
+          "$value": "0px"
+        },
+        "border-bottom-right-radius": {
+          "$type": "borderRadius",
+          "$value": "{govnl.rh.max.border-radius}"
+        },
         "link": {
           "padding-block-end": {
             "$type": "spacing",
-            "$value": "{govnl.space.sm}"
+            "$value": "{govnl.space.xs}"
           },
           "padding-block-start": {
             "$type": "spacing",
-            "$value": "{govnl.space.sm}"
+            "$value": "{govnl.space.xs}"
           },
           "padding-inline-end": {
             "$type": "spacing",
-            "$value": "{govnl.space.xs}"
+            "$value": "{govnl.space.2xs}"
           },
           "padding-inline-start": {
             "$type": "spacing",
-            "$value": "{govnl.space.xs}"
+            "$value": "{govnl.space.2xs}"
+          },
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": "none"
           }
         }
       }
