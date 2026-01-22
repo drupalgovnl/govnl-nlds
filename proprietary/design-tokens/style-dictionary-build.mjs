@@ -11,6 +11,9 @@ register(StyleDictionary);
 const tokens = globSync('./src/**/*.tokens.json');
 
 const sd = new StyleDictionary({
+  log: {
+    verbosity: 'verbose',
+  },
   source: tokens,
   preprocessors: ['tokens-studio'],
   platforms: {
