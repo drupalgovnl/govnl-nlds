@@ -1,4 +1,4 @@
-/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */const D=`Gebruik in CSS de \`.dictu-grid\` class name voor de grid component.
+/* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              *//* empty css              */const C=`Gebruik in CSS de \`.dictu-grid\` class name voor de grid component.
 
 ## Beschrijving
 
@@ -76,7 +76,7 @@ elementen binnen het grid toegankelijk zijn via toetsenbord. Zie
 [WCAG 2.1.3 Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 en
 [WCAG 2.4.6 Headings and Labels](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html).
-`,x=`# WithImages variant
+`,z=`# WithImages variant
 
 De \`WithImages\` variant van de grid component toont afbeeldingen in een
 twee-kolommen grid layout. Deze variant demonstreert hoe het grid systeem
@@ -157,7 +157,7 @@ De styling wordt verzorgd door:
 - \`.dictu-image\` voor afbeelding styling
 - \`.dictu-aspect-ratio-*\` klassen voor beeldverhoudingen
 - Utility klassen voor spacing en responsive gedrag
-`,S=`# WithCards variant
+`,A=`# WithCards variant
 
 De \`WithCards\` variant van de grid component toont kaart componenten in een
 drie-kolommen grid layout. Deze variant demonstreert hoe verschillende card
@@ -306,7 +306,7 @@ De styling vereist deze componenten:
 - Link CSS (\`.dictu-link\`)
 - Paragraph CSS (\`.dictu-paragraph\`)
 - Utilities CSS (focus ring, spacing)
-`,G=`# WithCardsOnMultipleRows variant
+`,V=`# WithCardsOnMultipleRows variant
 
 De \`WithCardsOnMultipleRows\` variant van de grid component toont zes kaart
 componenten in een drie-kolommen grid dat zich uitstrekt over meerdere rijen.
@@ -441,7 +441,7 @@ U kunt deze variant aanpassen voor:
 - **Modern browsers**: Volledige CSS Grid ondersteuning
 - **Legacy fallbacks**: Graceful degradation naar flexbox indien nodig
 - **Progressive enhancement**: Basis functionaliteit werkt overal
-`,C=`<!-- @license CC0-1.0 -->
+`,K=`<!-- @license CC0-1.0 -->
 
 De grid component biedt een flexibel en responsief grid systeem voor het
 organiseren van content in kolommen van het Dictu Design Systeem.
@@ -721,11 +721,11 @@ De styling wordt verzorgd door de page-grid CSS en gebruikt:
 ## Licentie
 
 EUPL-1.2
-`,W={args:{autoflow:!1,content:`
+`,R={args:{autoflow:!1,content:`
       <div>Item 1</div>
       <div>Item 2</div>
       <div>Item 3</div>
-    `,columns:3,id:"page-grid-1"},argTypes:{autoflow:{control:"boolean",description:"Geeft aan of het grid automatische plaatsing moet gebruiken. Als dit waar is, worden items in de volgende beschikbare ruimte geplaatst."},content:{control:"text",description:"De HTML inhoud van het grid"},columns:{control:"select",options:[1,2,3,4],description:"Aantal kolommen in het grid. Standaard is 3."},id:{control:"text",description:"ID voor navigatie en toegankelijkheid"}},parameters:{docs:{description:{component:C}}},render:({autoflow:b,content:n,columns:f,id:w})=>{const e=document.createElement("div");if(e.classList.add("dictu-grid",`dictu-grid--columns-${f}`),b&&e.classList.add("dictu-grid--autoflow"),e.setAttribute("id",w),n){if(typeof n=="string"){const j=new DOMParser().parseFromString(n,"text/html"),d=document.createDocumentFragment();Array.from(j.body.childNodes).forEach(y=>{d.appendChild(y.cloneNode(!0))}),e.appendChild(d)}n instanceof HTMLElement&&e.appendChild(n)}return e},tags:["autodocs"],title:"Componenten/Grid"},a={args:{},parameters:{docs:{description:{story:D}}}},i={args:{content:`
+    `,columns:3,id:"page-grid-1"},argTypes:{autoflow:{control:"boolean",description:"Geeft aan of het grid automatische plaatsing moet gebruiken. Als dit waar is, worden items in de volgende beschikbare ruimte geplaatst."},content:{control:"text",description:"De HTML inhoud van het grid"},columns:{control:"select",options:[1,2,3,4],description:"Aantal kolommen in het grid. Standaard is 3."},id:{control:"text",description:"ID voor navigatie en toegankelijkheid"}},parameters:{docs:{description:{component:K}}},render:({autoflow:y,content:n,columns:D,id:x})=>{const e=document.createElement("div");if(e.classList.add("dictu-grid",`dictu-grid--columns-${D}`),y&&e.classList.add("dictu-grid--autoflow"),e.setAttribute("id",x),n){if(typeof n=="string"){const S=new DOMParser().parseFromString(n,"text/html"),c=document.createDocumentFragment();Array.from(S.body.childNodes).forEach(G=>{c.appendChild(G.cloneNode(!0))}),e.appendChild(c)}n instanceof HTMLElement&&e.appendChild(n)}return e},tags:["autodocs"],title:"Componenten/Grid"},a={args:{},parameters:{docs:{description:{story:C}}}},i={args:{content:`
       <img class="dictu-image dictu-aspect-ratio-landscape"
            src="assets/example-image.jpg"
            alt="Eerste voorbeeld afbeelding in landscape formaat"
@@ -739,7 +739,7 @@ EUPL-1.2
            loading="lazy"
            width="640"
            height="640" />
-    `,columns:2,id:"page-grid-images"},parameters:{docs:{description:{story:x}}}},t={args:{content:`
+    `,columns:2,id:"page-grid-images"},parameters:{docs:{description:{story:z}}}},t={args:{content:`
       <article class="dictu-card dictu-focus-ring" tabindex="0">
         <div class="dictu-card__image-container">
           <img class="dictu-image dictu-card__image" src="assets/example-image.jpg" alt="Eerste voorbeeld afbeelding" />
@@ -784,7 +784,7 @@ EUPL-1.2
         </div>
         <small class="dictu-card__metadata">Gepubliceerd op 10 juli 2025</small>
       </article>
-    `,columns:3,id:"page-grid-cards"},parameters:{docs:{description:{story:S}}}},r={args:{content:`
+    `,columns:3,id:"page-grid-cards"},parameters:{docs:{description:{story:A}}}},r={args:{content:`
       <article class="dictu-card dictu-focus-ring" tabindex="0">
         <div class="dictu-card__content">
           <h2 class="dictu-card__heading">
@@ -850,7 +850,29 @@ EUPL-1.2
           </p>
         </div>
       </article>
-    `,columns:3,id:"page-grid-multiple-cards"},parameters:{docs:{description:{story:G}}}};var c,s,o;a.parameters={...a.parameters,docs:{...(c=a.parameters)==null?void 0:c.docs,source:{originalSource:`{
+    `,columns:3,id:"page-grid-multiple-cards"},parameters:{docs:{description:{story:V}}}},d={args:{content:`
+      <article class="dictu-card dictu-focus-ring dictu-grid__item--span-2" style="background: red;" tabindex="0">
+        <div class="dictu-card__content">
+          <h2 class="dictu-card__heading">
+            <a href="#" class="dictu-link dictu-card__link">Kaart die 2 kolommen beslaat</a>
+          </h2>
+          <p class="dictu-card__paragraph">
+            Deze kaart beslaat twee kolommen in het grid.
+          </p>
+        </div>
+      </article>
+
+      <article class="dictu-card dictu-focus-ring dictu-grid__item--span-10" style="background: tomato;" tabindex="0">
+        <div class="dictu-card__content">
+          <h2 class="dictu-card__heading">
+            <a href="#" class="dictu-link dictu-card__link">Kaart die uit 10 kolommen bestaat</a>
+          </h2>
+          <p class="dictu-card__paragraph">
+            Dit is een standaard kaart die 10 kolommen beslaat.
+          </p>
+        </div>
+      </article>
+    `,columns:12,autoflow:!1,id:"page-grid-colspan"}};var s,o,l;a.parameters={...a.parameters,docs:{...(s=a.parameters)==null?void 0:s.docs,source:{originalSource:`{
   args: {},
   parameters: {
     docs: {
@@ -859,7 +881,7 @@ EUPL-1.2
       }
     }
   }
-}`,...(o=(s=a.parameters)==null?void 0:s.docs)==null?void 0:o.source}}};var l,g,u;i.parameters={...i.parameters,docs:{...(l=i.parameters)==null?void 0:l.docs,source:{originalSource:`{
+}`,...(l=(o=a.parameters)==null?void 0:o.docs)==null?void 0:l.source}}};var g,u,m;i.parameters={...i.parameters,docs:{...(g=i.parameters)==null?void 0:g.docs,source:{originalSource:`{
   args: {
     content: \`
       <img class="dictu-image dictu-aspect-ratio-landscape"
@@ -886,7 +908,7 @@ EUPL-1.2
       }
     }
   }
-}`,...(u=(g=i.parameters)==null?void 0:g.docs)==null?void 0:u.source}}};var m,p,h;t.parameters={...t.parameters,docs:{...(m=t.parameters)==null?void 0:m.docs,source:{originalSource:`{
+}`,...(m=(u=i.parameters)==null?void 0:u.docs)==null?void 0:m.source}}};var p,h,v;t.parameters={...t.parameters,docs:{...(p=t.parameters)==null?void 0:p.docs,source:{originalSource:`{
   args: {
     content: \`
       <article class="dictu-card dictu-focus-ring" tabindex="0">
@@ -944,7 +966,7 @@ EUPL-1.2
       }
     }
   }
-}`,...(h=(p=t.parameters)==null?void 0:p.docs)==null?void 0:h.source}}};var v,k,_;r.parameters={...r.parameters,docs:{...(v=r.parameters)==null?void 0:v.docs,source:{originalSource:`{
+}`,...(v=(h=t.parameters)==null?void 0:h.docs)==null?void 0:v.source}}};var k,_,b;r.parameters={...r.parameters,docs:{...(k=r.parameters)==null?void 0:k.docs,source:{originalSource:`{
   args: {
     content: \`
       <article class="dictu-card dictu-focus-ring" tabindex="0">
@@ -1023,4 +1045,33 @@ EUPL-1.2
       }
     }
   }
-}`,...(_=(k=r.parameters)==null?void 0:k.docs)==null?void 0:_.source}}};const I=["Default","WithImages","WithCards","WithCardsOnMultipleRows"];export{a as Default,t as WithCards,r as WithCardsOnMultipleRows,i as WithImages,I as __namedExportsOrder,W as default};
+}`,...(b=(_=r.parameters)==null?void 0:_.docs)==null?void 0:b.source}}};var f,w,j;d.parameters={...d.parameters,docs:{...(f=d.parameters)==null?void 0:f.docs,source:{originalSource:`{
+  args: {
+    content: \`
+      <article class="dictu-card dictu-focus-ring dictu-grid__item--span-2" style="background: red;" tabindex="0">
+        <div class="dictu-card__content">
+          <h2 class="dictu-card__heading">
+            <a href="#" class="dictu-link dictu-card__link">Kaart die 2 kolommen beslaat</a>
+          </h2>
+          <p class="dictu-card__paragraph">
+            Deze kaart beslaat twee kolommen in het grid.
+          </p>
+        </div>
+      </article>
+
+      <article class="dictu-card dictu-focus-ring dictu-grid__item--span-10" style="background: tomato;" tabindex="0">
+        <div class="dictu-card__content">
+          <h2 class="dictu-card__heading">
+            <a href="#" class="dictu-link dictu-card__link">Kaart die uit 10 kolommen bestaat</a>
+          </h2>
+          <p class="dictu-card__paragraph">
+            Dit is een standaard kaart die 10 kolommen beslaat.
+          </p>
+        </div>
+      </article>
+    \`,
+    columns: 12,
+    autoflow: false,
+    id: 'page-grid-colspan'
+  }
+}`,...(j=(w=d.parameters)==null?void 0:w.docs)==null?void 0:j.source}}};const O=["Default","WithImages","WithCards","WithCardsOnMultipleRows","GridWithColumnSpan"];export{a as Default,d as GridWithColumnSpan,t as WithCards,r as WithCardsOnMultipleRows,i as WithImages,O as __namedExportsOrder,R as default};

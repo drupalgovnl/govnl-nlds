@@ -1,4 +1,4 @@
-import{j as e,M as d,T as l,S as c,C as t,A as h,h as m}from"./blocks-Cm_2iK2p.js";import{useMDXComponents as s}from"./index-I1UZeJoc.js";import{S as i,a,b as j}from"./searchbar.stories-YaNxw7iI.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-CJirsmSz.js";import"./text-input.component-CitIGVob.js";/* empty css              *//* empty css              */import"./button.component-DRRUjNOi.js";import"./icon.component-X7CMXdF1.js";const p=`<!-- @license CC0-1.0 -->
+import{j as e,M as d,T as l,S as c,C as t,A as h,h as m}from"./blocks-BNDN5geN.js";import{useMDXComponents as s}from"./index-CiHzKeRo.js";import{S as i,a,b as j}from"./searchbar.stories-YaNxw7iI.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-DYXQYAKU.js";import"./text-input.component-CitIGVob.js";/* empty css              *//* empty css              */import"./button.component-DRRUjNOi.js";import"./icon.component-X7CMXdF1.js";const p=`<!-- @license CC0-1.0 -->
 
 ## De Searchbar component implementeren
 
