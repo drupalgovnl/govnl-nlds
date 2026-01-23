@@ -25,42 +25,49 @@
   padding-block: var(--govnl-card-default-main-padding-block-start) var(--govnl-card-default-main-padding-block-end);
   padding-inline: var(--govnl-card-default-main-padding-inline-start) var(--govnl-card-default-main-padding-inline-end);
   position: relative;
+}
 
+@mixin dictu-card--hover {
   &:hover {
     background-color: var(--govnl-card-default-hover-background-color);
     border-color: var(--govnl-card-default-hover-border-color);
   }
+}
 
+@mixin dictu-card--active {
   &:active {
     background-color: var(--govnl-card-default-active-background-color);
     border-color: var(--govnl-card-default-active-border-color);
   }
+}
 
-  &:focus-visible {
-    --govnl-card-default-background-color: var(--govnl-card-accent-focus-background-color);
-    --govnl-card-default-focus-border-color: var(--govnl-card-accent-focus-border-color);
-    --govnl-card-default-color: var(--govnl-card-accent-focus-color);
-    --govnl-card-default-heading-color: var(--govnl-card-accent-focus-color);
-    --govnl-card-default-paragraph-color: var(--govnl-card-accent-focus-color);
-    --govnl-card-default-footer-color: var(--govnl-card-accent-focus-color);
-    --govnl-card-default-metadata-subheading-color: var(--govnl-card-accent-focus-color);
-    --nl-link-color: var(--govnl-color-black);
-    --govnl-card-default-metadata-footer-color: var(--govnl-card-accent-focus-color);
+@mixin dictu-card--focus-visible {
+  background-color: var(--govnl-card-accent-focus-background-color);
+  border-color: var(--govnl-card-accent-focus-border-color);
+  color: var(--govnl-card-accent-focus-color);
 
-    /* stylelint-disable-next-line selector-nested-pattern */
-    .dictu-card__link {
-      --nl-link-color: var(--govnl-color-black);
-    }
+  /* stylelint-disable-next-line selector-nested-pattern */
+  .dictu-card__link {
+    color: var(--govnl-color-black);
+    text-decoration-color: var(--govnl-color-black);
+  }
 
-    /* stylelint-disable-next-line selector-nested-pattern */
-    .dictu-icon {
-      svg,
-      path {
-        fill: var(--govnl-card-accent-focus-color);
-      }
+  .dictu-card__subheading {
+    color: var(--govnl-card-accent-focus-color);
+  }
 
+  .dictu-card__metadata {
+    color: var(--govnl-card-accent-focus-color);
+  }
+
+  /* stylelint-disable-next-line selector-nested-pattern */
+  .dictu-icon {
+    svg,
+    path {
       fill: var(--govnl-card-accent-focus-color);
     }
+
+    fill: var(--govnl-card-accent-focus-color);
   }
 }
 

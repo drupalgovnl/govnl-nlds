@@ -5,6 +5,7 @@
 
 @use "./mixin" as mixin;
 @use "pkg:@dictu/link/src/index" as link-component;
+@use "pkg:@dictu/utility-focus-ring/src/mixin" as focus-ring-utility;
 
 .dictu-card {
   @include mixin.dictu-card;
@@ -29,6 +30,21 @@
 .dictu-card__heading,
 .dictu-card__link {
   @include mixin.dictu-card__heading;
+}
+
+.dictu-card--full-card {
+  &:has(.dictu-card__link:focus-visible) {
+    @include mixin.dictu-card--focus-visible;
+    @include focus-ring-utility.dictu-focus-ring;
+  }
+
+  &:hover {
+    @include mixin.dictu-card--hover;
+  }
+
+  &:active {
+    @include mixin.dictu-card--active;
+  }
 }
 
 .dictu-card__full-card-link {
