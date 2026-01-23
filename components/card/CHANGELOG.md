@@ -1,5 +1,13 @@
 # @dictu/card
 
+## 4.1.0
+
+### Minor Changes
+
+- 4c3f8fd: Correct focus within state for full card link
+- 4c3f8fd: Added correct usage for full card link. Added mixins for states and
+  included dictu-focus-ring.
+
 ## 4.0.0
 
 ### Major Changes

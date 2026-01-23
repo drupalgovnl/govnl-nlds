@@ -1,5 +1,11 @@
 # @dictu/button
 
+## 4.1.0
+
+### Minor Changes
+
+- 9d31d7f: Added correct disabled style for primart-action
+
 ## 4.0.1
 
 ### Patch Changes
