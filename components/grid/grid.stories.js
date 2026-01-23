@@ -265,7 +265,7 @@ export const WithCardsOnMultipleRows = {
   },
 };
 
-export const Colspan = {
+export const GridWithColumnSpan = {
   args: {
     content: `
       <article class="dictu-card dictu-focus-ring dictu-grid__item--span-2" style="background: red;" tabindex="0">
