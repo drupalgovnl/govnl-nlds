@@ -264,3 +264,34 @@ export const WithCardsOnMultipleRows = {
     },
   },
 };
+
+export const GridWithColumnSpan = {
+  args: {
+    content: `
+      <article class="dictu-card dictu-focus-ring dictu-grid__item--span-2" style="background: red;" tabindex="0">
+        <div class="dictu-card__content">
+          <h2 class="dictu-card__heading">
+            <a href="#" class="dictu-link dictu-card__link">Kaart die 2 kolommen beslaat</a>
+          </h2>
+          <p class="dictu-card__paragraph">
+            Deze kaart beslaat twee kolommen in het grid.
+          </p>
+        </div>
+      </article>
+
+      <article class="dictu-card dictu-focus-ring dictu-grid__item--span-10" style="background: tomato;" tabindex="0">
+        <div class="dictu-card__content">
+          <h2 class="dictu-card__heading">
+            <a href="#" class="dictu-link dictu-card__link">Kaart die uit 10 kolommen bestaat</a>
+          </h2>
+          <p class="dictu-card__paragraph">
+            Dit is een standaard kaart die 10 kolommen beslaat.
+          </p>
+        </div>
+      </article>
+    `,
+    columns: 12,
+    autoflow: false,
+    id: 'page-grid-colspan',
+  },
+};

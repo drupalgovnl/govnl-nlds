@@ -11,6 +11,14 @@ $grid-columns: (
   2: 2,
   3: 3,
   4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8,
+  9: 9,
+  10: 10,
+  11: 11,
+  12: 12,
 );
 
 @each $name, $value in $grid-columns {
@@ -23,6 +31,14 @@ $grid-columns: (
 
 .dictu-grid {
   @include mixin.dictu-grid;
+
+  & > * {
+    @each $name, $value in $grid-columns {
+      &.dictu-grid__item--span-#{$name} {
+        @include mixin.grid-column-span($value);
+      }
+    }
+  }
 }
 
 .dictu-grid--autoflow {
