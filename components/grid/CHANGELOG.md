@@ -1,5 +1,11 @@
 # @dictu/grid
 
+## 2.1.0
+
+### Minor Changes
+
+- d3e8175: Enhanced grid with item-span classes to make building layouts easier.
+
 ## 2.0.0
 
 ### Major Changes
