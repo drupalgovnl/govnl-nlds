@@ -28,9 +28,9 @@ export function Accordion({ label, content, headingLevel, classNames = [], ...ar
   accordionBody.id = args.id;
   accordionBody.innerHTML = content;
 
-  // Add the hidden attribute if expanded param is false.
+  // Hide element if expanded param is false.
   if (args.expanded === false) {
-    accordionBody.hidden = true;
+    accordionBody.classList.add('dictu-display-none');
   }
 
   accordion.appendChild(accordionBody);

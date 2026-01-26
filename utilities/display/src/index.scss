@@ -1,0 +1,5 @@
+@use "mixin" as mixin;
+
+.dictu-display-none {
+  @include mixin.dictu-display-none;
+}

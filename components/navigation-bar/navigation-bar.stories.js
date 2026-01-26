@@ -1,5 +1,6 @@
 import readme from './README.md?raw';
 import './dist/index.css';
+import '@dictu/utility-display/dist/index.css';
 import { NavigationBar } from './navigation-bar.component';
 
 export default {
