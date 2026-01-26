@@ -33,10 +33,6 @@
   padding: 0;
 }
 
-@mixin dictu-navigation-bar__list--hidden {
-  display: none;
-}
-
 @mixin dictu-navigation-bar__list--mobile {
   // @TODO: Should be --govnl-nav-bar-mobile-list-background-color when it is added.
   background-color: var(--govnl-nav-bar-submenu-background-color);
@@ -211,10 +207,6 @@ Currently the tokens for the submenu toggler are being used. Following tokens sh
   padding-inline: var(--govnl-nav-bar-submenu-padding-inline-start) var(--govnl-nav-bar-submenu-padding-inline-end);
   position: absolute;
   top: 100%;
-}
-
-@mixin dictu-navigation-bar__submenu--hidden {
-  display: none;
 }
 
 @mixin dictu-navigation-bar__submenu--mobile {

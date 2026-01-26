@@ -46,7 +46,7 @@ const createNavigationList = (items, isMobile, menuId, expanded) => {
   navigationList.setAttribute('role', 'menubar');
 
   if (isMobile && !expanded) {
-    navigationList.classList.add('dictu-navigation-bar__list--hidden');
+    navigationList.classList.add('dictu-display-none');
   }
 
   items.forEach(item => {
@@ -87,7 +87,7 @@ const createNavigationSubmenu = (items, id, expanded = false) => {
   navigationSubmenu.appendChild(createNavigationSubmenuList(items));
 
   if (!expanded) {
-    navigationSubmenu.classList.add('dictu-navigation-bar__submenu--hidden');
+    navigationSubmenu.classList.add('dictu-display-none');
   }
 
   return navigationSubmenu;

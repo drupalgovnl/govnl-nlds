@@ -15,10 +15,6 @@
   @include mixin.dictu-navigation-bar__list;
 }
 
-.dictu-navigation-bar__list--hidden {
-  @include mixin.dictu-navigation-bar__list--hidden;
-}
-
 .dictu-navigation-bar__item {
   &:has(.dictu-navigation-bar__submenu-toggler) {
     @include mixin.dictu-navigation-bar__item--submenu;
@@ -55,10 +51,6 @@
 
 .dictu-navigation-bar__submenu-item {
   @include mixin.dictu-navigation-bar__submenu-item;
-}
-
-.dictu-navigation-bar__submenu--hidden {
-  @include mixin.dictu-navigation-bar__submenu--hidden;
 }
 
 .dictu-navigation-bar__submenu-link {
