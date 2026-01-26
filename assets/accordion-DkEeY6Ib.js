@@ -1,4 +1,4 @@
-import{j as e,M as s,T as a,S as l,C as r,A as h,a as j}from"./blocks-CTBh-XZf.js";import{useMDXComponents as c}from"./index-Krlvz1ZE.js";import{A as i,a as d,b as p}from"./accordion.stories-e1h4S6of.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-Btsl5f4D.js";/* empty css              *//* empty css              */import"./button.component-DRRUjNOi.js";import"./icon.component-X7CMXdF1.js";const u=`<!-- @license CC0-1.0 -->
+import{j as e,M as s,T as a,S as l,C as r,A as h,a as j}from"./blocks-CfDqDAei.js";import{useMDXComponents as c}from"./index-D_FSHAXS.js";import{A as i,a as d,b as p}from"./accordion.stories-e3gr9J3g.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-1Bz-tSmw.js";/* empty css              *//* empty css              *//* empty css              */import"./button.component-DRRUjNOi.js";import"./icon.component-X7CMXdF1.js";const u=`<!-- @license CC0-1.0 -->
 
 ## De Accordion component implementeren
 
@@ -84,4 +84,4 @@ Op de toggler wordt het `,e.jsx(n.code,{children:"aria-expanded"})," attribuut o
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function C(o={}){const{wrapper:n}={...c(),...o.components};return n?e.jsx(n,{...o,children:e.jsx(t,{...o})}):t(o)}export{C as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function W(o={}){const{wrapper:n}={...c(),...o.components};return n?e.jsx(n,{...o,children:e.jsx(t,{...o})}):t(o)}export{W as default};

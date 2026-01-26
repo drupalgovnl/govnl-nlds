@@ -1,4 +1,4 @@
-import{j as e,M as r,T as l,S as h,C as t,A as c,a as u}from"./blocks-CTBh-XZf.js";import{useMDXComponents as o}from"./index-Krlvz1ZE.js";import{N as a,a as d,R as m,b,c as j}from"./navigation-bar.stories-DqmCFkPF.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-Btsl5f4D.js";/* empty css              */import"./icon.component-X7CMXdF1.js";function s(i){const n={a:"a",code:"code",h2:"h2",h3:"h3",h4:"h4",li:"li",p:"p",ul:"ul",...o(),...i.components};return e.jsxs(e.Fragment,{children:[`
+import{j as e,M as r,T as l,S as h,C as t,A as c,a as u}from"./blocks-CfDqDAei.js";import{useMDXComponents as o}from"./index-D_FSHAXS.js";import{N as a,a as d,R as m,b,c as j}from"./navigation-bar.stories-CWphqp8n.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-1Bz-tSmw.js";/* empty css              *//* empty css              */import"./icon.component-X7CMXdF1.js";function s(i){const n={a:"a",code:"code",h2:"h2",h3:"h3",h4:"h4",li:"li",p:"p",ul:"ul",...o(),...i.components};return e.jsxs(e.Fragment,{children:[`
 `,`
 `,e.jsx(r,{of:a,title:"Componenten/Navigation Bar"}),`
 `,e.jsx(l,{children:"Navigation Bar"}),`
@@ -66,4 +66,4 @@ Voor het correcte en toegankelijk gebruik zijn de volgende attributen verplicht 
 `,e.jsxs(n.li,{children:[e.jsx(n.a,{href:"",children:"Biedt een wijzigingsvoorstel aan op Github"}),". Lees hoe je het beste ",e.jsx(n.a,{href:"",children:"een wijziging kunt aanbieden"}),"."]}),`
 `]}),`
 `,e.jsx(n.h2,{id:"heb-je-hulp-nodig",children:"Heb je hulp nodig?"}),`
-`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function N(i={}){const{wrapper:n}={...o(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(s,{...i})}):s(i)}export{N as default};
+`,e.jsxs(n.p,{children:["Heb je een vraag over deze component of het DICTU Design System? ",e.jsx(n.a,{href:"?path=/docs/informatie-team--docs",children:"Neem dan contact op met het team"}),"."]})]})}function B(i={}){const{wrapper:n}={...o(),...i.components};return n?e.jsx(n,{...i,children:e.jsx(s,{...i})}):s(i)}export{B as default};
