@@ -36,12 +36,12 @@
         },
         "border-radius": {
           "$type": "borderRadius",
-          "$value": "20px"
+          "$value": "{govnl.rh.min.border-radius}"
         }
       },
       "border-radius": {
         "$type": "borderRadius",
-        "$value": "40px"
+        "$value": "{govnl.rh.max.border-radius}"
       },
       "heading": {
         "font-family": {

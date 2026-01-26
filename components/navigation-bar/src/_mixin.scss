@@ -6,6 +6,8 @@
 @mixin reset {
   margin-block: 0;
   margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
 }
 
 @mixin dictu-navigation-bar {
@@ -19,6 +21,10 @@
   padding-inline: var(--govnl-nav-bar-padding-inline);
 }
 
+@mixin dictu-navigation-bar--mobile {
+  flex-direction: column;
+}
+
 @mixin dictu-navigation-bar__list {
   display: flex;
   gap: var(--govnl-nav-bar-content-column-gap);
@@ -27,9 +33,14 @@
   padding: 0;
 }
 
-@mixin dictu-navigation-bar__item {
-  align-items: center;
-  display: flex;
+@mixin dictu-navigation-bar__list--hidden {
+  display: none;
+}
+
+@mixin dictu-navigation-bar__list--mobile {
+  // @TODO: Should be --govnl-nav-bar-mobile-list-background-color when it is added.
+  background-color: var(--govnl-nav-bar-submenu-background-color);
+  flex-direction: column;
 }
 
 @mixin dictu-navigation-bar__link {
@@ -59,96 +70,184 @@
     color: var(--govnl-nav-bar-link-focus-color);
   }
 
-  &-active {
+  &:active {
     background-color: var(--govnl-nav-bar-link-active-background-color);
     color: var(--govnl-nav-bar-link-active-color);
   }
 }
 
+@mixin dictu-navigation-bar__link--mobile {
+  background-color: transparent;
+}
+
 @mixin dictu-navigation-bar__icon {
+  --govnl-icon-size: var(--govnl-nav-bar-icon-size);
+
   align-items: center;
-  block-size: var(--govnl-nav-bar-icon-size);
   color: var(--govnl-nav-bar-icon-color);
   display: inline-flex;
-  inline-size: var(--govnl-nav-bar-icon-size);
   justify-content: center;
 }
 
+/*
+@TODO: The navigation bar toggler for mobile menu does not have an own token set.
+Currently the tokens for the submenu toggler are being used. Following tokens should be added:
+- govnl.nav-bar.toggle.background-color
+- govnl.nav-bar.toggle.border-width
+- govnl.nav-bar.toggle.color
+- govnl.nav-bar.toggle.column-gap
+- govnl.nav-bar.toggle.padding-block
+- govnl.nav-bar.toggle.padding-inline
+- govnl.nav-bar.toggle.text-decoration
+- govnl.nav-bar.toggle.expanded.background-color
+- govnl.nav-bar.toggle.hover.background-color
+- govnl.nav-bar.toggle.hover.color
+- govnl.nav-bar.toggle.active.background-color
+- govnl.nav-bar.toggle.active.color
+- govnl.nav-bar.toggle.focus-visible.background-color
+- govnl.nav-bar.toggle.focus-visible.color
+*/
+
 @mixin dictu-navigation-bar__toggle {
-  display: none;
-}
-
-@mixin dictu-navigation-bar__menu-label {
   align-items: center;
-  background: none;
-  border: none;
-  color: inherit;
-  cursor: pointer;
+  background-color: var(--govnl-nav-bar-submenu-toggler-background-color);
+  border-width: var(--govnl-nav-bar-submenu-toggler-border-width);
+  box-sizing: border-box;
+  color: var(--govnl-nav-bar-submenu-toggler-color);
+  column-gap: calc(var(--govnl-nav-bar-submenu-toggler-column-gap));
   display: none;
-  font-size: 1rem;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-}
+  font-size: inherit;
+  height: 100%;
+  padding-block: var(--govnl-nav-bar-submenu-toggler-padding-block);
+  padding-inline: var(--govnl-nav-bar-submenu-toggler-padding-inline);
+  text-decoration: var(--govnl-nav-bar-submenu-toggler-text-decoration);
 
-// Mobile styles <= 768px
-@mixin dictu-navigation-bar--mobile {
-  .dictu-navigation-bar {
-    align-items: center;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: minmax(50px, max-content);
-    grid-template-rows: auto auto;
-    max-inline-size: 100%;
+  &[aria-expanded="true"] {
+    background-color: var(--govnl-nav-bar-submenu-toggler-expanded-background-color);
   }
 
-  // Place first 3 children in first row, fourth in second row
-  .dictu-navigation-bar .dictu-navigation-bar__toggle {
-    grid-column: 2;
-    grid-row: 1;
+  &:hover {
+    background-color: var(--govnl-nav-bar-link-hover-background-color);
+    color: var(--govnl-nav-bar-link-hover-color);
   }
 
-  .dictu-navigation-bar .dictu-navigation-bar__home {
-    display: block;
-    grid-column: 1;
-    grid-row: 1;
+  &:active {
+    background-color: var(--govnl-nav-bar-link-active-background-color);
+    color: var(--govnl-nav-bar-link-active-color);
   }
 
-  .dictu-navigation-bar .dictu-navigation-bar__menu-label {
-    display: flex;
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .dictu-navigation-bar .dictu-navigation-bar__link {
-    width: 100%;
-  }
-
-  .dictu-navigation-bar .dictu-navigation-bar__list {
-    background: var(--govnl-nav-bar-background-color);
-    display: none;
-    flex-direction: column;
-    grid-column: 1 / span 6;
-    grid-row: 2;
-  }
-
-  .dictu-navigation-bar__toggle:checked ~ .dictu-navigation-bar__list {
-    display: flex;
+  &:focus-visible {
+    &:not(:active) {
+      background-color: var(--govnl-nav-bar-link-focus-background-color);
+      color: var(--govnl-nav-bar-link-focus-color);
+    }
   }
 }
 
-// Desktop styles > 768px
-@mixin dictu-navigation-bar--desktop {
-  .dictu-navigation-bar__menu-label {
-    display: none;
+@mixin dictu-navigation-bar__toggle--mobile {
+  display: flex;
+}
+
+@mixin dictu-navigation-bar__menu-icon {
+  --govnl-icon-size: var(--govnl-nav-bar-icon-size);
+
+  color: var(--govnl-nav-bar-icon-color);
+}
+
+@mixin dictu-navigation-bar__item--submenu {
+  position: relative;
+}
+
+@mixin dictu-navigation-bar__submenu-toggler {
+  align-items: center;
+  background-color: var(--govnl-nav-bar-submenu-toggler-background-color);
+  border-width: var(--govnl-nav-bar-submenu-toggler-border-width);
+  box-sizing: border-box;
+  color: var(--govnl-nav-bar-submenu-toggler-color);
+  column-gap: calc(var(--govnl-nav-bar-submenu-toggler-column-gap));
+  display: flex;
+  font-size: inherit; // @TODO: add --govnl-nav-bar-submenu-toggler-font-size when it is added.
+  height: 100%;
+  padding-block: var(--govnl-nav-bar-submenu-toggler-padding-block);
+  padding-inline: var(--govnl-nav-bar-submenu-toggler-padding-inline);
+  text-decoration: var(--govnl-nav-bar-submenu-toggler-text-decoration);
+
+  &[aria-expanded="true"] {
+    background-color: var(--govnl-nav-bar-submenu-toggler-expanded-background-color);
+    font-weight: var(--govnl-nav-bar-submenu-toggler-expanded-font-weight);
   }
 
-  .dictu-navigation-bar__home {
-    display: none;
+  &:hover {
+    background-color: var(--govnl-nav-bar-link-hover-background-color);
+    color: var(--govnl-nav-bar-link-hover-color);
   }
 
-  .dictu-navigation-bar__list {
-    box-shadow: none;
-    display: flex;
-    flex-direction: row;
+  &:active {
+    background-color: var(--govnl-nav-bar-link-active-background-color);
+    color: var(--govnl-nav-bar-link-active-color);
   }
+
+  &:focus-visible {
+    &:not(:active) {
+      background-color: var(--govnl-nav-bar-link-focus-background-color);
+      color: var(--govnl-nav-bar-link-focus-color);
+    }
+  }
+}
+
+@mixin dictu-navigation-bar__submenu-toggler--mobile {
+  background-color: transparent;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@mixin dictu-navigation-bar__submenu {
+  background-color: var(--govnl-nav-bar-submenu-background-color);
+  border-bottom-left-radius: var(--govnl-nav-bar-submenu-border-bottom-left-radius);
+  border-bottom-right-radius: var(--govnl-nav-bar-submenu-border-bottom-right-radius);
+  min-inline-size: var(--govnl-nav-bar-submenu-max-inline-size); // @TODO Change into min inline size token when added.
+  overflow-wrap: break-word;
+  padding-block: var(--govnl-nav-bar-submenu-padding-block-start) var(--govnl-nav-bar-submenu-padding-block-end);
+  padding-inline: var(--govnl-nav-bar-submenu-padding-inline-start) var(--govnl-nav-bar-submenu-padding-inline-end);
+  position: absolute;
+  top: 100%;
+}
+
+@mixin dictu-navigation-bar__submenu--hidden {
+  display: none;
+}
+
+@mixin dictu-navigation-bar__submenu--mobile {
+  background-color: transparent;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow-wrap: initial;
+  padding-block: var(--govnl-nav-bar-mobile-submenu-padding-block-start)
+    var(--govnl-nav-bar-mobile-submenu-padding-block-end);
+  padding-inline: var(--govnl-nav-bar-mobile-submenu-padding-inline-start)
+    var(--govnl-nav-bar-mobile-submenu-padding-inline-end);
+  position: relative;
+  top: 0;
+}
+
+@mixin dictu-navigation-bar__submenu-list {
+  @include reset;
+
+  list-style-type: none;
+}
+
+@mixin dictu-navigation-bar__submenu-item {
+  display: flex;
+}
+
+@mixin dictu-navigation-bar__submenu-link {
+  background-color: transparent; // token?
+  padding-block: var(--govnl-nav-bar-submenu-link-padding-block-start)
+    var(--govnl-nav-bar-submenu-link-padding-block-end);
+  padding-inline: var(--govnl-nav-bar-submenu-link-padding-inline-start)
+    var(--govnl-nav-bar-submenu-link-padding-inline-end);
+}
+
+@mixin dictu-navigation-bar__submenu-link--mobile {
+  width: 100%;
 }
