@@ -1,5 +1,12 @@
 # @dictu/navigation-bar
 
+## 4.0.0
+
+### Major Changes
+
+- 64b63e3: BREAKING CHANGE: Added display utility class that is used for
+  components to hide dynamic elements
+
 ## 3.0.0
 
 ### Major Changes
