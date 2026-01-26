@@ -32,11 +32,11 @@
             },
             "padding-inline-start": {
               "$type": "dimension",
-              "$value": "0rem"
+              "$value": "{govnl.space.3xs}"
             },
             "padding-inline-end": {
               "$type": "dimension",
-              "$value": "{govnl.space.3xs}"
+              "$value": "0rem"
             }
           }
         },
