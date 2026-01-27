@@ -93,7 +93,7 @@ export const Pagination = ({ pages, size, previous, next, classNames = [] }) => 
     if (size !== 'small') {
       nextLink.insertAdjacentText('afterbegin', next.label);
     } else {
-      nextLink.classList.add('dictu-pagination__relative-link-next--small');
+      nextLink.classList.add('dictu-pagination__relative-link-next-small');
     }
 
     nextLink.classList.add('dictu-pagination__relative-link-next');
