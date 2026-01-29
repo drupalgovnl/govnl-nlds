@@ -17,13 +17,18 @@
     "build": "storybook build --output-dir dist/ --config-dir config/ --quiet",
     "clean": "rimraf dist/",
     "storybook": "storybook dev --config-dir config/ --port 6006",
-    "test": "vitest --config test/vitest.config.ts"
+    "test": "vitest --config test/vitest.config.ts",
+    "test:visual": "playwright test --config test-visual/playwright.config.ts",
+    "test:visual:update": "playwright test --config test-visual/playwright.config.ts --update-snapshots",
+    "test:visual:headed": "playwright test --config test-visual/playwright.config.ts --headed",
+    "test:visual:debug": "playwright test --config test-visual/playwright.config.ts --ui"
   },
   "files": [
     "dist/"
   ],
   "devDependencies": {
     "@babel/core": "7.27.4",
+    "@playwright/test": "^1.49.0",
     "@storybook/addon-a11y": "^10.1",
     "@storybook/addon-docs": "^10.1",
     "@storybook/addon-links": "^10.1",
