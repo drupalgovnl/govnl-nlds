@@ -9,47 +9,69 @@ import {
   Subtitle,
   Story,
 } from '@storybook/addon-docs/blocks';
-import * as FieldsetStories from './fieldset.stories.js';
+import * as FieldsetdStories from './fieldset.stories.js';
 import Readme from './README.md?raw';
 
-<Meta of={FieldsetStories} title="Componenten/Form elements/Checkbox" />
+<Meta of={FieldsetdStories} title="Componenten/Form elements/Fieldset" />
 
-<Title>Checkbox</Title>
+<Title>Fieldset</Title>
 
 <Subtitle>
-  De Input component wordt gebruikt één of meerdere opties van een set aan opties te kiezen.
+  Een fieldset wordt gebruikt om gerelateerde form elementen visueel te groeperen. Vaak voor zaken
+  als een adres of contactgegevens, maar ook voor het groeperen van een lijst checkboxes of
+  radio-buttons.
 </Subtitle>
 
-<Canvas of={FieldsetStories.DefaultFieldset} sourceState="none" />
+De fieldset maakt gebruik van een legend, die een titel of beschrijving geeft aan deze groep. Deze legend kan er visueel uitzien als een label wanneer hij wordt gebruikt voor een groep checkboxes of radiobuttons.
+
+<Canvas of={FieldsetdStories.DefaultFieldset} sourceState="none" />
 
 ## Parameters
 
-<ArgTypes of={FieldsetStories} />
+<ArgTypes of={FieldsetdStories} />
 
 <Markdown>{Readme}</Markdown>
-{/* 
-## Wanneer gebruik je de Checkbox component
 
-Gebruik de Checkbox component voor een keuzemogelijkheid waarbij meerdere opties gekozen kunnen worden, of bij een enkele opt-in mogelijkheid, zoals bijvoorbeeld het akkoord
-gaan met algemene voorwaarden.
+## Wanneer gebruik je de Fieldset component
 
-## Wanneer gebruik je de Checkbox component niet
+Gebruik de Form field component voor een representatie van een input element en de bijbehorende label en description.
 
-Gebruik de Checkbox component niet wanneer er uit een lijst met keuzes slechts één optie moet worden gekozen. Hiervoor is het Radio component bedoelt.
+## Wanneer gebruik je de Fieldset component niet
 
-## Richtlijnen
+Gebruik de Form Field component niet om meerdere aan elkaar gerelateerde input elementen bij elkaar te zetten. Hiervoor is het Fieldset bedoelt.
 
-- Gebruik de Checkbox component altijd in combinatie met de [Label component](?path=/docs/componenten-form-elements-label--docs)
+## Afhankelijkheden
+
+- [Icon component](?path=/docs/componenten-icon--docs)
 
 ## Voorbeelden
 
-### Checkbox
+<Canvas of={FieldsetdStories.DefaultFieldset} />
 
-<Canvas of={CheckboxStories.DefaultCheckbox} />
+### Fieldset met error status
 
-### Aangevinkte checkbox
+Het is mogelijk om binnen de Fieldset component een visuele error status te tonen. De visuele vormgeving bestaat uit twee delen:
 
-<Canvas of={CheckboxStories.CheckedCheckbox} />
+- Een border aan de linkerkant van de gehele Fieldset door gebruik van de `dictu-fieldset--error` class op het component.
+- De combinatie van een icon en verklarende tekst boven het input element door middel van een extra `div` met de `"dictu-fieldset__error-message` class.
+
+<Canvas of={FieldsetdStories.ErrorFieldset} />
+
+### Fieldset met description
+
+Binnen de Fieldset component kan optioneel een verklarende beschrijving worden toegevoegd.
+
+<Canvas of={FieldsetdStories.DescriptionFieldset} />
+
+### Fieldset met dikgedrukte label
+
+Het is mogelijk om het `legend` element dikgedrukt weer te geven.
+
+<Canvas of={FieldsetdStories.LegendStrongFieldset} />
+
+### Voorbeeld met checkboxes
+
+<Canvas of={FieldsetdStories.CheckboxExampleFieldset} />
 
 ## Relevante WCAG succescriteria
 
@@ -57,9 +79,9 @@ Gebruik de Checkbox component niet wanneer er uit een lijst met keuzes slechts �
 
 ## Help mee om deze component te verbeteren
 
-- Neem deel aan de discussie over de [Checkbox component op GitHub]().
+- Neem deel aan de discussie over de [Form field component op GitHub]().
 - [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
 
 ## Heb je hulp nodig?
 
-Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs). \*/}
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs). \

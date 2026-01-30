@@ -73,6 +73,7 @@ export const DefaultFormField = {
   args: {
     id: 'defaultFormField',
     required: true,
+    descriptionText: '',
   },
 };
 
@@ -81,14 +82,14 @@ export const ErrorFormField = {
     id: 'errorFormField',
     error: true,
     required: true,
+    descriptionText: '',
   },
 };
 
-export const NoDescriptionFormField = {
+export const DescriptionFormField = {
   args: {
-    id: 'noDescriptionFormField',
+    id: 'descriptionFormField',
     required: true,
-    descriptionText: '',
   },
 };
 

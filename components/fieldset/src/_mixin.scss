@@ -15,8 +15,8 @@
 
 @mixin dictu-fieldset__legend {
   align-items: baseline;
-  color: var(--govnl-label-color); // fieldset token
-  column-gap: var(--govnl-label-column-gap); // fieldset token
+  color: var(--govnl-fieldset-legend-color);
+  column-gap: var(--govnl-fieldset-legend-column-gap);
   display: inline-flex;
   float: inline-start;
   font-family: var(--govnl-fieldset-legend-font-family);
@@ -30,10 +30,10 @@
 }
 
 @mixin dictu-fieldset__legend-required {
-  color: var(--govnl-label-required-color); // fieldset token
-  font-family: var(--govnl-label-required-font-family); // fieldset token
-  font-size: var(--govnl-label-required-font-size); // fieldset token
-  font-weight: var(--govnl-label-required-font-weight); // fieldset token
+  color: var(--govnl-fieldset-legend-required-color);
+  font-family: var(--govnl-fieldset-legend-required-font-family);
+  font-size: var(--govnl-fieldset-legend-required-font-size);
+  font-weight: var(--govnl-fieldset-legend-required-font-weight);
 }
 
 @mixin dictu-fieldset__description {

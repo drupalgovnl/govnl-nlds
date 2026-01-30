@@ -68,6 +68,7 @@ export const DefaultFieldset = {
   args: {
     id: 'defaultInput',
     required: true,
+    descriptionText: '',
   },
 };
 
@@ -76,14 +77,14 @@ export const ErrorFieldset = {
     id: 'errorInput',
     error: true,
     required: true,
+    descriptionText: '',
   },
 };
 
-export const NoDescriptionFieldset = {
+export const DescriptionFieldset = {
   args: {
     id: 'legendStrongInput',
     required: true,
-    descriptionText: '',
   },
 };
 

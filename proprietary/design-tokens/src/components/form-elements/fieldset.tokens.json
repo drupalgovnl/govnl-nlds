@@ -99,7 +99,7 @@
       },
       "color": {
           "$type": "color",
-          "$value": "{govnl.form-control.invalid.border-color}"
+          "$value": "{govnl.form-control.color}"
       },
       "column-gap": {
         "$type": "dimension",
