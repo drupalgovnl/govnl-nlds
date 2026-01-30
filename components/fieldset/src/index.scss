@@ -1,0 +1,42 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "mixin" as mixin;
+
+.dictu-fieldset {
+  @include mixin.dictu-fieldset;
+}
+
+.dictu-fieldset__legend {
+  @include mixin.dictu-fieldset__legend;
+}
+
+.dictu-fieldset__legend--strong {
+  @include mixin.dictu-fieldset__legend--strong;
+}
+
+.dictu-fieldset__legend-required {
+  @include mixin.dictu-fieldset__legend-required;
+}
+
+.dictu-fieldset--error {
+  @include mixin.dictu-fieldset--error;
+}
+
+.dictu-fieldset__error-message {
+  @include mixin.dictu-fieldset__error-message;
+}
+
+.dictu-fieldset__error-icon {
+  @include mixin.dictu-fieldset__error-icon;
+}
+
+.dictu-fieldset__description {
+  @include mixin.dictu-fieldset__description;
+}
+
+.dictu-fieldset__content {
+  @include mixin.dictu-fieldset__content;
+}

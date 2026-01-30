@@ -1,0 +1,68 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin dictu-form-field {
+  border-style: solid;
+  border-width: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--govnl-fieldset-row-gap);
+}
+
+@mixin dictu-form-field--inline {
+  align-items: center;
+  gap: 0 var(--govnl-fieldset-row-gap);
+  flex-direction: row;
+}
+
+@mixin dictu-form-field__label {
+  align-items: baseline;
+  color: var(--govnl-label-color); // fieldset token
+  column-gap: var(--govnl-label-column-gap); // fieldset token
+  display: inline-flex;
+  font-family: var(--govnl-fieldset-legend-font-family);
+  font-size: var(--govnl-fieldset-legend-font-size);
+  font-weight: var(--govnl-fieldset-legend-regular-font-weight);
+}
+
+@mixin dictu-form-field__label--strong {
+  font-weight: var(--govnl-fieldset-legend-strong-font-weight);
+}
+
+@mixin dictu-form-field__label-required {
+  color: var(--govnl-label-required-color); // fieldset token
+  font-family: var(--govnl-label-required-font-family); // fieldset token
+  font-size: var(--govnl-label-required-font-size); // fieldset token
+  font-weight: var(--govnl-label-required-font-weight); // fieldset token
+}
+
+@mixin dictu-form-field__description {
+  color: var(--govnl-fieldset-description-color);
+  font-family: var(--govnl-fieldset-description-font-family);
+  font-size: var(--govnl-fieldset-description-font-size);
+  font-weight: var(--govnl-fieldset-description-font-weight);
+}
+
+@mixin dictu-form-field--error {
+  border-color: var(--govnl-fieldset-error-border-color);
+  border-inline-start-width: var(--govnl-fieldset-error-border-inline-start-width);
+  padding-inline-start: var(--govnl-fieldset-error-padding-inline-start);
+}
+
+@mixin dictu-form-field__error-message {
+  align-items: center;
+  color: var(--govnl-fieldset-error-message-color);
+  column-gap: var(--govnl-fieldset-error-message-column-gap);
+  display: flex;
+  font-family: var(--govnl-fieldset-error-message-font-family);
+  font-size: var(--govnl-fieldset-error-message-font-size);
+  font-weight: var(--govnl-fieldset-error-message-font-weight);
+}
+
+@mixin dictu-form-field__error-icon {
+  block-size: var(--govnl-fieldset-error-message-icon-size);
+  color: var(--govnl-fieldset-error-message-icon-color);
+  inline-size: var(--govnl-fieldset-error-message-icon-size);
+}

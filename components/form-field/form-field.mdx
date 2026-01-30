@@ -1,0 +1,65 @@
+{/* input.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as FormFieldStories from './form-field.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={FormFieldStories} title="Componenten/Form elements/Checkbox" />
+
+<Title>Checkbox</Title>
+
+<Subtitle>
+  De Input component wordt gebruikt één of meerdere opties van een set aan opties te kiezen.
+</Subtitle>
+
+<Canvas of={FormFieldStories.DefaultFormField} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={FormFieldStories} />
+
+<Markdown>{Readme}</Markdown>
+{/* 
+## Wanneer gebruik je de Checkbox component
+
+Gebruik de Checkbox component voor een keuzemogelijkheid waarbij meerdere opties gekozen kunnen worden, of bij een enkele opt-in mogelijkheid, zoals bijvoorbeeld het akkoord
+gaan met algemene voorwaarden.
+
+## Wanneer gebruik je de Checkbox component niet
+
+Gebruik de Checkbox component niet wanneer er uit een lijst met keuzes slechts één optie moet worden gekozen. Hiervoor is het Radio component bedoelt.
+
+## Richtlijnen
+
+- Gebruik de Checkbox component altijd in combinatie met de [Label component](?path=/docs/componenten-form-elements-label--docs)
+
+## Voorbeelden
+
+### Checkbox
+
+<Canvas of={CheckboxStories.DefaultCheckbox} />
+
+### Aangevinkte checkbox
+
+<Canvas of={CheckboxStories.CheckedCheckbox} />
+
+## Relevante WCAG succescriteria
+
+(Later toevoegen)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Checkbox component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs). \*/}
