@@ -10,8 +10,8 @@
 }
 
 @mixin dictu-searchbar__input {
-  max-inline-size: var(--govnl-searchbar-min-inline-size);
-  min-inline-size: var(--govnl-searchbar-max-inline-size);
+  max-inline-size: var(--govnl-searchbar-max-inline-size);
+  min-inline-size: var(--govnl-searchbar-min-inline-size);
 }
 
 @mixin dictu-searchbar__input--small {
