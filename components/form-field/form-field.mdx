@@ -1,0 +1,93 @@
+{/* input.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as FormFieldStories from './form-field.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={FormFieldStories} title="Componenten/Form elements/Form field" />
+
+<Title>Form field</Title>
+
+<Subtitle>
+  Een form field is het geheel van een input veld (zoals een text input, select list, text area of
+  date input), label en description.
+</Subtitle>
+
+Visueel ziet deze er hetzelfde uit als een fieldset. Hiervoor is gekozen, omdat het flexibiliteit geeft in het opbouwen van een formulier met checkboxes, radio-buttons en form fields.
+
+<Canvas of={FormFieldStories.DefaultFormField} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={FormFieldStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Form field component
+
+Gebruik de Form field component voor een representatie van een input element en de bijbehorende label en description.
+
+## Wanneer gebruik je de Form field component niet
+
+Gebruik de Form Field component niet om meerdere aan elkaar gerelateerde input elementen bij elkaar te zetten. Hiervoor is het Fieldset bedoelt.
+
+## Afhankelijkheden
+
+- [Icon component](?path=/docs/componenten-icon--docs)
+- [Label component](?path=/docs/componenten-label--docs)
+
+## Voorbeelden
+
+<Canvas of={FormFieldStories.DefaultFormField} />
+
+### Form field met error status
+
+Het is mogelijk om binnen de Form field component een visuele error status te tonen. De visuele vormgeving bestaat uit twee delen:
+
+- Een border aan de linkerkant van de gehele Form field door gebruik van de `dictu-form-field--error` class op het component.
+- De combinatie van een icon en verklarende tekst boven het input element door middel van een extra `div` met de `"dictu-form-field__error-message` class.
+
+<Canvas of={FormFieldStories.ErrorFormField} />
+
+### Form field met description
+
+Binnen de Form field component kan optioneel een verklarende beschrijving worden toegevoegd.
+
+<Canvas of={FormFieldStories.DescriptionFormField} />
+
+### Form field met dikgedrukte label
+
+Doordat de Form field component gebruikt maakt van het Label component, kunnen alle Label varianten gebruikt worden.
+
+<Canvas of={FormFieldStories.LabelStrongFormField} />
+
+### Inline Form field
+
+Bij bepaalde input types wordt de label niet boven, maar achter de input gezet. Dit is bijvoorbeeld het geval bij checkbox en radio elementen. Voor deze input types kan de inline Form field gebruikt worden.
+
+Voor de inline Form field wordt de `dictu-form-field--inline` class toegevoegd aan het component, dat ervoor zorgt dat de elementen niet onder elkaar, maar achter elkaar komen te staan.
+
+Bij de inline variant is het niet mogelijk om een description of error status te gebruiken.
+
+<Canvas of={FormFieldStories.InlineFormField} />
+
+## Relevante WCAG succescriteria
+
+(Later toevoegen)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Form field component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs). \

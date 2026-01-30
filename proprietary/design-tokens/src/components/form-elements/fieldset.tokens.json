@@ -96,6 +96,32 @@
       "font-size": {
         "$type": "fontSizes",
         "$value": "{govnl.form-control.font-size}"
+      },
+      "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.color}"
+      },
+      "column-gap": {
+        "$type": "dimension",
+        "$value": "{govnl.space.3xs}"
+      },
+      "required": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.color}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.form-control.font-family}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.form-control.font-weight}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{govnl.typography.font-size.xs}"
+        }
       }
     }
   }
