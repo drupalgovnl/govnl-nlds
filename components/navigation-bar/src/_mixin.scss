@@ -213,11 +213,11 @@
 
 @mixin dictu-navigation-bar__submenu-link {
   background-color: transparent;
+  inline-size: 100%;
   padding-block: var(--govnl-nav-bar-submenu-link-padding-block-start)
     var(--govnl-nav-bar-submenu-link-padding-block-end);
   padding-inline: var(--govnl-nav-bar-submenu-link-padding-inline-start)
     var(--govnl-nav-bar-submenu-link-padding-inline-end);
-  width: 100%;
 }
 
 @mixin dictu-navigation-bar__submenu-link--mobile {
