@@ -1,4 +1,4 @@
-import{j as e,M as l,T as d,S as c,C as t,A as h,a as p}from"./blocks-ChIc2Drz.js";import{useMDXComponents as r}from"./index-y3oUfoyb.js";import{P as o,a,b as m,c as j}from"./pagination.stories-Nje4ZGdN.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-BKR12Ok7.js";/* empty css              */import"./link.component-KS7kVO7o.js";import"./icon.component-X7CMXdF1.js";const x=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as d,S as c,C as t,A as h,a as p}from"./blocks-BSxV6PyP.js";import{useMDXComponents as r}from"./index-D3GOcmvA.js";import{P as o,a,b as m,c as j}from"./pagination.stories-Nje4ZGdN.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-DCUPDUkp.js";/* empty css              */import"./link.component-KS7kVO7o.js";import"./icon.component-X7CMXdF1.js";const x=`<!-- @license CC0-1.0 -->
 
 ## De Pagination component implementeren
 
