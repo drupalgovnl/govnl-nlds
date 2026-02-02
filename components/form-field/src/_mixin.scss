@@ -14,7 +14,7 @@
 @mixin dictu-form-field--inline {
   align-items: center;
   flex-direction: row;
-  gap: 0 var(--govnl-form-field-row-gap);
+  row-gap: var(--govnl-form-field-row-gap);
 }
 
 @mixin dictu-form-field__label {

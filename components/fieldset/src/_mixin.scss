@@ -22,7 +22,7 @@
   font-family: var(--govnl-fieldset-legend-font-family);
   font-size: var(--govnl-fieldset-legend-font-size);
   font-weight: var(--govnl-fieldset-legend-regular-font-weight);
-  width: 100%;
+  inline-size: 100%;
 }
 
 @mixin dictu-fieldset__legend--strong {
