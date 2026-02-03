@@ -26,4 +26,10 @@
 /* Set Fira Sans as the default font family for the entire Storybook */
 body {
   font-family: RijksSans, system-ui, sans-serif;
+
+  /* Button element does not automatically inherit body font-family */
+  /* stylelint-disable-next-line selector-nested-pattern */
+  button {
+    font-family: inherit;
+  }
 }
