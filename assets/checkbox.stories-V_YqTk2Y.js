@@ -1,0 +1,5 @@
+import{C as d}from"./checkbox.component-PLTYKzR5.js";/* empty css              */const i={args:{label:"checkbox",id:"checbox-1",checked:!1},argTypes:{label:{control:"string",description:"De label van de checkbox"},id:{control:"string",description:"De ID van de checkbox"},checked:{control:"boolean",description:"Of de checkbox is ingevuld of niet"}},component:d,tags:["wip"],title:"Componenten/Form elements/Checkbox"},e={},o={args:{checked:!0}};var c,r,t;e.parameters={...e.parameters,docs:{...(c=e.parameters)==null?void 0:c.docs,source:{originalSource:"{}",...(t=(r=e.parameters)==null?void 0:r.docs)==null?void 0:t.source}}};var s,a,n;o.parameters={...o.parameters,docs:{...(s=o.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {
+    checked: true
+  }
+}`,...(n=(a=o.parameters)==null?void 0:a.docs)==null?void 0:n.source}}};const l=["DefaultCheckbox","CheckedCheckbox"],h=Object.freeze(Object.defineProperty({__proto__:null,CheckedCheckbox:o,DefaultCheckbox:e,__namedExportsOrder:l,default:i},Symbol.toStringTag,{value:"Module"}));export{h as C,e as D,o as a};

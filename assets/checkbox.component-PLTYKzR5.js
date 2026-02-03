@@ -1,0 +1,1 @@
+function o({id:e,checked:t}){const s=["dictu-checkbox","dictu-focus-ring"],c=document.createElement("input");return c.id=e,c.setAttribute("type","checkbox"),c.checked=t,c.classList.add(...s),c}export{o as C};
