@@ -1,6 +1,7 @@
 import './dist/index.css';
 import readme from './README.md?raw';
 import '@dictu/paragraph/dist/index.css';
+import '@dictu/utility-display/dist/index.css';
 
 export default {
   args: {},
@@ -46,7 +47,7 @@ const createTimeline = timelineData => {
       subList.classList.add('dictu-timeline__sub-list');
 
       if (!timelineElements.expanded) {
-        subList.setAttribute('hidden', '');
+        subList.classList.add('dictu-display-none');
       }
 
       for (let j = 0; j < timelineElements.children.length; j += 1) {
@@ -79,7 +80,7 @@ const contentElement = (content, expanded) => {
   contentWrapper.classList.add('dictu-timeline__element-content-wrapper');
 
   if (!expanded) {
-    contentWrapper.setAttribute('hidden', '');
+    contentWrapper.classList.add('dictu-display-none');
   }
 
   const contentElement = document.createElement('div');
