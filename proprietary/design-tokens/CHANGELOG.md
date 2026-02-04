@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 2.7.0
+
+### Minor Changes
+
+- 34a7da2: Added Fieldset component
+
 ## 2.6.0
 
 ### Minor Changes
