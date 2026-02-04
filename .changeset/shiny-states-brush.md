@@ -2,4 +2,4 @@
 "@dictu/navigation-bar": patch
 ---
 
-:wq!i
+Changed min-inline-size stretch to fit-content.
