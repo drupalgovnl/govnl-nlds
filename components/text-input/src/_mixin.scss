@@ -35,10 +35,10 @@
 }
 
 @mixin dictu-text-input-focus {
-  background-color: var(--govnl-text-input-focus-visible-background-color);
-  border-color: var(--govnl-text-input-focus-visible-border-color);
-  color: var(--govnl-text-input-focus-visible-color);
-  outline-color: var(--govnl-text-input-focus-visible-outline-color);
+  background-color: var(--govnl-text-input-focus-background-color);
+  border-color: var(--govnl-text-input-focus-border-color);
+  color: var(--govnl-text-input-focus-color);
+  outline-color: var(--govnl-text-input-focus-outline-color);
 }
 
 @mixin dictu-text-input--small {
