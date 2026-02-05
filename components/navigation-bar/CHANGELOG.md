@@ -1,5 +1,11 @@
 # @dictu/navigation-bar
 
+## 4.1.1
+
+### Patch Changes
+
+- 2021afd: Changed min-inline-size stretch to fit-content.
+
 ## 4.1.0
 
 ### Minor Changes
