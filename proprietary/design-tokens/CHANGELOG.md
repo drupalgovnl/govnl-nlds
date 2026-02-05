@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 2.8.0
+
+### Minor Changes
+
+- 19eea1a: Re-publish design tokens.
+
 ## 2.7.0
 
 ### Minor Changes
