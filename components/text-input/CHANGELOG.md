@@ -1,5 +1,13 @@
 # @dictu/text-input
 
+## 1.1.0
+
+### Minor Changes
+
+- 194f697: Changed design token for focus background color of Text input
+  component to white from yellow, changed token reference in text input
+  component from focus-visible to focus
+
 ## 1.0.1
 
 ### Patch Changes
