@@ -11,12 +11,12 @@
   @include mixin.dictu-card;
 }
 
-.dictu-card--accent {
-  @include mixin.dictu-card--accent;
-}
-
 .dictu-card__image-container {
   @include mixin.dictu-card__image-container;
+}
+
+.dictu-card__image {
+  @include mixin.dictu-card__image;
 }
 
 .dictu-card__content {
@@ -32,21 +32,6 @@
   @include mixin.dictu-card__heading;
 }
 
-.dictu-card--full-card {
-  &:has(.dictu-card__link:focus-visible) {
-    @include mixin.dictu-card--focus-visible;
-    @include focus-ring-utility.dictu-focus-ring;
-  }
-
-  &:hover {
-    @include mixin.dictu-card--hover;
-  }
-
-  &:active {
-    @include mixin.dictu-card--active;
-  }
-}
-
 .dictu-card__full-card-link {
   @include mixin.dictu-card__full-card-link;
 }
@@ -57,4 +42,64 @@
 
 .dictu-card__subheading {
   @include mixin.dictu-card__subheading;
+}
+
+.dictu-card--default {
+  &.dictu-card--full-card {
+    &:has(.dictu-card__link:focus-visible) {
+      @include mixin.dictu-card--focus-visible;
+      @include focus-ring-utility.dictu-focus-ring;
+    }
+
+    &:not(:has(.dictu-card__link:focus-visible)) {
+      &:hover {
+        @include mixin.dictu-card--hover;
+      }
+
+      &:active {
+        @include mixin.dictu-card--active;
+      }
+    }
+  }
+}
+
+.dictu-card--accent {
+  @include mixin.dictu-card--accent;
+
+  .dictu-card__heading {
+    @include mixin.dictu-card__heading-accent;
+  }
+
+  .dictu-card__subheading {
+    @include mixin.dictu-card__subheading-accent;
+  }
+
+  .dictu-card__link {
+    @include mixin.dictu-card__link-accent;
+  }
+
+  .dictu-card__paragraph {
+    @include mixin.dictu-card__paragraph-accent;
+  }
+
+  .dictu-card__metadata {
+    @include mixin.dictu-card__metadata-accent;
+  }
+
+  &.dictu-card--full-card {
+    &:has(.dictu-card__link:focus-visible) {
+      @include mixin.dictu-card--accent-focus-visible;
+      @include focus-ring-utility.dictu-focus-ring;
+    }
+
+    &:not(:has(.dictu-card__link:focus-visible)) {
+      &:hover {
+        @include mixin.dictu-card--accent-hover;
+      }
+
+      &:active {
+        @include mixin.dictu-card--accent-active;
+      }
+    }
+  }
 }
