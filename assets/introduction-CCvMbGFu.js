@@ -1,2 +1,0 @@
-import{j as t,M as r,T as s}from"./blocks-o_d9Rq3E.js";import{useMDXComponents as i}from"./index-mK_BgtBe.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-CV9Ofd8u.js";function o(e){return t.jsxs(t.Fragment,{children:[t.jsx(r,{title:"Voor ontwikkelaars/Introductie"}),`
-`,t.jsx(s,{children:"DICTU Design System voor ontwikkelaars"})]})}function x(e={}){const{wrapper:n}={...i(),...e.components};return n?t.jsx(n,{...e,children:t.jsx(o,{...e})}):o()}export{x as default};
