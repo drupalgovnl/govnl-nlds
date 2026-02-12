@@ -8,14 +8,14 @@ const isCI = process.env.CI === 'true' || process.env.CI === '1';
  * See https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  testDir: '.',
-  testMatch: ['visual.test.ts'],
+  testDir: './tests',
+  testMatch: ['**/*.test.ts'],
 
   // Folder for test artifacts such as screenshots, videos, traces
   outputDir: './test-results',
 
   // Snapshot path template
-  snapshotPathTemplate: '{testDir}/__screenshots__/{testFilePath}/{arg}{ext}',
+  snapshotPathTemplate: '{testDir}/../__screenshots__/{arg}{ext}',
 
   // Run tests in files in parallel
   fullyParallel: true,
@@ -27,7 +27,7 @@ export default defineConfig({
   retries: isCI ? 2 : 0,
 
   // Reporter configuration
-  reporter: 'list',
+  reporter: [['list'], ['html', { outputFolder: './test-report', open: 'never' }]],
 
   // Shared settings for all projects
   use: {
