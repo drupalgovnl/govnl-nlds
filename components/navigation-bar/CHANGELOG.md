@@ -1,5 +1,22 @@
 # @dictu/navigation-bar
 
+## 4.1.1
+
+### Patch Changes
+
+- 2021afd: Changed min-inline-size stretch to fit-content.
+
+## 4.1.0
+
+### Minor Changes
+
+- 334488f: Added z-index for dropdown, changed svg icon for mobile menu close
+
+### Patch Changes
+
+- a88d94f: Fixed minor bug with styling of mobile submenu, where text would
+  overflow outside the menu bounds
+
 ## 4.0.0
 
 ### Major Changes

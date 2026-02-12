@@ -1,5 +1,12 @@
 # @dictu/card
 
+## 4.2.0
+
+### Minor Changes
+
+- 123c99b: Fixed hover and focus status for some versions of Card component,
+  refactored parts of Card component css to get there.
+
 ## 4.1.0
 
 ### Minor Changes

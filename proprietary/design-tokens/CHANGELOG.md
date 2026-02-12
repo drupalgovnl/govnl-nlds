@@ -1,5 +1,25 @@
 # @dictu/design-tokens
 
+## 2.9.0
+
+### Minor Changes
+
+- 194f697: Changed design token for focus background color of Text input
+  component to white from yellow, changed token reference in text input
+  component from focus-visible to focus
+
+## 2.8.0
+
+### Minor Changes
+
+- 19eea1a: Re-publish design tokens.
+
+## 2.7.0
+
+### Minor Changes
+
+- 34a7da2: Added Fieldset component
+
 ## 2.6.0
 
 ### Minor Changes

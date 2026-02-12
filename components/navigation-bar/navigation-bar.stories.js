@@ -48,7 +48,7 @@ export default {
 
 export const NavigationBarDefault = {};
 
-export const NavigationBarDefaultMobile = {
+export const NavigationBarMobile = {
   globals: {
     viewport: { value: 'mobile1', isRotated: false },
   },
@@ -59,7 +59,7 @@ export const NavigationBarDefaultMobile = {
   },
 };
 
-export const NavigationBarDefaultMobileExpanded = {
+export const NavigationBarMobileExpanded = {
   globals: {
     viewport: { value: 'mobile1', isRotated: false },
   },
@@ -67,6 +67,50 @@ export const NavigationBarDefaultMobileExpanded = {
     expanded: true,
     isMobile: true,
     menuId: 'default-mobile-menu',
+  },
+};
+
+export const NavigationBarMobileExpandedSubmenu = {
+  globals: {
+    viewport: { value: 'mobile1', isRotated: false },
+  },
+  args: {
+    items: [
+      {
+        link: 'https://www.dictu.nl',
+        title: 'Dienst ICT Uitvoering',
+      },
+      {
+        title: 'Submenu',
+        id: 'submenu-1',
+        expanded: true,
+        children: [
+          {
+            href: '#',
+            label: 'Subpagina 1',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 2',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 3',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 4',
+          },
+        ],
+      },
+      {
+        link: 'https://www.rijksoverheid.nl',
+        title: 'Rijksoverheid',
+      },
+    ],
+    expanded: true,
+    isMobile: true,
+    menuId: 'default-mobile-menu-submenu',
   },
 };
 

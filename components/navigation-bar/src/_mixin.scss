@@ -56,19 +56,16 @@
     color: var(--govnl-nav-bar-link-hover-color);
   }
 
-  &:focus {
-    background-color: var(--govnl-nav-bar-link-focus-background-color);
-    color: var(--govnl-nav-bar-link-focus-color);
-  }
-
-  &:focus-visible {
-    background-color: var(--govnl-nav-bar-link-focus-background-color);
-    color: var(--govnl-nav-bar-link-focus-color);
-  }
-
   &:active {
     background-color: var(--govnl-nav-bar-link-active-background-color);
     color: var(--govnl-nav-bar-link-active-color);
+  }
+
+  &:focus-visible {
+    &:not(:active) {
+      background-color: var(--govnl-nav-bar-link-focus-background-color);
+      color: var(--govnl-nav-bar-link-focus-color);
+    }
   }
 }
 
@@ -84,25 +81,6 @@
   display: inline-flex;
   justify-content: center;
 }
-
-/*
-@TODO: The navigation bar toggler for mobile menu does not have an own token set.
-Currently the tokens for the submenu toggler are being used. Following tokens should be added:
-- govnl.nav-bar.toggle.background-color
-- govnl.nav-bar.toggle.border-width
-- govnl.nav-bar.toggle.color
-- govnl.nav-bar.toggle.column-gap
-- govnl.nav-bar.toggle.padding-block
-- govnl.nav-bar.toggle.padding-inline
-- govnl.nav-bar.toggle.text-decoration
-- govnl.nav-bar.toggle.expanded.background-color
-- govnl.nav-bar.toggle.hover.background-color
-- govnl.nav-bar.toggle.hover.color
-- govnl.nav-bar.toggle.active.background-color
-- govnl.nav-bar.toggle.active.color
-- govnl.nav-bar.toggle.focus-visible.background-color
-- govnl.nav-bar.toggle.focus-visible.color
-*/
 
 @mixin dictu-navigation-bar__toggle {
   align-items: center;
@@ -201,18 +179,20 @@ Currently the tokens for the submenu toggler are being used. Following tokens sh
   background-color: var(--govnl-nav-bar-submenu-background-color);
   border-bottom-left-radius: var(--govnl-nav-bar-submenu-border-bottom-left-radius);
   border-bottom-right-radius: var(--govnl-nav-bar-submenu-border-bottom-right-radius);
-  min-inline-size: var(--govnl-nav-bar-submenu-max-inline-size); // @TODO Change into min inline size token when added.
+  min-inline-size: 100%;
   overflow-wrap: break-word;
   padding-block: var(--govnl-nav-bar-submenu-padding-block-start) var(--govnl-nav-bar-submenu-padding-block-end);
   padding-inline: var(--govnl-nav-bar-submenu-padding-inline-start) var(--govnl-nav-bar-submenu-padding-inline-end);
   position: absolute;
   top: 100%;
+  z-index: var(--govnl-nav-bar-submenu-z-index, 1);
 }
 
 @mixin dictu-navigation-bar__submenu--mobile {
   background-color: transparent;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  min-inline-size: fit-content;
   overflow-wrap: initial;
   padding-block: var(--govnl-nav-bar-mobile-submenu-padding-block-start)
     var(--govnl-nav-bar-mobile-submenu-padding-block-end);
@@ -233,7 +213,8 @@ Currently the tokens for the submenu toggler are being used. Following tokens sh
 }
 
 @mixin dictu-navigation-bar__submenu-link {
-  background-color: transparent; // token?
+  background-color: transparent;
+  inline-size: 100%;
   padding-block: var(--govnl-nav-bar-submenu-link-padding-block-start)
     var(--govnl-nav-bar-submenu-link-padding-block-end);
   padding-inline: var(--govnl-nav-bar-submenu-link-padding-inline-start)
