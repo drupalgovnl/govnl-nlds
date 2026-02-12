@@ -1,4 +1,4 @@
-import{j as e,M as l,T as a,S as c,C as r,A as j,a as h}from"./blocks-D2-gTOS4.js";import{useMDXComponents as d}from"./index-Bh0ufixN.js";import{L as t,U as s,O as m,I as x}from"./list.stories-qAyr9QGs.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-CMGZJTdo.js";import"./icon.component-X7CMXdF1.js";/* empty css              */const g="";function o(i){const n={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...d(),...i.components};return e.jsxs(e.Fragment,{children:[`
+import{j as e,M as l,T as a,S as c,C as r,A as j,a as h}from"./blocks-D8HOv2O1.js";import{useMDXComponents as d}from"./index-Brm7l5Uf.js";import{L as t,U as s,O as m,I as x}from"./list.stories-qAyr9QGs.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-Chpti-Ui.js";import"./icon.component-X7CMXdF1.js";/* empty css              */const g="";function o(i){const n={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...d(),...i.components};return e.jsxs(e.Fragment,{children:[`
 `,`
 `,e.jsx(l,{of:t,title:"Componenten/List"}),`
 `,e.jsx(a,{children:"List"}),`
