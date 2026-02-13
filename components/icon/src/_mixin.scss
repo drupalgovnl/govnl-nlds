@@ -4,9 +4,9 @@
  */
 
 @mixin dictu-icon {
-  block-size: var(--govnl-icon-size);
+  block-size: var(--govnl-dictu-icon-size);
   display: inline-block;
-  inline-size: var(--govnl-icon-size);
+  inline-size: var(--govnl-dictu-icon-size);
 }
 
 @mixin dictu-icon__svg {
