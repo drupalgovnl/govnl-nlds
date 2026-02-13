@@ -1,6 +1,7 @@
 import './dist/index.css';
 import readme from './README.md?raw';
 import '@dictu/paragraph/dist/index.css';
+import '@dictu/utility-display/dist/index.css';
 
 export default {
   args: {},
@@ -94,10 +95,6 @@ const headingElement = (subheading = false, headingLevel, label, expanded) => {
   const headingButton = document.createElement('button');
   headingButton.classList.add('dictu-timeline__element-button', 'dictu-button', 'dictu-button--subtle');
   headingButton.setAttribute('aria-expanded', expanded);
-
-  if (!expanded) {
-    headingButton.classList.add('dictu-display-none');
-  }
 
   const headingBody = document.createElement('span');
   headingBody.classList.add('dictu-timeline__element-heading-body');
