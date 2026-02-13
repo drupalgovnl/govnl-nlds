@@ -27,9 +27,12 @@
   @include mixin.dictu-card__metadata;
 }
 
-.dictu-card__heading,
-.dictu-card__link {
+.dictu-card__heading {
   @include mixin.dictu-card__heading;
+}
+
+.dictu-card__card {
+  @include mixin.dictu-card__link;
 }
 
 .dictu-card__full-card-link {
