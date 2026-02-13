@@ -6,6 +6,8 @@
 @use "mixin" as mixin;
 
 .dictu-icon {
+  --govnl-dictu-icon-size: var(--govnl-icon-size);
+
   @include mixin.dictu-icon;
 }
 
