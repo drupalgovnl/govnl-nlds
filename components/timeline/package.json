@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@dictu/button": "^4.0.0",
-    "@dictu/heading": "^3.0.0"
+    "@dictu/heading": "^3.0.0",
+    "@dictu/utility-display": "^1.0"
   }
 }
