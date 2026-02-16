@@ -1,5 +1,14 @@
 # @dictu/card
 
+## 5.0.0
+
+### Major Changes
+
+- 194b690: BREAKING CHANGE: Added possibility for card without link, changed the
+  usage of classnames and templating setup to allow for this change. Styling for
+  hover and active states where set on the .dictu-card**link class and removed
+  from the .dictu-card**heading class.
+
 ## 4.2.0
 
 ### Minor Changes
