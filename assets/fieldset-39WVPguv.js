@@ -1,4 +1,4 @@
-import{j as e,M as l,T as a,S as c,C as i,A as h,a as m}from"./blocks-BHwUpevW.js";import{useMDXComponents as d}from"./index-Qg8J0q33.js";import{F as s,D as o,E as j,a as p,L as x,C as u}from"./fieldset.stories-CTc4Qrys.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-YYgUD8OG.js";import"./label.component-DIIE1Bz3.js";import"./text-input.component-CUK7wOy1.js";import"./checkbox.component-PLTYKzR5.js";import"./icon.component-X7CMXdF1.js";import"./form-field.component-B7EXBhMX.js";const g=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as a,S as c,C as i,A as h,a as m}from"./blocks-giFtRqz0.js";import{useMDXComponents as d}from"./index-CYVHELNu.js";import{F as s,D as o,E as j,a as p,L as x,C as u}from"./fieldset.stories-CTc4Qrys.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-BGVIen_E.js";import"./label.component-DIIE1Bz3.js";import"./text-input.component-CUK7wOy1.js";import"./checkbox.component-PLTYKzR5.js";import"./icon.component-X7CMXdF1.js";import"./form-field.component-B7EXBhMX.js";const g=`<!-- @license CC0-1.0 -->
 
 ## De Fieldset component implementeren
 

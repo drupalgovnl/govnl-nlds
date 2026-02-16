@@ -1,4 +1,4 @@
-import{j as e,M as l,T as a,S as c,C as i,A as p,a as h}from"./blocks-BHwUpevW.js";import{useMDXComponents as d}from"./index-Qg8J0q33.js";import{T as r,a as o,b as u,c as m,d as x,e as j}from"./text-input.stories-DZ2QvL0p.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-YYgUD8OG.js";import"./text-input.component-CUK7wOy1.js";const v=`<!-- @license CC0-1.0 -->
+import{j as e,M as l,T as a,S as c,C as i,A as p,a as h}from"./blocks-giFtRqz0.js";import{useMDXComponents as d}from"./index-CYVHELNu.js";import{T as r,a as o,b as u,c as m,d as x,e as j}from"./text-input.stories-DZ2QvL0p.js";import"./preload-helper-Dp1pzeXC.js";import"./_commonjsHelpers-CqkleIqs.js";import"./iframe-BGVIen_E.js";import"./text-input.component-CUK7wOy1.js";const v=`<!-- @license CC0-1.0 -->
 
 ## De Text Input component implementeren
 
