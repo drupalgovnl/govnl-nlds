@@ -4,7 +4,8 @@ import { Link } from '../link/link.component.js';
 
 export const Card = ({
   headingLevel,
-  link,
+  headingText,
+  href,
   content,
   footer_content,
   variant = 'default',
@@ -17,11 +18,11 @@ export const Card = ({
   const hasFullCardLink = Boolean(full_card_link);
 
   const card = document.createElement('div');
-  card.classList.add('dictu-card', `dictu-card--${variant}`, 'dictu-focus-ring');
+  card.classList.add('dictu-card', `dictu-card--${variant}`);
   card.setAttribute('role', 'article');
 
   if (hasFullCardLink) {
-    card.classList.add('dictu-card--full-card');
+    card.classList.add('dictu-card--full-card', 'dictu-focus-ring');
   }
 
   const imageContainer = document.createElement('div');
@@ -36,15 +37,10 @@ export const Card = ({
 
   const iconElement = icon ? Icon({ icon }) : null;
 
-  const headingContent = Link({
-    content: link?.text ?? '',
-    href: link.href,
-    classNames: hasFullCardLink
-      ? ['dictu-card__link', 'dictu-card__full-card-link']
-      : ['dictu-card__link'],
+  const headingElement = Heading({
+    content: href ? createLink({ href, headingText, hasFullCardLink }) : headingText,
+    level: headingLevel,
   });
-
-  const headingElement = Heading({ content: headingContent, level: headingLevel });
   headingElement.classList.add('dictu-card__heading');
 
   const contentElement = document.createElement('div');
@@ -89,3 +85,13 @@ export const Card = ({
 
   return card;
 };
+
+function createLink({ href, headingText, hasFullCardLink }) {
+  return Link({
+    content: headingText,
+    href: href,
+    classNames: hasFullCardLink
+      ? ['dictu-card__link', 'dictu-card__full-card-link']
+      : ['dictu-card__link'],
+  });
+}
