@@ -1,5 +1,12 @@
 # @dictu/timeline
 
+## 2.1.0
+
+### Minor Changes
+
+- 8ec8e34: Implemented the display-none utility
+- 8ec8e34: Changed devDependencies to dependencies
+
 ## 2.0.0
 
 ### Major Changes
