@@ -22,7 +22,7 @@
 @mixin dictu-list--icon {
   @include reset;
 
-  --govnl-icon-size: var(--nl-icon-size);
+  --govnl-dictu-icon-size: var(--nl-icon-size);
 
   padding-inline-start: var(--govnl-list-prefix);
 

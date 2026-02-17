@@ -74,7 +74,7 @@
 }
 
 @mixin dictu-navigation-bar__icon {
-  --govnl-icon-size: var(--govnl-nav-bar-icon-size);
+  --govnl-dictu-icon-size: var(--govnl-nav-bar-icon-size);
 
   align-items: center;
   color: var(--govnl-nav-bar-icon-color);
@@ -123,7 +123,7 @@
 }
 
 @mixin dictu-navigation-bar__menu-icon {
-  --govnl-icon-size: var(--govnl-nav-bar-icon-size);
+  --govnl-dictu-icon-size: var(--govnl-nav-bar-icon-size);
 
   color: var(--govnl-nav-bar-icon-color);
 }
