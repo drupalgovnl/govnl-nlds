@@ -96,6 +96,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium firefox
+
       - name: 'Continuous Integration: test'
         run: npm run --if-present test
 
