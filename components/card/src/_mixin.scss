@@ -108,14 +108,14 @@
 }
 
 @mixin dictu-card__image-container {
-  max-height: var(--govnl-card-default-image-container-max-height, 10rem);
+  max-block-size: var(--govnl-card-default-image-container-max-height, 10rem);
   overflow: hidden;
 }
 
 @mixin dictu-card__image {
-  height: 100%;
+  block-size: 100%;
+  inline-size: 100%;
   object-fit: cover;
-  width: 100%;
 }
 
 @mixin dictu-card__content {
