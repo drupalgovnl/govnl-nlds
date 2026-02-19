@@ -1,0 +1,89 @@
+{/* input.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as QuoteStories from './quote.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={QuoteStories} title="Componenten/Quote" />
+
+<Title>Quote</Title>
+
+<Subtitle></Subtitle>
+
+<Canvas of={QuoteStories.DefaultQuote} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={QuoteStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Quote component
+
+Gebruik de Quote component om een citaat weer te geven.
+
+## Wanneer gebruik je de Quote component niet
+
+Gebruik de Quote component niet om nadruk te leggen op een stuk tekst of een stuk tekst een visuele opmaak mee te geven. De Quote component is echt bedoeld voor een citaat vanuit een andere bron.
+Gebruik de Quote component ook niet voor citaten die je eigenlijk in de lopende tekst wilt laten zien, hiervoor is het `q` element bedoelt.
+
+## Voorbeelden
+
+De Quote component wordt opbouwd uit een `blockquote` element en een eventuele vermelding van de auteur en/of het werk waaruit geciteerd wordt. Omdat de attributie van het citaat niet
+in de `blockquote` element mag worden opgenomen, worden de onderdelen van de quote opgenomen in een `figure` element, zodat de onderdelen één geheel vormen. De bronvermelding staat daardoor
+in een `figcaption` element.
+
+<Canvas of={QuoteStories.DefaultQuote} />
+
+### Citaat met auteur
+
+Om de auteur van het citaat te vermelden voeg je in het `figcaption` element een `div` element toe met de `dictu-quote__author` class. Hierin kan de naam van
+de auteur toegevoegd worden.
+
+<Canvas of={QuoteStories.AuthorQuote} />
+
+### Citaat met auteur en functie
+
+Wil je onder de vermelding van de auteur ook de functie vermelden, voeg dan een extra `div` element toe met de class `dictu-quote__role`. Hierin kan de functie van de auteur opgenomen worden.
+
+<Canvas of={QuoteStories.RoleQuote} />
+
+### Citaat met cite element voor bronvermelding
+
+Voor de bronvermelding van de citaat wordt het `cite` element om weer te geven uit welk werk het citaat komt. Voeg aan het `cite` element de class `dictu-quote__work` toe.
+
+**Let op:** Een `cite` element mag alleen gebruikt worden voor de vermelding van een werk. De naam van een auteur of schrijver is geen werk, en mag dus niet in het `cite` element gebruikt worden.
+Gebruik dus in het `cite` element alleen de naam van het werk.
+
+<Canvas of={QuoteStories.WorkQuote} />
+
+### Citaat met cite attribuut voor bronvermelding
+
+Wanneer er verwezen kan worden naar een digitale bron - bijvoorbeeld een website - dan wordt het `cite` attribuut toegevoegd aan het `blockquote` element. De waarde van
+dit attribuut is de url die verwijst naar de bron. Let hierbij op dat het gaat om een `cite` attribuut, en niet het gelijknamige `cite` element.
+
+Om duidelijk te maken dat er een digitale bron is, wordt er om het `cite` element een link gezet die verwijst naar de digitale bron. Alleen het toevoegen van het `cite` attribuut Biedt
+namelijk geen mogelijkheid om de bron te openen.
+
+<Canvas of={QuoteStories.CiteQuote} />
+
+## Relevante WCAG succescriteria
+
+(Later toevoegen)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Quote component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs). \

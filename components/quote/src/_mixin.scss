@@ -1,0 +1,53 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin dictu-quote {
+  @include reset;
+
+  border-block-end: 0 solid transparent;
+  border-inline-start: 4px solid #007bc7;
+  display: flex;
+  flex-direction: column;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  row-gap: 1rem;
+}
+
+@mixin dictu-quote__blockquote {
+  @include reset;
+
+  font-size: 24px;
+  font-style: italic;
+}
+
+@mixin dictu-quote__citation {
+  @include reset;
+}
+
+@mixin dictu-quote__caption {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  row-gap: 0.5rem;
+}
+
+@mixin dictu-quote__author {
+  color: #154273;
+  font-weight: 700;
+}
+
+@mixin dictu-quote__role {
+  color: #154273;
+}
+
+@mixin dictu-quote__work {
+  color: #007bc7;
+  font-style: normal;
+}
