@@ -14,8 +14,8 @@ export default defineConfig({
   // Folder for test artifacts such as screenshots, videos, traces
   outputDir: './test-results',
 
-  // Snapshot path template
-  snapshotPathTemplate: '{testDir}/../__screenshots__/{arg}{ext}',
+  // Snapshot path template (includes {platform} to separate macOS/Linux baselines)
+  snapshotPathTemplate: '{testDir}/../__screenshots__/{platform}/{arg}{ext}',
 
   // Run tests in files in parallel
   fullyParallel: true,

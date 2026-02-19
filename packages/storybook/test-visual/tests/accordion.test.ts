@@ -14,8 +14,10 @@ test.describe('Accordion', () => {
   });
 
   test('Closed', async ({ page }) => {
-    await page.goto('/iframe.html?id=componenten-accordion--accordion-closed');
-    await page.waitForSelector('.dictu-accordion', { timeout: 5000 });
+    await page.goto('/iframe.html?id=componenten-accordion--accordion-closed', {
+      waitUntil: 'networkidle',
+    });
+    await page.waitForSelector('.dictu-accordion', { timeout: 15000 });
 
     await expect(page).toHaveScreenshot('accordion-closed.png', {
       maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
