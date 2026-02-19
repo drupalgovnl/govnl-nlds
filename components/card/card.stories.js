@@ -8,10 +8,8 @@ export default {
     image_src: 'assets/example-image.jpg',
     alt: 'Dit is een voorbeeld afbeelding',
     headingLevel: 2,
-    link: {
-      href: '#',
-      text: 'Lees meer',
-    },
+    headingText: 'De titel van de kaart',
+    href: '#',
     content: 'Dit is een voorbeeld van de inhoud van de kaart.',
     footer_content: 'Dit is een voorbeeld van de footer content',
     variant: 'default',
@@ -70,41 +68,23 @@ export default {
   title: 'Componenten/Card',
 };
 
-export const DefaultCard = {
-  args: {
-    image_src: 'assets/example-image.jpg',
-    alt: 'Dit is een voorbeeld afbeelding voor een kaart',
-    link: {
-      href: '#',
-      text: 'De titel van de kaart',
-    },
-  },
-};
+export const DefaultCard = {};
 
 export const AccentCard = {
   args: {
-    image_src: 'assets/example-image.jpg',
-    alt: 'Dit is een voorbeeld afbeelding voor een accent kaart',
-    link: {
-      href: '#',
-      text: 'De titel van de accent kaart',
-    },
     content: 'Dit is een voorbeeld van de inhoud van de accent kaart.',
-    footer_content: 'Dit is een voorbeeld van de accent metadata',
     variant: 'accent',
   },
 };
 
 export const FullCardLink = {
   args: {
-    image_src: 'assets/example-image.jpg',
-    alt: 'Dit is een voorbeeld afbeelding voor een kaart',
-    link: {
-      href: '#',
-      text: 'De titel van de kaart',
-    },
-
-    footer_content: 'Dit is een voorbeeld van de metadata',
     full_card_link: true,
+  },
+};
+
+export const NoLinkCard = {
+  args: {
+    href: '',
   },
 };

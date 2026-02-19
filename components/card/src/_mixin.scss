@@ -145,6 +145,9 @@
   @include reset;
 
   font-size: var(--govnl-card-heading-font-size, var(--govnl-typography-font-size-xl));
+}
+
+@mixin dictu-card__link {
   text-decoration-line: var(--govnl-card-heading-text-decoration-line);
   text-decoration-thickness: var(--govnl-card-heading-text-decoration-thickness);
   text-underline-offset: var(--govnl-card-heading-text-underline-offset);
