@@ -12,7 +12,7 @@
   @include reset;
 
   background-color: var(--govnl-page-footer-background-color);
-  border-top: var(--govnl-page-footer-border-width) solid var(--govnl-page-footer-border-color);
+  border-block-start: var(--govnl-page-footer-border-width) solid var(--govnl-page-footer-border-color);
   color: var(--govnl-page-footer-color);
   padding-block: var(--govnl-page-footer-padding-block-start) var(--govnl-page-footer-padding-block-end);
 
@@ -49,16 +49,16 @@
   grid-auto-flow: column;
   grid-column: span 1;
   grid-template-rows: 1fr;
+  inline-size: 100%;
   padding-inline: var(--govnl-page-footer-container-padding-inline);
-  width: 100%;
 
-  // Responsive: mobile
+  /* Responsive: mobile */
   @media (width <= 48em) {
     grid-auto-columns: unset;
     grid-auto-flow: row;
     grid-template-columns: 1fr;
     grid-template-rows: unset;
-    width: 100%;
+    inline-size: 100%;
   }
 }
 

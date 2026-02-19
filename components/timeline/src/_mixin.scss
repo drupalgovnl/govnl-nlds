@@ -1,4 +1,4 @@
-// NOTE: This component may change in future updates
+/* NOTE: This component may change in future updates */
 
 @mixin reset {
   margin: 0;
@@ -49,7 +49,7 @@
   display: flex;
   flex-direction: column;
 
-  // calc moet eruit, oplossing voor verzinnen.
+  /* calc moet eruit, oplossing voor verzinnen. */
   padding-inline-start: calc(var(--govnl-timeline-padding-inline-start) + 16px);
 }
 
@@ -80,30 +80,30 @@
 
 @mixin dictu-timeline-connector {
   background-color: var(--govnl-timeline-connector-color);
+  block-size: 100%;
   content: "";
   display: block;
-  height: 100%;
+  inline-size: 2px;
+  inset-block-start: 0;
   margin-inline-start: var(--govnl-timeline-connector-margin-inline-start);
   position: absolute;
-  top: 0;
-  width: 2px;
 }
 
 @mixin dictu-timeline-connector-start {
-  top: 50%;
+  inset-block-start: 50%;
 }
 
 @mixin dictu-timeline-connector-end {
-  height: 50%;
+  block-size: 50%;
 }
 
 @mixin dictu-timeline-icon {
   align-items: center;
+  block-size: var(--govnl-icon-size);
   color: var(--govnl-icon-color);
   display: flex;
-  height: var(--govnl-icon-size);
+  inline-size: var(--govnl-space-lg);
   justify-content: center;
-  width: var(--govnl-space-lg);
   z-index: 1;
 }
 
