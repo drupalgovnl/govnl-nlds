@@ -78,6 +78,8 @@
     "test:quality": "npm run lint && npm run security:audit && npm run size",
     "test:visual": "npm --workspace ./packages/storybook run test:visual",
     "test:visual:update": "npm --workspace ./packages/storybook run test:visual:update",
+    "test:visual:update:linux": "node scripts/update-linux-screenshots.mjs",
+    "test:visual:update:all": "npm run test:visual:update && npm run test:visual:update:linux",
     "test:visual:headed": "npm --workspace ./packages/storybook run test:visual:headed",
     "test:visual:debug": "npm --workspace ./packages/storybook run test:visual:debug",
     "test:visual:report": "npx playwright show-report packages/storybook/test-visual/test-report",
