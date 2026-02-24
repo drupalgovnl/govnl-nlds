@@ -1,5 +1,11 @@
 # @dictu/button
 
+## 4.1.1
+
+### Patch Changes
+
+- 03111be: Updated to more modern css rules.
+
 ## 4.1.0
 
 ### Minor Changes

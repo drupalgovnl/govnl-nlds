@@ -1,5 +1,11 @@
 # @dictu/table
 
+## 1.5.1
+
+### Patch Changes
+
+- 03111be: Updated to more modern css rules.
+
 ## 1.5.0
 
 ### Minor Changes
