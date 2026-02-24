@@ -5,9 +5,9 @@
 
 @mixin dictu-table {
   border-collapse: collapse;
+  inline-size: 100%;
   margin-block: var(--govnl-table-margin-block-start) var(--govnl-table-margin-block-end);
   table-layout: fixed;
-  width: 100%;
 }
 
 @mixin dictu-table__wrapper {

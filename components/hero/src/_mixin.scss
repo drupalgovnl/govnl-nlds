@@ -36,7 +36,7 @@
 @mixin dictu-hero__image {
   block-size: auto;
   inline-size: 100%;
-  max-width: 100%;
+  max-inline-size: 100%;
   object-fit: cover;
   object-position: 50% 50%;
 }
@@ -50,7 +50,7 @@
   inline-size: var(--govnl-hero-message-max-inline-size, 100%);
   inset-block-end: 0;
   margin: 0;
-  max-width: 100%;
+  max-inline-size: 100%;
   padding-block: var(--govnl-hero-message-padding-block-start, 0.5rem)
     var(--govnl-hero-message-padding-block-end, 0.5rem);
   padding-inline: var(--govnl-hero-message-padding-inline-start, 0.5rem)

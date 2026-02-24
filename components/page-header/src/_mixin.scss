@@ -17,13 +17,14 @@
   padding-inline: var(--govnl-header-container-padding-inline, 1rem);
 }
 
-// Slightly too specific for a generic page header component.
-// Perhaps set margin-inline-start as a design token?
+/* Slightly too specific for a generic page header component. */
+
+/* Perhaps set margin-inline-start as a design token? */
 @mixin dictu-page-header-logo-wrapper {
   --govnl-container-padding-inline: 0;
 
+  inline-size: fit-content;
   margin-inline-start: calc(50% - 1.5rem);
-  width: fit-content;
 
   @media (max-width <= 20em) {
     margin-inline-start: calc(50% - 1rem);

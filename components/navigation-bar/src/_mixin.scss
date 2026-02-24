@@ -34,7 +34,7 @@
 }
 
 @mixin dictu-navigation-bar__list--mobile {
-  // @TODO: Should be --govnl-nav-bar-mobile-list-background-color when it is added.
+  /* @TODO: Should be --govnl-nav-bar-mobile-list-background-color when it is added. */
   background-color: var(--govnl-nav-bar-submenu-background-color);
   flex-direction: column;
 }
@@ -42,11 +42,11 @@
 @mixin dictu-navigation-bar__link {
   align-items: center;
   background-color: var(--govnl-nav-bar-link-background-color);
+  block-size: 100%;
   box-sizing: border-box;
   color: var(--govnl-nav-bar-link-color);
   column-gap: calc(var(--govnl-nav-bar-link-column-gap));
   display: flex;
-  height: 100%;
   padding-block: var(--govnl-nav-bar-link-padding-block);
   padding-inline: var(--govnl-nav-bar-link-padding-inline);
   text-decoration: var(--govnl-nav-bar-link-text-decoration);
@@ -85,13 +85,13 @@
 @mixin dictu-navigation-bar__toggle {
   align-items: center;
   background-color: var(--govnl-nav-bar-submenu-toggler-background-color);
+  block-size: 100%;
   border-width: var(--govnl-nav-bar-submenu-toggler-border-width);
   box-sizing: border-box;
   color: var(--govnl-nav-bar-submenu-toggler-color);
   column-gap: calc(var(--govnl-nav-bar-submenu-toggler-column-gap));
   display: none;
   font-size: inherit;
-  height: 100%;
   padding-block: var(--govnl-nav-bar-submenu-toggler-padding-block);
   padding-inline: var(--govnl-nav-bar-submenu-toggler-padding-inline);
   text-decoration: var(--govnl-nav-bar-submenu-toggler-text-decoration);
@@ -135,13 +135,13 @@
 @mixin dictu-navigation-bar__submenu-toggler {
   align-items: center;
   background-color: var(--govnl-nav-bar-submenu-toggler-background-color);
+  block-size: 100%;
   border-width: var(--govnl-nav-bar-submenu-toggler-border-width);
   box-sizing: border-box;
   color: var(--govnl-nav-bar-submenu-toggler-color);
   column-gap: calc(var(--govnl-nav-bar-submenu-toggler-column-gap));
   display: flex;
-  font-size: inherit; // @TODO: add --govnl-nav-bar-submenu-toggler-font-size when it is added.
-  height: 100%;
+  font-size: inherit; /* @TODO: add --govnl-nav-bar-submenu-toggler-font-size when it is added. */
   padding-block: var(--govnl-nav-bar-submenu-toggler-padding-block);
   padding-inline: var(--govnl-nav-bar-submenu-toggler-padding-inline);
   text-decoration: var(--govnl-nav-bar-submenu-toggler-text-decoration);
@@ -171,20 +171,20 @@
 
 @mixin dictu-navigation-bar__submenu-toggler--mobile {
   background-color: transparent;
+  inline-size: 100%;
   justify-content: space-between;
-  width: 100%;
 }
 
 @mixin dictu-navigation-bar__submenu {
   background-color: var(--govnl-nav-bar-submenu-background-color);
   border-bottom-left-radius: var(--govnl-nav-bar-submenu-border-bottom-left-radius);
   border-bottom-right-radius: var(--govnl-nav-bar-submenu-border-bottom-right-radius);
+  inset-block-start: 100%;
   min-inline-size: 100%;
   overflow-wrap: break-word;
   padding-block: var(--govnl-nav-bar-submenu-padding-block-start) var(--govnl-nav-bar-submenu-padding-block-end);
   padding-inline: var(--govnl-nav-bar-submenu-padding-inline-start) var(--govnl-nav-bar-submenu-padding-inline-end);
   position: absolute;
-  top: 100%;
   z-index: var(--govnl-nav-bar-submenu-z-index, 1);
 }
 
@@ -192,6 +192,7 @@
   background-color: transparent;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  inset-block-start: 0;
   min-inline-size: fit-content;
   overflow-wrap: initial;
   padding-block: var(--govnl-nav-bar-mobile-submenu-padding-block-start)
@@ -199,7 +200,6 @@
   padding-inline: var(--govnl-nav-bar-mobile-submenu-padding-inline-start)
     var(--govnl-nav-bar-mobile-submenu-padding-inline-end);
   position: relative;
-  top: 0;
 }
 
 @mixin dictu-navigation-bar__submenu-list {
@@ -222,5 +222,5 @@
 }
 
 @mixin dictu-navigation-bar__submenu-link--mobile {
-  width: 100%;
+  inline-size: 100%;
 }

@@ -17,7 +17,7 @@
   font-family: var(--govnl-logo-font-family);
   font-size: var(--govnl-logo-title-font-size);
   line-height: var(--govnl-logo-title-line-height);
-  max-width: fit-content;
+  max-inline-size: fit-content;
 }
 
 @mixin dictu-logo__image {
