@@ -43,7 +43,7 @@
 }
 
 @mixin dictu-breadcrumbs__icon {
-  --govnl-icon-size: var(--govnl-breadcrumb-nav-separator-size);
+  --govnl-dictu-icon-size: var(--govnl-breadcrumb-nav-separator-size);
 
   color: var(--govnl-breadcrumb-nav-separator-color);
 }

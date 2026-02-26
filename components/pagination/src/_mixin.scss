@@ -31,7 +31,7 @@
 }
 
 @mixin dictu-pagination__relative-link {
-  --govnl-icon-size: var(--govnl-pagination-relative-link-icon-size);
+  --govnl-dictu-icon-size: var(--govnl-pagination-relative-link-icon-size);
 
   align-items: center;
   display: flex;
