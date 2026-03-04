@@ -1,0 +1,42 @@
+{
+  "govnl": {
+    "quote": {
+      "author": {
+        "font-weight": {
+          "$type": "other",
+          "$value": "400"
+        }
+      },
+      "text": {
+        "font-style": {
+          "$type": "text",
+          "$value": "italic"
+        }
+      },
+      "padding-inline-start": {
+        "$type": "other",
+        "$value": "28px"
+      },
+      "border-inline-start": {
+        "style": {
+          "$type": "border",
+          "$value": {
+            "style": "solid"
+          }
+        },
+        "color": {
+          "$type": "border",
+          "$value": {
+            "color": "{govnl.color.hemelblauw.500}"
+          }
+        },
+        "width": {
+          "$type": "border",
+          "$value": {
+            "width": "4"
+          }
+        }
+      }
+    }
+  }
+}
