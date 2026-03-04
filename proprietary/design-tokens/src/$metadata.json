@@ -27,6 +27,7 @@
     "components/logo.tokens",
     "components/navigation-bar.tokens",
     "components/page-footer.tokens",
+    "components/blockqoute.tokens",
     "components/page-header.tokens",
     "components/pagination.tokens",
     "components/paragraph.tokens",
