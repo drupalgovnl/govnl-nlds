@@ -1,5 +1,11 @@
 # @dictu/navigation-bar
 
+## 4.1.2
+
+### Patch Changes
+
+- 03111be: Updated to more modern css rules.
+
 ## 4.1.1
 
 ### Patch Changes

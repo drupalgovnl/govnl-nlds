@@ -20,6 +20,7 @@
     "test": "vitest --config test/vitest.config.ts",
     "test:visual": "playwright test --config test-visual/playwright.config.ts",
     "test:visual:update": "playwright test --config test-visual/playwright.config.ts --update-snapshots",
+    "test:visual:update:single": "playwright test --config test-visual/playwright.config.ts --update-snapshots --",
     "test:visual:headed": "playwright test --config test-visual/playwright.config.ts --headed",
     "test:visual:debug": "playwright test --config test-visual/playwright.config.ts --ui"
   },
@@ -39,7 +40,7 @@
     "@vitest/browser-playwright": "^4.0.0",
     "@vitest/runner": "^4.0.0",
     "axe-core": "^4.10.3",
-    "playwright": "^1.49.0",
+    "playwright": "^1.58.2",
     "rimraf": "6.0.1",
     "rollup": "^4.44.0",
     "storybook": "^10.1",
@@ -50,7 +51,8 @@
   },
   "dependencies": {
     "@dictu/design-tokens": "*",
-    "@vitest/mocker": "^4.0.15"
+    "@vitest/mocker": "^4.0.15",
+    "playwright": "^1.5"
   },
   "overrides": {
     "storybook": "$storybook"

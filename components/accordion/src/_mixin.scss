@@ -8,7 +8,7 @@
 @mixin dictu-accordion {
   // Doesn't appear to have a design token yet..
   // Don't want to hard link to core.
-  border-bottom: 1px solid #94a3b8;
+  border-block-end: 1px solid #94a3b8;
 }
 
 @mixin dictu-accordion-heading {
@@ -44,9 +44,9 @@
   font-family: var(--govnl-accordion-button-font-family);
   font-size: var(--govnl-accordion-button-font-size);
   font-weight: var(--govnl-accordion-button-font-weight);
+  inline-size: 100%;
   line-height: var(--govnl-accordion-button-line-height);
   text-align: start;
-  width: 100%;
 
   &[aria-expanded="true"] {
     svg {
