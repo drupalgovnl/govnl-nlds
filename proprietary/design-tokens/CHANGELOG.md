@@ -1,5 +1,12 @@
 # @dictu/design-tokens
 
+## 2.10.0
+
+### Minor Changes
+
+- de36cc1: Updated grid.tokens.json to remove the type field. Removed duplicated
+  design tokens from the date-input.tokens.json
+
 ## 2.9.0
 
 ### Minor Changes
