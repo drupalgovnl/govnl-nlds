@@ -1,6 +1,6 @@
 {
   "name": "@dictu/timeline",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": "Dienst ICT Uitvoering",
   "description": "Timeline CSS component.",
   "license": "EUPL-1.2",
@@ -32,7 +32,7 @@
     "clean": "rimraf ./dist/"
   },
   "dependencies": {
-    "@dictu/button": "^4.0.0",
+    "@dictu/button": "^4.1.1",
     "@dictu/heading": "^3.0.0",
     "@dictu/utility-display": "^1.0"
   }

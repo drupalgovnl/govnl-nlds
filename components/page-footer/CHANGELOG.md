@@ -1,5 +1,11 @@
 # @dictu/page-footer
 
+## 2.0.1
+
+### Patch Changes
+
+- 03111be: Updated to more modern css rules.
+
 ## 2.0.0
 
 ### Major Changes

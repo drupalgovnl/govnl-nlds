@@ -1,5 +1,11 @@
 # @dictu/card
 
+## 5.0.1
+
+### Patch Changes
+
+- 03111be: Updated to more modern css rules.
+
 ## 5.0.0
 
 ### Major Changes

@@ -1,5 +1,11 @@
 # @dictu/accordeon
 
+## 3.0.1
+
+### Patch Changes
+
+- 03111be: Updated to more modern css rules.
+
 ## 3.0.0
 
 ### Major Changes
