@@ -38,7 +38,7 @@
 }
 
 @mixin dictu-link__icon {
-  --govnl-icon-size: 1em; // @TODO: Add token.
+  --govnl-icon-size: var(--govnl-link-icon-size);
 
-  margin-inline-start: 0.3rem; // @TODO: Add token.
+  margin-inline-start: var(--govnl-link-icon-margin-inline-start);
 }
