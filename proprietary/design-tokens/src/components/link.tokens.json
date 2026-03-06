@@ -84,5 +84,19 @@
         }
       }
     }
+  },
+  "govnl": {
+    "link": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "1em"
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": "0.3em"
+        }
+      }
+    }
   }
 }

@@ -31,3 +31,14 @@
 @mixin dictu-link--inline-box {
   @include mixin.nl-link--inline-box;
 }
+
+@mixin dictu-link--with-icon {
+  align-items: center;
+  display: inline-flex;
+}
+
+@mixin dictu-link__icon {
+  --govnl-icon-size: var(--govnl-link-icon-size);
+
+  margin-inline-start: var(--govnl-link-icon-margin-inline-start);
+}
