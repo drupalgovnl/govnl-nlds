@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DICTU Design System - APEX Integration Demo</title>
+    <link rel="stylesheet" href="dist/apex/dictu-apex-theme.css" />
+    <style>
+      /* Demo page styling */
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        margin: 0;
+        padding: 2rem;
+        background: #f5f5f5;
+      }
+      .demo-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      .demo-section {
+        margin-bottom: 3rem;
+      }
+      .demo-section h2 {
+        color: #01689b;
+        border-bottom: 2px solid #007bc7;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .demo-grid {
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      .demo-buttons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .code-block {
+        background: #1e293b;
+        color: #e2e8f0;
+        padding: 1rem;
+        border-radius: 4px;
+        overflow-x: auto;
+        font-family: 'Monaco', 'Courier New', monospace;
+        font-size: 0.875rem;
+      }
+      .apex-badge {
+        display: inline-block;
+        background: #007bc7;
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        margin-left: 0.5rem;
+      }
+    </style>
+  </head>
+  <body class="dictu-theme">
+    <div class="demo-container">
+      <header style="margin-bottom: 2rem">
+        <h1>DICTU Design System for Oracle APEX</h1>
+        <p style="font-size: 1.125rem; color: #64748b">
+          Proof of Concept - Universal Theme Integration
+        </p>
+      </header>
+
+      <!-- Button Components -->
+      <section class="demo-section">
+        <h2>Button Components <span class="apex-badge">APEX READY</span></h2>
+
+        <div class="demo-buttons">
+          <button class="dictu-button dictu-button--primary-action">Primary Action</button>
+          <button class="dictu-button dictu-button--secondary-action">Secondary Action</button>
+          <button class="dictu-button dictu-button--subtle">Subtle Button</button>
+          <button class="dictu-button dictu-button--primary-action" disabled>Disabled</button>
+        </div>
+
+        <details style="margin-top: 1rem">
+          <summary style="cursor: pointer; color: #007bc7; font-weight: 500">
+            Show APEX Template Code
+          </summary>
+          <div class="code-block" style="margin-top: 0.5rem">
+            &lt;button type="#BUTTON_TYPE#" id="#BUTTON_ID#" class="dictu-button
+            dictu-button--primary-action #BUTTON_CSS_CLASSES#" #BUTTON_ATTRIBUTES# #ONCLICK#&gt;
+            #LABEL!HTML# &lt;/button&gt;
+          </div>
+        </details>
+      </section>
+
+      <!-- Card Component -->
+      <section class="demo-section">
+        <h2>Card Regions <span class="apex-badge">REGION TEMPLATE</span></h2>
+
+        <div class="demo-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))">
+          <div class="dictu-card">
+            <div class="dictu-card__header">
+              <h3 class="dictu-card__title">Default Card</h3>
+            </div>
+            <div class="dictu-card__body">
+              <p>
+                This is a standard DICTU card component, ready to use as an APEX region template.
+              </p>
+            </div>
+          </div>
+
+          <div class="dictu-card dictu-card--elevated">
+            <div class="dictu-card__header">
+              <h3 class="dictu-card__title">Elevated Card</h3>
+            </div>
+            <div class="dictu-card__body">
+              <p>Cards can have elevation (shadow) for visual hierarchy.</p>
+            </div>
+          </div>
+
+          <div class="dictu-card dictu-card--outlined">
+            <div class="dictu-card__header">
+              <h3 class="dictu-card__title">Outlined Card</h3>
+            </div>
+            <div class="dictu-card__body">
+              <p>Or use outlined style for a different look.</p>
+            </div>
+          </div>
+        </div>
+
+        <details style="margin-top: 1rem">
+          <summary style="cursor: pointer; color: #007bc7; font-weight: 500">
+            Show APEX Template Code
+          </summary>
+          <div class="code-block" style="margin-top: 0.5rem">
+            &lt;div class="dictu-card #REGION_CSS_CLASSES#" id="#REGION_STATIC_ID#"
+            #REGION_ATTRIBUTES#&gt; &lt;div class="dictu-card__header"&gt; &lt;h2
+            class="dictu-card__title"&gt;#TITLE#&lt;/h2&gt; &lt;/div&gt; &lt;div
+            class="dictu-card__body"&gt; #BODY# &lt;/div&gt; #SUB_REGIONS# &lt;/div&gt;
+          </div>
+        </details>
+      </section>
+
+      <!-- Navigation -->
+      <section class="demo-section">
+        <h2>Navigation Components <span class="apex-badge">LIST TEMPLATE</span></h2>
+
+        <nav class="dictu-navigation-bar">
+          <ul class="dictu-navigation-bar__list">
+            <li class="dictu-navigation-bar__item dictu-navigation-bar__item--current">
+              <a href="#" class="dictu-navigation-bar__link">Dashboard</a>
+            </li>
+            <li class="dictu-navigation-bar__item">
+              <a href="#" class="dictu-navigation-bar__link">Reports</a>
+            </li>
+            <li class="dictu-navigation-bar__item">
+              <a href="#" class="dictu-navigation-bar__link">Settings</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div style="margin-top: 1.5rem">
+          <nav class="dictu-breadcrumbs" aria-label="Breadcrumb">
+            <ol class="dictu-breadcrumbs__list">
+              <li class="dictu-breadcrumbs__item">
+                <a href="#" class="dictu-breadcrumbs__link">Home</a>
+              </li>
+              <li class="dictu-breadcrumbs__separator" aria-hidden="true">/</li>
+              <li class="dictu-breadcrumbs__item">
+                <a href="#" class="dictu-breadcrumbs__link">Applications</a>
+              </li>
+              <li class="dictu-breadcrumbs__separator" aria-hidden="true">/</li>
+              <li class="dictu-breadcrumbs__item" aria-current="page">Current Page</li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Form Components -->
+      <section class="demo-section">
+        <h2>Form Components <span class="apex-badge">ITEM INTEGRATION</span></h2>
+
+        <div style="max-width: 500px">
+          <div class="dictu-form-field" style="margin-bottom: 1rem">
+            <label for="demo-input-1" class="dictu-form-field__label"> Text Input </label>
+            <div class="dictu-form-field__input">
+              <input
+                type="text"
+                id="demo-input-1"
+                class="dictu-text-input"
+                placeholder="Enter your name"
+              />
+            </div>
+          </div>
+
+          <div class="dictu-form-field">
+            <div class="dictu-checkbox">
+              <input type="checkbox" id="demo-checkbox-1" class="dictu-checkbox__input" />
+              <label for="demo-checkbox-1" class="dictu-checkbox__label">
+                I agree to the terms and conditions
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <details style="margin-top: 1rem">
+          <summary style="cursor: pointer; color: #007bc7; font-weight: 500">
+            Show APEX Integration
+          </summary>
+          <div class="code-block" style="margin-top: 0.5rem">
+            &lt;!-- APEX Form Item Wrapper --&gt; &lt;div class="dictu-form-field"&gt; &lt;label
+            for="P1_NAME" class="dictu-form-field__label"&gt; #LABEL# &lt;/label&gt; &lt;div
+            class="dictu-form-field__input"&gt; #ITEM# &lt;/div&gt; #ERROR# &lt;/div&gt;
+          </div>
+        </details>
+      </section>
+
+      <!-- APEX Integration Info -->
+      <section class="demo-section">
+        <h2>APEX Integration Architecture</h2>
+
+        <div class="dictu-card">
+          <div class="dictu-card__body">
+            <h3 style="margin-top: 0">Three-Layer Architecture</h3>
+
+            <ol style="line-height: 1.8">
+              <li>
+                <strong>Design Token Bridge Layer</strong>
+                <br />Maps DICTU CSS variables to APEX Universal Theme variables
+                <div class="code-block" style="margin-top: 0.5rem; font-size: 0.75rem">
+                  --a-cv-primary-color: var(--govnl-color-hemelblauw-500);
+                </div>
+              </li>
+              <li style="margin-top: 1rem">
+                <strong>Component Layer</strong>
+                <br />16 DICTU components with APEX-specific adaptations
+              </li>
+              <li style="margin-top: 1rem">
+                <strong>Template Adapter Layer</strong>
+                <br />APEX templates, plugins, and PL/SQL API
+              </li>
+            </ol>
+
+            <div style="margin-top: 1.5rem; padding: 1rem; background: #f1f5f9; border-radius: 4px">
+              <strong>📦 Package Contents:</strong>
+              <ul style="margin: 0.5rem 0 0 1.5rem">
+                <li>dictu-apex-theme.css (123 KB)</li>
+                <li>Button, Region, List templates (SQL)</li>
+                <li>DICTU Button Plugin</li>
+                <li>dictu_apex_template_mgr PL/SQL package</li>
+                <li>Installation scripts and documentation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Installation CTA -->
+      <section class="demo-section">
+        <div
+          class="dictu-card dictu-card--elevated"
+          style="background: linear-gradient(135deg, #007bc7 0%, #01689b 100%); color: white"
+        >
+          <div class="dictu-card__body">
+            <h2 style="margin-top: 0; color: white; border: none">Ready to Install?</h2>
+            <p style="font-size: 1.125rem; margin-bottom: 1.5rem">
+              Follow these steps to integrate DICTU Design System with your APEX application:
+            </p>
+
+            <ol style="line-height: 2">
+              <li>
+                Build the package:
+                <code
+                  style="
+                    background: rgba(0, 0, 0, 0.2);
+                    padding: 0.25rem 0.5rem;
+                    border-radius: 3px;
+                  "
+                  >npm run build</code
+                >
+              </li>
+              <li>Upload CSS to APEX Static Files</li>
+              <li>
+                Run installation script:
+                <code
+                  style="
+                    background: rgba(0, 0, 0, 0.2);
+                    padding: 0.25rem 0.5rem;
+                    border-radius: 3px;
+                  "
+                  >@sql/installation/install_dictu.sql</code
+                >
+              </li>
+              <li>Start using DICTU components!</li>
+            </ol>
+
+            <div style="margin-top: 1.5rem">
+              <a
+                href="docs/INSTALLATION.md"
+                class="dictu-button dictu-button--secondary-action"
+                style="
+                  display: inline-block;
+                  color: #007bc7;
+                  background: white;
+                  border-color: white;
+                  text-decoration: none;
+                "
+              >
+                View Installation Guide
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        style="text-align: center; color: #64748b; padding-top: 2rem; border-top: 1px solid #e2e8f0"
+      >
+        <p>
+          <strong>DICTU Design System for Oracle APEX</strong><br />
+          EUPL-1.2 License • Made with ❤️ by Dienst ICT Uitvoering
+        </p>
+        <p style="font-size: 0.875rem">
+          Based on NL Design System Architecture • Dutch Government Standards
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

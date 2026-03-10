@@ -1,0 +1,36 @@
+{
+  "name": "@dictu/apex-integration",
+  "version": "1.0.0",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Oracle APEX Universal Theme integration for DICTU Design System",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system",
+    "oracle-apex",
+    "apex",
+    "universal-theme"
+  ],
+  "type": "module",
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "packages/apex-integration"
+  },
+  "files": [
+    "dist/",
+    "sql/",
+    "docs/",
+    "*.md"
+  ],
+  "scripts": {
+    "build": "npm run build:css && npm run build:templates && npm run build:docs",
+    "build:css": "node scripts/build-apex-css.js",
+    "build:templates": "node scripts/generate-apex-templates.js",
+    "build:docs": "node scripts/generate-installation-guide.js",
+    "watch": "node scripts/build-apex-css.js --watch",
+    "package": "npm run build && node scripts/create-apex-package.js"
+  },
+  "devDependencies": {
+    "@dictu/design-tokens": "*"
+  }
+}
