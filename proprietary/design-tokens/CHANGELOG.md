@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 2.11.0
+
+### Minor Changes
+
+- de8ea47: Added design tokens for variant of Link component with icon
+
 ## 2.10.0
 
 ### Minor Changes
