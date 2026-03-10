@@ -10,59 +10,59 @@
       "primary-1": {
         "50": {
           "$type": "color",
-          "$value": "{govnl.color.lintblauw.50}"
+          "$value": "{govnl.config.color-primary.50}"
         },
         "100": {
           "$type": "color",
-          "$value": "{govnl.color.lintblauw.100}"
+          "$value": "{govnl.config.color-primary.100}"
         },
         "200": {
           "$type": "color",
-          "$value": "{govnl.color.lintblauw.200}"
+          "$value": "{govnl.config.color-primary.200}"
         },
         "300": {
           "$type": "color",
-          "$value": "{govnl.color.lintblauw.300}"
+          "$value": "{govnl.config.color-primary.300}"
         },
         "400": {
           "$type": "color",
-          "$value": "{govnl.color.lintblauw.400}"
+          "$value": "{govnl.config.color-primary.400}"
         },
         "500": {
           "$type": "color",
-          "$value": "{govnl.color.lintblauw.500}"
+          "$value": "{govnl.config.color-primary.500}"
         }
       },
       "primary-2": {
         "50": {
           "$type": "color",
-          "$value": "{govnl.color.groen.50}"
+          "$value": "{govnl.config.color-secondary.50}"
         },
         "100": {
           "$type": "color",
-          "$value": "{govnl.color.groen.100}"
+          "$value": "{govnl.config.color-secondary.100}"
         },
         "200": {
           "$type": "color",
-          "$value": "{govnl.color.groen.200}"
+          "$value": "{govnl.config.color-secondary.200}"
         },
         "300": {
           "$type": "color",
-          "$value": "{govnl.color.groen.300}"
+          "$value": "{govnl.config.color-secondary.300}"
         },
         "400": {
           "$type": "color",
-          "$value": "{govnl.color.groen.400}"
+          "$value": "{govnl.config.color-secondary.400}"
         },
         "500": {
           "$type": "color",
-          "$value": "{govnl.color.groen.500}"
+          "$value": "{govnl.config.color-secondary.500}"
         }
       },
       "accent-1": {
         "color": {
           "$type": "color",
-          "$value": "{govnl.color.lichtblauw.500}"
+          "$value": "{govnl.config.color-tertiary}"
         }
       },
       "accent-2": {
@@ -359,36 +359,18 @@
     "interaction": {
       "color": {
         "$type": "color",
-        "$value": "{govnl.color.lintblauw.500}"
+        "$value": "{govnl.config.color-primary.500}"
       },
       "active": {
         "color": {
-          "$extensions": {
-            "studio.tokens": {
-              "modify": {
-                "type": "darken",
-                "value": "0.4",
-                "space": "srgb"
-              }
-            }
-          },
-          "$type": "color",
-          "$value": "{govnl.brand.primary-1.500}"
+          "$type": "other",
+          "$value": "color-mix(in srgb, {govnl.interaction.color} 60%, black)"
         }
       },
       "hover": {
         "color": {
-          "$extensions": {
-            "studio.tokens": {
-              "modify": {
-                "type": "darken",
-                "value": "0.2",
-                "space": "srgb"
-              }
-            }
-          },
-          "$type": "color",
-          "$value": "{govnl.brand.primary-1.500}"
+          "$type": "other",
+          "$value": "color-mix(in srgb, {govnl.interaction.color} 80%, black)"
         }
       }
     },

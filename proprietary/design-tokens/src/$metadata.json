@@ -1,6 +1,7 @@
 {
   "tokenSetOrder": [
     "core/core.tokens",
+    "config/config.tokens",
     "common/common.tokens",
     "components/accordion.tokens",
     "components/breadcrumb.tokens",
