@@ -1,5 +1,11 @@
 # @dictu/link
 
+## 2.4.0
+
+### Minor Changes
+
+- de8ea47: Added possibility for icon on external links
+
 ## 2.3.2
 
 ### Patch Changes
