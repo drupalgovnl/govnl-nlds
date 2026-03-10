@@ -11,6 +11,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import * as AccordionStories from './accordion.stories.js';
 import Readme from './README.md?raw';
+import { DesignTokensTable } from '../../packages/storybook/src/documentation/components/DesignTokensTable.jsx';
 
 <Meta of={AccordionStories} title="Componenten/Accordion" />
 
@@ -26,6 +27,10 @@ import Readme from './README.md?raw';
 ## Parameters
 
 <ArgTypes of={AccordionStories} />
+
+## Design Tokens
+
+<DesignTokensTable componentName="accordion" />
 
 <Markdown>{Readme}</Markdown>
 

@@ -9,6 +9,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import * as SearchbarStories from './searchbar.stories.js';
 import Readme from './README.md?raw';
+import { DesignTokensTable } from '../../packages/storybook/src/documentation/components/DesignTokensTable.jsx';
 
 <Meta of={SearchbarStories} title="Componenten/Searchbar" />
 
@@ -25,6 +26,10 @@ import Readme from './README.md?raw';
 ## Parameters
 
 <ArgTypes of={SearchbarStories} />
+
+## Design Tokens
+
+<DesignTokensTable componentName="search-bar" />
 
 <Markdown>{Readme}</Markdown>
 
