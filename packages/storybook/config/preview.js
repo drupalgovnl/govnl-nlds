@@ -1,7 +1,43 @@
 import '@dictu/design-tokens/dist/index.css';
 import '../src/fonts.css';
+import { colorThemeDecorator, COLOR_FAMILIES } from '../src/colorThemeDecorator.js';
 
 const preview = {
+  globalTypes: {
+    primaryColor: {
+      description: 'Primaire kleur',
+      toolbar: {
+        title: 'Primair',
+        icon: 'paintbrush',
+        items: COLOR_FAMILIES,
+        dynamicTitle: true,
+      },
+    },
+    secondaryColor: {
+      description: 'Secundaire kleur',
+      toolbar: {
+        title: 'Secundair',
+        icon: 'circle',
+        items: COLOR_FAMILIES,
+        dynamicTitle: true,
+      },
+    },
+    tertiaryColor: {
+      description: 'Tertiaire (accent) kleur',
+      toolbar: {
+        title: 'Tertiair',
+        icon: 'star',
+        items: COLOR_FAMILIES,
+        dynamicTitle: true,
+      },
+    },
+  },
+  initialGlobals: {
+    primaryColor: '',
+    secondaryColor: '',
+    tertiaryColor: '',
+  },
+  decorators: [colorThemeDecorator],
   parameters: {
     controls: { expanded: false },
     docs: {

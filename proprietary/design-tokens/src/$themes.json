@@ -4,6 +4,7 @@
     "name": "Default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
+      "config/config.tokens": "enabled",
       "common/common.tokens": "enabled",
       "components/accordion.tokens": "enabled",
       "components/button.tokens": "enabled",

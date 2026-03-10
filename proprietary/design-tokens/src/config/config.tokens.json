@@ -1,0 +1,63 @@
+{
+  "govnl": {
+    "config": {
+      "$description": "Configuratie-tokens: overschrijf deze om de primaire, secundaire en tertiaire kleuren aan te passen.",
+      "color-primary": {
+        "50": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.50}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.100}"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.200}"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.300}"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.400}"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.500}"
+        }
+      },
+      "color-secondary": {
+        "50": {
+          "$type": "color",
+          "$value": "{govnl.color.groen.50}"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "{govnl.color.groen.100}"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "{govnl.color.groen.200}"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "{govnl.color.groen.300}"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "{govnl.color.groen.400}"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "{govnl.color.groen.500}"
+        }
+      },
+      "color-tertiary": {
+        "$type": "color",
+        "$value": "{govnl.color.lichtblauw.500}"
+      }
+    }
+  }
+}

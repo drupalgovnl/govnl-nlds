@@ -7,9 +7,13 @@ export default [
   // Base config for all files
   ...storybook.configs['flat/recommended'],
 
-  // Storybook story files need browser globals
+  // Storybook story files and browser-side modules need browser globals
   {
-    files: ['**/*.stories.@(js|jsx|ts|tsx)', 'components/**/*.@(js|jsx|ts|tsx)'],
+    files: [
+      '**/*.stories.@(js|jsx|ts|tsx)',
+      'components/**/*.@(js|jsx|ts|tsx)',
+      'packages/storybook/src/**/*.@(js|jsx|ts|tsx)',
+    ],
     languageOptions: {
       globals: {
         document: 'readonly',

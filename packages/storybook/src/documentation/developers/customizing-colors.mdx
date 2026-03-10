@@ -1,0 +1,144 @@
+import { Meta, Title, Subtitle } from '@storybook/addon-docs/blocks';
+
+<Meta title="Voor ontwikkelaars/Kleuren aanpassen" />
+
+<Title>Kleuren aanpassen</Title>
+
+<Subtitle>
+  Pas de primaire, secundaire en tertiaire kleuren aan om het design systeem af te stemmen op jouw
+  organisatie of project.
+</Subtitle>
+
+## Hoe werkt het
+
+Het design systeem bevat **configuratie-tokens**: CSS custom properties die als enige instelpunt dienen voor het kleurenschema. Door alleen deze tokens te overschrijven, passen alle componenten zich automatisch aan — van buttons en links tot headings en navigatie.
+
+| Rol           | Configuratie-token                        | Standaard  | Wat verandert er                                            |
+| ------------- | ----------------------------------------- | ---------- | ----------------------------------------------------------- |
+| **Primair**   | `--govnl-config-color-primary-{50–500}`   | Lintblauw  | Headings, links, buttons, navigatie, interactieve elementen |
+| **Secundair** | `--govnl-config-color-secondary-{50–500}` | Groen      | Ondersteunende accenten                                     |
+| **Tertiair**  | `--govnl-config-color-tertiary`           | Lichtblauw | Accentkleur                                                 |
+
+### De token-keten
+
+De configuratie-tokens worden automatisch doorgegeven via de volgende keten:
+
+```
+govnl-config-color-primary-*     (jij overschrijft hier)
+  → govnl-brand-primary-1-*      (automatisch)
+    → govnl-heading-color         (automatisch)
+    → govnl-interaction-color     (automatisch)
+      → govnl-interaction-hover   (automatisch)
+      → govnl-interaction-active  (automatisch)
+        → button, link, accordion, breadcrumb, ...  (automatisch)
+```
+
+Je hoeft dus alleen de `config`-laag in te stellen — de rest cascadeert vanzelf.
+
+## Uitproberen in Storybook
+
+Gebruik de drie knoppen in de toolbar bovenaan (**Primair**, **Secundair**, **Tertiair**) om live te zien hoe het kleurenschema doorwerkt in alle componenten. De wijzigingen worden direct doorgevoerd, zonder rebuild.
+
+## Toepassen in je eigen project
+
+### Stap 1: Laad de design tokens
+
+```css
+@import '@dictu/design-tokens/dist/index.css';
+```
+
+Voeg de class `dictu-theme` toe aan een root-element:
+
+```html
+<html class="dictu-theme" lang="nl"></html>
+```
+
+### Stap 2: Overschrijf de configuratie-tokens
+
+Maak een eigen CSS-bestand (bijv. `theme-overrides.css`) en overschrijf alleen de config-tokens:
+
+```css
+.dictu-theme {
+  /* Primaire kleur: donkerblauw */
+  --govnl-config-color-primary-50: var(--govnl-color-donkerblauw-50);
+  --govnl-config-color-primary-100: var(--govnl-color-donkerblauw-100);
+  --govnl-config-color-primary-200: var(--govnl-color-donkerblauw-200);
+  --govnl-config-color-primary-300: var(--govnl-color-donkerblauw-300);
+  --govnl-config-color-primary-400: var(--govnl-color-donkerblauw-400);
+  --govnl-config-color-primary-500: var(--govnl-color-donkerblauw-500);
+
+  /* Secundaire kleur: mosgroen */
+  --govnl-config-color-secondary-50: var(--govnl-color-mosgroen-50);
+  --govnl-config-color-secondary-100: var(--govnl-color-mosgroen-100);
+  --govnl-config-color-secondary-200: var(--govnl-color-mosgroen-200);
+  --govnl-config-color-secondary-300: var(--govnl-color-mosgroen-300);
+  --govnl-config-color-secondary-400: var(--govnl-color-mosgroen-400);
+  --govnl-config-color-secondary-500: var(--govnl-color-mosgroen-500);
+
+  /* Tertiaire (accent) kleur: roze */
+  --govnl-config-color-tertiary: var(--govnl-color-roze-500);
+}
+```
+
+Laad dit bestand **na** de design tokens:
+
+```css
+@import '@dictu/design-tokens/dist/index.css';
+@import './theme-overrides.css';
+```
+
+Dat is alles — de headings, buttons, links, navigatie en alle andere componenten passen zich automatisch aan.
+
+## Beschikbare kleurfamilies
+
+Elke kleurfamilie heeft zes tinten (50 t/m 500) en kan worden toegewezen aan een roltoken:
+
+| Kleurfamilie | CSS-naam      | 500-waarde |
+| ------------ | ------------- | ---------- |
+| Lintblauw    | `lintblauw`   | `#154273`  |
+| Donkerblauw  | `donkerblauw` | `#01689B`  |
+| Hemelblauw   | `hemelblauw`  | `#007BC7`  |
+| Lichtblauw   | `lichtblauw`  | `#8FCAE7`  |
+| Mintgroen    | `mintgroen`   | `#76D2B6`  |
+| Groen        | `groen`       | `#39870C`  |
+| Donkergroen  | `donkergroen` | `#275937`  |
+| Mosgroen     | `mosgroen`    | `#777B00`  |
+| Bruin        | `bruin`       | `#94710A`  |
+| Donkerbruin  | `donkerbruin` | `#673327`  |
+| Geel         | `geel`        | `#F9E11E`  |
+| Donkergeel   | `donkergeel`  | `#FFB612`  |
+| Oranje       | `oranje`      | `#E17000`  |
+| Rood         | `rood`        | `#D52B1E`  |
+| Roze         | `roze`        | `#F092CD`  |
+| Robijnrood   | `robijnrood`  | `#ca005d`  |
+| Violet       | `violet`      | `#a90061`  |
+| Paars        | `paars`       | `#42145F`  |
+| Grijs        | `grijs`       | `#64748B`  |
+
+De CSS custom property voor een tint volgt het patroon `--govnl-color-{naam}-{tint}`.
+
+## Geavanceerd: eigen kleuren definiëren
+
+Wil je een kleur gebruiken die niet in het design systeem zit? Definieer dan een eigen kleurreeks en wijs deze toe:
+
+```css
+.dictu-theme {
+  /* Eigen kleurfamilie */
+  --mijn-primair-50: #e8f0fe;
+  --mijn-primair-100: #c5d9fc;
+  --mijn-primair-200: #a1c2fa;
+  --mijn-primair-300: #7dabf8;
+  --mijn-primair-400: #5994f6;
+  --mijn-primair-500: #1a73e8;
+
+  /* Toewijzen als primaire kleur via de configuratie-tokens */
+  --govnl-config-color-primary-50: var(--mijn-primair-50);
+  --govnl-config-color-primary-100: var(--mijn-primair-100);
+  --govnl-config-color-primary-200: var(--mijn-primair-200);
+  --govnl-config-color-primary-300: var(--mijn-primair-300);
+  --govnl-config-color-primary-400: var(--mijn-primair-400);
+  --govnl-config-color-primary-500: var(--mijn-primair-500);
+}
+```
+
+> **Let op:** Controleer altijd of je kleurcombinatie voldoet aan de [WCAG 2.2 contrastrichtlijnen](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) (minimaal 4.5:1 voor tekst, 3:1 voor grote tekst en UI-elementen).
