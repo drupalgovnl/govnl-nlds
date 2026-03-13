@@ -1,5 +1,5 @@
 import './dist/index.css';
-import '@dictu/label/dist/index.css';
+import '@dictu/icon/dist/index.css';
 import '@dictu/text-input/dist/index.css';
 import '@dictu/checkbox/dist/index.css';
 import { Fieldset } from './fieldset.component';

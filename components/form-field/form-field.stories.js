@@ -1,5 +1,7 @@
 import './dist/index.css';
 import '@dictu/label/dist/index.css';
+import '@dictu/icon/dist/index.css';
+import '@dictu/utility-focus-ring/dist/index.css';
 import '@dictu/text-input/dist/index.css';
 import '@dictu/checkbox/dist/index.css';
 import { FormField } from './form-field.component';
