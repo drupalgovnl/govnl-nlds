@@ -1,21 +1,11 @@
 {
   "govnl": {
     "quote": {
-      "author": {
-        "font-weight": {
-          "$type": "other",
-          "$value": "400"
-        }
-      },
       "text": {
         "font-style": {
           "$type": "text",
           "$value": "italic"
         }
-      },
-      "padding-inline-start": {
-        "$type": "other",
-        "$value": "28px"
       },
       "border-inline-start": {
         "style": {
@@ -33,9 +23,19 @@
         "width": {
           "$type": "border",
           "$value": {
-            "width": "4"
+            "width": "{govnl.border.border-width.lg}"
           }
         }
+      },
+      "author": {
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.typography.font-weight.regular}"
+        }
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "{govnl.dimension.size.300}"
       }
     }
   }
