@@ -11,6 +11,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import * as FormFieldStories from './form-field.stories.js';
 import Readme from './README.md?raw';
+import { DesignTokensTable } from '../../packages/storybook/src/documentation/components/DesignTokensTable.jsx';
 
 <Meta of={FormFieldStories} title="Componenten/Form elements/Form field" />
 
@@ -28,6 +29,10 @@ Visueel ziet deze er hetzelfde uit als een fieldset. Hiervoor is gekozen, omdat 
 ## Parameters
 
 <ArgTypes of={FormFieldStories} />
+
+## Design Tokens
+
+<DesignTokensTable componentName="form-field" />
 
 <Markdown>{Readme}</Markdown>
 

@@ -11,6 +11,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import * as FieldsetdStories from './fieldset.stories.js';
 import Readme from './README.md?raw';
+import { DesignTokensTable } from '../../packages/storybook/src/documentation/components/DesignTokensTable.jsx';
 
 <Meta of={FieldsetdStories} title="Componenten/Form elements/Fieldset" />
 
@@ -29,6 +30,10 @@ De fieldset maakt gebruik van een legend, die een titel of beschrijving geeft aa
 ## Parameters
 
 <ArgTypes of={FieldsetdStories} />
+
+## Design Tokens
+
+<DesignTokensTable componentName="fieldset" />
 
 <Markdown>{Readme}</Markdown>
 

@@ -35,6 +35,7 @@
     "audit-ci": "^7.1.0",
     "eslint": "^9.29.0",
     "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-storybook": "^10.0.0",
     "glob": "^11.1.0",
     "husky": "^9.1.7",

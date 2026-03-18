@@ -11,6 +11,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import * as PaginationStories from './pagination.stories.js';
 import Readme from './README.md?raw';
+import { DesignTokensTable } from '../../packages/storybook/src/documentation/components/DesignTokensTable.jsx';
 
 <Meta of={PaginationStories} title="Componenten/Pagination" />
 
@@ -26,6 +27,10 @@ import Readme from './README.md?raw';
 ## Parameters
 
 <ArgTypes of={PaginationStories} />
+
+## Design Tokens
+
+<DesignTokensTable componentName="pagination" />
 
 <Markdown>{Readme}</Markdown>
 

@@ -11,6 +11,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import * as NavigationBarStories from './navigation-bar.stories.js';
 import Readme from './README.md?raw';
+import { DesignTokensTable } from '../../packages/storybook/src/documentation/components/DesignTokensTable.jsx';
 
 <Meta of={NavigationBarStories} title="Componenten/Navigation Bar" />
 
@@ -30,6 +31,10 @@ import Readme from './README.md?raw';
 ## Parameters
 
 <ArgTypes of={NavigationBarStories} />
+
+## Design Tokens
+
+<DesignTokensTable componentName="navigation-bar" />
 
 <Markdown>{Readme}</Markdown>
 

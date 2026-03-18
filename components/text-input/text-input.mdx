@@ -9,6 +9,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import * as TextInputStories from './text-input.stories.js';
 import Readme from './README.md?raw';
+import { DesignTokensTable } from '../../packages/storybook/src/documentation/components/DesignTokensTable.jsx';
 
 <Meta of={TextInputStories} title="Componenten/Form elements/Text input" />
 
@@ -23,6 +24,10 @@ import Readme from './README.md?raw';
 ## Parameters
 
 <ArgTypes of={TextInputStories} />
+
+## Design Tokens
+
+<DesignTokensTable componentName="text-input" />
 
 <Markdown>{Readme}</Markdown>
 
