@@ -1,0 +1,68 @@
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as SelectStories from './select.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={SelectStories} title="Componenten/Form elements/Select" />
+
+<Title>Select</Title>
+
+<Subtitle>
+  Een select element creëert een vervolgkeuzelijst waaruit gebruikers één of meerdere opties kunnen
+  kiezen. Het is het meest geschikt wanneer gebruikers één item uit een (langere) vooraf
+  gedefinieerde lijst moeten selecteren. 
+</Subtitle>
+
+<Canvas of={SelectStories.SelectDefault} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={SelectStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Select component
+
+## Wanneer gebruik je de Select component niet
+
+## Voorbeelden
+
+### Select
+
+<Canvas of={SelectStories.SelectDefault} />
+
+### Multiple
+
+<Canvas of={SelectStories.SelectMultiple} />
+
+### Disabled
+
+<Canvas of={SelectStories.SelectDisabled} />
+
+### Error
+
+<Canvas of={SelectStories.SelectError} />
+
+### Inline
+
+<Canvas of={SelectStories.SelectInline} />
+
+## Relevante WCAG succescriteria
+
+(nog in te vullen)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Select component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).

@@ -60,7 +60,6 @@ export default {
       content: TextInput({ id: args.id, error: args.error }),
     });
   },
-  tags: ['wip'],
   title: 'Componenten/Form elements/Fieldset',
 };
 
