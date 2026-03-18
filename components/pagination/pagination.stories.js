@@ -1,5 +1,6 @@
 import './dist/index.css';
 import '@dictu/link/dist/index.css';
+import '@dictu/icon/dist/index.css';
 import { Pagination } from './pagination.component';
 
 export default {

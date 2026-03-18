@@ -32,8 +32,8 @@
     "clean": "rimraf ./dist/"
   },
   "devDependencies": {
-    "@dictu/utility-focus-ring": "*",
-    "@dictu/icon": "*",
-    "@dictu/link": "*"
+    "@dictu/icon": "^2.2.0",
+    "@dictu/link": "^2.3.2",
+    "@dictu/utility-focus-ring": "*"
   }
 }

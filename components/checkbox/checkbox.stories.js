@@ -1,5 +1,5 @@
 import './dist/index.css';
-import '@dictu/icon/dist/index.css';
+import '@dictu/utility-focus-ring/dist/index.css';
 import { Checkbox } from './checkbox.component';
 
 export default {
