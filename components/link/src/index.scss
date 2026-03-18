@@ -26,3 +26,11 @@
 .dictu-link--inline-box {
   @include mixin.dictu-link--inline-box;
 }
+
+.dictu-link--with-icon {
+  @include mixin.dictu-link--with-icon;
+}
+
+.dictu-link__icon {
+  @include mixin.dictu-link__icon;
+}
