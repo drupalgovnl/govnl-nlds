@@ -1,3 +1,8 @@
+import { Paragraph } from '../paragraph/paragraph.component';
+import { LinkList } from '../link-list/link-list.component';
+import { Heading } from '../heading/heading.component';
+import { PageContainer } from '../page-container/page-container.component';
+
 export const PageFooter = ({ heading, text, columns, headingLevel = 2, classNames = [] }) => {
   // Create main footer element
   const pageFooter = document.createElement('footer');
@@ -5,8 +10,7 @@ export const PageFooter = ({ heading, text, columns, headingLevel = 2, className
   pageFooter.setAttribute('role', 'contentinfo');
 
   // Create container
-  const container = document.createElement('div');
-  container.classList.add('dictu-page-footer__container', 'dictu-container');
+  const container = PageContainer({ classNames: ['dictu-page-footer__container', ...classNames] });
 
   // Create text container
   if (heading || text) {
@@ -42,85 +46,20 @@ export const PageFooter = ({ heading, text, columns, headingLevel = 2, className
   return pageFooter;
 };
 
-const createArrowIcon = () => {
-  const icon = document.createElement('span');
-  icon.classList.add('dictu-icon', 'dictu-link-list__icon');
-  icon.setAttribute('role', 'presentation');
-  icon.innerHTML = `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289L15.7071 11.2929C16.0976 11.6834 16.0976 12.3166 15.7071 12.7071L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071C7.90237 18.3166 7.90237 17.6834 8.29289 17.2929L13.5858 12L8.29289 6.70711C7.90237 6.31658 7.90237 5.68342 8.29289 5.29289Z" fill="currentColor"/>
-  </svg>`;
-  return icon;
-};
-
 const createParagraph = text => {
-  if (!text) return null;
-  const p = document.createElement('p');
-  p.classList.add('dictu-page-footer-page-footer-paragraph', 'dictu-paragraph');
-  p.textContent = text;
-  return p;
+  return Paragraph({ text, classNames: ['dictu-page-footer__text'] });
 };
 
 const createHeading = (text, level) => {
-  if (!text || !level) return null;
-  const heading = document.createElement(`h${level}`);
-  heading.classList.add(
-    'dictu-page-footer-heading',
-    'dictu-heading',
-    `dictu-heading--level-${level}`
-  );
-  heading.textContent = text;
-  return heading;
-};
-
-const createLink = item => {
-  const link = document.createElement('a');
-  link.classList.add('dictu-link', 'dictu-link-list__link');
-  link.href = item.href || '#';
-
-  // Add icon and text
-  link.appendChild(createArrowIcon());
-
-  const linkText = document.createElement('span');
-  linkText.textContent = item.label || '';
-  link.appendChild(linkText);
-
-  // Set accessibility attributes
-  const attributes = [
-    { condition: item.title, attr: 'title', value: item.title },
-    { condition: item.download, attr: 'download', value: item.download },
-    { condition: item.ariaLabel && !item.external, attr: 'aria-label', value: item.ariaLabel },
-  ];
-
-  attributes.forEach(({ condition, attr, value }) => {
-    if (condition) link.setAttribute(attr, value);
+  return Heading({
+    content: text,
+    level,
+    classNames: ['dictu-page-footer-heading', `dictu-heading--level-${level}`],
   });
-
-  // Handle external links
-  if (item.external) {
-    link.setAttribute('target', '_blank');
-    link.setAttribute('rel', 'noopener noreferrer');
-    link.setAttribute('aria-label', item.ariaLabel || `${item.label} (opent in nieuw venster)`);
-  }
-
-  return link;
 };
 
 const createLinkList = items => {
-  if (!items?.length) return null;
-
-  const list = document.createElement('ul');
-  list.classList.add('dictu-link-list', 'dictu-page-footer__link-list');
-
-  const fragment = document.createDocumentFragment();
-  items.forEach(item => {
-    const listItem = document.createElement('li');
-    listItem.classList.add('dictu-link-list__item');
-    listItem.appendChild(createLink(item));
-    fragment.appendChild(listItem);
-  });
-
-  list.appendChild(fragment);
-  return list;
+  return LinkList({ items, classNames: ['dictu-page-footer__link-list'] });
 };
 
 const createColumn = (column, headingLevel) => {
