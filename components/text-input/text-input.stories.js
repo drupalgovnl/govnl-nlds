@@ -1,4 +1,5 @@
 import './dist/index.css';
+import '@dictu/utility-focus-ring/dist/index.css';
 import { TextInput } from './text-input.component';
 
 export default {

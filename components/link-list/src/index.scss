@@ -3,9 +3,6 @@
  * Copyright (c) 2021-2025 dictu
  */
 
-@use "pkg:@dictu/link/dist/index" as link-component;
-@use "pkg:@dictu/icon/dist/index" as icon-component;
-
 @use "mixin" as mixin;
 
 .dictu-link-list {

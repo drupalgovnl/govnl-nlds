@@ -1,6 +1,7 @@
 import './dist/index.css';
 import readme from './README.md?raw';
 import '@dictu/paragraph/dist/index.css';
+import '@dictu/button/dist/index.css';
 import '@dictu/utility-display/dist/index.css';
 
 export default {
