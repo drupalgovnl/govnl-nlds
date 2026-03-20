@@ -92,7 +92,7 @@ npm test
 npm run test:visual
 
 # Update visual snapshots
-npm run test:visual:update
+npm run test:visual:update:all
 
 # Open the Playwright report
 npm run test:visual:report
@@ -207,7 +207,7 @@ more focused output.
 
 ```bash
 npm run test:visual
-npm run test:visual:update
+npm run test:visual:update:all
 ```
 
 Only update snapshots when the visual change is intentional.

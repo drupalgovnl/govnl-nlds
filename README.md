@@ -82,8 +82,8 @@ This project is part of the
 build usable, accessible, and reusable components for Dutch public services.
 
 Join the `#nl-design-system` Slack via
-[https://nldesignsystem.nl/slack/](https://nldesignsystem.nl/slack/) to follow
-community development and discussions.
+[praatmee.codefor.nl](praatmee.codefor.nl) for more information and to learn
+about things happening in their open-source community.
 
 ## Licence
 
