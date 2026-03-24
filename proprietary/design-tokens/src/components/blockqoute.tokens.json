@@ -7,26 +7,6 @@
           "$value": "italic"
         }
       },
-      "border-inline-start": {
-        "style": {
-          "$type": "border",
-          "$value": {
-            "style": "solid"
-          }
-        },
-        "color": {
-          "$type": "border",
-          "$value": {
-            "color": "{govnl.color.hemelblauw.500}"
-          }
-        },
-        "width": {
-          "$type": "border",
-          "$value": {
-            "width": "{govnl.border.border-width.lg}"
-          }
-        }
-      },
       "author": {
         "font-weight": {
           "$type": "fontWeights",
@@ -36,6 +16,14 @@
       "padding-inline-start": {
         "$type": "dimension",
         "$value": "{govnl.dimension.size.300}"
+      },
+      "border-inline-start": {
+        "$type": "border",
+        "$value": {
+          "color": "{govnl.color.hemelblauw.500}",
+          "width": "{govnl.border.border-width.lg}",
+          "style": "solid"
+        }
       }
     }
   }
