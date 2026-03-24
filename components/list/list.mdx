@@ -11,6 +11,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import * as ListStories from './list.stories.js';
 import Readme from './README.md?raw';
+import { DesignTokensTable } from '../../packages/storybook/src/documentation/components/DesignTokensTable.jsx';
 
 <Meta of={ListStories} title="Componenten/List" />
 
@@ -25,6 +26,10 @@ import Readme from './README.md?raw';
 ## Parameters
 
 <ArgTypes of={ListStories} />
+
+## Design Tokens
+
+<DesignTokensTable componentName="list" />
 
 <Markdown>{Readme}</Markdown>
 

@@ -11,6 +11,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import * as IconStories from './icon.stories.js';
 import Readme from './README.md?raw';
+import { DesignTokensTable } from '../../packages/storybook/src/documentation/components/DesignTokensTable.jsx';
 
 <Meta of={IconStories} title="Componenten/Icon" />
 
@@ -26,6 +27,10 @@ import Readme from './README.md?raw';
 ## Parameters
 
 <ArgTypes of={IconStories} />
+
+## Design Tokens
+
+<DesignTokensTable componentName="icon" />
 
 <Markdown>{Readme}</Markdown>
 

@@ -11,6 +11,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import * as BreadcrumbsStories from './breadcrumbs.stories.js';
 import Readme from './README.md?raw';
+import { DesignTokensTable } from '../../packages/storybook/src/documentation/components/DesignTokensTable.jsx';
 
 <Meta of={BreadcrumbsStories} title="Componenten/Breadcrumbs" />
 
@@ -27,6 +28,10 @@ import Readme from './README.md?raw';
 
 <ArgTypes of={BreadcrumbsStories} />
 
+## Design Tokens
+
+<DesignTokensTable componentName="breadcrumbs" />
+
 <Markdown>{Readme}</Markdown>
 
 ## Wanneer gebruik je de Breadcrumbs component
@@ -41,6 +46,7 @@ Gebruik breadcrumbs wanneer:
 
 Gebruik geen breadcrumbs:
 
+-
 - Op de homepage.
 - Als de website een platte structuur heeft.
 - Als vervanging voor de hoofdnavigatie.

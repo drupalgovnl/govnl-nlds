@@ -1,9 +1,27 @@
 import js from '@eslint/js';
+import react from 'eslint-plugin-react';
 import storybook from 'eslint-plugin-storybook';
 import prettier from 'eslint-config-prettier';
 
 export default [
   js.configs.recommended,
+  {
+    files: ['**/*.jsx'],
+    plugins: {
+      react,
+    },
+    languageOptions: {
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
+    rules: {
+      'react/jsx-uses-react': 'error',
+      'react/jsx-uses-vars': 'error',
+    },
+  },
   // Base config for all files
   ...storybook.configs['flat/recommended'],
 

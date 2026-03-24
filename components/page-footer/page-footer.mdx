@@ -11,6 +11,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import * as PageFooterStories from './page-footer.stories.js';
 import Readme from './README.md?raw';
+import { DesignTokensTable } from '../../packages/storybook/src/documentation/components/DesignTokensTable.jsx';
 
 <Meta of={PageFooterStories} title="Componenten/Page Footer" />
 
@@ -23,6 +24,10 @@ import Readme from './README.md?raw';
 ## Parameters
 
 <ArgTypes of={PageFooterStories} />
+
+## Design Tokens
+
+<DesignTokensTable componentName="page-footer" />
 
 <Markdown>{Readme}</Markdown>
 
