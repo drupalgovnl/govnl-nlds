@@ -19,11 +19,7 @@
       },
       "border-inline-start": {
         "$type": "border",
-        "$value": {
-          "color": "{govnl.color.hemelblauw.500}",
-          "width": "{govnl.border.border-width.lg}",
-          "style": "solid"
-        }
+        "$value": "{govnl.border.border-width.lg} solid {govnl.brand.primary-1.500}"
       }
     }
   }
