@@ -1,3 +1,4 @@
+import { Paragraph as ParagraphComponent } from './paragraph.component';
 import defaultDocs from './docs/_default.md?raw';
 import leadDocs from './docs/_lead.md?raw';
 import readme from './README.md?raw';
@@ -23,19 +24,7 @@ export default {
       },
     },
   },
-  render: ({ innerHTML, ...args }) => {
-    const classes = ['dictu-paragraph'];
-    const $paragraph = document.createElement('p');
-
-    if (args.lead) {
-      classes.push(`dictu-paragraph--lead`);
-    }
-
-    $paragraph.innerText = innerHTML;
-    $paragraph.classList.add(...classes);
-
-    return $paragraph;
-  },
+  render: ParagraphComponent,
   tags: ['autodocs'],
   title: 'Componenten/Paragraph',
 };
