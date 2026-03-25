@@ -30,5 +30,11 @@
     "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
     "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
     "clean": "rimraf ./dist/"
+  },
+  "dependencies": {
+    "@dictu/paragraph": "*",
+    "@dictu/link-list": "*",
+    "@dictu/heading": "*",
+    "@dictu/page-container": "*"
   }
 }

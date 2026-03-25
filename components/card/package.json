@@ -31,7 +31,10 @@
     "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
     "clean": "rimraf ./dist/"
   },
-  "devDependencies": {
-    "@dictu/link": "^2.2.0"
+  "dependencies": {
+    "@dictu/heading": "^3.2.0",
+    "@dictu/icon": "^2.2.0",
+    "@dictu/link": "^2.4.0",
+    "@dictu/utility-focus-ring": "^2.0.0"
   }
 }

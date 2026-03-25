@@ -7,6 +7,7 @@ import { PageFooter } from './page-footer.component';
 
 export default {
   args: {
+    heading: 'Footer heading',
     headingLevel: 2,
   },
   argTypes: {
