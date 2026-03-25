@@ -1,5 +1,11 @@
 # @dictu/link-list
 
+## 2.1.0
+
+### Minor Changes
+
+- 3df50a4: Make sure link-list\_\_link items are aligned in the center.
+
 ## 2.0.0
 
 ### Major Changes
