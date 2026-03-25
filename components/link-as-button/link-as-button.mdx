@@ -1,0 +1,61 @@
+{/* link.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as LinkAsButtonStories from './link-as-button.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={LinkAsButtonStories} title="Componenten/Link as Button" />
+
+<Title>Link as Button</Title>
+
+<Subtitle>
+  De Link as Button component wordt gebruikt om een link de visuele uitstraling van een button te
+  geven.
+</Subtitle>
+
+<Canvas of={LinkAsButtonStories.DefaultLinkAsButton} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={LinkAsButtonStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Link component
+
+## Wanneer gebruik je de Link component niet
+
+## Voorbeelden
+
+### Link as Button
+
+<Canvas of={LinkAsButtonStories.DefaultLinkAsButton} />
+
+## Afhankelijkheden
+
+De Link as Button component maakt voor de varianten met icoon gebruik van de [Icon component](?path=/docs/componenten-icon--docs).
+
+## Links
+
+- [MDN: `<a>`: The Anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a)
+
+## Relevante WCAG succescriteria
+
+(later in te vullen)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Link as Button component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).
