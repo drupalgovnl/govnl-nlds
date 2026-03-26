@@ -39,7 +39,7 @@
       },
       "padding-inline-end": {
         "$type": "dimension",
-        "$value": "{govnl.space.xs}"
+        "$value": "{govnl.space.2xl}"
       },
       "padding-block-end": {
         "$type": "dimension",
@@ -158,6 +158,10 @@
           "$type": "textDecoration",
           "$value": "none"
         }
+      },
+      "background-position": {
+        "$type": "dimension",
+        "$value": "right {govnl.space.xs} center"
       }
     }
   }
