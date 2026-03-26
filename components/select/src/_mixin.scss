@@ -7,7 +7,7 @@
   appearance: none;
   background-color: var(--govnl-select-background-color);
   background-image: var(--govnl-select-icon);
-  background-position: right var(--govnl-select-padding-inline-end) center;
+  background-position: var(--govnl-select-background-position);
   background-repeat: no-repeat;
   border-color: var(--govnl-select-border-color);
   border-radius: var(--govnl-select-border-radius);
@@ -22,7 +22,7 @@
   max-inline-size: 100%;
   min-block-size: var(--govnl-select-min-block-size);
   padding-block: var(--govnl-select-padding-block-start) var(--govnl-select-padding-block-end);
-  padding-inline: var(--govnl-select-padding-inline-start) (calc(4 * var(--govnl-select-padding-inline-end)));
+  padding-inline: var(--govnl-select-padding-inline-start) var(--govnl-select-padding-inline-end);
 }
 
 @mixin dictu-select--multiple {
