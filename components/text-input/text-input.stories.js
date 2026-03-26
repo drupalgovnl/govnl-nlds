@@ -33,7 +33,6 @@ export default {
     },
   },
   component: TextInput,
-  tags: ['wip'],
   title: 'Componenten/Form elements/Text Input',
 };
 

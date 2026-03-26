@@ -1,0 +1,58 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin dictu-select {
+  appearance: none;
+  background-color: var(--govnl-select-background-color);
+  background-image: var(--govnl-select-icon);
+  background-position: var(--govnl-select-background-position);
+  background-repeat: no-repeat;
+  border-color: var(--govnl-select-border-color);
+  border-radius: var(--govnl-select-border-radius);
+  border-width: var(--govnl-select-border-width);
+  color: var(--govnl-select-color);
+  display: block;
+  font-family: var(--govnl-select-font-family);
+  font-size: var(--govnl-select-font-size);
+  font-weight: var(--govnl-select-font-weight);
+  inline-size: 100%;
+  line-height: var(--govnl-select-line-height);
+  max-inline-size: 100%;
+  min-block-size: var(--govnl-select-min-block-size);
+  padding-block: var(--govnl-select-padding-block-start) var(--govnl-select-padding-block-end);
+  padding-inline: var(--govnl-select-padding-inline-start) var(--govnl-select-padding-inline-end);
+}
+
+@mixin dictu-select--multiple {
+  background-image: initial;
+  background-position: initial;
+  background-repeat: initial;
+  padding-inline: var(--govnl-select-padding-inline-start) var(--govnl-select-padding-inline-end);
+}
+
+@mixin dictu-select--inline {
+  display: inline-flex;
+  inline-size: auto;
+}
+
+@mixin dictu-select--error {
+  background-color: var(--govnl-select-error-background-color);
+  border-color: var(--govnl-select-error-border-color);
+  border-width: var(--govnl-select-error-border-width);
+  color: var(--govnl-select-error-color);
+}
+
+@mixin dictu-select--focus {
+  background-color: var(--govnl-select-focus-background-color);
+  border-color: var(--govnl-select-focus-border-color);
+  color: var(--govnl-select-focus-color);
+  outline-color: var(--govnl-select-focus-outline-color);
+}
+
+@mixin dictu-select--hover {
+  background-color: var(--govnl-select-hover-background-color);
+  border-color: var(--govnl-select-hover-border-color);
+  color: var(--govnl-select-hover-color);
+}
