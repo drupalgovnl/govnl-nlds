@@ -1,3 +1,4 @@
+import { PageContainer } from './page-container.component';
 import defaultDocs from './docs/_page-container.md?raw';
 import readme from './README.md?raw';
 import './dist/index.css';
@@ -27,33 +28,7 @@ export default {
       },
     },
   },
-  render: ({ content, id }) => {
-    const container = document.createElement('div');
-    container.classList.add('dictu-container');
-    container.setAttribute('id', id);
-
-    if (content) {
-      if (typeof content === 'string') {
-        // Sanitize and insert HTML
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(content, 'text/html');
-        const fragment = document.createDocumentFragment();
-
-        // Append all body children to fragment
-        Array.from(doc.body.childNodes).forEach(node => {
-          fragment.appendChild(node.cloneNode(true));
-        });
-
-        container.appendChild(fragment);
-      }
-
-      if (content instanceof HTMLElement) {
-        container.appendChild(content);
-      }
-    }
-
-    return container;
-  },
+  render: PageContainer,
   tags: ['autodocs'],
   title: 'Componenten/Page Container',
 };

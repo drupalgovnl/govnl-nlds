@@ -1,210 +1,222 @@
 # Development Guide
 
-This guide covers the development workflow, tooling, and best practices for the
-GovNL Design System.
+This guide documents the actual development workflow for the GovNL Design System
+monorepo.
 
-## 🚀 Quick Start
+## Quick Start
+
+### Requirements
+
+- Node.js 24.x, matching `.nvmrc`
+- npm 10+
+
+### Install dependencies
 
 ```bash
-# Install dependencies
 npm install
+```
 
-# Start development environment
+### Start local development
+
+```bash
 npm run storybook
-
-# Run all checks
-npm run lint
 ```
 
-## 🛠️ Development Workflow
+This command starts the local Storybook server and runs the file watchers for
+component CSS and design tokens.
 
-### 1. Pre-commit Hooks
+## Workspace Layout
 
-We use Husky to run pre-commit hooks that ensure code quality:
-
-- **ESLint**: JavaScript/TypeScript linting
-- **Stylelint**: CSS/SCSS linting
-- **Prettier**: Code formatting
-- **TypeScript**: Type checking
-
-The hooks run automatically on `git commit` and will prevent commits with
-linting errors.
-
-### 2. Linting Commands
-
-```bash
-# Run all linting
-npm run lint
-
-# Run specific linters
-npm run lint:js      # ESLint
-npm run lint:css     # Stylelint
-npm run lint:format  # Prettier
-npm run lint:types   # TypeScript
-
-# Auto-fix issues
-npm run lint:fix
-```
-
-### 3. Bundle Size Monitoring
-
-We monitor bundle sizes to ensure performance:
-
-```bash
-# Check current bundle sizes
-npm run size
-
-# Analyze bundle composition
-npm run size:analyze
-```
-
-## 🏗️ CI/CD Pipeline
-
-### GitHub Actions Workflows
-
-1. **Continuous Deployment** (`.github/workflows/continuous-deployment.yml`)
-   - Runs on all pushes and PRs
-   - Parallel execution of lint, test, and build jobs
-   - Optimized caching for faster builds
-   - Deploys to npm and Github Pages
-
-2. **Performance Monitoring** (`.github/workflows/performance.yml`)
-   - Bundle size analysis on PRs
-   - Lighthouse CI performance audits
-   - Weekly performance reports
-
-### Optimization Features
-
-- **Smart Caching**: Node modules cached across jobs
-- **Parallel Execution**: Lint, test, and build run simultaneously
-- **Bundle Analysis**: Automatic size limit checks
-- **Performance Audits**: Lighthouse CI integration
-
-## 📊 Performance Standards
-
-### Bundle Size Limits
-
-- **Design Tokens CSS**: 50 KB
-- **Individual Components**: 10 KB
-- **Storybook Build**: 2 MB
-
-### Lighthouse Targets
-
-- **Performance**: 80+ score
-- **Accessibility**: 90+ score
-- **Best Practices**: 80+ score
-- **SEO**: 80+ score
-
-## 🔧 Configuration Files
-
-### Core Configuration
-
-- `tsconfig.json` - TypeScript configuration
-- `eslint.config.js` - ESLint configuration
-- `.stylelintrc.cjs` - Stylelint configuration
-- `.prettierrc.cjs` - Prettier configuration
-
-### CI/CD Configuration
-
-- `.husky/pre-commit` - Pre-commit hook script
-- `lighthouserc.json` - Lighthouse CI configuration
-- `.github/workflows/` - GitHub Actions workflows
-
-## 📦 Package Management
-
-### Workspaces
+The root package uses npm workspaces for:
 
 ```json
 {
   "workspaces": [
     "./proprietary/*",
-    "./packages/utilities",
+    "./utilities/*",
     "./components/*",
     "./packages/storybook"
   ]
 }
 ```
 
-### Scripts
+In practice, the main areas you will work with are:
+
+- `components/` for publishable CSS component packages
+- `utilities/` for reusable CSS utility packages
+- `proprietary/design-tokens/` for token sources and generated CSS
+- `packages/storybook/` for docs, tests, and visual regression setup
+- `examples/` for composed stories used in Storybook
+
+## Common Commands
+
+### Development
 
 ```bash
-# Build all packages
-npm run build
+# Start Storybook, component watchers, and token watchers
+npm run storybook
 
-# Watch for changes
+# Run every workspace watch script that is available
 npm run watch
 
-# Start Storybook development
-npm run storybook
-```
+# Build all workspaces that expose a build script
+npm run build
 
-## 🎯 Best Practices
+# Clean generated output where supported
+npm run clean
+```
 
 ### Code Quality
 
-1. **TypeScript**: All new code should be typed
-2. **ESLint**: Follow the configured rules
-3. **Stylelint**: Use BEM methodology for CSS
-4. **Prettier**: Consistent code formatting
+```bash
+# Run all checks
+npm run lint
 
-### Performance
+# Run individual checks
+npm run lint:js
+npm run lint:css
+npm run lint:format
+npm run lint:types
 
-1. **Bundle Size**: Keep components lightweight
-2. **CSS**: Use efficient selectors
-3. **Images**: Optimize assets
-4. **Lazy Loading**: Implement where appropriate
+# Apply automatic fixes where supported
+npm run lint:fix
+```
 
 ### Testing
 
-1. **Unit Tests**: Test component logic
-2. **Visual Tests**: Use Storybook interactions
-3. **Accessibility**: Test with screen readers
-4. **Performance**: Monitor bundle sizes
+```bash
+# Run Storybook package tests
+npm test
 
-## 🚨 Troubleshooting
+# Run visual regression tests
+npm run test:visual
 
-### Common Issues
+# Update visual snapshots
+npm run test:visual:update:all
 
-1. **Pre-commit Hook Failures**
+# Open the Playwright report
+npm run test:visual:report
+```
 
-   ```bash
-   # Fix linting issues
-   npm run lint:fix
+### Release and Package Checks
 
-   # Check specific issues
-   npm run lint:js
-   npm run lint:css
-   ```
+```bash
+# Create a changeset entry
+npm run changeset
 
-2. **Bundle Size Exceeded**
+# Check bundle sizes
+npm run size
 
-   ```bash
-   # Analyze what's causing the size increase
-   npm run size:analyze
+# Export size analysis data
+npm run size:analyze
 
-   # Check specific component sizes
-   npm run size
-   ```
+# Run the broader quality gate
+npm run test:quality
+```
 
-3. **TypeScript Errors**
+## What `npm run storybook` Does
 
-   ```bash
-   # Check type errors
-   npm run lint:types
+The root `storybook` script runs three processes in parallel:
 
-   # Build with type checking
-   npx tsc --noEmit
-   ```
+- `watch:storybook` starts Storybook from `packages/storybook`
+- `watch:style-dictionary` rebuilds design tokens when token source files change
+- `watch:components` rebuilds component packages as component source files
+  change
 
-### Getting Help
+This is the default command for local development because most changes affect at
+least one of those outputs.
 
-- Check the GitHub Issues for similar problems
-- Review the configuration files
-- Run the specific linting command that's failing
-- Check the CI logs for detailed error messages
+## Pre-commit Hooks
 
-## 🔄 Continuous Improvement
+Git hooks are managed with Husky. The current pre-commit hook does the
+following:
 
-This development setup is designed to evolve with the project. Regular reviews
-and updates ensure we maintain high code quality and performance standards while
-keeping the developer experience smooth and efficient.
+1. Checks whether there are staged files.
+2. Runs `npm run lint:types` for the full repository.
+3. Runs `npm run size` to enforce bundle size limits.
+4. Runs `npx lint-staged` for staged-file linting and formatting.
+5. Warns if newly added staged lines include `TODO`, `FIXME`, `XXX`, or `HACK`.
+
+If one of these steps fails, the commit is blocked.
+
+## Tooling and Configuration
+
+The main configuration files are:
+
+- `tsconfig.json` for TypeScript checking
+- `eslint.config.js` for JavaScript, Storybook, and script linting
+- `.stylelintrc.cjs` for CSS and SCSS linting
+- `.prettierrc.cjs` and `.prettierignore` for formatting
+- `.husky/pre-commit` for local commit checks
+
+The ESLint setup includes Storybook recommendations and special handling for
+stories, config files, and build scripts.
+
+## CI Workflows
+
+The repository contains three GitHub Actions workflows under
+`.github/workflows/`.
+
+### `continuous-deployment.yml`
+
+This workflow runs on pull requests and on pushes to `main`. It installs
+dependencies, runs linting, builds the workspaces, executes tests and visual
+tests, publishes packages through Changesets on `main`, and deploys the built
+Storybook to GitHub Pages.
+
+### `lint.yml`
+
+This workflow runs code quality checks, workspace builds, dependency review for
+pull requests, and security audit steps.
+
+### `performance.yml`
+
+This workflow runs on pull requests and checks size analysis and bundle limits.
+
+## Size Limits
+
+The repository currently enforces these size checks:
+
+- Design token CSS in `proprietary/design-tokens/dist/**/*.css`: `50 KB`
+- Individual component CSS in `components/*/dist/**/*.css`: `10 KB`
+
+If a size check fails, run `npm run size:analyze` and inspect the generated
+output before changing the limit.
+
+## Troubleshooting
+
+### TypeScript check fails
+
+```bash
+npm run lint:types
+```
+
+The root type check runs across the repository. Fix the reported type errors
+before retrying the commit or CI job.
+
+### Lint or formatting fails
+
+```bash
+npm run lint:fix
+```
+
+If automatic fixes are not enough, rerun the individual failing command to get
+more focused output.
+
+### Visual tests fail
+
+```bash
+npm run test:visual
+npm run test:visual:update:all
+```
+
+Only update snapshots when the visual change is intentional.
+
+### Storybook output is stale
+
+```bash
+npm run build
+```
+
+If watcher output gets out of sync, a clean rebuild of the workspaces is the
+fastest way to reset generated artifacts.

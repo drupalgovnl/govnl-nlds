@@ -34,7 +34,7 @@
 }
 
 @mixin dictu-link-list__link {
-  align-items: flex-start;
+  align-items: center;
   column-gap: var(--govnl-link-list-link-column-gap);
   display: inline-flex;
   font-weight: var(--govnl-link-list-link-font-weight);
