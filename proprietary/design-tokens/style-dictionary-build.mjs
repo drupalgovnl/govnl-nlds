@@ -25,6 +25,8 @@ const sd = new StyleDictionary({
         {
           destination: 'index.css',
           format: 'css/variables',
+          filter: token =>
+            token.$value !== '' && token.$value !== null && token.$value !== undefined,
           options: {
             selector: '.dictu-theme',
             outputReferences: outputReferencesTransformed,

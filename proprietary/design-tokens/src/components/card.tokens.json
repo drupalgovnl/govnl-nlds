@@ -18,6 +18,130 @@
           "border-color": {
             "$type": "color",
             "$value": "{govnl.line.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
           }
         },
         "active": {
@@ -28,6 +152,130 @@
           "border-color": {
             "$type": "color",
             "$value": "{govnl.line.strong.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
           }
         },
         "focus": {
@@ -42,6 +290,126 @@
           "color": {
             "$type": "color",
             "$value": "{govnl.focus.color}"
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
           }
         },
         "main": {
@@ -64,6 +432,218 @@
           "row-gap": {
             "$type": "dimension",
             "$value": "{govnl.space.xs}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": ""
+          },
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": ""
+          },
+          "letter-spacing": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-transform": {
+            "$type": "textCase",
+            "$value": ""
+          },
+          "margin-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "column-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "min-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "min-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-align": {
+            "$type": "other",
+            "$value": ""
+          },
+          "font-style": {
+            "$type": "other",
+            "$value": ""
           }
         },
         "border-radius": {
@@ -78,13 +658,685 @@
           "color": {
             "$type": "color",
             "$value": "{govnl.document.subtle.color}"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": ""
+          },
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": ""
+          },
+          "letter-spacing": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-transform": {
+            "$type": "textCase",
+            "$value": ""
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "column-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "min-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "min-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-align": {
+            "$type": "other",
+            "$value": ""
+          },
+          "font-style": {
+            "$type": "other",
+            "$value": ""
           }
         },
         "metadata-footer": {
           "color": {
             "$type": "color",
             "$value": "{govnl.document.subtle.color}"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": ""
+          },
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": ""
+          },
+          "letter-spacing": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-transform": {
+            "$type": "textCase",
+            "$value": ""
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "column-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "min-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "min-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-align": {
+            "$type": "other",
+            "$value": ""
+          },
+          "font-style": {
+            "$type": "other",
+            "$value": ""
           }
+        },
+        "color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "outline-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": ""
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": ""
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": ""
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": ""
+        },
+        "letter-spacing": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-decoration": {
+          "$type": "textDecoration",
+          "$value": ""
+        },
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": ""
+        },
+        "text-decoration-thickness": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-decoration-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "text-underline-offset": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-transform": {
+          "$type": "textCase",
+          "$value": ""
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-block-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-inline-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "column-gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "border-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "min-block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "max-block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "min-inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "max-inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "box-shadow": {
+          "$type": "boxShadow",
+          "$value": ""
+        },
+        "opacity": {
+          "$type": "number",
+          "$value": ""
+        },
+        "border-block-start-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-block-end-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-inline-start-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-inline-end-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-block-start-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-block-end-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-inline-start-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-inline-end-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-block-start-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-block-end-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-inline-start-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-inline-end-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-start-start-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-start-end-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-end-start-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-end-end-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "outline-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "outline-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "outline-offset": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-align": {
+          "$type": "other",
+          "$value": ""
+        },
+        "font-style": {
+          "$type": "other",
+          "$value": ""
         }
       },
       "heading": {
@@ -100,6 +1352,130 @@
           "text-decoration-thickness": {
             "$type": "other",
             "$value": "max(3px, .1875rem, .12em)"
+          },
+          "color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
           }
         },
         "text-decoration-thickness": {
@@ -118,6 +1494,130 @@
           "text-decoration-line": {
             "$type": "textDecoration",
             "$value": "underline"
+          },
+          "color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
           }
         },
         "focus-visible": {
@@ -128,7 +1628,351 @@
           "text-decoration-thickness": {
             "$type": "other",
             "$value": "max(3px, .1875rem, .12em)"
+          },
+          "color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
           }
+        },
+        "color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "background-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "outline-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": ""
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": ""
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": ""
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": ""
+        },
+        "letter-spacing": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-decoration": {
+          "$type": "textDecoration",
+          "$value": ""
+        },
+        "text-decoration-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "text-transform": {
+          "$type": "textCase",
+          "$value": ""
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-block-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-inline-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "column-gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "min-block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "max-block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "min-inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "max-inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "box-shadow": {
+          "$type": "boxShadow",
+          "$value": ""
+        },
+        "opacity": {
+          "$type": "number",
+          "$value": ""
+        },
+        "border-block-start-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-block-end-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-inline-start-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-inline-end-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-block-start-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-block-end-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-inline-start-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-inline-end-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-block-start-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-block-end-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-inline-start-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-inline-end-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-start-start-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-start-end-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-end-start-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-end-end-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "outline-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "outline-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "outline-offset": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-align": {
+          "$type": "other",
+          "$value": ""
+        },
+        "font-style": {
+          "$type": "other",
+          "$value": ""
         }
       },
       "metadata-subheading": {
@@ -151,6 +1995,218 @@
         "line-height": {
           "$type": "lineHeights",
           "$value": "{govnl.document.line-height}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "background-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "outline-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "letter-spacing": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-decoration": {
+          "$type": "textDecoration",
+          "$value": ""
+        },
+        "text-decoration-thickness": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-decoration-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "text-underline-offset": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-transform": {
+          "$type": "textCase",
+          "$value": ""
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-block-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-inline-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "column-gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "min-block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "max-block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "min-inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "max-inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "box-shadow": {
+          "$type": "boxShadow",
+          "$value": ""
+        },
+        "opacity": {
+          "$type": "number",
+          "$value": ""
+        },
+        "border-block-start-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-block-end-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-inline-start-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-inline-end-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-block-start-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-block-end-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-inline-start-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-inline-end-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-block-start-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-block-end-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-inline-start-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-inline-end-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-start-start-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-start-end-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-end-start-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-end-end-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "outline-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "outline-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "outline-offset": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-align": {
+          "$type": "other",
+          "$value": ""
+        },
+        "font-style": {
+          "$type": "other",
+          "$value": ""
         }
       },
       "accent": {
@@ -158,12 +2214,468 @@
           "color": {
             "$type": "color",
             "$value": "{govnl.document.inverse.color}"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": ""
+          },
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": ""
+          },
+          "letter-spacing": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-transform": {
+            "$type": "textCase",
+            "$value": ""
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "column-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "min-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "min-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-align": {
+            "$type": "other",
+            "$value": ""
+          },
+          "font-style": {
+            "$type": "other",
+            "$value": ""
           }
         },
         "metadata-footer": {
           "color": {
             "$type": "color",
             "$value": "{govnl.document.inverse.color}"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": ""
+          },
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": ""
+          },
+          "letter-spacing": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-transform": {
+            "$type": "textCase",
+            "$value": ""
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "column-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "min-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "min-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-align": {
+            "$type": "other",
+            "$value": ""
+          },
+          "font-style": {
+            "$type": "other",
+            "$value": ""
           }
         },
         "background-color": {
@@ -199,6 +2711,126 @@
           "color": {
             "$type": "color",
             "$value": "{govnl.document.inverse.color}"
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
           }
         },
         "active": {
@@ -222,6 +2854,126 @@
           "color": {
             "$type": "color",
             "$value": "{govnl.document.inverse.color}"
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
           }
         },
         "focus": {
@@ -236,6 +2988,126 @@
           "color": {
             "$type": "color",
             "$value": "{govnl.focus.color}"
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
           }
         },
         "heading": {
@@ -247,13 +3119,497 @@
             "color": {
               "$type": "color",
               "$value": "{govnl.document.inverse.color}"
+            },
+            "background-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "outline-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "text-decoration-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "text-decoration-line": {
+              "$type": "textDecoration",
+              "$value": ""
+            },
+            "text-decoration-thickness": {
+              "$type": "dimension",
+              "$value": ""
+            },
+            "text-underline-offset": {
+              "$type": "dimension",
+              "$value": ""
+            },
+            "border-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "box-shadow": {
+              "$type": "boxShadow",
+              "$value": ""
+            },
+            "opacity": {
+              "$type": "number",
+              "$value": ""
+            },
+            "font-weight": {
+              "$type": "fontWeights",
+              "$value": ""
+            },
+            "border-block-start-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-block-end-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-inline-start-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-inline-end-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-block-start-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-block-end-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-inline-start-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-inline-end-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-block-start-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-block-end-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-inline-start-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-inline-end-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-start-start-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-start-end-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-end-start-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-end-end-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "outline-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "outline-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "outline-offset": {
+              "$type": "dimension",
+              "$value": ""
             }
           },
           "active": {
             "color": {
               "$type": "color",
               "$value": "{govnl.document.inverse.color}"
+            },
+            "background-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "outline-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "text-decoration-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "text-decoration-line": {
+              "$type": "textDecoration",
+              "$value": ""
+            },
+            "text-decoration-thickness": {
+              "$type": "dimension",
+              "$value": ""
+            },
+            "text-underline-offset": {
+              "$type": "dimension",
+              "$value": ""
+            },
+            "border-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "box-shadow": {
+              "$type": "boxShadow",
+              "$value": ""
+            },
+            "opacity": {
+              "$type": "number",
+              "$value": ""
+            },
+            "font-weight": {
+              "$type": "fontWeights",
+              "$value": ""
+            },
+            "border-block-start-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-block-end-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-inline-start-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-inline-end-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-block-start-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-block-end-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-inline-start-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-inline-end-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-block-start-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-block-end-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-inline-start-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-inline-end-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-start-start-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-start-end-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-end-start-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-end-end-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "outline-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "outline-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "outline-offset": {
+              "$type": "dimension",
+              "$value": ""
             }
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": ""
+          },
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": ""
+          },
+          "letter-spacing": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-transform": {
+            "$type": "textCase",
+            "$value": ""
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "column-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "min-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "min-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-align": {
+            "$type": "other",
+            "$value": ""
+          },
+          "font-style": {
+            "$type": "other",
+            "$value": ""
           }
         },
         "paragraph": {
@@ -265,14 +3621,718 @@
             "color": {
               "$type": "color",
               "$value": "{govnl.document.inverse.color}"
+            },
+            "background-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "outline-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "text-decoration-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "text-decoration-line": {
+              "$type": "textDecoration",
+              "$value": ""
+            },
+            "text-decoration-thickness": {
+              "$type": "dimension",
+              "$value": ""
+            },
+            "text-underline-offset": {
+              "$type": "dimension",
+              "$value": ""
+            },
+            "border-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "box-shadow": {
+              "$type": "boxShadow",
+              "$value": ""
+            },
+            "opacity": {
+              "$type": "number",
+              "$value": ""
+            },
+            "font-weight": {
+              "$type": "fontWeights",
+              "$value": ""
+            },
+            "border-block-start-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-block-end-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-inline-start-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-inline-end-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-block-start-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-block-end-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-inline-start-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-inline-end-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-block-start-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-block-end-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-inline-start-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-inline-end-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-start-start-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-start-end-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-end-start-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-end-end-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "outline-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "outline-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "outline-offset": {
+              "$type": "dimension",
+              "$value": ""
             }
           },
           "active": {
             "color": {
               "$type": "color",
               "$value": "{govnl.document.inverse.color}"
+            },
+            "background-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "outline-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "text-decoration-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "text-decoration-line": {
+              "$type": "textDecoration",
+              "$value": ""
+            },
+            "text-decoration-thickness": {
+              "$type": "dimension",
+              "$value": ""
+            },
+            "text-underline-offset": {
+              "$type": "dimension",
+              "$value": ""
+            },
+            "border-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "box-shadow": {
+              "$type": "boxShadow",
+              "$value": ""
+            },
+            "opacity": {
+              "$type": "number",
+              "$value": ""
+            },
+            "font-weight": {
+              "$type": "fontWeights",
+              "$value": ""
+            },
+            "border-block-start-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-block-end-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-inline-start-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-inline-end-color": {
+              "$type": "color",
+              "$value": ""
+            },
+            "border-block-start-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-block-end-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-inline-start-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-inline-end-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "border-block-start-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-block-end-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-inline-start-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-inline-end-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "border-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-start-start-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-start-end-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-end-start-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "border-end-end-radius": {
+              "$type": "borderRadius",
+              "$value": ""
+            },
+            "outline-width": {
+              "$type": "borderWidth",
+              "$value": ""
+            },
+            "outline-style": {
+              "$type": "other",
+              "$value": ""
+            },
+            "outline-offset": {
+              "$type": "dimension",
+              "$value": ""
             }
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "outline-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": ""
+          },
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": ""
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": ""
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": ""
+          },
+          "letter-spacing": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": ""
+          },
+          "text-decoration-thickness": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-decoration-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "text-underline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-transform": {
+            "$type": "textCase",
+            "$value": ""
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-block-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-start": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "margin-inline-end": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "column-gap": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "min-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "min-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "max-inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "inline-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "block-size": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": ""
+          },
+          "opacity": {
+            "$type": "number",
+            "$value": ""
+          },
+          "border-block-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-start-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-inline-end-color": {
+            "$type": "color",
+            "$value": ""
+          },
+          "border-block-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-start-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-inline-end-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "border-block-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-block-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-start-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-inline-end-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "border-start-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-start-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-start-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "border-end-end-radius": {
+            "$type": "borderRadius",
+            "$value": ""
+          },
+          "outline-width": {
+            "$type": "borderWidth",
+            "$value": ""
+          },
+          "outline-style": {
+            "$type": "other",
+            "$value": ""
+          },
+          "outline-offset": {
+            "$type": "dimension",
+            "$value": ""
+          },
+          "text-align": {
+            "$type": "other",
+            "$value": ""
+          },
+          "font-style": {
+            "$type": "other",
+            "$value": ""
           }
+        },
+        "outline-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": ""
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": ""
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": ""
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": ""
+        },
+        "letter-spacing": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-decoration": {
+          "$type": "textDecoration",
+          "$value": ""
+        },
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": ""
+        },
+        "text-decoration-thickness": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-decoration-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "text-underline-offset": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-transform": {
+          "$type": "textCase",
+          "$value": ""
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-block-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-inline-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "column-gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "min-block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "max-block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "min-inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "max-inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "box-shadow": {
+          "$type": "boxShadow",
+          "$value": ""
+        },
+        "opacity": {
+          "$type": "number",
+          "$value": ""
+        },
+        "border-block-start-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-block-end-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-inline-start-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-inline-end-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-block-start-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-block-end-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-inline-start-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-inline-end-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-block-start-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-block-end-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-inline-start-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-inline-end-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-start-start-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-start-end-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-end-start-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-end-end-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "outline-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "outline-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "outline-offset": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-align": {
+          "$type": "other",
+          "$value": ""
+        },
+        "font-style": {
+          "$type": "other",
+          "$value": ""
         }
       },
       "metadata-footer": {
@@ -295,6 +4355,218 @@
         "line-height": {
           "$type": "lineHeights",
           "$value": "{govnl.document.line-height}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "background-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "outline-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "letter-spacing": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-decoration": {
+          "$type": "textDecoration",
+          "$value": ""
+        },
+        "text-decoration-thickness": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-decoration-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "text-underline-offset": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-transform": {
+          "$type": "textCase",
+          "$value": ""
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-block-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "margin-inline-end": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "column-gap": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "min-block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "max-block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "min-inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "max-inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "inline-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "block-size": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "box-shadow": {
+          "$type": "boxShadow",
+          "$value": ""
+        },
+        "opacity": {
+          "$type": "number",
+          "$value": ""
+        },
+        "border-block-start-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-block-end-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-inline-start-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-inline-end-color": {
+          "$type": "color",
+          "$value": ""
+        },
+        "border-block-start-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-block-end-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-inline-start-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-inline-end-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "border-block-start-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-block-end-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-inline-start-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-inline-end-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "border-start-start-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-start-end-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-end-start-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "border-end-end-radius": {
+          "$type": "borderRadius",
+          "$value": ""
+        },
+        "outline-width": {
+          "$type": "borderWidth",
+          "$value": ""
+        },
+        "outline-style": {
+          "$type": "other",
+          "$value": ""
+        },
+        "outline-offset": {
+          "$type": "dimension",
+          "$value": ""
+        },
+        "text-align": {
+          "$type": "other",
+          "$value": ""
+        },
+        "font-style": {
+          "$type": "other",
+          "$value": ""
         }
       }
     }
