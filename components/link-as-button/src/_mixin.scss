@@ -5,45 +5,71 @@
 
 @mixin dictu-link-as-button {
   align-items: center;
-  background-color: var(--govnl-button-primary-action-background-color);
   block-size: fit-content;
-  border-color: var(--govnl-button-primary-action-border-color);
-  border-radius: var(--govnl-button-border-radius);
+  border-radius: var(--govnl-link-as-button-border-radius);
   border-style: solid;
-  border-width: var(--govnl-button-border-width);
+  border-width: var(--govnl-link-as-button-border-width);
   box-sizing: border-box;
-  color: var(--govnl-button-primary-action-color);
-  cursor: pointer;
   display: inline-flex;
-  font-size: var(--govnl-button-font-size);
-  gap: calc(var(--govnl-button-column-gap));
-  justify-content: var(--govnl-button-justify-content);
-  min-block-size: var(--govnl-button-min-block-size);
-  padding-block: var(--govnl-button-padding-block-start) var(--govnl-button-padding-block-end);
-  padding-inline: var(--govnl-button-padding-inline-start) var(--govnl-button-padding-inline-end);
-  scale: 1;
-  user-select: none;
+  font-family: var(--govnl-link-as-button-font-family);
+  font-size: var(--govnl-link-as-button-font-size);
+  font-weight: var(--govnl-link-as-button-font-weight);
+  justify-content: var(--govnl-link-as-button-justify-content);
+  line-height: var(--govnl-link-as-button-line-height);
+  min-block-size: var(--govnl-link-as-button-min-block-size);
+  min-inline-size: var(--govnl-link-as-button-min-inline-size);
+  padding-block: var(--govnl-link-as-button-padding-block-start) var(--govnl-link-as-button-padding-block-end);
+  padding-inline: var(--govnl-link-as-button-padding-inline-start) var(--govnl-link-as-button-padding-inline-end);
 }
 
-@mixin dictu-link-as-button--hover {
-  color: var(--govnl-button-primary-action-color);
+@mixin dictu-link-as-button--small {
+  font-size: var(--govnl-link-as-button-small-font-size);
 }
 
-@mixin dictu-link-as-button--active {
-  color: var(--govnl-button-primary-action-color);
+@mixin dictu-link-as-button--primary-action {
+  background-color: var(--govnl-link-as-button-primary-action-background-color);
+  border-color: var(--govnl-link-as-button-primary-action-border-color);
+  color: var(--govnl-link-as-button-primary-action-color);
 }
 
-@mixin dictu-link-as-button--focus {
-  color: var(--govnl-button-primary-action-color);
+@mixin dictu-link-as-button--primary-action-hover {
+  background-color: var(--govnl-link-as-button-primary-action-hover-background-color);
+  border-color: var(--govnl-link-as-button-primary-action-hover-border-color);
+  color: var(--govnl-link-as-button-primary-action-hover-color);
 }
 
-@mixin dictu-link-as-button--with-icon {
-  align-items: center;
-  display: inline-flex;
+@mixin dictu-link-as-button--primary-action-active {
+  background-color: var(--govnl-link-as-button-primary-action-active-background-color);
+  border-color: var(--govnl-link-as-button-primary-action-active-border-color);
+  color: var(--govnl-link-as-button-primary-action-active-color);
 }
 
-@mixin dictu-link-as-button__icon {
-  --govnl-icon-size: var(--govnl-link-icon-size);
+@mixin dictu-link-as-button--primary-action-focus {
+  background-color: var(--govnl-link-as-button-primary-action-focus-background-color);
+  border-color: var(--govnl-link-as-button-primary-action-focus-border-color);
+  color: var(--govnl-link-as-button-primary-action-focus-color);
+}
 
-  margin-inline-start: var(--govnl-link-icon-margin-inline-start);
+@mixin dictu-link-as-button--secondary-action {
+  background-color: var(--govnl-link-as-button-secondary-action-background-color);
+  border-color: var(--govnl-link-as-button-secondary-action-border-color);
+  color: var(--govnl-link-as-button-secondary-action-color);
+}
+
+@mixin dictu-link-as-button--secondary-action-hover {
+  background-color: var(--govnl-link-as-button-secondary-action-hover-background-color);
+  border-color: var(--govnl-link-as-button-secondary-action-hover-border-color);
+  color: var(--govnl-link-as-button-secondary-action-hover-color);
+}
+
+@mixin dictu-link-as-button--secondary-action-active {
+  background-color: var(--govnl-link-as-button-secondary-action-active-background-color);
+  border-color: var(--govnl-link-as-button-secondary-action-active-border-color);
+  color: var(--govnl-link-as-button-secondary-action-active-color);
+}
+
+@mixin dictu-link-as-button--secondary-action-focus {
+  background-color: var(--govnl-link-as-button-secondary-action-focus-background-color);
+  border-color: var(--govnl-link-as-button-secondary-action-focus-border-color);
+  color: var(--govnl-link-as-button-secondary-action-focus-color);
 }
