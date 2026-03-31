@@ -33,6 +33,9 @@
     "clean": "rimraf ./dist/"
   },
   "devDependencies": {
-    "@dictu/utility-display": "*"
+    "@dictu/utility-display": "^1.0.0"
+  },
+  "dependencies": {
+    "@dictu/icon": "^2.2.0"
   }
 }
