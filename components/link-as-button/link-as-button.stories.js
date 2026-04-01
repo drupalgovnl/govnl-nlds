@@ -6,7 +6,8 @@ export default {
   args: {
     href: 'dictu.nl',
     classNames: '',
-    external: false,
+    variant: 'primary-action',
+    content: 'Dit is geen button',
   },
   argTypes: {
     content: {
@@ -15,11 +16,31 @@ export default {
     href: {
       control: 'text',
     },
-    icon: {
-      control: 'text',
+    variant: {
+      control: 'radio',
+      options: ['primary-action', 'secondary-action'],
+      description: 'De variant van de link as button',
+      table: {
+        type: {
+          summary: 'primary-action | secondary-action',
+        },
+        defaultValue: {
+          summary: 'primary-action',
+        },
+      },
     },
-    iconLabel: {
-      control: 'text',
+    size: {
+      control: 'radio',
+      options: ['default', 'small'],
+      description: 'De afmeting van de link as button',
+      table: {
+        type: {
+          summary: 'default | small',
+        },
+        defaultValue: {
+          summary: 'default',
+        },
+      },
     },
     classNames: {
       control: 'text',
@@ -36,8 +57,16 @@ export default {
   title: 'Componenten/Link as Button',
 };
 
-export const DefaultLinkAsButton = {
+export const DefaultLinkAsButton = {};
+
+export const SecondaryLinkAsButton = {
   args: {
-    content: 'Dit is geen button',
+    variant: 'secondary-action',
+  },
+};
+
+export const SmallLinkAsButton = {
+  args: {
+    size: 'small',
   },
 };

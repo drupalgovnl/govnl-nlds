@@ -7,40 +7,58 @@
 
 .dictu-link-as-button {
   @include mixin.dictu-link-as-button;
+
+  &:hover {
+    @include mixin.dictu-link-as-button-hover;
+  }
+
+  &:active {
+    @include mixin.dictu-link-as-button-active;
+  }
+
+  &:focus-visible {
+    &:not(:active) {
+      @include mixin.dictu-link-as-button-focus;
+    }
+  }
+}
+
+.dictu-link-as-button--small {
+  @include mixin.dictu-link-as-button--small;
 }
 
 .dictu-link-as-button--primary-action {
   @include mixin.dictu-link-as-button--primary-action;
-}
 
-.dictu-link-as-button--primary-action:hover {
-  @include mixin.dictu-link-as-button--primary-action-hover;
-}
+  &:hover {
+    @include mixin.dictu-link-as-button--primary-action-hover;
+  }
 
-.dictu-link-as-button--primary-action:active {
-  @include mixin.dictu-link-as-button--primary-action-active;
-}
+  &:active {
+    @include mixin.dictu-link-as-button--primary-action-active;
+  }
 
-.dictu-link-as-button--primary-action:focus-visible {
-  &:not(:active) {
-    @include mixin.dictu-link-as-button--primary-action-focus;
+  &:focus-visible {
+    &:not(:active) {
+      @include mixin.dictu-link-as-button--primary-action-focus;
+    }
   }
 }
 
 .dictu-link-as-button--secondary-action {
   @include mixin.dictu-link-as-button--secondary-action;
-}
 
-.dictu-link-as-button--secondary-action:hover {
-  @include mixin.dictu-link-as-button--secondary-action-hover;
-}
+  &:hover {
+    @include mixin.dictu-link-as-button--secondary-action-hover;
+  }
 
-.dictu-link-as-button--secondary-action:active {
-  @include mixin.dictu-link-as-button--secondary-action-active;
-}
+  &:active {
+    @include mixin.dictu-link-as-button--secondary-action-active;
+  }
 
-.dictu-link-as-button--secondary-action:focus-visible {
-  &:not(:active) {
-    @include mixin.dictu-link-as-button--secondary-action-focus;
+  &:focus-visible {
+    &:not(:active) {
+      @include mixin.dictu-link-as-button--secondary-action-focus;
+    }
   }
 }
