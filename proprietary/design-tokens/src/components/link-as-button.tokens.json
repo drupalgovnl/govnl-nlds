@@ -178,7 +178,7 @@
           "$type": "dimension",
           "$value": "{govnl.space.xs}"
         },
-        "padding-inline-end-start": {
+        "padding-inline-start": {
           "$type": "dimension",
           "$value": "{govnl.space.xs}"
         },
