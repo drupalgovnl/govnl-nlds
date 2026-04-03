@@ -2,6 +2,7 @@ import './dist/index.css';
 import '@dictu/icon/dist/index.css';
 import '@dictu/text-input/dist/index.css';
 import '@dictu/checkbox/dist/index.css';
+import '@dictu/form-field/dist/index.css';
 import { Fieldset } from './fieldset.component';
 import { FormField } from '../form-field/form-field.component';
 import { TextInput } from '../text-input/text-input.component';
