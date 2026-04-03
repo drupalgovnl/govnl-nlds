@@ -82,7 +82,6 @@ export default {
     },
   },
   component: Button,
-  tags: ['wip'],
   title: 'Componenten/Button',
 };
 
