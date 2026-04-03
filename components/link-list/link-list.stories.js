@@ -2,6 +2,7 @@ import readme from './README.md?raw';
 import './dist/index.css';
 import '@dictu/icon/dist/index.css';
 import '@dictu/list/dist/index.css';
+import '@dictu/link/dist/index.css';
 import { LinkList } from './link-list.component';
 
 export default {
