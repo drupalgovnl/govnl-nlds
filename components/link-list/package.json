@@ -34,5 +34,8 @@
   "dependencies": {
     "@dictu/icon": "^2.2.0",
     "@dictu/list": "^1.2.0"
+  },
+  "devDependencies": {
+    "@dictu/link": "^2.4.0"
   }
 }

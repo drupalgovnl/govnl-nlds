@@ -1,6 +1,8 @@
 import './dist/index.css';
 import '@dictu/paragraph/dist/index.css';
 import '@dictu/link-list/dist/index.css';
+import '@dictu/link/dist/index.css';
+import '@dictu/icon/dist/index.css';
 import '@dictu/heading/dist/index.css';
 import '@dictu/page-container/dist/index.css';
 import { PageFooter } from './page-footer.component';
