@@ -1,11 +1,4 @@
+/* Margin */
 @mixin dictu-margin-inline-auto {
   margin-inline: auto;
-}
-
-@mixin dictu-margin-block-start-small {
-  margin-block-start: var(--govnl-space-sm);
-}
-
-@mixin dictu-margin-block-start-none {
-  margin-block-start: none;
 }

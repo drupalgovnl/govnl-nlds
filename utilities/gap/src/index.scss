@@ -1,0 +1,5 @@
+@use "mixin" as mixin;
+
+.dictu-gap-small {
+  @include mixin.dictu-gap-small;
+}

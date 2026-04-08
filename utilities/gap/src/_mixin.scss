@@ -1,0 +1,4 @@
+@mixin dictu-gap-small {
+  display: grid;
+  gap: var(--govnl-space-sm);
+}
