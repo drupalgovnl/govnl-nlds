@@ -1,0 +1,64 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "./mixin" as mixin;
+
+.dictu-link-as-button {
+  @include mixin.dictu-link-as-button;
+
+  &:hover {
+    @include mixin.dictu-link-as-button-hover;
+  }
+
+  &:active {
+    @include mixin.dictu-link-as-button-active;
+  }
+
+  &:focus-visible {
+    &:not(:active) {
+      @include mixin.dictu-link-as-button-focus;
+    }
+  }
+}
+
+.dictu-link-as-button--small {
+  @include mixin.dictu-link-as-button--small;
+}
+
+.dictu-link-as-button--primary-action {
+  @include mixin.dictu-link-as-button--primary-action;
+
+  &:hover {
+    @include mixin.dictu-link-as-button--primary-action-hover;
+  }
+
+  &:active {
+    @include mixin.dictu-link-as-button--primary-action-active;
+  }
+
+  &:focus-visible {
+    &:not(:active) {
+      @include mixin.dictu-link-as-button--primary-action-focus;
+    }
+  }
+}
+
+.dictu-link-as-button--secondary-action {
+  @include mixin.dictu-link-as-button--secondary-action;
+
+  &:hover {
+    @include mixin.dictu-link-as-button--secondary-action-hover;
+  }
+
+  &:active {
+    @include mixin.dictu-link-as-button--secondary-action-active;
+  }
+
+  &:focus-visible {
+    &:not(:active) {
+      @include mixin.dictu-link-as-button--secondary-action-focus;
+    }
+  }
+}
