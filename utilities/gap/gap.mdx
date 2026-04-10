@@ -1,0 +1,38 @@
+{/* gap.mdx */}
+import {
+Canvas,
+Meta,
+Markdown,
+ArgTypes,
+Title,
+Subtitle,
+Controls,
+} from '@storybook/addon-docs/blocks';
+import \* as GapStories from './gap.stories.js';
+
+<Meta of={GapStories} title="Utilities/Gap" />
+
+<Title>Gap</Title>
+
+<Subtitle>De Gap utility zorgt voor spacing tussen elementen binnen een container.</Subtitle>
+
+<Canvas of={GapStories.DefaultGap} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={GapStories} />
+
+## Wanneer gebruik je de Gap Utility
+
+Gebruik de Gap utility om een verticale spacing te creëren tussen elementen binnen een parent container.
+
+## Wanneer gebruik je de Gap Utility niet?
+
+Gebruik de Gap utility niet op de [Grid component](?path=/docs/componenten-grid--docs). Deze component zorgt zelf voor het toevoegen van een gap.
+
+## Voorbeelden
+
+Voeg de class `.dictu-gap-small` toe op de parent container om een smalle spacing tussen de elementen binnen de container in te stellen.
+De Gap Utility zet ook een `display: grid;` op de parent container, omdat de `gap` anders niet zichtbaar zal zijn.
+
+<Canvas of={GapStories.DefaultGap} />
