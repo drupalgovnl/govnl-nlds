@@ -1,0 +1,80 @@
+{/* link-as-button.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as LinkAsButtonStories from './link-as-button.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={LinkAsButtonStories} title="Componenten/Link as Button" />
+
+<Title>Link as Button</Title>
+
+<Subtitle>
+  De link as button is een variant van het standaard button component die visueel als een knop wordt weergegeven, maar technisch een link (`<a>` element) is. 
+  Dit component wordt gebruikt wanneer een navigatielink visueel als call-to-action moet opvallen, terwijl de semantiek van een link behouden blijft. 
+</Subtitle>
+
+<Canvas of={LinkAsButtonStories.DefaultLinkAsButton} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={LinkAsButtonStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Link as Button component
+
+Gebruik de Link as Button component wanneer de gebruiker naar een andere pagina navigeert, maar de link visueel moet opvallen als een call-to-action.
+
+## Wanneer gebruik je de Link as Button component niet
+
+Gebruik de Link as Button niet wanneer:
+
+- De link in lopende tekst staat
+- Er een actie uitgevoetrd moet worden, zoals bijvoorbeeld het versturen van een formulier, het openen van een modal of er iets op de pagina verandert zonder navigatie. Gebruik daarvoor het standaard [Button component](?path=/docs/componenten-button--docs).
+
+## Voorbeelden
+
+### Link as Button
+
+#### Link as Button in primary action variant
+
+Voor de primary action variant van de Link as Button voeg je de classes `.dictu-link-as-button` en `.dictu-link-as-button--primary-action` toe aan een `a` element.
+
+<Canvas of={LinkAsButtonStories.DefaultLinkAsButton} />
+
+#### Link as Button in secondary action variant
+
+Naast de primary action variant kent de Link as Button ook een secondary variant. Voor deze variant voeg je de classes `.dictu-link-as-button` en `.dictu-link-as-button--secondary-action` toe aan het `a` element.
+
+<Canvas of={LinkAsButtonStories.SecondaryLinkAsButton} />
+
+#### Link as Button in small size
+
+Net als bij een Button component is het ook mogelijk om een Link as Button als kleiner element
+
+<Canvas of={LinkAsButtonStories.SmallLinkAsButton} />
+
+## Links
+
+- [MDN: `<a>`: The Anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a)
+
+## Relevante WCAG succescriteria
+
+(later in te vullen)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Link as Button component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).
