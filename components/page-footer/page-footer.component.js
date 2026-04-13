@@ -54,7 +54,7 @@ const createHeading = (text, level) => {
   return Heading({
     content: text,
     level,
-    classNames: ['dictu-page-footer-heading', `dictu-heading--level-${level}`],
+    classNames: ['dictu-page-footer-heading'],
   });
 };
 
