@@ -20,26 +20,22 @@
   padding-block: var(--govnl-link-as-button-padding-block-start) var(--govnl-link-as-button-padding-block-end);
   padding-inline: var(--govnl-link-as-button-padding-inline-start) var(--govnl-link-as-button-padding-inline-end);
   text-decoration-line: var(--govnl-link-as-button-text-decoration-line);
-  text-decoration-skip-ink: auto;
   text-decoration-thickness: var(--govnl-link-as-button-text-decoration-thickness);
   text-underline-offset: var(--govnl-link-as-button-text-underline-offset);
 }
 
 @mixin dictu-link-as-button-active {
   text-decoration-line: var(--govnl-link-as-button-active-text-decoration-line);
-  text-decoration-skip-ink: none;
   text-decoration-thickness: var(--govnl-link-as-button-active-text-decoration-thickness);
 }
 
 @mixin dictu-link-as-button-hover {
   text-decoration-line: var(--govnl-link-as-button-hover-text-decoration-line);
-  text-decoration-skip-ink: none;
   text-decoration-thickness: var(--govnl-link-as-button-hover-text-decoration-thickness);
 }
 
 @mixin dictu-link-as-button-focus {
   text-decoration-line: var(--govnl-link-as-button-focus-visible-text-decoration-line);
-  text-decoration-skip-ink: none;
   text-decoration-thickness: var(--govnl-link-as-button-focus-visible-text-decoration-thickness);
 }
 
