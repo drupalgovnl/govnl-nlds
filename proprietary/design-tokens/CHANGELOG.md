@@ -1,5 +1,12 @@
 # @dictu/design-tokens
 
+## 2.12.0
+
+### Minor Changes
+
+- 28d161f: Added Link as Button component and tokens
+- 818d0bb: Changed tokens for Link as Button component
+
 ## 2.11.0
 
 ### Minor Changes
