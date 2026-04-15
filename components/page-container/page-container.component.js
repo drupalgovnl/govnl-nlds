@@ -1,7 +1,11 @@
-export const PageContainer = ({ content, id, classNames = [] }) => {
+export const PageContainer = ({ content, id, gap, classNames = [] }) => {
   const container = document.createElement('div');
   container.classList.add('dictu-container', ...classNames);
   if (id) container.setAttribute('id', id);
+
+  if (gap !== 'none') {
+    container.classList.add(`dictu-container--gap-${gap}`);
+  }
 
   if (content) {
     if (typeof content === 'string') {
@@ -20,6 +24,14 @@ export const PageContainer = ({ content, id, classNames = [] }) => {
 
     if (content instanceof HTMLElement) {
       container.appendChild(content);
+    }
+
+    if (content instanceof Array) {
+      content.forEach(item => {
+        if (item instanceof HTMLElement) {
+          container.appendChild(item);
+        }
+      });
     }
   }
 

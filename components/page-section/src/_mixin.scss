@@ -13,3 +13,19 @@
 
   margin-block-end: var(--govnl-section-margin-block-end, 2rem);
 }
+
+@mixin dictu-section-gap {
+  display: grid;
+}
+
+@mixin dictu-section--gap-small {
+  gap: var(--govnl-space-sm);
+}
+
+@mixin dictu-section--gap-medium {
+  gap: var(--govnl-space-md);
+}
+
+@mixin dictu-section--gap-large {
+  gap: var(--govnl-space-lg);
+}

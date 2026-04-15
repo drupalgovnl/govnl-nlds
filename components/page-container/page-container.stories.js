@@ -1,15 +1,11 @@
 import { PageContainer } from './page-container.component';
-import defaultDocs from './docs/_page-container.md?raw';
-import readme from './README.md?raw';
+import { Paragraph } from '../paragraph/paragraph.component';
 import './dist/index.css';
 
 export default {
   args: {
-    content: `
-      <p>Dit is een page-container component die gestructureerde content gebieden biedt met consistente spacing en styling. De component is toegankelijk en gebruikt semantische HTML.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non malesuada magna. Etiam lobortis, mauris ut euismod mattis, eros erat blandit nibh, ut finibus libero orci et elit.</p>
-    `,
     id: 'page-container-1',
+    gap: 'none',
   },
   argTypes: {
     content: {
@@ -20,26 +16,62 @@ export default {
       control: 'text',
       description: 'Container ID voor navigatie en toegankelijkheid',
     },
-  },
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
+    gap: {
+      control: 'radio',
+      options: ['none', 'small', 'medium', 'large'],
+      description: 'Het formaat van de gap tussen elementen in de container',
+      table: {
+        type: {
+          summary: 'none | small | medium | large',
+        },
+        defaultValue: {
+          summary: 'none',
+        },
       },
     },
   },
-  render: PageContainer,
-  tags: ['autodocs'],
+  component: PageContainer,
+  render: args => {
+    const content = [];
+    const TextArray = [
+      'Dit is een page-container component die gestructureerde content gebieden biedt met consistente spacing en styling. De component is toegankelijk en gebruikt semantische HTML.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non malesuada magna. Etiam lobortis, mauris ut euismod mattis, eros erat blandit nibh, ut finibus libero orci et elit.',
+    ];
+
+    TextArray.forEach(text => {
+      const paragraph = Paragraph({
+        text,
+      });
+
+      content.push(paragraph);
+    });
+
+    return PageContainer({
+      ...args,
+      content,
+    });
+  },
   title: 'Componenten/Page Container',
 };
 
-export const Default = {
+export const DefaultPageContainer = {
   args: {},
-  parameters: {
-    docs: {
-      description: {
-        story: defaultDocs,
-      },
-    },
+};
+
+export const SmallGapPageContainer = {
+  args: {
+    gap: 'small',
+  },
+};
+
+export const MediumGapPageContainer = {
+  args: {
+    gap: 'medium',
+  },
+};
+
+export const LargeGapPageContainer = {
+  args: {
+    gap: 'large',
   },
 };
