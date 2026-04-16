@@ -21,13 +21,13 @@
 }
 
 @mixin dictu-container--gap-small {
-  gap: var(--govnl-space-sm);
+  gap: var(--govnl-container-gap-small-row-gap) var(--govnl-container-gap-small-column-gap);
 }
 
 @mixin dictu-container--gap-medium {
-  gap: var(--govnl-space-md);
+  gap: var(--govnl-container-gap-medium-row-gap) var(--govnl-container-gap-medium-column-gap);
 }
 
 @mixin dictu-container--gap-large {
-  gap: var(--govnl-space-lg);
+  gap: var(--govnl-container-gap-large-row-gap) var(--govnl-container-gap-large-column-gap);
 }

@@ -1,6 +1,7 @@
 import { PageContainer } from './page-container.component';
 import { Paragraph } from '../paragraph/paragraph.component';
 import './dist/index.css';
+import '../paragraph/dist/index.css';
 
 export default {
   args: {

@@ -1,6 +1,8 @@
 import { PageSection } from './page-section.component';
 import { Paragraph } from '../paragraph/paragraph.component';
 import './dist/index.css';
+import '../paragraph/dist/index.css';
+import '../heading/dist/index.css';
 
 export default {
   args: {

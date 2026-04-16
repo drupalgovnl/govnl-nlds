@@ -5,7 +5,7 @@ export const PageSection = ({ content, id, ariaLabel, title, gap, classNames = [
   section.classList.add('dictu-section', ...classNames);
 
   if (gap !== 'none') {
-    section.classList.add(`dictu-container--gap-${gap}`);
+    section.classList.add(`dictu-section--gap-${gap}`);
   }
 
   if (title) {
