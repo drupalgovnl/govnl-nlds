@@ -8,3 +8,18 @@
 .dictu-section {
   @include mixin.dictu-section;
 }
+
+.dictu-section--gap-small {
+  @include mixin.dictu-section-gap;
+  @include mixin.dictu-section--gap-small;
+}
+
+.dictu-section--gap-medium {
+  @include mixin.dictu-section-gap;
+  @include mixin.dictu-section--gap-medium;
+}
+
+.dictu-section--gap-large {
+  @include mixin.dictu-section-gap;
+  @include mixin.dictu-section--gap-large;
+}
