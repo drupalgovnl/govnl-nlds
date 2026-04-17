@@ -1,5 +1,12 @@
 # @dictu/design-tokens
 
+## 2.12.1
+
+### Patch Changes
+
+- 077c299: Added border-style property, changed focus background color, and
+  removed hover styling for disabled select element
+
 ## 2.12.0
 
 ### Minor Changes
