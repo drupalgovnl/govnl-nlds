@@ -1,5 +1,12 @@
 # @dictu/design-tokens
 
+## 2.13.0
+
+### Minor Changes
+
+- eae83a7: Added row-gap and column-gap tokens to container and section
+  tokensets
+
 ## 2.12.1
 
 ### Patch Changes
