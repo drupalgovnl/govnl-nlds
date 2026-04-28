@@ -1,14 +1,12 @@
-import defaultDocs from './docs/_page-container.md?raw';
-import readme from './README.md?raw';
+import { PageContainer } from './page-container.component';
+import { Paragraph } from '../paragraph/paragraph.component';
 import './dist/index.css';
+import '../paragraph/dist/index.css';
 
 export default {
   args: {
-    content: `
-      <p>Dit is een page-container component die gestructureerde content gebieden biedt met consistente spacing en styling. De component is toegankelijk en gebruikt semantische HTML.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non malesuada magna. Etiam lobortis, mauris ut euismod mattis, eros erat blandit nibh, ut finibus libero orci et elit.</p>
-    `,
     id: 'page-container-1',
+    gap: 'none',
   },
   argTypes: {
     content: {
@@ -19,52 +17,62 @@ export default {
       control: 'text',
       description: 'Container ID voor navigatie en toegankelijkheid',
     },
-  },
-  parameters: {
-    docs: {
-      description: {
-        component: readme,
+    gap: {
+      control: 'radio',
+      options: ['none', 'small', 'medium', 'large'],
+      description: 'Het formaat van de gap tussen elementen in de container',
+      table: {
+        type: {
+          summary: 'none | small | medium | large',
+        },
+        defaultValue: {
+          summary: 'none',
+        },
       },
     },
   },
-  render: ({ content, id }) => {
-    const container = document.createElement('div');
-    container.classList.add('dictu-container');
-    container.setAttribute('id', id);
+  component: PageContainer,
+  render: args => {
+    const content = [];
+    const TextArray = [
+      'Dit is een page-container component die gestructureerde content gebieden biedt met consistente spacing en styling. De component is toegankelijk en gebruikt semantische HTML.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non malesuada magna. Etiam lobortis, mauris ut euismod mattis, eros erat blandit nibh, ut finibus libero orci et elit.',
+    ];
 
-    if (content) {
-      if (typeof content === 'string') {
-        // Sanitize and insert HTML
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(content, 'text/html');
-        const fragment = document.createDocumentFragment();
+    TextArray.forEach(text => {
+      const paragraph = Paragraph({
+        text,
+      });
 
-        // Append all body children to fragment
-        Array.from(doc.body.childNodes).forEach(node => {
-          fragment.appendChild(node.cloneNode(true));
-        });
+      content.push(paragraph);
+    });
 
-        container.appendChild(fragment);
-      }
-
-      if (content instanceof HTMLElement) {
-        container.appendChild(content);
-      }
-    }
-
-    return container;
+    return PageContainer({
+      ...args,
+      content,
+    });
   },
-  tags: ['autodocs'],
   title: 'Componenten/Page Container',
 };
 
-export const Default = {
+export const DefaultPageContainer = {
   args: {},
-  parameters: {
-    docs: {
-      description: {
-        story: defaultDocs,
-      },
-    },
+};
+
+export const SmallGapPageContainer = {
+  args: {
+    gap: 'small',
+  },
+};
+
+export const MediumGapPageContainer = {
+  args: {
+    gap: 'medium',
+  },
+};
+
+export const LargeGapPageContainer = {
+  args: {
+    gap: 'large',
   },
 };

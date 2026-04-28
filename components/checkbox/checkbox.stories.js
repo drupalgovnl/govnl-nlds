@@ -23,7 +23,6 @@ export default {
     },
   },
   component: Checkbox,
-  tags: ['wip'],
   title: 'Componenten/Form elements/Checkbox',
 };
 

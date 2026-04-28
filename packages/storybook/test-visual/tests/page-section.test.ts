@@ -14,7 +14,7 @@ test.describe('Page Section', () => {
   });
 
   test('With Aria Label', async ({ page }) => {
-    await page.goto('/iframe.html?id=componenten-page-section--with-aria-label');
+    await page.goto('/iframe.html?id=componenten-page-section--aria-label-page-section');
     await page.waitForSelector('.dictu-section', { timeout: 5000 });
 
     await expect(page).toHaveScreenshot('page-section-with-aria-label.png', {

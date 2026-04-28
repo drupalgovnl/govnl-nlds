@@ -1,0 +1,83 @@
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as SelectStories from './select.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={SelectStories} title="Componenten/Form elements/Select" />
+
+<Title>Select</Title>
+
+<Subtitle>
+  Een Select component creëert een vervolgkeuzelijst waaruit gebruikers één of meerdere opties
+  kunnen kiezen. Het is het meest geschikt wanneer gebruikers één item uit een (langere) vooraf
+  gedefinieerde lijst moeten selecteren.
+</Subtitle>
+
+<Canvas of={SelectStories.SelectDefault} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={SelectStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Select component
+
+Gebruik de Select component wanneer gebruikers een keuze moeten selecteren uit een lange lijst met opties. Wees voorzichtig met het gebruik van de Select component.
+In veel gevallen is het gebruiksvriendelijker om afzonderlijke, opvolgende vragen te stellen, of om bij weinig opties gebruik te maken van een radio button.
+
+## Voorbeelden
+
+### Select
+
+De Select component bevat meerdere `option` elementen waaruit de gebruiker een keuze kan maken. Zorg dat deze `option` elementen een `value` attribuut meekrijgen.
+
+<Canvas of={SelectStories.SelectDefault} />
+
+### Error
+
+Om aan de gebruiker te laten zien dat er een fout zit in de Select component geef je de `dictu-select--error` class mee. Zorg er daarnaast voor
+dat de `aria-invalid` attribuut is toegevoegd en de waarde `true` heeft.
+
+<Canvas of={SelectStories.SelectError} />
+
+### Disabled
+
+Het is mogelijk om de Select component een disabled state mee te geven. Hiervoor gebruik je de `disabled` en `aria-disabled` attributen.
+
+<Canvas of={SelectStories.SelectDisabled} />
+
+### Inline
+
+Om de Select component inline weer te geven, gebruik je de `dictu-select--inline` class.
+
+<Canvas of={SelectStories.SelectInline} />
+
+### Multiple
+
+Er is een mogelijkheid om meerde keuzes toe te staan bij de Select component. De component zal er dan visueel uitzien als een box met een scroll mogelijkheid. Om meerdere opties
+te selecteren moet de gebruiker gebruik maken van de `SHIFT` knop om meerdere opties onder elkaar te kiezen, of `CTRL`/`COMMAND` om meerdere opties afzonderlijk van elkaar te selecteren.
+
+**Let op:** Gebruik deze mogelijkheid alleen wanneer er geen enkele andere optie mogelijk is. Het kan voor de gebruiker erg lastig zijn om meerdere opties te selecteren.
+
+<Canvas of={SelectStories.SelectMultiple} />
+
+## Relevante WCAG succescriteria
+
+(nog in te vullen)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Select component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).

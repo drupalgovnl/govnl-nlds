@@ -1,5 +1,11 @@
 # @dictu/link
 
+## 2.4.1
+
+### Patch Changes
+
+- 818d0bb: Changed skip-ink from none to auto
+
 ## 2.4.0
 
 ### Minor Changes

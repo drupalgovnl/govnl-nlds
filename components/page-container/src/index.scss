@@ -8,3 +8,18 @@
 .dictu-container {
   @include mixin.dictu-container;
 }
+
+.dictu-container--gap-small {
+  @include mixin.dictu-container-gap;
+  @include mixin.dictu-container--gap-small;
+}
+
+.dictu-container--gap-medium {
+  @include mixin.dictu-container-gap;
+  @include mixin.dictu-container--gap-medium;
+}
+
+.dictu-container--gap-large {
+  @include mixin.dictu-container-gap;
+  @include mixin.dictu-container--gap-large;
+}
