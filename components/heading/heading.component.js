@@ -1,6 +1,6 @@
-export const Heading = ({ content, level = 2 } = {}) => {
+export const Heading = ({ content, level = 2, classNames = [] } = {}) => {
   const heading = document.createElement(`h${level}`);
-  heading.classList.add('dictu-heading', `dictu-heading--level-${level}`);
+  heading.classList.add('dictu-heading', `dictu-heading--level-${level}`, ...classNames);
 
   const isDomNode = content?.nodeType !== undefined;
 

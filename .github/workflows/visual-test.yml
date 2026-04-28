@@ -1,0 +1,84 @@
+name: Visual Regression Tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'components/**'
+      - 'examples/**'
+      - 'packages/storybook/**'
+      - 'proprietary/assets/**'
+      - 'proprietary/design-tokens/**'
+      - 'utilities/**'
+      - '.github/workflows/visual-test.yml'
+  pull_request:
+    paths:
+      - 'components/**'
+      - 'examples/**'
+      - 'packages/storybook/**'
+      - 'proprietary/assets/**'
+      - 'proprietary/design-tokens/**'
+      - 'utilities/**'
+      - '.github/workflows/visual-test.yml'
+
+# Cancel any in-progress runs for the same branch/PR
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  visual-test:
+    name: Visual regression
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    # Run inside the same Playwright image used to generate Linux baselines,
+    # so fonts, rendering libraries and browser builds match exactly.
+    container:
+      image: mcr.microsoft.com/playwright:v1.58.2-noble
+      options: --user root
+    env:
+      HOME: /root
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Node.js version
+        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build packages
+        run: npm run build
+
+      - name: Install Playwright Firefox
+        run: npx playwright install firefox
+
+      - name: Run visual regression tests
+        run: npm run test:visual
+        env:
+          CI: 'true'
+
+      - name: Upload HTML test report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: visual-test-report
+          path: packages/storybook/test-visual/test-report/
+          retention-days: 14
+
+      - name: Upload failure diffs
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: visual-test-results
+          path: packages/storybook/test-visual/test-results/
+          retention-days: 14

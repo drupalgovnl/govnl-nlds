@@ -31,7 +31,6 @@ export default {
     },
   },
   component: Label,
-  tags: ['wip'],
   title: 'Componenten/Form elements/Label',
 };
 

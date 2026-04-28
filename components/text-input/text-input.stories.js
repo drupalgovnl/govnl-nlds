@@ -1,5 +1,5 @@
 import './dist/index.css';
-import '@dictu/utility-focus-ring';
+import '@dictu/utility-focus-ring/dist/index.css';
 import { TextInput } from './text-input.component';
 
 export default {
@@ -33,7 +33,6 @@ export default {
     },
   },
   component: TextInput,
-  tags: ['wip'],
   title: 'Componenten/Form elements/Text Input',
 };
 

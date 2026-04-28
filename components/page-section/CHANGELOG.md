@@ -1,5 +1,11 @@
 # @dictu/page-section
 
+## 2.1.0
+
+### Minor Changes
+
+- eae83a7: Added functionality for gap between elements in container and section
+
 ## 2.0.0
 
 ### Major Changes

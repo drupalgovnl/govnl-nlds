@@ -1,0 +1,80 @@
+{/* page-container.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as PageSectionStories from './page-section.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={PageSectionStories} title="Componenten/Page Section" />
+
+<Title>Page Section</Title>
+
+<Subtitle>
+  De page-section component biedt een basis sectie-container van het Dictu Design Systeem.
+</Subtitle>
+
+<Canvas of={PageSectionStories.DefaultPageSection} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={PageSectionStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Page Section component
+
+- Gebruik de Page Section component om elementen binnen een sectie te groeperen.
+
+## Richtlijnen
+
+- Gebruik altijd de `.dictu-page-section` class voor de sectie-container.
+- Gebruik semantische HTML: `<section>` voor de hoofdcontainer.
+- Voeg indien nodig een `aria-label` of `aria-labelledby` attribuut toe.
+- Gebruik logische heading niveaus binnen de sectie.
+
+## Voorbeelden
+
+### Page Section
+
+<Canvas of={PageSectionStories.DefaultPageSection} />
+
+### Page Section zonder titel
+
+<Canvas of={PageSectionStories.WithoutTitlePageSection} />
+
+### Page Section met Aria label
+
+<Canvas of={PageSectionStories.AriaLabelPageSection} />
+
+### Page Section met gap tussen de elementen
+
+Het is mogelijk om tussen de elementen in een page section witruimte toe te voegen. Er zijn drie mogelijke formaten witruimte: Small, medium, en large.
+Voeg respectievelijk de class `dictu-section--gap-small`, `dictu-section--gap-medium` of `dictu-section--gap-large` toe.
+
+<Canvas of={PageSectionStories.SmallGapPageSection} />
+
+<Canvas of={PageSectionStories.MediumGapPageSection} />
+
+<Canvas of={PageSectionStories.LargeGapPageSection} />
+
+## Toegankelijkheid
+
+Gebruik altijd `<section>` voor semantische structuur. Voeg indien nodig een
+`aria-label` of `aria-labelledby` attribuut toe voor betere toegankelijkheid.
+Gebruik logische heading niveaus binnen de sectie.
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Page Section component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).

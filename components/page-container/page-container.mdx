@@ -1,0 +1,67 @@
+{/* page-container.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as PageContainerStories from './page-container.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={PageContainerStories} title="Componenten/Page Container" />
+
+<Title>Page Container</Title>
+
+<Subtitle>
+  De page-container component biedt een basis container-element van het Dictu Design Systeem.
+</Subtitle>
+
+<Canvas of={PageContainerStories.DefaultPageContainer} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={PageContainerStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Page Container component
+
+- Gebruik de Page Section component om elementen samen te groeperen binnen een container.
+
+## Richtlijnen
+
+- Gebruik altijd de `.dictu-page-container` class voor de container-element.
+- Gebruik semantische HTML: `<div>` of `<main>` voor de hoofdcontainer.
+- Voeg indien nodig een `id` attribuut toe voor navigatie en toegankelijkheid.
+- De component zorgt voor consistente maximale breedte en centrering van
+  content.
+
+## Voorbeelden
+
+### Page Container
+
+<Canvas of={PageContainerStories.DefaultPageContainer} />
+
+### Page Container met gap tussen de elementen
+
+Het is mogelijk om tussen de elementen in een page container witruimte toe te voegen. Er zijn drie mogelijke formaten witruimte: Small, medium, en large.
+Voeg respectievelijk de class `dictu-container--gap-small`, `dictu-container--gap-medium` of `dictu-container--gap-large` toe.
+
+<Canvas of={PageContainerStories.SmallGapPageContainer} />
+
+<Canvas of={PageContainerStories.MediumGapPageContainer} />
+
+<Canvas of={PageContainerStories.LargeGapPageContainer} />
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Page Container component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).

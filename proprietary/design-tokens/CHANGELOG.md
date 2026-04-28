@@ -1,5 +1,39 @@
 # @dictu/design-tokens
 
+## 2.13.0
+
+### Minor Changes
+
+- eae83a7: Added row-gap and column-gap tokens to container and section
+  tokensets
+
+## 2.12.1
+
+### Patch Changes
+
+- 077c299: Added border-style property, changed focus background color, and
+  removed hover styling for disabled select element
+
+## 2.12.0
+
+### Minor Changes
+
+- 28d161f: Added Link as Button component and tokens
+- 818d0bb: Changed tokens for Link as Button component
+
+## 2.11.0
+
+### Minor Changes
+
+- de8ea47: Added design tokens for variant of Link component with icon
+
+## 2.10.0
+
+### Minor Changes
+
+- de36cc1: Updated grid.tokens.json to remove the type field. Removed duplicated
+  design tokens from the date-input.tokens.json
+
 ## 2.9.0
 
 ### Minor Changes
