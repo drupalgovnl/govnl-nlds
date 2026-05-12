@@ -50,12 +50,12 @@
   color: var(--govnl-radio-button-checked-color);
 
   &::after {
-    background-color: white; // Needs token.
-    block-size: 0.6em; // Needs token.
+    background-color: var(--govnl-radio-button-checked-dot-color);
+    block-size: var(--govnl-radio-button-dot-size);
     border-radius: var(--govnl-radio-button-border-radius);
     content: "";
     display: block;
-    inline-size: 0.6em; // Needs token.
+    inline-size: var(--govnl-radio-button-dot-size);
     left: 50%;
     position: absolute;
     top: 50%;
@@ -69,6 +69,10 @@
   border-style: solid;
   border-width: var(--govnl-radio-button-checked-hover-border-width);
   color: var(--govnl-radio-button-checked-hover-color);
+
+  &::after {
+    background-color: var(--govnl-radio-button-checked-hover-dot-color);
+  }
 }
 
 @mixin dictu-radio-button--checked-active {
@@ -77,6 +81,10 @@
   border-style: solid;
   border-width: var(--govnl-radio-button-checked-active-border-width);
   color: var(--govnl-radio-button-checked-active-color);
+
+  &::after {
+    background-color: var(--govnl-radio-button-checked-active-dot-color);
+  }
 }
 
 @mixin dictu-radio-button--checked-focus-visible {
@@ -88,6 +96,6 @@
   outline-color: var(--govnl-radio-button-checked-focus-outline-color);
 
   &::after {
-    background-color: black; // Needs token.
+    background-color: var(--govnl-radio-button-checked-focus-dot-color);
   }
 }
