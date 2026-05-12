@@ -13,10 +13,10 @@
 
   border-block-end: var(--govnl-quote-border-block-end-width) var(--govnl-quote-border-block-end-style)
     var(--govnl-quote-border-block-end-color);
-  border-radius: var(--govnl-quote-border-top-left-radius) var(--govnl-quote-border-top-right-radius)
-    var(--govnl-quote-border-bottom-right-radius) var(--govnl-quote-border-bottom-left-radius);
   border-inline-start: var(--govnl-quote-border-inline-start-width) var(--govnl-quote-border-inline-start-style)
     var(--govnl-quote-border-inline-start-color);
+  border-radius: var(--govnl-quote-border-top-left-radius) var(--govnl-quote-border-top-right-radius)
+    var(--govnl-quote-border-bottom-right-radius) var(--govnl-quote-border-bottom-left-radius);
   display: flex;
   flex-direction: column;
   padding-block: var(--govnl-quote-padding-block-start) var(--govnl-quote-padding-block-end);
