@@ -1,18 +1,18 @@
 {
-  "name": "@dictu/page-section",
-  "version": "2.1.0",
+  "name": "@dictu/quote",
+  "version": "0.1.0",
   "author": "Dienst ICT Uitvoering",
-  "description": "Page section CSS component.",
+  "description": "Quote CSS component.",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system",
     "css",
-    "page-section"
+    "quote"
   ],
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/page-section"
+    "directory": "components/quote"
   },
   "files": [
     "src/",
@@ -30,5 +30,8 @@
     "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
     "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
     "clean": "rimraf ./dist/"
+  },
+  "dependencies": {
+    "@dictu/link": "^2.3.2"
   }
 }

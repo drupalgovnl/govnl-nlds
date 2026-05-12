@@ -4,6 +4,38 @@
       "margin-block-end": {
         "$type": "dimension",
         "$value": "{govnl.dimension.size.1000}"
+      },
+      "gap": {
+        "small": {
+          "column-gap": {
+            "$type": "dimension",
+            "$value": "0"
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          }
+        },
+        "medium": {
+          "column-gap": {
+            "$type": "dimension",
+            "$value": "0"
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": "{govnl.space.md}"
+          }
+        },
+        "large": {
+          "column-gap": {
+            "$type": "dimension",
+            "$value": "0"
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": "{govnl.space.lg}"
+          }
+        }
       }
     }
   }

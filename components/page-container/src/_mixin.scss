@@ -15,3 +15,19 @@
   max-inline-size: var(--govnl-container-max-inline-size, 100%);
   padding-inline: var(--govnl-container-padding-inline, 1rem);
 }
+
+@mixin dictu-container-gap {
+  display: grid;
+}
+
+@mixin dictu-container--gap-small {
+  gap: var(--govnl-container-gap-small-row-gap) var(--govnl-container-gap-small-column-gap);
+}
+
+@mixin dictu-container--gap-medium {
+  gap: var(--govnl-container-gap-medium-row-gap) var(--govnl-container-gap-medium-column-gap);
+}
+
+@mixin dictu-container--gap-large {
+  gap: var(--govnl-container-gap-large-row-gap) var(--govnl-container-gap-large-column-gap);
+}

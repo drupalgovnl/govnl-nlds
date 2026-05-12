@@ -53,6 +53,10 @@
         "$type": "borderRadius",
         "$value": "{govnl.border.border-radius.sm}"
       },
+      "border-style": {
+        "$type": "other",
+        "$value": "solid"
+      },
       "border-width": {
         "$type": "borderWidth",
         "$value": "{govnl.border.border-width.sm}"
@@ -78,7 +82,7 @@
       "focus": {
         "background-color": {
           "$type": "color",
-          "$value": "{govnl.form-control.focus.background-color}"
+          "$value": "{govnl.form-control.background-color}"
         },
         "border-color": {
           "$type": "color",

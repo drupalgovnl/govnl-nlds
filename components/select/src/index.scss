@@ -10,13 +10,15 @@
 
   @include mixin.dictu-select;
 
-  &:hover {
-    @include mixin.dictu-select--hover;
-  }
+  &:not([disabled]) {
+    &:hover {
+      @include mixin.dictu-select--hover;
+    }
 
-  &:focus-visible {
-    &:not(:active) {
-      @include mixin.dictu-select--focus;
+    &:focus-visible {
+      &:not(:active) {
+        @include mixin.dictu-select--focus;
+      }
     }
   }
 }
