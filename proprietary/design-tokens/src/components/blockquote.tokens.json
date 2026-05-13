@@ -84,7 +84,7 @@
         },
         "font-weight": {
           "$type": "fontWeights",
-          "$value": "{govnl.typography.font-weight.regular}"
+          "$value": "{govnl.typography.font-weight.bold}"
         }
       },
       "role": {
@@ -112,7 +112,7 @@
         },
         "font-size": {
           "$type": "fontSizes",
-          "$value": "{govnl.typography.font-size.md}"
+          "$value": "{govnl.typography.font-size.lg}"
         },
         "font-style": {
           "$type": "text",
@@ -140,7 +140,7 @@
         },
         "font-size": {
           "$type": "fontSizes",
-          "$value": "{govnl.typography.font-size.lg}"
+          "$value": "{govnl.typography.font-size.xl}"
         },
         "font-style": {
           "$type": "text",
