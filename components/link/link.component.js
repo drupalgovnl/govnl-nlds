@@ -1,6 +1,14 @@
 import { Icon } from '../icon/icon.component';
 
-export const Link = ({ content, href, external, icon, iconLabel, classNames = [] }) => {
+export const Link = ({
+  content,
+  href,
+  external,
+  icon,
+  iconPosition,
+  iconLabel,
+  classNames = [],
+}) => {
   const link = document.createElement('a');
   link.classList.add('dictu-link', ...classNames);
   link.href = href;
@@ -16,7 +24,7 @@ export const Link = ({ content, href, external, icon, iconLabel, classNames = []
     });
 
     link.classList.add('dictu-link--with-icon');
-    link.appendChild(linkIcon);
+    link.insertAdjacentElement(iconPosition === 'before' ? 'afterbegin' : 'beforeend', linkIcon);
   }
 
   if (external) {
