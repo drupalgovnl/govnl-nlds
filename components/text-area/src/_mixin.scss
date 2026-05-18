@@ -1,0 +1,54 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin dictu-textarea {
+  background-color: var(--govnl-text-input-background-color);
+  border: var(--govnl-textarea-border-width) solid var(--govnl-text-input-border-color);
+  border-radius: var(--govnl-textarea-border-radius);
+  box-sizing: border-box;
+  color: var(--govnl-text-input-color);
+  font-family: var(--govnl-textarea-font-family);
+  font-size: var(--govnl-textarea-font-size);
+  font-weight: var(--govnl-textarea-font-weight);
+  line-height: var(--govnl-textarea-line-height);
+  min-block-size: var(--govnl-textarea-min-block-size);
+  padding-block: var(--govnl-textarea-padding-block-start) var(--govnl-textarea-padding-block-end);
+  padding-inline: var(--govnl-textarea-padding-inline-start) var(--govnl-textarea-padding-inline-end);
+
+  &::placeholder {
+    color: var(--govnl-text-input-placeholder-color);
+  }
+}
+
+@mixin dictu-textarea-hover {
+  background-color: var(--govnl-text-input-hover-background-color);
+  border-color: var(--govnl-text-input-hover-border-color);
+  color: var(--govnl-text-input-hover-color);
+}
+
+@mixin dictu-textarea-active {
+  background-color: var(--govnl-text-input-active-background-color);
+  border-color: var(--govnl-text-input-active-border-color);
+  color: var(--govnl-text-input-active-color);
+}
+
+@mixin dictu-textarea-focus {
+  background-color: var(--govnl-text-input-focus-background-color);
+  border-color: var(--govnl-text-input-focus-border-color);
+  color: var(--govnl-text-input-focus-color);
+  outline-color: var(--govnl-text-input-focus-outline-color);
+}
+
+@mixin dictu-text-input--error {
+  background-color: var(--govnl-text-input-error-background-color);
+  border: var(--govnl-textarea-error-border-width) solid var(--govnl-text-input-error-border-color);
+  color: var(--govnl-text-input-error-color);
+}
+
+@mixin dictu-text-input--read-only {
+  background-color: var(--govnl-text-input-read-only-background-color);
+  border-color: var(--govnl-text-input-read-only-border-color);
+  color: var(--govnl-text-input-read-only-color);
+}
