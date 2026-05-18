@@ -10,6 +10,9 @@ const repoRoot = path.resolve(__dirname, '..');
 const tempRoot = await fs.mkdtemp(path.join(os.tmpdir(), 'govnl-nlds-linux-'));
 const tempRepo = path.join(tempRoot, 'repo');
 
+const fileArgs = process.argv.slice(2);
+const quotedFileArgs = fileArgs.map(a => `'${a.replace(/'/g, "'\\''")}'`).join(' ');
+
 const run = (command, args, options = {}) => {
   const result = spawnSync(command, args, { stdio: 'inherit', ...options });
   if (result.status !== 0) {
@@ -36,7 +39,7 @@ try {
     [
       'npm install',
       'npx playwright install firefox',
-      'npx playwright test --config packages/storybook/test-visual/playwright.config.ts --update-snapshots',
+      `npx playwright test --config packages/storybook/test-visual/playwright.config.ts --update-snapshots${fileArgs.length ? ' -- ' + quotedFileArgs : ''}`,
     ].join(' && '),
   ];
 
