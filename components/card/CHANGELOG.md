@@ -1,5 +1,11 @@
 # @dictu/card
 
+## 5.0.2
+
+### Patch Changes
+
+- 89e1754: Added fix for not showing link underline on accent variant
+
 ## 5.0.1
 
 ### Patch Changes
