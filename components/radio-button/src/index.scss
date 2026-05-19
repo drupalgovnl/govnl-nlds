@@ -1,0 +1,39 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "mixin" as mixin;
+@use "pkg:@dictu/utility-focus-ring/dist/index" as focus-ring;
+
+.dictu-radio-button {
+  @include mixin.dictu-radio-button;
+
+  &:hover {
+    @include mixin.dictu-radio-button--hover;
+  }
+
+  &:active {
+    @include mixin.dictu-radio-button--active;
+  }
+
+  &:focus-visible {
+    @include mixin.dictu-radio-button--focus-visible;
+  }
+
+  &:checked {
+    @include mixin.dictu-radio-button--checked;
+
+    &:hover {
+      @include mixin.dictu-radio-button--checked-hover;
+    }
+
+    &:active {
+      @include mixin.dictu-radio-button--checked-active;
+    }
+
+    &:focus-visible {
+      @include mixin.dictu-radio-button--checked-focus-visible;
+    }
+  }
+}
