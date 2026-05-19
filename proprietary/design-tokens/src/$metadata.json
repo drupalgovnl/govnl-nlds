@@ -28,7 +28,6 @@
     "components/logo.tokens",
     "components/navigation-bar.tokens",
     "components/page-footer.tokens",
-    "components/blockqoute.tokens",
     "components/page-header.tokens",
     "components/pagination.tokens",
     "components/paragraph.tokens",
@@ -37,6 +36,8 @@
     "components/skip-link.tokens",
     "components/table.tokens",
     "components/timeline.tokens",
-    "components/video-player.tokens"
+    "components/video-player.tokens",
+    "components/blockqoute.tokens.old",
+    "components/blockquote.tokens"
   ]
 }
