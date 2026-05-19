@@ -35,11 +35,11 @@
       "components/form-elements/label.tokens": "enabled",
       "components/form-elements/radio-button.tokens": "enabled",
       "components/form-elements/select.tokens": "enabled",
-      "components/form-elements/text-area.tokens": "enabled",
       "components/form-elements/text-input.tokens": "enabled",
       "components/searchbar.tokens": "enabled",
       "components/pagination.tokens": "enabled",
-      "components/video-player.tokens": "enabled"
+      "components/video-player.tokens": "enabled",
+      "components/form-elements/textarea.tokens": "enabled"
     },
     "$figmaVariableReferences": {},
     "group": "GovNL"
