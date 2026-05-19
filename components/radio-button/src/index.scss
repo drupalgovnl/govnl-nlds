@@ -21,7 +21,6 @@
     @include mixin.dictu-radio-button--focus-visible;
   }
 
-  /* stylelint-disable-next-line selector-nested-pattern */
   &:checked {
     @include mixin.dictu-radio-button--checked;
 
