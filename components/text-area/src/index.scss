@@ -20,3 +20,11 @@
     @include mixin.dictu-textarea-focus;
   }
 }
+
+.dictu-textarea--read-only {
+  @include mixin.dictu-textarea--read-only;
+}
+
+.dictu-textarea--error {
+  @include mixin.dictu-textarea--error;
+}
