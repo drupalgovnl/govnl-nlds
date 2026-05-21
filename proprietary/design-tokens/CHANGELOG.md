@@ -1,5 +1,13 @@
 # @dictu/design-tokens
 
+## 2.14.0
+
+### Minor Changes
+
+- b45c5b3: Added possibility for icon to be placed at the beginning of a link in
+  the Link component
+- 3d96da7: Changed design tokens for quote component
+
 ## 2.13.0
 
 ### Minor Changes

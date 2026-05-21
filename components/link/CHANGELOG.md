@@ -1,5 +1,12 @@
 # @dictu/link
 
+## 2.5.0
+
+### Minor Changes
+
+- b45c5b3: Added possibility for icon to be placed at the beginning of a link in
+  the Link component
+
 ## 2.4.1
 
 ### Patch Changes
