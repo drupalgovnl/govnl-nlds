@@ -1,0 +1,101 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin reset {
+  appearance: none;
+}
+
+@mixin dictu-radio-button {
+  @include reset;
+
+  background-color: var(--govnl-radio-button-unchecked-background-color);
+  block-size: var(--govnl-radio-button-size);
+  border-color: var(--govnl-radio-button-unchecked-border-color);
+  border-radius: var(--govnl-radio-button-border-radius);
+  border-style: solid;
+  border-width: var(--govnl-radio-button-unchecked-border-width);
+  inline-size: var(--govnl-radio-button-size);
+  position: relative;
+}
+
+@mixin dictu-radio-button--hover {
+  background-color: var(--govnl-radio-button-unchecked-hover-background-color);
+  border-color: var(--govnl-radio-button-unchecked-hover-border-color);
+  border-style: solid;
+  border-width: var(--govnl-radio-button-unchecked-hover-border-width);
+}
+
+@mixin dictu-radio-button--active {
+  background-color: var(--govnl-radio-button-unchecked-active-background-color);
+  border-color: var(--govnl-radio-button-unchecked-active-border-color);
+  border-style: solid;
+  border-width: var(--govnl-radio-button-unchecked-active-border-width);
+}
+
+@mixin dictu-radio-button--focus-visible {
+  background-color: var(--govnl-radio-button-unchecked-focus-background-color);
+  border-color: var(--govnl-radio-button-unchecked-focus-border-color);
+  border-style: solid;
+  border-width: var(--govnl-radio-button-unchecked-active-border-width);
+  outline-color: var(--govnl-radio-button-unchecked-focus-outline-color);
+}
+
+@mixin dictu-radio-button--checked {
+  background-color: var(--govnl-radio-button-checked-background-color);
+  border-color: var(--govnl-radio-button-checked-border-color);
+  border-style: solid;
+  border-width: var(--govnl-radio-button-checked-border-width);
+  color: var(--govnl-radio-button-checked-color);
+
+  &::after {
+    background-color: var(--govnl-radio-button-checked-dot-color);
+    block-size: var(--govnl-radio-button-dot-size);
+    border-radius: var(--govnl-radio-button-border-radius);
+    content: "";
+    display: block;
+    inline-size: var(--govnl-radio-button-dot-size);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin dictu-radio-button--checked-hover {
+  background-color: var(--govnl-radio-button-checked-hover-background-color);
+  border-color: var(--govnl-radio-button-checked-hover-border-color);
+  border-style: solid;
+  border-width: var(--govnl-radio-button-checked-hover-border-width);
+  color: var(--govnl-radio-button-checked-hover-color);
+
+  &::after {
+    background-color: var(--govnl-radio-button-checked-hover-dot-color);
+  }
+}
+
+@mixin dictu-radio-button--checked-active {
+  background-color: var(--govnl-radio-button-checked-active-background-color);
+  border-color: var(--govnl-radio-button-checked-active-border-color);
+  border-style: solid;
+  border-width: var(--govnl-radio-button-checked-active-border-width);
+  color: var(--govnl-radio-button-checked-active-color);
+
+  &::after {
+    background-color: var(--govnl-radio-button-checked-active-dot-color);
+  }
+}
+
+@mixin dictu-radio-button--checked-focus-visible {
+  background-color: var(--govnl-radio-button-checked-focus-background-color);
+  border-color: var(--govnl-radio-button-checked-focus-border-color);
+  border-style: solid;
+  border-width: var(--govnl-radio-button-checked-focus-border-width);
+  color: var(--govnl-radio-button-checked-focus-color);
+  outline-color: var(--govnl-radio-button-checked-focus-outline-color);
+
+  &::after {
+    background-color: var(--govnl-radio-button-checked-focus-dot-color);
+  }
+}

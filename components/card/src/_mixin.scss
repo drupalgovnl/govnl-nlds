@@ -96,7 +96,7 @@
 
 @mixin dictu-card__link-accent {
   color: var(--govnl-card-accent-color);
-  text-decoration-line: var(--govnl-card-accent-color);
+  text-decoration-color: var(--govnl-card-accent-color);
 }
 
 @mixin dictu-card__paragraph-accent {
