@@ -26,6 +26,12 @@ import Readme from './README.md?raw';
 
 ## Wanneer gebruik je de Textareacomponent
 
+Gebruik de Textarea component wanneer de gebruiker tekst moet invoeren dat langer is dan één regel, zoals bijvoorbeeld een beschrijving of uitleg.
+
+## Wanneer gebruik je de Text Input component niet
+
+Gebruik de Textarea component niet wanneer het verwachte antwoord van de gebruiker bestaat uit tekst op slechts één regel. Gebruik dan de Text Input component.
+
 ## Wanneer gebruik je de Textarea component niet
 
 ## Richtlijnen
@@ -40,9 +46,13 @@ import Readme from './README.md?raw';
 
 ### Rows
 
+Met het `rows` attribuut kun je de hoogte van de textarea bepalen. Standaard staat deze waarde op `2`.
+
 <Canvas of={TextareaStories.TextareaRows} />
 
 ### Cols
+
+Met het `cols` attribuut kun je de breedte van de textarea bepalen. Standaard staat deze waarde op `20`.
 
 <Canvas of={TextareaStories.TextareaCols} />
 
