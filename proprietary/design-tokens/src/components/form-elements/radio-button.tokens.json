@@ -86,7 +86,7 @@
         },
         "border-color": {
           "$type": "color",
-          "$value": "transparant"
+          "$value": "{govnl.interaction.color}"
         },
         "dot-color": {
           "$type": "color",
@@ -107,7 +107,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparant"
+            "$value": "{govnl.interaction.hover.color}"
           },
           "color": {
             "$type": "color",
@@ -129,7 +129,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparant"
+            "$value": "{govnl.interaction.active.color}"
           },
           "color": {
             "$type": "color",
