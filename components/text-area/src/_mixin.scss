@@ -18,37 +18,37 @@
   padding-inline: var(--govnl-textarea-padding-inline-start) var(--govnl-textarea-padding-inline-end);
 
   &::placeholder {
-    color: var(--govnl-text-input-placeholder-color);
+    color: var(--govnl-textarea-placeholder-color);
   }
 }
 
 @mixin dictu-textarea-hover {
-  background-color: var(--govnl-text-input-hover-background-color);
-  border-color: var(--govnl-text-input-hover-border-color);
-  color: var(--govnl-text-input-hover-color);
+  background-color: var(--govnl-textarea-hover-background-color);
+  border-color: var(--govnl-textarea-hover-border-color);
+  color: var(--govnl-textarea-hover-color);
 }
 
 @mixin dictu-textarea-active {
-  background-color: var(--govnl-text-input-active-background-color);
-  border-color: var(--govnl-text-input-active-border-color);
-  color: var(--govnl-text-input-active-color);
+  background-color: var(--govnl-textarea-active-background-color);
+  border-color: var(--govnl-textarea-active-border-color);
+  color: var(--govnl-textarea-active-color);
 }
 
 @mixin dictu-textarea-focus {
-  background-color: var(--govnl-text-input-focus-background-color);
-  border-color: var(--govnl-text-input-focus-border-color);
-  color: var(--govnl-text-input-focus-color);
-  outline-color: var(--govnl-text-input-focus-outline-color);
+  background-color: var(--govnl-textarea-focus-background-color);
+  border-color: var(--govnl-textarea-focus-border-color);
+  color: var(--govnl-textarea-focus-color);
+  outline-color: var(--govnl-textarea-focus-outline-color);
 }
 
-@mixin dictu-text-input--error {
-  background-color: var(--govnl-text-input-error-background-color);
-  border: var(--govnl-textarea-error-border-width) solid var(--govnl-text-input-error-border-color);
-  color: var(--govnl-text-input-error-color);
+@mixin dictu-textarea--error {
+  background-color: var(--govnl-textarea-error-background-color);
+  border: var(--govnl-textarea-error-border-width) solid var(--govnl-textarea-error-border-color);
+  color: var(--govnl-textarea-error-color);
 }
 
-@mixin dictu-text-input--read-only {
-  background-color: var(--govnl-text-input-read-only-background-color);
-  border-color: var(--govnl-text-input-read-only-border-color);
-  color: var(--govnl-text-input-read-only-color);
+@mixin dictu-textarea--read-only {
+  background-color: var(--govnl-textarea-read-only-background-color);
+  border-color: var(--govnl-textarea-read-only-border-color);
+  color: var(--govnl-textarea-read-only-color);
 }
