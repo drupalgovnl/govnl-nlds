@@ -49,10 +49,20 @@
         "border-width": {
           "$type": "borderWidth",
           "$value": "{govnl.border.border-width.md}"
+        },
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.invalid.color}"
         }
-      }
-    },
-    "text-area": {
+      },
       "background-color": {
         "$type": "color",
         "$value": "{govnl.form-control.background-color}"
@@ -77,12 +87,16 @@
         "color": {
           "$type": "color",
           "$value": "{govnl.form-control.hover.color}"
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
         }
       },
       "focus": {
         "background-color": {
           "$type": "color",
-          "$value": "{govnl.form-control.focus.background-color}"
+          "$value": "{govnl.form-control.background-color}"
         },
         "border-color": {
           "$type": "color",
@@ -97,20 +111,6 @@
           "$value": "{govnl.form-control.focus.outline-color}"
         }
       },
-      "error": {
-        "background-color": {
-          "$type": "color",
-          "$value": "{govnl.form-control.invalid.background-color}"
-        },
-        "border-color": {
-          "$type": "color",
-          "$value": "{govnl.form-control.invalid.border-color}"
-        },
-        "color": {
-          "$type": "color",
-          "$value": "{govnl.form-control.invalid.color}"
-        }
-      },
       "read-only": {
         "background-color": {
           "$type": "color",
@@ -123,12 +123,38 @@
         "color": {
           "$type": "color",
           "$value": "{govnl.form-control.read-only.color}"
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
         }
       },
       "placeholder": {
         "color": {
           "$type": "color",
           "$value": "{govnl.form-control.placeholder.color}"
+        }
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.color}"
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "outline-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.focus.outline-color}"
         }
       }
     }
