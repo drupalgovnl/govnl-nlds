@@ -39,9 +39,9 @@ export default {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non malesuada magna. Etiam lobortis, mauris ut euismod mattis, eros erat blandit nibh, ut finibus libero orci et elit.',
     ];
 
-    TextArray.forEach(text => {
+    TextArray.forEach(innerHTML => {
       const paragraph = Paragraph({
-        text,
+        innerHTML,
       });
 
       content.push(paragraph);
