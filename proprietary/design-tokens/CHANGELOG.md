@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 2.15.0
+
+### Minor Changes
+
+- 549c9a0: Fixes colors for border of radio button
+
 ## 2.14.0
 
 ### Minor Changes
