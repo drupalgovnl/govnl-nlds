@@ -1,7 +1,7 @@
-export const Paragraph = ({ text, classNames = [] }) => {
+export const Paragraph = ({ innerHTML, classNames = [] }) => {
   const paragraph = document.createElement('p');
   paragraph.classList.add('dictu-paragraph', ...classNames);
-  paragraph.innerText = text;
+  paragraph.innerHTML = innerHTML;
 
   return paragraph;
 };

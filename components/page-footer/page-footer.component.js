@@ -47,7 +47,7 @@ export const PageFooter = ({ heading, text, columns, headingLevel = 2, className
 };
 
 const createParagraph = text => {
-  return Paragraph({ text, classNames: ['dictu-page-footer__text'] });
+  return Paragraph({ innerHTML: text, classNames: ['dictu-page-footer__text'] });
 };
 
 const createHeading = (text, level) => {
