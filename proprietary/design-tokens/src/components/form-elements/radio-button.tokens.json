@@ -5,6 +5,10 @@
         "$type": "sizing",
         "$value": "{govnl.dimension.size.300}"
       },
+      "dot-size": {
+        "$type": "sizing",
+        "$value": "{govnl.space.2xs}"
+      },
       "border-radius": {
         "$type": "borderRadius",
         "$value": "{govnl.border.border-radius.round}"
@@ -82,7 +86,11 @@
         },
         "border-color": {
           "$type": "color",
-          "$value": "transparant"
+          "$value": "{govnl.interaction.color}"
+        },
+        "dot-color": {
+          "$type": "color",
+          "$value": "{govnl.document.inverse.color}"
         },
         "color": {
           "$type": "color",
@@ -99,7 +107,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparant"
+            "$value": "{govnl.interaction.hover.color}"
           },
           "color": {
             "$type": "color",
@@ -108,6 +116,10 @@
           "border-width": {
             "$type": "borderWidth",
             "$value": "{govnl.border.border-width.md}"
+          },
+          "dot-color": {
+            "$type": "color",
+            "$value": "{govnl.document.inverse.color}"
           }
         },
         "active": {
@@ -117,7 +129,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparant"
+            "$value": "{govnl.interaction.active.color}"
           },
           "color": {
             "$type": "color",
@@ -126,6 +138,10 @@
           "border-width": {
             "$type": "borderWidth",
             "$value": "{govnl.border.border-width.md}"
+          },
+          "dot-color": {
+            "$type": "color",
+            "$value": "{govnl.document.inverse.color}"
           }
         },
         "focus": {
@@ -148,6 +164,10 @@
           "border-width": {
             "$type": "borderWidth",
             "$value": "{govnl.border.border-width.sm}"
+          },
+          "dot-color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.focus.color}"
           }
         }
       },

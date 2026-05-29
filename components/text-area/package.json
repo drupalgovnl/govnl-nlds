@@ -1,18 +1,18 @@
 {
-  "name": "@dictu/link",
-  "version": "2.5.0",
+  "name": "@dictu/textarea",
+  "version": "2.0.0",
   "author": "Dienst ICT Uitvoering",
-  "description": "Link CSS component.",
+  "description": "Textarea CSS component.",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system",
     "css",
-    "link"
+    "textarea"
   ],
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:drupalgovnl/govnl-nlds.git",
-    "directory": "components/link"
+    "directory": "components/textarea"
   },
   "files": [
     "src/",
@@ -25,9 +25,6 @@
   "publishConfig": {
     "access": "public",
     "provenance": true
-  },
-  "devDependencies": {
-    "@nl-design-system-candidate/link-css": "^2.0.0"
   },
   "scripts": {
     "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",

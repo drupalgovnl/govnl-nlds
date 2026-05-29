@@ -1,0 +1,67 @@
+{/* radio-button.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as RadioButtonStories from './radio-button.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={RadioButtonStories} title="Componenten/Form elements/Radio Button" />
+
+<Title>Radio Button</Title>
+
+<Subtitle>
+  De Input component wordt gebruikt één of meerdere opties van een set aan opties te kiezen.
+</Subtitle>
+
+<Canvas of={RadioButtonStories.DefaultRadioButton} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={RadioButtonStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Checkbox component
+
+Gebruik de Radio Button component voor een keuzemogelijkheid waarbij slechts één optie gekozen kan worden.
+
+## Wanneer gebruik je de Checkbox component niet
+
+Gebruik de Radio Button component niet wanneer de gebruiker uit een lijst met keuzes meerdere opties mag selecteren, of wanneer er slechts één keuze is, zoals bij het akkoord
+gaan met algemene voorwaarden. Hiervoor is het [Checkbox component](?path=/docs/componenten-form-elements-checkbox--docs) bedoelt.
+
+## Richtlijnen
+
+- Gebruik de Radio Button component altijd in combinatie met de [Label component](?path=/docs/componenten-form-elements-label--docs)
+- Radio buttons worden altijd gebruikt in een groep van radio buttons waarin slechts één radio button de checked status mag hebben. Gebruik radio buttons daarom altijd in een
+  [Fieldset component](?path=/docs/componenten-form-elements-fieldset--docs).
+
+## Voorbeelden
+
+### Radio Button
+
+<Canvas of={RadioButtonStories.DefaultRadioButton} />
+
+### Geselecteerde Radio Button
+
+<Canvas of={RadioButtonStories.CheckedRadioButton} />
+
+## Relevante WCAG succescriteria
+
+(Later toevoegen)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Radio Button component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).

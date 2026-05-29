@@ -16,7 +16,7 @@
     "components/form-elements/label.tokens",
     "components/form-elements/radio-button.tokens",
     "components/form-elements/select.tokens",
-    "components/form-elements/text-area.tokens",
+    "components/form-elements/textarea.tokens",
     "components/form-elements/text-input.tokens",
     "components/grid.tokens",
     "components/heading.tokens",
@@ -36,6 +36,8 @@
     "components/skip-link.tokens",
     "components/table.tokens",
     "components/timeline.tokens",
-    "components/video-player.tokens"
+    "components/video-player.tokens",
+    "components/blockqoute.tokens.old",
+    "components/blockquote.tokens"
   ]
 }
