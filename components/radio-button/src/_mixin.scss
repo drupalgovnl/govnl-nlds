@@ -16,6 +16,7 @@
   border-radius: var(--govnl-radio-button-border-radius);
   border-style: solid;
   border-width: var(--govnl-radio-button-unchecked-border-width);
+  cursor: pointer;
   inline-size: var(--govnl-radio-button-size);
   position: relative;
 }
