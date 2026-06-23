@@ -55,6 +55,7 @@
 
 @mixin dictu-timeline-element-button {
   --govnl-button-border-width: 0;
+  --govnl-button-justify-content: start;
 
   &.dictu-button {
     --govnl-button-border-width: 0;
@@ -62,7 +63,7 @@
 }
 
 @mixin dictu-timeline-element-heading-content {
-  align-items: center;
+  align-items: flex-start;
   display: inline-flex;
   gap: var(--govnl-timeline-content-column-gap);
   justify-content: start;
@@ -71,6 +72,7 @@
 @mixin dictu-timeline-element-heading {
   @include reset;
 
+  text-align: start;
   text-decoration: var(--govnl-timeline-heading-text-decoration);
 
   &:hover {
@@ -89,12 +91,12 @@
   position: absolute;
 }
 
-@mixin dictu-timeline-connector-start {
-  inset-block-start: 50%;
+@mixin dictu-timeline-connector-start($icon-center: 16px) {
+  inset-block-start: $icon-center;
 }
 
-@mixin dictu-timeline-connector-end {
-  block-size: 50%;
+@mixin dictu-timeline-connector-end($icon-center: 16px) {
+  block-size: $icon-center;
 }
 
 @mixin dictu-timeline-icon {
@@ -102,6 +104,7 @@
   block-size: var(--govnl-icon-size);
   color: var(--govnl-icon-color);
   display: flex;
+  flex-shrink: 0;
   inline-size: var(--govnl-space-lg);
   justify-content: center;
   z-index: 1;
@@ -153,7 +156,7 @@
     &:has(.dictu-timeline__sub-list:not([hidden])) {
       .dictu-timeline__sub-item:last-child {
         .dictu-timeline__element-heading-body::before {
-          @include dictu-timeline-connector-end;
+          @include dictu-timeline-connector-end(12px);
         }
 
         .dictu-timeline__element-content-wrapper::before {
