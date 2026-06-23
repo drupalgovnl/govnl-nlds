@@ -83,6 +83,10 @@
 
   .dictu-card__paragraph {
     @include mixin.dictu-card__paragraph-accent;
+
+    .dictu-link {
+      @include mixin.dictu-card__content-link-accent;
+    }
   }
 
   .dictu-card__metadata {
