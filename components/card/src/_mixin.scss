@@ -109,8 +109,8 @@
 
   &:focus-visible:not(:active) {
     /* Preserve the accessible focus combination (focus background + focus color). */
-    color: var(--govnl-focus-color);
-    text-decoration-color: var(--govnl-focus-color);
+    color: var(--govnl-card-accent-content-link-focus-color);
+    text-decoration-color: var(--govnl-card-accent-content-link-focus-color);
   }
 }
 
