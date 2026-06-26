@@ -41,11 +41,11 @@
   @include mixin.dictu-timeline-icon;
 }
 
-.dictu-timeline__icon--heading {
+.dictu-timeline__element-heading-body:has(.dictu-timeline__icon--heading) {
   @include mixin.dictu-timeline-heading-icon;
 }
 
-.dictu-timeline__icon--subheading {
+.dictu-timeline__element-heading-body:has(.dictu-timeline__icon--subheading) {
   @include mixin.dictu-timeline-subheading-icon;
 }
 
