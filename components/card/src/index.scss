@@ -23,6 +23,10 @@
   @include mixin.dictu-card__content;
 }
 
+.dictu-card__content .dictu-icon {
+  @include mixin.dictu-card__icon;
+}
+
 .dictu-card__metadata {
   @include mixin.dictu-card__metadata;
 }
@@ -87,6 +91,10 @@
 
   .dictu-card__metadata {
     @include mixin.dictu-card__metadata-accent;
+  }
+
+  .dictu-card__content .dictu-icon {
+    @include mixin.dictu-card__icon-accent;
   }
 
   &.dictu-card--full-card {
