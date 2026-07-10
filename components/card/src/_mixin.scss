@@ -127,6 +127,14 @@
   gap: var(--govnl-card-default-main-row-gap);
 }
 
+@mixin dictu-card__icon {
+  color: var(--govnl-card-default-icon-color);
+}
+
+@mixin dictu-card__icon-accent {
+  color: var(--govnl-card-accent-icon-color);
+}
+
 @mixin dictu-card__metadata {
   @include reset;
 
