@@ -714,6 +714,28 @@
             }
           }
         }
+      },
+      "horizontal": {
+        "main": {
+          "column-gap": {
+            "$type": "spacing",
+            "$value": "{govnl.space.lg}"
+          }
+        },
+        "image": {
+          "size": {
+            "$type": "dimension",
+            "$value": "125px"
+          }
+        },
+        "mobile": {
+          "image": {
+            "width": {
+              "$type": "dimension",
+              "$value": "48px"
+            }
+          }
+        }
       }
     }
   }
