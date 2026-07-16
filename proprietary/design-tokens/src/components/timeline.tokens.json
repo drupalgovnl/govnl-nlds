@@ -77,6 +77,14 @@
         "margin-inline-start": {
           "$type": "dimension",
           "$value": "15px"
+        },
+        "icon-center": {
+          "$type": "dimension",
+          "$value": "{govnl.space.sm}"
+        },
+        "sub-icon-center": {
+          "$type": "dimension",
+          "$value": "{govnl.space.xs}"
         }
       },
       "title": {
@@ -90,6 +98,10 @@
         }
       },
       "heading": {
+        "text-align": {
+          "$type": "other",
+          "$value": "start"
+        },
         "text-decoration": {
           "$type": "textDecoration",
           "$value": "none"
@@ -129,6 +141,16 @@
         "column-gap": {
           "$type": "dimension",
           "$value": "{govnl.gap-content.min}"
+        },
+        "align-items": {
+          "$type": "other",
+          "$value": "flex-start"
+        }
+      },
+      "button": {
+        "justify-content": {
+          "$type": "other",
+          "$value": "start"
         }
       },
       "border-radius": {

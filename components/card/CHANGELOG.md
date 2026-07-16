@@ -1,5 +1,23 @@
 # @dictu/card
 
+## 5.0.4
+
+### Patch Changes
+
+- 45fd290: Fix the card icon color during keyboard focus of a full-card link, so
+  it matches the focused link text for both default and accent cards.
+
+## 5.0.3
+
+### Patch Changes
+
+- a9f9669: Fixes the card icon rendering in the wrong color. The optional card
+  icon inherited `currentColor`, falling back to plain black instead of a
+  design-system color. New `card.default.icon.color` and
+  `card.accent.icon.color` tokens are added and applied, so the icon matches the
+  heading color of its variant (`heading.color` for the default card,
+  `card.accent.color` for the accent card).
+
 ## 5.0.2
 
 ### Patch Changes

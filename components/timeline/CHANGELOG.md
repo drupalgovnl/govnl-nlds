@@ -1,5 +1,13 @@
 # @dictu/timeline
 
+## 2.1.2
+
+### Patch Changes
+
+- 3935208: Fix timeline layout for wrapping titles: keep the item and sub-item
+  icons aligned with the connector line (and with each other) when a title wraps
+  onto multiple lines, and left-align wrapped titles instead of centring them.
+
 ## 2.1.1
 
 ### Patch Changes

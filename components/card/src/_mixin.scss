@@ -46,6 +46,7 @@
   border-color: var(--govnl-card-default-focus-border-color);
   color: var(--govnl-card-default-focus-color);
 
+  --govnl-card-default-icon-color: var(--govnl-card-default-focus-color);
   --govnl-card-default-metadata-subheading-color: var(--govnl-card-default-focus-color);
   --govnl-card-default-metadata-footer-color: var(--govnl-card-default-focus-color);
 }
@@ -81,6 +82,7 @@
   --govnl-card-accent-focus-border-color: var(--govnl-card-accent-focus-border-color);
   --govnl-card-accent-color: var(--govnl-card-accent-focus-color);
   --govnl-card-accent-heading-color: var(--govnl-card-accent-focus-color);
+  --govnl-card-accent-icon-color: var(--govnl-card-accent-focus-color);
   --govnl-card-accent-paragraph-color: var(--govnl-card-accent-focus-color);
   --govnl-card-accent-metadata-footer-color: var(--govnl-card-accent-focus-color);
   --govnl-card-accent-metadata-subheading-color: var(--govnl-card-accent-focus-color);
@@ -136,6 +138,14 @@
   flex-direction: column;
   flex-grow: 1;
   gap: var(--govnl-card-default-main-row-gap);
+}
+
+@mixin dictu-card__icon {
+  color: var(--govnl-card-default-icon-color);
+}
+
+@mixin dictu-card__icon-accent {
+  color: var(--govnl-card-accent-icon-color);
 }
 
 @mixin dictu-card__metadata {

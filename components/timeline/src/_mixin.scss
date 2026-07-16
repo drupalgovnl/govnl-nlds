@@ -55,6 +55,7 @@
 
 @mixin dictu-timeline-element-button {
   --govnl-button-border-width: 0;
+  --govnl-button-justify-content: var(--govnl-timeline-button-justify-content);
 
   &.dictu-button {
     --govnl-button-border-width: 0;
@@ -62,7 +63,7 @@
 }
 
 @mixin dictu-timeline-element-heading-content {
-  align-items: center;
+  align-items: var(--govnl-timeline-content-align-items);
   display: inline-flex;
   gap: var(--govnl-timeline-content-column-gap);
   justify-content: start;
@@ -71,6 +72,8 @@
 @mixin dictu-timeline-element-heading {
   @include reset;
 
+  line-height: var(--govnl-icon-size);
+  text-align: var(--govnl-timeline-heading-text-align);
   text-decoration: var(--govnl-timeline-heading-text-decoration);
 
   &:hover {
@@ -90,11 +93,11 @@
 }
 
 @mixin dictu-timeline-connector-start {
-  inset-block-start: 50%;
+  inset-block-start: var(--govnl-timeline-connector-icon-center);
 }
 
 @mixin dictu-timeline-connector-end {
-  block-size: 50%;
+  block-size: var(--govnl-timeline-connector-icon-center);
 }
 
 @mixin dictu-timeline-icon {
@@ -102,6 +105,7 @@
   block-size: var(--govnl-icon-size);
   color: var(--govnl-icon-color);
   display: flex;
+  flex-shrink: 0;
   inline-size: var(--govnl-space-lg);
   justify-content: center;
   z-index: 1;
@@ -153,6 +157,8 @@
     &:has(.dictu-timeline__sub-list:not([hidden])) {
       .dictu-timeline__sub-item:last-child {
         .dictu-timeline__element-heading-body::before {
+          --govnl-timeline-connector-icon-center: var(--govnl-timeline-connector-sub-icon-center);
+
           @include dictu-timeline-connector-end;
         }
 

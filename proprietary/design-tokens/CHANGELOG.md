@@ -1,5 +1,25 @@
 # @dictu/design-tokens
 
+## 2.17.0
+
+### Minor Changes
+
+- a9f9669: Fixes the card icon rendering in the wrong color. The optional card
+  icon inherited `currentColor`, falling back to plain black instead of a
+  design-system color. New `card.default.icon.color` and
+  `card.accent.icon.color` tokens are added and applied, so the icon matches the
+  heading color of its variant (`heading.color` for the default card,
+  `card.accent.color` for the accent card).
+
+## 2.16.0
+
+### Minor Changes
+
+- d4660a7: Add timeline design tokens for the connector icon-center and
+  sub-icon-center, heading text-align, content align-items, and button
+  justify-content, so the timeline component relies on tokens instead of
+  hardcoded values and mixin arguments.
+
 ## 2.15.0
 
 ### Minor Changes

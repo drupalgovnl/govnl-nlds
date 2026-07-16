@@ -85,6 +85,12 @@
             "$type": "color",
             "$value": "{govnl.document.subtle.color}"
           }
+        },
+        "icon": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.heading.color}"
+          }
         }
       },
       "heading": {
@@ -154,6 +160,12 @@
         }
       },
       "accent": {
+        "icon": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.card.accent.color}"
+          }
+        },
         "metadata-subheading": {
           "color": {
             "$type": "color",
