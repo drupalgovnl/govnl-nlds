@@ -18,13 +18,13 @@
           "$type": "borderWidth",
           "$value": "{govnl.border.border-width.sm}"
         },
+        "icon": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.lintblauw.500}"
+          }
+        },
         "metadata-top": {
-          "icon": {
-            "color": {
-              "$type": "color",
-              "$value": "{govnl.color.lintblauw.500}"
-            }
-          },
           "label": {
             "color": {
               "$type": "color",
