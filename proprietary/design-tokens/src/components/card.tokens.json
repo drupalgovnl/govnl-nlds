@@ -28,7 +28,7 @@
           "icon": {
             "color": {
               "$type": "color",
-              "$value": "{govnl.color.lintblauw.500}"
+              "$value": "#154273"
             }
           }
         },
@@ -36,13 +36,13 @@
           "icon": {
             "color": {
               "$type": "color",
-              "$value": "{govnl.color.grijs.700}"
+              "$value": "{govnl.document.subtle.color}"
             }
           },
           "label": {
             "color": {
               "$type": "color",
-              "$value": "{govnl.color.grijs.700}"
+              "$value": "{govnl.document.subtle.color}"
             }
           },
           "divider": {
