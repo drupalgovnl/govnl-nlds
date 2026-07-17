@@ -243,12 +243,6 @@
             "$type": "spacing",
             "$value": "{govnl.space.4xs}"
           }
-        },
-        "image": {
-          "border-radius": {
-            "$type": "borderRadius",
-            "$value": "{govnl.border.border-radius.sm}"
-          }
         }
       },
       "heading": {
@@ -309,10 +303,6 @@
         "text-decoration-line": {
           "$type": "textDecoration",
           "$value": "none"
-        },
-        "padding-block-start": {
-          "$type": "spacing",
-          "$value": "{govnl.space.3xs}"
         },
         "column-gap": {
           "$type": "spacing",
