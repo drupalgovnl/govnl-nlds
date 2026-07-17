@@ -1,5 +1,12 @@
 # @dictu/design-tokens
 
+## 2.17.1
+
+### Patch Changes
+
+- bb70021: Add focus color token for content links inside accent cards
+  (`govnl.card.accent.content-link.focus.color`).
+
 ## 2.17.0
 
 ### Minor Changes
