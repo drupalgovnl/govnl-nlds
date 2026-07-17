@@ -1,5 +1,12 @@
 # @dictu/card
 
+## 5.0.4
+
+### Patch Changes
+
+- 45fd290: Fix the card icon color during keyboard focus of a full-card link, so
+  it matches the focused link text for both default and accent cards.
+
 ## 5.0.3
 
 ### Patch Changes
