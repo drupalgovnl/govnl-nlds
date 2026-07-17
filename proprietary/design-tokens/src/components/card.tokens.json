@@ -310,14 +310,6 @@
           "$type": "textDecoration",
           "$value": "none"
         },
-        "column-gap": {
-          "$type": "spacing",
-          "$value": "{govnl.space.3xs}"
-        },
-        "item-column-gap": {
-          "$type": "spacing",
-          "$value": "{govnl.space.3xs}"
-        },
         "font-family": {
           "$type": "fontFamilies",
           "$value": "{govnl.document.font-family}"
@@ -349,6 +341,16 @@
             "$type": "dimension",
             "$value": "{govnl.border.border-width.sm}"
           }
+        }
+      },
+      "card-labels": {
+        "column-gap": {
+          "$type": "spacing",
+          "$value": "{govnl.space.3xs}"
+        },
+        "item-column-gap": {
+          "$type": "spacing",
+          "$value": "{govnl.space.3xs}"
         }
       },
       "description": {
