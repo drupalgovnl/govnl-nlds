@@ -243,6 +243,12 @@
             "$type": "spacing",
             "$value": "{govnl.space.4xs}"
           }
+        },
+        "icon": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.lintblauw.500}"
+          }
         }
       },
       "heading": {
