@@ -105,6 +105,17 @@
   color: var(--govnl-card-accent-paragraph-color);
 }
 
+@mixin dictu-card__content-link-accent {
+  color: var(--govnl-card-accent-color);
+  text-decoration-color: var(--govnl-card-accent-color);
+
+  &:focus-visible:not(:active) {
+    /* Preserve the accessible focus combination (focus background + focus color). */
+    color: var(--govnl-card-accent-content-link-focus-color);
+    text-decoration-color: var(--govnl-card-accent-content-link-focus-color);
+  }
+}
+
 @mixin dictu-card__metadata-accent {
   color: var(--govnl-card-accent-metadata-footer-color);
 }
