@@ -560,7 +560,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparent"
+            "$value": "#fff"
           },
           "color": {
             "$type": "color",
@@ -583,7 +583,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparent"
+            "$value": "#fff"
           },
           "color": {
             "$type": "color",
@@ -597,7 +597,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparent"
+            "$value": "#fff"
           },
           "color": {
             "$type": "color",
