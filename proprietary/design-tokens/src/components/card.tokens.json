@@ -28,11 +28,11 @@
           "icon": {
             "color": {
               "$type": "color",
-              "$value": "#154273"
+              "$value": "{govnl.color.lintblauw.500}"
             }
           }
         },
-        "subheading": {
+        "metadata-subheading": {
           "icon": {
             "color": {
               "$type": "color",
