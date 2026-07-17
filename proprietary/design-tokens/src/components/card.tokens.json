@@ -18,14 +18,14 @@
           "$type": "borderWidth",
           "$value": "{govnl.border.border-width.sm}"
         },
-        "icon": {
-          "color": {
-            "$type": "color",
-            "$value": "{govnl.color.lintblauw.500}"
-          }
-        },
         "metadata-top": {
           "label": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.color.lintblauw.500}"
+            }
+          },
+          "icon": {
             "color": {
               "$type": "color",
               "$value": "{govnl.color.lintblauw.500}"
@@ -36,13 +36,13 @@
           "icon": {
             "color": {
               "$type": "color",
-              "$value": "{govnl.document.subtle.color}"
+              "$value": "{govnl.color.grijs.700}"
             }
           },
           "label": {
             "color": {
               "$type": "color",
-              "$value": "{govnl.document.subtle.color}"
+              "$value": "{govnl.color.grijs.700}"
             }
           },
           "divider": {
@@ -235,7 +235,7 @@
           },
           "row-gap": {
             "$type": "spacing",
-            "$value": "{govnl.space.sm}"
+            "$value": "{govnl.space.xs}"
           }
         },
         "content": {
@@ -720,7 +720,7 @@
         },
         "mobile": {
           "image": {
-            "width": {
+            "inline-size": {
               "$type": "dimension",
               "$value": "48px"
             }
