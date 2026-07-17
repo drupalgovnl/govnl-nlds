@@ -730,6 +730,12 @@
             }
           }
         }
+      },
+      "metadata-subheading": {
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{govnl.document.line-height}"
+        }
       }
     }
   }
