@@ -43,6 +43,10 @@
             "color": {
               "$type": "color",
               "$value": "{govnl.document.subtle.color}"
+            },
+            "size": {
+              "$type": "dimension",
+              "$value": "{govnl.dimension.size.225}"
             }
           },
           "label": {
@@ -55,7 +59,27 @@
             "color": {
               "$type": "color",
               "$value": "{govnl.color.grijs.300}"
+            },
+            "block-size": {
+              "$type": "dimension",
+              "$value": "{govnl.space.sm}"
+            },
+            "inline-size": {
+              "$type": "dimension",
+              "$value": "{govnl.border.border-width.sm}"
             }
+          },
+          "column-gap": {
+            "$type": "spacing",
+            "$value": "{govnl.space.3xs}"
+          },
+          "item-column-gap": {
+            "$type": "spacing",
+            "$value": "{govnl.space.3xs}"
+          },
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": "{govnl.document.font-family}"
           }
         },
         "description": {
@@ -312,18 +336,6 @@
         }
       },
       "card-labels": {
-        "column-gap": {
-          "$type": "spacing",
-          "$value": "{govnl.space.3xs}"
-        },
-        "item-column-gap": {
-          "$type": "spacing",
-          "$value": "{govnl.space.3xs}"
-        },
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{govnl.document.font-family}"
-        },
         "font-size": {
           "$type": "fontSizes",
           "$value": "{govnl.document.font-size}"
@@ -335,22 +347,6 @@
         "line-height": {
           "$type": "lineHeights",
           "$value": "{govnl.document.line-height}"
-        },
-        "icon": {
-          "size": {
-            "$type": "dimension",
-            "$value": "{govnl.dimension.size.225}"
-          }
-        },
-        "divider": {
-          "block-size": {
-            "$type": "dimension",
-            "$value": "{govnl.space.sm}"
-          },
-          "inline-size": {
-            "$type": "dimension",
-            "$value": "{govnl.border.border-width.sm}"
-          }
         }
       },
       "description": {
