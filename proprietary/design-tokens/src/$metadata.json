@@ -38,6 +38,7 @@
     "components/timeline.tokens",
     "components/video-player.tokens",
     "components/blockqoute.tokens.old",
+    "components/filter.token",
     "components/blockquote.tokens"
   ]
 }
