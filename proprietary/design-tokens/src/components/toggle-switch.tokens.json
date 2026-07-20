@@ -95,12 +95,42 @@
           "font-size": {
             "$type": "fontSizes",
             "$value": "{govnl.typography.font-size.sm}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{nl.paragraph.color}"
           }
         }
       },
       "inline-size": {
         "$type": "dimension",
         "$value": "100%"
+      },
+      "focus-visible": {
+        "control": {
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.line.subtle.border-color}"
+          },
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.geel.500}"
+          }
+        },
+        "item": {
+          "icon": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.focus.color}"
+            }
+          }
+        },
+        "label": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.focus.color}"
+          }
+        }
       }
     }
   }
