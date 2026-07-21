@@ -707,6 +707,12 @@
               "$value": "{govnl.typography.font-size.sm}"
             }
           }
+        },
+        "heading": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.typography.font-size.lg}"
+          }
         }
       },
       "horizontal": {
@@ -724,9 +730,13 @@
         },
         "mobile": {
           "image": {
-            "inline-size": {
-              "$type": "dimension",
-              "$value": "48px"
+            "$type": "dimension",
+            "$value": "{govnl.dimension.size.800}"
+          },
+          "main": {
+            "column-gap": {
+              "$type": "spacing",
+              "$value": "{govnl.space.xs}"
             }
           }
         }
