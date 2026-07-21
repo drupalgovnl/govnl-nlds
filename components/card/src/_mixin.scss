@@ -46,6 +46,7 @@
   border-color: var(--govnl-card-default-focus-border-color);
   color: var(--govnl-card-default-focus-color);
 
+  --govnl-card-default-icon-color: var(--govnl-card-default-focus-color);
   --govnl-card-default-metadata-subheading-color: var(--govnl-card-default-focus-color);
   --govnl-card-default-metadata-footer-color: var(--govnl-card-default-focus-color);
 }
@@ -81,6 +82,7 @@
   --govnl-card-accent-focus-border-color: var(--govnl-card-accent-focus-border-color);
   --govnl-card-accent-color: var(--govnl-card-accent-focus-color);
   --govnl-card-accent-heading-color: var(--govnl-card-accent-focus-color);
+  --govnl-card-accent-icon-color: var(--govnl-card-accent-focus-color);
   --govnl-card-accent-paragraph-color: var(--govnl-card-accent-focus-color);
   --govnl-card-accent-metadata-footer-color: var(--govnl-card-accent-focus-color);
   --govnl-card-accent-metadata-subheading-color: var(--govnl-card-accent-focus-color);
@@ -101,6 +103,17 @@
 
 @mixin dictu-card__paragraph-accent {
   color: var(--govnl-card-accent-paragraph-color);
+}
+
+@mixin dictu-card__content-link-accent {
+  color: var(--govnl-card-accent-color);
+  text-decoration-color: var(--govnl-card-accent-color);
+
+  &:focus-visible:not(:active) {
+    /* Preserve the accessible focus combination (focus background + focus color). */
+    color: var(--govnl-card-accent-content-link-focus-color);
+    text-decoration-color: var(--govnl-card-accent-content-link-focus-color);
+  }
 }
 
 @mixin dictu-card__metadata-accent {

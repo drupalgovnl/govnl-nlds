@@ -10,6 +10,7 @@
     "components/card.tokens",
     "components/container.tokens",
     "components/figure.tokens",
+    "components/filter.token",
     "components/form-elements/checkbox.tokens",
     "components/form-elements/date-input.tokens",
     "components/form-elements/fieldset.tokens",

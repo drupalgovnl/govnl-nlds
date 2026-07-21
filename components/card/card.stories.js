@@ -65,18 +65,36 @@ export default {
       control: 'boolean',
       description: 'Maakt de hele kaart klikbaar als true',
     },
+    content_link: {
+      control: 'object',
+      description: 'Optionele link in de inhoud van de kaart ({ text, href, external })',
+    },
   },
   tags: ['wip'],
   render: Card,
   title: 'Componenten/Card',
 };
 
-export const DefaultCard = {};
+export const DefaultCard = {
+  args: {
+    content: 'Dit is een voorbeeld van de inhoud van de kaart met een',
+    content_link: {
+      text: 'link in de inhoud',
+      href: 'https://example.com',
+      external: true,
+    },
+  },
+};
 
 export const AccentCard = {
   args: {
-    content: 'Dit is een voorbeeld van de inhoud van de accent kaart.',
+    content: 'Dit is een voorbeeld van de inhoud van de accent kaart met een',
     variant: 'accent',
+    content_link: {
+      text: 'link in de inhoud',
+      href: 'https://example.com',
+      external: true,
+    },
   },
 };
 

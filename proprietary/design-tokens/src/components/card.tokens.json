@@ -19,24 +19,34 @@
           "$value": "{govnl.border.border-width.sm}"
         },
         "metadata-top": {
-          "icon": {
+          "label": {
             "color": {
               "$type": "color",
               "$value": "{govnl.color.lintblauw.500}"
             }
           },
-          "label": {
+          "icon": {
             "color": {
               "$type": "color",
               "$value": "{govnl.color.lintblauw.500}"
             }
           }
         },
-        "subheading": {
+        "metadata-subheading": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.subtle.color}"
+          }
+        },
+        "card-labels": {
           "icon": {
             "color": {
               "$type": "color",
               "$value": "{govnl.document.subtle.color}"
+            },
+            "size": {
+              "$type": "dimension",
+              "$value": "{govnl.dimension.size.225}"
             }
           },
           "label": {
@@ -49,7 +59,27 @@
             "color": {
               "$type": "color",
               "$value": "{govnl.color.grijs.300}"
+            },
+            "block-size": {
+              "$type": "dimension",
+              "$value": "{govnl.space.sm}"
+            },
+            "inline-size": {
+              "$type": "dimension",
+              "$value": "{govnl.border.border-width.sm}"
             }
+          },
+          "column-gap": {
+            "$type": "spacing",
+            "$value": "{govnl.space.3xs}"
+          },
+          "item-column-gap": {
+            "$type": "spacing",
+            "$value": "{govnl.space.3xs}"
+          },
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": "{govnl.document.font-family}"
           }
         },
         "description": {
@@ -235,7 +265,7 @@
           },
           "row-gap": {
             "$type": "spacing",
-            "$value": "{govnl.space.sm}"
+            "$value": "{govnl.space.xs}"
           }
         },
         "content": {
@@ -244,10 +274,10 @@
             "$value": "{govnl.space.4xs}"
           }
         },
-        "image": {
-          "border-radius": {
-            "$type": "borderRadius",
-            "$value": "{govnl.border.border-radius.sm}"
+        "icon": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.color.lintblauw.500}"
           }
         }
       },
@@ -305,27 +335,7 @@
           }
         }
       },
-      "metadata-subheading": {
-        "text-decoration-line": {
-          "$type": "textDecoration",
-          "$value": "none"
-        },
-        "padding-block-start": {
-          "$type": "spacing",
-          "$value": "{govnl.space.3xs}"
-        },
-        "column-gap": {
-          "$type": "spacing",
-          "$value": "{govnl.space.3xs}"
-        },
-        "item-column-gap": {
-          "$type": "spacing",
-          "$value": "{govnl.space.3xs}"
-        },
-        "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{govnl.document.font-family}"
-        },
+      "card-labels": {
         "font-size": {
           "$type": "fontSizes",
           "$value": "{govnl.document.font-size}"
@@ -337,22 +347,6 @@
         "line-height": {
           "$type": "lineHeights",
           "$value": "{govnl.document.line-height}"
-        },
-        "icon": {
-          "size": {
-            "$type": "dimension",
-            "$value": "{govnl.dimension.size.225}"
-          }
-        },
-        "divider": {
-          "block-size": {
-            "$type": "dimension",
-            "$value": "{govnl.space.sm}"
-          },
-          "inline-size": {
-            "$type": "dimension",
-            "$value": "{govnl.border.border-width.sm}"
-          }
         }
       },
       "description": {
@@ -480,7 +474,7 @@
         },
         "border-color": {
           "$type": "color",
-          "$value": "transparent"
+          "$value": "{govnl.document.inverse.color}"
         },
         "color": {
           "$type": "color",
@@ -500,7 +494,7 @@
             }
           }
         },
-        "subheading": {
+        "card-labels": {
           "icon": {
             "color": {
               "$type": "color",
@@ -566,7 +560,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparent"
+            "$value": "#fff"
           },
           "color": {
             "$type": "color",
@@ -589,7 +583,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparent"
+            "$value": "#fff"
           },
           "color": {
             "$type": "color",
@@ -603,7 +597,7 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "transparent"
+            "$value": "#fff"
           },
           "color": {
             "$type": "color",
@@ -623,7 +617,7 @@
               }
             }
           },
-          "subheading": {
+          "card-labels": {
             "icon": {
               "color": {
                 "$type": "color",
@@ -682,7 +676,7 @@
         }
       },
       "mobile": {
-        "metadata-subheading": {
+        "card-labels": {
           "font-size": {
             "$type": "fontSizes",
             "$value": "{govnl.typography.font-size.sm}"
@@ -713,6 +707,44 @@
               "$value": "{govnl.typography.font-size.sm}"
             }
           }
+        },
+        "heading": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.typography.font-size.lg}"
+          }
+        }
+      },
+      "horizontal": {
+        "main": {
+          "column-gap": {
+            "$type": "spacing",
+            "$value": "{govnl.space.lg}"
+          }
+        },
+        "image": {
+          "size": {
+            "$type": "dimension",
+            "$value": "125px"
+          }
+        },
+        "mobile": {
+          "image": {
+            "$type": "dimension",
+            "$value": "{govnl.dimension.size.800}"
+          },
+          "main": {
+            "column-gap": {
+              "$type": "spacing",
+              "$value": "{govnl.space.xs}"
+            }
+          }
+        }
+      },
+      "metadata-subheading": {
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{govnl.document.line-height}"
         }
       }
     }
