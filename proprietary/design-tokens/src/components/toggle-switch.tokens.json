@@ -18,28 +18,12 @@
           "$type": "borderRadius",
           "$value": "{govnl.border.border-radius.sm}"
         },
-        "block-size": {
-          "$type": "dimension",
-          "$value": "{govnl.dimension.pointer-target.min-size}"
-        },
-        "max-inline-size": {
-          "$type": "dimension",
-          "$value": "512px"
-        },
-        "inline-size": {
-          "$type": "dimension",
-          "$value": "100%"
-        },
         "background-color": {
           "$type": "color",
           "$value": "{govnl.color.grijs.100}"
         }
       },
       "item": {
-        "block-size": {
-          "$type": "dimension",
-          "$value": "{govnl.dimension.pointer-target.min-size}"
-        },
         "column-gap": {
           "$type": "spacing",
           "$value": "{govnl.space.3xs}"
@@ -100,11 +84,15 @@
             "$type": "color",
             "$value": "{nl.paragraph.color}"
           }
+        },
+        "padding-block-start": {
+          "$type": "spacing",
+          "$value": "{govnl.space.2xs}"
+        },
+        "padding-block-end": {
+          "$type": "spacing",
+          "$value": "{govnl.space.2xs}"
         }
-      },
-      "inline-size": {
-        "$type": "dimension",
-        "$value": "100%"
       },
       "focus-visible": {
         "control": {

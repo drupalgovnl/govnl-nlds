@@ -3,6 +3,7 @@
     "core/core.tokens",
     "common/common.tokens",
     "components/accordion.tokens",
+    "components/blockquote.tokens",
     "components/breadcrumb.tokens",
     "components/button.tokens",
     "components/link-as-button.tokens",
@@ -35,10 +36,8 @@
     "components/section.tokens",
     "components/skip-link.tokens",
     "components/table.tokens",
-    "components/timeline.tokens",
-    "components/video-player.tokens",
-    "components/blockqoute.tokens.old",
     "components/toggle-switch.tokens",
-    "components/blockquote.tokens"
+    "components/timeline.tokens",
+    "components/video-player.tokens"
   ]
 }
