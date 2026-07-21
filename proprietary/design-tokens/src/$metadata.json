@@ -36,8 +36,8 @@
     "components/section.tokens",
     "components/skip-link.tokens",
     "components/table.tokens",
-    "components/toggle-switch.tokens",
     "components/timeline.tokens",
+    "components/toggle-switch.tokens",
     "components/video-player.tokens"
   ]
 }
