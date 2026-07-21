@@ -116,7 +116,10 @@
   },
   "overrides": {
     "expr-eval-fork": "3.0.1",
-    "js-yaml": "3.15.0"
+    "js-yaml": "3.15.0",
+    "vitest": "4.1.10",
+    "@vitest/browser": "4.1.10",
+    "@vitest/browser-playwright": "4.1.10"
   },
   "size-limit": [
     {
