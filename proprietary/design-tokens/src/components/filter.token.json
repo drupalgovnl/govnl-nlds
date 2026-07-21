@@ -2,310 +2,306 @@
   "govnl": {
     "filter": {
       "background-color": {
-        "value": "{govnl.document.background-color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.document.background-color}"
       },
       "border-color": {
-        "value": "{govnl.line.subtle.border-color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{govnl.line.subtle.border-color}"
       },
       "border-width": {
-        "value": "{govnl.border.border-width.sm}",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "{govnl.border.border-width.sm}"
       },
       "border-radius": {
-        "value": "{govnl.border.border-radius.sm}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{govnl.border.border-radius.sm}"
       },
       "inline-size": {
-        "value": "300px",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "300px"
       },
       "padding-block-start": {
-        "value": "{govnl.space.2xs}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{govnl.space.2xs}"
       },
       "padding-block-end": {
-        "value": "{govnl.space.2xs}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{govnl.space.2xs}"
       },
       "padding-inline-start": {
-        "value": "{govnl.space.2xs}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{govnl.space.2xs}"
       },
       "padding-inline-end": {
-        "value": "{govnl.space.2xs}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{govnl.space.2xs}"
       },
       "title": {
         "padding-block-start": {
-          "value": "{govnl.space.2xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{govnl.space.2xs}"
         },
         "padding-inline-start": {
-          "value": "{govnl.space.2xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{govnl.space.2xs}"
         },
         "padding-inline-end": {
-          "value": "{govnl.space.2xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{govnl.space.2xs}"
         }
       },
       "chosen-filters": {
         "header": {
           "border-color": {
-            "value": "{govnl.line.subtle.border-color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{govnl.line.subtle.border-color}"
           },
           "border-width": {
-            "value": "{govnl.border.border-width.sm}",
-            "type": "borderWidth"
+            "$type": "borderWidth",
+            "$value": "{govnl.border.border-width.sm}"
           },
           "padding-block-start": {
-            "value": "{govnl.space.xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.xs}"
           },
           "padding-block-end": {
-            "value": "{govnl.space.xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.xs}"
           },
           "padding-inline-start": {
-            "value": "{govnl.space.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.sm}"
           },
           "padding-inline-end": {
-            "value": "{govnl.space.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.sm}"
           },
           "title": {
             "color": {
-              "value": "{govnl.interaction.color}",
-              "type": "color"
+              "$type": "color",
+              "$value": "{govnl.interaction.color}"
             },
             "font-family": {
-              "value": "{govnl.document.font-family}",
-              "type": "fontFamilies"
+              "$type": "fontFamilies",
+              "$value": "{govnl.document.font-family}"
             },
             "font-size": {
-              "value": "{govnl.document.font-size}",
-              "type": "fontSizes"
+              "$type": "fontSizes",
+              "$value": "{govnl.document.font-size}"
             },
             "font-weight": {
-              "value": "{govnl.document.strong.font-weight}",
-              "type": "fontWeights"
+              "$type": "fontWeights",
+              "$value": "{govnl.document.strong.font-weight}"
             },
             "line-height": {
-              "value": "{govnl.document.line-height}",
-              "type": "lineHeights"
+              "$type": "lineHeights",
+              "$value": "{govnl.document.line-height}"
             }
           }
         },
         "list": {
           "border-color": {
-            "value": "{govnl.line.subtle.border-color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{govnl.line.subtle.border-color}"
           },
           "border-width": {
-            "value": "{govnl.border.border-width.sm}",
-            "type": "borderWidth"
+            "$type": "borderWidth",
+            "$value": "{govnl.border.border-width.sm}"
           },
           "gap": {
-            "value": "{govnl.space.2xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.2xs}"
           },
           "padding-block-start": {
-            "value": "{govnl.space.md}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.md}"
           },
           "padding-block-end": {
-            "value": "{govnl.space.md}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.md}"
           },
           "padding-inline-start": {
-            "value": "{govnl.space.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.sm}"
           },
           "padding-inline-end": {
-            "value": "{govnl.space.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.sm}"
           }
         },
         "badge": {
-          "background-color": {
-            "value": "{govnl.color.hemelblauw.50}",
-            "type": "color"
-          },
           "border-color": {
-            "value": "transparent",
-            "type": "color"
+            "$type": "color",
+            "$value": "{govnl.interaction.color}"
           },
           "border-width": {
-            "value": "0px",
-            "type": "borderWidth"
+            "$type": "borderWidth",
+            "$value": "{govnl.border.border-width.sm}"
           },
           "border-radius": {
-            "value": "{govnl.border.border-radius.sm}",
-            "type": "borderRadius"
+            "$type": "borderRadius",
+            "$value": "{govnl.border.border-radius.round}"
           },
           "column-gap": {
-            "value": "{govnl.space.2xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.3xs}"
           },
           "padding-block-start": {
-            "value": "{govnl.space.4xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.3xs}"
           },
           "padding-block-end": {
-            "value": "{govnl.space.4xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.3xs}"
           },
           "padding-inline-start": {
-            "value": "{govnl.space.3xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.2xs}"
           },
           "padding-inline-end": {
-            "value": "{govnl.space.3xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.2xs}"
           },
           "color": {
-            "value": "{govnl.interaction.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{govnl.interaction.color}"
           },
           "font-family": {
-            "value": "{govnl.document.font-family}",
-            "type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{govnl.document.font-family}"
           },
           "font-size": {
-            "value": "{govnl.typography.font-size.sm}",
-            "type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{govnl.typography.font-size.sm}"
           },
           "font-weight": {
-            "value": "{govnl.document.font-weight}",
-            "type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{govnl.document.font-weight}"
           },
           "line-height": {
-            "value": "{govnl.document.line-height}",
-            "type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{govnl.document.line-height}"
           },
           "icon": {
             "color": {
-              "value": "{govnl.interaction.color}",
-              "type": "color"
+              "$type": "color",
+              "$value": "{govnl.interaction.color}"
             },
             "size": {
-              "value": "{govnl.dimension.size.300}",
-              "type": "sizing"
+              "$type": "sizing",
+              "$value": "{govnl.dimension.size.200}"
             }
           }
         }
       },
       "accordion": {
         "border-color": {
-          "value": "{govnl.line.subtle.border-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.line.subtle.border-color}"
         },
         "border-width": {
-          "value": "{govnl.border.border-width.sm}",
-          "type": "borderWidth"
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
         },
         "row-gap": {
-          "value": "{govnl.space.3xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{govnl.space.3xs}"
         }
       },
       "option-list": {
         "row-gap": {
-          "value": "{govnl.space.xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{govnl.space.xs}"
         },
         "inline-size": {
-          "value": "100%",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "100%"
         },
         "block-size": {
-          "value": "260px",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "260px"
         }
       },
       "option": {
         "color": {
-          "value": "{govnl.document.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{govnl.document.color}"
         },
         "count": {
           "column-gap": {
-            "value": "{govnl.space.3xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.3xs}"
           },
           "color": {
-            "value": "{govnl.document.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{govnl.document.color}"
           },
           "font-family": {
-            "value": "{govnl.document.font-family}",
-            "type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{govnl.document.font-family}"
           },
           "font-size": {
-            "value": "{govnl.typography.font-size.sm}",
-            "type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{govnl.typography.font-size.sm}"
           },
           "font-weight": {
-            "value": "{govnl.typography.font-weight.light}",
-            "type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{govnl.typography.font-weight.light}"
           },
           "line-height": {
-            "value": "{govnl.document.line-height}",
-            "type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{govnl.document.line-height}"
           }
         }
       },
       "mobile": {
         "inline-size": {
-          "value": "296px",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "296px"
         },
         "accordion": {
           "button": {
             "padding-inline-start": {
-              "value": "{govnl.space.3xs}",
-              "type": "spacing"
+              "$type": "spacing",
+              "$value": "{govnl.space.3xs}"
             },
             "padding-inline-end": {
-              "value": "{govnl.space.3xs}",
-              "type": "spacing"
+              "$type": "spacing",
+              "$value": "{govnl.space.3xs}"
             }
           }
         }
       },
       "show-more": {
         "padding-block-start": {
-          "value": "{govnl.space.2xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{govnl.space.2xs}"
         },
         "padding-block-end": {
-          "value": "{govnl.space.2xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{govnl.space.2xs}"
         },
         "button": {
           "padding-block-start": {
-            "value": "{govnl.space.2xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.2xs}"
           },
           "padding-block-end": {
-            "value": "{govnl.space.2xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.2xs}"
           },
           "padding-inline-start": {
-            "value": "{govnl.space.xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.xs}"
           },
           "padding-inline-end": {
-            "value": "{govnl.space.xs}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{govnl.space.xs}"
           },
           "inline-size": {
-            "value": "100%",
-            "type": "sizing"
+            "$type": "sizing",
+            "$value": "100%"
           }
         }
       }
