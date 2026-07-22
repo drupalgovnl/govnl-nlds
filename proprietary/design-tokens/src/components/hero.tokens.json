@@ -58,7 +58,7 @@
         },
         "font-size": {
           "$type": "fontSizes",
-          "$value": "{nl.heading.level-3.font-size}"
+          "$value": "{nl.heading.level-2.font-size}"
         }
       },
       "subheading": {
@@ -76,7 +76,7 @@
         },
         "font-size": {
           "$type": "fontSizes",
-          "$value": "{govnl.document.font-size}"
+          "$value": "{govnl.typography.font-size.lg}"
         }
       }
     }
