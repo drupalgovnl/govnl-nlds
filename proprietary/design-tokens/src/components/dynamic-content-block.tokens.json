@@ -131,6 +131,18 @@
             "padding-inline-end": {
               "$type": "spacing",
               "$value": "{govnl.space.2xs}"
+            },
+            "last-item": {
+              "border-width-bottom": {
+                "$type": "borderWidth",
+                "$value": "0"
+              }
+            },
+            "more-items": {
+              "border-width-top": {
+                "$type": "borderWidth",
+                "$value": "{govnl.border.border-width.sm}"
+              }
             }
           },
           "more-items": {
@@ -141,6 +153,10 @@
             "padding-block-end": {
               "$type": "spacing",
               "$value": "{govnl.space.xs}"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "{govnl.line.subtle.border-color}"
             }
           },
           "layout": {
