@@ -98,8 +98,8 @@
         "$value": "{govnl.form-control.font-size}"
       },
       "color": {
-          "$type": "color",
-          "$value": "{govnl.form-control.color}"
+        "$type": "color",
+        "$value": "{govnl.form-control.color}"
       },
       "column-gap": {
         "$type": "dimension",

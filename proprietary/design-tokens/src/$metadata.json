@@ -3,6 +3,7 @@
     "core/core.tokens",
     "common/common.tokens",
     "components/accordion.tokens",
+    "components/blockquote.tokens",
     "components/breadcrumb.tokens",
     "components/button.tokens",
     "components/link-as-button.tokens",
@@ -10,6 +11,7 @@
     "components/container.tokens",
     "components/dynamic-content-block.tokens",
     "components/figure.tokens",
+    "components/filter.token",
     "components/form-elements/checkbox.tokens",
     "components/form-elements/date-input.tokens",
     "components/form-elements/fieldset.tokens",
@@ -37,7 +39,7 @@
     "components/skip-link.tokens",
     "components/table.tokens",
     "components/timeline.tokens",
-    "components/video-player.tokens",
-    "components/blockquote.tokens"
+    "components/toggle-switch.tokens",
+    "components/video-player.tokens"
   ]
 }
