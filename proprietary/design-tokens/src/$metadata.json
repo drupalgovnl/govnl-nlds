@@ -8,6 +8,7 @@
     "components/link-as-button.tokens",
     "components/card.tokens",
     "components/container.tokens",
+    "components/dynamic-content-block.tokens",
     "components/figure.tokens",
     "components/form-elements/checkbox.tokens",
     "components/form-elements/date-input.tokens",
@@ -37,7 +38,6 @@
     "components/table.tokens",
     "components/timeline.tokens",
     "components/video-player.tokens",
-    "components/blockqoute.tokens.old",
     "components/blockquote.tokens"
   ]
 }
