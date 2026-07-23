@@ -76,7 +76,7 @@
               "$type": "spacing",
               "$value": "{govnl.space.3xs}"
             },
-            "padding-block-bottom": {
+            "padding-block-end": {
               "$type": "spacing",
               "$value": "{govnl.space.3xs}"
             },
