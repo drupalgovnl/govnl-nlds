@@ -1,4 +1,5 @@
 import readme from './README.md?raw';
+import '@dictu/icon/dist/index.css';
 import './dist/index.css';
 import { Link } from './link.component';
 

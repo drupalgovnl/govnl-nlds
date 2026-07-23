@@ -26,6 +26,9 @@
     "access": "public",
     "provenance": true
   },
+  "dependencies": {
+    "@dictu/icon": "^2.2.0"
+  },
   "devDependencies": {
     "@nl-design-system-candidate/link-css": "^2.0.0"
   },
