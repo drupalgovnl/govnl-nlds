@@ -103,7 +103,19 @@
                 "$type": "borderWidth",
                 "$value": "0"
               },
-              "border-radius": {
+              "border-radius-top-right": {
+                "$type": "borderRadius",
+                "$value": "0"
+              },
+              "border-radius-top-left": {
+                "$type": "borderRadius",
+                "$value": "0"
+              },
+              "border-radius-bottom-left": {
+                "$type": "borderRadius",
+                "$value": "0"
+              },
+              "border-radius-bottom-right": {
                 "$type": "borderRadius",
                 "$value": "0"
               }
