@@ -10,35 +10,11 @@
           "$type": "color",
           "$value": "{govnl.line.subtle.border-color}"
         },
-        "border-radius-top-left": {
+        "border-radius": {
           "$type": "borderRadius",
           "$value": "{govnl.border.border-radius.sm}"
         },
-        "border-radius-top-right": {
-          "$type": "borderRadius",
-          "$value": "{govnl.border.border-radius.sm}"
-        },
-        "border-radius-bottom-right": {
-          "$type": "borderRadius",
-          "$value": "{govnl.border.border-radius.sm}"
-        },
-        "border-radius-bottom-left": {
-          "$type": "borderRadius",
-          "$value": "{govnl.border.border-radius.sm}"
-        },
-        "border-width-top": {
-          "$type": "borderWidth",
-          "$value": "{govnl.border.border-width.sm}"
-        },
-        "border-width-left": {
-          "$type": "borderWidth",
-          "$value": "{govnl.border.border-width.sm}"
-        },
-        "border-width-right": {
-          "$type": "borderWidth",
-          "$value": "{govnl.border.border-width.sm}"
-        },
-        "border-width-bottom": {
+        "border-width": {
           "$type": "borderWidth",
           "$value": "{govnl.border.border-width.sm}"
         },
@@ -303,6 +279,38 @@
             "$type": "color",
             "$value": "{govnl.color.lintblauw.500}"
           }
+        },
+        "border-width-top": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "border-width-left": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "border-width-right": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "border-width-bottom": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "border-radius-top-left": {
+          "$type": "borderRadius",
+          "$value": "{govnl.border.border-radius.sm}"
+        },
+        "border-radius-top-right": {
+          "$type": "borderRadius",
+          "$value": "{govnl.border.border-radius.sm}"
+        },
+        "border-radius-bottom-right": {
+          "$type": "borderRadius",
+          "$value": "{govnl.border.border-radius.sm}"
+        },
+        "border-radius-bottom-left": {
+          "$type": "borderRadius",
+          "$value": "{govnl.border.border-radius.sm}"
         }
       },
       "heading": {
