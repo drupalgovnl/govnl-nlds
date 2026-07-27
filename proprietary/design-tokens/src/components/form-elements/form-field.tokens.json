@@ -34,7 +34,7 @@
       "icon": {
         "size": {
           "$type": "sizing",
-          "$value": "{govnl.icon.size}"
+          "$value": "{govnl.language-switcher.icon.size.icon.size}"
         },
         "color": {
           "$type": "color",

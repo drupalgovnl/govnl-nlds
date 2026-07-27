@@ -7,7 +7,7 @@
       },
       "size": {
         "$type": "sizing",
-        "$value": "1.5em"
+        "$value": "1.5rem"
       }
     }
   }
