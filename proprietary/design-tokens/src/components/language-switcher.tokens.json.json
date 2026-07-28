@@ -3,11 +3,11 @@
     "language-switcher": {
       "padding-inline-start": {
         "$type": "spacing",
-        "$value": "0"
+        "$value": "{govnl.space.2xs}"
       },
       "padding-inline-end": {
         "$type": "spacing",
-        "$value": "0"
+        "$value": "{govnl.space.2xs}"
       },
       "icon-start": {
         "size": {
@@ -114,7 +114,7 @@
           "item": {
             "background-color": {
               "$type": "color",
-              "$value": "{govnl.color.grijs.100}"
+              "$value": "{govnl.form-control.hover.background-color}"
             }
           }
         },
@@ -135,6 +135,32 @@
         "color": {
           "$type": "color",
           "$value": "{nl.paragraph.color}"
+        }
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.select.hover.border-color}"
+        }
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.form-control.hover.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{govnl.select.hover.border-color}"
+        }
+      },
+      "focus-visible": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.focus.background-color}"
         }
       }
     }
