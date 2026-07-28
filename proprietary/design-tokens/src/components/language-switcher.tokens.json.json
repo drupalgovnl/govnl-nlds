@@ -164,7 +164,7 @@
         },
         "border-color": {
           "$type": "color",
-          "$value": "{govnl.select.hover.border-color}"
+          "$value": "{govnl.form-control.active.border-color}"
         },
         "icon": {
           "color": {
