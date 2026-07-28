@@ -92,7 +92,7 @@
         },
         "border-color": {
           "$type": "color",
-          "$value": "{govnl.line.subtle.border-color}"
+          "$value": "{govnl.form-control.active.border-color}"
         },
         "item": {
           "label": {
