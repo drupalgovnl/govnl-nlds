@@ -194,6 +194,10 @@
           "$type": "color",
           "$value": "{govnl.interaction.color}"
         }
+      },
+      "background-color": {
+        "$type": "color",
+        "$value": "{govnl.form-control.background-color}"
       }
     }
   }
