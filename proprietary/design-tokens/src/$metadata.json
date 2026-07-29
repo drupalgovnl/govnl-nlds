@@ -40,6 +40,7 @@
     "components/table.tokens",
     "components/timeline.tokens",
     "components/toggle-switch.tokens",
+    "components/language-switcher.tokens",
     "components/video-player.tokens"
   ]
 }
