@@ -102,7 +102,7 @@
         },
         "border-color": {
           "$type": "color",
-          "$value": "{govnl.form-control.active.border-color}"
+          "$value": "{govnl.line.subtle.border-color}"
         },
         "item": {
           "label": {
@@ -162,10 +162,6 @@
           "$type": "color",
           "$value": "{govnl.form-control.hover.background-color}"
         },
-        "border-color": {
-          "$type": "color",
-          "$value": "{govnl.select.hover.border-color}"
-        },
         "icon-end": {
           "color": {
             "$type": "color",
@@ -174,14 +170,6 @@
         }
       },
       "active": {
-        "background-color": {
-          "$type": "color",
-          "$value": "{govnl.form-control.hover.background-color}"
-        },
-        "border-color": {
-          "$type": "color",
-          "$value": "{govnl.form-control.active.border-color}"
-        },
         "icon-end": {
           "color": {
             "$type": "color",
