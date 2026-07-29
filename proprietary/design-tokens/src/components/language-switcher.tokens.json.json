@@ -16,20 +16,28 @@
       "icon-start": {
         "size": {
           "$type": "dimension",
-          "$value": "1.5rem"
+          "$value": "1.125rem"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.document.subtle.color}"
         }
       },
       "icon-end": {
         "size": {
           "$type": "dimension",
           "$value": "1.125rem"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.interaction.color}"
         }
       },
       "selectlist": {
         "first-item": {
           "padding-inline-start": {
             "$type": "spacing",
-            "$value": "{govnl.space.2xs}"
+            "$value": "{govnl.space.3xs}"
           },
           "padding-inline-end": {
             "$type": "spacing",
@@ -45,15 +53,9 @@
           }
         },
         "item": {
-          "icon": {
-            "size": {
-              "$type": "dimension",
-              "$value": "1rem"
-            }
-          },
           "padding-inline-start": {
             "$type": "spacing",
-            "$value": "{govnl.space.xs}"
+            "$value": "{govnl.space.3xs}"
           },
           "padding-inline-end": {
             "$type": "spacing",
@@ -69,7 +71,7 @@
           },
           "column-gap": {
             "$type": "spacing",
-            "$value": "{govnl.space.2xs}"
+            "$value": "{govnl.space.3xs}"
           }
         },
         "border-radius": {
@@ -104,15 +106,25 @@
         },
         "item": {
           "label": {
-            "$type": "fontSizes",
-            "$value": "{govnl.typography.font-size.sm}"
-          },
+            "font-size": {
+              "$type": "fontSizes",
+              "$value": "{govnl.typography.font-size.sm}"
+            }
+          }
+        },
+        "first-item": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.subtle.color}"
+          }
+        },
+        "label": {
           "color": {
             "$type": "color",
             "$value": "{nl.paragraph.color}"
           }
         },
-        "first-item": {
+        "label-second": {
           "color": {
             "$type": "color",
             "$value": "{govnl.document.subtle.color}"
@@ -154,7 +166,7 @@
           "$type": "color",
           "$value": "{govnl.select.hover.border-color}"
         },
-        "icon": {
+        "icon-end": {
           "color": {
             "$type": "color",
             "$value": "{govnl.interaction.hover.color}"
@@ -170,7 +182,7 @@
           "$type": "color",
           "$value": "{govnl.form-control.active.border-color}"
         },
-        "icon": {
+        "icon-end": {
           "color": {
             "$type": "color",
             "$value": "{govnl.interaction.active.color}"
@@ -186,21 +198,17 @@
           "$type": "color",
           "$value": "{govnl.form-control.focus.color}"
         },
-        "icon": {
+        "icon-end": {
           "color": {
             "$type": "color",
             "$value": "{govnl.form-control.focus.color}"
           }
-        }
-      },
-      "icon": {
-        "color": {
-          "$type": "color",
-          "$value": "{govnl.interaction.color}"
         },
-        "border-radius": {
-          "$type": "borderRadius",
-          "$value": "{govnl.border.border-radius.round}"
+        "icon-start": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.form-control.focus.color}"
+          }
         }
       },
       "background-color": {
