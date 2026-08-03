@@ -24,6 +24,7 @@ export const Link = ({
     });
 
     link.classList.add(
+      'dictu-link--with-icon',
       iconPosition === 'before' ? 'dictu-link--with-icon-before' : 'dictu-link--with-icon-after'
     );
     link.insertAdjacentElement(iconPosition === 'before' ? 'afterbegin' : 'beforeend', linkIcon);

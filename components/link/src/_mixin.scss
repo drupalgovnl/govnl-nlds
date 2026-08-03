@@ -29,6 +29,12 @@
   @include mixin.nl-link--inline-box;
 }
 
+@mixin dictu-link--with-icon {
+  .dictu-link__icon {
+    margin-inline-start: var(--govnl-link-row-gap);
+  }
+}
+
 @mixin dictu-link--with-icon-after {
   .dictu-link__icon {
     margin-inline-start: var(--govnl-link-row-gap);
@@ -37,7 +43,7 @@
 
 @mixin dictu-link--with-icon-before {
   .dictu-link__icon {
-    margin-inline-end: var(--govnl-link-row-gap);
+    margin-inline: 0 var(--govnl-link-row-gap);
   }
 }
 
