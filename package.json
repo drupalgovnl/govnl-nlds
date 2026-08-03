@@ -26,7 +26,7 @@
     "./packages/storybook"
   ],
   "devDependencies": {
-    "@changesets/cli": "^2.29.4",
+    "@changesets/cli": "^2.31.1",
     "@eslint/js": "^9.29.0",
     "@size-limit/preset-small-lib": "^11.1.6",
     "@types/node": "^22.9.3",
@@ -73,7 +73,7 @@
     "size": "size-limit",
     "size:analyze": "size-limit --json",
     "start": "http-server packages/storybook/dist/",
-    "storybook": "npm-run-all --parallel watch:storybook watch:style-dictionary watch:components",
+    "storybook": "npm-run-all --parallel watch:storybook watch:style-dictionary watch:components ",
     "test": "npm --workspace ./packages/storybook run test",
     "test:quality": "npm run lint && npm run security:audit && npm run size",
     "test:visual": "npm --workspace ./packages/storybook run test:visual",
@@ -116,7 +116,7 @@
   },
   "overrides": {
     "expr-eval-fork": "3.0.1",
-    "js-yaml": "3.14.2"
+    "js-yaml": "5.2.3"
   },
   "size-limit": [
     {

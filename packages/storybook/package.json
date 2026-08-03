@@ -28,7 +28,7 @@
     "dist/"
   ],
   "devDependencies": {
-    "@babel/core": "7.27.4",
+    "@babel/core": "^8.0.1",
     "@playwright/test": "^1.49.0",
     "@storybook/addon-a11y": "^10.1",
     "@storybook/addon-docs": "^10.1",
