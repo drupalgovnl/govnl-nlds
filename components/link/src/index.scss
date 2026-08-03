@@ -31,6 +31,14 @@
   @include mixin.dictu-link--with-icon;
 }
 
+.dictu-link--with-icon-after {
+  @include mixin.dictu-link--with-icon-after;
+}
+
+.dictu-link--with-icon-before {
+  @include mixin.dictu-link--with-icon-before;
+}
+
 .dictu-link__icon {
   @include mixin.dictu-link__icon;
 }

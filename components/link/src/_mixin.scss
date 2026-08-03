@@ -30,11 +30,25 @@
 }
 
 @mixin dictu-link--with-icon {
-  align-items: center;
-  display: inline-flex;
-  gap: var(--govnl-link-row-gap);
+  .dictu-link__icon {
+    margin-inline-start: var(--govnl-link-row-gap);
+  }
+}
+
+@mixin dictu-link--with-icon-after {
+  .dictu-link__icon {
+    margin-inline-start: var(--govnl-link-row-gap);
+  }
+}
+
+@mixin dictu-link--with-icon-before {
+  .dictu-link__icon {
+    margin-inline: 0 var(--govnl-link-row-gap);
+  }
 }
 
 @mixin dictu-link__icon {
   --govnl-icon-size: var(--govnl-link-icon-size);
+
+  vertical-align: middle;
 }
