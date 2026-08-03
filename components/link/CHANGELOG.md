@@ -1,5 +1,13 @@
 # @dictu/link
 
+## 2.5.1
+
+### Patch Changes
+
+- e7bca0e: 40c076d: Correctly render icons in links and improve icon position
+- Updated dependencies [e7bca0e]
+  - @dictu/icon@2.2.1
+
 ## 2.5.0
 
 ### Minor Changes
