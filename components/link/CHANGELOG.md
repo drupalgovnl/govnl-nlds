@@ -1,5 +1,12 @@
 # @dictu/link
 
+## 2.5.1
+
+### Patch Changes
+
+- 40c076d: Fixed link icon layout for wrapping text, added `dictu-link--with-icon-before`
+  and `dictu-link--with-icon-after` modifiers
+
 ## 2.5.0
 
 ### Minor Changes
