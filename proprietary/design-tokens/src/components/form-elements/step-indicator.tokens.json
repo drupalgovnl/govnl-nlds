@@ -247,6 +247,22 @@
             "line-height": {
               "$type": "lineHeights",
               "$value": "100%"
+            },
+            "icon": {
+              "size": {
+                "$type": "dimension",
+                "$value": "{govnl.dimension.size.200}"
+              }
+            },
+            "column-gap": {
+              "$type": "spacing",
+              "$value": "{govnl.space.3xs}"
+            }
+          },
+          "icon": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.interaction.color}"
             }
           }
         },
