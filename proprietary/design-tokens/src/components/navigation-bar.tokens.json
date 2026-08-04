@@ -28,12 +28,12 @@
       "icon": {
         "color": {
           "$type": "color",
-          "$value": "{govnl.brand.primary-1.500}"
+          "$value": "{govnl.brand.primary.500}"
         },
         "active": {
           "color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.brand.primary.500}"
           }
         },
         "size": {
@@ -45,7 +45,7 @@
         "active": {
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.brand.primary.500}"
           },
           "color": {
             "$type": "color",
@@ -62,16 +62,16 @@
         },
         "color": {
           "$type": "color",
-          "$value": "{govnl.brand.primary-1.500}"
+          "$value": "{govnl.brand.primary.500}"
         },
         "hover": {
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.50}"
+            "$value": "{govnl.brand.primary.50}"
           },
           "color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.brand.primary.500}"
           },
           "border-color": {
             "$type": "color",
@@ -115,11 +115,11 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{govnl.brand.primary-1.500}"
+        "$value": "{govnl.brand.primary.500}"
       },
       "border-color": {
         "$type": "color",
-        "$value": "{govnl.brand.primary-1.400}"
+        "$value": "{govnl.brand.primary.400}"
       },
       "search": {
         "padding-block": {
@@ -146,7 +146,7 @@
         },
         "color": {
           "$type": "color",
-          "$value": "{govnl.brand.primary-1.500}"
+          "$value": "{govnl.brand.primary.500}"
         },
         "background-color": {
           "$type": "color",
@@ -203,7 +203,7 @@
           },
           "color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.brand.primary.500}"
           },
           "column-gap": {
             "$type": "spacing",
