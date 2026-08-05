@@ -1,6 +1,6 @@
 {
   "name": "@dictu/link",
-  "version": "2.5.1",
+  "version": "2.5.2",
   "author": "Dienst ICT Uitvoering",
   "description": "Link CSS component.",
   "license": "EUPL-1.2",
@@ -27,7 +27,7 @@
     "provenance": true
   },
   "dependencies": {
-    "@dictu/icon": "^2.2.1"
+    "@dictu/icon": "^2.2.2"
   },
   "devDependencies": {
     "@nl-design-system-candidate/link-css": "^2.0.0"
