@@ -1,5 +1,11 @@
 # @dictu/icon
 
+## 2.2.2
+
+### Patch Changes
+
+- 37d446f: Add SVG hardening
+
 ## 2.2.1
 
 ### Patch Changes
