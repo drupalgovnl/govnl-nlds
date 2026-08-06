@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 2.18.0
+
+### Minor Changes
+
+- 822c136: Minor updates to a number of tokens to match design
+
 ## 2.17.1
 
 ### Patch Changes
