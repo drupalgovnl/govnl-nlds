@@ -59,32 +59,6 @@
           "$value": "{govnl.color.groen.500}"
         }
       },
-      "tertairy": {
-        "50": {
-          "$type": "color",
-          "$value": "{govnl.color.rood.50}"
-        },
-        "100": {
-          "$type": "color",
-          "$value": "{govnl.color.rood.100}"
-        },
-        "200": {
-          "$type": "color",
-          "$value": "{govnl.color.rood.200}"
-        },
-        "300": {
-          "$type": "color",
-          "$value": "{govnl.color.rood.300}"
-        },
-        "400": {
-          "$type": "color",
-          "$value": "{govnl.color.rood.400}"
-        },
-        "500": {
-          "$type": "color",
-          "$value": "{govnl.color.rood.500}"
-        }
-      },
       "accent-1": {
         "color": {
           "$type": "color",
