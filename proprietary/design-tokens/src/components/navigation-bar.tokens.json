@@ -209,6 +209,14 @@
             "$type": "spacing",
             "$value": "{govnl.space.2xs}"
           },
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": "{govnl.document.font-family}"
+          },
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.document.font-size}"
+          },
           "padding-block": {
             "$type": "spacing",
             "$value": "{govnl.space.sm}"
