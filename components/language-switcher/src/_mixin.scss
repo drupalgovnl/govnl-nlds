@@ -1,0 +1,31 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin dictu-language-switcher {
+  background-color: var(--govnl-language-switcher-background-color);
+  gap: var(--govnl-language-switcher-column-gap);
+  padding-inline: var(--govnl-language-switcher-padding-inline-start) var(--govnl-language-switcher-padding-inline-end);
+}
+
+@mixin dictu-language-switcher-active {
+  .dictu-language-switcher__icon-after {
+    color: var(--govnl-language-switcher-active-icon-end-color);
+  }
+}
+
+@mixin dictu-language-switcher-focus-visible {
+  background-color: var(--govnl-language-switcher-focus-visible-background-color);
+  color: var(--govnl-language-switcher-focus-visible-color);
+}
+
+@mixin dictu-language-switcher__icon-before {
+  --govnl-icon-size: var(--govnl-language-switcher-icon-start-size);
+
+  /*
+   * Optical alignment for 1em icons next to text;
+   * a small baseline offset matches common icon-font practice for em-sized glyphs.
+   */
+  vertical-align: -0.125em;
+}

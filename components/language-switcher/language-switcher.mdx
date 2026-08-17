@@ -1,0 +1,24 @@
+{/* language-switcher.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as LanguageSwitcherStories from './language-switcher.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={LanguageSwitcherStories} title="Componenten/Language Switcher" />
+
+<Title>Language Switcher</Title>
+
+<Subtitle>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel tempor est, vel elementum
+  mauris. Vestibulum posuere sem non turpis viverra, eget suscipit sem molestie.
+</Subtitle>
+
+<Canvas of={LanguageSwitcherStories.DefaultLanguageSwitcher} sourceState="none" />

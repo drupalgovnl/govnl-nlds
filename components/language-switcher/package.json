@@ -1,0 +1,40 @@
+{
+  "name": "@dictu/language-switcher",
+  "version": "1.0.0",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Language Switcher CSS component.",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system",
+    "css",
+    "language switcher"
+  ],
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "components/language-switcher"
+  },
+  "files": [
+    "src/",
+    "dist/",
+    "*.md"
+  ],
+  "exports": {
+    "./dist/*": "./dist/*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "dependencies": {
+    "@dictu/icon": "^2.2.2"
+  },
+  "devDependencies": {
+    "@dictu/utility-focus-ring": "^2.0.0"
+  },
+  "scripts": {
+    "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
+    "clean": "rimraf ./dist/"
+  }
+}
