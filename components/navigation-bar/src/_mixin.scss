@@ -141,7 +141,8 @@
   color: var(--govnl-nav-bar-submenu-toggler-color);
   column-gap: calc(var(--govnl-nav-bar-submenu-toggler-column-gap));
   display: flex;
-  font-size: inherit; /* @TODO: add --govnl-nav-bar-submenu-toggler-font-size when it is added. */
+  font-family: var(--govnl-nav-bar-submenu-toggler-font-family);
+  font-size: var(--govnl-nav-bar-submenu-toggler-font-size);
   padding-block: var(--govnl-nav-bar-submenu-toggler-padding-block);
   padding-inline: var(--govnl-nav-bar-submenu-toggler-padding-inline);
   text-decoration: var(--govnl-nav-bar-submenu-toggler-text-decoration);
