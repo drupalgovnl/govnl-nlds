@@ -5,30 +5,34 @@
 
 @use "mixin" as mixin;
 
-.dictu-language-switcher__toggler {
+.dictu-language-switcher {
   @include mixin.dictu-language-switcher;
+}
 
-  &:active {
-    @include mixin.dictu-language-switcher-active;
-  }
+.dictu-language-switcher__toggler {
+  @include mixin.dictu-language-switcher-toggler;
 
   &:focus-visible {
     &:not(:active) {
-      @include mixin.dictu-language-switcher-focus-visible;
+      @include mixin.dictu-language-switcher-toggler-focus-visible;
     }
   }
 }
 
+.dictu-language-switcher__toggler:active {
+  @include mixin.dictu-language-switcher-toggler-active;
+}
+
 .dictu-language-switcher__toggler:hover {
-  @include mixin.dictu-language-switcher-hover;
+  @include mixin.dictu-language-switcher-toggler-hover;
 }
 
-.dictu-language-switcher__icon-end {
-  @include mixin.dictu-language-switcher-icon-end;
+.dictu-language-switcher-toggler__icon-end {
+  @include mixin.dictu-language-switcher-toggler-icon-end;
 }
 
-.dictu-language-switcher__icon-start {
-  @include mixin.dictu-language-switcher-icon-start;
+.dictu-language-switcher-toggler__icon-start {
+  @include mixin.dictu-language-switcher-toggler-icon-start;
 }
 
 .dictu-language-switcher__select-list {

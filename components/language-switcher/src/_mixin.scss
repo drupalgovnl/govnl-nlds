@@ -4,37 +4,45 @@
  */
 
 @mixin dictu-language-switcher {
+  position: relative;
+  width: fit-content;
+}
+
+@mixin dictu-language-switcher-toggler {
   align-items: center;
-  background-color: var(--govnl-language-switcher-background-color);
+  background-color: var(--govnl-language-switcher-toggler-background-color);
   block-size: fit-content;
   border-style: none;
   box-sizing: border-box;
-  color: var(--govnl-language-switcher-label-color); /* Currently setup for label which doesn't exist. */
+  color: var(--govnl-language-switcher-toggler-color); /* Currently setup for label which doesn't exist. */
   cursor: pointer;
   display: inline-flex;
-  font-family: var(--govnl-language-switcher-font-family); /* Currently missing token. */
-  font-size: var(--govnl-language-switcher-label-font-size); /* Currently setup for label which doesn't exist. */
-  gap: var(--govnl-language-switcher-column-gap);
+  font-family: var(--govnl-language-switcher-toggler-font-family); /* Currently missing token. */
+  font-size: var(--govnl-language-switcher-toggler-font-size); /* Currently setup for label which doesn't exist. */
+  gap: var(--govnl-language-switcher-toggler-column-gap);
   justify-content: center;
-  padding-inline: var(--govnl-language-switcher-padding-inline-start) var(--govnl-language-switcher-padding-inline-end);
+  padding-block: var(--govnl-language-switcher-toggler-padding-block-start)
+    var(--govnl-language-switcher-toggler-padding-block-end);
+  padding-inline: var(--govnl-language-switcher-toggler-padding-inline-start)
+    var(--govnl-language-switcher-toggler-padding-inline-end);
   scale: 1;
   user-select: none;
 
   &[aria-expanded="true"] {
-    .dictu-language-switcher__icon-end svg {
+    .dictu-language-switcher-toggler__icon-end svg {
       transform: rotate(180deg);
     }
   }
 }
 
-@mixin dictu-language-switcher-icon-start {
-  --govnl-icon-color: var(--govnl-language-switcher-icon-start-color);
-  --govnl-icon-size: var(--govnl-language-switcher-icon-start-size);
+@mixin dictu-language-switcher-toggler-icon-start {
+  --govnl-icon-color: var(--govnl-language-switcher-toggler-icon-start-color);
+  --govnl-icon-size: var(--govnl-language-switcher-toggler-icon-start-size);
 }
 
-@mixin dictu-language-switcher-icon-end {
-  --govnl-icon-color: var(--govnl-language-switcher-icon-end-color);
-  --govnl-icon-size: var(--govnl-language-switcher-icon-end-size);
+@mixin dictu-language-switcher-toggler-icon-end {
+  --govnl-icon-color: var(--govnl-language-switcher-toggler-icon-end-color);
+  --govnl-icon-size: var(--govnl-language-switcher-toggler-icon-end-size);
 }
 
 @mixin dictu-language-switcher-select-list {
@@ -42,14 +50,19 @@
   border-color: var(--govnl-language-switcher-select-list-border-color);
   border-radius: var(--govnl-language-switcher-select-list-border-radius);
   border-style: solid;
-  border-width: 1px; /* Currently missing token. */
+  border-width: var(--govnl-language-switcher-select-list-border-width); /* Currently missing token. */
+  box-sizing: border-box;
   font-size: var(--govnl-language-switcher-select-list-font-size);
   list-style: none;
   margin: 0;
+  min-width: 100%;
   padding-block: var(--govnl-language-switcher-select-list-padding-block-start)
     var(--govnl-language-switcher-select-list-padding-block-end);
   padding-inline: var(--govnl-language-switcher-select-list-padding-inline-start)
     var(--govnl-language-switcher-select-list-padding-inline-end);
+  position: absolute;
+  width: max-content;
+  z-index: var(--govnl-language-switcher-select-list-z-index, 1);
 }
 
 @mixin dictu-language-switcher-select-list-first-item {
@@ -73,29 +86,29 @@
   background-color: var(--govnl-language-switcher-select-list-hover-item-background-color);
 }
 
-@mixin dictu-language-switcher-hover {
-  background-color: var(--govnl-language-switcher-hover-background-color);
+@mixin dictu-language-switcher-toggler-hover {
+  background-color: var(--govnl-language-switcher-toggler-hover-background-color);
 
-  .dictu-language-switcher__icon-end {
+  .dictu-language-switcher-toggler__icon-end {
     color: var(--govnl-language-switcher-hover-icon-end-color);
   }
 }
 
-@mixin dictu-language-switcher-active {
-  .dictu-language-switcher__icon-end {
+@mixin dictu-language-switcher-toggler-active {
+  .dictu-language-switcher-toggler__icon-end {
     color: var(--govnl-language-switcher-active-icon-end-color);
   }
 }
 
-@mixin dictu-language-switcher-focus-visible {
+@mixin dictu-language-switcher-toggler-focus-visible {
   background-color: var(--govnl-language-switcher-focus-visible-background-color);
   color: var(--govnl-language-switcher-focus-visible-color);
 
-  .dictu-language-switcher__icon-start {
+  .dictu-language-switcher-toggler__icon-start {
     color: var(--govnl-language-switcher-focus-visible-icon-start-color);
   }
 
-  .dictu-language-switcher__icon-end {
+  .dictu-language-switcher-toggler__icon-end {
     color: var(--govnl-language-switcher-focus-visible-icon-end-color);
   }
 }

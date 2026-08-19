@@ -5,13 +5,35 @@ import { LanguageSwitcher } from './language-switcher.component';
 
 export default {
   args: {
-    selected: 'Nederlands',
+    current: 'Nederlands',
     expanded: true,
-    items: ['Nederlands', 'English (Engels)', 'Deutsch (Duits)', 'Français (Frans)'],
+    items: [
+      {
+        value: 'nl',
+        language: 'Nederlands',
+        translation: 'Nederlands',
+      },
+      {
+        value: 'en',
+        language: 'English',
+        translation: 'Engels',
+      },
+      {
+        value: 'de',
+        language: 'Deutsch',
+        translation: 'Duits',
+      },
+      {
+        value: 'fr',
+        language: 'Français',
+        translation: 'Frans',
+      },
+    ],
   },
   argTypes: {
-    selected: {
-      control: 'text',
+    current: {
+      options: ['Nederlands', 'English', 'Deutsch', 'Français'],
+      control: { type: 'select' },
     },
     expanded: {
       control: 'boolean',
