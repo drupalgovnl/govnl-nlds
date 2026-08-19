@@ -5,7 +5,7 @@
 
 @use "mixin" as mixin;
 
-.dictu-language-switcher {
+.dictu-language-switcher__toggler {
   @include mixin.dictu-language-switcher;
 
   &:active {
@@ -16,5 +16,33 @@
     &:not(:active) {
       @include mixin.dictu-language-switcher-focus-visible;
     }
+  }
+}
+
+.dictu-language-switcher__toggler:hover {
+  @include mixin.dictu-language-switcher-hover;
+}
+
+.dictu-language-switcher__icon-end {
+  @include mixin.dictu-language-switcher-icon-end;
+}
+
+.dictu-language-switcher__icon-start {
+  @include mixin.dictu-language-switcher-icon-start;
+}
+
+.dictu-language-switcher__select-list {
+  @include mixin.dictu-language-switcher-select-list;
+}
+
+.dictu-language-switcher__select-list-first-item {
+  @include mixin.dictu-language-switcher-select-list-first-item;
+}
+
+.dictu-language-switcher__select-list-item {
+  @include mixin.dictu-language-switcher-select-list-item;
+
+  &:hover {
+    @include mixin.dictu-language-switcher-select-list-item-hover;
   }
 }
