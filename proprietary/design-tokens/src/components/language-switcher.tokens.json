@@ -33,7 +33,7 @@
           "$value": "{govnl.interaction.color}"
         }
       },
-      "selectlist": {
+      "select-list": {
         "first-item": {
           "padding-inline-start": {
             "$type": "spacing",
@@ -50,6 +50,10 @@
           "padding-block-end": {
             "$type": "spacing",
             "$value": "0"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.subtle.color}"
           }
         },
         "item": {
@@ -72,6 +76,10 @@
           "column-gap": {
             "$type": "spacing",
             "$value": "{govnl.space.3xs}"
+          },
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.typography.font-size.sm}"
           }
         },
         "border-radius": {
@@ -93,9 +101,7 @@
         "padding-block-end": {
           "$type": "spacing",
           "$value": "{govnl.space.2xs}"
-        }
-      },
-      "select-list": {
+        },
         "background-color": {
           "$type": "color",
           "$value": "{govnl.document.background-color}"
@@ -107,12 +113,6 @@
         "font-size": {
           "$type": "fontSizes",
           "$value": "{govnl.typography.font-size.sm}"
-        },
-        "first-item": {
-          "color": {
-            "$type": "color",
-            "$value": "{govnl.document.subtle.color}"
-          }
         },
         "label": {
           "color": {
@@ -144,12 +144,6 @@
               "$type": "color",
               "$value": "{govnl.form-control.focus.color}"
             }
-          }
-        },
-        "item": {
-          "font-size": {
-            "$type": "fontSizes",
-            "$value": "{govnl.typography.font-size.sm}"
           }
         }
       },
