@@ -9,21 +9,25 @@ export default {
     expanded: true,
     items: [
       {
+        link: '/nl/huidige-pagina',
         value: 'nl',
         language: 'Nederlands',
         translation: 'Nederlands',
       },
       {
+        link: '/en/huidige-pagina',
         value: 'en',
         language: 'English',
         translation: 'Engels',
       },
       {
+        link: '/de/huidige-pagina',
         value: 'de',
         language: 'Deutsch',
         translation: 'Duits',
       },
       {
+        link: '/fr/huidige-pagina',
         value: 'fr',
         language: 'Français',
         translation: 'Frans',
