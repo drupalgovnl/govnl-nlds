@@ -1,0 +1,96 @@
+{
+  "govnl": {
+    "mega-menu": {
+      "padding-block-start": {
+        "value": "{govnl.space.xl}",
+        "type": "spacing"
+      },
+      "padding-block-end": {
+        "value": "{govnl.space.xl}",
+        "type": "spacing"
+      },
+      "padding-inline-start": {
+        "value": "{govnl.space.xl}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{govnl.space.xl}",
+        "type": "spacing"
+      },
+      "columns": {
+        "gap": {
+          "value": "{govnl.space.2xl}",
+          "type": "spacing"
+        },
+        "column": {
+          "max-inline-size": {
+            "value": "calc( {govnl.mega-menu.max-inline-size} / 4)",
+            "type": "sizing"
+          },
+          "heading": {
+            "padding-block-end": {
+              "value": "{govnl.space.xs}",
+              "type": "spacing"
+            }
+          },
+          "link-list": {
+            "text-decoration": {
+              "value": "none",
+              "type": "textDecoration"
+            }
+          }
+        }
+      },
+      "max-inline-size": {
+        "value": "{govnl.nav-bar.max-inline-size}",
+        "type": "sizing"
+      },
+      "background-color": {
+        "value": "{govnl.surface.subtle.background-color}",
+        "type": "color"
+      },
+      "mobile": {
+        "padding-inline-start": {
+          "value": "{govnl.space.sm}",
+          "type": "spacing"
+        },
+        "padding-inline-end": {
+          "value": "{govnl.space.sm}",
+          "type": "spacing"
+        },
+        "columns": {
+          "column": {
+            "heading": {
+              "icon": {
+                "size": {
+                  "value": "{govnl.dimension.size.300}",
+                  "type": "sizing"
+                },
+                "color": {
+                  "value": "{govnl.interaction.color}",
+                  "type": "color"
+                }
+              }
+            }
+          },
+          "gap": {
+            "value": "{govnl.space.md}",
+            "type": "spacing"
+          }
+        },
+        "max-inline-size": {
+          "value": "{govnl.dimension.screen.2xs}",
+          "type": "sizing"
+        },
+        "border-color": {
+          "value": "{govnl.nav-bar.border-color}",
+          "type": "color"
+        },
+        "border-bottom": {
+          "value": "{govnl.border.border-width.sm}",
+          "type": "borderWidth"
+        }
+      }
+    }
+  }
+}

@@ -29,6 +29,7 @@
     "components/link.tokens",
     "components/list.tokens",
     "components/logo.tokens",
+    "components/mega-menu.tokens",
     "components/navigation-bar.tokens",
     "components/page-footer.tokens",
     "components/page-header.tokens",
