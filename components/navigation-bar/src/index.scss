@@ -17,7 +17,9 @@
 
 .dictu-navigation-bar__item {
   &:has(.dictu-navigation-bar__submenu-toggler) {
-    @include mixin.dictu-navigation-bar__item--submenu;
+    .dictu-navigation-bar:not(.dictu-navigation-bar--variant-big-menu) & {
+      @include mixin.dictu-navigation-bar__item--submenu;
+    }
   }
 }
 
@@ -43,6 +45,10 @@
 
 .dictu-navigation-bar__submenu {
   @include mixin.dictu-navigation-bar__submenu;
+
+  .dictu-navigation-bar--variant-big-menu & {
+    @include mixin.dictu-navigation-bar__submenu--variant-big-menu;
+  }
 }
 
 .dictu-navigation-bar__submenu-list {
