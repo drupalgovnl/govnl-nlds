@@ -33,7 +33,7 @@
         "active": {
           "color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.interaction.active.color}"
           }
         },
         "size": {

@@ -69,6 +69,12 @@
                 "color": {
                   "$type": "color",
                   "$value": "{govnl.interaction.color}"
+                },
+                "active": {
+                  "color": {
+                    "$type": "color",
+                    "$value": "{govnl.interaction.active.color}"
+                  }
                 }
               }
             }
