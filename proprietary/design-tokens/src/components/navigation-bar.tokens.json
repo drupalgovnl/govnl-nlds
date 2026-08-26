@@ -28,7 +28,7 @@
       "icon": {
         "color": {
           "$type": "color",
-          "$value": "{govnl.brand.primary.500}"
+          "$value": "{govnl.interaction.color}"
         },
         "active": {
           "color": {
@@ -45,7 +45,7 @@
         "active": {
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.color.grijs.100}"
+            "$value": "{govnl.surface.subtle.background-color}"
           },
           "color": {
             "$type": "color",
@@ -62,16 +62,16 @@
         },
         "color": {
           "$type": "color",
-          "$value": "{govnl.brand.primary.500}"
+          "$value": "{govnl.interaction.color}"
         },
         "hover": {
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary.50}"
+            "$value": "{govnl.interaction.hover.background-color}"
           },
           "color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary.500}"
+            "$value": "{govnl.interaction.hover.color}"
           },
           "border-color": {
             "$type": "color",
@@ -115,7 +115,7 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{govnl.brand.primary.500}"
+        "$value": "{govnl.interaction.color}"
       },
       "border-color": {
         "$type": "color",
@@ -146,7 +146,7 @@
         },
         "color": {
           "$type": "color",
-          "$value": "{govnl.brand.primary.500}"
+          "$value": "{govnl.interaction.color}"
         },
         "background-color": {
           "$type": "color",
@@ -203,7 +203,7 @@
           },
           "color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary.500}"
+            "$value": "{govnl.interaction.color}"
           },
           "column-gap": {
             "$type": "spacing",
@@ -240,7 +240,7 @@
             },
             "background-color": {
               "$type": "color",
-              "$value": "{govnl.color.grijs.100}"
+              "$value": "{govnl.surface.subtle.background-color}"
             }
           },
           "border-width": {
@@ -266,7 +266,7 @@
         },
         "background-color": {
           "$type": "color",
-          "$value": "{govnl.color.grijs.100}"
+          "$value": "{govnl.surface.subtle.background-color}"
         },
         "max-inline-size": {
           "$type": "sizing",
@@ -354,7 +354,7 @@
         },
         "background-color": {
           "$type": "color",
-          "$value": "{govnl.color.grijs.100}"
+          "$value": "{govnl.surface.subtle.background-color}"
         },
         "mobile": {
           "padding-inline-start": {
