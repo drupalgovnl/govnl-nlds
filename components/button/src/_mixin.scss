@@ -17,6 +17,7 @@
   box-sizing: border-box;
   cursor: pointer;
   display: inline-flex;
+  font-family: var(--govnl-button-font-family);
   font-size: var(--govnl-button-font-size);
   gap: calc(var(--govnl-button-column-gap));
   justify-content: var(--govnl-button-justify-content);

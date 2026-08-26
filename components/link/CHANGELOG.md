@@ -1,5 +1,13 @@
 # @dictu/link
 
+## 2.5.2
+
+### Patch Changes
+
+- 37d446f: Improve vertical position of link icon
+- Updated dependencies [37d446f]
+  - @dictu/icon@2.2.2
+
 ## 2.5.1
 
 ### Patch Changes

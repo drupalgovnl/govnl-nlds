@@ -1,5 +1,17 @@
 # @dictu/navigation-bar
 
+## 4.3.0
+
+### Minor Changes
+
+- 5fff52a: Added main navigation font-size
+
+## 4.2.0
+
+### Minor Changes
+
+- 66a2c88: Added missing font tokens
+
 ## 4.1.2
 
 ### Patch Changes
