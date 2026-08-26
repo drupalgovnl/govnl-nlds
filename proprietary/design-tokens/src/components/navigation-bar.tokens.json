@@ -399,12 +399,12 @@
             "$type": "color",
             "$value": "{govnl.nav-bar.border-color}"
           },
-          "block-end-width": {
+          "border-block-end-width": {
             "$type": "borderWidth",
             "$value": "{govnl.border.border-width.sm}"
           }
         },
-        "block-end-width": {
+        "border-block-end-width": {
           "$type": "borderWidth",
           "$value": "0px"
         }
