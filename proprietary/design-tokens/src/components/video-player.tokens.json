@@ -53,13 +53,13 @@
         "progress-indicator": {
           "color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.brand.primary.500}"
           }
         },
         "progress-bar": {
           "color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.200}"
+            "$value": "{govnl.brand.primary.200}"
           }
         }
       }

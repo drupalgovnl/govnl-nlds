@@ -7,7 +7,7 @@
       }
     },
     "brand": {
-      "primary-1": {
+      "primary": {
         "50": {
           "$type": "color",
           "$value": "{govnl.color.lintblauw.50}"
@@ -33,7 +33,7 @@
           "$value": "{govnl.color.lintblauw.500}"
         }
       },
-      "primary-2": {
+      "secondary": {
         "50": {
           "$type": "color",
           "$value": "{govnl.color.groen.50}"
@@ -147,7 +147,7 @@
     "heading": {
       "color": {
         "$type": "color",
-        "$value": "{govnl.brand.primary-1.500}"
+        "$value": "{govnl.brand.primary.500}"
       },
       "font-family": {
         "$type": "fontFamilies",
@@ -359,7 +359,7 @@
     "interaction": {
       "color": {
         "$type": "color",
-        "$value": "{govnl.color.lintblauw.500}"
+        "$value": "{govnl.brand.primary.500}"
       },
       "active": {
         "color": {
@@ -373,7 +373,11 @@
             }
           },
           "$type": "color",
-          "$value": "{govnl.brand.primary-1.500}"
+          "$value": "{govnl.brand.primary.500}"
+        },
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.brand.primary.50}"
         }
       },
       "hover": {
@@ -388,7 +392,11 @@
             }
           },
           "$type": "color",
-          "$value": "{govnl.brand.primary-1.500}"
+          "$value": "{govnl.brand.primary.500}"
+        },
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.brand.primary.50}"
         }
       }
     },
