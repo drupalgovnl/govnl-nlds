@@ -511,6 +511,14 @@
           "$value": "40px"
         }
       }
+    },
+    "surface": {
+      "subtle": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.color.grijs.100}"
+        }
+      }
     }
   }
 }
