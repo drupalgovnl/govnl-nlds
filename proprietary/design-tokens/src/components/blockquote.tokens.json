@@ -45,7 +45,7 @@
           },
           "color": {
             "$type": "color",
-            "$value": "{govnl.feedback.informative.border-color}"
+            "$value": "{govnl.brand.primary.300}"
           }
         }
       },
@@ -72,7 +72,7 @@
       "work": {
         "color": {
           "$type": "color",
-          "$value": "{govnl.feedback.informative.color}"
+          "$value": "{govnl.brand.primary.400}"
         },
         "font-size": {
           "$type": "fontSizes",
@@ -108,7 +108,7 @@
       "author": {
         "color": {
           "$type": "color",
-          "$value": "{govnl.brand.primary-1.500}"
+          "$value": "{govnl.brand.primary.500}"
         },
         "font-size": {
           "$type": "fontSizes",
