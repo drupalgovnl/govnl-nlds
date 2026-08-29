@@ -1,0 +1,310 @@
+{
+  "govnl": {
+    "step-indicator": {
+      "marker": {
+        "size": {
+          "$type": "dimension",
+          "$value": "{govnl.dimension.size.300}"
+        },
+        "padding-block-start": {
+          "$type": "spacing",
+          "$value": "{govnl.space.3xs}"
+        },
+        "padding-block-end": {
+          "$type": "spacing",
+          "$value": "{govnl.space.3xs}"
+        },
+        "padding-inline-start": {
+          "$type": "spacing",
+          "$value": "{govnl.space.3xs}"
+        },
+        "padding-inline-end": {
+          "$type": "spacing",
+          "$value": "{govnl.space.3xs}"
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "border-radius": {
+          "$type": "borderRadius",
+          "$value": "{govnl.border.border-radius.round}"
+        },
+        "number": {
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": "{govnl.typography.font-family.sans}"
+          },
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.typography.font-size.sm}"
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{govnl.typography.font-weight.bold}"
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": "100%"
+          }
+        },
+        "current": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.brand.primary-1.500}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.brand.primary-1.500}"
+          },
+          "number": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.color.white}"
+            }
+          }
+        },
+        "complete": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.brand.primary-1.500}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.brand.primary-1.500}"
+          },
+          "icon": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.color.white}"
+            }
+          }
+        },
+        "upcoming": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.color.white}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.brand.primary-1.500}"
+          },
+          "number": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.brand.primary-1.500}"
+            }
+          }
+        }
+      },
+      "label": {
+        "color": {
+          "$type": "color",
+          "$value": "{nl.paragraph.color}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{govnl.typography.font-family.sans}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{govnl.typography.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{govnl.typography.font-weight.regular}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "100%"
+        },
+        "current": {
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{govnl.typography.font-weight.bold}"
+          }
+        }
+      },
+      "connector": {
+        "color": {
+          "$type": "color",
+          "$value": "{govnl.color.lintblauw.500}"
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.md}"
+        },
+        "border": {
+          "$type": "border",
+          "$value": {
+            "color": "{govnl.step-indicator.connector.color}",
+            "width": "{govnl.step-indicator.connector.border-width}",
+            "style": "dashed"
+          }
+        },
+        "complete": {
+          "border": {
+            "$type": "border",
+            "$value": {
+              "color": "{govnl.step-indicator.connector.color}",
+              "width": "{govnl.step-indicator.connector.border-width}",
+              "style": "solid"
+            }
+          }
+        }
+      },
+      "list": {
+        "horizontal": {
+          "step": {
+            "row-gap": {
+              "$type": "spacing",
+              "$value": "{govnl.space.3xs}"
+            }
+          }
+        },
+        "vertical": {
+          "step": {
+            "column-gap": {
+              "$type": "spacing",
+              "$value": "{govnl.space.2xs}"
+            }
+          },
+          "label": {
+            "padding-block-start": {
+              "$type": "spacing",
+              "$value": "{govnl.space.4xs}"
+            }
+          },
+          "connector": {
+            "padding-block-start": {
+              "$type": "spacing",
+              "$value": "{govnl.space.3xs}"
+            },
+            "padding-block-end": {
+              "$type": "spacing",
+              "$value": "{govnl.space.3xs}"
+            }
+          }
+        }
+      },
+      "mobile": {
+        "expanded": {
+          "row-gap": {
+            "$type": "spacing",
+            "$value": "{govnl.space.xs}"
+          }
+        },
+        "summary": {
+          "row-gap": {
+            "$type": "spacing",
+            "$value": "{govnl.space.3xs}"
+          },
+          "step": {
+            "color": {
+              "$type": "color",
+              "$value": "{nl.paragraph.color}"
+            },
+            "font-family": {
+              "$type": "fontFamilies",
+              "$value": "{govnl.typography.font-family.sans}"
+            },
+            "font-size": {
+              "$type": "fontSizes",
+              "$value": "{govnl.typography.font-size.sm}"
+            },
+            "font-weight": {
+              "$type": "fontWeights",
+              "$value": "{govnl.typography.font-weight.regular}"
+            },
+            "line-height": {
+              "$type": "lineHeights",
+              "$value": "100%"
+            },
+            "highlight": {
+              "font-weight": {
+                "$type": "fontWeights",
+                "$value": "{govnl.typography.font-weight.bold}"
+              }
+            }
+          },
+          "label": {
+            "color": {
+              "$type": "color",
+              "$value": "{nl.paragraph.color}"
+            },
+            "font-family": {
+              "$type": "fontFamilies",
+              "$value": "{govnl.typography.font-family.sans}"
+            },
+            "font-size": {
+              "$type": "fontSizes",
+              "$value": "{govnl.typography.font-size.md}"
+            },
+            "font-weight": {
+              "$type": "fontWeights",
+              "$value": "{govnl.typography.font-weight.semi-bold}"
+            },
+            "line-height": {
+              "$type": "lineHeights",
+              "$value": "100%"
+            },
+            "icon": {
+              "size": {
+                "$type": "dimension",
+                "$value": "{govnl.dimension.size.200}"
+              }
+            },
+            "column-gap": {
+              "$type": "spacing",
+              "$value": "{govnl.space.3xs}"
+            }
+          },
+          "icon": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.interaction.color}"
+            }
+          }
+        },
+        "overview": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.document.background-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{govnl.color.grijs.500}"
+          },
+          "border-width": {
+            "$type": "borderWidth",
+            "$value": "{govnl.border.border-width.sm}"
+          },
+          "border-radius": {
+            "$type": "borderRadius",
+            "$value": "{govnl.border.border-radius.sm}"
+          },
+          "row-gap": {
+            "$type": "spacing",
+            "$value": "{govnl.space.2xs}"
+          },
+          "padding-block-start": {
+            "$type": "spacing",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-block-end": {
+            "$type": "spacing",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-inline-start": {
+            "$type": "spacing",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-inline-end": {
+            "$type": "spacing",
+            "$value": "{govnl.space.sm}"
+          }
+        }
+      }
+    }
+  }
+}
