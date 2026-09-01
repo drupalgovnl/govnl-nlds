@@ -190,14 +190,6 @@
   z-index: var(--govnl-nav-bar-submenu-z-index, 1);
 }
 
-@mixin dictu-navigation-bar__submenu--variant-big-menu {
-  --govnl-nav-bar-submenu-border-bottom-right-radius: 0;
-
-  box-sizing: border-box;
-  inset-block-start: initial;
-  left: 0;
-}
-
 @mixin dictu-navigation-bar__submenu--mobile {
   background-color: transparent;
   border-bottom-left-radius: 0;
