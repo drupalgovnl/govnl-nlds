@@ -303,7 +303,7 @@
           }
         }
       },
-      "mega-menu": {
+      "big-menu": {
         "padding-block-start": {
           "$type": "spacing",
           "$value": "{govnl.space.xl}"

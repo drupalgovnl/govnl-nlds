@@ -35,7 +35,7 @@ export default {
     isMobile: {
       control: 'boolean',
     },
-    isMegaMenu: {
+    isBigMenu: {
       control: 'boolean',
     },
   },
@@ -196,7 +196,7 @@ export const NavigationBarSubmenuOpen = {
   },
 };
 
-export const NavigationBarMegaMenu = {
+export const NavigationBarBigMenu = {
   args: {
     items: [
       {
@@ -204,7 +204,7 @@ export const NavigationBarMegaMenu = {
         title: 'Dienst ICT Uitvoering',
       },
       {
-        title: 'Megamenu',
+        title: 'Bigmenu',
         id: 'submenu-1',
         expanded: true,
         children: [
@@ -328,6 +328,6 @@ export const NavigationBarMegaMenu = {
       },
     ],
     expanded: true,
-    isMegaMenu: true,
+    isBigMenu: true,
   },
 };

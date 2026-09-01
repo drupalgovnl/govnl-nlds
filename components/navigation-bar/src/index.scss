@@ -17,7 +17,7 @@
 
 .dictu-navigation-bar__item {
   &:has(.dictu-navigation-bar__submenu-toggler) {
-    .dictu-navigation-bar:not(.dictu-navigation-bar--variant-mega-menu) & {
+    .dictu-navigation-bar:not(.dictu-navigation-bar--variant-big-menu) & {
       @include mixin.dictu-navigation-bar__item--submenu;
     }
   }
@@ -63,8 +63,8 @@
   @include mixin.dictu-navigation-bar__submenu-heading;
 }
 
-.dictu-navigation-bar__mega-menu {
-  @include mixin.dictu-navigation-bar__mega-menu;
+.dictu-navigation-bar__big-menu {
+  @include mixin.dictu-navigation-bar__big-menu;
 }
 
 .dictu-navigation-bar__grid {
@@ -105,8 +105,8 @@
     @include mixin.dictu-navigation-bar__submenu-link--mobile;
   }
 
-  .dictu-navigation-bar__mega-menu {
-    @include mixin.dictu-navigation-bar__mega-menu--mobile;
+  .dictu-navigation-bar__big-menu {
+    @include mixin.dictu-navigation-bar__big-menu--mobile;
   }
 
   .dictu-navigation-bar__grid {
