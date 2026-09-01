@@ -17,7 +17,7 @@
 
 .dictu-navigation-bar__item {
   &:has(.dictu-navigation-bar__submenu-toggler) {
-    .dictu-navigation-bar:not(.dictu-navigation-bar--variant-big-menu) & {
+    .dictu-navigation-bar:not(.dictu-navigation-bar--variant-mega-menu) & {
       @include mixin.dictu-navigation-bar__item--submenu;
     }
   }
@@ -45,10 +45,6 @@
 
 .dictu-navigation-bar__submenu {
   @include mixin.dictu-navigation-bar__submenu;
-
-  .dictu-navigation-bar--variant-big-menu & {
-    @include mixin.dictu-navigation-bar__submenu--variant-big-menu;
-  }
 }
 
 .dictu-navigation-bar__submenu-list {
@@ -61,6 +57,22 @@
 
 .dictu-navigation-bar__submenu-link {
   @include mixin.dictu-navigation-bar__submenu-link;
+}
+
+.dictu-navigation-bar__submenu-heading {
+  @include mixin.dictu-navigation-bar__submenu-heading;
+}
+
+.dictu-navigation-bar__mega-menu {
+  @include mixin.dictu-navigation-bar__mega-menu;
+}
+
+.dictu-navigation-bar__grid {
+  @include mixin.dictu-navigation-bar__grid;
+}
+
+.dictu-navigation-bar__column {
+  @include mixin.dictu-navigation-bar__column;
 }
 
 // Responsive: mobile
@@ -91,5 +103,13 @@
 
   .dictu-navigation-bar__submenu-link {
     @include mixin.dictu-navigation-bar__submenu-link--mobile;
+  }
+
+  .dictu-navigation-bar__mega-menu {
+    @include mixin.dictu-navigation-bar__mega-menu--mobile;
+  }
+
+  .dictu-navigation-bar__grid {
+    @include mixin.dictu-navigation-bar__grid--mobile;
   }
 }
