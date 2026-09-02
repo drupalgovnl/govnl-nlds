@@ -6,13 +6,13 @@ import { LanguageSwitcher } from './language-switcher.component';
 export default {
   args: {
     current: 'Nederlands',
-    expanded: true,
+    expanded: false,
     items: [
       {
-        link: '/nl/huidige-pagina',
-        value: 'nl',
-        language: 'Nederlands',
-        translation: 'Nederlands',
+        link: '/de/huidige-pagina',
+        value: 'de',
+        language: 'Deutsch',
+        translation: 'Duits',
       },
       {
         link: '/en/huidige-pagina',
@@ -21,16 +21,16 @@ export default {
         translation: 'Engels',
       },
       {
-        link: '/de/huidige-pagina',
-        value: 'de',
-        language: 'Deutsch',
-        translation: 'Duits',
-      },
-      {
         link: '/fr/huidige-pagina',
         value: 'fr',
         language: 'Français',
         translation: 'Frans',
+      },
+      {
+        link: '/nl/huidige-pagina',
+        value: 'nl',
+        language: 'Nederlands',
+        translation: 'Nederlands',
       },
     ],
   },
@@ -59,3 +59,9 @@ export default {
 };
 
 export const DefaultLanguageSwitcher = {};
+
+export const LanguageSwitcherExpanded = {
+  args: {
+    expanded: true,
+  },
+};
