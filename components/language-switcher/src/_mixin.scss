@@ -4,7 +4,6 @@
  */
 
 @mixin dictu-language-switcher {
-  gap: var(--govnl-language-switcher-row-gap);
   position: relative;
   width: fit-content;
 }
