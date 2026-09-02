@@ -3,7 +3,7 @@
     "icon": {
       "color": {
         "$type": "color",
-        "$value": "{govnl.document.color}"
+        "$value": "{govnl.brand.primary.500}"
       },
       "size": {
         "$type": "sizing",
