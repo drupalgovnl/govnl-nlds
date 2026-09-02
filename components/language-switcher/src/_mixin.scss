@@ -1,0 +1,146 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin dictu-language-switcher {
+  position: relative;
+  width: fit-content;
+}
+
+@mixin dictu-language-switcher-toggler {
+  align-items: var(--govnl-language-switcher-toggler-align-items);
+  background-color: var(--govnl-language-switcher-toggler-background-color);
+  block-size: fit-content;
+  border-color: var(--govnl-language-switcher-toggler-border-color);
+  border-radius: var(--govnl-language-switcher-toggler-border-radius);
+  border-style: var(--govnl-language-switcher-toggler-border-style);
+  box-sizing: border-box;
+  color: var(--govnl-language-switcher-toggler-color);
+  column-gap: var(--govnl-language-switcher-toggler-column-gap);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--govnl-language-switcher-toggler-font-family);
+  font-size: var(--govnl-language-switcher-toggler-font-size);
+  justify-content: center;
+  line-height: var(--govnl-language-switcher-toggler-line-height);
+  padding-block: var(--govnl-language-switcher-toggler-padding-block-start)
+    var(--govnl-language-switcher-toggler-padding-block-end);
+  padding-inline: var(--govnl-language-switcher-toggler-padding-inline-start)
+    var(--govnl-language-switcher-toggler-padding-inline-end);
+  scale: 1;
+  user-select: none;
+
+  &[aria-expanded="true"] {
+    .dictu-language-switcher__icon-end svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@mixin dictu-language-switcher-toggler-icon-start {
+  --govnl-icon-color: var(--govnl-language-switcher-toggler-icon-start-color);
+  --govnl-icon-size: var(--govnl-language-switcher-toggler-icon-start-size);
+}
+
+@mixin dictu-language-switcher-toggler-icon-end {
+  --govnl-icon-color: var(--govnl-language-switcher-toggler-icon-end-color);
+  --govnl-icon-size: var(--govnl-language-switcher-toggler-icon-end-size);
+}
+
+@mixin dictu-language-switcher-content {
+  background-color: var(--govnl-language-switcher-content-background-color);
+  border-color: var(--govnl-language-switcher-content-border-color);
+  border-radius: var(--govnl-language-switcher-content-border-radius);
+  border-style: var(--govnl-language-switcher-content-border-style);
+  border-width: var(--govnl-language-switcher-content-border-width);
+  box-sizing: border-box;
+  font-size: var(--govnl-language-switcher-content-font-size);
+  inline-size: var(--govnl-language-switcher-content-inline-size);
+  padding-block: var(--govnl-language-switcher-content-padding-block-start)
+    var(--govnl-language-switcher-content-padding-block-end);
+  padding-inline: var(--govnl-language-switcher-content-padding-inline-start)
+    var(--govnl-language-switcher-content-padding-inline-end);
+  position: absolute;
+  z-index: var(--govnl-language-switcher-content-z-index, 1);
+}
+
+@mixin dictu-language-switcher-content-heading {
+  color: var(--govnl-language-switcher-content-heading-color);
+  line-height: var(--govnl-language-switcher-content-heading-line-height);
+  padding-block: var(--govnl-language-switcher-content-heading-padding-block-start)
+    var(--govnl-language-switcher-content-heading-padding-block-end);
+  padding-inline: var(--govnl-language-switcher-content-heading-padding-inline-start)
+    var(--govnl-language-switcher-content-heading-padding-inline-end);
+}
+
+@mixin dictu-language-switcher-content-select-list {
+  list-style: none;
+  margin-block: var(--govnl-language-switcher-content-select-list-margin-block-start)
+    var(--govnl-language-switcher-content-select-list-margin-block-end);
+  margin-inline: var(--govnl-language-switcher-content-select-list-margin-inline-start)
+    var(--govnl-language-switcher-content-select-list-margin-inline-end);
+  padding-block: var(--govnl-language-switcher-content-select-list-padding-block-start)
+    var(--govnl-language-switcher-content-select-list-padding-block-end);
+  padding-inline: var(--govnl-language-switcher-content-select-list-padding-inline-start)
+    var(--govnl-language-switcher-content-select-list-padding-inline-end);
+}
+
+@mixin dictu-language-switcher-content-select-list-item-link {
+  align-items: var(--govnl-language-switcher-content-select-list-item-link-align-items);
+  border-radius: var(--govnl-language-switcher-content-select-list-item-link-border-radius);
+  box-sizing: border-box;
+  column-gap: var(--govnl-language-switcher-content-select-list-item-link-column-gap);
+  display: flex;
+  font-size: var(--govnl-language-switcher-content-select-list-item-link-font-size);
+  line-height: var(--govnl-language-switcher-content-select-list-item-link-line-height);
+  padding-block: var(--govnl-language-switcher-content-select-list-item-link-padding-block-start)
+    var(--govnl-language-switcher-content-select-list-item-link-padding-block-end);
+  padding-inline: var(--govnl-language-switcher-content-select-list-item-link-padding-inline-start)
+    var(--govnl-language-switcher-content-select-list-item-link-padding-inline-end);
+  text-decoration: var(--govnl-language-switcher-content-select-list-item-link-text-decoration);
+}
+
+@mixin dictu-language-switcher-content-select-list-item-link-label {
+  color: var(--govnl-language-switcher-content-select-list-item-link-label-color);
+}
+
+@mixin dictu-language-switcher-content-select-list-item-link-label-second {
+  color: var(--govnl-language-switcher-content-select-list-item-link-label-second-color);
+}
+
+@mixin dictu-language-switcher-content-select-list-item-link-hover {
+  background-color: var(--govnl-language-switcher-content-select-list-item-link-hover-background-color);
+}
+
+@mixin dictu-language-switcher-content-select-list-item-link-focus-visible {
+  background-color: var(--govnl-language-switcher-content-select-list-item-link-focus-visible-background-color);
+  color: var(--govnl-language-switcher-content-select-list-item-link-focus-visible-color);
+}
+
+@mixin dictu-language-switcher-toggler-hover {
+  background-color: var(--govnl-language-switcher-toggler-hover-background-color);
+
+  .dictu-language-switcher__icon-end {
+    color: var(--govnl-language-switcher-hover-icon-end-color);
+  }
+}
+
+@mixin dictu-language-switcher-toggler-active {
+  .dictu-language-switcher__icon-end {
+    color: var(--govnl-language-switcher-active-icon-end-color);
+  }
+}
+
+@mixin dictu-language-switcher-toggler-focus-visible {
+  background-color: var(--govnl-language-switcher-toggler-focus-visible-background-color);
+  color: var(--govnl-language-switcher-toggler-focus-visible-color);
+
+  .dictu-language-switcher__icon-start {
+    color: var(--govnl-language-switcher-toggler-focus-visible-icon-start-color);
+  }
+
+  .dictu-language-switcher__icon-end {
+    color: var(--govnl-language-switcher-toggler-focus-visible-icon-end-color);
+  }
+}

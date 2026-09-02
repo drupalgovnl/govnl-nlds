@@ -1,0 +1,71 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "mixin" as mixin;
+@use "pkg:@dictu/utility-focus-ring/dist/index" as focus-ring;
+
+.dictu-language-switcher {
+  @include mixin.dictu-language-switcher;
+}
+
+.dictu-language-switcher__toggler {
+  @include mixin.dictu-language-switcher-toggler;
+
+  &:focus-visible {
+    &:not(:active) {
+      @include mixin.dictu-language-switcher-toggler-focus-visible;
+    }
+  }
+}
+
+.dictu-language-switcher__toggler:active {
+  @include mixin.dictu-language-switcher-toggler-active;
+}
+
+.dictu-language-switcher__toggler:hover {
+  @include mixin.dictu-language-switcher-toggler-hover;
+}
+
+.dictu-language-switcher__icon-end {
+  @include mixin.dictu-language-switcher-toggler-icon-end;
+}
+
+.dictu-language-switcher__icon-start {
+  @include mixin.dictu-language-switcher-toggler-icon-start;
+}
+
+.dictu-language-switcher__content {
+  @include mixin.dictu-language-switcher-content;
+}
+
+.dictu-language-switcher__list {
+  @include mixin.dictu-language-switcher-content-select-list;
+}
+
+.dictu-language-switcher__heading {
+  @include mixin.dictu-language-switcher-content-heading;
+}
+
+.dictu-language-switcher__link {
+  @include mixin.dictu-language-switcher-content-select-list-item-link;
+
+  &:focus-visible {
+    &:not(:active) {
+      @include mixin.dictu-language-switcher-content-select-list-item-link-focus-visible;
+    }
+  }
+}
+
+.dictu-language-switcher__link:hover {
+  @include mixin.dictu-language-switcher-content-select-list-item-link-hover;
+}
+
+.dictu-language-switcher__link-label {
+  @include mixin.dictu-language-switcher-content-select-list-item-link-label;
+}
+
+.dictu-language-switcher__link-label-second {
+  @include mixin.dictu-language-switcher-content-select-list-item-link-label-second;
+}
