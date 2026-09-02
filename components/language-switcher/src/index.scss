@@ -36,32 +36,36 @@
   @include mixin.dictu-language-switcher-toggler-icon-start;
 }
 
-.dictu-language-switcher__list {
-  @include mixin.dictu-language-switcher-select-list;
+.dictu-language-switcher__content {
+  @include mixin.dictu-language-switcher-content;
 }
 
-.dictu-language-switcher__first-item {
-  @include mixin.dictu-language-switcher-select-list-first-item;
+.dictu-language-switcher__list {
+  @include mixin.dictu-language-switcher-content-select-list;
+}
+
+.dictu-language-switcher__heading {
+  @include mixin.dictu-language-switcher-content-heading;
 }
 
 .dictu-language-switcher__link {
-  @include mixin.dictu-language-switcher-select-list-item-link;
+  @include mixin.dictu-language-switcher-content-select-list-item-link;
 
   &:focus-visible {
     &:not(:active) {
-      @include mixin.dictu-language-switcher-select-list-item-link-focus-visible;
+      @include mixin.dictu-language-switcher-content-select-list-item-link-focus-visible;
     }
   }
 }
 
 .dictu-language-switcher__link:hover {
-  @include mixin.dictu-language-switcher-select-list-item-link-hover;
+  @include mixin.dictu-language-switcher-content-select-list-item-link-hover;
 }
 
 .dictu-language-switcher__link-label {
-  @include mixin.dictu-language-switcher-select-list-item-link-label;
+  @include mixin.dictu-language-switcher-content-select-list-item-link-label;
 }
 
 .dictu-language-switcher__link-label-second {
-  @include mixin.dictu-language-switcher-select-list-item-link-label-second;
+  @include mixin.dictu-language-switcher-content-select-list-item-link-label-second;
 }

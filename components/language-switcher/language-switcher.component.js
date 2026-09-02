@@ -7,7 +7,7 @@ export const LanguageSwitcher = ({ current, expanded, items }) => {
   languageSwitcher.appendChild(createLanguageSwitcherSelectListToggler(current, expanded));
 
   if (expanded) {
-    languageSwitcher.appendChild(createLanguageSwitcherSelectList(items, current));
+    languageSwitcher.appendChild(createLanguageSwitcherSelectListContent(items, current));
   }
 
   return languageSwitcher;
@@ -39,12 +39,20 @@ const createLanguageSwitcherSelectListToggler = (selected, expanded) => {
   return languageSwitcherSelectListToggler;
 };
 
+const createLanguageSwitcherSelectListContent = (items, current) => {
+  const languageSwitcherSelectListContent = document.createElement('div');
+  languageSwitcherSelectListContent.classList.add('dictu-language-switcher__content');
+  languageSwitcherSelectListContent.setAttribute('id', 'language-switcher');
+
+  languageSwitcherSelectListContent.appendChild(createLanguageSwitcherSelectListFirstItem());
+  languageSwitcherSelectListContent.appendChild(createLanguageSwitcherSelectList(items, current));
+
+  return languageSwitcherSelectListContent;
+};
+
 const createLanguageSwitcherSelectList = (items, current) => {
   const languageSwitchSelectList = document.createElement('ul');
   languageSwitchSelectList.classList.add('dictu-language-switcher__list');
-  languageSwitchSelectList.setAttribute('id', 'language-switcher');
-
-  languageSwitchSelectList.appendChild(createLanguageSwitcherSelectListFirstItem());
 
   items.forEach(item => {
     languageSwitchSelectList.appendChild(createLanguageSwitcherSelectListItem(item, current));
@@ -55,7 +63,7 @@ const createLanguageSwitcherSelectList = (items, current) => {
 
 const createLanguageSwitcherSelectListFirstItem = () => {
   const languageSwitchSelectListFirstItem = document.createElement('div');
-  languageSwitchSelectListFirstItem.classList.add('dictu-language-switcher__first-item');
+  languageSwitchSelectListFirstItem.classList.add('dictu-language-switcher__heading');
   languageSwitchSelectListFirstItem.innerHTML = 'Taal';
 
   return languageSwitchSelectListFirstItem;
