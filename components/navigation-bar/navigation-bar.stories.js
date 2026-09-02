@@ -1,5 +1,6 @@
 import readme from './README.md?raw';
 import './dist/index.css';
+import '@dictu/grid/dist/index.css';
 import '@dictu/icon/dist/index.css';
 import '@dictu/utility-display/dist/index.css';
 import { NavigationBar } from './navigation-bar.component';
@@ -32,6 +33,9 @@ export default {
       control: 'boolean',
     },
     isMobile: {
+      control: 'boolean',
+    },
+    isBigMenu: {
       control: 'boolean',
     },
   },
@@ -189,5 +193,141 @@ export const NavigationBarSubmenuOpen = {
       },
     ],
     expanded: true,
+  },
+};
+
+export const NavigationBarBigMenu = {
+  args: {
+    items: [
+      {
+        link: 'https://www.dictu.nl',
+        title: 'Dienst ICT Uitvoering',
+      },
+      {
+        title: 'Bigmenu',
+        id: 'submenu-1',
+        expanded: true,
+        children: [
+          {
+            href: '<nolink>',
+            label: 'Subsectie A',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 1',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 2',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 3',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 4',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 5',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 6',
+          },
+          {
+            href: '<nolink>',
+            label: 'Subsectie B',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 1',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 2',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 3',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 4',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 5',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 6',
+          },
+          {
+            href: '<nolink>',
+            label: 'Subsectie C',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 1',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 2',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 3',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 4',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 5',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 6',
+          },
+          {
+            href: '<nolink>',
+            label: 'Subsectie D',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 1',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 2',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 3',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 4',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 5',
+          },
+          {
+            href: '#',
+            label: 'Subpagina 6',
+          },
+        ],
+      },
+      {
+        link: 'https://www.rijksoverheid.nl',
+        title: 'Rijksoverheid',
+      },
+    ],
+    expanded: true,
+    isBigMenu: true,
   },
 };

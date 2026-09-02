@@ -226,3 +226,47 @@
 @mixin dictu-navigation-bar__submenu-link--mobile {
   inline-size: 100%;
 }
+
+@mixin dictu-navigation-bar__submenu-heading {
+  font-size: var(--govnl-nav-bar-big-menu-grid-column-heading-font-size);
+  font-weight: var(--govnl-nav-bar-big-menu-grid-column-heading-font-weight);
+  padding-block-end: var(--govnl-nav-bar-big-menu-grid-column-heading-padding-block-end);
+}
+
+@mixin dictu-navigation-bar__big-menu {
+  background-color: var(--govnl-nav-bar-big-menu-background-color);
+  border-block-end: var(--govnl-nav-bar-big-menu-border-block-end-width) solid
+    var(--govnl-nav-bar-big-menu-border-color);
+  border-color: var(--govnl-nav-bar-big-menu-border-color);
+  box-sizing: border-box;
+  left: 0;
+  max-inline-size: var(--govnl-nav-bar-big-menu-max-inline-size);
+  min-inline-size: 100%;
+  overflow-wrap: break-word;
+  padding-block: var(--govnl-nav-bar-big-menu-padding-block-start) var(--govnl-nav-bar-big-menu-padding-block-end);
+  padding-inline: var(--govnl-nav-bar-big-menu-padding-inline-start) var(--govnl-nav-bar-big-menu-padding-inline-end);
+  position: absolute;
+}
+
+@mixin dictu-navigation-bar__big-menu--mobile {
+  border-block-end: var(--govnl-nav-bar-big-menu-mobile-border-block-end-width) solid
+    var(--govnl-nav-bar-big-menu-mobile-border-color);
+  max-inline-size: var(--govnl-nav-bar-big-menu-mobile-max-inline-size);
+  padding-block: var(--govnl-nav-bar-big-menu-mobile-padding-block-start)
+    var(--govnl-nav-bar-big-menu-mobile-padding-block-start);
+  padding-inline: var(--govnl-nav-bar-big-menu-mobile-padding-inline-start)
+    var(--govnl-nav-bar-big-menu-mobile-padding-inline-end);
+  position: relative;
+}
+
+@mixin dictu-navigation-bar__grid {
+  --govnl-grid-gap-column-max: var(--govnl-nav-bar-big-menu-grid-gap);
+}
+
+@mixin dictu-navigation-bar__grid--mobile {
+  --govnl-grid-gap-column-max: var(--govnl-nav-bar-big-menu-mobile-grid-gap);
+}
+
+@mixin dictu-navigation-bar__column {
+  max-inline-size: var(--govnl-nav-bar-big-menu-grid-column-max-inline-size);
+}
