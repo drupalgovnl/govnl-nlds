@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 2.19.0
+
+### Minor Changes
+
+- dcd166d: Added Language Switcher component and upated tokens
+
 ## 2.18.0
 
 ### Minor Changes
