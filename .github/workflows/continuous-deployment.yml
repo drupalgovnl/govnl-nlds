@@ -128,7 +128,7 @@ jobs:
         run: npm run --if-present build
 
       - name: 'Continuous Deployment: publish changeset to GitHub repository'
-        uses: changesets/action@06245a4e0a36c064a573d4150030f5ec548e4fcc # v1.4.10
+        uses: changesets/action@ae5c373a18fe02dac7d40bcbc0184758c90d94d2 # maintenance/v1
         id: changeset
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -140,6 +140,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           HUSKY: '0'
         with:
+          github-token: ${{ secrets.GH_TOKEN }}
           commit: 'docs(release): design system packages'
           setupGitUser: false
           title: 'docs(release): design system packages'
