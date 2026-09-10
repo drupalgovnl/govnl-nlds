@@ -1,0 +1,79 @@
+{/* language-switcher.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as LanguageSwitcherStories from './language-switcher.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={LanguageSwitcherStories} title="Componenten/Language Switcher" />
+
+<Title>Language Switcher</Title>
+
+<Subtitle>
+  De language switcher (taalwisselaar) stelt gebruikers in staat om de taal van de website of
+  applicatie te wijzigen. Het component functioneert als een 'custom select' menu. Het toont de
+  momenteel geselecteerde taal en klapt open om een lijst met alternatieve talen te tonen.
+</Subtitle>
+
+<Canvas of={LanguageSwitcherStories.DefaultLanguageSwitcher} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={LanguageSwitcherStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Voorbeelden
+
+### Standaard language switcher
+
+De standaard language switcher wordt weergegeven als een knop met de huidige taalkeuze.
+
+<Canvas of={LanguageSwitcherStories.DefaultLanguageSwitcher} />
+
+### Opengeklapte weergave (Expanded)
+
+Wanneer de gebruiker op de knop klikt, klapt het menu open. Binnen dit menu is het volgende gedrag zichtbaar:
+
+- Er is een duidelijke groepering/titel ("Taal") bovenaan het menu.
+- De beschikbare talen worden getoond als links (`<a>`).
+- **Taalweergave:** De naam van de taal wordt in de _eigen_ taal geschreven (bijvoorbeeld 'Deutsch' of 'English'). Daarbij krijgt dit element het correcte `lang` attribuut voor schermlezers.
+- **Vertaling:** Als de taal in de lijst niet de momenteel geselecteerde taal is, wordt de vertaling van die taal in de huidige taal er tussen haakjes achter gezet (bijvoorbeeld `Deutsch (Duits)` als de pagina op Nederlands staat).
+
+Voor het correct en toegankelijk gebruik zijn de volgende attributen verplicht op de uitklap-knop (toggler):
+
+- `aria-expanded`: `false` wanneer het menu gesloten is, en `true` wanneer het menu geopend is.
+- `aria-controls`: De ID van het content element dat de lijst met talen bevat (in dit component standaard `language-switcher`).
+
+Houd bij de implementatie rekening met de volgende richtlijnen:
+
+- Sluit de dropdown wanneer er buiten het menu wordt geklikt (click outside).
+- Sluit de dropdown wanneer de focus het menu verlaat (bijvoorbeeld bij het wegtappen vanaf het laatste taal-item).
+
+<Canvas of={LanguageSwitcherStories.LanguageSwitcherExpanded} story={{ height: '225px' }} />
+
+## Toegankelijkheid
+
+Voor de bediening van de Language Switcher met het toetsenbord gelden de volgende richtlijnen:
+
+- `TAB`: Plaatst de focus op het volgende item.
+- `SHIFT` + `TAB`: Plaats de focus op het vorige item.
+- `ENTER` / `SPACE`: Wanneer de knop (toggler) focus heeft, opent of sluit dit het taalmenu. Binnen het menu activeert dit de geselecteerde taal.
+- `ESCAPE`: Sluit het taalmenu wanneer deze de focus heeft.
+- _(Optioneel/Aanbevolen)_ `ARROW DOWN` / `ARROW UP`: Binnen het geopende menu kan hiermee door de verschillende taalopties genavigeerd worden.
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Language Switcher component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).

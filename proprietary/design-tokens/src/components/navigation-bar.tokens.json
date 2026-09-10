@@ -350,6 +350,10 @@
           "$type": "sizing",
           "$value": "{govnl.nav-bar.max-inline-size}"
         },
+        "min-inline-size": {
+          "$type": "sizing",
+          "$value": "100%"
+        },
         "border-color": {
           "$type": "color",
           "$value": "transparent"
@@ -357,6 +361,10 @@
         "background-color": {
           "$type": "color",
           "$value": "{govnl.surface.subtle.background-color}"
+        },
+        "overflow-wrap": {
+          "$type": "overflowWrap",
+          "$value": "break-word"
         },
         "mobile": {
           "padding-block-end": {
@@ -425,6 +433,10 @@
         "border-block-end-width": {
           "$type": "borderWidth",
           "$value": "0px"
+        },
+        "border-block-end-style": {
+          "$type": "text",
+          "$value": "solid"
         }
       }
     }
