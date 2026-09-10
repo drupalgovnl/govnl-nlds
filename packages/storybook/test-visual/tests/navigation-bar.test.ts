@@ -70,8 +70,19 @@ test.describe('Navigation Bar', () => {
     });
   });
 
-  test('Bigmenu Open', async ({ page }) => {
+  test('Bigmenu', async ({ page }) => {
     await page.goto('/iframe.html?id=componenten-navigation-bar--navigation-bar-big-menu');
+    await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
+
+    await expect(page).toHaveScreenshot('navigation-bar-bigmenu.png', {
+      maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
+      animations: 'disabled',
+      fullPage: false,
+    });
+  });
+
+  test('Bigmenu Open', async ({ page }) => {
+    await page.goto('/iframe.html?id=componenten-navigation-bar--navigation-bar-big-menu-open');
     await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
 
     await expect(page).toHaveScreenshot('navigation-bar-bigmenu-open.png', {
