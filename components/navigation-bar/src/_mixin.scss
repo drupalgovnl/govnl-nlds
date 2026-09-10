@@ -233,6 +233,22 @@
   padding-block-end: var(--govnl-nav-bar-big-menu-grid-column-heading-padding-block-end);
 }
 
+@mixin dictu-navigation-bar__submenu-heading--mobile {
+  padding-block-end: var(--govnl-nav-bar-big-menu-mobile-grid-column-heading-padding-block-end);
+}
+
+@mixin dictu-navigation-bar__submenu-heading-title--desktop {
+  display: none;
+}
+
+@mixin dictu-navigation-bar__big-menu-toggler {
+  display: none;
+}
+
+@mixin dictu-navigation-bar__big-menu-toggler--mobile {
+  display: flex;
+}
+
 @mixin dictu-navigation-bar__big-menu {
   background-color: var(--govnl-nav-bar-big-menu-background-color);
   border-block-end: var(--govnl-nav-bar-big-menu-border-block-end-width) solid
@@ -264,7 +280,7 @@
 }
 
 @mixin dictu-navigation-bar__grid--mobile {
-  --govnl-grid-gap-column-max: var(--govnl-nav-bar-big-menu-mobile-grid-gap);
+  --govnl-grid-gap-row-max: var(--govnl-nav-bar-big-menu-mobile-grid-gap-row-max);
 }
 
 @mixin dictu-navigation-bar__column {

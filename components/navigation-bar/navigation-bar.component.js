@@ -1,21 +1,10 @@
 import { Icon } from '../icon/icon.component';
 
-export const NavigationBar = ({
-  items = [],
-  expanded = false,
-  isBigMenu = false,
-  isMobile = false,
-  menuId,
-  classNames = [],
-}) => {
+export const NavigationBar = ({ items = [], expanded, isMobile, menuId, classNames = [] }) => {
   const navigationBar = document.createElement('nav');
   navigationBar.classList.add('dictu-navigation-bar', ...classNames);
   navigationBar.setAttribute('aria-label', 'Hoofdnavigatie');
   navigationBar.setAttribute('role', 'navigation');
-
-  if (isBigMenu) {
-    navigationBar.classList.add('dictu-navigation-bar--variant-big-menu');
-  }
 
   // Adds mobile menu toggle.
   const toggleIconOpen =
@@ -39,12 +28,12 @@ export const NavigationBar = ({
   navigationBar.appendChild(menuToggle);
 
   // Adds navigation items.
-  navigationBar.appendChild(createNavigationList(items, isMobile, menuId, expanded, isBigMenu));
+  navigationBar.appendChild(createNavigationList(items, isMobile, menuId, expanded));
 
   return navigationBar;
 };
 
-const createNavigationList = (items, isMobile, menuId, expanded, isBigMenu) => {
+const createNavigationList = (items, isMobile, menuId, expanded) => {
   const navigationList = document.createElement('ul');
   navigationList.classList.add('dictu-navigation-bar__list');
   navigationList.id = menuId;
@@ -55,20 +44,24 @@ const createNavigationList = (items, isMobile, menuId, expanded, isBigMenu) => {
   }
 
   items.forEach(item => {
-    navigationList.appendChild(createNavigationItem(item, isBigMenu));
+    navigationList.appendChild(createNavigationItem(item, isMobile));
   });
 
   return navigationList;
 };
 
-const createNavigationItem = (item, isBigMenu) => {
+const createNavigationItem = (item, isMobile) => {
   const navigationItem = document.createElement('li');
   navigationItem.classList.add('dictu-navigation-bar__item');
 
   if ('children' in item && item.children != null) {
+    if (item.isBigMenu) {
+      navigationItem.classList.add('dictu-navigation-bar__item--big-menu');
+    }
+
     navigationItem.appendChild(createNavigationSubmenuToggler(item.title, item.id, item.expanded));
     navigationItem.appendChild(
-      createNavigationSubmenu(item.children, item.id, item.expanded, isBigMenu)
+      createNavigationSubmenu(item.children, item.id, item.expanded, item.isBigMenu, isMobile)
     );
   } else {
     navigationItem.appendChild(createNavigationLink(item));
@@ -102,7 +95,13 @@ const createNavigationSubmenuToggler = (label, id, expanded = false) => {
   return navigationToggle;
 };
 
-const createNavigationSubmenu = (items, id, expanded = false, isBigMenu = false) => {
+const createNavigationSubmenu = (
+  items,
+  id,
+  expanded = false,
+  isBigMenu = false,
+  isMobile = false
+) => {
   const navigationSubmenu = document.createElement('div');
   navigationSubmenu.classList.add(
     !isBigMenu ? 'dictu-navigation-bar__submenu' : 'dictu-navigation-bar__big-menu'
@@ -135,10 +134,10 @@ const createNavigationSubmenu = (items, id, expanded = false, isBigMenu = false)
     const columnCount = Math.min(Math.max(groups.length, 1), 4);
     grid.classList.add(`dictu-grid--columns-${columnCount}`);
 
-    groups.forEach(groupItems => {
+    groups.forEach((groupItems, groupIndex) => {
       const column = document.createElement('div');
       column.classList.add('dictu-navigation-bar__column');
-      column.appendChild(createNavigationBigMenuGroup(groupItems));
+      column.appendChild(createNavigationBigMenuGroup(groupItems, id, groupIndex, isMobile));
 
       grid.appendChild(column);
     });
@@ -208,12 +207,18 @@ const createNavigationSubmenuList = items => {
   return navigationSubmenuList;
 };
 
-const createNavigationBigMenuGroup = items => {
+const createNavigationBigMenuGroup = (items, id, groupIndex, isMobile) => {
   const fragment = document.createDocumentFragment();
-
   const navigationBigMenuList = document.createElement('ul');
   navigationBigMenuList.classList.add('dictu-navigation-bar__submenu-list');
   navigationBigMenuList.setAttribute('role', 'menu');
+
+  if (isMobile) {
+    navigationBigMenuList.classList.add('dictu-display-none');
+  }
+
+  const sectionId = `${id}-${groupIndex + 1}`;
+  navigationBigMenuList.id = sectionId;
 
   items.forEach(item => {
     const url = item.href || item.link;
@@ -222,7 +227,36 @@ const createNavigationBigMenuGroup = items => {
     if (url === '<nolink>') {
       const heading = document.createElement('div');
       heading.classList.add('dictu-navigation-bar__submenu-heading');
-      heading.innerText = text;
+      const headingToggle = document.createElement('button');
+      headingToggle.classList.add(
+        'dictu-navigation-bar__submenu-toggler',
+        'dictu-navigation-bar__big-menu-toggler',
+        'dictu-navigation-bar__big-menu-toggler--mobile',
+        'dictu-focus-ring'
+      );
+
+      const toggleText = document.createElement('span');
+      toggleText.innerText = text;
+      headingToggle.appendChild(toggleText);
+      headingToggle.setAttribute('aria-controls', sectionId);
+      headingToggle.setAttribute('aria-expanded', 'false');
+      headingToggle.setAttribute('aria-haspopup', 'true');
+
+      const icon =
+        '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z"/></svg>';
+      const toggleIcon = Icon({ icon });
+      headingToggle.appendChild(toggleIcon);
+
+      const desktopText = document.createElement('span');
+      desktopText.classList.add(
+        'dictu-navigation-bar__submenu-heading-title',
+        'dictu-navigation-bar__submenu-heading-title--desktop'
+      );
+      desktopText.innerText = text;
+
+      heading.appendChild(headingToggle);
+      heading.appendChild(desktopText);
+
       fragment.appendChild(heading);
     } else {
       navigationBigMenuList.appendChild(createSubmenuItem(item, true));

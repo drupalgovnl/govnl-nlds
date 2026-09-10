@@ -373,11 +373,15 @@
           },
           "padding-inline-end": {
             "$type": "spacing",
-            "$value": "{govnl.space.sm}"
+            "$value": "0px"
           },
           "grid": {
             "column": {
               "heading": {
+                "padding-block-end": {
+                  "$type": "spacing",
+                  "$value": "0px"
+                },
                 "icon": {
                   "size": {
                     "$type": "sizing",
@@ -397,8 +401,12 @@
               }
             },
             "gap": {
-              "$type": "spacing",
-              "$value": "{govnl.space.md}"
+              "row": {
+                "max": {
+                  "$type": "dimension",
+                  "$value": "0"
+                }
+              }
             }
           },
           "max-inline-size": {
