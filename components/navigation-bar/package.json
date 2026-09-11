@@ -36,6 +36,7 @@
     "@dictu/utility-display": "^1.0.0"
   },
   "dependencies": {
+    "@dictu/grid": "^2.1.0",
     "@dictu/icon": "^2.2.0"
   }
 }

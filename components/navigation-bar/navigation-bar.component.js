@@ -1,12 +1,6 @@
 import { Icon } from '../icon/icon.component';
 
-export const NavigationBar = ({
-  items = [],
-  expanded = false,
-  isMobile = false,
-  menuId,
-  classNames = [],
-}) => {
+export const NavigationBar = ({ items = [], expanded, isMobile, menuId, classNames = [] }) => {
   const navigationBar = document.createElement('nav');
   navigationBar.classList.add('dictu-navigation-bar', ...classNames);
   navigationBar.setAttribute('aria-label', 'Hoofdnavigatie');
@@ -50,19 +44,25 @@ const createNavigationList = (items, isMobile, menuId, expanded) => {
   }
 
   items.forEach(item => {
-    navigationList.appendChild(createNavigationItem(item));
+    navigationList.appendChild(createNavigationItem(item, isMobile));
   });
 
   return navigationList;
 };
 
-const createNavigationItem = item => {
+const createNavigationItem = (item, isMobile) => {
   const navigationItem = document.createElement('li');
   navigationItem.classList.add('dictu-navigation-bar__item');
 
   if ('children' in item && item.children != null) {
+    if (item.isBigMenu) {
+      navigationItem.classList.add('dictu-navigation-bar__item--big-menu');
+    }
+
     navigationItem.appendChild(createNavigationSubmenuToggler(item.title, item.id, item.expanded));
-    navigationItem.appendChild(createNavigationSubmenu(item.children, item.id, item.expanded));
+    navigationItem.appendChild(
+      createNavigationSubmenu(item.children, item.id, item.expanded, item.isBigMenu, isMobile)
+    );
   } else {
     navigationItem.appendChild(createNavigationLink(item));
   }
@@ -80,19 +80,6 @@ const createNavigationLink = item => {
   return navigationLink;
 };
 
-const createNavigationSubmenu = (items, id, expanded = false) => {
-  const navigationSubmenu = document.createElement('div');
-  navigationSubmenu.classList.add('dictu-navigation-bar__submenu');
-  navigationSubmenu.id = id;
-  navigationSubmenu.appendChild(createNavigationSubmenuList(items));
-
-  if (!expanded) {
-    navigationSubmenu.classList.add('dictu-display-none');
-  }
-
-  return navigationSubmenu;
-};
-
 const createNavigationSubmenuToggler = (label, id, expanded = false) => {
   const navigationToggle = document.createElement('button');
   navigationToggle.classList.add('dictu-navigation-bar__submenu-toggler', 'dictu-focus-ring');
@@ -108,28 +95,177 @@ const createNavigationSubmenuToggler = (label, id, expanded = false) => {
   return navigationToggle;
 };
 
+const createNavigationSubmenu = (
+  items,
+  id,
+  expanded = false,
+  isBigMenu = false,
+  isMobile = false
+) => {
+  const navigationSubmenu = document.createElement('div');
+  navigationSubmenu.classList.add(
+    !isBigMenu ? 'dictu-navigation-bar__submenu' : 'dictu-navigation-bar__big-menu'
+  );
+  navigationSubmenu.id = id;
+
+  if (isBigMenu) {
+    const grid = document.createElement('div');
+    grid.classList.add('dictu-navigation-bar__grid', 'dictu-grid');
+
+    let currentGroup = [];
+    const groups = [];
+
+    items.forEach(item => {
+      const url = item.href || item.link;
+
+      if (url === '<nolink>') {
+        currentGroup = [];
+        groups.push(currentGroup);
+        currentGroup.push(item);
+      } else {
+        if (currentGroup.length === 0) {
+          groups.push(currentGroup);
+        }
+
+        currentGroup.push(item);
+      }
+    });
+
+    const columnCount = Math.min(Math.max(groups.length, 1), 4);
+    grid.classList.add(`dictu-grid--columns-${columnCount}`);
+
+    groups.forEach((groupItems, groupIndex) => {
+      const column = document.createElement('div');
+      column.classList.add('dictu-navigation-bar__column');
+      column.appendChild(createNavigationBigMenuGroup(groupItems, id, groupIndex, isMobile));
+
+      grid.appendChild(column);
+    });
+
+    navigationSubmenu.appendChild(grid);
+  } else {
+    navigationSubmenu.appendChild(createNavigationSubmenuList(items));
+  }
+
+  if (!expanded) {
+    navigationSubmenu.classList.add('dictu-display-none');
+  }
+
+  return navigationSubmenu;
+};
+
+const createSubmenuItem = (item, isBigMenu = false) => {
+  const navigationItem = document.createElement('li');
+  navigationItem.classList.add('dictu-navigation-bar__submenu-item');
+
+  const url = item.href || item.link;
+  const text = item.label || item.title;
+
+  if (url === '<nolink>') {
+    const navigationSpan = document.createElement('span');
+    navigationSpan.classList.add(
+      'dictu-navigation-bar__link',
+      'dictu-navigation-bar__submenu-link'
+    );
+    navigationSpan.innerText = text;
+
+    navigationItem.appendChild(navigationSpan);
+  } else {
+    const navigationLink = document.createElement('a');
+    navigationLink.classList.add(
+      'dictu-navigation-bar__link',
+      'dictu-navigation-bar__submenu-link',
+      'dictu-focus-ring'
+    );
+    navigationLink.href = url;
+    navigationLink.innerText = text;
+    navigationLink.setAttribute('role', 'menuitem');
+
+    if (isBigMenu) {
+      const bigMenuItemIcon = new Icon({
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"><path d="M5.52851 3.52864C5.78886 3.26829 6.21097 3.26829 6.47132 3.52864L10.4713 7.52864C10.7317 7.78899 10.7317 8.2111 10.4713 8.47144L6.47132 12.4714C6.21097 12.7318 5.78886 12.7318 5.52851 12.4714C5.26816 12.2111 5.26816 11.789 5.52851 11.5286L9.05711 8.00004L5.52851 4.47145C5.26816 4.2111 5.26816 3.78899 5.52851 3.52864Z"/></svg>',
+        classes: ['dictu-navigation-bar__item-icon'],
+      });
+      navigationLink.insertAdjacentElement('afterbegin', bigMenuItemIcon);
+    }
+
+    navigationItem.appendChild(navigationLink);
+  }
+
+  return navigationItem;
+};
+
 const createNavigationSubmenuList = items => {
   const navigationSubmenuList = document.createElement('ul');
   navigationSubmenuList.classList.add('dictu-navigation-bar__submenu-list');
   navigationSubmenuList.setAttribute('role', 'menu');
 
   items.forEach(item => {
-    const navigationSubmenuItem = document.createElement('li');
-    navigationSubmenuItem.classList.add('dictu-navigation-bar__submenu-item');
-
-    const navigationSubmenuLink = document.createElement('a');
-    navigationSubmenuLink.classList.add(
-      'dictu-navigation-bar__link',
-      'dictu-navigation-bar__submenu-link',
-      'dictu-focus-ring'
-    );
-    navigationSubmenuLink.href = item.link;
-    navigationSubmenuLink.innerText = item.label;
-    navigationSubmenuLink.setAttribute('role', 'menuitem');
-
-    navigationSubmenuItem.appendChild(navigationSubmenuLink);
-    navigationSubmenuList.appendChild(navigationSubmenuItem);
+    navigationSubmenuList.appendChild(createSubmenuItem(item, false));
   });
 
   return navigationSubmenuList;
+};
+
+const createNavigationBigMenuGroup = (items, id, groupIndex, isMobile) => {
+  const fragment = document.createDocumentFragment();
+  const navigationBigMenuList = document.createElement('ul');
+  navigationBigMenuList.classList.add('dictu-navigation-bar__submenu-list');
+  navigationBigMenuList.setAttribute('role', 'menu');
+
+  if (isMobile) {
+    navigationBigMenuList.classList.add('dictu-display-none');
+  }
+
+  const sectionId = `${id}-${groupIndex + 1}`;
+  navigationBigMenuList.id = sectionId;
+
+  items.forEach(item => {
+    const url = item.href || item.link;
+    const text = item.label || item.title;
+
+    if (url === '<nolink>') {
+      const heading = document.createElement('div');
+      heading.classList.add('dictu-navigation-bar__submenu-heading');
+      const headingToggle = document.createElement('button');
+      headingToggle.classList.add(
+        'dictu-navigation-bar__submenu-toggler',
+        'dictu-navigation-bar__big-menu-toggler',
+        'dictu-navigation-bar__big-menu-toggler--mobile',
+        'dictu-focus-ring'
+      );
+
+      const toggleText = document.createElement('span');
+      toggleText.innerText = text;
+      headingToggle.appendChild(toggleText);
+      headingToggle.setAttribute('aria-controls', sectionId);
+      headingToggle.setAttribute('aria-expanded', 'false');
+      headingToggle.setAttribute('aria-haspopup', 'true');
+
+      const icon =
+        '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z"/></svg>';
+      const toggleIcon = Icon({ icon });
+      headingToggle.appendChild(toggleIcon);
+
+      const desktopText = document.createElement('span');
+      desktopText.classList.add(
+        'dictu-navigation-bar__submenu-heading-title',
+        'dictu-navigation-bar__submenu-heading-title--desktop'
+      );
+      desktopText.innerText = text;
+
+      heading.appendChild(headingToggle);
+      heading.appendChild(desktopText);
+
+      fragment.appendChild(heading);
+    } else {
+      navigationBigMenuList.appendChild(createSubmenuItem(item, true));
+    }
+  });
+
+  if (navigationBigMenuList.childNodes.length > 0) {
+    fragment.appendChild(navigationBigMenuList);
+  }
+
+  return fragment;
 };

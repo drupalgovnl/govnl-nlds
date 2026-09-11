@@ -303,7 +303,7 @@
           }
         }
       },
-      "mega-menu": {
+      "big-menu": {
         "padding-block-start": {
           "$type": "spacing",
           "$value": "{govnl.space.xl}"
@@ -320,7 +320,7 @@
           "$type": "spacing",
           "$value": "{govnl.space.xl}"
         },
-        "columns": {
+        "grid": {
           "gap": {
             "$type": "spacing",
             "$value": "{govnl.space.2xl}"
@@ -334,12 +334,14 @@
               "padding-block-end": {
                 "$type": "spacing",
                 "$value": "{govnl.space.xs}"
-              }
-            },
-            "link-list": {
-              "text-decoration": {
-                "$type": "textDecoration",
-                "$value": "none"
+              },
+              "font-size": {
+                "$type": "fontSizes",
+                "$value": "{govnl.typography.font-size.xl}"
+              },
+              "font-weight": {
+                "$type": "fontWeights",
+                "$value": "{govnl.heading.font-weight}"
               }
             }
           }
@@ -347,6 +349,10 @@
         "max-inline-size": {
           "$type": "sizing",
           "$value": "{govnl.nav-bar.max-inline-size}"
+        },
+        "min-inline-size": {
+          "$type": "sizing",
+          "$value": "100%"
         },
         "border-color": {
           "$type": "color",
@@ -356,18 +362,34 @@
           "$type": "color",
           "$value": "{govnl.surface.subtle.background-color}"
         },
+        "overflow-wrap": {
+          "$type": "overflowWrap",
+          "$value": "break-word"
+        },
         "mobile": {
+          "padding-block-end": {
+            "$type": "spacing",
+            "$value": "0px"
+          },
+          "padding-block-start": {
+            "$type": "spacing",
+            "$value": "0px"
+          },
           "padding-inline-start": {
             "$type": "spacing",
             "$value": "{govnl.space.sm}"
           },
           "padding-inline-end": {
             "$type": "spacing",
-            "$value": "{govnl.space.sm}"
+            "$value": "0px"
           },
-          "columns": {
+          "grid": {
             "column": {
               "heading": {
+                "padding-block-end": {
+                  "$type": "spacing",
+                  "$value": "0px"
+                },
                 "icon": {
                   "size": {
                     "$type": "sizing",
@@ -387,8 +409,12 @@
               }
             },
             "gap": {
-              "$type": "spacing",
-              "$value": "{govnl.space.md}"
+              "row": {
+                "max": {
+                  "$type": "dimension",
+                  "$value": "0"
+                }
+              }
             }
           },
           "max-inline-size": {
@@ -407,6 +433,10 @@
         "border-block-end-width": {
           "$type": "borderWidth",
           "$value": "0px"
+        },
+        "border-block-end-style": {
+          "$type": "text",
+          "$value": "solid"
         }
       }
     }
