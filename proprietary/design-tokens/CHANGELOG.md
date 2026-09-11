@@ -1,5 +1,19 @@
 # @dictu/design-tokens
 
+## 2.20.0
+
+### Minor Changes
+
+- fedd51f: Breaking change: Introduced a new "Big Menu" implementation within
+  the `navigation-bar` component. This update includes underlying structural DOM
+  and CSS grid changes to accommodate multi-column layouts within the toggle
+  menu. A new boolean prop `isBigMenu` has been added to control this state.
+
+  The previous navigation bar toggle menu was limited to a single-column layout,
+  which restricted scalability for applications with complex navigation trees.
+  This change allows the menu to span across multiple columns, improving the
+  user experience and overview for heavy content structures.
+
 ## 2.19.0
 
 ### Minor Changes
