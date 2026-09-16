@@ -19,6 +19,7 @@
     "components/form-elements/label.tokens",
     "components/form-elements/radio-button.tokens",
     "components/form-elements/select.tokens",
+    "components/form-elements/step-indicator.tokens",
     "components/form-elements/textarea.tokens",
     "components/form-elements/text-input.tokens",
     "components/grid.tokens",
