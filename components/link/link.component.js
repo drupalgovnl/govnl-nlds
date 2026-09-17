@@ -2,7 +2,7 @@ import { Icon } from '../icon/icon.component';
 
 export function Link({ content, href, external, icon, iconPosition, iconLabel, classNames = [] }) {
   const link = document.createElement('a');
-  link.classList.add('dictu-language-link', ...classNames);
+  link.classList.add('dictu-link', ...classNames);
   link.href = href;
 
   const isDomNode = content?.nodeType !== undefined;
