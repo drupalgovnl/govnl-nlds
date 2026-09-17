@@ -5,9 +5,87 @@
         "$type": "color",
         "$value": "{govnl.document.background-color}"
       },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "{govnl.space.sm}"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "{govnl.space.sm}"
+      },
+      "padding-block-start": {
+        "$type": "dimension",
+        "$value": "0"
+      },
       "padding-block-end": {
         "$type": "dimension",
         "$value": "{govnl.lint.size.half-lint}"
+      },
+      "margin-inline-start": {
+        "$type": "dimension",
+        "$value": "0"
+      },
+      "margin-inline-end": {
+        "$type": "dimension",
+        "$value": "0"
+      },
+      "margin-block-start": {
+        "$type": "dimension",
+        "$value": "0"
+      },
+      "margin-block-end": {
+        "$type": "dimension",
+        "$value": "0"
+      },
+      "max-inline-size": {
+        "$type": "sizing",
+        "$value": "100%"
+      },
+      "wrapper": {
+        "before": {
+          "align-self": {
+            "$type": "position",
+            "$value": "end"
+          },
+          "margin-block-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.xs}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          }
+        },
+        "logo": {
+          "link": {
+            "text-decoration": {
+              "$type": "textDecoration",
+              "$value": "none"
+            }
+          }
+        },
+        "after": {
+          "place-self": {
+            "$type": "position",
+            "$value": "end"
+          },
+          "margin-block-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.xs}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{govnl.space.sm}"
+          }
+        }
       }
     }
   }

@@ -9,10 +9,43 @@
   @include mixin.dictu-page-header;
 }
 
-.dictu-page-header__logo-wrapper {
-  @include mixin.dictu-page-header-logo-wrapper;
+.dictu-page-header__wrapper {
+  @include mixin.dictu-page-header-wrapper;
+}
+
+.dictu-page-header__wrapper-before {
+  @include mixin.dictu-page-header-wrapper-before;
+}
+
+.dictu-page-header__wrapper-logo {
+  @include mixin.dictu-page-header-wrapper-logo;
+}
+
+.dictu-page-header__wrapper-after {
+  @include mixin.dictu-page-header-wrapper-after;
 }
 
 .dictu-page-header__logo-link {
-  @include mixin.dictu-page-header-logo-link;
+  @include mixin.dictu-page-header-wrapper-logo-link;
+}
+
+// Responsive: mobile
+@media (width <= 20em) {
+  .dictu-page-header__wrapper-logo {
+    @include mixin.dictu-page-header-wrapper-logo--mobile-sm;
+  }
+}
+
+@media (width <= 48em) {
+  .dictu-page-header__wrapper-before {
+    @include mixin.dictu-page-header-wrapper-before--mobile;
+  }
+
+  .dictu-page-header__wrapper-logo {
+    @include mixin.dictu-page-header-wrapper-logo--mobile;
+  }
+
+  .dictu-page-header__wrapper-after {
+    @include mixin.dictu-page-header-wrapper-after--mobile;
+  }
 }

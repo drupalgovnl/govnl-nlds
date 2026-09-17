@@ -1,8 +1,8 @@
 import { Icon } from '../icon/icon.component';
 
-export const LanguageSwitcher = ({ current, expanded, items }) => {
+export function LanguageSwitcher({ current, expanded, items, classNames = [] }) {
   const languageSwitcher = document.createElement('div');
-  languageSwitcher.classList.add('dictu-language-switcher');
+  languageSwitcher.classList.add('dictu-language-switcher', ...classNames);
 
   languageSwitcher.appendChild(createLanguageSwitcherSelectListToggler(current, expanded));
 
@@ -11,7 +11,7 @@ export const LanguageSwitcher = ({ current, expanded, items }) => {
   }
 
   return languageSwitcher;
-};
+}
 
 const createLanguageSwitcherSelectListToggler = (selected, expanded) => {
   const languageSwitcherSelectListToggler = document.createElement('button');
