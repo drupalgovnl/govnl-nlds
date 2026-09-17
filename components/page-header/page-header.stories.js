@@ -1,4 +1,5 @@
 import readme from './README.md?raw';
+import '@dictu/icon/dist/index.css';
 import '@dictu/language-switcher/dist/index.css';
 import '@dictu/link/dist/index.css';
 import '@dictu/logo/dist/index.css';
