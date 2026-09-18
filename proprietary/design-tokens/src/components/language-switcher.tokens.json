@@ -162,7 +162,7 @@
           "$type": "borderWidth",
           "$value": "{govnl.border.border-width.sm}"
         },
-        "inline-size": {
+        "min-inline-size": {
           "$type": "sizing",
           "$value": "100%"
         },

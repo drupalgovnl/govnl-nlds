@@ -56,7 +56,7 @@
   border-width: var(--govnl-language-switcher-content-border-width);
   box-sizing: border-box;
   font-size: var(--govnl-language-switcher-content-font-size);
-  inline-size: var(--govnl-language-switcher-content-inline-size);
+  min-inline-size: var(--govnl-language-switcher-content-min-inline-size);
   padding-block: var(--govnl-language-switcher-content-padding-block-start)
     var(--govnl-language-switcher-content-padding-block-end);
   padding-inline: var(--govnl-language-switcher-content-padding-inline-start)
