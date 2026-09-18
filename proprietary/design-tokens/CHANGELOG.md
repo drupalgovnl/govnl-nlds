@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 2.21.0
+
+### Minor Changes
+
+- 6d67043: Changed language-switcher inline-size to min-inline-size
+
 ## 2.20.0
 
 ### Minor Changes
