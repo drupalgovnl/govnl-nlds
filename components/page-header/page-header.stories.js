@@ -49,6 +49,7 @@ export const PageHeaderLanguageSwitcher = {
     const languageSwitcher = new LanguageSwitcher({
       current: 'Nederlands',
       expanded: args.languageSwitcherExpanded,
+      align: 'right',
       items: [
         { link: '/de/huidige-pagina', value: 'de', language: 'Deutsch', translation: 'Duits' },
         { link: '/en/huidige-pagina', value: 'en', language: 'English', translation: 'Engels' },

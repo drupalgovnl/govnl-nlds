@@ -56,13 +56,23 @@
   border-width: var(--govnl-language-switcher-content-border-width);
   box-sizing: border-box;
   font-size: var(--govnl-language-switcher-content-font-size);
-  inline-size: var(--govnl-language-switcher-content-inline-size);
+  min-inline-size: var(--govnl-language-switcher-content-min-inline-size);
   padding-block: var(--govnl-language-switcher-content-padding-block-start)
     var(--govnl-language-switcher-content-padding-block-end);
   padding-inline: var(--govnl-language-switcher-content-padding-inline-start)
     var(--govnl-language-switcher-content-padding-inline-end);
   position: absolute;
   z-index: var(--govnl-language-switcher-content-z-index, 1);
+}
+
+@mixin dictu-language-switcher-content--left {
+  left: 0;
+  right: auto;
+}
+
+@mixin dictu-language-switcher-content--right {
+  left: auto;
+  right: 0;
 }
 
 @mixin dictu-language-switcher-content-heading {

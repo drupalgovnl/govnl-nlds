@@ -40,6 +40,14 @@
   @include mixin.dictu-language-switcher-content;
 }
 
+.dictu-language-switcher__content--left {
+  @include mixin.dictu-language-switcher-content--left;
+}
+
+.dictu-language-switcher__content--right {
+  @include mixin.dictu-language-switcher-content--right;
+}
+
 .dictu-language-switcher__list {
   @include mixin.dictu-language-switcher-content-select-list;
 }
