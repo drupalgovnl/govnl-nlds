@@ -65,6 +65,16 @@
   z-index: var(--govnl-language-switcher-content-z-index, 1);
 }
 
+@mixin dictu-language-switcher-content--left {
+  left: 0;
+  right: auto;
+}
+
+@mixin dictu-language-switcher-content--right {
+  left: auto;
+  right: 0;
+}
+
 @mixin dictu-language-switcher-content-heading {
   color: var(--govnl-language-switcher-content-heading-color);
   line-height: var(--govnl-language-switcher-content-heading-line-height);

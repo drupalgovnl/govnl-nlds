@@ -1,17 +1,17 @@
 import { Icon } from '../icon/icon.component';
 
-export const LanguageSwitcher = ({ current, expanded, items }) => {
+export function LanguageSwitcher({ current, expanded, align, items, classNames = [] }) {
   const languageSwitcher = document.createElement('div');
-  languageSwitcher.classList.add('dictu-language-switcher');
+  languageSwitcher.classList.add('dictu-language-switcher', ...classNames);
 
   languageSwitcher.appendChild(createLanguageSwitcherSelectListToggler(current, expanded));
 
   if (expanded) {
-    languageSwitcher.appendChild(createLanguageSwitcherSelectListContent(items, current));
+    languageSwitcher.appendChild(createLanguageSwitcherSelectListContent(items, current, align));
   }
 
   return languageSwitcher;
-};
+}
 
 const createLanguageSwitcherSelectListToggler = (selected, expanded) => {
   const languageSwitcherSelectListToggler = document.createElement('button');
@@ -39,9 +39,12 @@ const createLanguageSwitcherSelectListToggler = (selected, expanded) => {
   return languageSwitcherSelectListToggler;
 };
 
-const createLanguageSwitcherSelectListContent = (items, current) => {
+const createLanguageSwitcherSelectListContent = (items, current, align) => {
   const languageSwitcherSelectListContent = document.createElement('div');
-  languageSwitcherSelectListContent.classList.add('dictu-language-switcher__content');
+  languageSwitcherSelectListContent.classList.add(
+    'dictu-language-switcher__content',
+    `dictu-language-switcher__content--${align}`
+  );
   languageSwitcherSelectListContent.setAttribute('id', 'language-switcher');
 
   languageSwitcherSelectListContent.appendChild(createLanguageSwitcherSelectListFirstItem());

@@ -3,42 +3,63 @@
  * Copyright (c) 2021-2025 dictu
  */
 
-@mixin reset {
-  margin-block: 0;
-  margin-inline: 0;
-}
-
 @mixin dictu-page-header {
-  @include reset;
-
-  background-color: var(--govnl-header-background-color, transparent);
-  max-inline-size: var(--govnl-header-container-max-inline-width, 100%);
-  padding-block-end: var(--govnl-header-padding-block-end, 0);
-  padding-inline: var(--govnl-header-container-padding-inline, 1rem);
+  background-color: var(--govnl-header-background-color);
+  margin-block: var(--govnl-header-margin-block-start) var(--govnl-header-margin-block-end);
+  margin-inline: var(--govnl-header-margin-inline-start) var(--govnl-header-margin-inline-end);
+  max-inline-size: var(--govnl-header-max-inline-size);
+  padding-block: var(--govnl-header-padding-block-start) var(--govnl-header-padding-block-end);
+  padding-inline: var(--govnl-header-padding-inline-start) var(--govnl-header-padding-inline-end);
 }
 
-/* Slightly too specific for a generic page header component. */
+@mixin dictu-page-header-wrapper {
+  display: grid;
+  grid-template-columns: 50% auto 1fr;
+}
 
-/* Perhaps set margin-inline-start as a design token? */
-@mixin dictu-page-header-logo-wrapper {
+@mixin dictu-page-header-wrapper-before {
+  align-self: var(--govnl-header-wrapper-before-align-self);
+  grid-column: 1;
+  margin-block-end: var(--govnl-header-wrapper-before-margin-block-end);
+  padding-inline: var(--govnl-header-wrapper-before-padding-inline-start)
+    var(--govnl-header-wrapper-before-padding-inline-end);
+}
+
+@mixin dictu-page-header-wrapper-logo {
+  grid-column: 2;
+}
+
+@mixin dictu-page-header-wrapper-after {
+  grid-column: 3;
+  margin-block-end: var(--govnl-header-wrapper-after-margin-block-end);
+  padding-inline: var(--govnl-header-wrapper-after-padding-inline-start)
+    var(--govnl-header-wrapper-after-padding-inline-end);
+  place-self: var(--govnl-header-wrapper-after-place-self);
+}
+
+@mixin dictu-page-header-wrapper-before--mobile {
+  display: none;
+}
+
+@mixin dictu-page-header-wrapper-logo--mobile {
   --govnl-container-padding-inline: 0;
 
   inline-size: fit-content;
-  margin-inline-start: calc(50% - 1.5rem);
-
-  @media (max-width <= 20em) {
-    margin-inline-start: calc(50% - 1rem);
-  }
-
-  @media (max-width <= 48em) {
-    margin-inline-start: calc(50% - 1.15rem);
-  }
+  margin-inline-start: calc(50% - 1.15rem);
 }
 
-@mixin dictu-page-header-logo-link {
+@mixin dictu-page-header-wrapper-logo--mobile-sm {
+  margin-inline-start: calc(50% - 1rem);
+}
+
+@mixin dictu-page-header-wrapper-after--mobile {
+  display: none;
+}
+
+@mixin dictu-page-header-wrapper-logo-link {
   &:has(.dictu-logo) {
-    text-decoration: none;
+    text-decoration: var(--govnl-header-wrapper-logo-link-text-decoration);
   }
 
-  text-decoration: none;
+  text-decoration: var(--govnl-header-wrapper-logo-link-text-decoration);
 }
