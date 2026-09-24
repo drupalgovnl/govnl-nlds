@@ -17,6 +17,10 @@
   grid-template-columns: 50% auto 1fr;
 }
 
+@mixin dictu-page-header-wrapper--mobile {
+  display: block;
+}
+
 @mixin dictu-page-header-wrapper-before {
   align-self: var(--govnl-header-wrapper-before-align-self);
   grid-column: 1;
@@ -57,9 +61,5 @@
 }
 
 @mixin dictu-page-header-wrapper-logo-link {
-  &:has(.dictu-logo) {
-    text-decoration: var(--govnl-header-wrapper-logo-link-text-decoration);
-  }
-
   text-decoration: var(--govnl-header-wrapper-logo-link-text-decoration);
 }

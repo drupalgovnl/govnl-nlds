@@ -65,14 +65,12 @@
   z-index: var(--govnl-language-switcher-content-z-index, 1);
 }
 
-@mixin dictu-language-switcher-content--left {
-  left: 0;
-  right: auto;
+@mixin dictu-language-switcher-content--start {
+  inset-inline: 0 auto;
 }
 
-@mixin dictu-language-switcher-content--right {
-  left: auto;
-  right: 0;
+@mixin dictu-language-switcher-content--end {
+  inset-inline: auto 0;
 }
 
 @mixin dictu-language-switcher-content-heading {

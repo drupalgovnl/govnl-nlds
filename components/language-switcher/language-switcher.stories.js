@@ -7,7 +7,7 @@ export default {
   args: {
     current: 'Nederlands',
     expanded: false,
-    align: 'left',
+    align: 'start',
     items: [
       {
         link: '/de/huidige-pagina',
@@ -42,14 +42,14 @@ export default {
     },
     align: {
       control: 'radio',
-      options: ['left', 'right'],
+      options: ['start', 'end'],
       description: 'De positie van de uitgeklapte taal container',
       table: {
         type: {
-          summary: 'left | right',
+          summary: 'start | end',
         },
         defaultValue: {
-          summary: 'left',
+          summary: 'start',
         },
       },
     },

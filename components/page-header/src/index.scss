@@ -30,13 +30,11 @@
 }
 
 // Responsive: mobile
-@media (width <= 20em) {
-  .dictu-page-header__wrapper-logo {
-    @include mixin.dictu-page-header-wrapper-logo--mobile-sm;
-  }
-}
-
 @media (width <= 48em) {
+  .dictu-page-header__wrapper {
+    @include mixin.dictu-page-header-wrapper--mobile;
+  }
+
   .dictu-page-header__wrapper-before {
     @include mixin.dictu-page-header-wrapper-before--mobile;
   }
@@ -47,5 +45,11 @@
 
   .dictu-page-header__wrapper-after {
     @include mixin.dictu-page-header-wrapper-after--mobile;
+  }
+}
+
+@media (width <= 20em) {
+  .dictu-page-header__wrapper-logo {
+    @include mixin.dictu-page-header-wrapper-logo--mobile-sm;
   }
 }
