@@ -7,6 +7,7 @@ export default {
   args: {
     current: 'Nederlands',
     expanded: false,
+    align: 'start',
     items: [
       {
         link: '/de/huidige-pagina',
@@ -38,6 +39,19 @@ export default {
     current: {
       options: ['Nederlands', 'English', 'Deutsch', 'Français'],
       control: { type: 'select' },
+    },
+    align: {
+      control: 'radio',
+      options: ['start', 'end'],
+      description: 'De positie van de uitgeklapte taal container',
+      table: {
+        type: {
+          summary: 'start | end',
+        },
+        defaultValue: {
+          summary: 'start',
+        },
+      },
     },
     expanded: {
       control: 'boolean',
