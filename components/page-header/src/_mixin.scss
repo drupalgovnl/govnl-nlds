@@ -14,7 +14,7 @@
 
 @mixin dictu-page-header-wrapper {
   display: grid;
-  grid-template-columns: 50% auto 1fr;
+  grid-template-columns: var(--govnl-header-wrapper-grid-column-start-inline-size) auto 1fr;
 }
 
 @mixin dictu-page-header-wrapper--mobile {

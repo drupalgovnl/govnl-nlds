@@ -42,6 +42,12 @@
         "$value": "100%"
       },
       "wrapper": {
+        "grid-column-start": {
+          "inline-size": {
+            "$type": "sizing",
+            "$value": "calc(50% - ({govnl.lint.size.lint} / 2))"
+          }
+        },
         "before": {
           "align-self": {
             "$type": "position",
