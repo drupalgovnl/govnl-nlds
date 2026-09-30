@@ -91,4 +91,30 @@ test.describe('Navigation Bar', () => {
       fullPage: false,
     });
   });
+
+  test('Mobile Bigmenu', async ({ page }) => {
+    await page.goto(
+      '/iframe.html?id=componenten-navigation-bar--navigation-bar-mobile-big-menu-open'
+    );
+    await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
+
+    await expect(page).toHaveScreenshot('navigation-bar-mobile-bigmenu.png', {
+      maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
+      animations: 'disabled',
+      fullPage: false,
+    });
+  });
+
+  test('Mobile Expanded Bigmenu', async ({ page }) => {
+    await page.goto(
+      '/iframe.html?id=componenten-navigation-bar--navigation-bar-mobile-big-menu-open-expanded'
+    );
+    await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
+
+    await expect(page).toHaveScreenshot('navigation-bar-mobile-expanded-bigmenu.png', {
+      maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
+      animations: 'disabled',
+      fullPage: false,
+    });
+  });
 });
