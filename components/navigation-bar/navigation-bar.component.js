@@ -53,6 +53,7 @@ const createNavigationList = (items, isMobile, menuId, expanded) => {
 const createNavigationItem = (item, isMobile) => {
   const navigationItem = document.createElement('li');
   navigationItem.classList.add('dictu-navigation-bar__item');
+  navigationItem.setAttribute('role', 'none');
 
   if ('children' in item && item.children != null) {
     if (item.isBigMenu) {
@@ -84,6 +85,7 @@ const createNavigationSubmenuToggler = (label, id, expanded = false) => {
   const navigationToggle = document.createElement('button');
   navigationToggle.classList.add('dictu-navigation-bar__submenu-toggler', 'dictu-focus-ring');
   navigationToggle.innerHTML = label;
+  navigationToggle.setAttribute('role', 'menuitem');
   navigationToggle.setAttribute('aria-controls', id);
   navigationToggle.setAttribute('aria-expanded', expanded);
   navigationToggle.setAttribute('aria-haspopup', true);
@@ -157,6 +159,7 @@ const createNavigationSubmenu = (
 const createSubmenuItem = (item, isBigMenu = false) => {
   const navigationItem = document.createElement('li');
   navigationItem.classList.add('dictu-navigation-bar__submenu-item');
+  navigationItem.setAttribute('role', 'none');
 
   const url = item.href || item.link;
   const text = item.label || item.title;
@@ -213,7 +216,12 @@ const createNavigationBigMenuGroup = (items, id, groupIndex, isMobile) => {
   navigationBigMenuList.classList.add('dictu-navigation-bar__submenu-list');
   navigationBigMenuList.setAttribute('role', 'menu');
 
-  if (isMobile) {
+  const headingItem = items.find(item => (item.href || item.link) === '<nolink>');
+  const isExpanded = headingItem
+    ? headingItem.expanded === true || headingItem.expanded === 'true'
+    : false;
+
+  if (isMobile && !isExpanded) {
     navigationBigMenuList.classList.add('dictu-display-none');
   }
 
@@ -227,6 +235,7 @@ const createNavigationBigMenuGroup = (items, id, groupIndex, isMobile) => {
     if (url === '<nolink>') {
       const heading = document.createElement('div');
       heading.classList.add('dictu-navigation-bar__submenu-heading');
+
       const headingToggle = document.createElement('button');
       headingToggle.classList.add(
         'dictu-navigation-bar__submenu-toggler',
@@ -234,12 +243,13 @@ const createNavigationBigMenuGroup = (items, id, groupIndex, isMobile) => {
         'dictu-navigation-bar__big-menu-toggler--mobile',
         'dictu-focus-ring'
       );
+      headingToggle.setAttribute('role', 'menuItem');
 
       const toggleText = document.createElement('span');
       toggleText.innerText = text;
       headingToggle.appendChild(toggleText);
       headingToggle.setAttribute('aria-controls', sectionId);
-      headingToggle.setAttribute('aria-expanded', 'false');
+      headingToggle.setAttribute('aria-expanded', item.expanded ?? 'false');
       headingToggle.setAttribute('aria-haspopup', 'true');
 
       const icon =
