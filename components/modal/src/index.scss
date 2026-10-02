@@ -1,0 +1,53 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@use "mixin" as mixin;
+
+.dictu-modal {
+  @include mixin.dictu-modal;
+}
+
+.dictu-modal__dialog {
+  @include mixin.dictu-modal-dialog;
+}
+
+.dictu-modal__dialog--center {
+  @include mixin.dictu-modal-dialog--center;
+}
+
+.dictu-modal__dialog--long-content {
+  @include mixin.dictu-modal-dialog--long-content;
+}
+
+.dictu-modal__header {
+  @include mixin.dictu-modal-dialog-header;
+}
+
+.dictu-modal__icon {
+  @include mixin.dictu-modal-dialog-header-icon;
+}
+
+.dictu-modal__heading {
+  @include mixin.dictu-modal-dialog-header-heading;
+}
+
+.dictu-modal__close {
+  @include mixin.dictu-modal-dialog-header-close;
+}
+
+.dictu-modal__content {
+  @include mixin.dictu-modal-dialog-content;
+}
+
+.dictu-modal__action {
+  @include mixin.dictu-modal-dialog-action;
+}
+
+// Responsive: mobile
+@media (width <= 48em) {
+  .dictu-modal__action {
+    @include mixin.dictu-modal-dialog-action--mobile;
+  }
+}

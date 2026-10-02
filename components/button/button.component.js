@@ -1,11 +1,9 @@
 import { Icon } from '../icon/icon.component';
 
-export function Button({ label, variant, iconPosition, icon, disabled, size, classNames = [] }) {
-  const classes = ['dictu-button', `dictu-button--${variant}`, 'dictu-focus-ring', ...classNames];
+export function Button({ label, variant, iconPosition, icon, disabled, size, classes = [] }) {
   const button = document.createElement('button');
-
+  button.classList.add('dictu-button', `dictu-button--${variant}`, 'dictu-focus-ring', ...classes);
   button.textContent = label;
-  button.classList.add(...classes);
 
   if (disabled) {
     button.disabled = disabled;
