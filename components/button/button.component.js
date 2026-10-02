@@ -1,8 +1,13 @@
 import { Icon } from '../icon/icon.component';
 
-export function Button({ label, variant, iconPosition, icon, disabled, size, classes = [] }) {
+export function Button({ label, variant, iconPosition, icon, disabled, size, classNames = [] }) {
   const button = document.createElement('button');
-  button.classList.add('dictu-button', `dictu-button--${variant}`, 'dictu-focus-ring', ...classes);
+  button.classList.add(
+    'dictu-button',
+    `dictu-button--${variant}`,
+    'dictu-focus-ring',
+    ...classNames
+  );
   button.textContent = label;
 
   if (disabled) {
@@ -10,7 +15,7 @@ export function Button({ label, variant, iconPosition, icon, disabled, size, cla
   }
 
   if (icon) {
-    const $icon = new Icon({ icon, classes: ['dictu-button__icon'] });
+    const $icon = new Icon({ icon, classNames: ['dictu-button__icon'] });
     button.insertAdjacentElement(iconPosition === 'before' ? 'afterbegin' : 'beforeend', $icon);
   }
 
