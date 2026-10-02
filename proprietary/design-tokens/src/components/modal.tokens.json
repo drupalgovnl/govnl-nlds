@@ -1,0 +1,194 @@
+{
+  "govnl": {
+    "modal": {
+      "align-items": {
+        "$type": "other",
+        "$value": "flex-start"
+      },
+      "block-size": {
+        "$type": "sizing",
+        "$value": "100%"
+      },
+      "inline-size": {
+        "$type": "sizing",
+        "$value": "100%"
+      },
+      "inset-block-start": {
+        "$type": "spacing",
+        "$value": "0px"
+      },
+      "inset-inline-start": {
+        "$type": "spacing",
+        "$value": "0px"
+      },
+      "padding-block-end": {
+        "$type": "spacing",
+        "$value": "{govnl.space.lg}"
+      },
+      "padding-block-start": {
+        "$type": "spacing",
+        "$value": "{govnl.space.lg}"
+      },
+      "padding-inline-end": {
+        "$type": "spacing",
+        "$value": "{govnl.space.lg}"
+      },
+      "padding-inline-start": {
+        "$type": "spacing",
+        "$value": "{govnl.space.lg}"
+      },
+      "before": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.color.black}"
+        },
+        "inset": {
+          "$type": "spacing",
+          "$value": "0px"
+        },
+        "opacity": {
+          "$type": "other",
+          "$value": "0.7"
+        }
+      },
+      "dialog": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{govnl.color.white}"
+        },
+        "border-radius": {
+          "$type": "borderRadius",
+          "$value": "{govnl.border.border-radius.lg}"
+        },
+        "flex-direction": {
+          "$type": "other",
+          "$value": "column"
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{govnl.gap-content.min}"
+        },
+        "inline-size": {
+          "$type": "sizing",
+          "$value": "100%"
+        },
+        "margin-inline": {
+          "$type": "spacing",
+          "$value": "auto"
+        },
+        "max-inline-size": {
+          "$type": "dimension",
+          "$value": "600px"
+        },
+        "text-align": {
+          "$type": "other",
+          "$value": "center"
+        },
+        "padding-block-end": {
+          "$type": "spacing",
+          "$value": "{govnl.space.md}"
+        },
+        "padding-block-start": {
+          "$type": "spacing",
+          "$value": "{govnl.space.md}"
+        },
+        "padding-inline-end": {
+          "$type": "spacing",
+          "$value": "{govnl.space.md}"
+        },
+        "padding-inline-start": {
+          "$type": "spacing",
+          "$value": "{govnl.space.md}"
+        },
+        "header": {
+          "flex-direction": {
+            "$type": "other",
+            "$value": "column"
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{govnl.gap-content.min}"
+          },
+          "icon": {
+            "color": {
+              "$type": "color",
+              "$value": "{govnl.interaction.color}"
+            },
+            "size": {
+              "$type": "sizing",
+              "$value": "3rem"
+            },
+            "align-self": {
+              "$type": "position",
+              "$value": "center"
+            }
+          },
+          "close": {
+            "align-self": {
+              "$type": "position",
+              "$value": "flex-end"
+            },
+            "min-block-size": {
+              "$type": "sizing",
+              "$value": "39px"
+            },
+            "padding-block-start": {
+              "$type": "spacing",
+              "$value": "{govnl.space.2xs}"
+            },
+            "padding-block-end": {
+              "$type": "spacing",
+              "$value": "{govnl.space.2xs}"
+            },
+            "padding-inline-start": {
+              "$type": "spacing",
+              "$value": "{govnl.space.xs}"
+            },
+            "padding-inline-end": {
+              "$type": "spacing",
+              "$value": "{govnl.space.xs}"
+            }
+          }
+        },
+        "center": {
+          "align-self": {
+            "$type": "position",
+            "$value": "center"
+          }
+        },
+        "long-content": {
+          "max-inline-size": {
+            "$type": "dimension",
+            "$value": "inherit"
+          }
+        },
+        "action": {
+          "flex-direction": {
+            "$type": "other",
+            "$value": "row"
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{govnl.gap-content.min} / 2"
+          },
+          "button": {
+            "block-size": {
+              "$type": "sizing",
+              "$value": "auto"
+            },
+            "inline-size": {
+              "$type": "sizing",
+              "$value": "100%"
+            }
+          },
+          "mobile": {
+            "flex-direction": {
+              "$type": "other",
+              "$value": "column"
+            }
+          }
+        }
+      }
+    }
+  }
+}

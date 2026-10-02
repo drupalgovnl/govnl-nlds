@@ -184,7 +184,7 @@ const createSubmenuItem = (item, isBigMenu = false) => {
     if (isBigMenu) {
       const bigMenuItemIcon = new Icon({
         icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"><path d="M5.52851 3.52864C5.78886 3.26829 6.21097 3.26829 6.47132 3.52864L10.4713 7.52864C10.7317 7.78899 10.7317 8.2111 10.4713 8.47144L6.47132 12.4714C6.21097 12.7318 5.78886 12.7318 5.52851 12.4714C5.26816 12.2111 5.26816 11.789 5.52851 11.5286L9.05711 8.00004L5.52851 4.47145C5.26816 4.2111 5.26816 3.78899 5.52851 3.52864Z"/></svg>',
-        classes: ['dictu-navigation-bar__item-icon'],
+        classNames: ['dictu-navigation-bar__item-icon'],
       });
       navigationLink.insertAdjacentElement('afterbegin', bigMenuItemIcon);
     }
