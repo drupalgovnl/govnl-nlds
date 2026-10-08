@@ -1,5 +1,12 @@
 # @dictu/page-header
 
+## 3.1.0
+
+### Minor Changes
+
+- ac29a47: Updated page-header's grid center starting position to match logo's
+  center. Combined it with the logo's inline-size token.
+
 ## 3.0.0
 
 ### Major Changes

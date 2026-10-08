@@ -1,5 +1,12 @@
 # @dictu/design-tokens
 
+## 2.23.0
+
+### Minor Changes
+
+- ac29a47: Updated page-header's grid center starting position to match logo's
+  center. Combined it with the logo's inline-size token.
+
 ## 2.22.0
 
 ### Minor Changes
