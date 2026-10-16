@@ -14,6 +14,7 @@ test.describe('Navigation Bar', () => {
   });
 
   test('Mobile', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 568 });
     await page.goto('/iframe.html?id=componenten-navigation-bar--navigation-bar-mobile');
     await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
 
@@ -25,6 +26,7 @@ test.describe('Navigation Bar', () => {
   });
 
   test('Mobile Expanded', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 568 });
     await page.goto('/iframe.html?id=componenten-navigation-bar--navigation-bar-mobile-expanded');
     await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
 
@@ -36,6 +38,7 @@ test.describe('Navigation Bar', () => {
   });
 
   test('Mobile Expanded Submenu', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 568 });
     await page.goto(
       '/iframe.html?id=componenten-navigation-bar--navigation-bar-mobile-expanded-submenu'
     );
@@ -93,6 +96,7 @@ test.describe('Navigation Bar', () => {
   });
 
   test('Mobile Bigmenu', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 568 });
     await page.goto(
       '/iframe.html?id=componenten-navigation-bar--navigation-bar-mobile-big-menu-open'
     );
@@ -106,6 +110,7 @@ test.describe('Navigation Bar', () => {
   });
 
   test('Mobile Expanded Bigmenu', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 568 });
     await page.goto(
       '/iframe.html?id=componenten-navigation-bar--navigation-bar-mobile-big-menu-open-expanded'
     );

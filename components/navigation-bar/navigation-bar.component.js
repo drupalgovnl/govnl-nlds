@@ -243,7 +243,7 @@ const createNavigationBigMenuGroup = (items, id, groupIndex, isMobile) => {
         'dictu-navigation-bar__big-menu-toggler--mobile',
         'dictu-focus-ring'
       );
-      headingToggle.setAttribute('role', 'menuItem');
+      headingToggle.setAttribute('role', 'menuitem');
 
       const toggleText = document.createElement('span');
       toggleText.innerText = text;
