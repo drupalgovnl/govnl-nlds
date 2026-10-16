@@ -21,7 +21,7 @@ export const NavigationBar = ({ items = [], expanded, isMobile, menuId, classNam
     'afterbegin',
     Icon({
       icon: expanded ? toggleIconClose : toggleIconOpen,
-      classes: ['dictu-navigation-bar__menu-icon'],
+      classNames: ['dictu-navigation-bar__menu-icon'],
     })
   );
 

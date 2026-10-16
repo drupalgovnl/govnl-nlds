@@ -8,12 +8,22 @@ import { Button } from '../button/button.component';
 
 export default {
   args: {
+    id: 'modal-1',
     heading: 'Informatie over zorgprofessionals',
     content: `<p>U staat op het punt over te stappen naar de informatie voor zorgprofessionals. Wilt u doorgaan?</p>`,
     isOpen: true,
     variant: 'center',
   },
   argTypes: {
+    id: {
+      control: 'string',
+      description: 'Het unieke ID van de modal.',
+      table: {
+        type: {
+          summary: 'string',
+        },
+      },
+    },
     action: {
       control: false,
       description: 'HTML element of string na de content.',

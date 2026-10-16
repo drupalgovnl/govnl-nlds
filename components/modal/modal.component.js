@@ -2,7 +2,7 @@ import { Button } from '../button/button.component';
 import { Heading } from '../heading/heading.component';
 import { Icon } from '../icon/icon.component';
 
-export function Modal({ heading, content, action, isOpen, variant, classNames = [] }) {
+export function Modal({ id, heading, content, action, isOpen, variant, classNames = [] }) {
   const modal = document.createElement('div');
   modal.classList.add('dictu-modal', ...classNames);
   modal.classList.toggle('is-open', isOpen);
@@ -11,8 +11,8 @@ export function Modal({ heading, content, action, isOpen, variant, classNames = 
   modalDialog.classList.add('dictu-modal__dialog', `dictu-modal__dialog--${variant}`);
   modalDialog.setAttribute('role', 'alertdialog');
   modalDialog.setAttribute('aria-modal', 'true');
-  modalDialog.setAttribute('aria-labelledby', 'modal_heading');
-  modalDialog.setAttribute('aria-describedby', 'modal_desc');
+  modalDialog.setAttribute('aria-labelledby', `heading-${id}`);
+  modalDialog.setAttribute('aria-describedby', `desc-${id}`);
 
   const modalDialogClose = new Button({
     label: 'Sluiten',
@@ -22,8 +22,8 @@ export function Modal({ heading, content, action, isOpen, variant, classNames = 
   modalDialogClose.setAttribute('data-modal-dismiss', '');
 
   modalDialog.appendChild(modalDialogClose);
-  modalDialog.appendChild(createModalDialogHeader(heading));
-  modalDialog.appendChild(createModalDialogContent(content));
+  modalDialog.appendChild(createModalDialogHeader(id, heading));
+  modalDialog.appendChild(createModalDialogContent(id, content));
   modalDialog.appendChild(createModalDialogAction(action));
 
   modal.appendChild(modalDialog);
@@ -31,7 +31,7 @@ export function Modal({ heading, content, action, isOpen, variant, classNames = 
   return modal;
 }
 
-const createModalDialogHeader = heading => {
+const createModalDialogHeader = (id, heading) => {
   const modalDialogHeader = document.createElement('div');
   modalDialogHeader.classList.add('dictu-modal__header');
 
@@ -46,7 +46,7 @@ const createModalDialogHeader = heading => {
     classNames: ['dictu-modal__heading'],
     level: 2,
   });
-  modalDialogHeaderHeading.setAttribute('id', 'modal_heading');
+  modalDialogHeaderHeading.id = `heading-${id}`;
 
   modalDialogHeader.appendChild(modalDialogHeaderIcon);
   modalDialogHeader.appendChild(modalDialogHeaderHeading);
@@ -54,10 +54,10 @@ const createModalDialogHeader = heading => {
   return modalDialogHeader;
 };
 
-const createModalDialogContent = content => {
+const createModalDialogContent = (id, content) => {
   const modalDialogContent = document.createElement('div');
   modalDialogContent.classList.add('dictu-modal__content');
-  modalDialogContent.setAttribute('id', 'modal_desc');
+  modalDialogContent.id = `desc-${id}`;
 
   if (content instanceof HTMLElement) {
     modalDialogContent.appendChild(content);

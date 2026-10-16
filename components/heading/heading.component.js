@@ -1,4 +1,4 @@
-export function Heading({ content, level, appearanceLevel = level, classNames = [] } = {}) {
+export function Heading({ content, level = 2, appearanceLevel = level, classNames = [] } = {}) {
   const heading = document.createElement(`h${level}`);
   heading.classList.add('dictu-heading', `dictu-heading--level-${appearanceLevel}`, ...classNames);
 
