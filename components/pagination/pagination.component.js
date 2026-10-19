@@ -33,7 +33,7 @@ export const Pagination = ({ pages, size, previous, next, classNames = [] }) => 
     const previousIcon = Icon({
       icon: previous.icon,
       label: label,
-      classes: ['dictu-pagination__icon'],
+      classNames: ['dictu-pagination__icon'],
     });
 
     const previousLink = Link({
@@ -81,7 +81,7 @@ export const Pagination = ({ pages, size, previous, next, classNames = [] }) => 
     const nextIcon = Icon({
       icon: next.icon,
       label: label,
-      classes: ['dictu-pagination__icon'],
+      classNames: ['dictu-pagination__icon'],
     });
 
     const nextLink = Link({

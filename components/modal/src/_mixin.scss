@@ -1,0 +1,114 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2025 dictu
+ */
+
+@mixin reset {
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+@mixin dictu-modal {
+  align-items: var(--govnl-modal-align-items);
+  block-size: var(--govnl-modal-block-size);
+  box-sizing: border-box;
+  display: none;
+  inline-size: var(--govnl-modal-inline-size);
+  inset-block-start: var(--govnl-modal-inset-block-start);
+  inset-inline-start: var(--govnl-modal-inset-inline-start);
+  overflow: hidden;
+  overflow-y: auto;
+  padding-block: var(--govnl-modal-padding-block-start) var(--govnl-modal-padding-block-end);
+  padding-inline: var(--govnl-modal-padding-inline-start) var(--govnl-modal-padding-inline-end);
+  position: fixed;
+  z-index: 100;
+
+  &::before {
+    background-color: var(--govnl-modal-before-background-color);
+    content: "";
+    display: block;
+    inset: var(--govnl-modal-before-inset);
+    opacity: var(--govnl-modal-before-opacity);
+    position: fixed;
+    z-index: 1;
+  }
+
+  // stylelint-disable-next-line selector-class-pattern
+  &.is-open {
+    display: flex;
+  }
+}
+
+@mixin dictu-modal-dialog {
+  background-color: var(--govnl-modal-dialog-background-color);
+  border-radius: var(--govnl-modal-dialog-border-radius);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: var(--govnl-modal-dialog-flex-direction);
+  gap: var(--govnl-modal-dialog-gap);
+  inline-size: var(--govnl-modal-dialog-inline-size);
+  margin-inline: var(--govnl-modal-dialog-margin-inline);
+  max-inline-size: var(--govnl-modal-dialog-max-inline-size);
+  padding-block: var(--govnl-modal-dialog-padding-block-start) var(--govnl-modal-dialog-padding-block-end);
+  padding-inline: var(--govnl-modal-dialog-padding-inline-start) var(--govnl-modal-dialog-padding-inline-end);
+  position: relative;
+  text-align: var(--govnl-modal-dialog-text-align);
+  z-index: 2;
+}
+
+@mixin dictu-modal-dialog--center {
+  align-self: var(--govnl-modal-dialog-center-align-self);
+}
+
+@mixin dictu-modal-dialog--long-content {
+  max-inline-size: var(--govnl-modal-dialog-long-content-max-inline-size);
+}
+
+@mixin dictu-modal-dialog-header {
+  display: flex;
+  flex-direction: var(--govnl-modal-dialog-header-flex-direction);
+  gap: var(--govnl-modal-dialog-header-gap);
+}
+
+@mixin dictu-modal-dialog-header-icon {
+  --govnl-icon-size: var(--govnl-modal-dialog-header-icon-size);
+
+  align-self: var(--govnl-modal-dialog-header-icon-align-self);
+  color: var(--govnl-modal-dialog-header-icon-color);
+}
+
+@mixin dictu-modal-dialog-header-heading {
+  @include reset;
+}
+
+@mixin dictu-modal-dialog-header-close {
+  --govnl-button-min-block-size: var(--govnl-modal-dialog-header-close-min-block-size);
+  --govnl-button-padding-block-start: var(--govnl-modal-dialog-header-close-padding-block-start);
+  --govnl-button-padding-block-end: var(--govnl-modal-dialog-header-close-padding-block-end);
+  --govnl-button-padding-inline-start: var(--govnl-modal-dialog-header-close-padding-inline-start);
+  --govnl-button-padding-inline-end: var(--govnl-modal-dialog-header-close-padding-inline-end);
+
+  align-self: var(--govnl-modal-dialog-header-close-align-self);
+}
+
+@mixin dictu-modal-dialog-content {
+  & > * {
+    @include reset;
+  }
+}
+
+@mixin dictu-modal-dialog-action {
+  display: flex;
+  flex-direction: var(--govnl-modal-dialog-action-flex-direction);
+  gap: var(--govnl-modal-dialog-action-gap);
+
+  & .dictu-button,
+  & .dictu-link-as-button {
+    block-size: var(--govnl-modal-dialog-action-button-block-size);
+    inline-size: var(--govnl-modal-dialog-action-button-inline-size);
+  }
+}
+
+@mixin dictu-modal-dialog-action--mobile {
+  flex-direction: var(--govnl-modal-dialog-action-mobile-flex-direction);
+}

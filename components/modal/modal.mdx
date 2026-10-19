@@ -1,0 +1,72 @@
+{/* modal.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as ModalStories from './modal.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={ModalStories} title="Componenten/Modal" />
+
+<Title>Modal</Title>
+
+<Subtitle>
+  Een modal (dialoogvenster) toont belangrijke informatie of acties over de rest van de applicatie
+  heen. Het dwingt de gebruiker om een actie te voltooien of te annuleren voordat ze terug kunnen
+  keren naar de hoofdinhoud. Dit component bevat ingebouwde logica voor focus-trapping en
+  toetsenbordnavigatie.
+</Subtitle>
+
+<Canvas of={ModalStories.ModalDefault} story={{ height: '500px' }} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={ModalStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Voorbeelden
+
+### Standaard modal
+
+De standaard modal is in de basis verborgen voor de gebruiker. Op de pagina wordt een trigger (meestal een knop) weergegeven waarmee de gebruiker de modal kan openen.
+
+<Canvas of={ModalStories.ModalDefault} />
+
+- De daadwerkelijke inhoud van de modal wordt getoond binnen een duidelijke dialoog-container (`.dictu-modal__dialog`).
+- Sluitknoppen of annuleer-acties binnen de modal zijn voorzien van het `data-modal-dismiss` attribuut.
+- **Zichtbaarheid:** Het JavaScript component voegt de class `is-open` toe aan de root-container om deze zichtbaar te maken.
+- **URL Hash:** Indien ingesteld (`useHash: true`), wordt de ID van de modal toegevoegd aan de URL (bijv. `#mijn-modal`), zodat de modal direct open staat bij het delen van de link.
+
+Voor het correct en toegankelijk gebruik past het component de volgende attributen automatisch aan op de modal container:
+
+- `aria-hidden`: `true` wanneer de modal gesloten is, en `false` wanneer de modal geopend is.
+
+Houd bij de implementatie rekening met de volgende HTML/CSS richtlijnen:
+
+- Zorg dat de modal container een `role="dialog"` of `role="alertdialog"` en `aria-modal="true"` heeft.
+- Sluit de modal wanneer er buiten het dialoogvenster (op de donkere overlay) wordt geklikt (standaard geactiveerd via de `clickOutside` optie).
+
+## Toegankelijkheid
+
+Voor de bediening van de Modal met het toetsenbord neemt het component de bediening grotendeels over (focus trapping). Hiervoor gelden de volgende richtlijnen:
+
+- `TAB`: Plaatst de focus op het volgende interactieve item **binnen** de modal. De focus kan de modal niet verlaten zolang deze open is.
+- `SHIFT` + `TAB`: Plaatst de focus op het vorige interactieve item binnen de modal.
+- `ENTER` / `SPACE`: Wanneer een knop (zoals opslaan of de trigger) de focus heeft, wordt deze actie geactiveerd of de modal geopend.
+- `ESCAPE`: Sluit de modal direct en plaatst de focus automatisch terug op het element dat de modal oorspronkelijk opende.
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Modal component op GitHub](https://github.com/drupalgovnl/govnl-nlds/issues).
+- [Biedt een wijzigingsvoorstel aan op Github](https://github.com/drupalgovnl/govnl-nlds). Lees hoe je het beste [een wijziging kunt aanbieden](https://github.com/drupalgovnl/govnl-nlds/blob/main/DEVELOPMENT.md).
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).

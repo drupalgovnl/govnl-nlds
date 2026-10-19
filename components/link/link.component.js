@@ -12,7 +12,7 @@ export function Link({ content, href, external, icon, iconPosition, iconLabel, c
     const linkIcon = new Icon({
       icon,
       label: iconLabel,
-      classes: ['dictu-link__icon'],
+      classNames: ['dictu-link__icon'],
     });
 
     link.classList.add(
