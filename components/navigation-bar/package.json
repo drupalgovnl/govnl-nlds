@@ -1,6 +1,6 @@
 {
   "name": "@dictu/navigation-bar",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "author": "Dienst ICT Uitvoering",
   "description": "Navigation Bar CSS component.",
   "license": "EUPL-1.2",
@@ -37,6 +37,6 @@
   },
   "dependencies": {
     "@dictu/grid": "^2.1.0",
-    "@dictu/icon": "^2.2.0"
+    "@dictu/icon": "^2.3.0"
   }
 }

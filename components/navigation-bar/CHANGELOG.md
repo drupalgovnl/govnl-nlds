@@ -1,5 +1,18 @@
 # @dictu/navigation-bar
 
+## 5.1.0
+
+### Minor Changes
+
+- 3e92d2e: Updated included component classNames variable
+- d3ac021: Resolved navigation-bar accessibility violations, added mobile tests
+  and cleaned navigation-bar.stories.js.
+
+### Patch Changes
+
+- Updated dependencies [3e92d2e]
+  - @dictu/icon@2.3.0
+
 ## 5.0.0
 
 ### Major Changes
