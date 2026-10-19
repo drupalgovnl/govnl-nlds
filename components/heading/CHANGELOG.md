@@ -1,5 +1,15 @@
 # @dictu/heading
 
+## 3.3.0
+
+### Minor Changes
+
+- 3e92d2e: Updated included component classNames variable
+- 1d1d431: Breaking: Added Modal component and tokens.
+
+  Updated component.js with exported functions to allow the component to be
+  included elsewhere
+
 ## 3.2.0
 
 ### Minor Changes

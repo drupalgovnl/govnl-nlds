@@ -1,6 +1,6 @@
 {
   "name": "@dictu/language-switcher",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "author": "Dienst ICT Uitvoering",
   "description": "Language Switcher CSS component.",
   "license": "EUPL-1.2",
@@ -27,7 +27,7 @@
     "provenance": true
   },
   "dependencies": {
-    "@dictu/icon": "^2.2.2"
+    "@dictu/icon": "^2.3.0"
   },
   "devDependencies": {
     "@dictu/utility-focus-ring": "^2.0.0"
