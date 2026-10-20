@@ -13,10 +13,10 @@
     "url": "git@github.com:git@github.com:drupalgovnl/govnl-nlds.git",
     "directory": "."
   },
-  "packageManager": "npm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971",
+  "packageManager": "npm@10.9.9",
   "engines": {
     "//": "Update @types/node to match the highest node version here",
-    "node": ">=22 <=24"
+    "node": ">=22.11 <=24"
   },
   "type": "module",
   "workspaces": [
@@ -26,7 +26,7 @@
     "./packages/storybook"
   ],
   "devDependencies": {
-    "@changesets/cli": "^2.29.4",
+    "@changesets/cli": "^3.0.3",
     "@eslint/js": "^9.29.0",
     "@size-limit/preset-small-lib": "^11.1.6",
     "@types/node": "^22.9.3",
@@ -116,10 +116,10 @@
   },
   "overrides": {
     "expr-eval-fork": "3.0.1",
-    "js-yaml": "3.15.0",
-    "vitest": "4.1.10",
-    "@vitest/browser": "4.1.10",
-    "@vitest/browser-playwright": "4.1.10"
+    "minimatch": "10.2.5",
+    "vitest": "4.1.12",
+    "@vitest/browser": "4.1.12",
+    "@vitest/browser-playwright": "4.1.12"
   },
   "size-limit": [
     {
