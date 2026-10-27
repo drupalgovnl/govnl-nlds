@@ -12,4 +12,15 @@ test.describe('Page Header', () => {
       fullPage: false,
     });
   });
+
+  test('Language Switcher', async ({ page }) => {
+    await page.goto('/iframe.html?id=componenten-page-header--page-header-language-switcher');
+    await page.waitForSelector('.dictu-page-header', { timeout: 5000 });
+
+    await expect(page).toHaveScreenshot('page-header-language-switcher.png', {
+      maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
+      animations: 'disabled',
+      fullPage: false,
+    });
+  });
 });

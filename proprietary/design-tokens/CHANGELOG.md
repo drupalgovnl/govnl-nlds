@@ -1,5 +1,54 @@
 # @dictu/design-tokens
 
+## 2.23.0
+
+### Minor Changes
+
+- ac29a47: Updated page-header's grid center starting position to match logo's
+  center. Combined it with the logo's inline-size token.
+
+## 2.22.0
+
+### Minor Changes
+
+- 187b699: - Breaking: `.dictu-page-header__logo-wrapper` is replaced by
+  `.dictu-page-header__wrapper`, `__wrapper-before`, `__wrapper-logo`, and
+  `__wrapper-after`.
+  - Updated component standards and documentation.
+  - Updated Page Header to support content before and after logo.
+
+## 2.21.0
+
+### Minor Changes
+
+- 6d67043: Changed language-switcher inline-size to min-inline-size
+
+## 2.20.0
+
+### Minor Changes
+
+- fedd51f: Breaking change: Introduced a new "Big Menu" implementation within
+  the `navigation-bar` component. This update includes underlying structural DOM
+  and CSS grid changes to accommodate multi-column layouts within the toggle
+  menu. A new boolean prop `isBigMenu` has been added to control this state.
+
+  The previous navigation bar toggle menu was limited to a single-column layout,
+  which restricted scalability for applications with complex navigation trees.
+  This change allows the menu to span across multiple columns, improving the
+  user experience and overview for heavy content structures.
+
+## 2.19.0
+
+### Minor Changes
+
+- dcd166d: Added Language Switcher component and upated tokens
+
+## 2.18.0
+
+### Minor Changes
+
+- 822c136: Minor updates to a number of tokens to match design
+
 ## 2.17.1
 
 ### Patch Changes

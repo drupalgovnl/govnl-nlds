@@ -131,7 +131,7 @@
         "selected": {
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.50}"
+            "$value": "{govnl.brand.primary.50}"
           },
           "color": {
             "$type": "color",

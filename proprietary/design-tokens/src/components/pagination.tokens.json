@@ -135,7 +135,7 @@
           },
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.root.background-color}"
+            "$value": "{govnl.brand.primary.50}"
           },
           "border-radius": {
             "$type": "border-radius",
@@ -143,7 +143,7 @@
           },
           "color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.400}"
+            "$value": "{govnl.brand.primary.400}"
           },
           "border-color": {
             "$type": "color",

@@ -22,13 +22,13 @@
           "label": {
             "color": {
               "$type": "color",
-              "$value": "{govnl.color.lintblauw.500}"
+              "$value": "{govnl.brand.primary.500}"
             }
           },
           "icon": {
             "color": {
               "$type": "color",
-              "$value": "{govnl.color.lintblauw.500}"
+              "$value": "{govnl.brand.primary.300}"
             }
           }
         },
@@ -42,7 +42,7 @@
           "icon": {
             "color": {
               "$type": "color",
-              "$value": "{govnl.document.subtle.color}"
+              "$value": "{govnl.brand.primary.300}"
             },
             "size": {
               "$type": "dimension",
@@ -98,11 +98,11 @@
           "badge": {
             "background-color": {
               "$type": "color",
-              "$value": "{govnl.color.grijs.100}"
+              "$value": "{govnl.brand.primary.50}"
             },
             "color": {
               "$type": "color",
-              "$value": "{govnl.document.color}"
+              "$value": "{govnl.brand.primary.500}"
             }
           }
         },
@@ -115,7 +115,7 @@
         "hover": {
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.color.grijs.100}"
+            "$value": "{govnl.interaction.hover.background-color}"
           },
           "border-color": {
             "$type": "color",
@@ -125,11 +125,11 @@
             "badge": {
               "background-color": {
                 "$type": "color",
-                "$value": "{govnl.color.grijs.200}"
+                "$value": "{govnl.brand.primary.100}"
               },
               "color": {
                 "$type": "color",
-                "$value": "{govnl.document.color}"
+                "$value": "{govnl.brand.primary.500}"
               }
             }
           },
@@ -143,7 +143,7 @@
         "active": {
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.color.grijs.200}"
+            "$value": "{govnl.interaction.active.background-color}"
           },
           "border-color": {
             "$type": "color",
@@ -159,11 +159,11 @@
             "badge": {
               "background-color": {
                 "$type": "color",
-                "$value": "{govnl.color.grijs.300}"
+                "$value": "{govnl.brand.primary.100}"
               },
               "color": {
                 "$type": "color",
-                "$value": "{govnl.document.color}"
+                "$value": "{govnl.brand.primary.500}"
               }
             }
           }
@@ -279,6 +279,38 @@
             "$type": "color",
             "$value": "{govnl.color.lintblauw.500}"
           }
+        },
+        "border-width-top": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "border-width-left": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "border-width-right": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "border-width-bottom": {
+          "$type": "borderWidth",
+          "$value": "{govnl.border.border-width.sm}"
+        },
+        "border-radius-top-left": {
+          "$type": "borderRadius",
+          "$value": "{govnl.border.border-radius.sm}"
+        },
+        "border-radius-top-right": {
+          "$type": "borderRadius",
+          "$value": "{govnl.border.border-radius.sm}"
+        },
+        "border-radius-bottom-right": {
+          "$type": "borderRadius",
+          "$value": "{govnl.border.border-radius.sm}"
+        },
+        "border-radius-bottom-left": {
+          "$type": "borderRadius",
+          "$value": "{govnl.border.border-radius.sm}"
         }
       },
       "heading": {
@@ -470,7 +502,7 @@
       "accent": {
         "background-color": {
           "$type": "color",
-          "$value": "{govnl.brand.primary-1.500}"
+          "$value": "{govnl.brand.primary.500}"
         },
         "border-color": {
           "$type": "color",
@@ -530,11 +562,11 @@
           "badge": {
             "background-color": {
               "$type": "color",
-              "$value": "{govnl.card.accent.color}"
+              "$value": "{govnl.brand.primary.400}"
             },
             "color": {
               "$type": "color",
-              "$value": "{govnl.brand.primary-1.500}"
+              "$value": "{govnl.card.accent.color}"
             }
           }
         },
@@ -556,7 +588,7 @@
               }
             },
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.brand.primary.500}"
           },
           "border-color": {
             "$type": "color",
@@ -579,7 +611,7 @@
               }
             },
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.brand.primary.500}"
           },
           "border-color": {
             "$type": "color",
@@ -707,6 +739,12 @@
               "$value": "{govnl.typography.font-size.sm}"
             }
           }
+        },
+        "heading": {
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{govnl.typography.font-size.lg}"
+          }
         }
       },
       "horizontal": {
@@ -724,9 +762,13 @@
         },
         "mobile": {
           "image": {
-            "inline-size": {
-              "$type": "dimension",
-              "$value": "48px"
+            "$type": "dimension",
+            "$value": "{govnl.dimension.size.800}"
+          },
+          "main": {
+            "column-gap": {
+              "$type": "spacing",
+              "$value": "{govnl.space.xs}"
             }
           }
         }

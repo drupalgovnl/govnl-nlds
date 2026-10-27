@@ -8,20 +8,25 @@
             "$value": "{govnl.dimension.size.2000}"
           },
           "col-1": {
+            "$type": "other",
             "$value": "repeat(1, 1fr)"
           },
           "col-2": {
+            "$type": "other",
             "$value": "repeat(2, 1fr)"
           },
           "col-3": {
+            "$type": "other",
             "$value": "repeat(3, 1fr)"
           },
           "col-4": {
+            "$type": "other",
             "$value": "repeat(4, 1fr)"
           }
         },
         "rows": {
           "auto": {
+            "$type": "other",
             "$value": "auto"
           }
         }

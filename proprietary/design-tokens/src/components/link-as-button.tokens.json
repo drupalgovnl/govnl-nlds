@@ -61,7 +61,7 @@
         "hover": {
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.color.grijs.50}"
+            "$value": "{govnl.interaction.hover.background-color}"
           },
           "border-color": {
             "$type": "color",
@@ -101,7 +101,7 @@
         "active": {
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.color.grijs.100}"
+            "$value": "{govnl.interaction.active.background-color}"
           },
           "border-color": {
             "$type": "color",

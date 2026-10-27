@@ -14,6 +14,7 @@ test.describe('Navigation Bar', () => {
   });
 
   test('Mobile', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 568 });
     await page.goto('/iframe.html?id=componenten-navigation-bar--navigation-bar-mobile');
     await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
 
@@ -25,6 +26,7 @@ test.describe('Navigation Bar', () => {
   });
 
   test('Mobile Expanded', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 568 });
     await page.goto('/iframe.html?id=componenten-navigation-bar--navigation-bar-mobile-expanded');
     await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
 
@@ -36,6 +38,7 @@ test.describe('Navigation Bar', () => {
   });
 
   test('Mobile Expanded Submenu', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 568 });
     await page.goto(
       '/iframe.html?id=componenten-navigation-bar--navigation-bar-mobile-expanded-submenu'
     );
@@ -64,6 +67,56 @@ test.describe('Navigation Bar', () => {
     await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
 
     await expect(page).toHaveScreenshot('navigation-bar-submenu-open.png', {
+      maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
+      animations: 'disabled',
+      fullPage: false,
+    });
+  });
+
+  test('Bigmenu', async ({ page }) => {
+    await page.goto('/iframe.html?id=componenten-navigation-bar--navigation-bar-big-menu');
+    await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
+
+    await expect(page).toHaveScreenshot('navigation-bar-bigmenu.png', {
+      maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
+      animations: 'disabled',
+      fullPage: false,
+    });
+  });
+
+  test('Bigmenu Open', async ({ page }) => {
+    await page.goto('/iframe.html?id=componenten-navigation-bar--navigation-bar-big-menu-open');
+    await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
+
+    await expect(page).toHaveScreenshot('navigation-bar-bigmenu-open.png', {
+      maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
+      animations: 'disabled',
+      fullPage: false,
+    });
+  });
+
+  test('Mobile Bigmenu', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 568 });
+    await page.goto(
+      '/iframe.html?id=componenten-navigation-bar--navigation-bar-mobile-big-menu-open'
+    );
+    await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
+
+    await expect(page).toHaveScreenshot('navigation-bar-mobile-bigmenu.png', {
+      maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
+      animations: 'disabled',
+      fullPage: false,
+    });
+  });
+
+  test('Mobile Expanded Bigmenu', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 568 });
+    await page.goto(
+      '/iframe.html?id=componenten-navigation-bar--navigation-bar-mobile-big-menu-open-expanded'
+    );
+    await page.waitForSelector('.dictu-navigation-bar', { timeout: 5000 });
+
+    await expect(page).toHaveScreenshot('navigation-bar-mobile-expanded-bigmenu.png', {
       maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
       animations: 'disabled',
       fullPage: false,
