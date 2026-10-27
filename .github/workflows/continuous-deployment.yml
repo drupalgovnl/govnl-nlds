@@ -82,7 +82,9 @@ jobs:
           retention-days: 1
 
   test:
-    runs-on: ubuntu-latest
+    # Playwright 1.58.2 has no ubuntu26.04 browser builds. ubuntu-latest is
+    # moving to Ubuntu 26.04, so keep this job on 24.04 until Playwright >= 1.61.
+    runs-on: ubuntu-24.04
     needs: install
     steps:
       - name: Checkout branch
