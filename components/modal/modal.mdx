@@ -53,6 +53,22 @@ Houd bij de implementatie rekening met de volgende HTML/CSS richtlijnen:
 - Zorg dat de modal container een `role="dialog"` of `role="alertdialog"` en `aria-modal="true"` heeft.
 - Sluit de modal wanneer er buiten het dialoogvenster (op de donkere overlay) wordt geklikt (standaard geactiveerd via de `clickOutside` optie).
 
+### Basic
+
+De `basic` variant plaatst de dialoog bovenaan het scherm. De dialoog is maximaal 600 pixels breed.
+
+<Canvas of={ModalStories.ModalBasic} story={{ height: '500px' }} />
+
+### Long content
+
+De `long-content` variant gebruikt de beschikbare breedte. Gebruik deze variant wanneer de inhoud langer is dan een korte bevestiging.
+
+<Canvas of={ModalStories.ModalLongContent} story={{ height: '640px' }} />
+
+### Mobiele weergave
+
+Onder een schermbreedte van 48em worden de acties onder elkaar gezet.
+
 ## Toegankelijkheid
 
 Voor de bediening van de Modal met het toetsenbord neemt het component de bediening grotendeels over (focus trapping). Hiervoor gelden de volgende richtlijnen:
