@@ -21,6 +21,10 @@
   }
 }
 
+.dictu-navigation-bar__item-icon {
+  @include mixin.dictu-navigation-bar__item-icon;
+}
+
 .dictu-navigation-bar__submenu-toggler {
   @include mixin.dictu-navigation-bar__submenu-toggler;
 }
