@@ -133,6 +133,10 @@
   position: relative;
 }
 
+@mixin dictu-navigation-bar__item-icon {
+  flex-shrink: 0;
+}
+
 @mixin dictu-navigation-bar__submenu-toggler {
   align-items: center;
   background-color: var(--govnl-nav-bar-submenu-toggler-background-color);
@@ -262,6 +266,7 @@
   padding-block: var(--govnl-nav-bar-big-menu-padding-block-start) var(--govnl-nav-bar-big-menu-padding-block-end);
   padding-inline: var(--govnl-nav-bar-big-menu-padding-inline-start) var(--govnl-nav-bar-big-menu-padding-inline-end);
   position: absolute;
+  z-index: 1;
 }
 
 @mixin dictu-navigation-bar__big-menu--mobile {
