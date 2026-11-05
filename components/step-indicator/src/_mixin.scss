@@ -138,8 +138,9 @@
     align-items: center;
     display: flex;
     inline-size: 100%;
+    justify-content: center;
+    position: relative;
 
-    &::before,
     &::after {
       background-image: repeating-linear-gradient(
         to right,
@@ -151,22 +152,21 @@
       );
       block-size: var(--govnl-step-indicator-connector-border-width);
       content: "";
-      flex: 1 1 0;
-      line-height: 0;
-      min-inline-size: 0;
+      inline-size: calc(100% - var(--govnl-step-indicator-marker-size));
+      inset-block-start: 50%;
+      inset-inline-start: calc(50% + (var(--govnl-step-indicator-marker-size) / 2));
+      position: absolute;
+      translate: 0 -50%;
     }
   }
 
-  .dictu-step-indicator__step--complete .dictu-step-indicator__rail::after,
-  .dictu-step-indicator__step--complete + .dictu-step-indicator__step .dictu-step-indicator__rail::before {
+  .dictu-step-indicator__step--complete .dictu-step-indicator__rail::after {
     background-color: var(--govnl-step-indicator-connector-color);
     background-image: none;
   }
 
-  .dictu-step-indicator__step:first-child .dictu-step-indicator__rail::before,
   .dictu-step-indicator__step:last-child .dictu-step-indicator__rail::after {
-    background-image: none;
-    block-size: 0;
+    content: none;
   }
 
   .dictu-step-indicator__label {
@@ -260,6 +260,8 @@
     var(--govnl-step-indicator-marker-padding-block-end);
   padding-inline: var(--govnl-step-indicator-marker-padding-inline-start)
     var(--govnl-step-indicator-marker-padding-inline-end);
+  position: relative;
+  z-index: 1;
 }
 
 @mixin dictu-step-indicator__marker--current {
