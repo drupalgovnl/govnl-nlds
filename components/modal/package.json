@@ -1,6 +1,6 @@
 {
   "name": "@dictu/modal",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Dienst ICT Uitvoering",
   "description": "Modal CSS component.",
   "license": "EUPL-1.2",
@@ -27,7 +27,7 @@
     "provenance": true
   },
   "dependencies": {
-    "@dictu/icon": "^2.2.2"
+    "@dictu/icon": "^2.3.0"
   },
   "devDependencies": {
     "@dictu/utility-focus-ring": "^2.0.0"

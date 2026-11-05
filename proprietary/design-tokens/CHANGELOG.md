@@ -1,5 +1,11 @@
 # @dictu/design-tokens
 
+## 2.24.0
+
+### Minor Changes
+
+- 3e92d2e: Updated included component classNames variable
+
 ## 2.23.0
 
 ### Minor Changes
