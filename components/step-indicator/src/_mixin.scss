@@ -141,8 +141,15 @@
 
     &::before,
     &::after {
-      border-block-start: var(--govnl-step-indicator-connector-border-width)
-        var(--govnl-step-indicator-connector-border-style) var(--govnl-step-indicator-connector-color);
+      background-image: repeating-linear-gradient(
+        to right,
+        var(--govnl-step-indicator-connector-color) 0,
+        var(--govnl-step-indicator-connector-color) var(--govnl-step-indicator-connector-dash-length),
+        transparent var(--govnl-step-indicator-connector-dash-length),
+        transparent
+          calc(var(--govnl-step-indicator-connector-dash-length) + var(--govnl-step-indicator-connector-dash-gap))
+      );
+      block-size: var(--govnl-step-indicator-connector-border-width);
       content: "";
       flex: 1 1 0;
       line-height: 0;
@@ -152,12 +159,14 @@
 
   .dictu-step-indicator__step--complete .dictu-step-indicator__rail::after,
   .dictu-step-indicator__step--complete + .dictu-step-indicator__step .dictu-step-indicator__rail::before {
-    border-block-start-style: var(--govnl-step-indicator-connector-complete-border-style);
+    background-color: var(--govnl-step-indicator-connector-color);
+    background-image: none;
   }
 
   .dictu-step-indicator__step:first-child .dictu-step-indicator__rail::before,
   .dictu-step-indicator__step:last-child .dictu-step-indicator__rail::after {
-    border-block-start-width: 0;
+    background-image: none;
+    block-size: 0;
   }
 
   .dictu-step-indicator__label {
@@ -187,10 +196,17 @@
     flex-direction: column;
 
     &::after {
-      border-inline-start: var(--govnl-step-indicator-connector-border-width)
-        var(--govnl-step-indicator-connector-border-style) var(--govnl-step-indicator-connector-color);
+      background-image: repeating-linear-gradient(
+        to bottom,
+        var(--govnl-step-indicator-connector-color) 0,
+        var(--govnl-step-indicator-connector-color) var(--govnl-step-indicator-connector-dash-length),
+        transparent var(--govnl-step-indicator-connector-dash-length),
+        transparent
+          calc(var(--govnl-step-indicator-connector-dash-length) + var(--govnl-step-indicator-connector-dash-gap))
+      );
       content: "";
       flex: 1 1 auto;
+      inline-size: var(--govnl-step-indicator-connector-border-width);
       line-height: 0;
       margin-block: var(--govnl-step-indicator-list-vertical-connector-padding-block-start)
         var(--govnl-step-indicator-list-vertical-connector-padding-block-end);
@@ -199,7 +215,8 @@
   }
 
   .dictu-step-indicator__step--complete .dictu-step-indicator__rail::after {
-    border-inline-start-style: var(--govnl-step-indicator-connector-complete-border-style);
+    background-color: var(--govnl-step-indicator-connector-color);
+    background-image: none;
   }
 
   .dictu-step-indicator__step:last-child .dictu-step-indicator__rail::after {
