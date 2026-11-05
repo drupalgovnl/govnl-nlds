@@ -1,5 +1,11 @@
 # @dictu/icon
 
+## 2.3.0
+
+### Minor Changes
+
+- 3e92d2e: Updated included component classNames variable
+
 ## 2.2.2
 
 ### Patch Changes
