@@ -1,0 +1,70 @@
+{/* step-indicator.mdx */}
+
+import { Canvas, Meta, Markdown, ArgTypes, Title, Subtitle } from '@storybook/addon-docs/blocks';
+import * as StepIndicatorStories from './step-indicator.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={StepIndicatorStories} title="Componenten/Step indicator" />
+
+<Title>Step indicator</Title>
+
+<Subtitle>
+  De step indicator toont waar iemand zich bevindt in een lineair proces met een vaste volgorde,
+  zoals een aanvraag of registratie.
+</Subtitle>
+
+<Canvas of={StepIndicatorStories.HorizontalStart} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={StepIndicatorStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Step indicator
+
+Gebruik de component alleen voor processen waarvan de volgorde vastligt. De informatie uit de
+desktopweergave blijft beschikbaar op een smal scherm, in een samenvatting die de volledige lijst
+opent.
+
+## Voorbeelden
+
+### Horizontaal, huidige stap aan het begin
+
+<Canvas of={StepIndicatorStories.HorizontalStart} />
+
+### Horizontaal, huidige stap in het midden
+
+<Canvas of={StepIndicatorStories.HorizontalMiddle} />
+
+### Horizontaal, alle stappen afgerond
+
+<Canvas of={StepIndicatorStories.HorizontalEnd} />
+
+### Verticaal
+
+<Canvas of={StepIndicatorStories.Vertical} />
+
+### Compact
+
+<Canvas of={StepIndicatorStories.Compact} />
+
+### Compact, geopend
+
+<Canvas of={StepIndicatorStories.CompactExpanded} />
+
+## Relevante WCAG succescriteria
+
+- 1.3.1 Info and Relationships: de stappen staan in een geordende lijst binnen een navigatie.
+- 1.4.1 Use of Color: de huidige stap is ook vetgedrukt en heeft `aria-current="step"`.
+- 2.4.6 Headings and Labels: de navigatie heeft een toegankelijke naam.
+- 4.1.2 Name, Role, Value: een afgeronde stap heeft een tekstalternatief voor het vinkje.
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de Step indicator component op GitHub.
+- Bied een wijzigingsvoorstel aan op GitHub.
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).
