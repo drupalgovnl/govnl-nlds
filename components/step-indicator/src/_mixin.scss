@@ -1,0 +1,301 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2026 dictu
+ */
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin compact-layout {
+  .dictu-step-indicator__disclosure {
+    display: flex;
+  }
+
+  .dictu-step-indicator__list--standalone {
+    display: none;
+  }
+}
+
+@mixin dictu-step-indicator {
+  display: block;
+}
+
+@mixin dictu-step-indicator--horizontal {
+  @media (width <= 48em) {
+    @include compact-layout;
+  }
+}
+
+@mixin dictu-step-indicator--vertical {
+  @media (width <= 48em) {
+    @include compact-layout;
+  }
+}
+
+@mixin dictu-step-indicator--compact {
+  @include compact-layout;
+}
+
+@mixin dictu-step-indicator__disclosure {
+  display: none;
+  flex-direction: column;
+  row-gap: var(--govnl-step-indicator-mobile-expanded-row-gap);
+}
+
+@mixin dictu-step-indicator__summary {
+  align-items: flex-start;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
+  list-style: none;
+  row-gap: var(--govnl-step-indicator-mobile-summary-row-gap);
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::marker {
+    content: "";
+  }
+}
+
+@mixin dictu-step-indicator__progress {
+  color: var(--govnl-step-indicator-mobile-summary-step-color);
+  font-family: var(--govnl-step-indicator-mobile-summary-step-font-family);
+  font-size: var(--govnl-step-indicator-mobile-summary-step-font-size);
+  font-weight: var(--govnl-step-indicator-mobile-summary-step-font-weight);
+  line-height: var(--govnl-step-indicator-mobile-summary-step-line-height);
+}
+
+@mixin dictu-step-indicator__progress-value {
+  font-weight: var(--govnl-step-indicator-mobile-summary-step-highlight-font-weight);
+}
+
+@mixin dictu-step-indicator__summary-label {
+  align-items: center;
+  color: var(--govnl-step-indicator-mobile-summary-label-color);
+  column-gap: var(--govnl-step-indicator-mobile-summary-label-column-gap);
+  display: flex;
+  font-family: var(--govnl-step-indicator-mobile-summary-label-font-family);
+  font-size: var(--govnl-step-indicator-mobile-summary-label-font-size);
+  font-weight: var(--govnl-step-indicator-mobile-summary-label-font-weight);
+  line-height: var(--govnl-step-indicator-mobile-summary-label-line-height);
+}
+
+@mixin dictu-step-indicator__summary-icon {
+  --govnl-icon-size: var(--govnl-step-indicator-mobile-summary-label-icon-size);
+
+  color: var(--govnl-step-indicator-mobile-summary-icon-color);
+  flex-shrink: 0;
+}
+
+@mixin dictu-step-indicator__summary-icon--expanded {
+  transform: var(--govnl-step-indicator-mobile-summary-icon-expanded-transform);
+}
+
+@mixin dictu-step-indicator__overview {
+  background-color: var(--govnl-step-indicator-mobile-overview-background-color);
+  border-color: var(--govnl-step-indicator-mobile-overview-border-color);
+  border-radius: var(--govnl-step-indicator-mobile-overview-border-radius);
+  border-style: var(--govnl-step-indicator-mobile-overview-border-style);
+  border-width: var(--govnl-step-indicator-mobile-overview-border-width);
+  box-sizing: border-box;
+  inline-size: 100%;
+  padding-block: var(--govnl-step-indicator-mobile-overview-padding-block-start)
+    var(--govnl-step-indicator-mobile-overview-padding-block-end);
+  padding-inline: var(--govnl-step-indicator-mobile-overview-padding-inline-start)
+    var(--govnl-step-indicator-mobile-overview-padding-inline-end);
+}
+
+@mixin dictu-step-indicator__list {
+  @include reset-list;
+}
+
+@mixin dictu-step-indicator__list--horizontal {
+  display: flex;
+
+  .dictu-step-indicator__step {
+    align-items: center;
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    min-inline-size: 0;
+    row-gap: var(--govnl-step-indicator-list-horizontal-step-row-gap);
+  }
+
+  .dictu-step-indicator__rail {
+    align-items: center;
+    display: flex;
+    inline-size: 100%;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+      background-image: repeating-linear-gradient(
+        to right,
+        var(--govnl-step-indicator-connector-color) 0,
+        var(--govnl-step-indicator-connector-color) var(--govnl-step-indicator-connector-dash-length),
+        transparent var(--govnl-step-indicator-connector-dash-length),
+        transparent
+          calc(var(--govnl-step-indicator-connector-dash-length) + var(--govnl-step-indicator-connector-dash-gap))
+      );
+      block-size: var(--govnl-step-indicator-connector-border-width);
+      content: "";
+      inline-size: calc(100% - var(--govnl-step-indicator-marker-size));
+      inset-block-start: 50%;
+      inset-inline-start: calc(50% + (var(--govnl-step-indicator-marker-size) / 2));
+      position: absolute;
+      translate: 0 -50%;
+    }
+  }
+
+  .dictu-step-indicator__step--complete .dictu-step-indicator__rail::after {
+    background-color: var(--govnl-step-indicator-connector-color);
+    background-image: none;
+  }
+
+  .dictu-step-indicator__step:last-child .dictu-step-indicator__rail::after {
+    content: none;
+  }
+
+  .dictu-step-indicator__label {
+    inline-size: 100%;
+    text-align: var(--govnl-step-indicator-list-horizontal-label-text-align);
+  }
+}
+
+@mixin dictu-step-indicator__list--vertical {
+  display: flex;
+  flex-direction: column;
+
+  .dictu-step-indicator__step {
+    column-gap: var(--govnl-step-indicator-list-vertical-step-column-gap);
+    display: flex;
+    inline-size: 100%;
+
+    &:not(:last-child) {
+      min-block-size: var(--govnl-step-indicator-list-vertical-step-min-block-size);
+    }
+  }
+
+  .dictu-step-indicator__rail {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      background-image: repeating-linear-gradient(
+        to bottom,
+        var(--govnl-step-indicator-connector-color) 0,
+        var(--govnl-step-indicator-connector-color) var(--govnl-step-indicator-connector-dash-length),
+        transparent var(--govnl-step-indicator-connector-dash-length),
+        transparent
+          calc(var(--govnl-step-indicator-connector-dash-length) + var(--govnl-step-indicator-connector-dash-gap))
+      );
+      content: "";
+      flex: 1 1 auto;
+      inline-size: var(--govnl-step-indicator-connector-border-width);
+      line-height: 0;
+      margin-block: var(--govnl-step-indicator-list-vertical-connector-padding-block-start)
+        var(--govnl-step-indicator-list-vertical-connector-padding-block-end);
+      min-block-size: 0;
+    }
+  }
+
+  .dictu-step-indicator__step--complete .dictu-step-indicator__rail::after {
+    background-color: var(--govnl-step-indicator-connector-color);
+    background-image: none;
+  }
+
+  .dictu-step-indicator__step:last-child .dictu-step-indicator__rail::after {
+    content: none;
+  }
+
+  .dictu-step-indicator__label {
+    padding-block-start: var(--govnl-step-indicator-list-vertical-label-padding-block-start);
+  }
+}
+
+@mixin dictu-step-indicator__step {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+@mixin dictu-step-indicator__rail {
+  display: flex;
+}
+
+@mixin dictu-step-indicator__marker {
+  align-items: center;
+  background-color: var(--govnl-step-indicator-marker-upcoming-background-color);
+  block-size: var(--govnl-step-indicator-marker-size);
+  border-color: var(--govnl-step-indicator-marker-upcoming-border-color);
+  border-radius: var(--govnl-step-indicator-marker-border-radius);
+  border-style: var(--govnl-step-indicator-marker-border-style);
+  border-width: var(--govnl-step-indicator-marker-border-width);
+  box-sizing: border-box;
+  color: var(--govnl-step-indicator-marker-upcoming-number-color);
+  display: flex;
+  flex-shrink: 0;
+  font-family: var(--govnl-step-indicator-marker-number-font-family);
+  font-size: var(--govnl-step-indicator-marker-number-font-size);
+  font-weight: var(--govnl-step-indicator-marker-number-font-weight);
+  inline-size: var(--govnl-step-indicator-marker-size);
+  justify-content: center;
+  line-height: var(--govnl-step-indicator-marker-number-line-height);
+  padding-block: var(--govnl-step-indicator-marker-padding-block-start)
+    var(--govnl-step-indicator-marker-padding-block-end);
+  padding-inline: var(--govnl-step-indicator-marker-padding-inline-start)
+    var(--govnl-step-indicator-marker-padding-inline-end);
+  position: relative;
+  z-index: 1;
+}
+
+@mixin dictu-step-indicator__marker--current {
+  background-color: var(--govnl-step-indicator-marker-current-background-color);
+  border-color: var(--govnl-step-indicator-marker-current-border-color);
+  color: var(--govnl-step-indicator-marker-current-number-color);
+}
+
+@mixin dictu-step-indicator__marker--complete {
+  background-color: var(--govnl-step-indicator-marker-complete-background-color);
+  border-color: var(--govnl-step-indicator-marker-complete-border-color);
+  color: var(--govnl-step-indicator-marker-complete-icon-color);
+}
+
+@mixin dictu-step-indicator__marker-icon {
+  --govnl-icon-size: var(--govnl-step-indicator-marker-complete-icon-size);
+
+  color: var(--govnl-step-indicator-marker-complete-icon-color);
+}
+
+@mixin dictu-step-indicator__label {
+  color: var(--govnl-step-indicator-label-color);
+  font-family: var(--govnl-step-indicator-label-font-family);
+  font-size: var(--govnl-step-indicator-label-font-size);
+  font-weight: var(--govnl-step-indicator-label-font-weight);
+  line-height: var(--govnl-step-indicator-label-line-height);
+}
+
+@mixin dictu-step-indicator__label--current {
+  font-weight: var(--govnl-step-indicator-label-current-font-weight);
+}
+
+@mixin dictu-step-indicator__state {
+  block-size: 1px;
+  border: 0;
+  clip-path: inset(50%);
+  inline-size: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+}

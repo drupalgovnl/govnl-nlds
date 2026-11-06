@@ -1,0 +1,102 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2026 dictu
+ */
+
+@use "./mixin" as mixin;
+
+.dictu-step-indicator {
+  @include mixin.dictu-step-indicator;
+}
+
+.dictu-step-indicator--horizontal {
+  @include mixin.dictu-step-indicator--horizontal;
+}
+
+.dictu-step-indicator--vertical {
+  @include mixin.dictu-step-indicator--vertical;
+}
+
+.dictu-step-indicator--compact {
+  @include mixin.dictu-step-indicator--compact;
+}
+
+.dictu-step-indicator__disclosure {
+  @include mixin.dictu-step-indicator__disclosure;
+}
+
+.dictu-step-indicator__summary {
+  @include mixin.dictu-step-indicator__summary;
+}
+
+.dictu-step-indicator__disclosure[open] .dictu-step-indicator__summary-icon {
+  @include mixin.dictu-step-indicator__summary-icon--expanded;
+}
+
+.dictu-step-indicator__progress {
+  @include mixin.dictu-step-indicator__progress;
+}
+
+.dictu-step-indicator__progress-value {
+  @include mixin.dictu-step-indicator__progress-value;
+}
+
+.dictu-step-indicator__summary-label {
+  @include mixin.dictu-step-indicator__summary-label;
+}
+
+.dictu-step-indicator__summary-icon {
+  @include mixin.dictu-step-indicator__summary-icon;
+}
+
+.dictu-step-indicator__overview {
+  @include mixin.dictu-step-indicator__overview;
+}
+
+.dictu-step-indicator__list {
+  @include mixin.dictu-step-indicator__list;
+}
+
+.dictu-step-indicator__list--horizontal {
+  @include mixin.dictu-step-indicator__list--horizontal;
+}
+
+.dictu-step-indicator__list--vertical {
+  @include mixin.dictu-step-indicator__list--vertical;
+}
+
+.dictu-step-indicator__step {
+  @include mixin.dictu-step-indicator__step;
+}
+
+.dictu-step-indicator__rail {
+  @include mixin.dictu-step-indicator__rail;
+}
+
+.dictu-step-indicator__marker {
+  @include mixin.dictu-step-indicator__marker;
+}
+
+.dictu-step-indicator__step--current .dictu-step-indicator__marker {
+  @include mixin.dictu-step-indicator__marker--current;
+}
+
+.dictu-step-indicator__step--complete .dictu-step-indicator__marker {
+  @include mixin.dictu-step-indicator__marker--complete;
+}
+
+.dictu-step-indicator__marker-icon {
+  @include mixin.dictu-step-indicator__marker-icon;
+}
+
+.dictu-step-indicator__label {
+  @include mixin.dictu-step-indicator__label;
+}
+
+.dictu-step-indicator__step--current .dictu-step-indicator__label {
+  @include mixin.dictu-step-indicator__label--current;
+}
+
+.dictu-step-indicator__state {
+  @include mixin.dictu-step-indicator__state;
+}

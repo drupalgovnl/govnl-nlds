@@ -1,0 +1,40 @@
+{
+  "name": "@dictu/step-indicator",
+  "version": "0.1.0",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Step indicator CSS component for multi-step forms.",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system",
+    "css",
+    "step-indicator"
+  ],
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "components/step-indicator"
+  },
+  "files": [
+    "src/",
+    "dist/",
+    "*.md"
+  ],
+  "exports": {
+    "./dist/*": "./dist/*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
+    "clean": "rimraf ./dist/"
+  },
+  "dependencies": {
+    "@dictu/icon": "^2.2.0"
+  },
+  "devDependencies": {
+    "@dictu/utility-focus-ring": "*"
+  }
+}
