@@ -131,8 +131,10 @@ npm run test:visual:update:linux:single -- paragraph.test.ts
 
 `npm run test:visual:update:linux` runs the Playwright update command inside the
 official Playwright Docker image (`mcr.microsoft.com/playwright:v1.58.2-noble`).
-It copies the repository into a temporary directory, runs the tests there, and
-copies the resulting `linux/` screenshots back. Docker must be running.
+Screenshots are written straight into `__screenshots__/linux`. Dependencies stay
+in a Docker volume, so later runs skip `npm install`. Docker must be running.
+The image is linux/amd64 so the baselines match CI, on an Apple Silicon Mac it
+runs under emulation.
 
 ## CI behaviour
 

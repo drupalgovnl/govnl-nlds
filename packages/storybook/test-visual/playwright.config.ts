@@ -58,6 +58,6 @@ export default defineConfig({
     command: 'npm run storybook',
     url: 'http://localhost:6006',
     reuseExistingServer: !isCI,
-    timeout: 120 * 1000,
+    timeout: process.env.STORYBOOK_DISABLE_WATCH === '1' ? 300 * 1000 : 120 * 1000,
   },
 });
