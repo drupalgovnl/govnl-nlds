@@ -79,34 +79,49 @@ const createList = (steps, direction, { standalone = false, completedLabel }) =>
   return list;
 };
 
-const createSummary = (current, total, { stepLabel, ofLabel }) => {
-  const summary = document.createElement('summary');
+const createProgress = (template, current, total) => {
   const progress = document.createElement('span');
+  const values = {
+    current: String(current),
+    total: String(total),
+  };
+
+  progress.classList.add('dictu-step-indicator__progress');
+
+  template.split(/\{(current|total)\}/g).forEach((part, index) => {
+    if (part === '') {
+      return;
+    }
+
+    if (index % 2 === 1) {
+      const value = document.createElement('span');
+
+      value.classList.add('dictu-step-indicator__progress-value');
+      value.textContent = values[part];
+      progress.append(value);
+      return;
+    }
+
+    progress.append(document.createTextNode(part));
+  });
+
+  return progress;
+};
+
+const createSummary = (current, total, progressLabel) => {
+  const summary = document.createElement('summary');
   const summaryLabel = document.createElement('span');
   const summaryText = document.createElement('span');
 
   summary.classList.add('dictu-step-indicator__summary', 'dictu-focus-ring');
-  progress.classList.add('dictu-step-indicator__progress');
   summaryLabel.classList.add('dictu-step-indicator__summary-label');
   summaryText.textContent = current.label;
-
-  [stepLabel, String(current.stepNumber), ofLabel, String(total)].forEach((text, index) => {
-    const part = document.createElement('span');
-
-    part.textContent = text;
-
-    if (index === 1 || index === 3) {
-      part.classList.add('dictu-step-indicator__progress-value');
-    }
-
-    progress.append(part);
-  });
 
   summaryLabel.append(
     summaryText,
     Icon({ icon: chevronIcon, classNames: ['dictu-step-indicator__summary-icon'] })
   );
-  summary.append(progress, summaryLabel);
+  summary.append(createProgress(progressLabel, current.stepNumber, total), summaryLabel);
 
   return summary;
 };
@@ -118,8 +133,7 @@ export const StepIndicator = ({
   display = 'full',
   expanded = false,
   label = 'Voortgang',
-  stepLabel = 'Stap',
-  ofLabel = 'van',
+  progressLabel = 'Stap {current} van {total}',
   completedLabel = 'Afgerond',
   classNames = [],
 } = {}) => {
@@ -153,10 +167,7 @@ export const StepIndicator = ({
   }
 
   if (current) {
-    disclosure.append(
-      createSummary(current, preparedSteps.length, { stepLabel, ofLabel }),
-      overview
-    );
+    disclosure.append(createSummary(current, preparedSteps.length, progressLabel), overview);
     overview.append(createList(preparedSteps, 'vertical', { completedLabel }));
   }
 

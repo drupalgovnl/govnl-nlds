@@ -19,8 +19,7 @@ export default {
     display: 'full',
     expanded: false,
     label: 'Voortgang',
-    ofLabel: 'van',
-    stepLabel: 'Stap',
+    progressLabel: 'Stap {current} van {total}',
     steps,
   },
   argTypes: {
@@ -51,13 +50,9 @@ export default {
       control: 'text',
       description: 'Toegankelijke naam van de navigatie',
     },
-    ofLabel: {
+    progressLabel: {
       control: 'text',
-      description: 'Woord tussen het huidige en het totale aantal stappen',
-    },
-    stepLabel: {
-      control: 'text',
-      description: 'Woord voor het huidige stapnummer in de compacte weergave',
+      description: 'Tekst in de compacte weergave. {current} is het huidige stapnummer, {total} het totale aantal.',
     },
     steps: {
       control: 'object',
@@ -66,7 +61,7 @@ export default {
   },
   component: StepIndicator,
   tags: ['wip'],
-  title: 'Componenten/Step indicator',
+  title: 'Componenten/Form elements/Step Indicator',
 };
 
 export const HorizontalStart = {};

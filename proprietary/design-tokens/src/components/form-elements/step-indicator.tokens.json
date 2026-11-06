@@ -212,10 +212,6 @@
               "$type": "color",
               "$value": "{nl.paragraph.color}"
             },
-            "column-gap": {
-              "$type": "spacing",
-              "$value": "{govnl.space.3xs}"
-            },
             "font-family": {
               "$type": "fontFamilies",
               "$value": "{govnl.typography.font-family.sans}"
