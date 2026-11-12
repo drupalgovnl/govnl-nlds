@@ -1,0 +1,62 @@
+{
+  "govnl": {
+    "data-summary": {
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{govnl.document.font-family}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{govnl.document.font-size}"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{govnl.document.line-height}"
+      },
+      "row-gap": {
+        "$type": "dimension",
+        "$value": "{govnl.space.2xs}"
+      },
+      "item": {
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{govnl.space.3xs}"
+        },
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{govnl.space.md}"
+        },
+        "key": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.subtle.color}"
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{govnl.document.font-weight}"
+          },
+          "flex-basis": {
+            "$type": "dimension",
+            "$value": "40%"
+          }
+        },
+        "value": {
+          "color": {
+            "$type": "color",
+            "$value": "{govnl.document.color}"
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{govnl.document.font-weight}"
+          }
+        },
+        "action": {
+          "flex-basis": {
+            "$type": "dimension",
+            "$value": "20%"
+          }
+        }
+      }
+    }
+  }
+}

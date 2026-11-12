@@ -1,0 +1,42 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2026 dictu
+ */
+
+@use "mixin" as mixin;
+
+.dictu-data-summary {
+  @include mixin.dictu-data-summary;
+}
+
+.dictu-data-summary__item {
+  @include mixin.dictu-data-summary__item;
+}
+
+.dictu-data-summary--row .dictu-data-summary__item {
+  @include mixin.dictu-data-summary__item--row;
+}
+
+.dictu-data-summary__item-key {
+  @include mixin.dictu-data-summary__item-key;
+}
+
+.dictu-data-summary--row .dictu-data-summary__item-key {
+  @include mixin.dictu-data-summary__item-key--row;
+}
+
+.dictu-data-summary__item-value {
+  @include mixin.dictu-data-summary__item-value;
+}
+
+.dictu-data-summary--row .dictu-data-summary__item-value {
+  @include mixin.dictu-data-summary__item-value--row;
+}
+
+.dictu-data-summary__item-value-line {
+  @include mixin.dictu-data-summary__item-value-line;
+}
+
+.dictu-data-summary--row .dictu-data-summary__item-action {
+  @include mixin.dictu-data-summary__item-action--row;
+}

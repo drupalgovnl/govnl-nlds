@@ -1,0 +1,72 @@
+{/* data-summary.mdx */}
+
+import { Canvas, Meta, Markdown, ArgTypes, Title, Subtitle } from '@storybook/addon-docs/blocks';
+import * as DataSummaryStories from './data-summary.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={DataSummaryStories} title="Componenten/Data summary" />
+
+<Title>Data summary</Title>
+
+<Subtitle>Lijst met eigenschappen en bijbehorende data over een onderwerp.</Subtitle>
+
+<Canvas of={DataSummaryStories.Row} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={DataSummaryStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Wanneer gebruik je de Data summary component
+
+Gebruik een data summary om ingevulde of beschrijvende gegevens terug te koppelen,
+zoals de controlestap van een formulier. Elke regel koppelt een eigenschap aan
+een waarde.
+
+## Richtlijnen
+
+- De eigenschap is een `dt` en de waarde een `dd`.
+- `row` zet eigenschap en waarde naast elkaar op brede schermen en onder elkaar
+  op smalle schermen.
+- `column` zet de eigenschap altijd boven de waarde.
+- Een optionele actie is een link bij een regel met een duidelijke tekst die naar de actie verwijst.
+
+## Voorbeelden
+
+### Naast elkaar
+
+De controlestap van een formulier. De eigenschap staat links, de waarde rechts.
+
+<Canvas of={DataSummaryStories.Row} />
+
+### Onder elkaar
+
+<Canvas of={DataSummaryStories.Column} />
+
+### Met een actie
+
+De actie hoort bij één eigenschap.
+
+<Canvas of={DataSummaryStories.WithAction} />
+
+### Waarde met meerdere regels
+
+<Canvas of={DataSummaryStories.MultilineValue} />
+
+## Afhankelijkheden
+
+Een optionele actie gebruikt de [Link component](?path=/docs/componenten-link--docs).
+
+## Relevante WCAG succescriteria
+
+- [WCAG succescriterium 1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Data summary component op GitHub]().
+- [Biedt een wijzigingsvoorstel aan op Github](). Lees hoe je het beste [een wijziging kunt aanbieden]().
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).
