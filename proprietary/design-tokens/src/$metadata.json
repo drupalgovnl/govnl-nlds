@@ -9,6 +9,7 @@
     "components/link-as-button.tokens",
     "components/card.tokens",
     "components/container.tokens",
+    "components/data-summary.tokens",
     "components/dynamic-content-block.tokens",
     "components/figure.tokens",
     "components/filter.token",

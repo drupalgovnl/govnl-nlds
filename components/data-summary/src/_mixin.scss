@@ -1,0 +1,85 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021-2026 dictu
+ */
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin dictu-data-summary {
+  @include reset;
+
+  display: flex;
+  flex-direction: column;
+  font-family: var(--govnl-data-summary-font-family);
+  font-size: var(--govnl-data-summary-font-size);
+  line-height: var(--govnl-data-summary-line-height);
+  row-gap: var(--govnl-data-summary-row-gap);
+}
+
+@mixin dictu-data-summary__item {
+  @include reset;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--govnl-data-summary-item-row-gap);
+}
+
+@mixin dictu-data-summary__item--row {
+  column-gap: var(--govnl-data-summary-item-column-gap);
+  flex-direction: row;
+
+  @media (width <= 48em) {
+    flex-direction: column;
+  }
+}
+
+@mixin dictu-data-summary__item-key {
+  @include reset;
+
+  color: var(--govnl-data-summary-item-key-color);
+  font-weight: var(--govnl-data-summary-item-key-font-weight);
+}
+
+@mixin dictu-data-summary__item-key--row {
+  flex: 0 0 var(--govnl-data-summary-item-key-flex-basis);
+
+  @media (width <= 48em) {
+    flex: none;
+  }
+}
+
+@mixin dictu-data-summary__item-value {
+  @include reset;
+
+  color: var(--govnl-data-summary-item-value-color);
+  font-weight: var(--govnl-data-summary-item-value-font-weight);
+  overflow-wrap: anywhere;
+}
+
+@mixin dictu-data-summary__item-value--row {
+  flex: 1;
+  min-inline-size: 0;
+
+  @media (width <= 48em) {
+    flex: none;
+  }
+}
+
+@mixin dictu-data-summary__item-value-line {
+  display: block;
+}
+
+@mixin dictu-data-summary__item-action--row {
+  flex: 0 0 var(--govnl-data-summary-item-action-flex-basis);
+  margin-inline-start: auto;
+  text-align: end;
+
+  @media (width <= 48em) {
+    flex: none;
+    margin-inline-start: 0;
+    text-align: start;
+  }
+}
