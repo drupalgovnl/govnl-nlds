@@ -43,6 +43,7 @@
     "components/toggle-switch.tokens",
     "components/language-switcher.tokens",
     "components/video-player.tokens",
+    "components/data-summary.tokens.wip",
     "components/modal.tokens"
   ]
 }
