@@ -789,6 +789,16 @@
           "$type": "borderWidth",
           "$value": "4px"
         }
+      },
+      "dash": {
+        "length": {
+          "$type": "dimension",
+          "$value": "5.333px"
+        },
+        "gap": {
+          "$type": "dimension",
+          "$value": "2.667px"
+        }
       }
     }
   }
