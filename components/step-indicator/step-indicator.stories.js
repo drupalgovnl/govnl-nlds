@@ -1,6 +1,4 @@
 import './dist/index.css';
-import '@dictu/icon/dist/index.css';
-import '@dictu/utility-focus-ring/dist/index.css';
 import { StepIndicator } from './step-indicator.component';
 
 const steps = [
@@ -61,7 +59,7 @@ export default {
   },
   component: StepIndicator,
   tags: ['wip'],
-  title: 'Componenten/Form elements/Step Indicator',
+  title: 'Componenten/Form elements/Step indicator',
 };
 
 export const HorizontalStart = {};

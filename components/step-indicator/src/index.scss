@@ -4,21 +4,32 @@
  */
 
 @use "./mixin" as mixin;
+@use "pkg:@dictu/icon/dist/index" as icon;
+@use "pkg:@dictu/utility-focus-ring/dist/index" as focus-ring;
+
+@mixin compact-layout {
+  .dictu-step-indicator__disclosure {
+    @include mixin.dictu-step-indicator__disclosure--compact;
+  }
+
+  .dictu-step-indicator__list--standalone {
+    @include mixin.dictu-step-indicator__list--hidden;
+  }
+}
 
 .dictu-step-indicator {
   @include mixin.dictu-step-indicator;
 }
 
-.dictu-step-indicator--horizontal {
-  @include mixin.dictu-step-indicator--horizontal;
-}
-
+.dictu-step-indicator--horizontal,
 .dictu-step-indicator--vertical {
-  @include mixin.dictu-step-indicator--vertical;
+  @media (width <= 48em) {
+    @include compact-layout;
+  }
 }
 
 .dictu-step-indicator--compact {
-  @include mixin.dictu-step-indicator--compact;
+  @include compact-layout;
 }
 
 .dictu-step-indicator__disclosure {
@@ -59,10 +70,50 @@
 
 .dictu-step-indicator__list--horizontal {
   @include mixin.dictu-step-indicator__list--horizontal;
+
+  .dictu-step-indicator__step {
+    @include mixin.dictu-step-indicator__step--horizontal;
+  }
+
+  .dictu-step-indicator__rail {
+    @include mixin.dictu-step-indicator__rail--horizontal;
+  }
+
+  .dictu-step-indicator__step--complete .dictu-step-indicator__rail::after {
+    @include mixin.dictu-step-indicator__connector--complete;
+  }
+
+  .dictu-step-indicator__step:last-child .dictu-step-indicator__rail::after {
+    @include mixin.dictu-step-indicator__connector--last;
+  }
+
+  .dictu-step-indicator__label {
+    @include mixin.dictu-step-indicator__label--horizontal;
+  }
 }
 
 .dictu-step-indicator__list--vertical {
   @include mixin.dictu-step-indicator__list--vertical;
+
+  .dictu-step-indicator__step {
+    @include mixin.dictu-step-indicator__step--vertical;
+  }
+
+  .dictu-step-indicator__rail {
+    @include mixin.dictu-step-indicator__rail--vertical;
+  }
+
+  .dictu-step-indicator__step--complete .dictu-step-indicator__rail::after {
+    @include mixin.dictu-step-indicator__connector--complete;
+  }
+
+  .dictu-step-indicator__step:last-child .dictu-step-indicator__rail::after {
+    @include mixin.dictu-step-indicator__connector--last;
+  }
+
+  .dictu-step-indicator__label {
+    @include mixin.dictu-step-indicator__label--vertical;
+  }
 }
 
 .dictu-step-indicator__step {
