@@ -34,4 +34,37 @@ test.describe('Page Section', () => {
       fullPage: false,
     });
   });
+
+  test('Small Gap', async ({ page }) => {
+    await page.goto('/iframe.html?id=componenten-page-section--small-gap-page-section');
+    await page.waitForSelector('.dictu-section', { timeout: 5000 });
+
+    await expect(page).toHaveScreenshot('page-section-small-gap.png', {
+      maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
+      animations: 'disabled',
+      fullPage: false,
+    });
+  });
+
+  test('Medium Gap', async ({ page }) => {
+    await page.goto('/iframe.html?id=componenten-page-section--medium-gap-page-section');
+    await page.waitForSelector('.dictu-section', { timeout: 5000 });
+
+    await expect(page).toHaveScreenshot('page-section-medium-gap.png', {
+      maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
+      animations: 'disabled',
+      fullPage: false,
+    });
+  });
+
+  test('Large Gap', async ({ page }) => {
+    await page.goto('/iframe.html?id=componenten-page-section--large-gap-page-section');
+    await page.waitForSelector('.dictu-section', { timeout: 5000 });
+
+    await expect(page).toHaveScreenshot('page-section-large-gap.png', {
+      maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
+      animations: 'disabled',
+      fullPage: false,
+    });
+  });
 });
