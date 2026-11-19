@@ -34,4 +34,15 @@ test.describe('Card', () => {
       fullPage: false,
     });
   });
+
+  test('No Link', async ({ page }) => {
+    await page.goto('/iframe.html?id=componenten-card--no-link-card');
+    await page.waitForSelector('.dictu-card', { timeout: 5000 });
+
+    await expect(page).toHaveScreenshot('card-no-link.png', {
+      maxDiffPixelRatio: VISUAL_DIFF_THRESHOLD,
+      animations: 'disabled',
+      fullPage: false,
+    });
+  });
 });
