@@ -3,7 +3,7 @@ import { VISUAL_DIFF_THRESHOLD } from '../visual.utils';
 
 test.describe('Page Container', () => {
   test('Default', async ({ page }) => {
-    await page.goto('/iframe.html?id=componenten-page-container--default');
+    await page.goto('/iframe.html?id=componenten-page-container--default-page-container');
     await page.waitForSelector('.dictu-container', { timeout: 5000 });
 
     await expect(page).toHaveScreenshot('page-container-default.png', {

@@ -3,7 +3,7 @@ import { VISUAL_DIFF_THRESHOLD } from '../visual.utils';
 
 test.describe('Page Section', () => {
   test('Default', async ({ page }) => {
-    await page.goto('/iframe.html?id=componenten-page-section--default');
+    await page.goto('/iframe.html?id=componenten-page-section--default-page-section');
     await page.waitForSelector('.dictu-section', { timeout: 5000 });
 
     await expect(page).toHaveScreenshot('page-section-default.png', {
@@ -25,7 +25,7 @@ test.describe('Page Section', () => {
   });
 
   test('Without Title', async ({ page }) => {
-    await page.goto('/iframe.html?id=componenten-page-section--without-title');
+    await page.goto('/iframe.html?id=componenten-page-section--without-title-page-section');
     await page.waitForSelector('.dictu-section', { timeout: 5000 });
 
     await expect(page).toHaveScreenshot('page-section-without-title.png', {
