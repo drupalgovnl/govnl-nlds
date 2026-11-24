@@ -136,7 +136,7 @@
       "connector": {
         "color": {
           "$type": "color",
-          "$value": "{govnl.brand.primary.500}"
+          "$value": "{govnl.color.lintblauw.500}"
         },
         "border-width": {
           "$type": "borderWidth",
@@ -144,11 +144,11 @@
         },
         "dash-length": {
           "$type": "dimension",
-          "$value": "{govnl.border.dash.length}"
+          "$value": "6px"
         },
         "dash-gap": {
           "$type": "dimension",
-          "$value": "{govnl.border.dash.gap}"
+          "$value": "3px"
         }
       },
       "list": {
