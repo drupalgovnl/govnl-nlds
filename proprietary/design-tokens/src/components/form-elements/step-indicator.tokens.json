@@ -55,11 +55,11 @@
         "current": {
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.brand.primary.500}"
           },
           "border-color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.brand.primary.500}"
           },
           "number": {
             "color": {
@@ -71,11 +71,11 @@
         "complete": {
           "background-color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.brand.primary.500}"
           },
           "border-color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.brand.primary.500}"
           },
           "icon": {
             "color": {
@@ -95,12 +95,12 @@
           },
           "border-color": {
             "$type": "color",
-            "$value": "{govnl.brand.primary-1.500}"
+            "$value": "{govnl.brand.primary.500}"
           },
           "number": {
             "color": {
               "$type": "color",
-              "$value": "{govnl.brand.primary-1.500}"
+              "$value": "{govnl.brand.primary.500}"
             }
           }
         }
