@@ -50,5 +50,9 @@
 @mixin dictu-link__icon {
   --govnl-icon-size: var(--govnl-link-icon-size);
 
-  vertical-align: middle;
+  /*
+   * Optical alignment for 1em icons next to text;
+   * a small baseline offset matches common icon-font practice for em-sized glyphs.
+   */
+  vertical-align: -0.125em;
 }

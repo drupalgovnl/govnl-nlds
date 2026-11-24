@@ -24,7 +24,7 @@
         },
         "background-color": {
           "$type": "color",
-          "$value": "{govnl.brand.primary-1.500}"
+          "$value": "{govnl.brand.primary.500}"
         },
         "color": {
           "$type": "color",
@@ -94,11 +94,11 @@
             },
             "background-color": {
               "$type": "color",
-              "$value": "{govnl.brand.primary-1.50}"
+              "$value": "{govnl.brand.primary.400}"
             },
             "color": {
               "$type": "color",
-              "$value": "{govnl.brand.primary-1.500}"
+              "$value": "{govnl.document.inverse.color}"
             }
           },
           "padding-block-start": {

@@ -1,5 +1,34 @@
 # @dictu/link
 
+## 2.7.0
+
+### Minor Changes
+
+- 3e92d2e: Updated included component classNames variable
+
+### Patch Changes
+
+- Updated dependencies [3e92d2e]
+  - @dictu/icon@2.3.0
+
+## 2.6.0
+
+### Minor Changes
+
+- 187b699: - Breaking: `.dictu-page-header__logo-wrapper` is replaced by
+  `.dictu-page-header__wrapper`, `__wrapper-before`, `__wrapper-logo`, and
+  `__wrapper-after`.
+  - Updated component standards and documentation.
+  - Updated Page Header to support content before and after logo.
+
+## 2.5.2
+
+### Patch Changes
+
+- 37d446f: Improve vertical position of link icon
+- Updated dependencies [37d446f]
+  - @dictu/icon@2.2.2
+
 ## 2.5.1
 
 ### Patch Changes

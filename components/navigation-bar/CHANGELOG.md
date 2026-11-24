@@ -1,5 +1,50 @@
 # @dictu/navigation-bar
 
+## 5.2.0
+
+### Minor Changes
+
+- 74969df: Added a z-index for big-menus to overlap page content.
+  Stop big-menu icons from shrinking on longer link labels.
+
+## 5.1.0
+
+### Minor Changes
+
+- 3e92d2e: Updated included component classNames variable
+- d3ac021: Resolved navigation-bar accessibility violations, added mobile tests and cleaned navigation-bar.stories.js.
+
+### Patch Changes
+
+- Updated dependencies [3e92d2e]
+  - @dictu/icon@2.3.0
+
+## 5.0.0
+
+### Major Changes
+
+- fedd51f: Breaking change: Introduced a new "Big Menu" implementation within
+  the `navigation-bar` component. This update includes underlying structural DOM
+  and CSS grid changes to accommodate multi-column layouts within the toggle
+  menu. A new boolean prop `isBigMenu` has been added to control this state.
+
+  The previous navigation bar toggle menu was limited to a single-column layout,
+  which restricted scalability for applications with complex navigation trees.
+  This change allows the menu to span across multiple columns, improving the
+  user experience and overview for heavy content structures.
+
+## 4.3.0
+
+### Minor Changes
+
+- 5fff52a: Added main navigation font-size
+
+## 4.2.0
+
+### Minor Changes
+
+- 66a2c88: Added missing font tokens
+
 ## 4.1.2
 
 ### Patch Changes

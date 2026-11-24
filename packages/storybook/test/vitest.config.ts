@@ -6,6 +6,11 @@ import { playwright } from '@vitest/browser-playwright';
 const isCI = process.env.CI === 'true' || process.env.CI === '1';
 
 export default defineConfig({
+  optimizeDeps: {
+    // Prebundle these so Vite does not reload the browser mid-run. A reload
+    // drops Vitest's runner and fails every story.
+    include: ['@storybook/html-vite', 'prettier/standalone', 'prettier/plugins/html'],
+  },
   plugins: [
     storybookTest({
       // Path to your Storybook config directory (relative to packages/storybook where vitest runs)

@@ -11,7 +11,7 @@
 
 @mixin dictu-icon__svg {
   /*
-   * Override the width of SVGs when they are hardcoded, and avoid oversized SVG icons.
+   * Override the width/height of SVGs when they are hardcoded, and avoid oversized SVG icons.
    * For example:
    *
    *   <svg width="128px" height="128px">
@@ -19,8 +19,14 @@
   block-size: 100%;
   display: block;
   fill: currentcolor;
+  height: 100%;
   inline-size: 100%;
+  max-block-size: 100%;
+  max-height: 100%;
+  max-inline-size: 100%;
+  max-width: 100%;
 
   /* Remove tooltip from SVG `<title>` element using `pointer-events: none` */
   pointer-events: none;
+  width: 100%;
 }

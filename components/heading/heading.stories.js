@@ -11,6 +11,7 @@ import { Heading } from './heading.component';
 export default {
   args: {
     content: 'Dit is een voorbeeld van een heading',
+    level: 1,
   },
   argTypes: {
     content: {
@@ -21,6 +22,11 @@ export default {
       control: 'select',
       options: ['1', '2', '3', '4', '5', '6'],
       description: 'Het niveau van de heading',
+    },
+    appearanceLevel: {
+      control: 'select',
+      options: ['1', '2', '3', '4', '5', '6'],
+      description: 'De visuele grote van de heading',
     },
   },
   parameters: {

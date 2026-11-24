@@ -60,7 +60,7 @@
       "hover": {
         "background-color": {
           "$type": "color",
-          "$value": "{govnl.form-control.hover.background-color}"
+          "$value": "{govnl.interaction.hover.background-color}"
         },
         "border-color": {
           "$type": "color",
@@ -68,7 +68,7 @@
         },
         "color": {
           "$type": "color",
-          "$value": "{govnl.form-control.hover.color}"
+          "$value": "{govnl.interaction.hover.color}"
         }
       },
       "focus": {

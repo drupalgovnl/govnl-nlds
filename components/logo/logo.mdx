@@ -1,0 +1,59 @@
+{/* logo.mdx */}
+
+import {
+  Canvas,
+  Meta,
+  Markdown,
+  ArgTypes,
+  Title,
+  Subtitle,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import * as LogoStories from './logo.stories.js';
+import Readme from './README.md?raw';
+
+<Meta of={LogoStories} title="Componenten/Logo" />
+
+<Title>Logo</Title>
+
+<Subtitle>
+  Het logo component toont het logo van Dictu Design System, bestaande uit een afbeelding, een titel
+  en een subtitel.
+</Subtitle>
+
+<Canvas of={LogoStories.LogoDefault} sourceState="none" />
+
+## Parameters
+
+<ArgTypes of={LogoStories} />
+
+<Markdown>{Readme}</Markdown>
+
+## Voorbeelden
+
+### Standaard logo
+
+<Canvas of={LogoStories.LogoDefault} />
+
+## CSS Klassen
+
+- `.dictu-logo` — container voor het logo
+- `.dictu-logo__image` — bevat de logo-afbeelding (SVG of img)
+- `.dictu-logo__text` - Tekst wrapper van het logo
+- `.dictu-logo__title` — titel van het logo
+- `.dictu-logo__subtitle` — subtitel van het logo
+
+## Toepassing
+
+Gebruik deze klassen om het logo correct te stylen volgens de huisstijl. De
+component maakt gebruik van CSS-variabelen die gedefinieerd zijn in de design
+tokens.
+
+## Help mee om deze component te verbeteren
+
+- Neem deel aan de discussie over de [Logo component op GitHub](https://github.com/drupalgovnl/govnl-nlds/issues).
+- [Biedt een wijzigingsvoorstel aan op Github](https://github.com/drupalgovnl/govnl-nlds). Lees hoe je het beste [een wijziging kunt aanbieden](https://github.com/drupalgovnl/govnl-nlds/blob/main/DEVELOPMENT.md).
+
+## Heb je hulp nodig?
+
+Heb je een vraag over deze component of het DICTU Design System? [Neem dan contact op met het team](?path=/docs/informatie-team--docs).

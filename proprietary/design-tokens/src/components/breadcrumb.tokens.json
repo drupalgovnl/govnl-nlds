@@ -126,7 +126,7 @@
       "separator": {
         "color": {
           "$type": "color",
-          "$value": "{govnl.document.subtle.color}"
+          "$value": "{govnl.brand.primary.200}"
         },
         "size": {
           "$type": "dimension",

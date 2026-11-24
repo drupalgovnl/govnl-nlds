@@ -1,5 +1,22 @@
 # @dictu/page-header
 
+## 3.1.0
+
+### Minor Changes
+
+- ac29a47: Updated page-header's grid center starting position to match logo's
+  center. Combined it with the logo's inline-size token.
+
+## 3.0.0
+
+### Major Changes
+
+- 187b699: - Breaking: `.dictu-page-header__logo-wrapper` is replaced by
+  `.dictu-page-header__wrapper`, `__wrapper-before`, `__wrapper-logo`, and
+  `__wrapper-after`.
+  - Updated component standards and documentation.
+  - Updated Page Header to support content before and after logo.
+
 ## 2.0.1
 
 ### Patch Changes

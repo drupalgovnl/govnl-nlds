@@ -29,7 +29,7 @@ const config = {
     // Merge custom configuration into the default config
     const { mergeConfig } = await import('vite');
 
-    return mergeConfig(config, {
+    const merged = mergeConfig(config, {
       css: {
         preprocessorOptions: {
           scss: {
@@ -38,6 +38,15 @@ const config = {
         },
       },
     });
+
+    // The Linux screenshot container runs Storybook once. Watching the repo
+    // over the Docker file share rereads the tree for the whole test run.
+    if (process.env.STORYBOOK_DISABLE_WATCH === '1') {
+      merged.server ??= {};
+      merged.server.watch = null;
+    }
+
+    return merged;
   },
 };
 

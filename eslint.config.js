@@ -28,11 +28,14 @@ export default [
       '**/.*rc.@(js|mjs|ts)',
       '**/*build*.mjs',
       'scripts/**/*.mjs',
+      'proprietary/**/*.mjs',
     ],
     languageOptions: {
       globals: {
         console: 'readonly',
         process: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
       },
     },
     rules: {

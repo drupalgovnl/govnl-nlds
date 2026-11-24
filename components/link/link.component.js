@@ -1,14 +1,6 @@
 import { Icon } from '../icon/icon.component';
 
-export const Link = ({
-  content,
-  href,
-  external,
-  icon,
-  iconPosition,
-  iconLabel,
-  classNames = [],
-}) => {
+export function Link({ content, href, external, icon, iconPosition, iconLabel, classNames = [] }) {
   const link = document.createElement('a');
   link.classList.add('dictu-link', ...classNames);
   link.href = href;
@@ -20,7 +12,7 @@ export const Link = ({
     const linkIcon = new Icon({
       icon,
       label: iconLabel,
-      classes: ['dictu-link__icon'],
+      classNames: ['dictu-link__icon'],
     });
 
     link.classList.add(
@@ -35,4 +27,4 @@ export const Link = ({
   }
 
   return link;
-};
+}
