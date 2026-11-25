@@ -115,14 +115,8 @@
   position: relative;
 
   &::after {
-    background-image: repeating-linear-gradient(
-      to right,
-      var(--govnl-step-indicator-connector-color) 0,
-      var(--govnl-step-indicator-connector-color) var(--govnl-step-indicator-connector-dash-length),
-      transparent var(--govnl-step-indicator-connector-dash-length),
-      transparent
-        calc(var(--govnl-step-indicator-connector-dash-length) + var(--govnl-step-indicator-connector-dash-gap))
-    );
+    background-color: var(--govnl-step-indicator-connector-background-color);
+    background-image: var(--govnl-step-indicator-connector-background-image-horizontal);
     block-size: var(--govnl-step-indicator-connector-border-width);
     content: "";
     inline-size: calc(100% - var(--govnl-step-indicator-marker-size));
@@ -160,14 +154,8 @@
   flex-direction: column;
 
   &::after {
-    background-image: repeating-linear-gradient(
-      to bottom,
-      var(--govnl-step-indicator-connector-color) 0,
-      var(--govnl-step-indicator-connector-color) var(--govnl-step-indicator-connector-dash-length),
-      transparent var(--govnl-step-indicator-connector-dash-length),
-      transparent
-        calc(var(--govnl-step-indicator-connector-dash-length) + var(--govnl-step-indicator-connector-dash-gap))
-    );
+    background-color: var(--govnl-step-indicator-connector-background-color);
+    background-image: var(--govnl-step-indicator-connector-background-image-vertical);
     content: "";
     flex: 1 1 auto;
     inline-size: var(--govnl-step-indicator-connector-border-width);
@@ -183,8 +171,8 @@
 }
 
 @mixin dictu-step-indicator__connector--complete {
-  background-color: var(--govnl-step-indicator-connector-color);
-  background-image: none;
+  background-color: var(--govnl-step-indicator-connector-complete-background-color);
+  background-image: var(--govnl-step-indicator-connector-complete-background-image);
 }
 
 @mixin dictu-step-indicator__connector--last {
