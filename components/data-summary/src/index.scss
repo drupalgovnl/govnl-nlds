@@ -9,34 +9,54 @@
   @include mixin.dictu-data-summary;
 }
 
+.dictu-data-summary__head {
+  @include mixin.dictu-data-summary__head;
+}
+
+.dictu-data-summary__title {
+  @include mixin.dictu-data-summary__title;
+}
+
+.dictu-data-summary__heading {
+  @include mixin.dictu-data-summary__heading;
+}
+
+.dictu-data-summary__heading-text {
+  @include mixin.dictu-data-summary__heading-text;
+}
+
+.dictu-data-summary__marker {
+  @include mixin.dictu-data-summary__marker;
+}
+
+.dictu-data-summary__action {
+  @include mixin.dictu-data-summary__action;
+}
+
+.dictu-data-summary__content {
+  @include mixin.dictu-data-summary__content;
+}
+
 .dictu-data-summary__item {
   @include mixin.dictu-data-summary__item;
 }
 
-.dictu-data-summary--row .dictu-data-summary__item {
-  @include mixin.dictu-data-summary__item--row;
-}
-
-.dictu-data-summary__item-key {
-  @include mixin.dictu-data-summary__item-key;
-}
-
-.dictu-data-summary--row .dictu-data-summary__item-key {
-  @include mixin.dictu-data-summary__item-key--row;
+.dictu-data-summary__item-label {
+  @include mixin.dictu-data-summary__item-label;
 }
 
 .dictu-data-summary__item-value {
   @include mixin.dictu-data-summary__item-value;
 }
 
-.dictu-data-summary--row .dictu-data-summary__item-value {
-  @include mixin.dictu-data-summary__item-value--row;
+.dictu-data-summary__item-value-content {
+  @include mixin.dictu-data-summary__item-value-content;
 }
 
 .dictu-data-summary__item-value-line {
   @include mixin.dictu-data-summary__item-value-line;
 }
 
-.dictu-data-summary--row .dictu-data-summary__item-action {
-  @include mixin.dictu-data-summary__item-action--row;
+.dictu-data-summary__item-action {
+  @include mixin.dictu-data-summary__item-action;
 }

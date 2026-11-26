@@ -1,35 +1,57 @@
+import '@dictu/button/dist/index.css';
+import '@dictu/heading/dist/index.css';
+import '@dictu/link-as-button/dist/index.css';
+import '@dictu/utility-focus-ring/dist/index.css';
 import './dist/index.css';
-import '@dictu/link/dist/index.css';
-import '@dictu/icon/dist/index.css';
 import { DataSummary } from './data-summary.component';
 
 const applicantItems = [
-  { key: 'Voornaam', value: 'Marieke' },
-  { key: 'Achternaam', value: 'de Boer' },
-  { key: 'Geslacht', value: 'Vrouw' },
-  { key: 'E-mailadres', value: 'marieke.deboer@example.nl' },
-  { key: 'Telefoon', value: '06-12345678' },
+  { label: 'Voornaam:', value: 'Marieke' },
+  { label: 'Achternaam:', value: 'de Boer' },
+  { label: 'Geslacht:', value: 'Vrouw' },
+  { label: 'E-mailadres:', value: 'marieke.deboer@example.nl' },
+  { label: 'Telefoon:', value: '06-12345678' },
 ];
+
+const changeAction = {
+  href: '#',
+  label: 'Wijzigen',
+};
 
 export default {
   args: {
-    appearance: 'column',
-    items: [
-      { key: 'Soort', value: 'Reuzenpanda' },
-      { key: 'Rijk', value: 'Animalia (Dieren)' },
-      { key: 'Klasse', value: 'Mammalia (Zoogdieren)' },
-    ],
+    headingAppearance: 4,
+    headingLevel: 2,
+    items: applicantItems,
+    title: 'Gegevens aanvrager',
   },
   argTypes: {
-    appearance: {
-      control: 'radio',
-      options: ['column', 'row'],
-      description: 'Zet de eigenschap boven de waarde, of ernaast op brede schermen.',
+    action: {
+      control: 'object',
+      description: 'Optionele actie in de kop, bijvoorbeeld Wijzigen. Met href wordt het een link, anders een button.',
+    },
+    headingAppearance: {
+      control: 'select',
+      options: [1, 2, 3, 4, 5, 6],
+      description: 'Visueel kopniveau. De standaard volgt het ontwerp (niveau 4).',
+    },
+    headingLevel: {
+      control: 'select',
+      options: [1, 2, 3, 4, 5, 6],
+      description: 'Semantisch kopniveau van de titel.',
     },
     items: {
       control: 'object',
       description:
-        'Lijst van eigenschappen. Een item heeft key, value (string of een lijst van regels) en een optionele action.',
+        'Lijst van eigenschappen. Een item heeft label, value (string of een lijst van regels) en een optionele action.',
+    },
+    step: {
+      control: 'text',
+      description: 'Optioneel stapnummer voor de titel.',
+    },
+    title: {
+      control: 'text',
+      description: 'Titel van de samenvatting.',
     },
   },
   component: DataSummary,
@@ -37,43 +59,45 @@ export default {
   title: 'Componenten/Data summary',
 };
 
-export const Column = {};
+export const Default = {};
 
-export const Row = {
+export const WithStep = {
   args: {
-    appearance: 'row',
-    items: applicantItems,
+    step: 1,
   },
 };
 
-export const WithAction = {
+export const WithStepAndAction = {
   args: {
-    appearance: 'row',
+    action: changeAction,
+    step: 1,
+  },
+};
+
+export const WithItemAction = {
+  args: {
     items: [
-      { key: 'Soort', value: 'Reuzenpanda' },
+      { label: 'Voornaam:', value: 'Marieke' },
       {
-        key: 'Rijk',
-        value: 'Animalia (Dieren)',
-        action: {
-          href: '#',
-          content: 'Bekijk alle dieren',
-        },
+        label: 'E-mailadres:',
+        value: 'marieke.deboer@example.nl',
+        action: changeAction,
       },
-      { key: 'Klasse', value: 'Mammalia (Zoogdieren)' },
+      { label: 'Telefoon:', value: '06-12345678' },
     ],
   },
 };
 
 export const MultilineValue = {
   args: {
-    appearance: 'row',
+    title: 'Schade',
     items: [
       {
-        key: 'Welke schade u ontdekt heeft',
+        label: 'Welke schade u ontdekt heeft:',
         value: 'Scheuren in de muren',
       },
       {
-        key: 'Bestanden',
+        label: 'Bestanden:',
         value: ['IMG-2432.jpg', 'Offerte_M-deBoer.pdf'],
       },
     ],

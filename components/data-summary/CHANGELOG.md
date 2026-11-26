@@ -2,6 +2,6 @@
 
 ## 1.0.0
 
-### Minor Changes
+### Major Changes
 
-- Add a data summary for read-only key and value lists.
+- Add the data summary component.

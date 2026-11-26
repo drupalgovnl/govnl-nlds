@@ -10,7 +10,7 @@ import Readme from './README.md?raw';
 
 <Subtitle>Lijst met eigenschappen en bijbehorende data over een onderwerp.</Subtitle>
 
-<Canvas of={DataSummaryStories.Row} sourceState="none" />
+<Canvas of={DataSummaryStories.Default} sourceState="none" />
 
 ## Parameters
 
@@ -22,33 +22,32 @@ import Readme from './README.md?raw';
 
 Gebruik een data summary om ingevulde of beschrijvende gegevens terug te koppelen,
 zoals de controlestap van een formulier. Elke regel koppelt een eigenschap aan
-een waarde.
+een waarde. De kop kan een stapnummer, een titel en een actie zoals Wijzigen bevatten.
 
 ## Richtlijnen
 
+- De titel is een kop. Het semantische niveau kies je met `headingLevel`, de visuele weergave met `headingAppearance`.
 - De eigenschap is een `dt` en de waarde een `dd`.
-- `row` zet eigenschap en waarde naast elkaar op brede schermen en onder elkaar
-  op smalle schermen.
-- `column` zet de eigenschap altijd boven de waarde.
-- Een optionele actie is een link bij een regel met een duidelijke tekst die naar de actie verwijst.
+- Een optioneel stapnummer staat voor de titel.
+- De actie in de kop of bij een eigenschap is een button of link met een duidelijke tekst.
 
 ## Voorbeelden
 
-### Naast elkaar
+### Zonder stap en actie
 
-De controlestap van een formulier. De eigenschap staat links, de waarde rechts.
+<Canvas of={DataSummaryStories.Default} />
 
-<Canvas of={DataSummaryStories.Row} />
+### Met een stap
 
-### Onder elkaar
+<Canvas of={DataSummaryStories.WithStep} />
 
-<Canvas of={DataSummaryStories.Column} />
+### Met een stap en een actie
 
-### Met een actie
+<Canvas of={DataSummaryStories.WithStepAndAction} />
 
-De actie hoort bij één eigenschap.
+### Actie bij een eigenschap
 
-<Canvas of={DataSummaryStories.WithAction} />
+<Canvas of={DataSummaryStories.WithItemAction} />
 
 ### Waarde met meerdere regels
 
@@ -56,7 +55,8 @@ De actie hoort bij één eigenschap.
 
 ## Afhankelijkheden
 
-Een optionele actie gebruikt de [Link component](?path=/docs/componenten-link--docs).
+De titel gebruikt de [Heading component](?path=/docs/componenten-heading--docs).
+De actie in de kop en bij een eigenschap gebruikt de [Button component](?path=/docs/componenten-button--docs) of de [Link as button component](?path=/docs/componenten-link-as-button--docs).
 
 ## Relevante WCAG succescriteria
 
