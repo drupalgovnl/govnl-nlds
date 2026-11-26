@@ -21,6 +21,7 @@
     "components/form-elements/select.tokens",
     "components/form-elements/step-indicator.tokens",
     "components/form-elements/textarea.tokens",
+    "components/form-elements/file-selector.tokens.wip",
     "components/form-elements/text-input.tokens",
     "components/grid.tokens",
     "components/heading.tokens",
@@ -42,6 +43,8 @@
     "components/timeline.tokens",
     "components/toggle-switch.tokens",
     "components/language-switcher.tokens",
-    "components/video-player.tokens"
+    "components/video-player.tokens",
+    "components/data-summary.tokens.wip",
+    "components/modal.tokens"
   ]
 }
