@@ -1,0 +1,40 @@
+{
+  "name": "@dictu/data-summary",
+  "version": "1.0.0",
+  "author": "Dienst ICT Uitvoering",
+  "description": "Data summary CSS component.",
+  "license": "EUPL-1.2",
+  "keywords": [
+    "nl-design-system",
+    "css",
+    "data-summary"
+  ],
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:drupalgovnl/govnl-nlds.git",
+    "directory": "components/data-summary"
+  },
+  "files": [
+    "src/",
+    "dist/",
+    "*.md"
+  ],
+  "exports": {
+    "./dist/*": "./dist/*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "npx sass --pkg-importer=node --style=compressed ./src/:./dist/",
+    "watch": "npx sass --pkg-importer=node --style=compressed --watch ./src/:./dist/",
+    "clean": "rimraf ./dist/"
+  },
+  "dependencies": {
+    "@dictu/button": "^4.3.0",
+    "@dictu/heading": "^3.3.0",
+    "@dictu/link-as-button": "^1.0.0",
+    "@dictu/utility-focus-ring": "^2.0.0"
+  }
+}
