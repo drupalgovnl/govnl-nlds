@@ -1,5 +1,15 @@
 # @dictu/design-tokens
 
+## 3.0.0
+
+### Major Changes
+
+- 415fd84: Added tokens for new Step Indicator component
+
+### Patch Changes
+
+- 976feb8: Restore missing index.css of design tokens.
+
 ## 2.24.0
 
 ### Minor Changes
