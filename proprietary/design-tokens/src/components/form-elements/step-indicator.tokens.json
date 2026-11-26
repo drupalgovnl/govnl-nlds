@@ -138,6 +138,20 @@
           "$type": "color",
           "$value": "{govnl.color.lintblauw.500}"
         },
+        "background-color": {
+          "$type": "color",
+          "$value": "transparent"
+        },
+        "background-image": {
+          "horizontal": {
+            "$type": "other",
+            "$value": "repeating-linear-gradient(to right, var(--govnl-step-indicator-connector-color) 0, var(--govnl-step-indicator-connector-color) var(--govnl-step-indicator-connector-dash-length), transparent var(--govnl-step-indicator-connector-dash-length), transparent calc(var(--govnl-step-indicator-connector-dash-length) + var(--govnl-step-indicator-connector-dash-gap)))"
+          },
+          "vertical": {
+            "$type": "other",
+            "$value": "repeating-linear-gradient(to bottom, var(--govnl-step-indicator-connector-color) 0, var(--govnl-step-indicator-connector-color) var(--govnl-step-indicator-connector-dash-length), transparent var(--govnl-step-indicator-connector-dash-length), transparent calc(var(--govnl-step-indicator-connector-dash-length) + var(--govnl-step-indicator-connector-dash-gap)))"
+          }
+        },
         "border-width": {
           "$type": "borderWidth",
           "$value": "{govnl.border.border-width.md}"
@@ -149,6 +163,16 @@
         "dash-gap": {
           "$type": "dimension",
           "$value": "3px"
+        },
+        "complete": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{govnl.step-indicator.connector.color}"
+          },
+          "background-image": {
+            "$type": "other",
+            "$value": "none"
+          }
         }
       },
       "list": {
